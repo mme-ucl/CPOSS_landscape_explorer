@@ -1,0 +1,54 @@
+{
+  "datasetCount": 310,
+  "casePageCount": 236,
+  "mappedDatasetCount": 307,
+  "collectionCounts": {
+    "BlindTest": 49,
+    "CPOSS209": 26,
+    "unpublished": 30,
+    "Tricyclics": 25,
+    "Dichloronitrobenzene": 11
+  },
+  "unmappedDatasets": [
+    "4C2NBMHA.json",
+    "5fluorouracilA.json",
+    "PhloroglucinolDihydrateB.json"
+  ],
+  "multipleCaseMappings": [],
+  "brokenSourceLinks": [
+    {
+      "source": "1.SubstitutedNitroBenzoicAcids/4C2NBAMH/4C2NBAMH.html",
+      "target": "0.Chemiscope/4C2NBAMHA.json"
+    },
+    {
+      "source": "Fluorouracil/Fluorouracil.html",
+      "target": "0.Chemiscope/FluorouracilA.json"
+    },
+    {
+      "source": "Methyl-p-hydroxybenzoate/Methyl-p-hyxdroxybenzoate.html",
+      "target": "0.Chemiscope/Methyl-p-hyxdroxybenzoateA.json"
+    },
+    {
+      "source": "Methylazetidineone/Methylazetidineone.html",
+      "target": "0.Chemiscope/MethylazetidineoneA.json"
+    },
+    {
+      "source": "Phloroglucinol/PhloroglucinolDihydrate/PhloroglucinolDihydrate.html",
+      "target": "0.Chemiscope/PhloroglucinolDihydrateA.json"
+    }
+  ],
+  "collectionCasesWithoutDatasets": {
+    "BlindTest": [],
+    "CPOSS209": [
+      "Fluorouracil/Fluorouracil.html"
+    ],
+    "unpublished": [
+      "1.SubstitutedNitroBenzoicAcids/4C2NBAMH/4C2NBAMH.html",
+      "Methylazetidineone/Methylazetidineone.html"
+    ],
+    "Tricyclics": [],
+    "Dichloronitrobenzene": []
+  },
+  "validation": "Dataset and case paths checked against the complete GitHub tree. JSON contents and external publication/download URLs are not fetched.",
+  "sourceTree": "ff596da6e70766a9a12af56413831c774dd695f1"
+}
