@@ -1,0 +1,21 @@
+{
+  "snapshot_revision": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
+  "workbooks_in_inventory": 312,
+  "workbooks_successfully_read": 312,
+  "all_workbook_rows": 402863,
+  "all_workbook_unique_filename_sum": 402613,
+  "mapped_datasets": 311,
+  "missing_datasets": [],
+  "mapped_workbook_rows": 402863,
+  "mapped_workbook_unique_filename_sum": 402613,
+  "rows_with_any_model_energy": 402838,
+  "structure_model_records": 548587,
+  "unique_filename_model_pairs": 548337,
+  "zero_energy_records": 11,
+  "model_columns": 512,
+  "model_columns_without_html_match": 3,
+  "nonnumeric_energy_values": {},
+  "visualization_entries": 155824,
+  "unmapped_workbooks": 1,
+  "read_failures": []
+}

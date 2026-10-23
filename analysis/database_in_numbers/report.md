@@ -6,7 +6,8 @@ Source: [CPOSS database index](https://louiseprice.github.io/CPOSS_Database/inde
 ## Findings
 
 - **311 documented CSP datasets** across **235 reachable molecule pages**.
-- **155,824 stored structure entries** in **307 linked Chemiscope files**. The median is **438**, the interquartile range is **109.5-1000**, and the range is **11-2105** entries per file.
+- **519,167 archived structure files** across **509 energy-model ZIP archives**, covering all **311 datasets**. This supports the manuscript's statement of more than 500,000 stored structures when model-specific representations are counted separately. The median per dataset is **498**, the interquartile range is **113.0-1435.5**, and the range is **11-20408** files.
+- The former **155,824** total counted only available Chemiscope visualization exports. The spreadsheets contain **402,863 Filename rows** and **548,587 numeric energy records**. These overlapping scopes are compared in [the structure-count reconciliation](structure_count_reconciliation.md); they must not be added together.
 - **45 named scientists** across **286 datasets**; **25 datasets** say Unknown/Not sure rather than naming a scientist. The most frequently credited person is **Louise Price**, associated with **65 datasets**. Credits overlap and are not an assessment of research productivity.
 - **235 documented molecular systems** have parseable formulas. Molar masses span **32.04-2911.56 g/mol** and atom counts span **5-218**, on the written molecule/formula-unit basis.
 - **75 unique linked CSP papers**, **577 unique linked references overall**, including experimental-context papers and research data records. **192 datasets** link at least one CSP paper after explicit publication cross-references are resolved.
@@ -15,7 +16,9 @@ Source: [CPOSS database index](https://louiseprice.github.io/CPOSS_Database/inde
 | Field | Available | Total datasets |
 | --- | --- | --- |
 | Documented CSP searches | 311 | 311 |
-| Linked JSON structure counts | 307 | 311 |
+| Complete coordinate-archive structure counts | 311 | 311 |
+| Linked JSON visualization counts | 307 | 311 |
+| Complete workbook Filename/energy counts | 311 | 311 |
 | Named scientist credits | 286 | 311 |
 | Single study year | 236 | 311 |
 | Molar mass and atom count from formula | 311 | 311 |
@@ -26,17 +29,17 @@ Source: [CPOSS database index](https://louiseprice.github.io/CPOSS_Database/inde
 
 The extractor follows same-database HTML links from the index and validates them against a complete GitHub repository tree. **243 of 245 HTML files** are reachable. A contributor-statistics placeholder and a misspelled duplicate molecule page are unlinked and excluded. The audit has **311 search occurrences**, keyed by the explicitly linked Chemiscope filename. A molecule page can describe several searches; an individual search can have several energy models. The analysis includes searches with broken JSON links rather than silently dropping them from the dataset denominator.
 
-**8 JSON files** exist in the repository but are not explicitly linked from reachable searches. These include full/filtered variants and unmatched files. They are inventoried in `unlinked_json_inventory.csv` and excluded from the headline and structure counts. Consequently, these numbers describe the public HTML-linked collection, not every file in the repository. Existing explorer catalogue files were not changed.
+**8 JSON files** exist in the repository but are not explicitly linked from reachable searches. These include full/filtered variants and unmatched files. They are inventoried in `unlinked_json_inventory.csv` and are not added to linked visualization exports or coordinate archives. The headline describes the public HTML-linked model archives, not every representation in the repository.
 
-Every archived HTML file and downloaded JSON was checked against its Git blob SHA at the frozen revision. The lightweight JSON summaries retain the verified original file hashes, array counts, property lengths and duplicate-filename checks; the 1+ GB coordinate cache stays outside the deliverable. Rebuilding the figure and extraction offline uses those archived summaries; verifying them from scratch requires downloading the original JSON again.
+Every archived HTML file, downloaded JSON, original workbook and model ZIP was checked against its Git blob SHA at the frozen revision. Lightweight summaries retain the original file hashes, counts and diagnostic checks. The large source caches stay outside the deliverable. Rebuilding the figure offline uses delivered CSVs and summaries; independent source verification requires downloading the originals.
 
 ## What the structure count means
 
-The HTML does not contain numeric totals for all originally generated, optimised or retained candidates. Counts in this report are **calculated from the length of each linked JSON `structures` array**. They describe the distributed visualisation data, including entries associated with experimental references. Original search sizes remain missing, never zero.
+The figure uses **actual RES coordinate members in every documented energy-model ZIP**, excluding MacOS resource forks. Separate energy models are retained, while ancillary pDFT supplements are not added. All 509 archives were readable, checksum-verified and contained RES files; their Git hashes are distinct. No geometric deduplication across models or searches has been performed, so the total must not be described as unique predicted crystals. The HTML does not give original generation/optimization/retention counts; these remain missing.
 
-**76 files have exactly 1,000 entries**. This concentration is consistent with a display/export limit, but no uniform limit is assumed. The five unlinked `_full` variants are not added to their linked counterparts. Two linked files repeat filename labels: TetramethylpyrazineA.json (105 repeated labels), 3aminobenzamideA.json (145 repeated labels). Labels alone are insufficient to prove identical geometries, so repeated rows are flagged and retained. Cross-dataset structure matching has not been performed; totals must not be called unique predicted crystals.
+**76 linked visualizations have exactly 1,000 entries**, while their full workbooks contain 318,650 Filename rows. Many visualizations therefore represent subsets; no universal export limit is assumed. The JSON measurements remain in the original `datasets.csv`, while `plot_datasets.csv` names both visualization and archive counts explicitly. JSON filename repeats remain flagged: TetramethylpyrazineA.json (105 repeated labels), 3aminobenzamideA.json (145 repeated labels).
 
-Four linked JSON files are absent at the revision: **4C2NBAMHA, FluorouracilA, MethylazetidineoneA, PhloroglucinolDihydrateA**. Their structure counts are missing. `structure_file_audit.csv` records the exact broken links and verified array/property-length checks. No fuzzy filename correction was applied.
+Four linked JSON files are absent: **4C2NBAMHA, FluorouracilA, MethylazetidineoneA, PhloroglucinolDihydrateA**. Their visualization counts remain missing; their intact model archives are now counted directly, contributing 4,478 RES files. `structure_file_audit.csv` retains the original broken-link and array checks. Of the 509 model archive counts, 454 match their numeric workbook energy columns and 55 differ. The workbook total also includes 109 energy records without unambiguous HTML model descriptions. These uncertainties are documented without adding spreadsheet records to coordinate-file counts; see `archive_workbook_discrepancies.csv` and `structure_count_reconciliation.md`.
 
 ## Scientist names and molecular composition
 
@@ -69,7 +72,7 @@ These counts use each dataset at most once per category and may sum above 311. M
 
 ## Dates and the linked literature
 
-Dataset deposition/release years are not reported. Annual counts therefore use the **source study Date field**, with no substitution of page update year or publication year. Single years and month-year dates are accepted. Ranges such as 2005-2008, abbreviated 2005-7, and pre-2010 are excluded instead of assigned arbitrary years. These exclusions leave **133,481 entries** in annual bins and **22,343 entries** without a single year. Known study years with broken JSON links contribute a landscape but no fabricated structure count.
+Dataset deposition/release years are not reported. Annual counts use the **source study Date field**, with no substitution of page update year or publication year. Single years and month-year dates are accepted. Ranges such as 2005-2008, abbreviated 2005-7, and pre-2010 are excluded instead of assigned arbitrary years. These exclusions leave **488,411 archived structure files** in annual bins and **30,756 files** without a single year. All 311 archive counts are complete, including searches with missing visualization exports.
 
 | Linked CSP papers per dataset | Datasets |
 | --- | --- |
@@ -83,8 +86,8 @@ Crossref supplies titles, authors, reference types and its preferred published y
 
 ## Validation and deliverables
 
-No conflicting contributor/date/formula values were found across merged dataset mappings (**0 conflicts**). All available linked JSON structure-target property lengths match their arrays; the delivered verification report separately checks these lengths, accounting totals, annual aggregation, DOI deduplication, PDF geometry and embedded fonts. The source-link audit lists **5 missing internal link targets** across HTML, archives and images; these were checked against the repository inventory, not by fetching every ZIP or image. External paper landing pages were not all fetched; metadata-service retrieval and its exceptions are recorded in `sources/doi_metadata.json`.
+No conflicting contributor/date/formula values were found across merged dataset mappings (**0 conflicts**). All available linked JSON structure-target property lengths match their arrays; the delivered verification report separately checks these lengths, accounting totals, annual aggregation, DOI deduplication, PDF geometry and embedded fonts. The source-link audit lists **5 missing internal link targets** across HTML, archives and images; these were checked against the repository inventory; all documented energy-model archives were also downloaded and checked separately, while images and ancillary ZIPs were not all fetched. External paper landing pages were not all fetched; metadata-service retrieval and its exceptions are recorded in `sources/doi_metadata.json`.
 
 The figure shows molecular size in panel A and scientist credits in panel D. The scientist panel shows the 20 most frequently credited scientists, including Sally Price; the full source tables and headline count retain all 45 scientists. Potential-family bars, paper-per-dataset bars, panel subtitles and the footer are omitted from the figure; their data, provenance and counting rules remain in these tables and the caption. The cumulative dataset curve includes only the 236 searches with a single study year.
 
-The page is exactly A4 portrait, with compact vertical and horizontal gutters, unchanged plot heights, aligned plot baselines, a 14 pt title and 9 pt panel headings. All text resolves to Helvetica, with regular/bold faces extracted from the system Helvetica collection for embedding; no proprietary font file is redistributed. The vector PDF and 300 dpi PNG have the same layout. `caption.md` provides the standalone figure caption. `tables/` holds complete results, `sources/` holds archived HTML/metadata, and `manifest.json` records scope, revision, date, fonts and package versions.
+The page is exactly A4 portrait, with compact vertical and horizontal gutters, unchanged plot heights, aligned plot baselines, a 14 pt title and 9 pt panel headings. The truncated Plasma palette provides a spectral colourbar-style progression: logarithmic count colours in B-D, a common year ramp in E-F, and fixed single/multicomponent colours in A. All text resolves to Helvetica, with regular/bold faces extracted from the system Helvetica collection for embedding; no proprietary font file is redistributed. The vector PDF and 300 dpi PNG share the same layout. `caption.md` provides the standalone caption. `tables/` holds complete results and source-specific provenance; `sources/` holds archived HTML/metadata. `manifest.json` records revision, date, count rules, font checks and package versions.

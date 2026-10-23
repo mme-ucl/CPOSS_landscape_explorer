@@ -1,246 +1,152 @@
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
-const defaults = require('../assets/visualization.js');
-const numeric = require('./fixtures/plot-numeric.json');
-const missing = require('./fixtures/plot-missing.json');
-const unsuitable = require('./fixtures/plot-unsuitable.json');
-const saved = require('./fixtures/plot-saved.json');
-const aspirin = require('../AspirinA.json');
-
-function fakeApp({ failPalette = false, failLoad = false } = {}) {
-    const app = {
-        async load(config, data) {
-            if (failLoad) throw new Error('Dataset failed to load');
-            let state = defaults.merge({ target: 'structure', map: { x: { property: 'Density' }, y: { property: 'Energy' }, color: { property: 'Energy', mode: 'linear', min: -40, max: -10, palette: 'inferno' }, size: { property: '', mode: 'linear', factor: 43 } }, structure: [{ supercell: [1, 1, 1], unitCell: false }] }, data.settings);
-            const listeners = [];
-            const calls = [];
+const v = require('../assets/visualization.js');
+const groups = require('../assets/spacegroups.js');
+const property = values => ({ target: 'structure', values });
+function dataset(values = [1, 2, 14, 230]) {
+    return { meta: { name: 'Scientific adapter fixture' }, structures: values.map(() => ({size:1,names:['H'],x:[0],y:[0],z:[0]})), properties: {
+        Density: property(values.map((_,i)=>1+i*.1)), 'Lattice Energy': property(values.map((_,i)=>-40+i*5)),
+        'Space Group': property(values), 'Experimental Info': property(values.map(()=>'')),
+    } };
+}
+function fakeApp() {
+    return {
+        async load(config, input) {
+            this.input = input;
+            let state = v.copy(input.settings);
+            const options = {
+                color:Object.fromEntries(Object.entries(state.map.color).map(([k,value])=>[k,{value}])),
+                size:Object.fromEntries(Object.entries(state.map.size).map(([k,value])=>[k,{value}])),
+                calculateColors(values) {
+                    const finite=values.filter(Number.isFinite);
+                    if(!finite.length)throw new Error('Native min/max: no finite values');
+                    return values.map(x=>Math.min(...finite)===Math.max(...finite)?.5:this.color.mode.value==='log'?Math.log10(x):x);
+                },
+                calculateSizes: values => values.map(x=>x), valueToColor: value=>String(value),
+            };
+            const map = {
+                _options:options,_computeLOD(){},_getNumericColors(){return options.calculateColors(input.properties[options.color.property.value].values).filter(x=>typeof x==='number');},
+            };
+            const callbacks=[];
             this.visualizer = {
-                calls,
-                saveSettings: () => defaults.copy(state),
-                dataset: () => defaults.copy(data),
-                onSettingChange: callback => listeners.push(callback),
-                applySettings(settings) {
-                    calls.push(defaults.copy(settings));
-                    if (failPalette && settings.map?.color?.palette === 'seismic') throw new Error('Unsupported palette');
-                    const patch = defaults.copy(settings);
-                    const color = patch.map?.color;
-                    if (color) {
-                        const propertyValues = name => {
-                            const values = data.properties[name]?.values || [1];
-                            return typeof values[0] === 'string' ? values.map(x => [...new Set(values)].indexOf(x)) : values;
-                        };
-                        const resetRange = () => {
-                            const values = propertyValues(state.map.color.property).map(x => state.map.color.mode === 'log' ? Math.log10(x) : x);
-                            state.map.color.min = Math.min(...values);
-                            state.map.color.max = Math.max(...values);
-                        };
-                        // Model the relevant native handler ordering, including mode
-                        // rejection on negative old data and crossing-range guards.
-                        for (const key of ['mode', 'property', 'min', 'max', 'palette']) {
-                            if (!Object.hasOwn(color, key)) continue;
-                            const value = color[key];
-                            if (key === 'mode') {
-                                if (value === 'log' && propertyValues(state.map.color.property).every(x => x < 0)) continue;
-                                state.map.color.mode = value;
-                                resetRange();
-                            } else if (key === 'property') {
-                                state.map.color.property = value;
-                                resetRange();
-                            } else if (key === 'min') {
-                                if (!(value > state.map.color.max)) state.map.color.min = value;
-                            } else if (key === 'max') {
-                                if (!(value < state.map.color.min)) state.map.color.max = value;
-                            } else state.map.color[key] = value;
-                        }
-                        delete patch.map.color;
-                    }
-                    state = defaults.merge(state, patch);
-                    for (const callback of listeners) callback(['map'], null);
+                map, dataset:()=>v.copy(input), saveSettings:()=>v.copy(state), onSettingChange:fn=>callbacks.push(fn),
+                applySettings(patch) {
+                    state = v.merge(state,patch);
+                    for(const part of ['color','size'])for(const[k,value]of Object.entries(state.map[part])){ options[part][k]??={};options[part][k].value=value; }
+                    callbacks.forEach(fn=>fn());
                 },
             };
-            // The real bundle removes this field from its input during loading.
-            if (data.settings) delete data.settings.map;
+            delete input.settings.map; // Native mutation must not affect source/preset.
         },
-        fetchAndLoad(data) { return this.load({}, data); },
-        loadStreaming(data) { return this.load({ loadStructure: () => {} }, data); },
+        fetchAndLoad(data){return this.load({},data);},loadStreaming(data){return this.load({loadStructure(){}},data);},
     };
-    return app;
 }
 
-test('default patch selects native log/seismic and flip-linear without changing axes or size factor', () => {
-    const before = defaults.copy(numeric);
-    const plan = defaults.buildSettings(numeric);
-    assert.deepEqual(plan.settings.map, {
-        color: { property: 'Space Group', mode: 'log', min: 0, max: 2.37, palette: 'seismic' },
-        size: { property: 'Experimental Info', mode: 'flip-linear' },
-    });
-    assert.deepEqual(plan.settings.structure[0].supercell, [3, 3, 3]);
-    assert.deepEqual(plan.warnings, []);
-    assert.deepEqual(numeric, before);
+test('one authoritative immutable global preset has the approved reference semantics',()=>{
+    assert.equal(v.PRESET.map.x.property,'Density');assert.equal(v.PRESET.map.y.property,'Lattice Energy');
+    assert.deepEqual(v.PRESET.map.color,{property:'Space Group Number',mode:'log',min:0,max:2.37,palette:'seismic'});
+    assert.deepEqual(v.PRESET.map.size,{property:'Experimental Info',mode:'flip-linear',factor:55});
+    assert.deepEqual(v.PRESET.structure,[{supercell:[3,3,3],unitCell:true}]);
+    assert.ok(Object.isFrozen(v.PRESET.map.color));
 });
-
-test('all dataset-loading entry points apply defaults after successful loading', async () => {
-    for (const method of ['load', 'fetchAndLoad', 'loadStreaming']) {
-        const app = fakeApp();
-        defaults.install(app);
-        if (method === 'load') await app.load({}, defaults.copy(numeric));
-        else await app[method](defaults.copy(numeric));
-        const actual = app.visualizer.saveSettings();
-        assert.equal(actual.map.color.mode, 'log', method);
-        assert.equal(actual.map.color.min, 0);
-        assert.equal(actual.map.color.max, 2.37);
-        assert.equal(actual.map.size.mode, 'flip-linear');
-        assert.equal(actual.map.size.factor, 43);
-        assert.equal(actual.map.x.property, 'Density');
-        assert.deepEqual(actual.structure[0].supercell, [3, 3, 3]);
+test('validated symbol aliases cover all 230 international groups, settings and overbars',()=>{
+    assert.deepEqual([...new Set(Object.values(groups.symbols))].sort((a,b)=>a-b),Array.from({length:230},(_,i)=>i+1));
+    for(const [name,number]of Object.entries(groups.symbols))assert.equal(v.spaceGroup(name).number,number,name);
+    for(const [name,number]of [['P 21/c',14],['P 1 21/c 1',14],['P2₁/c',14],['P 1̅',2],['I a -3 d',230],[' 14 ',14]])assert.equal(v.spaceGroup(name).number,number,name);
+    for(const invalid of [0,231,-1,'P?','not a group',null,'nan','',2.5])assert.ok(Number.isNaN(v.spaceGroup(invalid).number));
+});
+test('numeric strings, textual symbols and row order resolve to physical SG numbers',()=>{
+    const input=dataset(['14','P-1','Ia-3d','nan']);const before=v.copy(input),p=v.prepare(input);
+    assert.deepEqual(p.dataset.properties[p.settings.map.color.property].values,[14,2,230,NaN]);
+    assert.equal(p.diagnostics.spaceGroups.symbols,2);assert.equal(p.diagnostics.spaceGroups.unknown,1);
+    assert.deepEqual(input,before);assert.equal(p.dataset.structures,input.structures);
+});
+test('category reordering cannot alter an international group number',()=>{
+    const a=v.prepare(dataset(['P21/c','P-1','P1','Ia-3d']));const b=v.prepare(dataset(['Ia-3d','P1','P-1','P21/c']));
+    assert.deepEqual(a.dataset.properties[a.settings.map.color.property].values,b.dataset.properties[b.settings.map.color.property].values.slice().reverse());
+});
+test('conflicting supplied numbers and symbols are unknown, never silently guessed',()=>{
+    const input=dataset(['P21/c','P-1','P1','???']);input.properties['Space Group Number']=property([2,2,'nan',14]);
+    const p=v.prepare(input);assert.deepEqual(p.dataset.properties[p.settings.map.color.property].values,[NaN,2,1,14]);
+    assert.equal(p.diagnostics.spaceGroups.conflicts,1);
+});
+test('same-model axes prefer joint finite coverage with deterministic numeric model order',()=>{
+    const input=dataset();input.properties={
+        'Density (PBE+TS) 2 /gcm-3':property(['1','nan','3','4']),
+        'Lattice Energy (PBE+TS) 2 /kJmol-1':property(['-40','null','-20','-10']),
+        'Density 10 /gcm-3':property([1,2,3,4]),'Lattice Energy 10 /kJmol-1':property([-40,-30,-20,-10]),
+        'Density 3 /gcm-3':property([1,2,3,4]),'Lattice Energy 3 /kJmol-1':property([-40,-30,-20,-10]),
+    };
+    let p=v.prepare(input);assert.equal(p.diagnostics.axes.model,'3');assert.equal(p.diagnostics.axes.plotted,4);
+    input.properties['Density 3 /gcm-3'].values[0]=null;
+    p=v.prepare(input);assert.equal(p.diagnostics.axes.model,'10');
+    delete input.properties['Density 10 /gcm-3'];delete input.properties['Lattice Energy 10 /kJmol-1'];
+    p=v.prepare(input);assert.equal(p.diagnostics.axes.model,'2');assert.equal(p.diagnostics.axes.plotted,3);
+    assert.deepEqual(p.dataset.properties['Density (PBE+TS) 2 /gcm-3'].values,[1,NaN,3,4]);
+});
+test('axes recognize 2a, labels preceding/following models, units and never cross models',()=>{
+    const input=dataset();input.properties={ 'Density 2a /gcm-3':property([1,2,3,4]),'Lattice Energy 2a /kJmol-1':property([-4,-3,-2,-1]) };
+    assert.equal(v.prepare(input).diagnostics.axes.model,'2a');
+    delete input.properties['Lattice Energy 2a /kJmol-1'];input.properties['Lattice Energy 3 /kJmol-1']=property([-4,-3,-2,-1]);
+    const p=v.prepare(input);assert.equal(p.diagnostics.axes.model,null);assert.equal(p.diagnostics.axes.plotted,0);
+    assert.ok(p.dataset.properties[p.settings.map.x.property].values.every(Number.isNaN));
+});
+test('different named unnumbered models do not form a false pair',()=>{
+    const input=dataset();input.properties={'Density (model A) /gcm-3':property([1,2,3,4]),'Lattice Energy (model B) /kJmol-1':property([-4,-3,-2,-1])};
+    assert.equal(v.prepare(input).diagnostics.axes.model,null);
+});
+test('all missing markers remain unknown, missing axes omit rows without alignment shifts',()=>{
+    const input=dataset([NaN,null,'','N/A']);input.properties.Density.values=['1',null,'NaN','1.4'];
+    const p=v.prepare(input);assert.deepEqual(p.dataset.properties[p.settings.map.color.property].values,[NaN,NaN,NaN,NaN]);
+    assert.deepEqual(p.dataset.properties.Density.values,[1,NaN,NaN,1.4]);assert.equal(p.diagnostics.axes.missing,2);
+    assert.equal(p.settings.map.color.property,'Space Group Number');assert.equal(p.settings.map.color.max,2.37);
+    assert.match(v.describe(p).join(' '),/2 of 4 structures cannot be plotted/);
+});
+test('missing properties retain the same scientific style with grey SG and unavailable axes',()=>{
+    const input=dataset();input.properties={Filename:property(['a','b','c','d'])};const p=v.prepare(input);
+    assert.equal(p.settings.map.color.mode,'log');assert.equal(p.settings.map.size.mode,'flip-linear');
+    assert.equal(p.diagnostics.spaceGroups.unknown,4);assert.equal(p.diagnostics.axes.plotted,0);
+    assert.match(v.describe(p).join(' '),/scientific plot is empty/);
+});
+test('experimental descriptions retain labels and use deterministic presence scoring',()=>{
+    const input=dataset();input.properties['Experimental Info']=property(['KNOWN FORM','','Another form','nan']);
+    const p=v.prepare(input);assert.deepEqual(p.dataset.properties['Experimental Info'].values,input.properties['Experimental Info'].values);
+    assert.deepEqual(p.dataset.properties[p.settings.map.size.property].values,[0,1,0,1]);
+    assert.equal(p.diagnostics.experimentalInfo.policy,'annotation-presence');assert.equal(p.settings.map.size.factor,55);
+    assert.equal(v.prepare(dataset()).dataset.properties['Experimental Info (size)'].values.every(x=>x===1),true);
+});
+test('numeric experimental values preserve measurements; missing sizes stay NaN',()=>{
+    const input=dataset();input.properties['Experimental Info']=property(['0','2',null,'3']);const p=v.prepare(input);
+    assert.equal(p.settings.map.size.property,'Experimental Info');assert.deepEqual(p.dataset.properties['Experimental Info'].values,[0,2,NaN,3]);
+    assert.equal(p.diagnostics.experimentalInfo.policy,'numeric');
+});
+test('shared load paths enforce global style over embedded settings and preserve original exports',async()=>{
+    for(const method of ['load','fetchAndLoad','loadStreaming']){
+        const input=dataset(['14','nan','P-1',2]);input.settings={map:{x:{property:'Filename'},color:{mode:'linear',palette:'viridis'},size:{factor:99}},structure:[{supercell:[1,1,1]}]};
+        const before=v.copy(input),app=fakeApp();v.install(app);
+        if(method==='load')await app.load({},input);else await app[method](input);
+        const settings=app.visualizer.saveSettings();assert.equal(settings.map.x.property,'Density');assert.equal(settings.map.color.mode,'log');assert.equal(settings.map.color.palette,'seismic');assert.equal(settings.map.size.factor,55);assert.deepEqual(settings.structure[0].supercell,[3,3,3]);
+        assert.deepEqual(app.visualizer.dataset().properties,before.properties);assert.deepEqual(app.visualizer.dataset().settings,before.settings);assert.deepEqual(input,before);
+        app.visualizer.applySettings({map:{color:{mode:'linear',palette:'viridis'},size:{factor:72}}});await Promise.resolve();
+        assert.equal(app.visualizer.saveSettings().map.size.factor,72);assert.equal(app.visualizer.saveSettings().map.color.palette,'viridis');
     }
 });
-
-test('saved settings win and survive the native loader deleting settings.map', async () => {
-    const data = defaults.copy(saved);
-    const before = defaults.copy(data);
-    const app = fakeApp();
-    defaults.install(app);
-    await app.load({}, data);
-    const actual = app.visualizer.saveSettings();
-    assert.deepEqual(actual.map.color, saved.settings.map.color);
-    assert.deepEqual(actual.map.size, saved.settings.map.size);
-    assert.equal(actual.map.x.property, 'Energy');
-    assert.deepEqual(actual.structure[0].supercell, [2, 1, 1]);
-    assert.deepEqual(data, before);
+test('constant SG receives log10(number) exactly once, and unknowns stay grey',async()=>{
+    const app=fakeApp();v.install(app);await app.load({},dataset([14,14,NaN,14]));
+    const options=app.visualizer.map._options;
+    assert.deepEqual(options.calculateColors([14,14,NaN,14]),[Math.log10(14),Math.log10(14),v.GREY,Math.log10(14)]);
+    assert.deepEqual(options.calculateColors([NaN,NaN]),[v.GREY,v.GREY]);
+    assert.equal(options.valueToColor(NaN,0,2.37),v.GREY);
 });
-
-test('partial explicit settings preserve their size factor and the other defaults', () => {
-    const plan = defaults.buildSettings(numeric, { map: { size: { factor: 72 } }, structure: [{ atoms: false }] });
-    assert.equal(plan.settings.map.size.factor, 72);
-    assert.equal(plan.settings.map.size.mode, 'flip-linear');
-    assert.deepEqual(plan.settings.structure[0].supercell, [3, 3, 3]);
-    assert.equal(plan.settings.structure[0].atoms, false);
-    assert.deepEqual(defaults.buildSettings(numeric, { structure: [] }).settings.structure[0].supercell, [3, 3, 3]);
+test('all-unknown colour extent is only a native validation aid, never a replacement data row',async()=>{
+    const app=fakeApp();v.install(app);await app.load({},dataset([NaN,NaN,NaN,NaN]));
+    assert.deepEqual(app.visualizer.map._getNumericColors(),[0,2.37]);assert.equal(app.input.properties['Space Group Number'].values.length,4);
+    assert.ok(app.input.properties['Space Group Number'].values.every(Number.isNaN));
 });
-
-test('missing and unsuitable properties retain usable native controls with clear warnings', async () => {
-    const messages = [];
-    const app = fakeApp();
-    defaults.install(app, value => messages.push(value));
-    await app.load({}, missing);
-    assert.equal(app.visualizer.saveSettings().map.color.property, 'Energy');
-    assert.equal(app.visualizer.saveSettings().map.size.property, '');
-    assert.equal(messages.at(-1).length, 2);
-    const plan = defaults.buildSettings(unsuitable);
-    assert.equal(plan.settings.map.color, undefined);
-    assert.equal(plan.settings.map.size.mode, 'flip-linear');
-    assert.match(plan.warnings[0], /non-positive/);
-    assert.match(defaults.describe(unsuitable, plan.settings).join(' '), /uniform point size/);
+test('nonstandard NaN parser preserves literal strings, escaped quotes and row alignment',()=>{
+    const parsed=v.parseJSON('{"values":[NaN,"NaN","a\\\"NaN",null,"nan"]}');
+    assert.deepEqual(parsed.values,[NaN,'NaN','a"NaN',null,'nan']);
 });
-
-test('categorical properties keep their original values and explain native category indices', () => {
-    const data = defaults.copy(aspirin);
-    const before = defaults.copy(data);
-    const plan = defaults.buildSettings(data);
-    assert.equal(plan.settings.map.color.mode, 'log');
-    assert.equal(plan.settings.map.size.mode, 'flip-linear');
-    const description = defaults.describe(data, plan.settings).join(' ');
-    assert.match(description, /not physical space-group numbers/);
-    assert.match(description, /log10\(0\)/);
-    assert.match(description, /not numeric measurements/);
-    assert.deepEqual(data, before);
-    const tooMany = defaults.copy(numeric);
-    tooMany.properties['Space Group'].values = Array.from({ length: 22 }, (_, i) => 'category-' + i);
-    assert.equal(defaults.buildSettings(tooMany).settings.map.color, undefined);
-});
-
-test('current numeric Space Group Number field is an explicit fallback without modifying properties', () => {
-    const data = defaults.copy(numeric);
-    data.properties['Space Group Number'] = data.properties['Space Group'];
-    delete data.properties['Space Group'];
-    const before = defaults.copy(data);
-    const plan = defaults.buildSettings(data);
-    assert.equal(plan.settings.map.color.property, 'Space Group Number');
-    assert.equal(plan.settings.map.color.mode, 'log');
-    assert.match(defaults.describe(data, plan.settings).join(' '), /No space-group numbers are inferred/);
-    assert.deepEqual(data, before);
-    data.properties['Space Group'] = { target: 'structure', values: ['P1', 'P2', 'P3', 'P4'] };
-    assert.equal(defaults.buildSettings(data).settings.map.color.property, 'Space Group');
-});
-
-test('numeric missing markers load as NaN without changing the source, row indices, or saved export', async () => {
-    const data = defaults.copy(numeric);
-    data.properties['Space Group Number'] = { target: 'structure', values: [1, 'nan', 100, 230] };
-    delete data.properties['Space Group'];
-    data.properties.Density.values[1] = NaN;
-    const before = defaults.copy(data);
-    const prepared = defaults.prepare(data);
-    assert.ok(Number.isNaN(prepared.dataset.properties['Space Group Number'].values[1]));
-    assert.equal(prepared.dataset.structures, data.structures);
-    assert.deepEqual(data, before);
-    const app = fakeApp();
-    const reports = [];
-    defaults.install(app, report => reports.push(report));
-    await app.load({}, data);
-    assert.equal(app.visualizer.saveSettings().map.color.property, 'Space Group Number');
-    assert.equal(app.visualizer.saveSettings().map.color.mode, 'log');
-    assert.equal(app.visualizer.saveSettings().map.color.max, 2.37);
-    assert.match(reports.at(-1).join(' '), /1 of 4 structures cannot be plotted/);
-    assert.match(reports.at(-1).join(' '), /1 missing space-group value appears grey/);
-    assert.deepEqual(app.visualizer.dataset().properties, before.properties);
-    assert.deepEqual(data, before);
-    app.visualizer.applySettings({ map: { x: { property: 'Experimental Info' } } });
-    await Promise.resolve();
-    assert.doesNotMatch(reports.at(-1).join(' '), /cannot be plotted/);
-});
-
-test('missing-marker handling leaves text categories and unrecognized mixed strings untouched', () => {
-    const data = defaults.copy(numeric);
-    data.properties['Space Group'].values = [1, 'P21/c', 100, 230];
-    data.properties['Experimental Info'].values = ['nan', 'known', '', 'nan'];
-    const prepared = defaults.prepare(data);
-    assert.equal(prepared.dataset.properties['Space Group'], data.properties['Space Group']);
-    assert.equal(prepared.dataset.properties['Experimental Info'], data.properties['Experimental Info']);
-    assert.equal(prepared.warnings.length, 0);
-    data.properties['Experimental Info'].values = [0, NaN, 2, 3];
-    assert.equal(defaults.buildSettings(data).settings.map.size, undefined);
-    data.properties['Space Group'].values = [NaN, NaN, NaN, NaN];
-    assert.equal(defaults.buildSettings(data).settings.map.color, undefined);
-});
-
-test('later explicit settings and user changes are reported without reapplying defaults', async () => {
-    const app = fakeApp();
-    defaults.install(app);
-    await app.load({}, defaults.copy(numeric));
-    app.visualizer.applySettings(saved.settings);
-    const calls = app.visualizer.calls.length;
-    await Promise.resolve();
-    assert.equal(app.visualizer.calls.length, calls);
-    assert.equal(app.visualizer.saveSettings().map.color.palette, 'viridis');
-    assert.equal(app.visualizer.saveSettings().map.size.factor, 65);
-});
-
-test('valid explicit colour bounds above the data range are not reset by native range guards', async () => {
-    const app = fakeApp();
-    defaults.install(app);
-    const data = { ...defaults.copy(numeric), settings: { map: { color: { min: 100, max: 200 } } } };
-    await app.load({}, data);
-    assert.equal(app.visualizer.saveSettings().map.color.min, 100);
-    assert.equal(app.visualizer.saveSettings().map.color.max, 200);
-    app.visualizer.applySettings({ map: { color: { min: 300, max: 400 } } });
-    assert.equal(app.visualizer.saveSettings().map.color.min, 300);
-    assert.equal(app.visualizer.saveSettings().map.color.max, 400);
-    app.visualizer.applySettings({ map: { color: { min: 0, max: 2.37 } } });
-    assert.equal(app.visualizer.saveSettings().map.color.min, 0);
-    assert.equal(app.visualizer.saveSettings().map.color.max, 2.37);
-});
-
-test('a failed default application restores the loaded visualization; failed loads do not apply defaults', async () => {
-    const reports = [];
-    const app = fakeApp({ failPalette: true });
-    defaults.install(app, report => reports.push(report));
-    await app.load({}, defaults.copy(numeric));
-    assert.equal(app.visualizer.saveSettings().map.color.property, 'Energy');
-    assert.equal(app.visualizer.saveSettings().map.color.mode, 'linear');
-    assert.match(reports.at(-1).join(' '), /loaded visualization was retained/);
-    const failed = fakeApp({ failLoad: true });
-    defaults.install(failed);
-    await assert.rejects(failed.load({}, numeric), /Dataset failed to load/);
-    assert.equal(failed.visualizer, undefined);
+test('unsupported native colour API fails visibly instead of loading a wrong-colour fallback',()=>{
+    assert.throws(()=>v.patchNativeMap({},v.prepare(dataset())),/Unsupported Chemiscope/);
 });

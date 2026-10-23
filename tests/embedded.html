@@ -23,10 +23,10 @@
   async function render() {
     navigatorHtml ??= await (await fetch('../index.html')).text();
     const kind = document.getElementById('fixture').value;
-    const dataset = await (await fetch('fixtures/plot-' + kind + '.json')).json();
+    const raw = await (await fetch('fixtures/plot-' + kind + '.json')).text();
     const base = new URL('../', location.href).href;
     const embedded = '<script id="standalone-json-data" type="application/json">'
-      + JSON.stringify(dataset).replace(/</g, '\\u003c') + '</scr' + 'ipt>';
+      + raw.replace(/</g, '\\u003c') + '</scr' + 'ipt>';
     document.getElementById('embedded-navigator').srcdoc = navigatorHtml
       .replace('<head>', '<head><base href="' + base + '">')
       .replace('<body>', '<body>' + embedded);

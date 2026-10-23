@@ -1,10 +1,16 @@
 """Meaningful checks for chemical arithmetic, scope, dates and references."""
 import json
+import io
+from pathlib import Path
+import tempfile
 import unittest
+import zipfile
 
 from analyse import (git_sha, parse_formula, paper_key, reference,
                      resolve_publication_crossrefs, scientists, study_year,
                      summarise_json)
+from count_structure_archives import inspect_archive
+from reconcile_structure_counts import inspect_workbook
 
 
 class MetadataRules(unittest.TestCase):
@@ -65,6 +71,43 @@ class MetadataRules(unittest.TestCase):
         self.assertEqual(result["duplicate_filename_count"], 1)
         with self.assertRaises(ValueError):
             summarise_json(raw, "sample.json", "wrong-hash")
+
+
+class CoordinateCountingRules(unittest.TestCase):
+    def test_coordinate_archives_exclude_resource_forks_and_alternate_formats(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "coordinates.zip"
+            with zipfile.ZipFile(path, "w") as archive:
+                for name in ["model/a.res", "model/b.RES", "model/a.cif", "__MACOSX/model/._a.res", "model/._b.RES", "notes.xlsx"]:
+                    archive.writestr(name, "example")
+            result = inspect_archive(path)
+            self.assertEqual(result["coordinate_files"], 2)
+            self.assertEqual(result["primary_format"], ".res")
+            self.assertEqual(result["cif_files"], 1)
+            self.assertEqual(result["excluded_macos_members"], 2)
+
+    def test_missing_coordinates_are_not_zero(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "empty.zip"
+            with zipfile.ZipFile(path, "w") as archive:
+                archive.writestr("description.txt", "no coordinates")
+            result = inspect_archive(path)
+            self.assertIsNone(result["coordinate_files"])
+            self.assertEqual(result["status"], "missing")
+
+    def test_workbook_count_uses_actual_rows_and_numeric_energy_cells(self):
+        stream = io.BytesIO()
+        with zipfile.ZipFile(stream, "w") as workbook:
+            workbook.writestr("xl/workbook.xml", '<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="data" sheetId="1" r:id="rId1"/></sheets></workbook>')
+            workbook.writestr("xl/_rels/workbook.xml.rels", '<Relationships><Relationship Id="rId1" Target="worksheets/sheet1.xml"/></Relationships>')
+            workbook.writestr("xl/worksheets/sheet1.xml", '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"><dimension ref="A1:C1000000"/><sheetData><row><c r="A1" t="inlineStr"><is><t>Filename</t></is></c><c r="B1" t="inlineStr"><is><t>Lattice Energy 1 /kJmol-1</t></is></c><c r="C1" t="inlineStr"><is><t>Lattice Energy /kJmol-1</t></is></c></row><row><c r="A2" t="inlineStr"><is><t>same</t></is></c><c r="B2"><v>-100</v></c><c r="C2"><v>-50</v></c></row><row><c r="A3" t="inlineStr"><is><t>same</t></is></c><c r="B3"><v>0</v></c></row><row><c r="A4" t="inlineStr"><is><t>missing</t></is></c></row></sheetData></worksheet>')
+        summary, identifiers = inspect_workbook(stream.getvalue())
+        sheet = summary["sheets"][0]
+        self.assertEqual(summary["structure_rows_all_sheets"], 3)
+        self.assertEqual(identifiers, {"same", "missing"})
+        self.assertEqual(sheet["rows_with_any_numeric_lattice_energy"], 2)
+        self.assertEqual(sum(v["records"] for v in sheet["energy_column_numeric_counts"].values()), 3)
+        self.assertEqual(sheet["energy_column_numeric_counts"]["Lattice Energy 1 /kJmol-1"]["zero_energy_records"], 1)
 
 
 if __name__ == "__main__":

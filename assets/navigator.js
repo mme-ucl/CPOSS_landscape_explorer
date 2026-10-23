@@ -2,7 +2,7 @@
     'use strict';
     const catalogueTools = window.CpossCatalogue;
     const byId = id => document.getElementById(id);
-    const state = { datasets: [], archiveContents: {}, matches: [], active: -1, current: null, page: null, loading: false, preview: false };
+    const state = { datasets: [], archiveContents: {}, matches: [], active: -1, current: null, page: null, loading: false, preview: false, initialSettingsIgnored: false };
     let app;
 
     function resizeViewer() {
@@ -144,10 +144,6 @@
         if (archives.length === 1) {
             const item = archives[0];
             container.appendChild(archiveLink(item));
-            const context = document.createElement('span');
-            context.className = 'cposs-download-context';
-            context.textContent = item.context;
-            container.appendChild(context);
         } else if (archives.length > 1) {
             const details = document.createElement('details');
             details.className = 'cposs-download-choices';
@@ -210,14 +206,10 @@
         byId('cposs-load-status').textContent = `Loading ${filenameLabel(url)}…`;
         renderResults();
         try {
-            let settings;
-            if (settingsUrl) {
-                const response = await fetch(catalogueTools.externalDataUrl(settingsUrl));
-                if (!response.ok) throw new Error('Unable to load the shared visualization settings.');
-                settings = await response.json();
-            }
+            // Every initial load uses the scientific preset. A deliberate import
+            // through Load / save after loading remains available.
+            state.initialSettingsIgnored = Boolean(settingsUrl);
             await app.fetchAndLoad(catalogueTools.externalDataUrl(url), {});
-            if (settings) app.visualizer.applySettings(settings);
             setCurrent(url, filenameLabel(url));
             if (updateUrl) {
                 const pageUrl = new URL(location.href);
@@ -230,6 +222,7 @@
             setPage(null);
             byId('cposs-dataset-name').textContent = 'No dataset loaded';
             byId('visualization-notice').hidden = true;
+            byId('dataset-notes').hidden = true;
             displayError(error);
             byId('cposs-load-status').textContent = 'Unable to load dataset. Choose another result or try again.';
         } finally {
@@ -338,13 +331,16 @@
         app = new Chemiscope.ChemiscopeApp('chemiscope-container');
         window.CpossVisualization.install(app, messages => {
             const notice = byId('visualization-notice');
+            if (state.initialSettingsIgnored) messages = [...messages, 'Shared URL settings were superseded by the global preset. Import settings after loading to apply them deliberately.'];
             notice.textContent = messages.join(' ');
             notice.hidden = messages.length === 0;
+            byId('dataset-notes').hidden = messages.length === 0;
         });
         // Keep Chemiscope's file/streaming loader and settings UI; update metadata only
         // after a local dataset has successfully loaded, without matching by filename.
         const originalLoad = app.load.bind(app);
         app.load = async function (...args) {
+            if (!state.loading) state.initialSettingsIgnored = false;
             const result = await originalLoad(...args);
             if (!state.loading) {
                 const url = new URL(location.href);
@@ -375,9 +371,10 @@
         }
         const embedded = byId('standalone-json-data');
         const url = new URL(location.href);
+        state.initialSettingsIgnored = url.searchParams.has('settings');
         if (embedded) {
             if (embedded.textContent.trim()) {
-                const data = JSON.parse(embedded.textContent.replace(/\bNaN\b/g, '"***NaN***"'), (_, value) => value === '***NaN***' ? NaN : value);
+                const data = window.CpossVisualization.parseJSON(embedded.textContent);
                 state.loading = true;
                 try {
                     await app.load({}, data);
@@ -387,8 +384,7 @@
         } else if (url.searchParams.has('load')) {
             await loadUrl(url.searchParams.get('load'), { settingsUrl: url.searchParams.get('settings') });
         } else if (catalogue) {
-            // The alphabetically first source has no space-group property.
-            // Start with a small example that supports the full default style.
+            // A small startup example; the same preset is used for every source.
             const initial = catalogue.datasets.find(item => item.id === 'AspirinA') || catalogue.datasets[0];
             await loadUrl(initial.url, { settingsUrl: url.searchParams.get('settings') });
         } else {

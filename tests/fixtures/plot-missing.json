@@ -126,6 +126,15 @@
         -20,
         -10
       ]
+    },
+    "Lattice Energy": {
+      "target": "structure",
+      "values": [
+        -40,
+        -30,
+        -20,
+        -10
+      ]
     }
   }
 }

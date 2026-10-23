@@ -32,17 +32,18 @@ header.cposs-header { height: auto; background: #fff; position: relative; z-inde
 .cposs-eyebrow { color: #72687e; font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; display: block; }
 #cposs-dataset-name { font-size: .93rem; overflow-wrap: anywhere; }
 #cposs-load-status { font-size: .78rem; color: #625b6b; margin: 0; }
-.cposs-visualization-notice { margin: 0; padding: .45rem 1.2rem; background: #f6f4f9; color: #625b6b; font-size: .77rem; border-bottom: 1px solid #e4dfeb; }
+.cposs-dataset-notes { margin-bottom: 1rem; color: #625b6b; font-size: .8rem; }
+.cposs-dataset-notes summary { cursor: pointer; }
+.cposs-dataset-notes p { margin: .5rem 0 0; }
 .cposs-page-actions { display: flex; flex-direction: column; align-items: stretch; gap: .4rem; max-width: 100%; font-size: .78rem; }
 .cposs-page-actions select { max-width: 240px; }
-.cposs-downloads { display: grid; grid-template-columns: minmax(0, max-content) auto; align-items: center; gap: .4rem .8rem; min-width: 0; max-width: 100%; font-size: .78rem; }
+.cposs-downloads { display: grid; grid-template-columns: minmax(0, max-content); align-items: center; gap: .4rem; min-width: 0; max-width: 100%; font-size: .78rem; }
 .cposs-downloads > .cposs-action-button, .cposs-download-choices { grid-column: 1; }
-.cposs-download-context { grid-column: 2; grid-row: 1; }
 .cposs-download-unavailable { grid-column: 1 / -1; }
 .cposs-action-button { background: #59317b; color: white; border: 1px solid #59317b; font-size: .78rem; font-weight: 400; text-decoration: none; }
 .cposs-action-button:hover, .cposs-action-button:focus-visible { background: #482564; border-color: #482564; color: white; }
 .cposs-downloads :focus-visible { outline: 3px solid #9865c7; outline-offset: 2px; }
-.cposs-download-context, .cposs-download-unavailable { color: #72687e; }
+.cposs-download-unavailable { color: #72687e; }
 .cposs-download-choices { position: relative; }
 .cposs-download-choices summary { display: list-item; list-style-position: inside; cursor: pointer; }
 .cposs-download-choices ul { position: absolute; z-index: 40; top: 100%; right: 0; width: min(470px, calc(100vw - 2.4rem)); padding: .4rem; margin: .25rem 0 0; background: white; border: 1px solid #bdb5c8; border-radius: .3rem; box-shadow: 0 8px 30px #24113226; max-height: 48vh; overflow: auto; list-style: none; }

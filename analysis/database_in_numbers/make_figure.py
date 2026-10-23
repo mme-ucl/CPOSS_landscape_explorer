@@ -14,7 +14,7 @@ os.environ.setdefault("MPLCONFIGDIR", "/tmp/cposs-matplotlib")
 import matplotlib
 matplotlib.use("Agg")
 from matplotlib import font_manager, pyplot as plt
-from matplotlib.collections import LineCollection, PolyCollection
+from matplotlib.collections import LineCollection
 from matplotlib.colors import LinearSegmentedColormap, LogNorm, Normalize, to_hex
 from matplotlib.patches import Rectangle
 from matplotlib.text import Text
@@ -26,9 +26,10 @@ INK = "#172F3D"
 MUTED = "#566974"
 GRID = "#DCE4E8"
 LIGHT = "#F6F7F7"
-# Spectral-inspired anchors, with a darker gold centre for white-page legibility.
-SPECTRAL_ANCHORS = ["#5e4fa2", "#3288bd", "#4ca88b", "#c8ac4c", "#ed814c", "#c62f4c"]
-SPECTRAL = LinearSegmentedColormap.from_list("CPOSS_Spectral", SPECTRAL_ANCHORS, N=256)
+# Plasma, truncated before the pale yellow end for white-page legibility.
+# (Names keep the SPECTRAL prefix to avoid touching every call site.)
+SPECTRAL_ANCHORS = [to_hex(c) for c in plt.get_cmap("plasma")(np.linspace(0.0, 0.88, 6))]
+SPECTRAL = LinearSegmentedColormap.from_list("CPOSS_Plasma", SPECTRAL_ANCHORS, N=256)
 COOL = SPECTRAL_ANCHORS[1]
 WARM = SPECTRAL_ANCHORS[-1]
 
@@ -41,19 +42,24 @@ def count_colors(values):
 def spectral_line(ax, x, y, color_values, norm, *, step=False, baseline=0, fill_alpha=0.15, linewidth=1.4):
     """Vector line and area with a continuous, explicitly defined colour ramp."""
     x, y, color_values = (np.asarray(v, dtype=float) for v in (x, y, color_values))
-    segments, segment_values, polygons, polygon_values = [], [], [], []
+    segments, segment_values, vertices, triangles, fill_values = [], [], [], [], []
     for i in range(len(x) - 1):
         if step:
             segments.extend([[(x[i], y[i]), (x[i + 1], y[i])], [(x[i + 1], y[i]), (x[i + 1], y[i + 1])]])
             segment_values.extend([color_values[i], color_values[i + 1]])
-            polygons.append([(x[i], baseline), (x[i], y[i]), (x[i + 1], y[i]), (x[i + 1], baseline)])
-            polygon_values.append(color_values[i])
         else:
             segments.append([(x[i], y[i]), (x[i + 1], y[i + 1])])
             segment_values.append((color_values[i] + color_values[i + 1]) / 2)
-            polygons.append([(x[i], baseline), (x[i], y[i]), (x[i + 1], y[i + 1]), (x[i + 1], baseline)])
-            polygon_values.append(segment_values[-1])
-    ax.add_collection(PolyCollection(polygons, facecolors=SPECTRAL(norm(polygon_values)), edgecolors="none", alpha=fill_alpha, zorder=1))
+        offset = len(vertices)
+        vertices.extend([(x[i], baseline), (x[i], y[i]), (x[i + 1], baseline), (x[i + 1], y[i] if step else y[i + 1])])
+        triangles.extend([(offset, offset + 2, offset + 1), (offset + 1, offset + 2, offset + 3)])
+        fill_values.extend([color_values[i], color_values[i], color_values[i + 1], color_values[i + 1]])
+    # Preblend against the white page. Opaque PDF Gouraud shading avoids the
+    # transparency-mask stitching artefacts of adjacent gradient triangles.
+    vertices = np.asarray(vertices)
+    pale_colors = (1 - fill_alpha) + fill_alpha * SPECTRAL(np.linspace(0, 1, 256))[:, :3]
+    pale_map = LinearSegmentedColormap.from_list("CPOSS_Spectral_pale", pale_colors, N=256)
+    ax.tripcolor(vertices[:, 0], vertices[:, 1], np.asarray(triangles), np.asarray(fill_values), shading="gouraud", cmap=pale_map, norm=norm, alpha=1, zorder=0.1)
     line = LineCollection(segments, cmap=SPECTRAL, norm=norm, linewidths=linewidth, zorder=3)
     line.set_array(np.asarray(segment_values))
     ax.add_collection(line)
@@ -119,6 +125,25 @@ def make_figure(base, font_path):
     papers = pd.read_csv(table_dir / "papers.csv")
     relations = pd.read_csv(table_dir / "dataset_papers.csv")
     manifest = json.loads((base / "manifest.json").read_text())
+    archive_audit = json.loads((base / "sources/structure_archive_counts.json").read_text())
+    workbook_audit = json.loads((base / "sources/structure_count_reconciliation.json").read_text())
+    if any(audit["snapshot_revision"] != manifest["snapshot_revision"] for audit in [archive_audit, workbook_audit]):
+        raise ValueError("Count audits use another revision; rerun reconcile_structure_counts.py and count_structure_archives.py")
+    archives = pd.read_csv(table_dir / "dataset_archive_counts.csv")
+    workbook_counts = pd.read_csv(table_dir / "structure_count_reconciliation.csv")
+    if set(archives.dataset_id) != set(df.dataset_id) or not archives.complete.all():
+        raise ValueError("Every dataset must have a complete archive count before publishing the figure")
+    # Preserve the original JSON measurements in datasets.csv and this plot view.
+    # Figure counts now come from the complete, checksum-verified model archives.
+    df = df.rename(columns={"structure_count": "visualization_structure_count", "structure_count_status": "visualization_structure_count_status", "structure_count_definition": "visualization_structure_count_definition"})
+    df = df.merge(archives, on="dataset_id", validate="one_to_one").merge(
+        workbook_counts[["dataset_id", "workbook_rows", "rows_with_any_model_energy", "structure_model_records", "workbook_url"]],
+        on="dataset_id", validate="one_to_one")
+    df["structure_count"] = df.archive_coordinate_files
+    df["structure_count_status"] = "calculated"
+    df["structure_count_definition"] = "RES coordinate members in documented energy-model ZIP archives; separate models retained; MacOS resource forks excluded; no geometric deduplication"
+    df["structure_count_source_urls"] = df.archive_urls
+    df.to_csv(table_dir / "plot_datasets.csv", index=False)
     font_info = helvetica(font_path)
     n = len(df)
     known = df[df.structure_count.notna()].copy()
@@ -130,6 +155,7 @@ def make_figure(base, font_path):
     years = list(range(int(annual.year.min()), int(annual.year.max()) + 1))
     annual = annual.set_index("year").reindex(years).fillna(0).rename_axis("year").reset_index()
     annual["cumulative_datasets"] = annual.landscapes.cumsum().astype(int)
+    annual["archive_structure_files"] = annual.structures.astype(int)
     annual.to_csv(table_dir / "annual_counts.csv", index=False)
     csp_ids = set(relations.loc[relations.relation == "csp_study", "paper_id"])
     csp_papers = papers[papers.paper_id.isin(csp_ids) & papers.is_paper].copy()
@@ -151,7 +177,7 @@ def make_figure(base, font_path):
     strip_width, strip_height = 0.866 * strip_scale, 0.059 * strip_scale
     strip_left, strip_bottom = (1 - strip_width) / 2, 0.900
     fig.add_artist(Rectangle((strip_left, strip_bottom), strip_width, strip_height, facecolor=LIGHT, edgecolor="none", transform=fig.transFigure, zorder=-1))
-    stats = [(f"{n:,}", "CSP datasets"), (f"{total:,}", "stored structure entries"), (str(len(contributors)), "named scientists"), (str(len(csp_papers)), "unique CSP papers")]
+    stats = [(f"{n:,}", "CSP datasets"), (f"{total:,}", "archived structure files"), (str(len(contributors)), "named scientists"), (str(len(csp_papers)), "unique CSP papers")]
     for i, (value, label) in enumerate(stats):
         x = strip_left + (i + 0.5) * strip_width / 4
         fig.text(x, strip_bottom + strip_height - 0.006, value, fontsize=20 * strip_scale, weight="bold", color=INK, ha="center", va="top")
@@ -180,21 +206,21 @@ def make_figure(base, font_path):
     axa.legend(loc="upper left", frameon=False, fontsize=6.4, borderpad=0, labelspacing=0.5, handletextpad=0.3)
     tidy(axa)
 
-    # B: every linked array, ranked rather than unreadable individual labels.
+    # B: complete energy-model archive counts, aggregated by documented search.
     panel(fig, rects[1], "B", "Structures per dataset")
     axb = fig.add_axes([0.588, 0.646, 0.315, 0.218])
     ranked = known.sort_values("structure_count", ascending=False).reset_index(drop=True)
-    ranked[["dataset_id", "structure_count", "source_url", "json_url"]].assign(rank=np.arange(1, len(ranked) + 1)).to_csv(table_dir / "structure_count_ranking.csv", index=False)
+    ranked[["dataset_id", "structure_count", "structure_count_definition", "structure_count_source_urls", "source_url", "visualization_structure_count", "workbook_rows", "structure_model_records"]].assign(rank=np.arange(1, len(ranked) + 1)).to_csv(table_dir / "structure_count_ranking.csv", index=False)
     xx = np.arange(1, len(ranked) + 1)
     spectral_line(axb, xx, ranked.structure_count, ranked.structure_count, LogNorm(vmin=ranked.structure_count.min(), vmax=ranked.structure_count.max()), baseline=8, fill_alpha=0.17)
     axb.set_yscale("log")
-    axb.set_ylim(8, 3500)
-    axb.set_yticks([10, 100, 1000], ["10", "100", "1,000"])
+    axb.set_ylim(8, ranked.structure_count.max() * 1.4)
+    axb.set_yticks([10, 100, 1000, 10000], ["10", "100", "1,000", "10,000"])
     axb.minorticks_off()
     axb.set_xlim(1, len(ranked))
     axb.set_xticks([1, 100, 200, len(ranked)])
     axb.set_xlabel("Dataset rank (largest first)", labelpad=3)
-    axb.set_ylabel("Structure entries (log scale)", labelpad=3)
+    axb.set_ylabel("Structure files (log scale)", labelpad=3)
     median = float(known.structure_count.median())
     axb.text(0.97, 0.92, f"Median {median:,.0f}", transform=axb.transAxes, ha="right", fontsize=7.1, color=MUTED)
     tidy(axb)
@@ -242,7 +268,7 @@ def make_figure(base, font_path):
     tidy(axe)
     axe2 = axe.twinx()
     axe2.plot(annual.year, annual.structures / 1000, color=INK, marker="o", markersize=2.5, linewidth=1.2)
-    axe2.set_ylabel("Structure entries\n(thousands)", color=INK, labelpad=3, fontsize=7.0)
+    axe2.set_ylabel("Structure files\n(thousands)", color=INK, labelpad=3, fontsize=7.0)
     axe2.spines[["top", "left"]].set_visible(False)
     axe2.tick_params(axis="y", labelsize=7, length=2.5, width=0.5)
     axe2.set_ylim(bottom=0)
@@ -257,7 +283,7 @@ def make_figure(base, font_path):
     tidy(axec)
     not_assigned = int(df[df.study_year.isna()].structure_count.sum())
     fig.text(0.085, 0.045, f"{n - len(dated)} searches with ranges / pre-2010 dates excluded from annual bins;", fontsize=6.1, color=MUTED)
-    fig.text(0.085, 0.034, f"{not_assigned:,} stored structure entries have no single study year.", fontsize=6.1, color=MUTED)
+    fig.text(0.085, 0.034, f"{not_assigned:,} archived structure files have no single study year.", fontsize=6.1, color=MUTED)
 
     # F: retain only cumulative unique CSP papers.
     panel(fig, rects[5], "F", "The linked literature")
@@ -303,26 +329,31 @@ def make_figure(base, font_path):
     font_info["all_figure_text_families"] = sorted(actual_fonts)
     font_info["text_outside_page"] = outside
     manifest["font_verification"] = font_info
-    manifest["colour_scheme"] = {"name": "CPOSS Spectral-inspired", "anchors": SPECTRAL_ANCHORS, "white_page_adjustment": "Darker gold midtone", "molecular_components": {"single_component": COOL, "multicomponent": WARM}, "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales", "time_panels": "Common study/publication year colour ramp in E and F; structure-entry line is charcoal", "year_limits": [year_norm.vmin, year_norm.vmax], "new_colourbar_axes": False}
-    manifest["figure_presentation"] = {"title": "The CPOSS database in numbers", "layout": "Compact journal-style A4 page with aligned panel baselines and reduced vertical and horizontal gutters", "horizontal_column_inset_fraction": 0.018, "plot_geometry_fraction": geometry, "plot_heights_unchanged": True, "title_font_size_pt": 14, "panel_heading_font_size_pt": 9, "summary_strip_scale": strip_scale, "panels": {"A": "Molecular size", "B": "Structures per dataset", "C": "Electronic structure theory level", "D": "Scientist credits (top 20)", "E": "Annual landscapes and structure entries; cumulative datasets", "F": "Cumulative unique CSP papers"}, "displayed_scientists": list(displayed.scientist_name), "scientist_plot_exclusions": [], "cumulative_datasets_endpoint": int(annual.cumulative_datasets.iloc[-1]), "cumulative_dataset_scope": "Only single unambiguous source study years; intervals and pre-2010 dates excluded"}
+    manifest["extracted_json_structure_rule"] = "Array-entry count of linked JSON only; retained in datasets.csv as a separate visualization-export measurement"
+    manifest["structure_rule"] = df.structure_count_definition.iloc[0]
+    manifest["figure_structure_counts"] = {"archive_structure_files": total, "archives": archive_audit["archives_counted"], "datasets": len(known), "visualization_entries": int(df.visualization_structure_count.sum()), "workbook_filename_rows": workbook_audit["mapped_workbook_rows"], "workbook_numeric_energy_records": workbook_audit["structure_model_records"], "annual_structure_files": int(annual.structures.sum()), "unassigned_year_structure_files": not_assigned, "geometrically_deduplicated": False}
+    manifest["colour_scheme"] = {"name": "CPOSS Plasma (truncated)", "anchors": SPECTRAL_ANCHORS, "white_page_adjustment": "Plasma truncated at 0.88 to avoid pale yellow", "molecular_components": {"single_component": COOL, "multicomponent": WARM}, "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales", "time_panels": "Common study/publication year colour ramp in E and F; structure-file line is charcoal", "year_limits": [year_norm.vmin, year_norm.vmax], "new_colourbar_axes": False}
+    manifest["figure_presentation"] = {"title": "The CPOSS database in numbers", "layout": "Compact journal-style A4 page with aligned panel baselines and reduced vertical and horizontal gutters", "horizontal_column_inset_fraction": 0.018, "plot_geometry_fraction": geometry, "plot_heights_unchanged": True, "title_font_size_pt": 14, "panel_heading_font_size_pt": 9, "summary_strip_scale": strip_scale, "panels": {"A": "Molecular size", "B": "Structures per dataset", "C": "Electronic structure theory level", "D": "Scientist credits (top 20)", "E": "Annual landscapes and archive structure files; cumulative datasets", "F": "Cumulative unique CSP papers"}, "displayed_scientists": list(displayed.scientist_name), "scientist_plot_exclusions": [], "cumulative_datasets_endpoint": int(annual.cumulative_datasets.iloc[-1]), "cumulative_dataset_scope": "Only single unambiguous source study years; intervals and pre-2010 dates excluded"}
     manifest["software_versions"] = {p: importlib.metadata.version(p) for p in ["pandas", "numpy", "matplotlib", "fonttools", "requests", "rdkit", "pypdf"]}
     (base / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     write_report(base, df, contributors, models, papers, relations, csp_papers, chemistry, annual, cumulative, potential, electronic, manifest)
-    print(f"Created PDF/PNG: {n} datasets, {total:,} entries, {len(contributors)} scientists, {len(csp_papers)} CSP papers", flush=True)
+    print(f"Created PDF/PNG: {n} datasets, {total:,} archived structure files, {len(contributors)} scientists, {len(csp_papers)} CSP papers", flush=True)
 
 
 def write_report(base, df, contributors, models, papers, relations, csp_papers, chemistry, annual, cumulative, potential, electronic, manifest):
+    from structure_count_report import write_structure_reconciliation
+    archive_summary, workbook_summary = write_structure_reconciliation(base)
     n = len(df)
     known = df[df.structure_count.notna()]
     total = int(known.structure_count.sum())
     credited_n = df.scientist_names.notna().sum()
     dated = df[df.study_year.notna()]
     json_audit = pd.read_csv(base / "tables/structure_file_audit.csv")
-    unavailable = df[df.structure_count.isna()]
+    unavailable = df[df.visualization_structure_count.isna()]
     duplicate = json_audit[json_audit.duplicate_filename_count.fillna(0) > 0]
     csp_assoc = relations[relations.relation == "csp_study"]
     top = contributors.iloc[0]
-    note = f"""The CPOSS database in numbers. Metadata were extracted from {manifest['case_pages_with_searches']} molecule pages reachable from the CPOSS index, representing {n} distinct CSP searches in repository snapshot {manifest['snapshot_revision']} (accessed {manifest['accessed_date']}). Each explicitly linked search is one dataset; its energy models are not separate datasets. A, molar mass versus total atom count on logarithmic axes, calculated from reported formulas with one point per documented molecular system ({len(chemistry)} systems). Multicomponent formulas retain explicitly written stoichiometry; hydrogens are included, and unit-cell atom counts are not used. B, linked Chemiscope structure-array entries per dataset, ranked on a logarithmic axis ({len(known)}/{n} files; median {known.structure_count.median():.0f}); experimental-reference entries and repeated filename labels are retained, so {total:,} is a stored-entry total, not a count of globally distinct predictions or all structures originally generated. Four linked JSON files are missing. C, electronic structure theory level, showing dataset frequencies for the six most frequent categories. Categories overlap and electronic levels may describe molecular or multipole calculations rather than periodic DFT. Complete potential-family and electronic-method data are tabulated separately. D, dataset credits for the 20 most frequently credited scientists, including Sally Price, with full credit for each named contributor and no inferred authorship from paper author lists ({credited_n}/{n} searches have a named scientist). The full metadata retain all {len(contributors)} scientists. E, annual CSP-search counts (upper bars) and stored structure entries (upper line), plus cumulative CSP-dataset counts (lower curve), using single unambiguous years from the source Date field ({len(dated)}/{n} datasets). Date ranges and pre-2010 dates are excluded from annual and cumulative bins; the cumulative curve therefore ends at {len(dated)}, not {n}. These are study dates, not release/deposition dates. F, cumulative unique linked CSP papers by publication year ({len(csp_papers)} papers). Papers are deduplicated across datasets by DOI or canonical URL; explicit within-page Study_ID publication pointers are followed and labelled inferred. Experimental CSD citations are recorded separately. Helvetica is used and embedded throughout; the figure is A4 portrait, with a vector PDF and 300 dpi PNG.
+    note = f"""The CPOSS database in numbers. Metadata were extracted from {manifest['case_pages_with_searches']} molecule pages reachable from the CPOSS index, representing {n} distinct CSP searches in repository snapshot {manifest['snapshot_revision']} (accessed {manifest['accessed_date']}). Each explicitly linked search is one dataset; its energy models are not separate datasets. The headline counts {total:,} RES coordinate files in all {archive_summary['archives_counted']} documented energy-model ZIP archives, verified against repository blob hashes. Separate representations under different models and any experimental references are retained; this is not a count of geometrically unique crystals or all candidates originally generated. Ancillary pDFT supplements and MacOS resource forks are excluded. All {n} datasets have complete archive counts. A, molar mass versus total atom count on logarithmic axes, calculated from reported formulas with one point per documented molecular system ({len(chemistry)} systems). Multicomponent formulas retain written stoichiometry and hydrogens; unit-cell atom counts are not used. B, archived structure-file totals per dataset, ranked on a logarithmic axis (median {known.structure_count.median():.0f}). C, electronic structure theory level, showing dataset frequencies for the six most frequent categories. Categories overlap and may describe molecular or multipole calculations rather than periodic DFT. D, dataset credits for the 20 most frequently credited scientists, including Sally Price, with full credit for each explicitly named contributor and no authorship inferred from papers ({credited_n}/{n} searches have named credits; all {len(contributors)} scientists remain in the tables). E, annual CSP-search counts (upper bars) and archived structure files (upper line), plus cumulative dataset counts (lower curve), using single unambiguous years from the source Date field ({len(dated)}/{n} datasets; {int(annual.structures.sum()):,} structure files). The 75 searches with ranges or pre-2010 dates, comprising {int(df.loc[df.study_year.isna(), 'structure_count'].sum()):,} files, are excluded from year bins; the cumulative curve ends at {len(dated)}. Study dates do not measure release/deposition or structure-generation dates. F, cumulative unique linked CSP papers by publication year ({len(csp_papers)} papers), deduplicated by DOI or canonical URL; explicit within-page Study_ID publication pointers are followed and labelled inferred. Experimental CSD citations are recorded separately. The truncated Plasma colour ramp encodes within-panel logarithmic counts in B-D and a shared year range in E-F; A uses two fixed component colours and the upper E line is charcoal. Helvetica is embedded throughout; the figure is A4 portrait, with a vector PDF and 300 dpi PNG. Workbook and coordinate-archive counts disagree for 55 models; full comparisons and limitations are provided in structure_count_reconciliation.md.
 """
     (base / "caption.md").write_text(note)
     def markdown_table(frame):
@@ -332,7 +363,9 @@ def write_report(base, df, contributors, models, papers, relations, csp_papers, 
         return "\n".join(lines)
     coverage = pd.DataFrame([
         ["Documented CSP searches", n, n],
-        ["Linked JSON structure counts", len(known), n],
+        ["Complete coordinate-archive structure counts", len(known), n],
+        ["Linked JSON visualization counts", int(df.visualization_structure_count.notna().sum()), n],
+        ["Complete workbook Filename/energy counts", workbook_summary['mapped_datasets'], n],
         ["Named scientist credits", int(credited_n), n],
         ["Single study year", len(dated), n],
         ["Molar mass and atom count from formula", int(df.atom_count.notna().sum()), n],
@@ -354,7 +387,8 @@ Source: [CPOSS database index]({manifest['source_index']}). All source HTML and 
 ## Findings
 
 - **{n} documented CSP datasets** across **{manifest['case_pages_with_searches']} reachable molecule pages**.
-- **{total:,} stored structure entries** in **{len(known)} linked Chemiscope files**. The median is **{known.structure_count.median():.0f}**, the interquartile range is **{known.structure_count.quantile(.25):.1f}-{known.structure_count.quantile(.75):.0f}**, and the range is **{int(known.structure_count.min())}-{int(known.structure_count.max())}** entries per file.
+- **{total:,} archived structure files** across **{archive_summary['archives_counted']} energy-model ZIP archives**, covering all **{len(known)} datasets**. This supports the manuscript's statement of more than 500,000 stored structures when model-specific representations are counted separately. The median per dataset is **{known.structure_count.median():.0f}**, the interquartile range is **{known.structure_count.quantile(.25):.1f}-{known.structure_count.quantile(.75):.1f}**, and the range is **{int(known.structure_count.min())}-{int(known.structure_count.max())}** files.
+- The former **{int(df.visualization_structure_count.sum()):,}** total counted only available Chemiscope visualization exports. The spreadsheets contain **{workbook_summary['mapped_workbook_rows']:,} Filename rows** and **{workbook_summary['structure_model_records']:,} numeric energy records**. These overlapping scopes are compared in [the structure-count reconciliation](structure_count_reconciliation.md); they must not be added together.
 - **{len(contributors)} named scientists** across **{credited_n} datasets**; **{n - credited_n} datasets** say Unknown/Not sure rather than naming a scientist. The most frequently credited person is **{top.scientist_name}**, associated with **{int(top.dataset_count)} datasets**. Credits overlap and are not an assessment of research productivity.
 - **{len(chemistry)} documented molecular systems** have parseable formulas. Molar masses span **{chemistry.molar_mass_g_mol.min():.2f}-{chemistry.molar_mass_g_mol.max():.2f} g/mol** and atom counts span **{int(chemistry.atom_count.min())}-{int(chemistry.atom_count.max())}**, on the written molecule/formula-unit basis.
 - **{len(csp_papers)} unique linked CSP papers**, **{len(papers)} unique linked references overall**, including experimental-context papers and research data records. **{int((df.csp_paper_count > 0).sum())} datasets** link at least one CSP paper after explicit publication cross-references are resolved.
@@ -366,17 +400,17 @@ Source: [CPOSS database index]({manifest['source_index']}). All source HTML and 
 
 The extractor follows same-database HTML links from the index and validates them against a complete GitHub repository tree. **{manifest['reachable_html_pages']} of {manifest['inventory_html_pages']} HTML files** are reachable. A contributor-statistics placeholder and a misspelled duplicate molecule page are unlinked and excluded. The audit has **{manifest['search_occurrences_before_deduplication']} search occurrences**, keyed by the explicitly linked Chemiscope filename. A molecule page can describe several searches; an individual search can have several energy models. The analysis includes searches with broken JSON links rather than silently dropping them from the dataset denominator.
 
-**{manifest['unlinked_json_files']} JSON files** exist in the repository but are not explicitly linked from reachable searches. These include full/filtered variants and unmatched files. They are inventoried in `unlinked_json_inventory.csv` and excluded from the headline and structure counts. Consequently, these numbers describe the public HTML-linked collection, not every file in the repository. Existing explorer catalogue files were not changed.
+**{manifest['unlinked_json_files']} JSON files** exist in the repository but are not explicitly linked from reachable searches. These include full/filtered variants and unmatched files. They are inventoried in `unlinked_json_inventory.csv` and are not added to linked visualization exports or coordinate archives. The headline describes the public HTML-linked model archives, not every representation in the repository.
 
-Every archived HTML file and downloaded JSON was checked against its Git blob SHA at the frozen revision. The lightweight JSON summaries retain the verified original file hashes, array counts, property lengths and duplicate-filename checks; the 1+ GB coordinate cache stays outside the deliverable. Rebuilding the figure and extraction offline uses those archived summaries; verifying them from scratch requires downloading the original JSON again.
+Every archived HTML file, downloaded JSON, original workbook and model ZIP was checked against its Git blob SHA at the frozen revision. Lightweight summaries retain the original file hashes, counts and diagnostic checks. The large source caches stay outside the deliverable. Rebuilding the figure offline uses delivered CSVs and summaries; independent source verification requires downloading the originals.
 
 ## What the structure count means
 
-The HTML does not contain numeric totals for all originally generated, optimised or retained candidates. Counts in this report are **calculated from the length of each linked JSON `structures` array**. They describe the distributed visualisation data, including entries associated with experimental references. Original search sizes remain missing, never zero.
+The figure uses **actual RES coordinate members in every documented energy-model ZIP**, excluding MacOS resource forks. Separate energy models are retained, while ancillary pDFT supplements are not added. All 509 archives were readable, checksum-verified and contained RES files; their Git hashes are distinct. No geometric deduplication across models or searches has been performed, so the total must not be described as unique predicted crystals. The HTML does not give original generation/optimization/retention counts; these remain missing.
 
-**{int((known.structure_count == 1000).sum())} files have exactly 1,000 entries**. This concentration is consistent with a display/export limit, but no uniform limit is assumed. The five unlinked `_full` variants are not added to their linked counterparts. Two linked files repeat filename labels: {', '.join(Path(p).name + ' (' + str(int(n)) + ' repeated labels)' for p, n in zip(duplicate.path, duplicate.duplicate_filename_count))}. Labels alone are insufficient to prove identical geometries, so repeated rows are flagged and retained. Cross-dataset structure matching has not been performed; totals must not be called unique predicted crystals.
+**{int((df.visualization_structure_count == 1000).sum())} linked visualizations have exactly 1,000 entries**, while their full workbooks contain 318,650 Filename rows. Many visualizations therefore represent subsets; no universal export limit is assumed. The JSON measurements remain in the original `datasets.csv`, while `plot_datasets.csv` names both visualization and archive counts explicitly. JSON filename repeats remain flagged: {', '.join(Path(p).name + ' (' + str(int(n)) + ' repeated labels)' for p, n in zip(duplicate.path, duplicate.duplicate_filename_count))}.
 
-Four linked JSON files are absent at the revision: **{missing_names}**. Their structure counts are missing. `structure_file_audit.csv` records the exact broken links and verified array/property-length checks. No fuzzy filename correction was applied.
+Four linked JSON files are absent: **{missing_names}**. Their visualization counts remain missing; their intact model archives are now counted directly, contributing 4,478 RES files. `structure_file_audit.csv` retains the original broken-link and array checks. Of the 509 model archive counts, 454 match their numeric workbook energy columns and 55 differ. The workbook total also includes 109 energy records without unambiguous HTML model descriptions. These uncertainties are documented without adding spreadsheet records to coordinate-file counts; see `archive_workbook_discrepancies.csv` and `structure_count_reconciliation.md`.
 
 ## Scientist names and molecular composition
 
@@ -394,7 +428,7 @@ These counts use each dataset at most once per category and may sum above {n}. M
 
 ## Dates and the linked literature
 
-Dataset deposition/release years are not reported. Annual counts therefore use the **source study Date field**, with no substitution of page update year or publication year. Single years and month-year dates are accepted. Ranges such as 2005-2008, abbreviated 2005-7, and pre-2010 are excluded instead of assigned arbitrary years. These exclusions leave **{int(annual.structures.sum()):,} entries** in annual bins and **{int(df[df.study_year.isna()].structure_count.sum()):,} entries** without a single year. Known study years with broken JSON links contribute a landscape but no fabricated structure count.
+Dataset deposition/release years are not reported. Annual counts use the **source study Date field**, with no substitution of page update year or publication year. Single years and month-year dates are accepted. Ranges such as 2005-2008, abbreviated 2005-7, and pre-2010 are excluded instead of assigned arbitrary years. These exclusions leave **{int(annual.structures.sum()):,} archived structure files** in annual bins and **{int(df[df.study_year.isna()].structure_count.sum()):,} files** without a single year. All 311 archive counts are complete, including searches with missing visualization exports.
 
 {markdown_table(paper_hist)}
 
@@ -404,10 +438,10 @@ Crossref supplies titles, authors, reference types and its preferred published y
 
 ## Validation and deliverables
 
-No conflicting contributor/date/formula values were found across merged dataset mappings (**{conflict_count} conflicts**). All available linked JSON structure-target property lengths match their arrays; the delivered verification report separately checks these lengths, accounting totals, annual aggregation, DOI deduplication, PDF geometry and embedded fonts. The source-link audit lists **{len(bad_links)} missing internal link targets** across HTML, archives and images; these were checked against the repository inventory, not by fetching every ZIP or image. External paper landing pages were not all fetched; metadata-service retrieval and its exceptions are recorded in `sources/doi_metadata.json`.
+No conflicting contributor/date/formula values were found across merged dataset mappings (**{conflict_count} conflicts**). All available linked JSON structure-target property lengths match their arrays; the delivered verification report separately checks these lengths, accounting totals, annual aggregation, DOI deduplication, PDF geometry and embedded fonts. The source-link audit lists **{len(bad_links)} missing internal link targets** across HTML, archives and images; these were checked against the repository inventory; all documented energy-model archives were also downloaded and checked separately, while images and ancillary ZIPs were not all fetched. External paper landing pages were not all fetched; metadata-service retrieval and its exceptions are recorded in `sources/doi_metadata.json`.
 
 The figure shows molecular size in panel A and scientist credits in panel D. The scientist panel shows the 20 most frequently credited scientists, including Sally Price; the full source tables and headline count retain all {len(contributors)} scientists. Potential-family bars, paper-per-dataset bars, panel subtitles and the footer are omitted from the figure; their data, provenance and counting rules remain in these tables and the caption. The cumulative dataset curve includes only the {len(dated)} searches with a single study year.
 
-The page is exactly A4 portrait, with compact vertical and horizontal gutters, unchanged plot heights, aligned plot baselines, a 14 pt title and 9 pt panel headings. All text resolves to Helvetica, with regular/bold faces extracted from the system Helvetica collection for embedding; no proprietary font file is redistributed. The vector PDF and 300 dpi PNG have the same layout. `caption.md` provides the standalone figure caption. `tables/` holds complete results, `sources/` holds archived HTML/metadata, and `manifest.json` records scope, revision, date, fonts and package versions.
+The page is exactly A4 portrait, with compact vertical and horizontal gutters, unchanged plot heights, aligned plot baselines, a 14 pt title and 9 pt panel headings. The truncated Plasma palette provides a spectral colourbar-style progression: logarithmic count colours in B-D, a common year ramp in E-F, and fixed single/multicomponent colours in A. All text resolves to Helvetica, with regular/bold faces extracted from the system Helvetica collection for embedding; no proprietary font file is redistributed. The vector PDF and 300 dpi PNG share the same layout. `caption.md` provides the standalone caption. `tables/` holds complete results and source-specific provenance; `sources/` holds archived HTML/metadata. `manifest.json` records revision, date, count rules, font checks and package versions.
 """
     (base / "report.md").write_text(report)

@@ -1,0 +1,19 @@
+{
+  "dataset": "2aminobenzamideA",
+  "captured": "2026-10-23",
+  "settings": {
+    "map-color-max": "2.37",
+    "map-color-min": "0",
+    "map-color-palette": "seismic",
+    "map-color-property": "Space Group Number",
+    "map-color-transform": "log",
+    "map-size-factor": "55",
+    "map-size-property": "Experimental Info",
+    "map-size-transform": "flip-linear",
+    "map-x-property": "Density 1 /gcm-3",
+    "map-x-scale": "linear",
+    "map-y-property": "Lattice Energy 1 /kJmol-1",
+    "map-y-scale": "linear",
+    "map-z-property": ""
+  }
+}

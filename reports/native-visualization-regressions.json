@@ -1,0 +1,1806 @@
+{
+  "kind": "native-regressions",
+  "date": "2026-10-23T07:26:53.001Z",
+  "checks": [
+    {
+      "id": "numeric",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.32369241504079,
+            "min": 0.97630758495921,
+            "property": "Density",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -23.91962753168603,
+            "min": -41.08037246831397,
+            "property": "Lattice Energy",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Experimental Info/",
+              "min": 1,
+              "max": 230
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 4,
+      "axes": {
+        "x": "Density",
+        "y": "Lattice Energy",
+        "model": "",
+        "plotted": 4,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density",
+            "y": "Lattice Energy",
+            "model": "",
+            "plotted": 4
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group"
+        ],
+        "numeric": 4,
+        "symbols": 0,
+        "unknown": 0,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "1": 1,
+          "2": 1,
+          "14": 1,
+          "230": 1
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 4,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [],
+      "ignoredInitialSettings": false,
+      "checkedMarkers": 4,
+      "colorMismatches": 0,
+      "samples": {
+        "1": {
+          "transformed": 0,
+          "rgb": "rgb(0, 0, 77)"
+        },
+        "2": {
+          "transformed": 0.3010299956639812,
+          "rgb": "rgb(0, 0, 167)"
+        },
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        },
+        "230": {
+          "transformed": 2.361727836017593,
+          "rgb": "rgb(130, 0, 0)"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 1,
+          "index": 0,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            0,
+            0,
+            77
+          ],
+          "expected": [
+            0,
+            0,
+            77
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 2,
+          "index": 1,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            0,
+            0,
+            167
+          ],
+          "expected": [
+            0,
+            0,
+            167
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 14,
+          "index": 2,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 230,
+          "index": 3,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            130,
+            0,
+            0
+          ],
+          "expected": [
+            130,
+            0,
+            0
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "reordered-symbols",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.32369241504079,
+            "min": 0.97630758495921,
+            "property": "Density",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -23.91962753168603,
+            "min": -41.08037246831397,
+            "property": "Lattice Energy",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Space Group/Ia-3d",
+              "min": 1,
+              "max": 230
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 4,
+      "axes": {
+        "x": "Density",
+        "y": "Lattice Energy",
+        "model": "",
+        "plotted": 4,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density",
+            "y": "Lattice Energy",
+            "model": "",
+            "plotted": 4
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group"
+        ],
+        "numeric": 0,
+        "symbols": 4,
+        "unknown": 0,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "1": 1,
+          "2": 1,
+          "14": 1,
+          "230": 1
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 4,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [],
+      "ignoredInitialSettings": false,
+      "checkedMarkers": 4,
+      "colorMismatches": 0,
+      "samples": {
+        "1": {
+          "transformed": 0,
+          "rgb": "rgb(0, 0, 77)"
+        },
+        "2": {
+          "transformed": 0.3010299956639812,
+          "rgb": "rgb(0, 0, 167)"
+        },
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        },
+        "230": {
+          "transformed": 2.361727836017593,
+          "rgb": "rgb(130, 0, 0)"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 1,
+          "index": 3,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            0,
+            0,
+            77
+          ],
+          "expected": [
+            0,
+            0,
+            77
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 2,
+          "index": 2,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            0,
+            0,
+            167
+          ],
+          "expected": [
+            0,
+            0,
+            167
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 14,
+          "index": 1,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 230,
+          "index": 0,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            130,
+            0,
+            0
+          ],
+          "expected": [
+            130,
+            0,
+            0
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "constant-14",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.32369241504079,
+            "min": 0.97630758495921,
+            "property": "Density",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -23.91962753168603,
+            "min": -41.08037246831397,
+            "property": "Lattice Energy",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Experimental Info/",
+              "min": 14,
+              "max": 14
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 4,
+      "axes": {
+        "x": "Density",
+        "y": "Lattice Energy",
+        "model": "",
+        "plotted": 4,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density",
+            "y": "Lattice Energy",
+            "model": "",
+            "plotted": 4
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group"
+        ],
+        "numeric": 4,
+        "symbols": 0,
+        "unknown": 0,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "14": 4
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 4,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [],
+      "ignoredInitialSettings": false,
+      "checkedMarkers": 4,
+      "colorMismatches": 0,
+      "samples": {
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 14,
+          "index": 0,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "constant-unknown",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.32369241504079,
+            "min": 0.97630758495921,
+            "property": "Density",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -23.91962753168603,
+            "min": -41.08037246831397,
+            "property": "Lattice Energy",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Space Group/nan",
+              "min": null,
+              "max": null
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 4,
+      "axes": {
+        "x": "Density",
+        "y": "Lattice Energy",
+        "model": "",
+        "plotted": 4,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density",
+            "y": "Lattice Energy",
+            "model": "",
+            "plotted": 4
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group"
+        ],
+        "numeric": 0,
+        "symbols": 0,
+        "unknown": 4,
+        "conflicts": 0,
+        "unresolved": {
+          "Space Group: unknown": 1
+        },
+        "numbers": {}
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 4,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [
+        "Space Group"
+      ],
+      "ignoredInitialSettings": false,
+      "checkedMarkers": 4,
+      "colorMismatches": 0,
+      "samples": {
+        "unknown": {
+          "transformed": "#aaaaaa",
+          "rgb": "#aaaaaa"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": "unknown",
+          "index": 0,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "expected": [
+            170,
+            170,
+            170
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "mixed-missing",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.32369241504079,
+            "min": 0.97630758495921,
+            "property": "Density",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -23.91962753168603,
+            "min": -41.08037246831397,
+            "property": "Lattice Energy",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Space Group/14",
+              "min": 2,
+              "max": 14
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 4,
+      "axes": {
+        "x": "Density",
+        "y": "Lattice Energy",
+        "model": "",
+        "plotted": 4,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density",
+            "y": "Lattice Energy",
+            "model": "",
+            "plotted": 4
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group"
+        ],
+        "numeric": 2,
+        "symbols": 1,
+        "unknown": 1,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "2": 1,
+          "14": 2
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 4,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [
+        "Space Group"
+      ],
+      "ignoredInitialSettings": false,
+      "checkedMarkers": 4,
+      "colorMismatches": 0,
+      "samples": {
+        "2": {
+          "transformed": 0.3010299956639812,
+          "rgb": "rgb(0, 0, 167)"
+        },
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        },
+        "unknown": {
+          "transformed": "#aaaaaa",
+          "rgb": "#aaaaaa"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 2,
+          "index": 3,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            0,
+            0,
+            167
+          ],
+          "expected": [
+            0,
+            0,
+            167
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 14,
+          "index": 0,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": "unknown",
+          "index": 2,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "expected": [
+            170,
+            170,
+            170
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "saved-style",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.32369241504079,
+            "min": 0.97630758495921,
+            "property": "Density",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -23.91962753168603,
+            "min": -41.08037246831397,
+            "property": "Lattice Energy",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Experimental Info/",
+              "min": 1,
+              "max": 230
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 4,
+      "axes": {
+        "x": "Density",
+        "y": "Lattice Energy",
+        "model": "",
+        "plotted": 4,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density",
+            "y": "Lattice Energy",
+            "model": "",
+            "plotted": 4
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group"
+        ],
+        "numeric": 4,
+        "symbols": 0,
+        "unknown": 0,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "1": 1,
+          "2": 1,
+          "14": 1,
+          "230": 1
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 4,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [],
+      "ignoredInitialSettings": true,
+      "checkedMarkers": 4,
+      "colorMismatches": 0,
+      "samples": {
+        "1": {
+          "transformed": 0,
+          "rgb": "rgb(0, 0, 77)"
+        },
+        "2": {
+          "transformed": 0.3010299956639812,
+          "rgb": "rgb(0, 0, 167)"
+        },
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        },
+        "230": {
+          "transformed": 2.361727836017593,
+          "rgb": "rgb(130, 0, 0)"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 1,
+          "index": 0,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            0,
+            0,
+            77
+          ],
+          "expected": [
+            0,
+            0,
+            77
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 2,
+          "index": 1,
+          "clearance": 223.68278834098976,
+          "rgb": [
+            0,
+            0,
+            167
+          ],
+          "expected": [
+            0,
+            0,
+            167
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 14,
+          "index": 2,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 230,
+          "index": 3,
+          "clearance": 223.6827883409897,
+          "rgb": [
+            130,
+            0,
+            0
+          ],
+          "expected": [
+            130,
+            0,
+            0
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "2aminobenzamideA",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.430815313158371,
+            "min": 1.1044576868416291,
+            "property": "Density 1 /gcm-3",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -50.48843224603576,
+            "min": -105.02756775396423,
+            "property": "Lattice Energy 1 /kJmol-1",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Experimental Info/",
+              "min": 1,
+              "max": 61
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 883,
+      "axes": {
+        "x": "Density 1 /gcm-3",
+        "y": "Lattice Energy 1 /kJmol-1",
+        "model": "1",
+        "plotted": 883,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density 1 /gcm-3",
+            "y": "Lattice Energy 1 /kJmol-1",
+            "model": "1",
+            "plotted": 883
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group Number"
+        ],
+        "numeric": 883,
+        "symbols": 0,
+        "unknown": 0,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "1": 10,
+          "2": 39,
+          "4": 35,
+          "5": 25,
+          "7": 18,
+          "9": 45,
+          "13": 33,
+          "14": 213,
+          "15": 105,
+          "18": 20,
+          "19": 47,
+          "29": 55,
+          "32": 18,
+          "33": 106,
+          "34": 11,
+          "60": 42,
+          "61": 61
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 883,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [],
+      "ignoredInitialSettings": true,
+      "checkedMarkers": 883,
+      "colorMismatches": 0,
+      "samples": {
+        "1": {
+          "transformed": 0,
+          "rgb": "rgb(0, 0, 77)"
+        },
+        "2": {
+          "transformed": 0.3010299956639812,
+          "rgb": "rgb(0, 0, 167)"
+        },
+        "4": {
+          "transformed": 0.6020599913279624,
+          "rgb": "rgb(5, 5, 255)"
+        },
+        "5": {
+          "transformed": 0.6989700043360189,
+          "rgb": "rgb(46, 46, 255)"
+        },
+        "7": {
+          "transformed": 0.8450980400142568,
+          "rgb": "rgb(108, 108, 255)"
+        },
+        "9": {
+          "transformed": 0.9542425094393249,
+          "rgb": "rgb(156, 156, 255)"
+        },
+        "13": {
+          "transformed": 1.1139433523068367,
+          "rgb": "rgb(224, 224, 255)"
+        },
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        },
+        "15": {
+          "transformed": 1.1760912590556813,
+          "rgb": "rgb(248, 246, 253)"
+        },
+        "18": {
+          "transformed": 1.255272505103306,
+          "rgb": "rgb(255, 224, 224)"
+        },
+        "19": {
+          "transformed": 1.2787536009528289,
+          "rgb": "rgb(255, 214, 214)"
+        },
+        "29": {
+          "transformed": 1.462397997898956,
+          "rgb": "rgb(255, 136, 136)"
+        },
+        "32": {
+          "transformed": 1.505149978319906,
+          "rgb": "rgb(255, 117, 117)"
+        },
+        "33": {
+          "transformed": 1.5185139398778875,
+          "rgb": "rgb(255, 111, 111)"
+        },
+        "34": {
+          "transformed": 1.5314789170422551,
+          "rgb": "rgb(255, 106, 106)"
+        },
+        "60": {
+          "transformed": 1.7781512503836436,
+          "rgb": "rgb(253, 4, 4)"
+        },
+        "61": {
+          "transformed": 1.7853298350107671,
+          "rgb": "rgb(252, 3, 3)"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 2,
+          "index": 50,
+          "clearance": 11.524552052032192,
+          "rgb": [
+            0,
+            0,
+            167
+          ],
+          "expected": [
+            0,
+            0,
+            167
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 4,
+          "index": 124,
+          "clearance": 14.780649512115499,
+          "rgb": [
+            5,
+            5,
+            255
+          ],
+          "expected": [
+            5,
+            5,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 14,
+          "index": 365,
+          "clearance": 34.579213409214475,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 19,
+          "index": 110,
+          "clearance": 10.633724653196548,
+          "rgb": [
+            255,
+            214,
+            214
+          ],
+          "expected": [
+            255,
+            214,
+            214
+          ],
+          "match": true
+        }
+      ]
+    },
+    {
+      "id": "26-dichloronitrobenzeneA",
+      "settings": {
+        "target": "structure",
+        "map": {
+          "x": {
+            "max": 1.7433562263445852,
+            "min": 1.3593917736554146,
+            "property": "Density 1 /gcm-3",
+            "scale": "linear"
+          },
+          "y": {
+            "max": -46.36466760194455,
+            "min": -92.64033239805546,
+            "property": "Lattice Energy 1 /kJmol-1",
+            "scale": "linear"
+          },
+          "z": {
+            "max": null,
+            "min": null,
+            "property": "",
+            "scale": "linear"
+          },
+          "symbol": "",
+          "color": {
+            "mode": "log",
+            "property": "Space Group Number",
+            "min": 0,
+            "max": 2.37,
+            "palette": "seismic",
+            "opacity": 100,
+            "select": {
+              "mode": "all",
+              "category": "Experimental Info/",
+              "min": 1,
+              "max": 61
+            }
+          },
+          "size": {
+            "factor": 55,
+            "mode": "flip-linear",
+            "property": "Experimental Info (size)"
+          },
+          "markerOutline": true,
+          "joinPoints": false,
+          "useLOD": true
+        },
+        "pinned": [
+          0
+        ],
+        "structure": [
+          {
+            "bonds": true,
+            "atoms": true,
+            "spaceFilling": false,
+            "atomLabels": false,
+            "shape": "",
+            "unitCell": true,
+            "rotation": false,
+            "cartoon": false,
+            "supercell": {
+              "0": 3,
+              "1": 3,
+              "2": 3
+            },
+            "axes": "off",
+            "keepOrientation": false,
+            "playbackDelay": 700,
+            "environments": {
+              "activated": false,
+              "bgColor": "grey",
+              "bgStyle": "ball-stick",
+              "center": false,
+              "cutoff": 0
+            },
+            "color": {
+              "property": "element",
+              "min": 0,
+              "max": 0,
+              "transform": "linear",
+              "palette": "bwr"
+            },
+            "labelsProperty": "element"
+          }
+        ]
+      },
+      "structures": 523,
+      "axes": {
+        "x": "Density 1 /gcm-3",
+        "y": "Lattice Energy 1 /kJmol-1",
+        "model": "1",
+        "plotted": 523,
+        "missing": 0,
+        "candidates": [
+          {
+            "x": "Density 1 /gcm-3",
+            "y": "Lattice Energy 1 /kJmol-1",
+            "model": "1",
+            "plotted": 523
+          }
+        ]
+      },
+      "spaceGroups": {
+        "sources": [
+          "Space Group Number"
+        ],
+        "numeric": 523,
+        "symbols": 0,
+        "unknown": 0,
+        "conflicts": 0,
+        "unresolved": {},
+        "numbers": {
+          "1": 6,
+          "2": 13,
+          "4": 20,
+          "5": 11,
+          "7": 5,
+          "9": 19,
+          "13": 21,
+          "14": 106,
+          "15": 65,
+          "18": 23,
+          "19": 33,
+          "29": 30,
+          "32": 8,
+          "33": 72,
+          "34": 16,
+          "54": 4,
+          "60": 36,
+          "61": 35
+        }
+      },
+      "experimentalInfo": {
+        "source": "Experimental Info",
+        "policy": "annotation-presence",
+        "annotated": 0,
+        "missing": 523,
+        "field": "Experimental Info (size)"
+      },
+      "normalized": [],
+      "ignoredInitialSettings": true,
+      "checkedMarkers": 523,
+      "colorMismatches": 0,
+      "samples": {
+        "1": {
+          "transformed": 0,
+          "rgb": "rgb(0, 0, 77)"
+        },
+        "2": {
+          "transformed": 0.3010299956639812,
+          "rgb": "rgb(0, 0, 167)"
+        },
+        "4": {
+          "transformed": 0.6020599913279624,
+          "rgb": "rgb(5, 5, 255)"
+        },
+        "5": {
+          "transformed": 0.6989700043360189,
+          "rgb": "rgb(46, 46, 255)"
+        },
+        "7": {
+          "transformed": 0.8450980400142568,
+          "rgb": "rgb(108, 108, 255)"
+        },
+        "9": {
+          "transformed": 0.9542425094393249,
+          "rgb": "rgb(156, 156, 255)"
+        },
+        "13": {
+          "transformed": 1.1139433523068367,
+          "rgb": "rgb(224, 224, 255)"
+        },
+        "14": {
+          "transformed": 1.146128035678238,
+          "rgb": "rgb(237, 237, 255)"
+        },
+        "15": {
+          "transformed": 1.1760912590556813,
+          "rgb": "rgb(248, 246, 253)"
+        },
+        "18": {
+          "transformed": 1.255272505103306,
+          "rgb": "rgb(255, 224, 224)"
+        },
+        "19": {
+          "transformed": 1.2787536009528289,
+          "rgb": "rgb(255, 214, 214)"
+        },
+        "29": {
+          "transformed": 1.462397997898956,
+          "rgb": "rgb(255, 136, 136)"
+        },
+        "32": {
+          "transformed": 1.505149978319906,
+          "rgb": "rgb(255, 117, 117)"
+        },
+        "33": {
+          "transformed": 1.5185139398778875,
+          "rgb": "rgb(255, 111, 111)"
+        },
+        "34": {
+          "transformed": 1.5314789170422551,
+          "rgb": "rgb(255, 106, 106)"
+        },
+        "54": {
+          "transformed": 1.7323937598229686,
+          "rgb": "rgb(255, 20, 20)"
+        },
+        "60": {
+          "transformed": 1.7781512503836436,
+          "rgb": "rgb(253, 4, 4)"
+        },
+        "61": {
+          "transformed": 1.7853298350107671,
+          "rgb": "rgb(252, 3, 3)"
+        }
+      },
+      "errors": [],
+      "raster": [
+        {
+          "spaceGroup": 2,
+          "index": 8,
+          "clearance": 26.722230445829197,
+          "rgb": [
+            0,
+            0,
+            167
+          ],
+          "expected": [
+            0,
+            0,
+            167
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 4,
+          "index": 442,
+          "clearance": 8.05050308986967,
+          "rgb": [
+            5,
+            5,
+            255
+          ],
+          "expected": [
+            5,
+            5,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 14,
+          "index": 506,
+          "clearance": 50.42164614528169,
+          "rgb": [
+            237,
+            237,
+            255
+          ],
+          "expected": [
+            237,
+            237,
+            255
+          ],
+          "match": true
+        },
+        {
+          "spaceGroup": 19,
+          "index": 456,
+          "clearance": 10.229613873455794,
+          "rgb": [
+            255,
+            214,
+            214
+          ],
+          "expected": [
+            255,
+            214,
+            214
+          ],
+          "match": true
+        }
+      ]
+    }
+  ],
+  "manualOverride": {
+    "target": "structure",
+    "map": {
+      "x": {
+        "max": 1.7433562263445852,
+        "min": 1.3593917736554146,
+        "property": "Density 1 /gcm-3",
+        "scale": "linear"
+      },
+      "y": {
+        "max": -46.36466760194455,
+        "min": -92.64033239805546,
+        "property": "Lattice Energy 1 /kJmol-1",
+        "scale": "linear"
+      },
+      "z": {
+        "max": null,
+        "min": null,
+        "property": "",
+        "scale": "linear"
+      },
+      "symbol": "",
+      "color": {
+        "mode": "linear",
+        "property": "Space Group Number",
+        "min": 0,
+        "max": 230,
+        "palette": "viridis",
+        "opacity": 100,
+        "select": {
+          "mode": "all",
+          "category": "Experimental Info/",
+          "min": 1,
+          "max": 61
+        }
+      },
+      "size": {
+        "factor": 72,
+        "mode": "flip-linear",
+        "property": "Experimental Info (size)"
+      },
+      "markerOutline": true,
+      "joinPoints": false,
+      "useLOD": true
+    },
+    "pinned": [
+      0
+    ],
+    "structure": [
+      {
+        "bonds": true,
+        "atoms": true,
+        "spaceFilling": false,
+        "atomLabels": false,
+        "shape": "",
+        "unitCell": true,
+        "rotation": false,
+        "cartoon": false,
+        "supercell": {
+          "0": 3,
+          "1": 3,
+          "2": 3
+        },
+        "axes": "off",
+        "keepOrientation": false,
+        "playbackDelay": 700,
+        "environments": {
+          "activated": false,
+          "bgColor": "grey",
+          "bgStyle": "ball-stick",
+          "center": false,
+          "cutoff": 0
+        },
+        "color": {
+          "property": "element",
+          "min": 0,
+          "max": 0,
+          "transform": "linear",
+          "palette": "bwr"
+        },
+        "labelsProperty": "element"
+      }
+    ]
+  },
+  "summary": {
+    "checks": 8,
+    "failures": 0,
+    "rasterSamples": 25
+  }
+}

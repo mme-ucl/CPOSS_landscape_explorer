@@ -1,17 +1,50 @@
 {
   "status": "passed",
   "review_date": "2026-10-23",
-  "annotation_comments_addressed": 23,
-  "previous_review_comments_addressed": 21,
-  "current_review_comments_addressed": 2,
-  "scientific_rule_tests": 9,
-  "output_verification_checks": 277,
-  "visual_review": "Latest PDF rendered with Poppler at 140 dpi and visually inspected. Both columns moved 3.78 mm towards the centre, reducing horizontal separation by 7.56 mm. Every plot height and vertical position retained. Scientist chart expanded to the top 20 contributors, including Sally Price. All plot labels, legends and notes fit without clipping or overlap.",
+  "annotation_comments_addressed": 24,
+  "previous_review_comments_addressed": 23,
+  "current_review_comments_addressed": 1,
+  "scientific_rule_tests": 12,
+  "output_verification_checks": 292,
+  "visual_review": "Final PDF rendered with Poppler at 140 dpi and visually inspected. Compact A4 layout, unchanged panel geometry/heights, all labels and legends fit. Continuous truncated Plasma gradients render cleanly without raster images or transparency stitching artefacts. Reconciled 519,167-file headline, 311-search ranking and annual structure counts are displayed. Top 20 scientists include Sally Price. All text is embedded Helvetica.",
   "displayed_contributors": 20,
   "includes_sally_price": true,
   "plot_heights_unchanged": true,
   "cumulative_dataset_count": 236,
   "cumulative_dataset_scope": "Only single reported study years; 75 searches with intervals or pre-2010 dates excluded.",
-  "pdf_sha256": "0643358ff791842b44b425c16cd1ffb82c967bd89a4521990deac0fb3df7aac8",
-  "png_sha256": "4e2f04edb34746dfa59d0c2c96f01270575a1ad755631526091417d8e13db198"
+  "pdf_sha256": "ad75a2ed382dde92df58a0dc0424848d59ce41a12551e0a9f14e8108b32188eb",
+  "png_sha256": "4a7b07829fdd7059d48d71ead8cb67d4737d0d5e00381dd282236ca6355d9f50",
+  "colour_scheme": {
+    "name": "CPOSS Plasma (truncated)",
+    "anchors": [
+      "#0d0887",
+      "#6100a7",
+      "#a21d9a",
+      "#d24f71",
+      "#f3854b",
+      "#fdc627"
+    ],
+    "white_page_adjustment": "Plasma truncated at 0.88 to avoid pale yellow",
+    "molecular_components": {
+      "single_component": "#6100a7",
+      "multicomponent": "#fdc627"
+    },
+    "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales",
+    "time_panels": "Common study/publication year colour ramp in E and F; structure-file line is charcoal",
+    "year_limits": [
+      2003.0,
+      2025.0
+    ],
+    "new_colourbar_axes": false
+  },
+  "archive_count_reconciliation": {
+    "coordinate_files": 519167,
+    "archives_checked": 509,
+    "datasets_complete": 311,
+    "verified_archive_bytes": 746243744,
+    "workbook_archive_count_discrepancies": 55,
+    "visualization_entries": 155824,
+    "workbook_numeric_energy_records": 548587,
+    "geometrically_deduplicated": false
+  }
 }

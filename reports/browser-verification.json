@@ -1,0 +1,102 @@
+{
+  "startup": {
+    "map-color-max": "2.37",
+    "map-color-min": "0",
+    "map-color-palette": "seismic",
+    "map-color-property": "Space Group Number",
+    "map-color-transform": "log",
+    "map-size-factor": "55",
+    "map-size-property": "Experimental Info (size)",
+    "map-size-transform": "flip-linear",
+    "map-x-property": "Density 1 /gcm-3",
+    "map-x-scale": "linear",
+    "map-y-property": "Lattice Energy 1 /kJmol-1",
+    "map-y-scale": "linear",
+    "map-z-property": ""
+  },
+  "manualAfterFilterPreview": {
+    "map-color-palette": "viridis",
+    "map-size-factor": "72"
+  },
+  "afterSwitch": {
+    "map-color-max": "2.37",
+    "map-color-min": "0",
+    "map-color-palette": "seismic",
+    "map-size-factor": "55",
+    "map-x-property": "Density 1 /gcm-3",
+    "map-y-property": "Lattice Energy 1 /kJmol-1"
+  },
+  "initialSettingsIgnored": {
+    "map-color-max": "2.37",
+    "map-color-min": "0",
+    "map-color-palette": "seismic",
+    "map-color-transform": "log",
+    "map-size-factor": "55",
+    "map-size-transform": "flip-linear",
+    "map-x-property": "Density",
+    "map-y-property": "Lattice Energy"
+  },
+  "initialSettingsNotes": "Default axes use matching model (unnumbered) fields: Density; Lattice Energy. Experimental Info uses supplied numeric values with native flip-linear sizing. Embedded visualization settings were superseded by the global preset. Import settings after loading to apply a deliberate override. Shared URL settings were superseded by the global preset. Import settings after loading to apply them deliberately.",
+  "embeddedNumeric": {
+    "map-color-max": "2.37",
+    "map-color-min": "0",
+    "map-color-palette": "seismic",
+    "map-color-transform": "log",
+    "map-size-factor": "55",
+    "map-size-transform": "flip-linear",
+    "map-x-property": "Density",
+    "map-y-property": "Lattice Energy"
+  },
+  "embeddedSaved": {
+    "map-color-palette": "seismic",
+    "map-color-transform": "log",
+    "map-size-factor": "55",
+    "map-x-property": "Density",
+    "map-y-property": "Lattice Energy"
+  },
+  "mobile": {
+    "buttons": [
+      {
+        "label": "Download structures (.zip)",
+        "width": 173.1953125
+      },
+      {
+        "label": "Metadata: AspirinA.xlsx",
+        "width": 173.1953125
+      },
+      {
+        "label": "Open molecule database page ↗",
+        "width": 208.7109375
+      },
+      {
+        "label": "Preview beside landscape",
+        "width": 208.7109375
+      }
+    ],
+    "headerHeight": 522.8671875,
+    "noticesInHeader": false,
+    "scrollWidth": 390,
+    "width": 390
+  },
+  "structureSelection": [
+    {
+      "type": "number",
+      "value": "362"
+    },
+    {
+      "type": "range",
+      "value": "362"
+    }
+  ],
+  "dichloronitrobenzene": {
+    "map-color-max": "2.37",
+    "map-color-min": "0",
+    "map-color-palette": "seismic",
+    "map-color-transform": "log",
+    "map-size-factor": "55",
+    "map-size-transform": "flip-linear",
+    "map-x-property": "Density 1 /gcm-3",
+    "map-y-property": "Lattice Energy 1 /kJmol-1"
+  },
+  "filePicker": "Not verified: browser permission was declined for the settings-file upload. No alternative upload attempted."
+}

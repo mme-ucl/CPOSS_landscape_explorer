@@ -1,0 +1,147 @@
+{
+  "snapshot_revision": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
+  "archives_checked": 14,
+  "matching_counts": 11,
+  "results": [
+    {
+      "dataset_id": "AspirinA",
+      "model_id": 1,
+      "workbook_records": 14,
+      "res_files": 21,
+      "counts_match": false,
+      "archive_path": "Aspirin/AspirinA/1.AspirinA_Molpak.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Aspirin/AspirinA/1.AspirinA_Molpak.zip?raw=true",
+      "git_blob_sha": "545e18c0bdc948dab640b28d870cd76907fad59e"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 1,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/1.TrinitrobenzeneA_DIFF.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/1.TrinitrobenzeneA_DIFF.zip?raw=true",
+      "git_blob_sha": "bf2d5b06233d71fd1846ecf3ada2c1d57e506b31"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 2,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/2.TrinitrobenzeneA_DIFF_no_pol.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/2.TrinitrobenzeneA_DIFF_no_pol.zip?raw=true",
+      "git_blob_sha": "22d87ea57fc29c29661bf3aae070fbf64e5d78c0"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 3,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/3.TrinitrobenzeneA_DIFF_e3.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/3.TrinitrobenzeneA_DIFF_e3.zip?raw=true",
+      "git_blob_sha": "2b5630f2375f50a6c07bceb8a1580d9ef5c21058"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 4,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/4.TrinitrobenzeneA_DIFF_e7.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/4.TrinitrobenzeneA_DIFF_e7.zip?raw=true",
+      "git_blob_sha": "2d997a240766c5ce4197f6d020238b98e99710c4"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 5,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/5.TrinitrobenzeneA_DIFF_e11.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/5.TrinitrobenzeneA_DIFF_e11.zip?raw=true",
+      "git_blob_sha": "7e49d2575065c6cb4c550c7e229d62a50cfdb44d"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 6,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/6.TrinitrobenzeneA_Model0_Aniso.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/6.TrinitrobenzeneA_Model0_Aniso.zip?raw=true",
+      "git_blob_sha": "df72f11686faf67d4a4edbc33613ad354519e530"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 7,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/7.TrinitrobenzeneA_Model0_Iso.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/7.TrinitrobenzeneA_Model0_Iso.zip?raw=true",
+      "git_blob_sha": "8fff47489de7a6f6c451fd321620136c7f3bd21c"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 8,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/8.TrinitrobenzeneA_FIT_ISA.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/8.TrinitrobenzeneA_FIT_ISA.zip?raw=true",
+      "git_blob_sha": "b874d1231b67871402642b1759cfd42eabfcfdd4"
+    },
+    {
+      "dataset_id": "TrinitrobenzeneA",
+      "model_id": 9,
+      "workbook_records": 203,
+      "res_files": 203,
+      "counts_match": true,
+      "archive_path": "Trinitrobenzene/TrinitrobenzeneA/9.TrinitrobenzeneA_FIT_GDMA.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/9.TrinitrobenzeneA_FIT_GDMA.zip?raw=true",
+      "git_blob_sha": "93f4d4fdc439b7b0f284418c88a0d43f9b014095"
+    },
+    {
+      "dataset_id": "UreaA",
+      "model_id": 2,
+      "workbook_records": 793,
+      "res_files": 793,
+      "counts_match": true,
+      "archive_path": "Urea/UreaA/2.UreaA_CrystOpt.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/2.UreaA_CrystOpt.zip?raw=true",
+      "git_blob_sha": "0d41442f0a3cf3f731617dab66477fef63bda594"
+    },
+    {
+      "dataset_id": "UreaA",
+      "model_id": 1,
+      "workbook_records": 850,
+      "res_files": 850,
+      "counts_match": true,
+      "archive_path": "Urea/UreaA/1.UreaA_CrystPred.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/1.UreaA_CrystPred.zip?raw=true",
+      "git_blob_sha": "cc4e435bdd65a987fbb1b3f977ac38acced021c4"
+    },
+    {
+      "dataset_id": "BTXXXIIA",
+      "model_id": 1,
+      "workbook_records": 15042,
+      "res_files": 8829,
+      "counts_match": false,
+      "archive_path": "1.BlindTest/XXXII/BTXXXIIA/1.BTXXXIIA_CrystPred-1.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXIIA/1.BTXXXIIA_CrystPred-1.zip?raw=true",
+      "git_blob_sha": "00e256d1c0bc36e98b8e5168ff974000b32e8aee"
+    },
+    {
+      "dataset_id": "BTXXXIIA",
+      "model_id": 2,
+      "workbook_records": 9969,
+      "res_files": 9976,
+      "counts_match": false,
+      "archive_path": "1.BlindTest/XXXII/BTXXXIIA/2.BTXXXIIA_DFTB.zip",
+      "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXIIA/2.BTXXXIIA_DFTB.zip?raw=true",
+      "git_blob_sha": "00a0b26677a73faea80a725b83f5d88d94519158"
+    }
+  ]
+}

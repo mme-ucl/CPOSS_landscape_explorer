@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Native Chemiscope global-style audit</title>
+<style>
+body{font:14px system-ui;margin:18px;color:#282132}button,a{margin-right:12px}iframe{width:1280px;height:760px;border:1px solid #bbb;max-width:100%}pre{max-height:320px;overflow:auto;white-space:pre-wrap}#report-json{display:none} .pass{color:#176d37}.fail{color:#a30000}
+</style>
+<h1>Native Chemiscope global-style audit</h1>
+<p>Uses the navigator's unchanged embedded bundle, the shared loading adapter, every catalogue property row and the original first geometry. All geometries are independently validated by the source preparation script.</p>
+<button id="run">Run catalogue audit</button><button id="regressions">Run native regression checks</button>
+<a id="download" hidden download="native-visualization-audit.json">Save report</a>
+<p id="status" role="status">Ready. Run source preparation first.</p>
+<pre id="results"></pre><pre id="report-json" aria-label="Full machine-readable audit report"></pre>
+<iframe id="viewer" title="Native Chemiscope audit viewer"></iframe>
+<script src="../assets/spacegroups.js?v=20261023-global-style"></script>
+<script src="../assets/visualization.js?v=20261023-global-style"></script>
+<script src="native-audit.js?v=20261023-global-style"></script>
+</html>
