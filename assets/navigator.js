@@ -130,7 +130,7 @@
         }
         const archiveLink = item => {
             const link = document.createElement('a');
-            link.className = 'btn btn-sm cposs-download-button';
+            link.className = 'btn btn-sm cposs-action-button';
             link.href = item.url;
             // Hosted ZIP MIME types trigger a download across origins. Keep a
             // normal original-resource URL as fallback; download is only a hint.
@@ -152,6 +152,7 @@
             const details = document.createElement('details');
             details.className = 'cposs-download-choices';
             const summary = document.createElement('summary');
+            summary.className = 'btn btn-sm cposs-action-button';
             summary.textContent = `Download structures (.zip) · ${archives.length} model archives`;
             const list = document.createElement('ul');
             for (const item of archives) {
@@ -168,6 +169,7 @@
         }
         for (const item of metadata) {
             const link = document.createElement('a');
+            link.className = 'btn btn-sm cposs-action-button';
             link.href = item.url;
             link.target = '_blank';
             link.rel = 'noopener noreferrer';
@@ -385,7 +387,10 @@
         } else if (url.searchParams.has('load')) {
             await loadUrl(url.searchParams.get('load'), { settingsUrl: url.searchParams.get('settings') });
         } else if (catalogue) {
-            await loadUrl(catalogue.datasets[0].url);
+            // The alphabetically first source has no space-group property.
+            // Start with a small example that supports the full default style.
+            const initial = catalogue.datasets.find(item => item.id === 'AspirinA') || catalogue.datasets[0];
+            await loadUrl(initial.url, { settingsUrl: url.searchParams.get('settings') });
         } else {
             stopLoading();
         }

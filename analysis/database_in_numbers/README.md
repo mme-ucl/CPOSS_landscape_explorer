@@ -1,6 +1,6 @@
 # CPOSS: The database in numbers
 
-Reproducible HTML metadata extraction, structure-array counting, paper metadata enrichment and a one-page A4 figure. Read `report.md` for the scientific definitions and coverage, and `caption.md` for the figure caption.
+Reproducible HTML metadata extraction, structure-array counting, paper metadata enrichment and a compact journal-style one-page A4 figure. Read `report.md` for the scientific definitions and coverage, and `caption.md` for the figure caption.
 
 ## Results
 
@@ -12,6 +12,7 @@ Reproducible HTML metadata extraction, structure-array counting, paper metadata 
 - `tables/papers.csv`, `dataset_papers.csv`: deduplicated references, titles, years, authors and DOI/URL links; CSP and experimental contexts kept separate.
 - `tables/provenance.csv`: field values, evidence, sources and reported/calculated/inferred/missing statuses.
 - `tables/annual_counts.csv`, `cumulative_papers.csv`, `method_frequencies.csv`, `molecular_systems.csv`, `structure_count_ranking.csv`: complete plot data.
+- `tables/annual_counts.csv` also includes cumulative datasets, counting only searches with a single study year. `scientist_plot_data.csv` records the top 20 displayed scientists, including Sally Price; full scientist metadata remain in the original contributor tables.
 - `tables/*audit.csv`, `broken_source_links.csv`, `unlinked_json_inventory.csv`, `metadata_conflicts.csv`: source coverage and exceptions.
 - `sources/`: Git tree, verified HTML, JSON structure summaries, Crossref/DataCite metadata and external-reference exceptions.
 - `manifest.json`, `verification.json`: revision, access date, font checks, versions and accounting/format verification.

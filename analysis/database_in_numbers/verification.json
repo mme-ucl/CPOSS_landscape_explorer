@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "checks_passed": 269,
+  "checks_passed": 277,
   "datasets": 311,
   "stored_structure_entries": 155824,
   "named_scientists": 45,
@@ -8,9 +8,9 @@
   "unique_scientific_papers_all_scopes": 574,
   "unique_linked_references_all_scopes": 577,
   "pdf_fonts": [
-    "/HFHVDQ+Helvetica",
+    "/DBEONC+Helvetica",
     "/CJIGXG+Helvetica",
-    "/EERYVE+Helvetica-Bold"
+    "/RJGHDG+Helvetica-Bold"
   ],
   "png_dimensions": [
     2480,
@@ -19,6 +19,7 @@
   "checks": [
     "Dataset identifiers are unique and match manifest",
     "Annual landscape totals equal all datasets with single study years",
+    "Cumulative dataset series sums annual counts and ends at all single-year datasets",
     "Annual structure totals equal dated known structure counts",
     "Structure-file and dataset totals agree",
     "Every structure-target property array has the correct length",
@@ -277,13 +278,20 @@
     "Source HTML SHA verified: index.html",
     "PDF has exactly one page",
     "PDF is exactly A4 portrait",
-    "PDF font is Helvetica: /HFHVDQ+Helvetica",
-    "PDF font is embedded: /HFHVDQ+Helvetica",
+    "PDF font is Helvetica: /DBEONC+Helvetica",
+    "PDF font is embedded: /DBEONC+Helvetica",
     "PDF font is Helvetica: /CJIGXG+Helvetica",
     "PDF font is embedded: /CJIGXG+Helvetica",
-    "PDF font is Helvetica: /EERYVE+Helvetica-Bold",
-    "PDF font is embedded: /EERYVE+Helvetica-Bold",
-    "PDF text is extractable",
+    "PDF font is Helvetica: /RJGHDG+Helvetica-Bold",
+    "PDF font is embedded: /RJGHDG+Helvetica-Bold",
+    "Updated PDF title is present and extractable",
+    "Cumulative dataset panel is present",
+    "Requested electronic-structure label replaces the previous wording",
+    "All annotated text removals are absent from the PDF",
+    "Contributor chart includes 20 scientists, including Sally Price",
+    "All plot heights are unchanged during horizontal compaction",
+    "Molecular size and scientist panels are swapped to A and D",
+    "Summary strip is scaled to 70 percent",
     "PNG dimensions match A4 at 300 dpi",
     "PNG declares 300 dpi"
   ]

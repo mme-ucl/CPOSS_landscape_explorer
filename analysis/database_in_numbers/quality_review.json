@@ -1,9 +1,17 @@
 {
   "status": "passed",
   "review_date": "2026-10-23",
+  "annotation_comments_addressed": 23,
+  "previous_review_comments_addressed": 21,
+  "current_review_comments_addressed": 2,
   "scientific_rule_tests": 9,
-  "output_verification_checks": 269,
-  "visual_review": "Final PDF rendered with Poppler at 140 dpi and visually inspected: all six panels, labels, legends and notes fit without clipping or overlap.",
-  "pdf_sha256": "a19bdfc5f21d1daa43d65305243766875e2e465808bd0e71b93e8c002463249b",
-  "png_sha256": "fe569468a61817a1a130f506c11f54133264d9e77bae5b3b9b4d91b9e73065f7"
+  "output_verification_checks": 277,
+  "visual_review": "Latest PDF rendered with Poppler at 140 dpi and visually inspected. Both columns moved 3.78 mm towards the centre, reducing horizontal separation by 7.56 mm. Every plot height and vertical position retained. Scientist chart expanded to the top 20 contributors, including Sally Price. All plot labels, legends and notes fit without clipping or overlap.",
+  "displayed_contributors": 20,
+  "includes_sally_price": true,
+  "plot_heights_unchanged": true,
+  "cumulative_dataset_count": 236,
+  "cumulative_dataset_scope": "Only single reported study years; 75 searches with intervals or pre-2010 dates excluded.",
+  "pdf_sha256": "0643358ff791842b44b425c16cd1ffb82c967bd89a4521990deac0fb3df7aac8",
+  "png_sha256": "4e2f04edb34746dfa59d0c2c96f01270575a1ad755631526091417d8e13db198"
 }

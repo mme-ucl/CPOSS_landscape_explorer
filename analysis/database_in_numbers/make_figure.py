@@ -14,20 +14,51 @@ os.environ.setdefault("MPLCONFIGDIR", "/tmp/cposs-matplotlib")
 import matplotlib
 matplotlib.use("Agg")
 from matplotlib import font_manager, pyplot as plt
-from matplotlib.lines import Line2D
+from matplotlib.collections import LineCollection, PolyCollection
+from matplotlib.colors import LinearSegmentedColormap, LogNorm, Normalize, to_hex
 from matplotlib.patches import Rectangle
 from matplotlib.text import Text
-from matplotlib.ticker import MaxNLocator, FuncFormatter
+from matplotlib.ticker import MaxNLocator
 import numpy as np
 import pandas as pd
 
 INK = "#172F3D"
 MUTED = "#566974"
 GRID = "#DCE4E8"
-TEAL = "#007F82"
-BLUE = "#397CAD"
-ORANGE = "#C37529"
-LIGHT = "#EEF5F6"
+LIGHT = "#F6F7F7"
+# Spectral-inspired anchors, with a darker gold centre for white-page legibility.
+SPECTRAL_ANCHORS = ["#5e4fa2", "#3288bd", "#4ca88b", "#c8ac4c", "#ed814c", "#c62f4c"]
+SPECTRAL = LinearSegmentedColormap.from_list("CPOSS_Spectral", SPECTRAL_ANCHORS, N=256)
+COOL = SPECTRAL_ANCHORS[1]
+WARM = SPECTRAL_ANCHORS[-1]
+
+
+def count_colors(values):
+    values = np.asarray(values, dtype=float)
+    return SPECTRAL(LogNorm(vmin=values.min(), vmax=values.max())(values))
+
+
+def spectral_line(ax, x, y, color_values, norm, *, step=False, baseline=0, fill_alpha=0.15, linewidth=1.4):
+    """Vector line and area with a continuous, explicitly defined colour ramp."""
+    x, y, color_values = (np.asarray(v, dtype=float) for v in (x, y, color_values))
+    segments, segment_values, polygons, polygon_values = [], [], [], []
+    for i in range(len(x) - 1):
+        if step:
+            segments.extend([[(x[i], y[i]), (x[i + 1], y[i])], [(x[i + 1], y[i]), (x[i + 1], y[i + 1])]])
+            segment_values.extend([color_values[i], color_values[i + 1]])
+            polygons.append([(x[i], baseline), (x[i], y[i]), (x[i + 1], y[i]), (x[i + 1], baseline)])
+            polygon_values.append(color_values[i])
+        else:
+            segments.append([(x[i], y[i]), (x[i + 1], y[i + 1])])
+            segment_values.append((color_values[i] + color_values[i + 1]) / 2)
+            polygons.append([(x[i], baseline), (x[i], y[i]), (x[i + 1], y[i + 1]), (x[i + 1], baseline)])
+            polygon_values.append(segment_values[-1])
+    ax.add_collection(PolyCollection(polygons, facecolors=SPECTRAL(norm(polygon_values)), edgecolors="none", alpha=fill_alpha, zorder=1))
+    line = LineCollection(segments, cmap=SPECTRAL, norm=norm, linewidths=linewidth, zorder=3)
+    line.set_array(np.asarray(segment_values))
+    ax.add_collection(line)
+    ax.update_datalim(np.column_stack([x, y]))
+    ax.autoscale_view()
 
 
 def helvetica(font_path):
@@ -68,11 +99,10 @@ def tidy(ax, axis="y"):
     ax.grid(axis=axis, color=GRID, linewidth=0.5)
 
 
-def panel(fig, rect, letter, title, subtitle):
+def panel(fig, rect, letter, title):
     x, y, w, h = rect
-    fig.text(x, y + h, letter, color=TEAL, weight="bold", fontsize=11, va="top")
-    fig.text(x + 0.032, y + h, title, weight="bold", fontsize=10.5, va="top")
-    fig.text(x, y + h - 0.023, subtitle, fontsize=6.9, color=MUTED, va="top")
+    fig.text(x, y + h, letter, color=INK, weight="bold", fontsize=9, va="top")
+    fig.text(x + 0.029, y + h, title, weight="bold", fontsize=9, va="top")
 
 
 def category_counts(models, field):
@@ -99,6 +129,7 @@ def make_figure(base, font_path):
     annual["missing_structure_counts"] = annual.landscapes - annual.landscapes_with_structure_count
     years = list(range(int(annual.year.min()), int(annual.year.max()) + 1))
     annual = annual.set_index("year").reindex(years).fillna(0).rename_axis("year").reset_index()
+    annual["cumulative_datasets"] = annual.landscapes.cumsum().astype(int)
     annual.to_csv(table_dir / "annual_counts.csv", index=False)
     csp_ids = set(relations.loc[relations.relation == "csp_study", "paper_id"])
     csp_papers = papers[papers.paper_id.isin(csp_ids) & papers.is_paper].copy()
@@ -107,49 +138,55 @@ def make_figure(base, font_path):
     cumulative = cumulative.set_index("year").reindex(range(int(cumulative.year.min()), int(cumulative.year.max()) + 1)).fillna(0).rename_axis("year").reset_index()
     cumulative["cumulative_unique_papers"] = cumulative.new_unique_papers.cumsum().astype(int)
     cumulative.to_csv(table_dir / "cumulative_papers.csv", index=False)
+    year_norm = Normalize(vmin=min(years[0], int(cumulative.year.min())), vmax=max(years[-1], int(cumulative.year.max())))
     potential = category_counts(models, "potential_families")
     electronic = category_counts(models, "electronic_methods")
     pd.concat([potential.rename_axis("category").reset_index(name="datasets").assign(kind="potential_family"), electronic.rename_axis("category").reset_index(name="datasets").assign(kind="electronic_method")]).to_csv(table_dir / "method_frequencies.csv", index=False)
     chemistry = df.drop_duplicates("source_url").dropna(subset=["atom_count", "molar_mass_g_mol"]).copy()
     chemistry.to_csv(table_dir / "molecular_systems.csv", index=False)
     fig = plt.figure(figsize=(210 / 25.4, 297 / 25.4), facecolor="white")
-    fig.text(0.067, 0.965, "CPOSS  /  CRYSTAL STRUCTURE PREDICTION", fontsize=8.1, weight="bold", color=TEAL, va="top")
-    fig.text(0.067, 0.938, "The database in numbers", fontsize=24, weight="bold", va="top")
-    fig.text(0.067, 0.902, "An audit of the publicly linked CSP landscapes", fontsize=10, color=MUTED, va="top")
-    fig.text(0.933, 0.964, datetime.fromisoformat(manifest["accessed_date"]).strftime("%d %b %Y").upper(), ha="right", fontsize=8, color=MUTED, va="top")
-    fig.add_artist(Rectangle((0.067, 0.817), 0.866, 0.059, facecolor=LIGHT, edgecolor="none", transform=fig.transFigure, zorder=-1))
-    stats = [(f"{n:,}", "CSP datasets"), (f"{total:,}", "stored structure entries*"), (str(len(contributors)), "named scientists"), (str(len(csp_papers)), "unique CSP papers")]
+    fig.text(0.5, 0.970, "The CPOSS database in numbers", fontsize=14, weight="bold", ha="center", va="top")
+    # Scale the summary strip by 70% and keep its centre on the page.
+    strip_scale = 0.70
+    strip_width, strip_height = 0.866 * strip_scale, 0.059 * strip_scale
+    strip_left, strip_bottom = (1 - strip_width) / 2, 0.900
+    fig.add_artist(Rectangle((strip_left, strip_bottom), strip_width, strip_height, facecolor=LIGHT, edgecolor="none", transform=fig.transFigure, zorder=-1))
+    stats = [(f"{n:,}", "CSP datasets"), (f"{total:,}", "stored structure entries"), (str(len(contributors)), "named scientists"), (str(len(csp_papers)), "unique CSP papers")]
     for i, (value, label) in enumerate(stats):
-        x = 0.084 + i * 0.217
-        fig.text(x, 0.863, value, fontsize=20, weight="bold", color=INK, va="top")
-        fig.text(x, 0.832, label, fontsize=7.1, color=MUTED, va="top")
-    # Each logical panel occupies a fixed, aligned rectangle; plots have room
-    # for full scientist labels and are never clipped to fit the page.
-    rects = [(0.067, 0.577, 0.397, 0.21), (0.548, 0.577, 0.385, 0.21), (0.067, 0.322, 0.397, 0.215), (0.548, 0.322, 0.385, 0.215), (0.067, 0.066, 0.397, 0.215), (0.548, 0.066, 0.385, 0.215)]
+        x = strip_left + (i + 0.5) * strip_width / 4
+        fig.text(x, strip_bottom + strip_height - 0.006, value, fontsize=20 * strip_scale, weight="bold", color=INK, ha="center", va="top")
+        fig.text(x, strip_bottom + 0.0115, label, fontsize=6.0, color=MUTED, ha="center", va="top")
+    # Compact journal layout: align row baselines, reduce vertical gutters and
+    # give the data the recovered space. Physical page size remains A4.
+    # Move each column 0.018 page widths towards the centre. All plot heights
+    # and vertical positions stay identical to the preceding reviewed figure.
+    rects = [(0.085, 0.674, 0.397, 0.210), (0.530, 0.674, 0.385, 0.210), (0.085, 0.381, 0.397, 0.215), (0.530, 0.381, 0.385, 0.215), (0.085, 0.054, 0.397, 0.260), (0.530, 0.054, 0.385, 0.260)]
 
-    # A: dataset-level full counting of explicitly credited people.
-    credited_n = int(df.scientist_names.notna().sum())
-    panel(fig, rects[0], "A", "The scientists", f"Top 12 of {len(contributors)}; {credited_n}/{n} datasets have named credits")
-    axa = fig.add_axes([0.230, 0.600, 0.213, 0.140])
-    top = contributors.head(12).iloc[::-1]
-    axa.barh(top.scientist_name, top.dataset_count, height=0.61, color=TEAL)
-    axa.set_xlim(0, float(top.dataset_count.max()) * 1.14)
-    for i, value in enumerate(top.dataset_count):
-        axa.text(value + 1, i, str(int(value)), va="center", fontsize=6.7)
-    axa.tick_params(axis="y", length=0, labelsize=7)
-    axa.xaxis.set_major_locator(MaxNLocator(4, integer=True))
-    axa.set_xlabel("Datasets credited", labelpad=3)
-    tidy(axa, "x")
-    axa.spines["left"].set_visible(False)
+    # A: molecular size, moved into the first panel.
+    panel(fig, rects[0], "A", "Molecular size")
+    axa = fig.add_axes([0.143, 0.646, 0.315, 0.218])
+    for basis, color, label in [("reported molecular formula", COOL, "Single component"), ("formula unit (multicomponent)", WARM, "Multicomponent formula unit")]:
+        part = chemistry[chemistry.composition_basis == basis]
+        axa.scatter(part.atom_count, part.molar_mass_g_mol, s=15, color=color, alpha=0.65, linewidth=0.3, edgecolors="white", label=f"{label} ({len(part)})")
+    axa.set_xscale("log")
+    axa.set_yscale("log")
+    axa.set_xticks([5, 10, 20, 50, 100, 200], ["5", "10", "20", "50", "100", "200"])
+    axa.set_yticks([50, 100, 300, 1000, 3000], ["50", "100", "300", "1,000", "3,000"])
+    axa.minorticks_off()
+    axa.set_xlabel("Atoms per molecule / formula unit (log scale)", labelpad=3, fontsize=7.3)
+    axa.set_ylabel("Molar mass (g/mol; log scale)", labelpad=3, fontsize=7.5)
+    axa.set_xlim(chemistry.atom_count.min() * 0.80, chemistry.atom_count.max() * 1.20)
+    axa.set_ylim(chemistry.molar_mass_g_mol.min() * 0.72, chemistry.molar_mass_g_mol.max() * 1.30)
+    axa.legend(loc="upper left", frameon=False, fontsize=6.4, borderpad=0, labelspacing=0.5, handletextpad=0.3)
+    tidy(axa)
 
     # B: every linked array, ranked rather than unreadable individual labels.
-    panel(fig, rects[1], "B", "Structures per dataset", f"{len(known)}/{n} linked files counted; 4 broken JSON links")
-    axb = fig.add_axes([0.606, 0.600, 0.315, 0.139])
+    panel(fig, rects[1], "B", "Structures per dataset")
+    axb = fig.add_axes([0.588, 0.646, 0.315, 0.218])
     ranked = known.sort_values("structure_count", ascending=False).reset_index(drop=True)
     ranked[["dataset_id", "structure_count", "source_url", "json_url"]].assign(rank=np.arange(1, len(ranked) + 1)).to_csv(table_dir / "structure_count_ranking.csv", index=False)
     xx = np.arange(1, len(ranked) + 1)
-    axb.fill_between(xx, ranked.structure_count, 8, color=BLUE, alpha=0.24, linewidth=0)
-    axb.plot(xx, ranked.structure_count, color=BLUE, linewidth=1.3)
+    spectral_line(axb, xx, ranked.structure_count, ranked.structure_count, LogNorm(vmin=ranked.structure_count.min(), vmax=ranked.structure_count.max()), baseline=8, fill_alpha=0.17)
     axb.set_yscale("log")
     axb.set_ylim(8, 3500)
     axb.set_yticks([10, 100, 1000], ["10", "100", "1,000"])
@@ -159,109 +196,91 @@ def make_figure(base, font_path):
     axb.set_xlabel("Dataset rank (largest first)", labelpad=3)
     axb.set_ylabel("Structure entries (log scale)", labelpad=3)
     median = float(known.structure_count.median())
-    axb.text(0.97, 0.92, f"Median {median:,.0f}", transform=axb.transAxes, ha="right", fontsize=7.1, color=BLUE)
+    axb.text(0.97, 0.92, f"Median {median:,.0f}", transform=axb.transAxes, ha="right", fontsize=7.1, color=MUTED)
     tidy(axb)
 
-    # C: keep force fields and molecular electronic levels visually distinct.
-    panel(fig, rects[2], "C", "Energy models", "Dataset counts; method categories can overlap")
-    axc1 = fig.add_axes([0.226, 0.430, 0.217, 0.059])
-    pp = potential.iloc[::-1]
-    labels = [x.replace("Non-empirical / SAPT", "Non-empirical / SAPT").replace("Custom Delaware", "Custom Delaware") for x in pp.index]
-    axc1.barh(labels, pp.values, color=TEAL, height=0.61)
-    axc1.set_xlim(0, 320)
-    axc1.set_xticks([0, 100, 200, 300], ["", "", "", ""])
-    axc1.tick_params(axis="y", length=0, labelsize=6.6)
-    for i, value in enumerate(pp):
-        axc1.text(value + 4, i, str(value), va="center", fontsize=6.5)
-    tidy(axc1, "x")
-    axc1.spines[["left", "bottom"]].set_visible(False)
-    fig.text(0.067, 0.499, "Potential families", fontsize=7.1, color=TEAL, weight="bold")
-    axc2 = fig.add_axes([0.226, 0.349, 0.217, 0.061])
+    # C: keep only the requested electronic-level comparison.
+    panel(fig, rects[2], "C", "Energy models")
+    axc2 = fig.add_axes([0.244, 0.363, 0.217, 0.189])
     ee = electronic.head(6).iloc[::-1]
-    axc2.barh(ee.index, ee.values, color=BLUE, height=0.61)
-    axc2.set_xlim(0, 320)
-    axc2.set_xticks([0, 100, 200, 300])
-    axc2.tick_params(axis="y", length=0, labelsize=6.6)
+    axc2.barh(ee.index, ee.values, color=count_colors(ee.values), height=0.61)
+    axc2.set_xlim(0, 200)
+    axc2.set_xticks([0, 50, 100, 150, 200])
+    axc2.tick_params(axis="y", length=0, labelsize=7)
+    axc2.set_xlabel("Datasets", labelpad=3)
     for i, value in enumerate(ee):
-        axc2.text(value + 4, i, str(value), va="center", fontsize=6.5)
+        axc2.text(value + 2.5, i, str(value), va="center", fontsize=6.5)
     tidy(axc2, "x")
     axc2.spines["left"].set_visible(False)
-    fig.text(0.067, 0.416, "Electronic levels (top 6)", fontsize=7.1, color=BLUE, weight="bold")
-    fig.text(0.067, 0.320, f"Includes molecular calculations; {int(df.periodic_dft_supplement.sum())} searches also link pDFT supplements.", fontsize=6.1, color=MUTED)
+    fig.text(0.085, 0.574, "Electronic structure theory level", fontsize=7.1, color=INK)
 
-    # D: one point per documented molecular system, not per repeated search.
-    panel(fig, rects[3], "D", "Molecular size", f"{len(chemistry)} documented systems; composition from reported formulas")
-    axd = fig.add_axes([0.606, 0.355, 0.315, 0.132])
-    for basis, color, label in [("reported molecular formula", BLUE, "Single component"), ("formula unit (multicomponent)", ORANGE, "Multicomponent formula unit")]:
-        part = chemistry[chemistry.composition_basis == basis]
-        axd.scatter(part.atom_count, part.molar_mass_g_mol, s=15, color=color, alpha=0.65, linewidth=0.3, edgecolors="white", label=f"{label} ({len(part)})")
-    axd.set_xscale("log")
-    axd.set_yscale("log")
-    axd.set_xticks([5, 10, 20, 50, 100, 200], ["5", "10", "20", "50", "100", "200"])
-    axd.set_yticks([50, 100, 300, 1000, 3000], ["50", "100", "300", "1,000", "3,000"])
-    axd.minorticks_off()
-    axd.set_xlabel("Atoms per molecule / formula unit (log scale)", labelpad=3, fontsize=7.3)
-    axd.set_ylabel("Molar mass (g/mol; log scale)", labelpad=3, fontsize=7.5)
-    axd.set_xlim(chemistry.atom_count.min() * 0.80, chemistry.atom_count.max() * 1.20)
-    axd.set_ylim(chemistry.molar_mass_g_mol.min() * 0.72, chemistry.molar_mass_g_mol.max() * 1.30)
-    axd.legend(loc="upper left", frameon=False, fontsize=6.4, borderpad=0, labelspacing=0.5, handletextpad=0.3)
-    tidy(axd)
-    fig.text(0.548, 0.320, "Hydrogens included; formula-unit masses retain written stoichiometry.", fontsize=6.1, color=MUTED)
+    # D: expand the ranking to 20 scientists, with no individual exclusions.
+    panel(fig, rects[3], "D", "The scientists")
+    axd = fig.add_axes([0.693, 0.363, 0.213, 0.213])
+    displayed = contributors.head(20).copy()
+    displayed.to_csv(table_dir / "scientist_plot_data.csv", index=False)
+    top = displayed.iloc[::-1]
+    axd.barh(top.scientist_name, top.dataset_count, height=0.58, color=count_colors(top.dataset_count), linewidth=0)
+    axd.set_xlim(0, float(top.dataset_count.max()) * 1.14)
+    for i, value in enumerate(top.dataset_count):
+        axd.text(value + 1, i, str(int(value)), va="center", fontsize=6.1)
+    axd.tick_params(axis="y", length=0, labelsize=6.3)
+    axd.xaxis.set_major_locator(MaxNLocator(4, integer=True))
+    axd.set_xlabel("Datasets credited", labelpad=3)
+    tidy(axd, "x")
+    axd.spines["left"].set_visible(False)
 
     # E: aligned bars/line with distinct axes and explicit study-year scope.
-    panel(fig, rects[4], "E", "Landscapes through time", f"Source study year; {len(dated)}/{n} datasets have a single year")
-    axe = fig.add_axes([0.126, 0.116, 0.281, 0.115])
-    axe.bar(annual.year, annual.landscapes, width=0.76, color=TEAL, alpha=0.82)
-    axe.set_ylabel("CSP datasets", color=TEAL, labelpad=3)
+    panel(fig, rects[4], "E", "Landscapes through time")
+    axe = fig.add_axes([0.144, 0.190, 0.281, 0.104])
+    axe.bar(annual.year, annual.landscapes, width=0.76, color=SPECTRAL(year_norm(annual.year)), alpha=0.93)
+    axe.set_ylabel("Datasets / year", color=INK, labelpad=3, fontsize=7.2)
     axe.yaxis.set_major_locator(MaxNLocator(4, integer=True))
     axe.set_xlim(min(years) - 0.7, max(years) + 0.7)
     axe.set_xticks([2005, 2010, 2015, 2020, 2025])
-    axe.set_xlabel("Study year (source Date field)", labelpad=3, fontsize=7.4)
+    axe.tick_params(axis="x", labelbottom=False)
     tidy(axe)
     axe2 = axe.twinx()
-    axe2.plot(annual.year, annual.structures / 1000, color=ORANGE, marker="o", markersize=2.5, linewidth=1.2)
-    axe2.set_ylabel("Structure entries (thousands)", color=ORANGE, labelpad=3, fontsize=7.2)
+    axe2.plot(annual.year, annual.structures / 1000, color=INK, marker="o", markersize=2.5, linewidth=1.2)
+    axe2.set_ylabel("Structure entries\n(thousands)", color=INK, labelpad=3, fontsize=7.0)
     axe2.spines[["top", "left"]].set_visible(False)
     axe2.tick_params(axis="y", labelsize=7, length=2.5, width=0.5)
     axe2.set_ylim(bottom=0)
     axe2.yaxis.set_major_locator(MaxNLocator(4))
+    axec = fig.add_axes([0.144, 0.100, 0.281, 0.074], sharex=axe)
+    spectral_line(axec, annual.year, annual.cumulative_datasets, annual.year, year_norm, step=True, fill_alpha=0.13, linewidth=1.5)
+    axec.set_ylabel("Cumulative datasets", fontsize=7.2, labelpad=3)
+    axec.set_xlabel("Study year", labelpad=3, fontsize=7.4)
+    axec.set_ylim(0, len(dated) * 1.20)
+    axec.set_yticks([0, 100, 200])
+    axec.text(annual.year.iloc[-1], annual.cumulative_datasets.iloc[-1] + 9, str(int(annual.cumulative_datasets.iloc[-1])), ha="right", fontsize=7, color=to_hex(SPECTRAL(year_norm(annual.year.iloc[-1]))), weight="bold")
+    tidy(axec)
     not_assigned = int(df[df.study_year.isna()].structure_count.sum())
-    fig.text(0.067, 0.078, f"{n - len(dated)} searches with ranges / pre-2010 dates excluded from annual bins;", fontsize=6.1, color=MUTED)
-    fig.text(0.067, 0.067, f"{not_assigned:,} stored structure entries have no single study year.", fontsize=6.1, color=MUTED)
+    fig.text(0.085, 0.045, f"{n - len(dated)} searches with ranges / pre-2010 dates excluded from annual bins;", fontsize=6.1, color=MUTED)
+    fig.text(0.085, 0.034, f"{not_assigned:,} stored structure entries have no single study year.", fontsize=6.1, color=MUTED)
 
-    # F: paper-per-dataset distribution AND deduplicated cumulative papers.
-    panel(fig, rects[5], "F", "The linked literature", "CSP study papers; experimental CSD references kept separate")
-    axf1 = fig.add_axes([0.606, 0.182, 0.315, 0.050])
-    hist = df.csp_paper_count.astype(int).value_counts().sort_index()
-    axf1.bar(hist.index, hist.values, color=BLUE, width=0.56)
-    axf1.set_xticks(hist.index)
-    axf1.set_ylim(0, max(hist.values) * 1.22)
-    axf1.set_yticks([0, 100, 200])
-    axf1.set_ylabel("Datasets", fontsize=7.5, labelpad=3)
-    axf1.set_xlabel("Linked papers per dataset", fontsize=7.2, labelpad=2)
-    for x, value in hist.items():
-        axf1.text(x, value + 4, str(value), ha="center", fontsize=6.8)
-    tidy(axf1)
-    axf2 = fig.add_axes([0.606, 0.092, 0.315, 0.049])
-    axf2.step(cumulative.year, cumulative.cumulative_unique_papers, color=TEAL, where="post", linewidth=1.5)
-    axf2.fill_between(cumulative.year, cumulative.cumulative_unique_papers, step="post", color=TEAL, alpha=0.1)
+    # F: retain only cumulative unique CSP papers.
+    panel(fig, rects[5], "F", "The linked literature")
+    axf2 = fig.add_axes([0.588, 0.100, 0.315, 0.194])
+    spectral_line(axf2, cumulative.year, cumulative.cumulative_unique_papers, cumulative.year, year_norm, step=True, fill_alpha=0.13, linewidth=1.5)
     axf2.set_ylabel("Unique papers", fontsize=7.5, labelpad=3)
     axf2.set_xlabel("Publication year (cumulative)", fontsize=7.2, labelpad=2)
     axf2.set_xticks([2000, 2010, 2020, 2025])
     axf2.set_xlim(min(cumulative.year), max(cumulative.year) + 1)
     axf2.set_ylim(0, len(csp_papers) * 1.18)
     axf2.set_yticks([0, 25, 50, 75])
-    axf2.text(cumulative.year.iloc[-1] + 0.1, len(csp_papers) + 3, str(len(csp_papers)), ha="right", color=TEAL, fontsize=7, weight="bold")
+    axf2.text(cumulative.year.iloc[-1] + 0.1, len(csp_papers) + 3, str(len(csp_papers)), ha="right", color=to_hex(SPECTRAL(year_norm(cumulative.year.iloc[-1]))), fontsize=7, weight="bold")
     tidy(axf2)
-
-    fig.add_artist(Line2D([0.067, 0.933], [0.047, 0.047], transform=fig.transFigure, color=GRID, linewidth=0.7))
-    fig.text(0.067, 0.035, f"* Entries in {len(known)} linked Chemiscope files, including experimental references; not globally unique predicted crystals.", fontsize=6.4, color=MUTED, va="top")
-    fig.text(0.067, 0.023, f"louiseprice.github.io/CPOSS_Database  |  Snapshot {manifest['snapshot_revision'][:12]}  |  See accompanying data and caption.", fontsize=6.1, color=MUTED, va="top")
 
     output_dir = base / "figures"
     output_dir.mkdir(exist_ok=True)
     pdf_dir = base / "output/pdf"
     pdf_dir.mkdir(parents=True, exist_ok=True)
+    plot_axes = {"A": axa, "B": axb, "C": axc2, "D": axd, "E_annual": axe, "E_structures": axe2, "E_cumulative": axec, "F": axf2}
+    expected_heights = {"A": 0.218, "B": 0.218, "C": 0.189, "D": 0.213, "E_annual": 0.104, "E_structures": 0.104, "E_cumulative": 0.074, "F": 0.194}
+    geometry = {name: list(ax.get_position().bounds) for name, ax in plot_axes.items()}
+    if not all(np.isclose(geometry[name][3], height, rtol=0, atol=1e-12) for name, height in expected_heights.items()):
+        raise RuntimeError("A plot height changed during horizontal compaction")
     fig.canvas.draw()
     actual_fonts = set()
     outside = []
@@ -278,12 +297,14 @@ def make_figure(base, font_path):
     if actual_fonts != {"Helvetica"} or outside:
         raise RuntimeError(f"Figure verification failed: fonts={actual_fonts}, outside={outside}")
     timestamp = datetime.fromisoformat(manifest["accessed_date"] + "T00:00:00").replace(tzinfo=ZoneInfo("Europe/London"))
-    fig.savefig(pdf_dir / "database_in_numbers.pdf", metadata={"Title": "The database in numbers", "Author": "CPOSS metadata analysis", "Subject": "CSP dataset metadata, structure counts and linked publications", "CreationDate": timestamp, "ModDate": timestamp})
+    fig.savefig(pdf_dir / "database_in_numbers.pdf", metadata={"Title": "The CPOSS database in numbers", "Author": "CPOSS metadata analysis", "Subject": "CSP dataset metadata, structure counts and linked publications", "CreationDate": timestamp, "ModDate": timestamp})
     fig.savefig(output_dir / "database_in_numbers.png", dpi=300)
     plt.close(fig)
     font_info["all_figure_text_families"] = sorted(actual_fonts)
     font_info["text_outside_page"] = outside
     manifest["font_verification"] = font_info
+    manifest["colour_scheme"] = {"name": "CPOSS Spectral-inspired", "anchors": SPECTRAL_ANCHORS, "white_page_adjustment": "Darker gold midtone", "molecular_components": {"single_component": COOL, "multicomponent": WARM}, "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales", "time_panels": "Common study/publication year colour ramp in E and F; structure-entry line is charcoal", "year_limits": [year_norm.vmin, year_norm.vmax], "new_colourbar_axes": False}
+    manifest["figure_presentation"] = {"title": "The CPOSS database in numbers", "layout": "Compact journal-style A4 page with aligned panel baselines and reduced vertical and horizontal gutters", "horizontal_column_inset_fraction": 0.018, "plot_geometry_fraction": geometry, "plot_heights_unchanged": True, "title_font_size_pt": 14, "panel_heading_font_size_pt": 9, "summary_strip_scale": strip_scale, "panels": {"A": "Molecular size", "B": "Structures per dataset", "C": "Electronic structure theory level", "D": "Scientist credits (top 20)", "E": "Annual landscapes and structure entries; cumulative datasets", "F": "Cumulative unique CSP papers"}, "displayed_scientists": list(displayed.scientist_name), "scientist_plot_exclusions": [], "cumulative_datasets_endpoint": int(annual.cumulative_datasets.iloc[-1]), "cumulative_dataset_scope": "Only single unambiguous source study years; intervals and pre-2010 dates excluded"}
     manifest["software_versions"] = {p: importlib.metadata.version(p) for p in ["pandas", "numpy", "matplotlib", "fonttools", "requests", "rdkit", "pypdf"]}
     (base / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     write_report(base, df, contributors, models, papers, relations, csp_papers, chemistry, annual, cumulative, potential, electronic, manifest)
@@ -301,9 +322,8 @@ def write_report(base, df, contributors, models, papers, relations, csp_papers, 
     duplicate = json_audit[json_audit.duplicate_filename_count.fillna(0) > 0]
     csp_assoc = relations[relations.relation == "csp_study"]
     top = contributors.iloc[0]
-    note = f"""The database in numbers. Metadata were extracted from {manifest['case_pages_with_searches']} molecule pages reachable from the CPOSS index, representing {n} distinct CSP searches in repository snapshot {manifest['snapshot_revision']} (accessed {manifest['accessed_date']}). Each explicitly linked search is one dataset; its energy models are not separate datasets. A, the 12 most frequently credited scientists, with full credit for each named contributor and no inferred authorship from paper author lists ({credited_n}/{n} searches have a named scientist). B, linked Chemiscope structure-array entries per dataset, ranked on a logarithmic axis ({len(known)}/{n} files; median {known.structure_count.median():.0f}); experimental-reference entries and repeated filename labels are retained, so {total:,} is a stored-entry total, not a count of globally distinct predictions or all structures originally generated. C, dataset frequencies for reported potential families and the six most frequent electronic-method categories; categories overlap and electronic levels may describe molecular or multipole calculations rather than periodic DFT. All method categories are tabulated. D, molar mass versus total atom count calculated from reported formulas, with one point per documented molecular system ({len(chemistry)} systems). Multicomponent formulas retain explicitly written stoichiometry; hydrogens are included, and unit-cell atom counts are not used. E, annual CSP-search counts (bars) and stored structure entries (line), using single unambiguous years from the source Date field ({len(dated)}/{n} datasets); date ranges and pre-2010 dates are excluded from annual bins. These are study dates, not release/deposition dates. F, the number of linked CSP papers per dataset and cumulative unique linked CSP papers by publication year ({len(csp_papers)} papers). Papers are deduplicated across datasets by DOI or canonical URL; explicit within-page Study_ID publication pointers are followed and labelled inferred. Experimental CSD citations are recorded separately. Helvetica is used and embedded throughout; the figure is A4 portrait, with a vector PDF and 300 dpi PNG.
+    note = f"""The CPOSS database in numbers. Metadata were extracted from {manifest['case_pages_with_searches']} molecule pages reachable from the CPOSS index, representing {n} distinct CSP searches in repository snapshot {manifest['snapshot_revision']} (accessed {manifest['accessed_date']}). Each explicitly linked search is one dataset; its energy models are not separate datasets. A, molar mass versus total atom count on logarithmic axes, calculated from reported formulas with one point per documented molecular system ({len(chemistry)} systems). Multicomponent formulas retain explicitly written stoichiometry; hydrogens are included, and unit-cell atom counts are not used. B, linked Chemiscope structure-array entries per dataset, ranked on a logarithmic axis ({len(known)}/{n} files; median {known.structure_count.median():.0f}); experimental-reference entries and repeated filename labels are retained, so {total:,} is a stored-entry total, not a count of globally distinct predictions or all structures originally generated. Four linked JSON files are missing. C, electronic structure theory level, showing dataset frequencies for the six most frequent categories. Categories overlap and electronic levels may describe molecular or multipole calculations rather than periodic DFT. Complete potential-family and electronic-method data are tabulated separately. D, dataset credits for the 20 most frequently credited scientists, including Sally Price, with full credit for each named contributor and no inferred authorship from paper author lists ({credited_n}/{n} searches have a named scientist). The full metadata retain all {len(contributors)} scientists. E, annual CSP-search counts (upper bars) and stored structure entries (upper line), plus cumulative CSP-dataset counts (lower curve), using single unambiguous years from the source Date field ({len(dated)}/{n} datasets). Date ranges and pre-2010 dates are excluded from annual and cumulative bins; the cumulative curve therefore ends at {len(dated)}, not {n}. These are study dates, not release/deposition dates. F, cumulative unique linked CSP papers by publication year ({len(csp_papers)} papers). Papers are deduplicated across datasets by DOI or canonical URL; explicit within-page Study_ID publication pointers are followed and labelled inferred. Experimental CSD citations are recorded separately. Helvetica is used and embedded throughout; the figure is A4 portrait, with a vector PDF and 300 dpi PNG.
 """
-    note = note.replace("D, molar mass versus total atom count", "D, molar mass versus total atom count on logarithmic axes")
     (base / "caption.md").write_text(note)
     def markdown_table(frame):
         columns = list(frame.columns)
@@ -386,6 +406,8 @@ Crossref supplies titles, authors, reference types and its preferred published y
 
 No conflicting contributor/date/formula values were found across merged dataset mappings (**{conflict_count} conflicts**). All available linked JSON structure-target property lengths match their arrays; the delivered verification report separately checks these lengths, accounting totals, annual aggregation, DOI deduplication, PDF geometry and embedded fonts. The source-link audit lists **{len(bad_links)} missing internal link targets** across HTML, archives and images; these were checked against the repository inventory, not by fetching every ZIP or image. External paper landing pages were not all fetched; metadata-service retrieval and its exceptions are recorded in `sources/doi_metadata.json`.
 
-The page is exactly A4 portrait. All text resolves to Helvetica, with regular/bold faces extracted from the system Helvetica collection for embedding; no proprietary font file is redistributed. The vector PDF and 300 dpi PNG have the same layout. `caption.md` provides the standalone figure caption. `tables/` holds complete results, `sources/` holds archived HTML/metadata, and `manifest.json` records scope, revision, date, fonts and package versions.
+The figure shows molecular size in panel A and scientist credits in panel D. The scientist panel shows the 20 most frequently credited scientists, including Sally Price; the full source tables and headline count retain all {len(contributors)} scientists. Potential-family bars, paper-per-dataset bars, panel subtitles and the footer are omitted from the figure; their data, provenance and counting rules remain in these tables and the caption. The cumulative dataset curve includes only the {len(dated)} searches with a single study year.
+
+The page is exactly A4 portrait, with compact vertical and horizontal gutters, unchanged plot heights, aligned plot baselines, a 14 pt title and 9 pt panel headings. All text resolves to Helvetica, with regular/bold faces extracted from the system Helvetica collection for embedding; no proprietary font file is redistributed. The vector PDF and 300 dpi PNG have the same layout. `caption.md` provides the standalone figure caption. `tables/` holds complete results, `sources/` holds archived HTML/metadata, and `manifest.json` records scope, revision, date, fonts and package versions.
 """
     (base / "report.md").write_text(report)

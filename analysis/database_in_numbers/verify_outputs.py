@@ -33,6 +33,7 @@ def main():
 
     check(len(d) == manifest["datasets"] and d.dataset_id.is_unique, "Dataset identifiers are unique and match manifest")
     check(int(a.landscapes.sum()) == int(d.study_year.notna().sum()), "Annual landscape totals equal all datasets with single study years")
+    check(a.cumulative_datasets.iloc[-1] == int(d.study_year.notna().sum()) and np.array_equal(a.cumulative_datasets, a.landscapes.cumsum()), "Cumulative dataset series sums annual counts and ends at all single-year datasets")
     check(np.isclose(a.structures.sum(), d[d.study_year.notna()].structure_count.sum()), "Annual structure totals equal dated known structure counts")
     check(np.isclose(d.structure_count.sum(), files.structure_count.sum()), "Structure-file and dataset totals agree")
     check(files.loc[files.status == "calculated", "property_lengths_valid"].eq(True).all(), "Every structure-target property array has the correct length")
@@ -65,7 +66,18 @@ def main():
             descriptor = ref_child.get_object()["/FontDescriptor"].get_object()
             check(any(k in descriptor for k in ["/FontFile", "/FontFile2", "/FontFile3"]), "PDF font is embedded: " + name)
         fonts.append(name)
-    check("The database in numbers" in page.extract_text(), "PDF text is extractable")
+    text = page.extract_text()
+    check("The CPOSS database in numbers" in text, "Updated PDF title is present and extractable")
+    check("Cumulative datasets" in text, "Cumulative dataset panel is present")
+    check("Electronic structure theory level" in text and "Electronic levels (top 6)" not in text, "Requested electronic-structure label replaces the previous wording")
+    removed_strings = ["CRYSTAL STRUCTURE PREDICTION", "An audit of the publicly linked", "23 OCT 2026", "linked files counted", "Potential families", "Dataset counts; method categories", "documented systems; composition", "CSP study papers; experimental", "Source study year;", "Linked papers per dataset", "Includes molecular calculations;", "Hydrogens included;", "datasets have named credits", "louiseprice.github.io/CPOSS_Database", "Entries in 307 linked Chemiscope files"]
+    check(not any(s in text for s in removed_strings), "All annotated text removals are absent from the PDF")
+    presentation = manifest["figure_presentation"]
+    check("Sally Price" in text and "Sally Price" in presentation["displayed_scientists"] and len(presentation["displayed_scientists"]) == 20, "Contributor chart includes 20 scientists, including Sally Price")
+    expected_heights = {"A": 0.218, "B": 0.218, "C": 0.189, "D": 0.213, "E_annual": 0.104, "E_structures": 0.104, "E_cumulative": 0.074, "F": 0.194}
+    check(all(np.isclose(presentation["plot_geometry_fraction"][name][3], height, rtol=0, atol=1e-12) for name, height in expected_heights.items()), "All plot heights are unchanged during horizontal compaction")
+    check(presentation["panels"]["A"] == "Molecular size" and presentation["panels"]["D"].startswith("Scientist credits"), "Molecular size and scientist panels are swapped to A and D")
+    check(presentation["summary_strip_scale"] == 0.7, "Summary strip is scaled to 70 percent")
     image = Image.open(BASE / "figures/database_in_numbers.png")
     check(abs(image.size[0] - 210 / 25.4 * 300) <= 1 and abs(image.size[1] - 297 / 25.4 * 300) <= 1, "PNG dimensions match A4 at 300 dpi")
     check(abs(image.info.get("dpi", (0, 0))[0] - 300) < 0.1, "PNG declares 300 dpi")

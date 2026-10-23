@@ -14,6 +14,8 @@ Open <http://127.0.0.1:8765/>. Use HTTP rather than opening the HTML as a local 
 
 Search by a molecule name, alias, REFCODE, or dataset code. Select a result with a click or the arrow keys and Enter; Escape dismisses the list. Collection filters combine with the search. Filtering does not change the displayed landscape.
 
+Opening the navigator without `?load=...` starts with Aspirin — Search A, a small example with both space-group and experimental-information properties, so the complete default style is visible immediately. The catalogue's first entry, 2-Fluoro Ethynyl Benzene, lacks a space-group property and therefore cannot use space-group colours. It remains selectable with a missing-property notice. Shared `?load=...` URLs and embedded/local datasets retain their own selection. A `?settings=...` URL also overrides the automatic initial example's settings.
+
 “Open molecule database page” opens the source page separately. “Preview beside landscape” embeds it beside the viewer on wide screens and below the viewer on smaller screens. The external link is always available if embedding fails. The preview shows the original database page, whose fixed-width content may require horizontal scrolling.
 
 The existing Chemiscope load/save modal, plot/structure settings, exports, and local file loader remain available. A local upload clears the shared dataset URL and does not inherit a database-page association just because its filename resembles a catalogue entry.
