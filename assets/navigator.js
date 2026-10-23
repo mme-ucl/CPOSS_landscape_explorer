@@ -2,7 +2,7 @@
     'use strict';
     const catalogueTools = window.CpossCatalogue;
     const byId = id => document.getElementById(id);
-    const state = { datasets: [], matches: [], active: -1, current: null, page: null, loading: false, preview: false };
+    const state = { datasets: [], archiveContents: {}, matches: [], active: -1, current: null, page: null, loading: false, preview: false };
     let app;
 
     function resizeViewer() {
@@ -113,7 +113,67 @@
             byId('case-page-link').removeAttribute('href');
             state.preview = false;
         }
+        renderDownloads();
         refreshPreview();
+    }
+
+    function renderDownloads() {
+        const container = byId('dataset-downloads');
+        container.replaceChildren();
+        const { archives, metadata } = catalogueTools.resources(state.page, state.archiveContents);
+        if (!archives.length && !metadata.length) {
+            const note = document.createElement('span');
+            note.className = 'cposs-download-unavailable';
+            note.textContent = 'Structure archive unavailable for this dataset';
+            container.appendChild(note);
+            return;
+        }
+        const archiveLink = item => {
+            const link = document.createElement('a');
+            link.className = 'btn btn-sm cposs-download-button';
+            link.href = item.url;
+            // Hosted ZIP MIME types trigger a download across origins. Keep a
+            // normal original-resource URL as fallback; download is only a hint.
+            link.download = item.filename;
+            link.rel = 'noopener noreferrer';
+            link.textContent = item.label;
+            link.setAttribute('aria-label', `${item.label} — ${state.current.label}, ${item.context}`);
+            link.title = `${item.context}: ${item.detail}`;
+            return link;
+        };
+        if (archives.length === 1) {
+            const item = archives[0];
+            container.appendChild(archiveLink(item));
+            const context = document.createElement('span');
+            context.className = 'cposs-download-context';
+            context.textContent = item.context;
+            container.appendChild(context);
+        } else if (archives.length > 1) {
+            const details = document.createElement('details');
+            details.className = 'cposs-download-choices';
+            const summary = document.createElement('summary');
+            summary.textContent = `Download structures (.zip) · ${archives.length} model archives`;
+            const list = document.createElement('ul');
+            for (const item of archives) {
+                const row = document.createElement('li');
+                const context = document.createElement('strong');
+                context.textContent = item.context;
+                const description = document.createElement('span');
+                description.textContent = item.detail;
+                row.append(context, description, archiveLink(item));
+                list.appendChild(row);
+            }
+            details.append(summary, list);
+            container.appendChild(details);
+        }
+        for (const item of metadata) {
+            const link = document.createElement('a');
+            link.href = item.url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = `Metadata: ${item.label}`;
+            container.appendChild(link);
+        }
     }
 
     function setCurrent(url, fallbackLabel, local = false) {
@@ -142,10 +202,6 @@
         }
     }
 
-    function applyDefaultStructureSettings() {
-        app.visualizer.applySettings({ structure: [{ supercell: [3, 3, 3], unitCell: true }] });
-    }
-
     async function loadUrl(url, { updateUrl = false, settingsUrl = null } = {}) {
         if (state.loading) return;
         state.loading = true;
@@ -159,7 +215,6 @@
                 settings = await response.json();
             }
             await app.fetchAndLoad(catalogueTools.externalDataUrl(url), {});
-            applyDefaultStructureSettings();
             if (settings) app.visualizer.applySettings(settings);
             setCurrent(url, filenameLabel(url));
             if (updateUrl) {
@@ -169,6 +224,10 @@
                 history.replaceState(null, '', pageUrl.href);
             }
         } catch (error) {
+            state.current = null;
+            setPage(null);
+            byId('cposs-dataset-name').textContent = 'No dataset loaded';
+            byId('visualization-notice').hidden = true;
             displayError(error);
             byId('cposs-load-status').textContent = 'Unable to load dataset. Choose another result or try again.';
         } finally {
@@ -186,11 +245,12 @@
     }
 
     async function loadCatalogue() {
-        const response = await fetch('data/catalogue.json');
+        const response = await fetch('data/catalogue.json?v=20261023', { cache: 'no-cache' });
         if (!response.ok) throw new Error('The dataset catalogue could not be loaded. Serve this folder over HTTP (see README).');
         const catalogue = await response.json();
         if (catalogue.schemaVersion !== 1 || !Array.isArray(catalogue.datasets) || !catalogue.datasets.length) throw new Error('The dataset catalogue is empty or unsupported.');
         state.datasets = catalogue.datasets.slice().sort((a, b) => a.label.localeCompare(b.label, undefined, { numeric: true, sensitivity: 'base' }));
+        state.archiveContents = catalogue.archiveContents || {};
         for (const collection of catalogue.collections) {
             const option = new Option(`${collection.label} (${collection.count})`, collection.id);
             option.dataset.label = collection.label;
@@ -274,6 +334,11 @@
         window.addEventListener('error', event => { if (event.error) displayError(event.error); });
         window.addEventListener('unhandledrejection', event => displayError(event.reason));
         app = new Chemiscope.ChemiscopeApp('chemiscope-container');
+        window.CpossVisualization.install(app, messages => {
+            const notice = byId('visualization-notice');
+            notice.textContent = messages.join(' ');
+            notice.hidden = messages.length === 0;
+        });
         // Keep Chemiscope's file/streaming loader and settings UI; update metadata only
         // after a local dataset has successfully loaded, without matching by filename.
         const originalLoad = app.load.bind(app);
@@ -314,8 +379,6 @@
                 state.loading = true;
                 try {
                     await app.load({}, data);
-                    applyDefaultStructureSettings();
-                    if (data.settings) app.visualizer.applySettings(data.settings);
                     setCurrent(null, data.meta?.name?.trim() || 'Embedded dataset', true);
                 } finally { state.loading = false; stopLoading(); renderResults(); }
             } else stopLoading();

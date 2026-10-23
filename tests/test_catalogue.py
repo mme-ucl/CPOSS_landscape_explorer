@@ -56,6 +56,15 @@ class CatalogueTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             catalogue.build_catalogue({"truncated": True}, {})
 
+    def test_resources_use_linked_archives_and_actual_sibling_metadata(self):
+        models = [{"id": "1", "downloads": ["AlphaA/1.AlphaA_CrystPred.zip", "AlphaB/missing.zip"], "studyId": "3"}]
+        files = {"Alpha/AlphaA/1.AlphaA_CrystPred.zip", "Alpha/AlphaA/AlphaA.xlsx", "Alpha/AlphaB/AlphaB.xlsx"}
+        actual, metadata = catalogue.search_resources(models, catalogue.SITE + "Alpha/Alpha.html", files)
+        self.assertEqual(actual[0]["downloads"], [catalogue.SITE + "Alpha/AlphaA/1.AlphaA_CrystPred.zip"])
+        self.assertEqual(actual[0]["studyId"], "3")
+        self.assertEqual(metadata, [{"url": catalogue.SITE + "Alpha/AlphaA/AlphaA.xlsx", "label": "AlphaA.xlsx"}])
+        self.assertEqual(len(models[0]["downloads"]), 2)
+
 
 if __name__ == "__main__":
     unittest.main()

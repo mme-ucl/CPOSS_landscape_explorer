@@ -32,9 +32,21 @@ header.cposs-header { height: auto; background: #fff; position: relative; z-inde
 .cposs-eyebrow { color: #72687e; font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; display: block; }
 #cposs-dataset-name { font-size: .93rem; overflow-wrap: anywhere; }
 #cposs-load-status { font-size: .78rem; color: #625b6b; margin: 0; }
+.cposs-visualization-notice { margin: 0; padding: .45rem 1.2rem; background: #f6f4f9; color: #625b6b; font-size: .77rem; border-bottom: 1px solid #e4dfeb; }
 .cposs-page-actions { display: flex; align-items: center; gap: .5rem .8rem; flex-wrap: wrap; font-size: .84rem; }
 .cposs-page-actions a { color: #59317b; font-weight: 600; }
 .cposs-page-actions select { max-width: 240px; }
+.cposs-downloads { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .8rem; padding: .45rem 1.2rem; border-bottom: 1px solid #e4dfeb; font-size: .78rem; }
+.cposs-downloads a { color: #59317b; }
+.cposs-downloads .cposs-download-button { background: #59317b; color: white; border: 1px solid #59317b; font-size: .78rem; }
+.cposs-downloads a:hover { text-decoration: underline; }
+.cposs-downloads :focus-visible { outline: 3px solid #9865c7; outline-offset: 2px; }
+.cposs-download-context, .cposs-download-unavailable { color: #72687e; }
+.cposs-download-choices { position: relative; }
+.cposs-download-choices summary { padding: .35rem .6rem; border: 1px solid #59317b; border-radius: .3rem; color: #59317b; cursor: pointer; font-weight: 600; }
+.cposs-download-choices ul { position: absolute; z-index: 40; top: 100%; left: 0; width: min(470px, calc(100vw - 2.4rem)); padding: .4rem; margin: .25rem 0 0; background: white; border: 1px solid #bdb5c8; border-radius: .3rem; box-shadow: 0 8px 30px #24113226; max-height: 48vh; overflow: auto; list-style: none; }
+.cposs-download-choices li { display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; padding: .6rem; border-bottom: 1px solid #eeeaf2; overflow-wrap: anywhere; }
+.cposs-download-choices li:last-child { border: 0; }
 #case-page-unavailable { color: #72687e; }
 #toggle-preview { font-size: .8rem; }
 .cposs-alerts { position: relative; }

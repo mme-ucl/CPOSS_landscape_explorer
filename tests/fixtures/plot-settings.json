@@ -1,0 +1,32 @@
+{
+  "map": {
+    "x": {
+      "property": "Energy"
+    },
+    "y": {
+      "property": "Density"
+    },
+    "color": {
+      "property": "Density",
+      "mode": "linear",
+      "min": 1,
+      "max": 4,
+      "palette": "viridis"
+    },
+    "size": {
+      "property": "Experimental Info",
+      "mode": "linear",
+      "factor": 65
+    }
+  },
+  "structure": [
+    {
+      "supercell": [
+        2,
+        1,
+        1
+      ],
+      "unitCell": true
+    }
+  ]
+}

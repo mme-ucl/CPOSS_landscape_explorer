@@ -54,5 +54,35 @@
         });
     }
 
-    return { normalize, externalDataUrl, datasetKey, find, filter };
+    function resources(page, contents = {}) {
+        const archives = [];
+        const metadata = [];
+        const safeResource = (value, extensions) => {
+            try {
+                const url = new URL(value);
+                return url.protocol === 'https:' && extensions.test(url.pathname) ? url.href : null;
+            } catch (_) { return null; }
+        };
+        for (const model of page?.models || []) {
+            for (const value of model.downloads || []) {
+                const url = safeResource(value, /\.zip$/i);
+                if (!url) continue;
+                const filename = decodeURIComponent(new URL(url).pathname.split('/').pop());
+                // CrystPred/CrystOpt is read from the actual linked filename.
+                const kind = filename.match(/_(CrystPred|CrystOpt)\.zip$/i)?.[1];
+                const context = [`Model ${model.id}`, kind, model.studyId ? `Study ${model.studyId}` : ''].filter(Boolean).join(' · ');
+                const audit = contents[url];
+                const hasMetadata = Boolean(audit?.metadataFiles?.length);
+                archives.push({ url, filename, context, label: `Download structures${hasMetadata ? ' + metadata' : ''} (.zip)`,
+                    detail: audit ? `${audit.structureCount} ${audit.structureFormat.toUpperCase()} structures${hasMetadata ? ' + ' + audit.metadataFiles.map(name => name.split('/').pop()).join(', ') : ''}` : 'Archive contents supplied by the database; metadata inclusion has not been checked.' });
+            }
+        }
+        for (const item of page?.metadataDownloads || []) {
+            const url = safeResource(item.url, /\.(xlsx|csv|tsv)$/i);
+            if (url && !metadata.some(item => item.url === url)) metadata.push({ url, label: item.label || decodeURIComponent(new URL(url).pathname.split('/').pop()) });
+        }
+        return { archives, metadata };
+    }
+
+    return { normalize, externalDataUrl, datasetKey, find, filter, resources };
 });

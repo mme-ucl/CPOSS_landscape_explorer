@@ -1,5 +1,5 @@
 {
-  "datasetCount": 310,
+  "datasetCount": 315,
   "casePageCount": 236,
   "mappedDatasetCount": 307,
   "collectionCounts": {
@@ -12,7 +12,12 @@
   "unmappedDatasets": [
     "4C2NBMHA.json",
     "5fluorouracilA.json",
-    "PhloroglucinolDihydrateB.json"
+    "GalunisertibAworking.json",
+    "MefenamicAcidA_full.json",
+    "NiflumicAcidA_full.json",
+    "PhloroglucinolDihydrateB.json",
+    "SuccinicAcidD_full.json",
+    "TolfenamicAcidB_full.json"
   ],
   "multipleCaseMappings": [],
   "brokenSourceLinks": [
@@ -49,6 +54,6 @@
     "Tricyclics": [],
     "Dichloronitrobenzene": []
   },
-  "validation": "Dataset and case paths checked against the complete GitHub tree. JSON contents and external publication/download URLs are not fetched.",
-  "sourceTree": "ff596da6e70766a9a12af56413831c774dd695f1"
+  "validation": "Dataset, case, archive and metadata paths checked against the complete GitHub tree. Archive contents are labelled only when a separate content audit matches the current Git blob SHA. Other archive contents and external publication URLs are not fetched.",
+  "sourceTree": "d65c1732ab6db46b8af34e0646a760c56a8d559c"
 }

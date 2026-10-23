@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "name": "Categorical plot defaults fixture"
+  },
+  "structures": [
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    }
+  ],
+  "properties": {
+    "Density": {
+      "target": "structure",
+      "values": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "Energy": {
+      "target": "structure",
+      "values": [
+        -40,
+        -30,
+        -20,
+        -10
+      ]
+    },
+    "Space Group": {
+      "target": "structure",
+      "values": [
+        "P1",
+        "P2",
+        "P21",
+        "P21/c"
+      ]
+    },
+    "Experimental Info": {
+      "target": "structure",
+      "values": [
+        "Known form",
+        "Another form",
+        "",
+        ""
+      ]
+    }
+  }
+}

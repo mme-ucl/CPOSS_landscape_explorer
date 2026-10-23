@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "archives": [
+    {
+      "url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/1.UreaA_CrystPred.zip?raw=true",
+      "blobSha": "cc4e435bdd65a987fbb1b3f977ac38acced021c4",
+      "verifiedAt": "2026-10-22T23:46:45+00:00",
+      "structureCount": 850,
+      "structureFormat": "res",
+      "metadataFiles": [
+        "1.UreaA_CrystPred/Urea_CrystPred.xlsx"
+      ]
+    },
+    {
+      "url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/2.UreaA_CrystOpt.zip?raw=true",
+      "blobSha": "0d41442f0a3cf3f731617dab66477fef63bda594",
+      "verifiedAt": "2026-10-22T23:46:45+00:00",
+      "structureCount": 793,
+      "structureFormat": "res",
+      "metadataFiles": [
+        "2.UreaA_CrystOpt/Urea_CrystOpt.xlsx"
+      ]
+    }
+  ]
+}

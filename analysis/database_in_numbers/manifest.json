@@ -1,0 +1,39 @@
+{
+  "source_index": "https://louiseprice.github.io/CPOSS_Database/index.html",
+  "snapshot_revision": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
+  "accessed_date": "2026-10-23",
+  "timezone": "Europe/London",
+  "dataset_definition": "Unique CSP search identified by explicit linked Chemiscope filename; no-link searches by page and search code; repeated pages referencing same file merged",
+  "year_rule": "Single unambiguous year in source Date field (study date); ranges and pre-2010 excluded; no release dates or publication-year substitution",
+  "structure_rule": "Array-entry count of linked JSON only; original search generation size and cross-dataset packing identity unknown",
+  "reachable_html_pages": 243,
+  "inventory_html_pages": 245,
+  "case_pages_with_searches": 235,
+  "search_occurrences_before_deduplication": 311,
+  "datasets": 311,
+  "unlinked_json_files": 8,
+  "font_verification": {
+    "requested_font": "/System/Library/Fonts/Helvetica.ttc",
+    "source_font_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3",
+    "family": "Helvetica",
+    "faces": [
+      "Helvetica.ttf",
+      "Helvetica-Bold.ttf",
+      "Helvetica-Oblique.ttf",
+      "Helvetica-BoldOblique.ttf"
+    ],
+    "all_figure_text_families": [
+      "Helvetica"
+    ],
+    "text_outside_page": []
+  },
+  "software_versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "fonttools": "4.67.0",
+    "requests": "2.34.2",
+    "rdkit": "2026.9.1",
+    "pypdf": "6.21.2"
+  }
+}

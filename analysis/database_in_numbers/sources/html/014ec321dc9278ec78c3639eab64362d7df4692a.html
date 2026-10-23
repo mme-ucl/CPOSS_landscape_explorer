@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPOSS Database — Contributor Statistics</title>
+  <style>
+    :root { --ink:#202124;--muted:#5f6368;--line:#d8dce1;--blue:#1558a6;--teal:#087f8c;--paper:#f5f7f9; }
+    * { box-sizing:border-box; }
+    body { margin:0;color:var(--ink);background:#fff;font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(1200px,calc(100% - 2rem));margin:3rem auto; }
+    h1 { margin:.25rem 0;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15; }
+    h2 { margin:0 0 .25rem;line-height:1.25; }
+    a { color:var(--blue);font-weight:650; }
+    .back { display:inline-block;margin-bottom:1rem; }
+    .intro { max-width:800px;color:var(--muted); }
+    .metrics { display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin:1.6rem 0; }
+    .metric { padding:1rem;border:1px solid var(--line);border-radius:.55rem;background:var(--paper); }
+    .metric strong { display:block;font-size:1.75rem;line-height:1.1;color:var(--blue); }
+    .metric span { color:var(--muted);font-size:.92rem; }
+    .charts { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1rem;margin:1rem 0 2rem; }
+    .panel { border:1px solid var(--line);border-radius:.55rem;padding:1.15rem;background:#fff; }
+    .panel-note { margin:.2rem 0 1.1rem;color:var(--muted);font-size:.92rem; }
+    .coauthor-network { margin:1rem 0 2rem; }
+    .coauthor-graph { width:100%;height:auto;min-height:520px;border:1px solid var(--line);border-radius:.55rem;background:#fbfcfe;display:block; }
+    .coauthor-legend { display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;margin:.75rem 0 0;color:var(--muted);font-size:.9rem; }
+    .legend-item { display:inline-flex;align-items:center;gap:.4rem; }
+    .legend-dot { width:.85rem;height:.85rem;border-radius:999px;background:var(--blue);display:inline-block; }
+    .legend-dot.boss { background:#c75a00; }
+    .legend-dot.isolated { background:#9aa0a6; }
+    .legend-line { width:2rem;height:.22rem;background:#6f42c1;border-radius:999px;display:inline-block; }
+    .bar-row { margin:.65rem 0; }
+    .bar-label { display:flex;justify-content:space-between;gap:1rem;font-size:.9rem; }
+    .track { height:.65rem;margin-top:.2rem;border-radius:999px;background:#e8ebef;overflow:hidden; }
+    .bar { height:100%;min-width:2px;border-radius:999px; }
+    .table-wrap { overflow-x:auto;border:1px solid var(--line);border-radius:.55rem; }
+    table { width:100%;border-collapse:collapse; }
+    th,td { padding:.65rem .75rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top; }
+    th { background:var(--paper);font-size:.9rem;white-space:nowrap; }
+    tbody tr:last-child td { border-bottom:0; }
+    tbody tr:hover { background:#fafbfd; }
+    td:nth-child(1),td:nth-child(3),td:nth-child(4) { text-align:right; }
+    .case-links a,.case-links span { display:inline-block;margin:0 .35rem .2rem 0; }
+    .note { color:var(--muted);font-size:.9rem;margin-top:1rem; }
+  </style>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "accessed_date": "2026-10-23",
+  "exceptions": [
+    {
+      "url": "https://www.amercrystalassn.org/assets/volume39.pdf",
+      "http_status": 404,
+      "source_citation": "Price, S. L., Patel, B., Pridhanani-Jethani, P., Torrisi, A., Trans. ACA, 39(2), 1-12 (2004)",
+      "type": "paper_reported_citation",
+      "type_status": "inferred",
+      "title_status": "missing",
+      "action": "Retain the explicitly linked source citation, publication year and paper association; do not invent a title."
+    }
+  ],
+  "scope": "Direct retrieval exception for the one CSP reference without a DOI. Other external links were enriched through Crossref/DataCite; their publisher landing pages were not all fetched."
+}

@@ -180,6 +180,23 @@ def fetch(url):
             time.sleep(attempt + 1)
 
 
+def search_resources(models, page_url, files):
+    """Use linked archives and actual sibling spreadsheet paths from the tree."""
+    result, directories = [], set()
+    for model in models:
+        downloads = []
+        for href in model["downloads"]:
+            url = urljoin(page_url, href)
+            path = database_path(url)
+            if path in files and path.lower().endswith(".zip"):
+                downloads.append(url.replace("http://", "https://", 1))
+                directories.add(str(Path(path).parent))
+        result.append({**model, "downloads": downloads})
+    metadata = [{"url": SITE + quote(path), "label": Path(path).name}
+                for path in sorted(files) if str(Path(path).parent) in directories and path.lower().endswith((".xlsx", ".csv", ".tsv"))]
+    return result, metadata
+
+
 def build_catalogue(tree, sources):
     if tree.get("truncated"):
         raise ValueError("GitHub returned a truncated file inventory; refusing an incomplete refresh")
@@ -205,7 +222,9 @@ def build_catalogue(tree, sources):
                     broken.append({"source": path, "target": "0.Chemiscope/" + name})
                     continue
                 item = datasets[name]
-                page = {"url": SITE + quote(path), "molecule": common, "search": search["code"], "models": search["models"]}
+                page_url = SITE + quote(path)
+                models, metadata_downloads = search_resources(search["models"], page_url, files)
+                page = {"url": page_url, "molecule": common, "search": search["code"], "models": models, "metadataDownloads": metadata_downloads}
                 item["cases"].append(page)
                 item["aliases"] = sorted(set(item["aliases"]) | set(names))
                 item["codes"] = sorted(set(item["codes"]) | set(codes))
@@ -223,7 +242,7 @@ def build_catalogue(tree, sources):
         "multipleCaseMappings": [x["filename"] for x in items if len(x["cases"]) > 1],
         "brokenSourceLinks": broken,
         "collectionCasesWithoutDatasets": {key: sorted(path for path in case_paths if key in memberships[path] and not any(SITE + quote(path) == c["url"] for x in items for c in x["cases"])) for key, _ in COLLECTIONS},
-        "validation": "Dataset and case paths checked against the complete GitHub tree. JSON contents and external publication/download URLs are not fetched.",
+        "validation": "Dataset, case, archive and metadata paths checked against the complete GitHub tree. Archive contents are labelled only when a separate content audit matches the current Git blob SHA. Other archive contents and external publication URLs are not fetched.",
     }
     catalogue = {"schemaVersion": 1, "sourceTree": tree["sha"], "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"), "collections": [{"id": key, "label": label, "sourceUrl": SITE + FAMILIES + "#" + key, "count": counts[key]} for key, label in COLLECTIONS], "datasets": items}
     return catalogue, report
@@ -272,6 +291,12 @@ def main():
     if errors:
         raise RuntimeError("Refresh aborted; existing catalogue preserved:\n" + "\n".join(errors))
     catalogue, report = build_catalogue(tree, sources)
+    # Content labels expire automatically when an upstream archive changes.
+    audit_file = ROOT / "data/archive-contents.json"
+    blobs_by_path = {x["path"]: x["sha"] for x in tree["tree"] if x["type"] == "blob"}
+    audits = json.loads(audit_file.read_text()).get("archives", []) if audit_file.exists() else []
+    catalogue["archiveContents"] = {item["url"]: item for item in audits
+                                    if blobs_by_path.get(database_path(item["url"])) == item["blobSha"]}
     report["sourceTree"] = tree["sha"]
     args.output.mkdir(parents=True, exist_ok=True)
     for name, value in [("catalogue.json", catalogue), ("catalogue-report.json", report)]:

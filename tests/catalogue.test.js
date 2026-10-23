@@ -68,3 +68,34 @@ test('unmapped datasets remain searchable and have no invented case links', () =
         assert.deepEqual(entry.cases, []);
     }
 });
+
+test('Urea resources retain both models with audited contents and search metadata', () => {
+    const urea = datasets.find(item => item.id === 'UreaA');
+    const resources = tools.resources(urea.cases[0], catalogue.archiveContents);
+    assert.equal(resources.archives.length, 2);
+    const pred = resources.archives.find(item => item.context.includes('CrystPred'));
+    const opt = resources.archives.find(item => item.context.includes('CrystOpt'));
+    assert.match(pred.context, /Model 1.*Study 20/);
+    assert.match(opt.context, /Model 2.*Study 10/);
+    assert.match(pred.detail, /850 RES structures.*Urea_CrystPred.xlsx/);
+    assert.match(opt.detail, /793 RES structures.*Urea_CrystOpt.xlsx/);
+    assert.equal(pred.label, 'Download structures + metadata (.zip)');
+    assert.ok(resources.metadata.some(item => item.url.endsWith('/Urea/UreaA/UreaA.xlsx')));
+});
+
+test('resource selection is case-specific and clears for unmapped/local data', () => {
+    const a = datasets.find(item => item.id === 'CarbamazepineA');
+    const b = datasets.find(item => item.id === 'CarbamazepineB');
+    const aUrls = tools.resources(a.cases[0]).archives.map(item => item.url);
+    const bUrls = tools.resources(b.cases[0]).archives.map(item => item.url);
+    assert.ok(aUrls.length && bUrls.length);
+    assert.ok(bUrls.every(url => !aUrls.includes(url)));
+    assert.deepEqual(tools.resources(null), { archives: [], metadata: [] });
+    assert.deepEqual(tools.resources({ models: [] }), { archives: [], metadata: [] });
+    const page = { models: [{ id: '1', downloads: ['https://example.org/data.zip'] }] };
+    const single = tools.resources(page).archives;
+    assert.equal(single.length, 1);
+    assert.equal(single[0].label, 'Download structures (.zip)');
+    assert.match(single[0].detail, /has not been checked/);
+    assert.equal(tools.resources({ models: [{ id: '2', downloads: ['javascript:alert(1)', 'https://example.org/page.html'] }] }).archives.length, 0);
+});

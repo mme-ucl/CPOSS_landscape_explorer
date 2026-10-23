@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embedded dataset verification</title>
+<style>
+  body { margin: 0; font: 14px system-ui; }
+  label { display: block; padding: 8px 12px; background: #eee8f5; }
+  select { margin-left: 8px; }
+  iframe { width: 100%; height: 1000px; border: 0; }
+</style>
+<label>Embedded fixture
+  <select id="fixture">
+    <option value="numeric">Numeric defaults</option>
+    <option value="saved">Saved settings</option>
+    <option value="categorical">Text categories</option>
+    <option value="missing">Missing properties</option>
+  </select>
+</label>
+<iframe id="embedded-navigator" title="Navigator with an embedded dataset"></iframe>
+<script>
+  let navigatorHtml;
+  async function render() {
+    navigatorHtml ??= await (await fetch('../index.html')).text();
+    const kind = document.getElementById('fixture').value;
+    const dataset = await (await fetch('fixtures/plot-' + kind + '.json')).json();
+    const base = new URL('../', location.href).href;
+    const embedded = '<script id="standalone-json-data" type="application/json">'
+      + JSON.stringify(dataset).replace(/</g, '\\u003c') + '</scr' + 'ipt>';
+    document.getElementById('embedded-navigator').srcdoc = navigatorHtml
+      .replace('<head>', '<head><base href="' + base + '">')
+      .replace('<body>', '<body>' + embedded);
+  }
+  document.getElementById('fixture').addEventListener('change', render);
+  render();
+</script>
+</html>

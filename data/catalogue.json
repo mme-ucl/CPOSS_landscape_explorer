@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceTree": "ff596da6e70766a9a12af56413831c774dd695f1",
-  "generatedAt": "2026-10-22T12:14:01+00:00",
+  "sourceTree": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
+  "generatedAt": "2026-10-22T23:47:01+00:00",
   "collections": [
     {
       "id": "BlindTest",
@@ -74,6 +74,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Fluoroethynylbenzene/2-fluoroethynylbenzeneA/2-fluoroethynylbenzeneA.xlsx",
+              "label": "2-fluoroethynylbenzeneA.xlsx"
+            }
           ]
         }
       ]
@@ -141,6 +147,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/2-fluorotoluene/2-fluorotolueneA/2-fluorotolueneA.xlsx",
+              "label": "2-fluorotolueneA.xlsx"
+            }
           ]
         }
       ]
@@ -178,6 +190,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/23-dichloronitrobenzene/23-dichloronitrobenzeneA/1.23-dichloronitrobenzeneA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/23-dichloronitrobenzene/23-dichloronitrobenzeneA/23-dichloronitrobenzeneA.xlsx",
+              "label": "23-dichloronitrobenzeneA.xlsx"
             }
           ]
         }
@@ -231,6 +249,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/23-dichloronitrobenzene/23-dichloronitrobenzeneB/23-dichloronitrobenzeneB.xlsx",
+              "label": "23-dichloronitrobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -267,6 +291,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/24-dichloronitrobenzene/24-dichloronitrobenzeneA/1.24-dichloronitrobenzeneA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/24-dichloronitrobenzene/24-dichloronitrobenzeneA/24-dichloronitrobenzeneA.xlsx",
+              "label": "24-dichloronitrobenzeneA.xlsx"
             }
           ]
         }
@@ -319,6 +349,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/24-dichloronitrobenzene/24-dichloronitrobenzeneB/24-dichloronitrobenzeneB.xlsx",
+              "label": "24-dichloronitrobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -356,6 +392,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzeneA/1.25-dichloronitrobenzeneA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzeneA/25-dichloronitrobenzeneA.xlsx",
+              "label": "25-dichloronitrobenzeneA.xlsx"
             }
           ]
         }
@@ -409,6 +451,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzeneB/25-dichloronitrobenzeneB.xlsx",
+              "label": "25-dichloronitrobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -447,6 +495,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/26-dichloronitrobenzene/26-dichloronitrobenzeneA/26-dichloronitrobenzeneA.xlsx",
+              "label": "26-dichloronitrobenzeneA.xlsx"
+            }
           ]
         }
       ]
@@ -477,6 +531,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2aminobenzamide/2aminobenzamideA/1.2aminobenzamideA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2aminobenzamide/2aminobenzamideA/2aminobenzamideA.xlsx",
+              "label": "2aminobenzamideA.xlsx"
             }
           ]
         }
@@ -511,6 +571,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2bromobenzamide/2bromobenzamideA/2bromobenzamideA.xlsx",
+              "label": "2bromobenzamideA.xlsx"
+            }
           ]
         }
       ]
@@ -544,6 +610,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C4NBA/2C4NBAA/2C4NBAA.xlsx",
+              "label": "2C4NBAA.xlsx"
+            }
           ]
         }
       ]
@@ -576,6 +648,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C4NBAMH/2C4NBAMHA/2C4NBAMHA.xlsx",
+              "label": "2C4NBAMHA.xlsx"
+            }
           ]
         }
       ]
@@ -607,6 +685,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C5NBA/2C5NBAA/1.2C5NBAA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C5NBA/2C5NBAA/2C5NBAA.xlsx",
+              "label": "2C5NBAA.xlsx"
             }
           ]
         }
@@ -641,6 +725,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C5NBAMH/2C5NBAMHA/1.2C5NBAMHA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C5NBAMH/2C5NBAMHA/2C5NBAMHA.xlsx",
+              "label": "2C5NBAMHA.xlsx"
             }
           ]
         }
@@ -678,6 +768,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/2CannabinolTetramethylpyrazine/2CannabinolTetramethylpyrazineA/2CannabinolTetramethylpyrazineA.xlsx",
+              "label": "2CannabinolTetramethylpyrazineA.xlsx"
+            }
           ]
         }
       ]
@@ -712,6 +808,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamideA/1.2chlorobenzamideA_CrystalOptimizer.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamideA/2chlorobenzamideA.xlsx",
+              "label": "2chlorobenzamideA.xlsx"
             }
           ]
         }
@@ -748,6 +850,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamideB/2chlorobenzamideB.xlsx",
+              "label": "2chlorobenzamideB.xlsx"
+            }
           ]
         }
       ]
@@ -783,6 +891,12 @@
               ],
               "studyId": "2"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamideC/2chlorobenzamideC.xlsx",
+              "label": "2chlorobenzamideC.xlsx"
+            }
           ]
         }
       ]
@@ -815,6 +929,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2fluorobenzamide/2fluorobenzamideA/1.2fluorobenzamideA_MOLPAKopt.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2fluorobenzamide/2fluorobenzamideA/2fluorobenzamideA.xlsx",
+              "label": "2fluorobenzamideA.xlsx"
             }
           ]
         }
@@ -849,6 +969,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2fluorobenzamide/2fluorobenzamideB/2fluorobenzamideB.xlsx",
+              "label": "2fluorobenzamideB.xlsx"
+            }
           ]
         }
       ]
@@ -880,6 +1006,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2H4NBA/2H4NBAA/1.2H4NBAA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2H4NBA/2H4NBAA/2H4NBAA.xlsx",
+              "label": "2H4NBAA.xlsx"
             }
           ]
         }
@@ -915,6 +1047,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2H4NBAMH/2H4NBAMHA/2H4NBAMHA.xlsx",
+              "label": "2H4NBAMHA.xlsx"
+            }
           ]
         }
       ]
@@ -947,6 +1085,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2M4NBA/2M4NBAA/1.2M4NBAA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2M4NBA/2M4NBAA/2M4NBAA.xlsx",
+              "label": "2M4NBAA.xlsx"
             }
           ]
         }
@@ -981,6 +1125,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2M4NBAMH/2M4NBAMHA/1.2M4NBAMHA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2M4NBAMH/2M4NBAMHA/2M4NBAMHA.xlsx",
+              "label": "2M4NBAMHA.xlsx"
             }
           ]
         }
@@ -1049,6 +1199,12 @@
               ],
               "studyId": "6"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/3-fluorotoluene/3-fluorotolueneA/3-fluorotolueneA.xlsx",
+              "label": "3-fluorotolueneA.xlsx"
+            }
           ]
         }
       ]
@@ -1086,6 +1242,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/34-dichloronitrobenzene/34-dichloronitrobenzeneA/1.34-dichloronitrobenzeneA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/34-dichloronitrobenzene/34-dichloronitrobenzeneA/34-dichloronitrobenzeneA.xlsx",
+              "label": "34-dichloronitrobenzeneA.xlsx"
             }
           ]
         }
@@ -1139,6 +1301,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/34-dichloronitrobenzene/34-dichloronitrobenzeneB/34-dichloronitrobenzeneB.xlsx",
+              "label": "34-dichloronitrobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -1174,6 +1342,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzeneA/1.34-dinitrochlorobenzeneA_MOLPAK-Aniso.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzeneA/34-dinitrochlorobenzeneA.xlsx",
+              "label": "34-dinitrochlorobenzeneA.xlsx"
             }
           ]
         }
@@ -1211,6 +1385,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzeneB/34-dinitrochlorobenzeneB.xlsx",
+              "label": "34-dinitrochlorobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -1246,6 +1426,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzeneC/1.34-dinitrochlorobenzeneC_MOLPAK-IsoAgain.zip?raw=true"
               ],
               "studyId": "2"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzeneC/34-dinitrochlorobenzeneC.xlsx",
+              "label": "34-dinitrochlorobenzeneC.xlsx"
             }
           ]
         }
@@ -1284,6 +1470,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/35-dichloronitrobenzene/35-dichloronitrobenzeneA/1.35-dichloronitrobenzeneA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/35-dichloronitrobenzene/35-dichloronitrobenzeneA/35-dichloronitrobenzeneA.xlsx",
+              "label": "35-dichloronitrobenzeneA.xlsx"
             }
           ]
         }
@@ -1337,6 +1529,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/35-dichloronitrobenzene/35-dichloronitrobenzeneB/35-dichloronitrobenzeneB.xlsx",
+              "label": "35-dichloronitrobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -1370,6 +1568,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/3aminobenzamide/3aminobenzamideA/3aminobenzamideA.xlsx",
+              "label": "3aminobenzamideA.xlsx"
+            }
           ]
         }
       ]
@@ -1401,6 +1605,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Oxauracil/3OxauracilA/1.3OxauracilA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Oxauracil/3OxauracilA/3OxauracilA.xlsx",
+              "label": "3OxauracilA.xlsx"
             }
           ]
         }
@@ -1462,6 +1672,12 @@
               ],
               "studyId": "5"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotolueneA/4-fluorotolueneA.xlsx",
+              "label": "4-fluorotolueneA.xlsx"
+            }
           ]
         }
       ]
@@ -1494,6 +1710,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/4aminobenzamide/4aminobenzamideA/4aminobenzamideA.xlsx",
+              "label": "4aminobenzamideA.xlsx"
+            }
           ]
         }
       ]
@@ -1525,6 +1747,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBA/4C2NBAA/1.4C2NBAA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBA/4C2NBAA/4C2NBAA.xlsx",
+              "label": "4C2NBAA.xlsx"
             }
           ]
         }
@@ -1569,6 +1797,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridine4fluorobenzoicacid/4cyanopyridine4fluorobenzoicacidA/4cyanopyridine4fluorobenzoicacidA.xlsx",
+              "label": "4cyanopyridine4fluorobenzoicacidA.xlsx"
+            }
           ]
         }
       ]
@@ -1602,6 +1836,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridinium4fluorobenzoate/4cyanopyridinium4fluorobenzoateA/1.4cyanopyridinium4fluorobenzoateA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridinium4fluorobenzoate/4cyanopyridinium4fluorobenzoateA/4cyanopyridinium4fluorobenzoateA.xlsx",
+              "label": "4cyanopyridinium4fluorobenzoateA.xlsx"
             }
           ]
         }
@@ -1637,6 +1877,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridinemaleicacid/4dimethylaminopyridinemaleicacidA/4dimethylaminopyridinemaleicacidA.xlsx",
+              "label": "4dimethylaminopyridinemaleicacidA.xlsx"
+            }
           ]
         }
       ]
@@ -1668,6 +1914,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridiniummaleate/4dimethylaminopyridiniummaleateA/1.4dimethylaminopyridiniummaleateA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridiniummaleate/4dimethylaminopyridiniummaleateA/4dimethylaminopyridiniummaleateA.xlsx",
+              "label": "4dimethylaminopyridiniummaleateA.xlsx"
             }
           ]
         }
@@ -1705,6 +1957,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/4Hydroxycoumarin/4HydroxycoumarinA/1.4HydroxycoumarinA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/4Hydroxycoumarin/4HydroxycoumarinA/4HydroxycoumarinA.xlsx",
+              "label": "4HydroxycoumarinA.xlsx"
             }
           ]
         }
@@ -1744,6 +2002,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5aminouracil/5aminouracilA/2.5aminouracilA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5aminouracil/5aminouracilA/5aminouracilA.xlsx",
+              "label": "5aminouracilA.xlsx"
+            }
           ]
         }
       ]
@@ -1776,6 +2040,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Azauracil/5Azauracil/5AzauracilA/1.5AzauracilA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Azauracil/5Azauracil/5AzauracilA/5AzauracilA.xlsx",
+              "label": "5AzauracilA.xlsx"
             }
           ]
         }
@@ -1810,6 +2080,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Azauracil/5AzauracilMonohydrate/5AzauracilMonohydrateA/5AzauracilMonohydrateA.xlsx",
+              "label": "5AzauracilMonohydrateA.xlsx"
+            }
           ]
         }
       ]
@@ -1841,6 +2117,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/5C2NBA/5C2NBAA/1.5C2NBAA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/5C2NBA/5C2NBAA/5C2NBAA.xlsx",
+              "label": "5C2NBAA.xlsx"
             }
           ]
         }
@@ -1876,6 +2158,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5chlorouracil/5chlorouracilA/5chlorouracilA.xlsx",
+              "label": "5chlorouracilA.xlsx"
+            }
           ]
         }
       ]
@@ -1907,6 +2195,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5cyanouracil/5cyanouracilA/1.5cyanouracilA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5cyanouracil/5cyanouracilA/5cyanouracilA.xlsx",
+              "label": "5cyanouracilA.xlsx"
             }
           ]
         }
@@ -1943,6 +2237,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5eniluracil/5eniluracilA/5eniluracilA.xlsx",
+              "label": "5eniluracilA.xlsx"
+            }
           ]
         }
       ]
@@ -1977,6 +2277,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5eniluracil/5eniluracilB/1.5eniluracilB_MOLPAK.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5eniluracil/5eniluracilB/5eniluracilB.xlsx",
+              "label": "5eniluracilB.xlsx"
             }
           ]
         }
@@ -2015,6 +2321,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5ethyluracil/5ethyluracilA/2.5ethyluracilA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5ethyluracil/5ethyluracilA/5ethyluracilA.xlsx",
+              "label": "5ethyluracilA.xlsx"
+            }
           ]
         }
       ]
@@ -2048,6 +2360,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Fluorocytosine/5fluorocytosineA/1.5fluorocytosineA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Fluorocytosine/5fluorocytosineA/5fluorocytosineA.xlsx",
+              "label": "5fluorocytosineA.xlsx"
             }
           ]
         }
@@ -2087,6 +2405,12 @@
               "downloads": [
                 "https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatinA/2.5fluoroisatinA_pDFT.zip?raw=true"
               ]
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatinA/5fluoroisatinA.xlsx",
+              "label": "5fluoroisatinA.xlsx"
             }
           ]
         }
@@ -2136,6 +2460,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5nitrouracil/5nitrouracilA/5nitrouracilA.xlsx",
+              "label": "5nitrouracilA.xlsx"
+            }
           ]
         }
       ]
@@ -2173,6 +2503,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5nitrouracil/5nitrouracilB/5nitrouracilB.xlsx",
+              "label": "5nitrouracilB.xlsx"
+            }
           ]
         }
       ]
@@ -2208,6 +2544,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/5vinyluracil/5vinyluracilA/5vinyluracilA.xlsx",
+              "label": "5vinyluracilA.xlsx"
+            }
           ]
         }
       ]
@@ -2241,6 +2583,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Methoxycoumarin/6methoxycoumarinA/1.6methoxycoumarinA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Methoxycoumarin/6methoxycoumarinA/6methoxycoumarinA.xlsx",
+              "label": "6methoxycoumarinA.xlsx"
             }
           ]
         }
@@ -2277,6 +2625,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Methyluracil/6methyluracilA/1.6methyluracilA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Methyluracil/6methyluracilA/6methyluracilA.xlsx",
+              "label": "6methyluracilA.xlsx"
             }
           ]
         }
@@ -2319,6 +2673,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/7fluoroisatin/7fluoroisatinA/2.7fluoroisatinA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/7fluoroisatin/7fluoroisatinA/7fluoroisatinA.xlsx",
+              "label": "7fluoroisatinA.xlsx"
+            }
           ]
         }
       ]
@@ -2352,6 +2712,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/7Hydroxycoumarin/7hydroxycoumarinA/1.7hydroxycoumarinA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/7Hydroxycoumarin/7hydroxycoumarinA/7hydroxycoumarinA.xlsx",
+              "label": "7hydroxycoumarinA.xlsx"
             }
           ]
         }
@@ -2391,6 +2757,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Acridine/AcridineA/1.AcridineA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Acridine/AcridineA/AcridineA.xlsx",
+              "label": "AcridineA.xlsx"
             }
           ]
         }
@@ -2444,6 +2816,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Acridine/AcridineB/3.AcridineB_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Acridine/AcridineB/AcridineB.xlsx",
+              "label": "AcridineB.xlsx"
+            }
           ]
         }
       ]
@@ -2478,6 +2856,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Adenine/AdenineA/1.AdenineA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Adenine/AdenineA/AdenineA.xlsx",
+              "label": "AdenineA.xlsx"
             }
           ]
         }
@@ -2514,6 +2898,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Adenine/AdenineB/AdenineB.xlsx",
+              "label": "AdenineB.xlsx"
+            }
           ]
         }
       ]
@@ -2548,6 +2938,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Alloxan/AlloxanA/AlloxanA.xlsx",
+              "label": "AlloxanA.xlsx"
+            }
           ]
         }
       ]
@@ -2580,6 +2976,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/AmantadineHydrochloride/AmantadineHydrochlorideA/1.AmantadineHydrochlorideA_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/AmantadineHydrochloride/AmantadineHydrochlorideA/AmantadineHydrochlorideA.xlsx",
+              "label": "AmantadineHydrochlorideA.xlsx"
             }
           ]
         }
@@ -2635,6 +3037,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Mebendazole/AMebendazole/AMebendazoleA/AMebendazoleA.xlsx",
+              "label": "AMebendazoleA.xlsx"
+            }
           ]
         }
       ]
@@ -2667,6 +3075,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Mebendazole/AMebendazole/AMebendazoleB/1.AMebendazoleB_ConformerGenerator.zip?raw=true"
               ],
               "studyId": "60"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Mebendazole/AMebendazole/AMebendazoleB/AMebendazoleB.xlsx",
+              "label": "AMebendazoleB.xlsx"
             }
           ]
         }
@@ -2719,6 +3133,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/AminobenzoicAcid/AminobenzoicAcidA/AminobenzoicAcidA.xlsx",
+              "label": "AminobenzoicAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -2753,6 +3173,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/AminoPyrimidine/AminoPyrimidineA/AminoPyrimidineA.xlsx",
+              "label": "AminoPyrimidineA.xlsx"
+            }
           ]
         }
       ]
@@ -2786,6 +3212,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Amoxapine/AmoxapineA/1.AmoxapineA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Amoxapine/AmoxapineA/AmoxapineA.xlsx",
+              "label": "AmoxapineA.xlsx"
             }
           ]
         }
@@ -2828,6 +3260,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Amoxapine/AmoxapineB/AmoxapineB.xlsx",
+              "label": "AmoxapineB.xlsx"
+            }
           ]
         }
       ]
@@ -2861,6 +3299,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Anisole/AnisoleA/AnisoleA.xlsx",
+              "label": "AnisoleA.xlsx"
+            }
           ]
         }
       ]
@@ -2893,6 +3337,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Anthracene/AnthraceneA/1.AnthraceneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Anthracene/AnthraceneA/AnthraceneA.xlsx",
+              "label": "AnthraceneA.xlsx"
             }
           ]
         }
@@ -2930,6 +3380,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Aspirin/AspirinA/AspirinA.xlsx",
+              "label": "AspirinA.xlsx"
+            }
           ]
         }
       ]
@@ -2965,6 +3421,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IV/AzabicyclononanedioneA/1.AzabicyclononanedioneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IV/AzabicyclononanedioneA/AzabicyclononanedioneA.xlsx",
+              "label": "AzabicyclononanedioneA.xlsx"
             }
           ]
         }
@@ -3002,6 +3464,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IV/AzabicyclononanedioneB/AzabicyclononanedioneB.xlsx",
+              "label": "AzabicyclononanedioneB.xlsx"
+            }
           ]
         }
       ]
@@ -3036,6 +3504,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XI/AzetidineA/1.AzetidineA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XI/AzetidineA/AzetidineA.xlsx",
+              "label": "AzetidineA.xlsx"
             }
           ]
         }
@@ -3072,6 +3546,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/BarbituricAcid/BarbituricAcidA/BarbituricAcidA.xlsx",
+              "label": "BarbituricAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -3103,6 +3583,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/BenzophenanthreneA/1.BenzophenanthreneA_MOLPAK_will01.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/BenzophenanthreneA/BenzophenanthreneA.xlsx",
+              "label": "BenzophenanthreneA.xlsx"
             }
           ]
         }
@@ -3136,6 +3622,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/BenzophenanthreneB/BenzophenanthreneB.xlsx",
+              "label": "BenzophenanthreneB.xlsx"
+            }
           ]
         }
       ]
@@ -3167,6 +3659,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/BenzophenanthreneC/1.BenzophenanthreneC_MOLPAK_dmaflex.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/BenzophenanthreneC/BenzophenanthreneC.xlsx",
+              "label": "BenzophenanthreneC.xlsx"
             }
           ]
         }
@@ -3206,6 +3704,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/BenzylTetrazole/BenzylTetrazoleA/1.BenzylTetrazoleA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/BenzylTetrazole/BenzylTetrazoleA/BenzylTetrazoleA.xlsx",
+              "label": "BenzylTetrazoleA.xlsx"
             }
           ]
         }
@@ -3252,6 +3756,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-2Aminobenzoic/Bipy-2AminobenzoicA/1.Bipy-2AminobenzoicA_spDMAflex_Will.zip?raw=true"
               ],
               "studyId": "11"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-2Aminobenzoic/Bipy-2AminobenzoicA/Bipy-2AminobenzoicA.xlsx",
+              "label": "Bipy-2AminobenzoicA.xlsx"
             }
           ]
         }
@@ -3301,6 +3811,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Aminobenzoic/Bipy-AminobenzoicA/Bipy-AminobenzoicA.xlsx",
+              "label": "Bipy-AminobenzoicA.xlsx"
+            }
           ]
         }
       ]
@@ -3340,6 +3856,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Succinic/Bipy-SuccinicA/1.Bipy-SuccinicA_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Succinic/Bipy-SuccinicA/Bipy-SuccinicA.xlsx",
+              "label": "Bipy-SuccinicA.xlsx"
             }
           ]
         }
@@ -3388,6 +3910,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Bipyridine/BipyridineA/BipyridineA.xlsx",
+              "label": "BipyridineA.xlsx"
+            }
           ]
         }
       ]
@@ -3427,6 +3955,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Bipyridine/BipyridineB/1.BipyridineB_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Bipyridine/BipyridineB/BipyridineB.xlsx",
+              "label": "BipyridineB.xlsx"
             }
           ]
         }
@@ -3477,6 +4011,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidDihydrate/bResorcylicAcidDihydrateA/bResorcylicAcidDihydrateA.xlsx",
+              "label": "bResorcylicAcidDihydrateA.xlsx"
+            }
           ]
         }
       ]
@@ -3523,6 +4063,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidHemihydrate/bResorcylicAcidHemihydrateA/1.bResorcylicAcidHemihydrateA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidHemihydrate/bResorcylicAcidHemihydrateA/bResorcylicAcidHemihydrateA.xlsx",
+              "label": "bResorcylicAcidHemihydrateA.xlsx"
             }
           ]
         }
@@ -3571,6 +4117,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidMonohydrate/bResorcylicAcidMonohydrateA/bResorcylicAcidMonohydrateA.xlsx",
+              "label": "bResorcylicAcidMonohydrateA.xlsx"
+            }
           ]
         }
       ]
@@ -3605,6 +4157,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/BromoAminoBenzoicAcid/BromoAminoBenzoicAcidA/1.BromoAminoBenzoicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/BromoAminoBenzoicAcid/BromoAminoBenzoicAcidA/BromoAminoBenzoicAcidA.xlsx",
+              "label": "BromoAminoBenzoicAcidA.xlsx"
             }
           ]
         }
@@ -3644,6 +4202,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/VIII/BTVIIIA/BTVIIIA.xlsx",
+              "label": "BTVIIIA.xlsx"
+            }
           ]
         }
       ]
@@ -3678,6 +4242,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XII/BTXIIA/1.BTXIIA_Molpak_FIT.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XII/BTXIIA/BTXIIA.xlsx",
+              "label": "BTXIIA.xlsx"
             }
           ]
         }
@@ -3714,6 +4284,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XII/BTXIIB/BTXIIB.xlsx",
+              "label": "BTXIIB.xlsx"
+            }
           ]
         }
       ]
@@ -3749,6 +4325,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIII/BTXIIIA/1.BTXIIIA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIII/BTXIIIA/BTXIIIA.xlsx",
+              "label": "BTXIIIA.xlsx"
             }
           ]
         }
@@ -3794,6 +4376,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIV/BTXIVA/BTXIVA.xlsx",
+              "label": "BTXIVA.xlsx"
+            }
           ]
         }
       ]
@@ -3837,6 +4425,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIX/BTXIX/BTXIXA/BTXIXA.xlsx",
+              "label": "BTXIXA.xlsx"
+            }
           ]
         }
       ]
@@ -3873,6 +4467,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXVA/BTXVA.xlsx",
+              "label": "BTXVA.xlsx"
+            }
           ]
         }
       ]
@@ -3908,6 +4508,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXVB/1.BTXVB_DMAFLEX.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXVB/BTXVB.xlsx",
+              "label": "BTXVB.xlsx"
             }
           ]
         }
@@ -3966,6 +4572,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVI/BTXVIA/BTXVIA.xlsx",
+              "label": "BTXVIA.xlsx"
+            }
           ]
         }
       ]
@@ -4002,6 +4614,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVII/BTXVIIA/BTXVIIA.xlsx",
+              "label": "BTXVIIA.xlsx"
+            }
           ]
         }
       ]
@@ -4037,6 +4655,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVII/BTXVIIB/1.BTXVIIB_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVII/BTXVIIB/BTXVIIB.xlsx",
+              "label": "BTXVIIB.xlsx"
             }
           ]
         }
@@ -4088,6 +4712,12 @@
               ],
               "studyId": "2"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVIII/BTXVIIIA/BTXVIIIA.xlsx",
+              "label": "BTXVIIIA.xlsx"
+            }
           ]
         }
       ]
@@ -4130,6 +4760,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVIII/BTXVIIIB/1.BTXVIIIB_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVIII/BTXVIIIB/BTXVIIIB.xlsx",
+              "label": "BTXVIIIB.xlsx"
             }
           ]
         }
@@ -4174,6 +4810,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XX/BTXXA/BTXXA.xlsx",
+              "label": "BTXXA.xlsx"
+            }
           ]
         }
       ]
@@ -4209,6 +4851,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XX/BTXXB/1.BTXXB_ConformerGenerator.zip?raw=true"
               ],
               "studyId": "60"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XX/BTXXB/BTXXB.xlsx",
+              "label": "BTXXB.xlsx"
             }
           ]
         }
@@ -4288,6 +4936,12 @@
               ],
               "studyId": "2"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXII/BTXXIIA/BTXXIIA.xlsx",
+              "label": "BTXXIIA.xlsx"
+            }
           ]
         }
       ]
@@ -4366,6 +5020,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIV/BTXXIVA/BTXXIVA.xlsx",
+              "label": "BTXXIVA.xlsx"
+            }
           ]
         }
       ]
@@ -4401,6 +5061,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIX/BTXXIXA/1.BTXXIXA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIX/BTXXIXA/BTXXIXA.xlsx",
+              "label": "BTXXIXA.xlsx"
             }
           ]
         }
@@ -4453,6 +5119,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVC/BTXXVCA/BTXXVCA.xlsx",
+              "label": "BTXXVCA.xlsx"
+            }
           ]
         }
       ]
@@ -4488,6 +5160,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVIA/1.BTXXVIA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVIA/BTXXVIA.xlsx",
+              "label": "BTXXVIA.xlsx"
             }
           ]
         }
@@ -4546,6 +5224,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVIB/BTXXVIB.xlsx",
+              "label": "BTXXVIB.xlsx"
+            }
           ]
         }
       ]
@@ -4581,6 +5265,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVIC/1.BTXXVIC_ConformerGenerator.zip?raw=true"
               ],
               "studyId": "60"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVIC/BTXXVIC.xlsx",
+              "label": "BTXXVIC.xlsx"
             }
           ]
         }
@@ -4626,6 +5316,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVIII/BTXXVIIIA/BTXXVIIIA.xlsx",
+              "label": "BTXXVIIIA.xlsx"
+            }
           ]
         }
       ]
@@ -4670,6 +5366,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVIII/BTXXVIIIB/BTXXVIIIB.xlsx",
+              "label": "BTXXVIIIB.xlsx"
+            }
           ]
         }
       ]
@@ -4707,6 +5409,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXI/BTXXXIA/1.BTXXXIA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXI/BTXXXIA/BTXXXIA.xlsx",
+              "label": "BTXXXIA.xlsx"
             }
           ]
         }
@@ -4766,6 +5474,12 @@
               ],
               "studyId": "13"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXI/BTXXXIB/BTXXXIB.xlsx",
+              "label": "BTXXXIB.xlsx"
+            }
           ]
         }
       ]
@@ -4810,6 +5524,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXIIA/BTXXXIIA.xlsx",
+              "label": "BTXXXIIA.xlsx"
+            }
           ]
         }
       ]
@@ -4853,6 +5573,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXIIB/1.BTXXXIIB_DFTB.zip?raw=true"
               ],
               "studyId": "61"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXIIB/BTXXXIIB.xlsx",
+              "label": "BTXXXIIB.xlsx"
             }
           ]
         }
@@ -4945,6 +5671,12 @@
               ],
               "studyId": "15"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIII/BXXIIIA/BXXIIIA.xlsx",
+              "label": "BXXIIIA.xlsx"
+            }
           ]
         }
       ]
@@ -4981,6 +5713,12 @@
               ],
               "studyId": "60"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIII/BXXIIIB/BXXIIIB.xlsx",
+              "label": "BXXIIIB.xlsx"
+            }
           ]
         }
       ]
@@ -5013,6 +5751,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeine3HBA/Caffeine3HBAA/1.Caffeine3HBAA_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeine3HBA/Caffeine3HBAA/Caffeine3HBAA.xlsx",
+              "label": "Caffeine3HBAA.xlsx"
             }
           ]
         }
@@ -5054,6 +5798,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeine4HBA/Caffeine4HBAA/Caffeine4HBAA.xlsx",
+              "label": "Caffeine4HBAA.xlsx"
+            }
           ]
         }
       ]
@@ -5087,6 +5837,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Caffeine/CaffeineA/1.CaffeineA_CrystOpt.zip?raw=true"
               ],
               "studyId": "11"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Caffeine/CaffeineA/CaffeineA.xlsx",
+              "label": "CaffeineA.xlsx"
             }
           ]
         }
@@ -5129,6 +5885,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Caffeine/CaffeineB/CaffeineB.xlsx",
+              "label": "CaffeineB.xlsx"
+            }
           ]
         }
       ]
@@ -5161,6 +5923,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeinebis4HBA/Caffeinebis4HBAA/1.Caffeinebis4HBAA_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeinebis4HBA/Caffeinebis4HBAA/Caffeinebis4HBAA.xlsx",
+              "label": "Caffeinebis4HBAA.xlsx"
             }
           ]
         }
@@ -5195,6 +5963,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Caffeine/CaffeineC/1.CaffeineC_ConformerGenerator.zip?raw=true"
               ],
               "studyId": "60"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Caffeine/CaffeineC/CaffeineC.xlsx",
+              "label": "CaffeineC.xlsx"
             }
           ]
         }
@@ -5231,6 +6005,12 @@
               ],
               "studyId": "60"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CaffeineParacetamol/CaffeineParacetamolA/CaffeineParacetamolA.xlsx",
+              "label": "CaffeineParacetamolA.xlsx"
+            }
           ]
         }
       ]
@@ -5264,6 +6044,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CaffeineSalicylicAcid/CaffeineSalicylicAcidA/1.CaffeineSalicylicAcidA_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CaffeineSalicylicAcid/CaffeineSalicylicAcidA/CaffeineSalicylicAcidA.xlsx",
+              "label": "CaffeineSalicylicAcidA.xlsx"
             }
           ]
         }
@@ -5302,6 +6088,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Cannabinol2Tetramethylpyrazine/Cannabinol2TetramethylpyrazineA/Cannabinol2TetramethylpyrazineA.xlsx",
+              "label": "Cannabinol2TetramethylpyrazineA.xlsx"
+            }
           ]
         }
       ]
@@ -5339,6 +6131,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Cannabinol/CannabinolA/CannabinolA.xlsx",
+              "label": "CannabinolA.xlsx"
+            }
           ]
         }
       ]
@@ -5374,6 +6172,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/CannabinolTetramethylpyrazine/CannabinolTetramethylpyrazineA/1.CannabinolTetramethylpyrazineA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/CannabinolTetramethylpyrazine/CannabinolTetramethylpyrazineA/CannabinolTetramethylpyrazineA.xlsx",
+              "label": "CannabinolTetramethylpyrazineA.xlsx"
             }
           ]
         }
@@ -5435,6 +6239,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Carbamazepine/CarbamazepineA/CarbamazepineA.xlsx",
+              "label": "CarbamazepineA.xlsx"
+            }
           ]
         }
       ]
@@ -5489,6 +6299,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Carbamazepine/CarbamazepineB/CarbamazepineB.xlsx",
+              "label": "CarbamazepineB.xlsx"
+            }
           ]
         }
       ]
@@ -5524,6 +6340,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CarbamazepinePicolinamide/CarbamazepinePicolinamideA/CarbamazepinePicolinamideA.xlsx",
+              "label": "CarbamazepinePicolinamideA.xlsx"
+            }
           ]
         }
       ]
@@ -5557,6 +6379,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/CarbonicAcid/CarbonicAcidA/1.CarbonicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/CarbonicAcid/CarbonicAcidA/CarbonicAcidA.xlsx",
+              "label": "CarbonicAcidA.xlsx"
             }
           ]
         }
@@ -5600,6 +6428,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Chalcone/ChalconeA/2.ChalconeA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Chalcone/ChalconeA/ChalconeA.xlsx",
+              "label": "ChalconeA.xlsx"
+            }
           ]
         }
       ]
@@ -5633,6 +6467,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/ChlorobenzoicAcid/ChlorobenzoicAcidA/1.ChlorobenzoicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/ChlorobenzoicAcid/ChlorobenzoicAcidA/ChlorobenzoicAcidA.xlsx",
+              "label": "ChlorobenzoicAcidA.xlsx"
             }
           ]
         }
@@ -5670,6 +6510,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Chlorodibenzosuberone/ChlorodibenzosuberoneA/ChlorodibenzosuberoneA.xlsx",
+              "label": "ChlorodibenzosuberoneA.xlsx"
+            }
           ]
         }
       ]
@@ -5704,6 +6550,12 @@
               ],
               "studyId": "2"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Chloroform/ChloroformA/ChloroformA.xlsx",
+              "label": "ChloroformA.xlsx"
+            }
           ]
         }
       ]
@@ -5737,6 +6589,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Chloroform/ChloroformB/1.ChloroformB_MOLPAK_charges.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Chloroform/ChloroformB/ChloroformB.xlsx",
+              "label": "ChloroformB.xlsx"
             }
           ]
         }
@@ -5790,6 +6648,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/ChloromandelicAcid/ChloromandelicAcidA/ChloromandelicAcidA.xlsx",
+              "label": "ChloromandelicAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -5828,6 +6692,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/ChloromandelicAcid/ChloromandelicAcidB/ChloromandelicAcidB.xlsx",
+              "label": "ChloromandelicAcidB.xlsx"
+            }
           ]
         }
       ]
@@ -5862,6 +6732,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/ChlorothalonilA/1.ChlorothalonilA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/ChlorothalonilA/ChlorothalonilA.xlsx",
+              "label": "ChlorothalonilA.xlsx"
             }
           ]
         }
@@ -5900,6 +6776,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Chlorothiazide/ChlorothiazideA/ChlorothiazideA.xlsx",
+              "label": "ChlorothiazideA.xlsx"
+            }
           ]
         }
       ]
@@ -5935,6 +6817,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Clozapine/ClozapineA/1.ClozapineA_Molpak.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Clozapine/ClozapineA/ClozapineA.xlsx",
+              "label": "ClozapineA.xlsx"
             }
           ]
         }
@@ -5978,6 +6866,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Clozapine/ClozapineB/1.ClozapineB_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Clozapine/ClozapineB/ClozapineB.xlsx",
+              "label": "ClozapineB.xlsx"
             }
           ]
         }
@@ -6033,6 +6927,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Mebendazole/CMebendazole/CMebendazoleA/CMebendazoleA.xlsx",
+              "label": "CMebendazoleA.xlsx"
+            }
           ]
         }
       ]
@@ -6065,6 +6965,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Mebendazole/CMebendazole/CMebendazoleB/1.CMebendazoleB_ConformerGenerator.zip?raw=true"
               ],
               "studyId": "60"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Mebendazole/CMebendazole/CMebendazoleB/CMebendazoleB.xlsx",
+              "label": "CMebendazoleB.xlsx"
             }
           ]
         }
@@ -6107,6 +7013,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Coronene/CoroneneA/2.CoroneneA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Coronene/CoroneneA/CoroneneA.xlsx",
+              "label": "CoroneneA.xlsx"
+            }
           ]
         }
       ]
@@ -6143,6 +7055,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Coumarin/CoumarinA/CoumarinA.xlsx",
+              "label": "CoumarinA.xlsx"
+            }
           ]
         }
       ]
@@ -6177,6 +7095,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/CyanuricAcid/CyanuricAcidA/CyanuricAcidA.xlsx",
+              "label": "CyanuricAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -6209,6 +7133,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Cyclopentane/CyclopentaneA/CyclopentaneA.xlsx",
+              "label": "CyclopentaneA.xlsx"
+            }
           ]
         }
       ]
@@ -6240,6 +7170,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Cyclopentane/CyclopentaneB/1.CyclopentaneB_DMA.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Cyclopentane/CyclopentaneB/CyclopentaneB.xlsx",
+              "label": "CyclopentaneB.xlsx"
             }
           ]
         }
@@ -6291,6 +7227,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cyheptamide/CyheptamideA/CyheptamideA.xlsx",
+              "label": "CyheptamideA.xlsx"
+            }
           ]
         }
       ]
@@ -6327,6 +7269,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cyheptamide/CyheptamideB/1.CyheptamideB_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cyheptamide/CyheptamideB/CyheptamideB.xlsx",
+              "label": "CyheptamideB.xlsx"
             }
           ]
         }
@@ -6377,6 +7325,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cytenamide/CytenamideA/CytenamideA.xlsx",
+              "label": "CytenamideA.xlsx"
+            }
           ]
         }
       ]
@@ -6413,6 +7367,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cytenamide/CytenamideB/CytenamideB.xlsx",
+              "label": "CytenamideB.xlsx"
+            }
           ]
         }
       ]
@@ -6448,6 +7408,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Cytosine/CytosineA/CytosineA.xlsx",
+              "label": "CytosineA.xlsx"
+            }
           ]
         }
       ]
@@ -6481,6 +7447,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilA/1.DeazauracilA_MOLPAK-Taut3.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilA/DeazauracilA.xlsx",
+              "label": "DeazauracilA.xlsx"
             }
           ]
         }
@@ -6516,6 +7488,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilB/DeazauracilB.xlsx",
+              "label": "DeazauracilB.xlsx"
+            }
           ]
         }
       ]
@@ -6549,6 +7527,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilC/1.DeazauracilC_MOLPAK-Taut1.zip?raw=true"
               ],
               "studyId": "2"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilC/DeazauracilC.xlsx",
+              "label": "DeazauracilC.xlsx"
             }
           ]
         }
@@ -6589,6 +7573,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dehydroproline/DehydroprolineA/DehydroprolineA.xlsx",
+              "label": "DehydroprolineA.xlsx"
+            }
           ]
         }
       ]
@@ -6620,6 +7610,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Dehydroproline/DehydroprolineB/1.DehydroprolineB_MOLPAKexp.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dehydroproline/DehydroprolineB/DehydroprolineB.xlsx",
+              "label": "DehydroprolineB.xlsx"
             }
           ]
         }
@@ -6672,6 +7668,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Desloratadine/DesloratadineA/DesloratadineA.xlsx",
+              "label": "DesloratadineA.xlsx"
+            }
           ]
         }
       ]
@@ -6708,6 +7710,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyrazine/DiaminoDinitroPyrazineA/DiaminoDinitroPyrazineA.xlsx",
+              "label": "DiaminoDinitroPyrazineA.xlsx"
+            }
           ]
         }
       ]
@@ -6739,6 +7747,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyridineOxide/DiaminoDinitroPyridineOxideA/1.DiaminoDinitroPyridineOxideA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyridineOxide/DiaminoDinitroPyridineOxideA/DiaminoDinitroPyridineOxideA.xlsx",
+              "label": "DiaminoDinitroPyridineOxideA.xlsx"
             }
           ]
         }
@@ -6776,6 +7790,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/DibenzoCycloheptenylEthanone/DibenzoCycloheptenylEthanoneA/DibenzoCycloheptenylEthanoneA.xlsx",
+              "label": "DibenzoCycloheptenylEthanoneA.xlsx"
+            }
           ]
         }
       ]
@@ -6812,6 +7832,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dibenzosuberenone/DibenzosuberenoneA/DibenzosuberenoneA.xlsx",
+              "label": "DibenzosuberenoneA.xlsx"
+            }
           ]
         }
       ]
@@ -6844,6 +7870,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dichloromethane/DichloromethaneA/DichloromethaneA.xlsx",
+              "label": "DichloromethaneA.xlsx"
+            }
           ]
         }
       ]
@@ -6875,6 +7907,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Dichloromethane/DichloromethaneB/1.DichloromethaneB_MOLPAKaniso.zip?raw=true"
               ],
               "studyId": "2"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dichloromethane/DichloromethaneB/DichloromethaneB.xlsx",
+              "label": "DichloromethaneB.xlsx"
             }
           ]
         }
@@ -6933,6 +7971,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Diclofenac/DiclofenacA/DiclofenacA.xlsx",
+              "label": "DiclofenacA.xlsx"
+            }
           ]
         }
       ]
@@ -6975,6 +8019,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Dicyanobenzene-Succinic/Dicyanobenzene-SuccinicA/Dicyanobenzene-SuccinicA.xlsx",
+              "label": "Dicyanobenzene-SuccinicA.xlsx"
+            }
           ]
         }
       ]
@@ -7009,6 +8059,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneA/1.DicyanobenzeneA_MOLPAK_fit.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneA/DicyanobenzeneA.xlsx",
+              "label": "DicyanobenzeneA.xlsx"
             }
           ]
         }
@@ -7045,6 +8101,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneB/DicyanobenzeneB.xlsx",
+              "label": "DicyanobenzeneB.xlsx"
+            }
           ]
         }
       ]
@@ -7079,6 +8141,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneC/1.DicyanobenzeneC_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneC/DicyanobenzeneC.xlsx",
+              "label": "DicyanobenzeneC.xlsx"
             }
           ]
         }
@@ -7133,6 +8201,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Dihydrocarbamazepine/DihydrocarbamazepineA/DihydrocarbamazepineA.xlsx",
+              "label": "DihydrocarbamazepineA.xlsx"
+            }
           ]
         }
       ]
@@ -7173,6 +8247,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Dihydrocarbamazepine/DihydrocarbamazepineB/DihydrocarbamazepineB.xlsx",
+              "label": "DihydrocarbamazepineB.xlsx"
+            }
           ]
         }
       ]
@@ -7209,6 +8289,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/DihydroDibenzoCycloheptenylEthanone/DihydroDibenzoCycloheptenylEthanoneA/DihydroDibenzoCycloheptenylEthanoneA.xlsx",
+              "label": "DihydroDibenzoCycloheptenylEthanoneA.xlsx"
+            }
           ]
         }
       ]
@@ -7244,6 +8330,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IX/DiiodoanthanthroneA/1.DiiodoanthanthroneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IX/DiiodoanthanthroneA/DiiodoanthanthroneA.xlsx",
+              "label": "DiiodoanthanthroneA.xlsx"
             }
           ]
         }
@@ -7286,6 +8378,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Dimethylurea/DimethylureaA/DimethylureaA.xlsx",
+              "label": "DimethylureaA.xlsx"
+            }
           ]
         }
       ]
@@ -7318,6 +8416,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/DipicolinicAcid/DipicolinicAcidA/1.DipicolinicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/DipicolinicAcid/DipicolinicAcidA/DipicolinicAcidA.xlsx",
+              "label": "DipicolinicAcidA.xlsx"
             }
           ]
         }
@@ -7357,6 +8461,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/EphedriniumTartrate/EphedriniumTartrateA/1.EphedriniumTartrateA_CrystalOptimizer.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/EphedriniumTartrate/EphedriniumTartrateA/EphedriniumTartrateA.xlsx",
+              "label": "EphedriniumTartrateA.xlsx"
             }
           ]
         }
@@ -7402,6 +8512,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Equilin/EquilinA/EquilinA.xlsx",
+              "label": "EquilinA.xlsx"
+            }
           ]
         }
       ]
@@ -7443,6 +8559,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Equilinin/EquilininA/EquilininA.xlsx",
+              "label": "EquilininA.xlsx"
+            }
           ]
         }
       ]
@@ -7476,6 +8598,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Estradiol/EstradiolA/1.EstradiolA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Estradiol/EstradiolA/EstradiolA.xlsx",
+              "label": "EstradiolA.xlsx"
             }
           ]
         }
@@ -7534,6 +8662,12 @@
               "downloads": [
                 "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcidA/4.FenamicAcidA_pDFT.zip?raw=true"
               ]
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcidA/FenamicAcidA.xlsx",
+              "label": "FenamicAcidA.xlsx"
             }
           ]
         }
@@ -7598,6 +8732,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FlufenamicAcid/FlufenamicAcidA/4.FlufenamicAcidA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FlufenamicAcid/FlufenamicAcidA/FlufenamicAcidA.xlsx",
+              "label": "FlufenamicAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -7630,6 +8770,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Formyluracil/FormyluracilA/1.FormyluracilA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Formyluracil/FormyluracilA/FormyluracilA.xlsx",
+              "label": "FormyluracilA.xlsx"
             }
           ]
         }
@@ -7668,6 +8814,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7A/FOX7A.xlsx",
+              "label": "FOX7A.xlsx"
+            }
           ]
         }
       ]
@@ -7704,6 +8856,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7B/1.FOX7B_Molpak.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7B/FOX7B.xlsx",
+              "label": "FOX7B.xlsx"
             }
           ]
         }
@@ -7745,6 +8903,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/GallicAcid/GallicAcidA/1.GallicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GallicAcid/GallicAcidA/GallicAcidA.xlsx",
+              "label": "GallicAcidA.xlsx"
             }
           ]
         }
@@ -7793,6 +8957,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXI/GallicAcidMHA/GallicAcidMHA.xlsx",
+              "label": "GallicAcidMHA.xlsx"
+            }
           ]
         }
       ]
@@ -7839,6 +9009,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXI/GallicAcidMHB/1.GallicAcidMHB_CrystPred.zip?raw=true"
               ],
               "studyId": "21"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXI/GallicAcidMHB/GallicAcidMHB.xlsx",
+              "label": "GallicAcidMHB.xlsx"
             }
           ]
         }
@@ -7904,9 +9080,26 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Galunisertib/GalunisertibA/GalunisertibA.xlsx",
+              "label": "GalunisertibA.xlsx"
+            }
           ]
         }
       ]
+    },
+    {
+      "id": "GalunisertibAworking",
+      "filename": "GalunisertibAworking.json",
+      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/GalunisertibAworking.json",
+      "label": "GalunisertibAworking",
+      "molecule": "",
+      "aliases": [],
+      "codes": [],
+      "collections": [],
+      "cases": []
     },
     {
       "id": "GentisicAcidA",
@@ -7937,6 +9130,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcidA/1.GentisicAcidA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcidA/GentisicAcidA.xlsx",
+              "label": "GentisicAcidA.xlsx"
             }
           ]
         }
@@ -7972,6 +9171,12 @@
               ],
               "studyId": "21"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcidB/GentisicAcidB.xlsx",
+              "label": "GentisicAcidB.xlsx"
+            }
           ]
         }
       ]
@@ -8005,6 +9210,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidDH/GentisicAcidDHA/1.GentisicAcidDHA_PCM.zip?raw=true"
               ],
               "studyId": "30"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidDH/GentisicAcidDHA/GentisicAcidDHA.xlsx",
+              "label": "GentisicAcidDHA.xlsx"
             }
           ]
         }
@@ -8040,6 +9251,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidHH/GentisicAcidHHA/GentisicAcidHHA.xlsx",
+              "label": "GentisicAcidHHA.xlsx"
+            }
           ]
         }
       ]
@@ -8073,6 +9290,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidMH/GentisicAcidMHA/1.GentisicAcidMHA_PCM.zip?raw=true"
               ],
               "studyId": "30"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidMH/GentisicAcidMHA/GentisicAcidMHA.xlsx",
+              "label": "GentisicAcidMHA.xlsx"
             }
           ]
         }
@@ -8108,6 +9331,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Glucose/GlucoseA/GlucoseA.xlsx",
+              "label": "GlucoseA.xlsx"
+            }
           ]
         }
       ]
@@ -8141,6 +9370,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BA/GSK269984BA.xlsx",
+              "label": "GSK269984BA.xlsx"
+            }
           ]
         }
       ]
@@ -8173,6 +9408,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BB/1.GSK269984BB_MOLPAKExp.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BB/GSK269984BB.xlsx",
+              "label": "GSK269984BB.xlsx"
             }
           ]
         }
@@ -8214,6 +9455,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BC/GSK269984BC.xlsx",
+              "label": "GSK269984BC.xlsx"
+            }
           ]
         }
       ]
@@ -8246,6 +9493,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BD/1.GSK269984BD_ConformerGenerator.zip?raw=true"
               ],
               "studyId": "60"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BD/GSK269984BD.xlsx",
+              "label": "GSK269984BD.xlsx"
             }
           ]
         }
@@ -8280,6 +9533,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Guanine/GuanineA/GuanineA.xlsx",
+              "label": "GuanineA.xlsx"
+            }
           ]
         }
       ]
@@ -8313,6 +9572,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Guanine/GuanineB/GuanineB.xlsx",
+              "label": "GuanineB.xlsx"
+            }
           ]
         }
       ]
@@ -8345,6 +9610,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Guanine/GuanineC/1.GuanineC_Molpak.zip?raw=true"
               ],
               "studyId": "2"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Guanine/GuanineC/GuanineC.xlsx",
+              "label": "GuanineC.xlsx"
             }
           ]
         }
@@ -8382,6 +9653,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Hydrochlorothiazide/HydrochlorothiazideA/HydrochlorothiazideA.xlsx",
+              "label": "HydrochlorothiazideA.xlsx"
+            }
           ]
         }
       ]
@@ -8417,6 +9694,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Hydroxyazabenzotriazole/HydroxyazabenzotriazoleA/1.HydroxyazabenzotriazoleA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Hydroxyazabenzotriazole/HydroxyazabenzotriazoleA/HydroxyazabenzotriazoleA.xlsx",
+              "label": "HydroxyazabenzotriazoleA.xlsx"
             }
           ]
         }
@@ -8456,6 +9739,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Hydroxymethyloxazolidinone/HydroxymethyloxazolidinoneA/1.HydroxymethyloxazolidinoneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Hydroxymethyloxazolidinone/HydroxymethyloxazolidinoneA/HydroxymethyloxazolidinoneA.xlsx",
+              "label": "HydroxymethyloxazolidinoneA.xlsx"
             }
           ]
         }
@@ -8522,6 +9811,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Ibuprofen/IbuprofenA/IbuprofenA.xlsx",
+              "label": "IbuprofenA.xlsx"
+            }
           ]
         }
       ]
@@ -8554,6 +9849,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Imidazole/ImidazoleA/1.ImidazoleA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Imidazole/ImidazoleA/ImidazoleA.xlsx",
+              "label": "ImidazoleA.xlsx"
             }
           ]
         }
@@ -8596,6 +9897,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Iminodibenzyl/IminodibenzylA/2.IminodibenzylA_DMACRYSremin.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Iminodibenzyl/IminodibenzylA/IminodibenzylA.xlsx",
+              "label": "IminodibenzylA.xlsx"
             }
           ]
         }
@@ -8648,6 +9955,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Indomethacin/IndomethacinA/IndomethacinA.xlsx",
+              "label": "IndomethacinA.xlsx"
+            }
           ]
         }
       ]
@@ -8681,6 +9994,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcidA/1.IsobarbituricAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcidA/IsobarbituricAcidA.xlsx",
+              "label": "IsobarbituricAcidA.xlsx"
             }
           ]
         }
@@ -8716,6 +10035,12 @@
               ],
               "studyId": "1"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcidB/IsobarbituricAcidB.xlsx",
+              "label": "IsobarbituricAcidB.xlsx"
+            }
           ]
         }
       ]
@@ -8747,6 +10072,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Isocaffeine/IsocaffeineA/1.IsocaffeineA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Isocaffeine/IsocaffeineA/IsocaffeineA.xlsx",
+              "label": "IsocaffeineA.xlsx"
             }
           ]
         }
@@ -8782,6 +10113,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Isocytosine/IsocytosineA/IsocytosineA.xlsx",
+              "label": "IsocytosineA.xlsx"
+            }
           ]
         }
       ]
@@ -8815,6 +10152,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Isocytosine/IsocytosineB/1.IsocytosineB_MOLPAK.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Isocytosine/IsocytosineB/IsocytosineB.xlsx",
+              "label": "IsocytosineB.xlsx"
             }
           ]
         }
@@ -8851,6 +10194,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/IsonicotinamideA/1.IsonicotinamideA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/IsonicotinamideA/IsonicotinamideA.xlsx",
+              "label": "IsonicotinamideA.xlsx"
             }
           ]
         }
@@ -8916,6 +10265,12 @@
               ],
               "studyId": "13"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/IsonicotinamideB/IsonicotinamideB.xlsx",
+              "label": "IsonicotinamideB.xlsx"
+            }
           ]
         }
       ]
@@ -8973,6 +10328,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Lactide/LactideA/LactideA.xlsx",
+              "label": "LactideA.xlsx"
+            }
           ]
         }
       ]
@@ -9013,6 +10374,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Lamotrigine/LamotrigineA/LamotrigineA.xlsx",
+              "label": "LamotrigineA.xlsx"
+            }
           ]
         }
       ]
@@ -9048,6 +10415,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Loxapine/LoxapineA/1.LoxapineA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Loxapine/LoxapineA/LoxapineA.xlsx",
+              "label": "LoxapineA.xlsx"
             }
           ]
         }
@@ -9091,6 +10464,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Loxapine/LoxapineB/1.LoxapineB_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Loxapine/LoxapineB/LoxapineB.xlsx",
+              "label": "LoxapineB.xlsx"
             }
           ]
         }
@@ -9142,6 +10521,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/LY2624803/LY2624803A/LY2624803A.xlsx",
+              "label": "LY2624803A.xlsx"
+            }
           ]
         }
       ]
@@ -9189,6 +10574,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/LY2806920/LY2806920/LY2806920A/LY2806920A.xlsx",
+              "label": "LY2806920A.xlsx"
+            }
           ]
         }
       ]
@@ -9224,6 +10615,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/LY2806920/LY2806920HCl/LY2806920HClA/LY2806920HClA.xlsx",
+              "label": "LY2806920HClA.xlsx"
+            }
           ]
         }
       ]
@@ -9258,6 +10655,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/M-Xylene/M-XyleneA/1.M-XyleneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/M-Xylene/M-XyleneA/M-XyleneA.xlsx",
+              "label": "M-XyleneA.xlsx"
             }
           ]
         }
@@ -9300,6 +10703,12 @@
               "downloads": [
                 "https://louiseprice.github.io/CPOSS_Database/Mannitol/MannitolA/2.MannitolA_pDFT.zip?raw=true"
               ]
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Mannitol/MannitolA/MannitolA.xlsx",
+              "label": "MannitolA.xlsx"
             }
           ]
         }
@@ -9360,9 +10769,26 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/MefenamicAcid/MefenamicAcidA/5.MefenamicAcidA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/MefenamicAcid/MefenamicAcidA/MefenamicAcidA.xlsx",
+              "label": "MefenamicAcidA.xlsx"
+            }
           ]
         }
       ]
+    },
+    {
+      "id": "MefenamicAcidA_full",
+      "filename": "MefenamicAcidA_full.json",
+      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/MefenamicAcidA_full.json",
+      "label": "MefenamicAcidA_full",
+      "molecule": "",
+      "aliases": [],
+      "codes": [],
+      "collections": [],
+      "cases": []
     },
     {
       "id": "MemantineHydrochlorideA",
@@ -9393,6 +10819,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/MemantineHydrochloride/MemantineHydrochlorideA/1.MemantineHydrochlorideA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/MemantineHydrochloride/MemantineHydrochlorideA/MemantineHydrochlorideA.xlsx",
+              "label": "MemantineHydrochlorideA.xlsx"
             }
           ]
         }
@@ -9435,6 +10867,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Metacetamol/MetacetamolA/MetacetamolA.xlsx",
+              "label": "MetacetamolA.xlsx"
+            }
           ]
         }
       ]
@@ -9469,6 +10907,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Methanol/MethanolA/1.MethanolA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Methanol/MethanolA/MethanolA.xlsx",
+              "label": "MethanolA.xlsx"
             }
           ]
         }
@@ -9515,6 +10959,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Methyl-p-hydroxybenzoate/Methyl-p-hydroxybenzoateA/Methyl-p-hydroxybenzoateA.xlsx",
+              "label": "Methyl-p-hydroxybenzoateA.xlsx"
+            }
           ]
         }
       ]
@@ -9550,6 +11000,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/NAcetylDibenzazepine/NAcetyldibenzazepineA/NAcetyldibenzazepineA.xlsx",
+              "label": "NAcetyldibenzazepineA.xlsx"
+            }
           ]
         }
       ]
@@ -9582,6 +11038,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Naphthalene/NaphthaleneA/NaphthaleneA.xlsx",
+              "label": "NaphthaleneA.xlsx"
+            }
           ]
         }
       ]
@@ -9613,6 +11075,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Naphthalene/NaphthaleneB/1.NaphthaleneB_Point_Charges.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Naphthalene/NaphthaleneB/NaphthaleneB.xlsx",
+              "label": "NaphthaleneB.xlsx"
             }
           ]
         }
@@ -9662,6 +11130,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Naproxen/NaproxenA/1.NaproxenA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Naproxen/NaproxenA/NaproxenA.xlsx",
+              "label": "NaproxenA.xlsx"
             }
           ]
         }
@@ -9713,6 +11187,12 @@
               ],
               "studyId": "21"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Naproxen/NaproxenB/NaproxenB.xlsx",
+              "label": "NaproxenB.xlsx"
+            }
           ]
         }
       ]
@@ -9762,9 +11242,26 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/NiflumicAcid/NiflumicAcidA/3.NiflumicAcidA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/NiflumicAcid/NiflumicAcidA/NiflumicAcidA.xlsx",
+              "label": "NiflumicAcidA.xlsx"
+            }
           ]
         }
       ]
+    },
+    {
+      "id": "NiflumicAcidA_full",
+      "filename": "NiflumicAcidA_full.json",
+      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/NiflumicAcidA_full.json",
+      "label": "NiflumicAcidA_full",
+      "molecule": "",
+      "aliases": [],
+      "codes": [],
+      "collections": [],
+      "cases": []
     },
     {
       "id": "NitrofurantoinA",
@@ -9795,6 +11292,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Nitrofurantoin/NitrofurantoinA/1.NitrofurantoinA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Nitrofurantoin/NitrofurantoinA/NitrofurantoinA.xlsx",
+              "label": "NitrofurantoinA.xlsx"
             }
           ]
         }
@@ -9841,6 +11344,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Nitrophenyl-Aminobenzoic/Nitrophenyl-AminobenzoicA/3.Nitrophenyl-AminobenzoicA_FIT.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Nitrophenyl-Aminobenzoic/Nitrophenyl-AminobenzoicA/Nitrophenyl-AminobenzoicA.xlsx",
+              "label": "Nitrophenyl-AminobenzoicA.xlsx"
             }
           ]
         }
@@ -9891,6 +11400,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/NitrophenylAceticAcid/NitrophenylAceticAcidA/NitrophenylAceticAcidA.xlsx",
+              "label": "NitrophenylAceticAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -9925,6 +11440,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/O-Xylene/O-XyleneA/1.O-XyleneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/O-Xylene/O-XyleneA/O-XyleneA.xlsx",
+              "label": "O-XyleneA.xlsx"
             }
           ]
         }
@@ -9978,6 +11499,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Olanzapine/OlanzapineA/OlanzapineA.xlsx",
+              "label": "OlanzapineA.xlsx"
+            }
           ]
         }
       ]
@@ -10023,6 +11550,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Olanzapine/OlanzapineB/OlanzapineB.xlsx",
+              "label": "OlanzapineB.xlsx"
+            }
           ]
         }
       ]
@@ -10056,6 +11589,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/OroticAcid/OroticAcidA/1.OroticAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/OroticAcid/OroticAcidA/OroticAcidA.xlsx",
+              "label": "OroticAcidA.xlsx"
             }
           ]
         }
@@ -10097,6 +11636,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/OtolicAcid/OtolicAcidA/OtolicAcidA.xlsx",
+              "label": "OtolicAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -10137,6 +11682,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/OtolicAcid/OtolicAcidB/OtolicAcidB.xlsx",
+              "label": "OtolicAcidB.xlsx"
+            }
           ]
         }
       ]
@@ -10170,6 +11721,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/OxamicAcid/OxamicAcidA/1.OxamicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/OxamicAcid/OxamicAcidA/OxamicAcidA.xlsx",
+              "label": "OxamicAcidA.xlsx"
             }
           ]
         }
@@ -10223,6 +11780,12 @@
               ],
               "studyId": "30"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Oxcarbazepine/OxcarbazepineA/OxcarbazepineA.xlsx",
+              "label": "OxcarbazepineA.xlsx"
+            }
           ]
         }
       ]
@@ -10258,6 +11821,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/P-Xylene/P-XyleneA/P-XyleneA.xlsx",
+              "label": "P-XyleneA.xlsx"
+            }
           ]
         }
       ]
@@ -10291,6 +11860,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/ParabanicAcid/ParabanicAcidA/1.ParabanicAcidA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/ParabanicAcid/ParabanicAcidA/ParabanicAcidA.xlsx",
+              "label": "ParabanicAcidA.xlsx"
             }
           ]
         }
@@ -10330,6 +11905,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Paracetamol/ParacetamolA/ParacetamolA.xlsx",
+              "label": "ParacetamolA.xlsx"
+            }
           ]
         }
       ]
@@ -10368,6 +11949,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Paracetamol/ParacetamolB/ParacetamolB.xlsx",
+              "label": "ParacetamolB.xlsx"
+            }
           ]
         }
       ]
@@ -10399,6 +11986,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Pentachloronitrobenzene/PentachloronitrobenzeneA/1.PentachloronitrobenzeneA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Pentachloronitrobenzene/PentachloronitrobenzeneA/PentachloronitrobenzeneA.xlsx",
+              "label": "PentachloronitrobenzeneA.xlsx"
             }
           ]
         }
@@ -10438,6 +12031,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Phenanthrenol/PhenanthrenolA/1.PhenanthrenolA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Phenanthrenol/PhenanthrenolA/PhenanthrenolA.xlsx",
+              "label": "PhenanthrenolA.xlsx"
             }
           ]
         }
@@ -10485,6 +12084,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/3.PhloroglucinolA_PCM.zip?raw=true"
               ],
               "studyId": "30"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/PhloroglucinolA.xlsx",
+              "label": "PhloroglucinolA.xlsx"
             }
           ]
         }
@@ -10537,6 +12142,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Phthalimide/PhthalimideA/2.PhthalimideA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Phthalimide/PhthalimideA/PhthalimideA.xlsx",
+              "label": "PhthalimideA.xlsx"
+            }
           ]
         }
       ]
@@ -10573,6 +12184,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Piracetam/PiracetamA/1.PiracetamA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Piracetam/PiracetamA/PiracetamA.xlsx",
+              "label": "PiracetamA.xlsx"
             }
           ]
         }
@@ -10622,6 +12239,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Progesterone/ProgesteroneA/ProgesteroneA.xlsx",
+              "label": "ProgesteroneA.xlsx"
+            }
           ]
         }
       ]
@@ -10663,6 +12286,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Progesterone/ProgesteroneB/1.ProgesteroneB_CrystalPredictor.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Progesterone/ProgesteroneB/ProgesteroneB.xlsx",
+              "label": "ProgesteroneB.xlsx"
             }
           ]
         }
@@ -10706,6 +12335,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Pyrene/PyreneA/1.PyreneA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Pyrene/PyreneA/PyreneA.xlsx",
+              "label": "PyreneA.xlsx"
             }
           ]
         }
@@ -10755,6 +12390,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Pyridine/PyridineA/PyridineA.xlsx",
+              "label": "PyridineA.xlsx"
+            }
           ]
         }
       ]
@@ -10787,6 +12428,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/pyridineisophthalicacid/pyridineisophthalicacidA/pyridineisophthalicacidA.xlsx",
+              "label": "pyridineisophthalicacidA.xlsx"
+            }
           ]
         }
       ]
@@ -10818,6 +12465,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/pyridiniumisophthalate/pyridiniumisophthalateA/1.pyridiniumisophthalateA_CrystPred.zip?raw=true"
               ],
               "studyId": "21"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/pyridiniumisophthalate/pyridiniumisophthalateA/pyridiniumisophthalateA.xlsx",
+              "label": "pyridiniumisophthalateA.xlsx"
             }
           ]
         }
@@ -10854,6 +12507,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Pyridone/PyridoneA/PyridoneA.xlsx",
+              "label": "PyridoneA.xlsx"
+            }
           ]
         }
       ]
@@ -10888,6 +12547,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Pyridone/PyridoneB/1.PyridoneB_MOLPAK_Will.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Pyridone/PyridoneB/PyridoneB.xlsx",
+              "label": "PyridoneB.xlsx"
             }
           ]
         }
@@ -10924,6 +12589,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIX/QuinoliniumFumarate/QuinoliniumFumarateA/1.QuinoliniumFumarateA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIX/QuinoliniumFumarate/QuinoliniumFumarateA/QuinoliniumFumarateA.xlsx",
+              "label": "QuinoliniumFumarateA.xlsx"
             }
           ]
         }
@@ -10968,6 +12639,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Saccharin/SaccharinA/2.SaccharinA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Saccharin/SaccharinA/SaccharinA.xlsx",
+              "label": "SaccharinA.xlsx"
+            }
           ]
         }
       ]
@@ -11008,6 +12685,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Salsalate/SalsalateA/SalsalateA.xlsx",
+              "label": "SalsalateA.xlsx"
+            }
           ]
         }
       ]
@@ -11043,6 +12726,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Sorbitol/SorbitolA/1.SorbitolA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Sorbitol/SorbitolA/SorbitolA.xlsx",
+              "label": "SorbitolA.xlsx"
             }
           ]
         }
@@ -11093,6 +12782,12 @@
               ],
               "studyId": "33"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidA/SuccinicAcidA.xlsx",
+              "label": "SuccinicAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -11142,6 +12837,12 @@
               ],
               "studyId": "32"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidB/SuccinicAcidB.xlsx",
+              "label": "SuccinicAcidB.xlsx"
+            }
           ]
         }
       ]
@@ -11183,6 +12884,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidC/2.SuccinicAcidC_PCM.zip?raw=true"
               ],
               "studyId": "31"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidC/SuccinicAcidC.xlsx",
+              "label": "SuccinicAcidC.xlsx"
             }
           ]
         }
@@ -11226,9 +12933,26 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidD/SuccinicAcidD.xlsx",
+              "label": "SuccinicAcidD.xlsx"
+            }
           ]
         }
       ]
+    },
+    {
+      "id": "SuccinicAcidD_full",
+      "filename": "SuccinicAcidD_full.json",
+      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/SuccinicAcidD_full.json",
+      "label": "SuccinicAcidD_full",
+      "molecule": "",
+      "aliases": [],
+      "codes": [],
+      "collections": [],
+      "cases": []
     },
     {
       "id": "SulfadiazineA",
@@ -11271,6 +12995,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Sulfadiazine/SulfadiazineA/1.SulfadiazineA_CrystPred.zip?raw=true"
               ],
               "studyId": "20"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Sulfadiazine/SulfadiazineA/SulfadiazineA.xlsx",
+              "label": "SulfadiazineA.xlsx"
             }
           ]
         }
@@ -11324,6 +13054,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Sulfamerazine/SulfamerazineA/SulfamerazineA.xlsx",
+              "label": "SulfamerazineA.xlsx"
+            }
           ]
         }
       ]
@@ -11368,6 +13104,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Tazofelone/TazofeloneA/TazofeloneA.xlsx",
+              "label": "TazofeloneA.xlsx"
+            }
           ]
         }
       ]
@@ -11402,6 +13144,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Tetrachlorobenzene/TetrachlorobenzeneA/TetrachlorobenzeneA.xlsx",
+              "label": "TetrachlorobenzeneA.xlsx"
+            }
           ]
         }
       ]
@@ -11435,6 +13183,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/TetrahydroDimethylQuinoline/TetrahydroDimethylQuinolineA/1.TetrahydroDimethylQuinolineA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/TetrahydroDimethylQuinoline/TetrahydroDimethylQuinolineA/TetrahydroDimethylQuinolineA.xlsx",
+              "label": "TetrahydroDimethylQuinolineA.xlsx"
             }
           ]
         }
@@ -11478,6 +13232,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Tetramethylpyrazine/TetramethylpyrazineA/2.TetramethylpyrazineA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Tetramethylpyrazine/TetramethylpyrazineA/TetramethylpyrazineA.xlsx",
+              "label": "TetramethylpyrazineA.xlsx"
             }
           ]
         }
@@ -11528,6 +13288,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/TetrazolPyrazine/TetrazolPyrazineA/TetrazolPyrazineA.xlsx",
+              "label": "TetrazolPyrazineA.xlsx"
+            }
           ]
         }
       ]
@@ -11577,6 +13343,12 @@
               ],
               "studyId": "11"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/TetrazolPyrimidine/TetrazolPyrimidineA/TetrazolPyrimidineA.xlsx",
+              "label": "TetrazolPyrimidineA.xlsx"
+            }
           ]
         }
       ]
@@ -11618,6 +13390,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/TetrolicAcid/TetrolicAcidA/TetrolicAcidA.xlsx",
+              "label": "TetrolicAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -11653,6 +13431,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/ThymineA/ThymineA.xlsx",
+              "label": "ThymineA.xlsx"
+            }
           ]
         }
       ]
@@ -11687,6 +13471,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/ThymineB/1.ThymineB_MOLPAK.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/ThymineB/ThymineB.xlsx",
+              "label": "ThymineB.xlsx"
             }
           ]
         }
@@ -11738,6 +13528,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcidA/1.TolfenamicAcidA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcidA/TolfenamicAcidA.xlsx",
+              "label": "TolfenamicAcidA.xlsx"
             }
           ]
         }
@@ -11810,9 +13606,26 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcidB/5.TolfenamicAcidB_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcidB/TolfenamicAcidB.xlsx",
+              "label": "TolfenamicAcidB.xlsx"
+            }
           ]
         }
       ]
+    },
+    {
+      "id": "TolfenamicAcidB_full",
+      "filename": "TolfenamicAcidB_full.json",
+      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/TolfenamicAcidB_full.json",
+      "label": "TolfenamicAcidB_full",
+      "molecule": "",
+      "aliases": [],
+      "codes": [],
+      "collections": [],
+      "cases": []
     },
     {
       "id": "TransFOX7A",
@@ -11845,6 +13658,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.FOX7/TransFOX7/TransFOX7A/1.TransFOX7A_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.FOX7/TransFOX7/TransFOX7A/TransFOX7A.xlsx",
+              "label": "TransFOX7A.xlsx"
             }
           ]
         }
@@ -11881,6 +13700,12 @@
               ],
               "studyId": "10"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Trifluoroethanol/TrifluoroethanolA/TrifluoroethanolA.xlsx",
+              "label": "TrifluoroethanolA.xlsx"
+            }
           ]
         }
       ]
@@ -11915,6 +13740,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Trifluoroethanol/TrifluoroethanolB/1.TrifluoroethanolB_CrystOptZ2.zip?raw=true"
               ],
               "studyId": "11"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Trifluoroethanol/TrifluoroethanolB/TrifluoroethanolB.xlsx",
+              "label": "TrifluoroethanolB.xlsx"
             }
           ]
         }
@@ -12007,6 +13838,12 @@
               ],
               "studyId": "25"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/TrinitrobenzeneA/TrinitrobenzeneA.xlsx",
+              "label": "TrinitrobenzeneA.xlsx"
+            }
           ]
         }
       ]
@@ -12040,6 +13877,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Trinitrodibenzopyranone/TrinitrodibenzopyranoneA/TrinitrodibenzopyranoneA.xlsx",
+              "label": "TrinitrodibenzopyranoneA.xlsx"
+            }
           ]
         }
       ]
@@ -12072,6 +13915,12 @@
               ],
               "studyId": "0"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Uracil/UracilA/UracilA.xlsx",
+              "label": "UracilA.xlsx"
+            }
           ]
         }
       ]
@@ -12103,6 +13952,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/Urazole/UrazoleA/1.UrazoleA_MOLPAK.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Urazole/UrazoleA/UrazoleA.xlsx",
+              "label": "UrazoleA.xlsx"
             }
           ]
         }
@@ -12145,6 +14000,12 @@
               ],
               "studyId": "20"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/UreaA.xlsx",
+              "label": "UreaA.xlsx"
+            }
           ]
         }
       ]
@@ -12186,6 +14047,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcidA/2.UricAcidA_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcidA/UricAcidA.xlsx",
+              "label": "UricAcidA.xlsx"
+            }
           ]
         }
       ]
@@ -12220,6 +14087,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcidB/1.UricAcidB_MOLPAK.zip?raw=true"
               ],
               "studyId": "1"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcidB/UricAcidB.xlsx",
+              "label": "UricAcidB.xlsx"
             }
           ]
         }
@@ -12256,6 +14129,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVII/XXVIIA/1.XXVIIA_Molpak.zip?raw=true"
               ],
               "studyId": "0"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVII/XXVIIA/XXVIIA.xlsx",
+              "label": "XXVIIA.xlsx"
             }
           ]
         }
@@ -12328,6 +14207,12 @@
               ],
               "studyId": "4"
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVII/XXVIIB/XXVIIB.xlsx",
+              "label": "XXVIIB.xlsx"
+            }
           ]
         }
       ]
@@ -12365,6 +14250,12 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIIIA/1.XXXIIIA_CrystOpt.zip?raw=true"
               ],
               "studyId": "10"
+            }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIIIA/XXXIIIA.xlsx",
+              "label": "XXXIIIA.xlsx"
             }
           ]
         }
@@ -12410,9 +14301,37 @@
                 "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIIIB/2.XXXIIIB_pDFT.zip?raw=true"
               ]
             }
+          ],
+          "metadataDownloads": [
+            {
+              "url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIIIB/XXXIIIB.xlsx",
+              "label": "XXXIIIB.xlsx"
+            }
           ]
         }
       ]
     }
-  ]
+  ],
+  "archiveContents": {
+    "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/1.UreaA_CrystPred.zip?raw=true": {
+      "url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/1.UreaA_CrystPred.zip?raw=true",
+      "blobSha": "cc4e435bdd65a987fbb1b3f977ac38acced021c4",
+      "verifiedAt": "2026-10-22T23:46:45+00:00",
+      "structureCount": 850,
+      "structureFormat": "res",
+      "metadataFiles": [
+        "1.UreaA_CrystPred/Urea_CrystPred.xlsx"
+      ]
+    },
+    "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/2.UreaA_CrystOpt.zip?raw=true": {
+      "url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/2.UreaA_CrystOpt.zip?raw=true",
+      "blobSha": "0d41442f0a3cf3f731617dab66477fef63bda594",
+      "verifiedAt": "2026-10-22T23:46:45+00:00",
+      "structureCount": 793,
+      "structureFormat": "res",
+      "metadataFiles": [
+        "2.UreaA_CrystOpt/Urea_CrystOpt.xlsx"
+      ]
+    }
+  }
 }

@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "name": "Sparse numeric dataset"
+  },
+  "structures": [
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "size": 1,
+      "names": [
+        "H"
+      ],
+      "x": [
+        0.0
+      ],
+      "y": [
+        0.0
+      ],
+      "z": [
+        0.0
+      ],
+      "cell": [
+        4,
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        4
+      ]
+    }
+  ],
+  "properties": {
+    "Density": {
+      "target": "structure",
+      "values": [
+        1,
+        NaN,
+        3,
+        4
+      ]
+    },
+    "Energy": {
+      "target": "structure",
+      "values": [
+        -40,
+        NaN,
+        -20,
+        -10
+      ]
+    },
+    "Experimental Info": {
+      "target": "structure",
+      "values": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "Space Group Number": {
+      "target": "structure",
+      "values": [
+        1,
+        10,
+        "nan",
+        230
+      ]
+    }
+  }
+}
