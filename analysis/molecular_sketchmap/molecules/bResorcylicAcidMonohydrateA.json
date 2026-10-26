@@ -1,0 +1,294 @@
+{
+  "dataset_id": "bResorcylicAcidMonohydrateA",
+  "dataset_name": "beta-Resorcylic Acid Monohydrate",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidMonohydrate/bResorcylicAcidMonohydrate.html",
+  "reported_formula": "C7 H6 O4 - H2 O1",
+  "reported_formula_normalised": "C7H8O5",
+  "composition_basis": "formula unit (multicomponent)",
+  "structure_count": 16899,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidMonohydrate/bResorcylicAcidMonohydrateA/1.bResorcylicAcidMonohydrateA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "c7e8e675403d38669c015c16500aa77676f809d2",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 16832,
+  "candidates_with_title_energy": 16832,
+  "selected_filename": "1.bResorcylicAcidMonohydrateA_CrystPred/YUXGUV_conf1_A1.res",
+  "selected_file_sha256": "341a40eb46043009d95174e23d15b032fbeb65553c35daf09cd023d123b8ce67",
+  "selected_title_energy": -173.706,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C7H6O4",
+  "selected_smiles": "O=C(O)c1ccc(O)cc1O",
+  "constitution_smiles": "O=C(O)c1ccc(O)cc1O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 154.121,
+  "observed_multicomponent": true,
+  "component_counts_per_cell": {
+    "C7H6O4": 2,
+    "H2O": 2
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1ccc(O)cc1O": 2,
+    "O": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6O4": 1.0,
+    "H2O": 1.0
+  },
+  "omitted_component_types_per_cell": {
+    "H2O": 2
+  },
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL YUXGUV_conf1_A1(-173.706) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 20,
+    "expanded_unit_cell_atoms": 40,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.7089851537116747,
+      -0.19594805634769497,
+      0.27326615739545734
+    ],
+    [
+      -0.17925176929711562,
+      -0.3522578522864386,
+      -1.017062057850581
+    ],
+    [
+      1.1192885681822915,
+      0.06998858639505467,
+      -1.2893014767837692
+    ],
+    [
+      1.8813432741882234,
+      0.6402900203554065,
+      -0.29163057471326614
+    ],
+    [
+      1.3724015450645464,
+      0.805768784876765,
+      1.002854883767468
+    ],
+    [
+      0.0971272520177422,
+      0.3889165247048778,
+      1.2624690172483637
+    ],
+    [
+      -2.0733523320070333,
+      -0.6400692589734014,
+      0.5577836341907407
+    ],
+    [
+      -2.4692430271760024,
+      -0.4439658840012095,
+      1.805969363251929
+    ],
+    [
+      -2.8111887129074162,
+      -1.1477555988678283,
+      -0.24808139996762546
+    ],
+    [
+      -0.855209305818251,
+      -0.8908875235871863,
+      -2.021446026664895
+    ],
+    [
+      3.1335160464540213,
+      1.060355401123136,
+      -0.5076898683744273
+    ],
+    [
+      -3.358436429891448,
+      -0.7629902036615936,
+      1.8846069476126612
+    ],
+    [
+      -1.7269378720374338,
+      -1.1434760821518406,
+      -1.7305070271828304
+    ],
+    [
+      3.395855414379504,
+      0.9118468936529558,
+      -1.4018142698107428
+    ],
+    [
+      1.501277957846435,
+      -0.0609313090614636,
+      -2.28563929019919
+    ],
+    [
+      1.990357998097517,
+      1.252969407484068,
+      1.7572338822595517
+    ],
+    [
+      -0.3085634533838739,
+      0.5081461503463931,
+      2.248988105821156
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      6,
+      1.0
+    ],
+    [
+      8,
+      6,
+      2.0
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      3,
+      1.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      9,
+      1.0
+    ],
+    [
+      13,
+      10,
+      1.0
+    ],
+    [
+      14,
+      2,
+      1.0
+    ],
+    [
+      15,
+      4,
+      1.0
+    ],
+    [
+      16,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

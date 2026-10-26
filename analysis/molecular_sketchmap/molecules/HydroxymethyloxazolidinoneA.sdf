@@ -1,0 +1,60 @@
+HydroxymethyloxazolidinoneA
+     RDKit          3D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+   -1.8553   -0.0351    0.5723 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2915    0.9040    0.6715 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0005    0.3588   -0.7432 C   0  0  1  0  0  0  0  0  0  0  0  0
+    0.9646   -0.7192   -1.2065 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1256    0.7912    2.2887 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0452    0.2998    1.1840 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6415    1.9357    0.6419 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0235    1.1683   -1.4776 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5905   -1.1340   -2.1412 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9426   -0.2653   -1.4027 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7229   -1.5855    0.3661 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0079    0.7875    1.2887 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3175   -0.2114   -0.6784 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9177   -0.4971    0.9240 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0481   -1.7977   -0.2876 O   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  4  3  1  0
+  6  2  1  0
+  7  2  1  0
+  3  8  1  6
+  9  4  1  0
+ 10  4  1  0
+ 12  5  1  0
+ 12  2  1  0
+ 12  1  1  0
+ 13  3  1  0
+ 13  1  1  0
+ 14  1  2  0
+ 15 11  1  0
+ 15  4  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+HydroxymethyloxazolidinoneA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Hydroxymethyloxazolidinone/HydroxymethyloxazolidinoneA/1.HydroxymethyloxazolidinoneA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.HydroxymethyloxazolidinoneA_MOLPAK/EXEVUY_ConOpt_fc84.res
+
+>  <reported_formula>  (1) 
+C4 H7 N1 O3
+
+>  <selected_formula>  (1) 
+C4H7NO3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+136
+
+$$$$

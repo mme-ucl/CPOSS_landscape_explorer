@@ -1,0 +1,33 @@
+{
+  "verified_figures": [
+    {
+      "stem": "cposs_omc25_comparison",
+      "pages": 1,
+      "embedded_fonts": [
+        "/PQTZVZ+Helvetica",
+        "/EKZFVT+Helvetica-Bold"
+      ],
+      "vector_only": true,
+      "png_size": [
+        2280,
+        915
+      ],
+      "png_dpi": 300
+    },
+    {
+      "stem": "cposs_omc25_multicomponent",
+      "pages": 1,
+      "embedded_fonts": [
+        "/EHYIWD+Helvetica",
+        "/EKZFVT+Helvetica-Bold"
+      ],
+      "vector_only": true,
+      "png_size": [
+        2280,
+        915
+      ],
+      "png_dpi": 300
+    }
+  ],
+  "frozen_inputs_checked": 319
+}

@@ -1,0 +1,244 @@
+{
+  "dataset_id": "DicyanobenzeneA",
+  "dataset_name": "Dicyanobenzene",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/Dicyanobenzene.html",
+  "reported_formula": "C8 H4 N2",
+  "reported_formula_normalised": "C8H4N2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 155,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneA/1.DicyanobenzeneA_MOLPAK_fit.zip?raw=true",
+  "archive_git_blob_sha": "7da069869f580f4de3cb2d71f7201be7d30d4ed4",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 144,
+  "candidates_with_title_energy": 144,
+  "selected_filename": "1.DicyanobenzeneA_MOLPAK_fit/TEPNIT_opt_ca121.res",
+  "selected_file_sha256": "57c9d76744977c8310b661b734319579d615bba8662483a9276c9337f131baad",
+  "selected_title_energy": -88.53,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C8H4N2",
+  "selected_smiles": "N#Cc1ccc(C#N)cc1",
+  "constitution_smiles": "N#Cc1ccc(C#N)cc1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 14,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 128.134,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H4N2": 2
+  },
+  "component_identities_per_cell": {
+    "N#Cc1ccc(C#N)cc1": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H4N2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL TEPNIT_opt_ca121(-88.530) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 28,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N"
+  ],
+  "coordinates_angstrom": [
+    [
+      -2.543792642204103,
+      -0.25135137530641627,
+      -1.2084951693543768
+    ],
+    [
+      -1.2525095470095593,
+      -0.12386288763937836,
+      -0.5951347096589696
+    ],
+    [
+      -0.1030967278307191,
+      -0.5063576302073183,
+      -1.3042145053605012
+    ],
+    [
+      1.1476662561774233,
+      -0.38273982422748354,
+      -0.709875019533901
+    ],
+    [
+      1.252518872114532,
+      0.12385889628559754,
+      0.59516412464657
+    ],
+    [
+      0.10310610557185207,
+      0.5063536045454202,
+      1.3042439203481009
+    ],
+    [
+      -1.1476570053574982,
+      0.38273581596838824,
+      0.709904318518733
+    ],
+    [
+      2.54376936946295,
+      0.2513614136057005,
+      1.208421689886761
+    ],
+    [
+      -0.19735618049380932,
+      -0.8949201372504167,
+      -2.309346241302894
+    ],
+    [
+      2.0413530840456726,
+      -0.6734776759626553,
+      -1.2457368139955645
+    ],
+    [
+      0.19736555823494228,
+      0.89491611158852,
+      2.3093756562904946
+    ],
+    [
+      -2.0413764386198245,
+      0.6734877142619382,
+      1.2456633345279502
+    ],
+    [
+      -3.6087320083151617,
+      -0.3568433147515728,
+      -1.7150028113821811
+    ],
+    [
+      3.608741304223294,
+      0.3568392890896752,
+      1.715032226369782
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      6,
+      1,
+      1.5
+    ],
+    [
+      7,
+      4,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      5,
+      1.0
+    ],
+    [
+      11,
+      6,
+      1.0
+    ],
+    [
+      12,
+      0,
+      3.0
+    ],
+    [
+      13,
+      7,
+      3.0
+    ]
+  ],
+  "rejected_candidates": []
+}

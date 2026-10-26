@@ -1,0 +1,48 @@
+ImidazoleA
+     RDKit          3D
+
+  9  9  0  0  0  0  0  0  0  0999 V2000
+    0.0369   -0.4055    0.8775 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5295   -0.3795   -1.2747 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5683   -1.0747   -0.1477 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1303    0.7838   -0.9495 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4916    0.7927    0.3798 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1320   -0.7288    1.8261 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0122   -2.0476   -0.0185 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3095    1.5500   -1.6845 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0097    1.5095    0.9914 H   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  2  0
+  3  1  1  0
+  4  2  1  0
+  5  4  2  0
+  5  1  1  0
+  6  1  1  0
+  7  3  1  0
+  8  4  1  0
+  9  5  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+ImidazoleA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Imidazole/ImidazoleA/1.ImidazoleA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.ImidazoleA_MOLPAK/IMAZOL_OPT_ak34.res
+
+>  <reported_formula>  (1) 
+C3 H4 N2
+
+>  <selected_formula>  (1) 
+C3H4N2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+65
+
+$$$$

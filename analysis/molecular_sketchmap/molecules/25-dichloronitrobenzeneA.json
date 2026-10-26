@@ -1,0 +1,51 @@
+{
+  "dataset_id": "25-dichloronitrobenzeneA",
+  "dataset_name": "2,5-dichloronitrobenzene",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzene.html",
+  "reported_formula": "C6 H3 N1 O2 Cl2",
+  "reported_formula_normalised": "C6Cl2H3NO2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 70,
+  "extraction_status": "missing",
+  "included": false,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzeneA/1.25-dichloronitrobenzeneA_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "c4fd2ee8aebc76ca053b5a4fe12b5f304ab5aa68",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 69,
+  "candidates_with_title_energy": 69,
+  "error": "Atom SFAC index outside reported element list",
+  "rejected_candidates": [
+    {
+      "candidate_rank": 1,
+      "filename": "1.25-dichloronitrobenzeneA_Molpak/ZZZEKW_OPT_am116.res",
+      "energy": -94.745,
+      "error": "Atom SFAC index outside reported element list"
+    },
+    {
+      "candidate_rank": 2,
+      "filename": "1.25-dichloronitrobenzeneA_Molpak/ZZZEKW_OPT_ab12.res",
+      "energy": -94.348,
+      "error": "Atom SFAC index outside reported element list"
+    },
+    {
+      "candidate_rank": 3,
+      "filename": "1.25-dichloronitrobenzeneA_Molpak/ZZZEKW_OPT_ca66.res",
+      "energy": -94.287,
+      "error": "Atom SFAC index outside reported element list"
+    },
+    {
+      "candidate_rank": 4,
+      "filename": "1.25-dichloronitrobenzeneA_Molpak/ZZZEKW_OPT_ca115.res",
+      "energy": -93.733,
+      "error": "Atom SFAC index outside reported element list"
+    },
+    {
+      "candidate_rank": 5,
+      "filename": "1.25-dichloronitrobenzeneA_Molpak/ZZZEKW_OPT_ah29.res",
+      "energy": -93.488,
+      "error": "Atom SFAC index outside reported element list"
+    }
+  ]
+}

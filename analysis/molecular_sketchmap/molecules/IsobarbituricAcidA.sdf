@@ -1,0 +1,56 @@
+IsobarbituricAcidA
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+   -0.5196   -1.0885    0.8296 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5218    0.9517    1.0344 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5090   -0.9629   -0.5526 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0202    0.1304   -1.1531 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5980    1.2088   -0.3396 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0082   -0.1486    1.6996 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0821    0.3561   -2.4971 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1009    2.2363   -0.7776 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0194   -0.2667    2.9188 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9150   -1.9080    1.2678 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9451   -1.7828   -1.1037 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3150   -0.3939   -2.9585 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9082    1.6681    1.6321 H   0  0  0  0  0  0  0  0  0  0  0  0
+  3  1  1  0
+  4  3  2  0
+  5  4  1  0
+  5  2  1  0
+  6  2  1  0
+  6  1  1  0
+  7  4  1  0
+  8  5  2  0
+  9  6  2  0
+ 10  1  1  0
+ 11  3  1  0
+ 12  7  1  0
+ 13  2  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+IsobarbituricAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcidA/1.IsobarbituricAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.IsobarbituricAcidA_MOLPAK/QARWAI_360_fc4.res
+
+>  <reported_formula>  (1) 
+C4 H4 N2 03
+
+>  <selected_formula>  (1) 
+C4H4N2O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+63
+
+$$$$

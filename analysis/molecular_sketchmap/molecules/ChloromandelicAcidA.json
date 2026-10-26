@@ -1,0 +1,347 @@
+{
+  "dataset_id": "ChloromandelicAcidA",
+  "dataset_name": "3-Chloromandelic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/ChloromandelicAcid/ChloromandelicAcid.html",
+  "reported_formula": "C8 H7 O3 Cl1",
+  "reported_formula_normalised": "C8ClH7O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 17214,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/ChloromandelicAcid/ChloromandelicAcidA/1.ChloromandelicAcidA_CrystalPredictor.zip?raw=true",
+  "archive_git_blob_sha": "a0e62d9fc6e2f6023c48690ab7fbfd56355d9daf",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 8524,
+  "candidates_with_title_energy": 8524,
+  "selected_filename": "1.ChloromandelicAcidA_CrystalPredictor/TUYBIA_dfB2_B2.res",
+  "selected_file_sha256": "4de4b17571cc18b7cd9c364a73b27fc2e6cc845dd31ef86ee3addce055bfa6ac",
+  "selected_title_energy": -115.271,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C8H7ClO3",
+  "selected_smiles": "O=C(O)[C@@H](O)c1cccc(Cl)c1",
+  "constitution_smiles": "O=C(O)C(O)c1cccc(Cl)c1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 19,
+  "selected_heavy_atoms": 12,
+  "selected_molar_mass_g_mol": 186.594,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H7ClO3": 4
+  },
+  "component_identities_per_cell": {
+    "O=C(O)[C@@H](O)c1cccc(Cl)c1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H7ClO3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL TUYBIA_dfB2_B2(-115.271) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 19,
+    "expanded_unit_cell_atoms": 76,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "O1",
+      "O2",
+      "O3",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "O1",
+      "O2",
+      "O3",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "O1",
+      "O2",
+      "O3",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "O1",
+      "O2",
+      "O3",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "Cl",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.0213727877685308,
+      0.01553806937984259,
+      -0.4381783429523569
+    ],
+    [
+      0.8359004471165203,
+      -0.7055615752711575,
+      0.4411836435638623
+    ],
+    [
+      0.4919562403913904,
+      -2.0135548952071596,
+      0.7700584736580689
+    ],
+    [
+      -0.6516946084570012,
+      -2.615589039012157,
+      0.24127719777956713
+    ],
+    [
+      -1.4574919770358425,
+      -1.8858051948571573,
+      -0.6318066147543888
+    ],
+    [
+      -1.124898270883425,
+      -0.5739578939041576,
+      -0.9738561384948294
+    ],
+    [
+      0.40551345981231,
+      1.4415878984068422,
+      -0.7811545663349682
+    ],
+    [
+      0.2771600604918252,
+      2.267163166925843,
+      0.4867039306702914
+    ],
+    [
+      1.7221972503199492,
+      1.5545983302838426,
+      -1.2774200126187143
+    ],
+    [
+      -1.0046331732543194,
+      2.465573606417842,
+      0.8493133573407805
+    ],
+    [
+      1.2432066774030215,
+      2.6428877299378417,
+      1.1328065640747207
+    ],
+    [
+      1.504361752534784,
+      -2.913792358056158,
+      1.862023100496505
+    ],
+    [
+      1.7291025222303578,
+      -0.25820626695015747,
+      0.8583956507410155
+    ],
+    [
+      -0.8987925781925536,
+      -3.633667312002159,
+      0.5093829140781141
+    ],
+    [
+      -2.3425705961078522,
+      -2.347284949755159,
+      -1.0506188052017258
+    ],
+    [
+      -1.7506763410392434,
+      -0.011616031770157464,
+      -1.6561061540534556
+    ],
+    [
+      -0.2860795005778094,
+      1.8326566456138427,
+      -1.530998608812391
+    ],
+    [
+      2.2660394740995358,
+      1.8158612069278426,
+      -0.5175556947468376
+    ],
+    [
+      -0.9799736266201657,
+      2.923168862891842,
+      1.7065501055667278
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      6,
+      1.0
+    ],
+    [
+      8,
+      6,
+      1.0
+    ],
+    [
+      9,
+      7,
+      1.0
+    ],
+    [
+      10,
+      7,
+      2.0
+    ],
+    [
+      11,
+      2,
+      1.0
+    ],
+    [
+      12,
+      1,
+      1.0
+    ],
+    [
+      13,
+      3,
+      1.0
+    ],
+    [
+      14,
+      4,
+      1.0
+    ],
+    [
+      15,
+      5,
+      1.0
+    ],
+    [
+      16,
+      6,
+      1.0
+    ],
+    [
+      17,
+      8,
+      1.0
+    ],
+    [
+      18,
+      9,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

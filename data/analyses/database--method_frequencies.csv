@@ -1,0 +1,15 @@
+category,datasets,kind
+FIT,281,potential_family
+Williams,35,potential_family
+Day / Rice,22,potential_family
+Non-empirical / SAPT,4,potential_family
+Custom Delaware,1,potential_family
+MP2,176,electronic_method
+PBE0 / PBE1PBE,109,electronic_method
+HF / SCF,41,electronic_method
+M06-2X,12,electronic_method
+DFTB3-D3,11,electronic_method
+B3LYP,10,electronic_method
+B3PW91,3,electronic_method
+CCSD,2,electronic_method
+PBE,2,electronic_method

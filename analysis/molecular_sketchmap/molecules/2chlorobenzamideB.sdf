@@ -1,0 +1,62 @@
+2chlorobenzamideB
+     RDKit          3D
+
+ 16 16  0  0  0  0  0  0  0  0999 V2000
+    1.4747   -1.9353    1.5776 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    1.7699   -1.6860   -1.5576 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0461    0.5803   -1.7158 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4557   -0.5522   -1.2092 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3253   -0.2650   -0.2632 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2199   -0.8889    0.9874 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8778   -0.6417    1.8129 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8913    0.2163    1.3869 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8018    0.8442    0.1441 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6970    0.6043   -0.6704 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9851    1.4403   -1.1983 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.8754    0.4319   -2.2695 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9321   -1.1251    2.7789 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.7432    0.3946    2.0301 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5875    1.5085   -0.1907 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6213    1.0738   -1.6432 H   0  0  0  0  0  0  0  0  0  0  0  0
+  4  3  1  0
+  4  2  2  0
+  5  4  1  0
+  6  5  1  0
+  6  1  1  0
+  7  6  2  0
+  8  7  1  0
+  9  8  2  0
+ 10  9  1  0
+ 10  5  2  0
+ 11  3  1  0
+ 12  3  1  0
+ 13  7  1  0
+ 14  8  1  0
+ 15  9  1  0
+ 16 10  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+2chlorobenzamideB
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamideB/1.2chlorobenzamideB_MOLPAK(DayPricePotential).zip?raw=true
+
+>  <selected_filename>  (1) 
+1.2chlorobenzamideB_MOLPAK(DayPricePotential)/CLBZAM_opt_ab10.res
+
+>  <reported_formula>  (1) 
+C7 H6 N1 O1 Cl1
+
+>  <selected_formula>  (1) 
+C7H6ClNO
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+634
+
+$$$$

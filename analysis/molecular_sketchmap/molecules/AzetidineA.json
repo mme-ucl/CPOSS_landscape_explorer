@@ -1,0 +1,227 @@
+{
+  "dataset_id": "AzetidineA",
+  "dataset_name": "Azetidine (Blind Test XI)",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XI/Azetidine.html",
+  "reported_formula": "C3 H7 N1",
+  "reported_formula_normalised": "C3H7N",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 31,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XI/AzetidineA/1.AzetidineA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "f549d20496c56b59d87c5a90d1113a5604f96152",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 31,
+  "candidates_with_title_energy": 31,
+  "selected_filename": "1.AzetidineA_MOLPAK/XATMOV_OPT_am85.res",
+  "selected_file_sha256": "8cf3cd3e133ba365dc3dea00075f56798bfd257cf66f533ef90cae5dcd6a8990",
+  "selected_title_energy": -47.557,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H7N",
+  "selected_smiles": "C1CNC1",
+  "constitution_smiles": "C1CNC1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 11,
+  "selected_heavy_atoms": 4,
+  "selected_molar_mass_g_mol": 57.096,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H7N": 4
+  },
+  "component_identities_per_cell": {
+    "C1CNC1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H7N": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL XATMOV_OPT_am85(-47.557) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 11,
+    "expanded_unit_cell_atoms": 44,
+    "warnings": [],
+    "source_atom_labels": [
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "NIT1",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HPD7",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "NIT1",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HPD7",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "NIT1",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HPD7",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "NIT1",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HPD7"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "N",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      1.0092142602941552,
+      0.02824018788254512,
+      -0.2947330244025186
+    ],
+    [
+      -0.374123617390705,
+      -0.38253851819345464,
+      -0.827156161694969
+    ],
+    [
+      -0.8990055127962607,
+      0.0957364600585453,
+      0.5371475231257246
+    ],
+    [
+      0.4662357013427947,
+      -0.10568728433745478,
+      1.0778616135582801
+    ],
+    [
+      -1.2099447660994962,
+      1.146029960232545,
+      0.49195101381745676
+    ],
+    [
+      -1.6782913646671709,
+      -0.4846235923414549,
+      1.0313723455180783
+    ],
+    [
+      -0.7472026945776612,
+      0.1097975966865452,
+      -1.7218743862309258
+    ],
+    [
+      -0.45817283750597904,
+      -1.4616260209454546,
+      -0.9330783937505993
+    ],
+    [
+      1.2494918162802073,
+      1.0589484206325452,
+      -0.5801174124105684
+    ],
+    [
+      1.8650078509966033,
+      -0.6107873846854547,
+      -0.5136692069628026
+    ],
+    [
+      0.7767911641235128,
+      0.6065101750105453,
+      1.7322960894328432
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      3,
+      0,
+      1.0
+    ],
+    [
+      4,
+      2,
+      1.0
+    ],
+    [
+      5,
+      2,
+      1.0
+    ],
+    [
+      6,
+      1,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      0,
+      1.0
+    ],
+    [
+      9,
+      0,
+      1.0
+    ],
+    [
+      10,
+      3,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

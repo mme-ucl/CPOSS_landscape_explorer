@@ -1,0 +1,60 @@
+6methyluracilA
+     RDKit          3D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+    0.2102   -0.6562   -0.2114 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5191   -1.9596   -0.8778 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9288    1.4957   -0.5381 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2606    0.9732    1.6108 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6072   -0.3191    1.0391 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5330    0.2341   -0.9633 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4951    1.7828    0.7436 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5904    2.2575   -1.2312 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5687    1.3755    2.7293 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1878   -0.9971    1.6436 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8357   -0.0065   -1.8953 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7598    2.6919    1.1000 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1016   -2.5937   -0.2154 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4010   -2.4826   -1.1407 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0887   -1.7959   -1.7932 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  5  4  1  0
+  5  1  2  0
+  6  3  1  0
+  6  1  1  0
+  7  4  1  0
+  7  3  1  0
+  8  3  2  0
+  9  4  2  0
+ 10  5  1  0
+ 11  6  1  0
+ 12  7  1  0
+ 13  2  1  0
+ 14  2  1  0
+ 15  2  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+6methyluracilA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Methyluracil/6methyluracilA/1.6methyluracilA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.6methyluracilA_MOLPAK/CEWVOP_OPT_ab1.res
+
+>  <reported_formula>  (1) 
+C5 H6 N2 O2
+
+>  <selected_formula>  (1) 
+C5H6N2O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+38
+
+$$$$

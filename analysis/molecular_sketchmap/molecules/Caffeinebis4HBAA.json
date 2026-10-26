@@ -1,0 +1,560 @@
+{
+  "dataset_id": "Caffeinebis4HBAA",
+  "dataset_name": "Caffeine bis 4-Hydroxybenzoic Acid cocrystal",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeinebis4HBA/Caffeinebis4HBA.html",
+  "reported_formula": "C8 H10 N4 O2 - 2(C7 H6 O3)",
+  "reported_formula_normalised": "C22H22N4O8",
+  "composition_basis": "formula unit (multicomponent)",
+  "structure_count": 1060,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeinebis4HBA/Caffeinebis4HBAA/1.Caffeinebis4HBAA_CrystalPredictor.zip?raw=true",
+  "archive_git_blob_sha": "f5c68416a3f448a48cc8cba737e8d9081851b2b2",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 1059,
+  "candidates_with_title_energy": 1059,
+  "selected_filename": "1.Caffeinebis4HBAA_CrystalPredictor/MOZDAH_Opoint_A2.res",
+  "selected_file_sha256": "6631e3a476b6e7efc69ac827a32720a4220e49ed24ddd59e1346b6884e2b2e0f",
+  "selected_title_energy": -307.336,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C8H10N4O2",
+  "selected_smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+  "constitution_smiles": "Cn1c(=O)c2c(ncn2C)n(C)c1=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 24,
+  "selected_heavy_atoms": 14,
+  "selected_molar_mass_g_mol": 194.194,
+  "observed_multicomponent": true,
+  "component_counts_per_cell": {
+    "C8H10N4O2": 4,
+    "C7H6O3": 8
+  },
+  "component_identities_per_cell": {
+    "Cn1c(=O)c2c(ncn2C)n(C)c1=O": 4,
+    "O=C(O)c1ccc(O)cc1": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H10N4O2": 1.0,
+    "C7H6O3": 2.0
+  },
+  "omitted_component_types_per_cell": {
+    "C7H6O3": 8
+  },
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL MOZDAH_Opoint_A2(-307.336) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 56,
+    "expanded_unit_cell_atoms": 224,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "N",
+    "N",
+    "N",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.3037074905856674,
+      3.3316071605479536,
+      0.2856684692691278
+    ],
+    [
+      -0.44485323369631025,
+      1.6269987703739517,
+      2.1488207914399604
+    ],
+    [
+      -0.15048508386128123,
+      -0.183036551347044,
+      1.0986869466945661
+    ],
+    [
+      -0.08867064221294019,
+      0.8182538485439466,
+      0.14823734519912968
+    ],
+    [
+      0.1372864395030251,
+      0.5820074455189541,
+      -1.2482426749560256
+    ],
+    [
+      0.5201852564372262,
+      -1.2191218684630485,
+      -2.8786854574881713
+    ],
+    [
+      0.22879217077869107,
+      -1.8577273947060462,
+      -0.5654227730779064
+    ],
+    [
+      -0.06257575572755525,
+      -2.537604577996049,
+      1.7855966074417147
+    ],
+    [
+      -0.2806630711782958,
+      1.9870978136919533,
+      0.8437367038000101
+    ],
+    [
+      -0.37211321418086873,
+      0.30711837834694933,
+      2.3479376271188563
+    ],
+    [
+      -0.00033282068088746897,
+      -1.506912620195049,
+      0.756678056903711
+    ],
+    [
+      0.28091113963898584,
+      -0.797620537837048,
+      -1.497031638047471
+    ],
+    [
+      0.37954049903768095,
+      -3.0213663462990503,
+      -0.9355653338593175
+    ],
+    [
+      0.20174721590585332,
+      1.442735797108952,
+      -2.130985503458244
+    ],
+    [
+      -0.4720176740784674,
+      4.0296628487739525,
+      1.1011025801246497
+    ],
+    [
+      -1.1013805461601054,
+      3.412484791826948,
+      -0.446938621606372
+    ],
+    [
+      0.6439355508755287,
+      3.5447792460379475,
+      -0.19973825071840956
+    ],
+    [
+      -0.6146404097556366,
+      2.361577840559953,
+      2.9195903870250834
+    ],
+    [
+      1.4689301588197008,
+      -1.7447069899350467,
+      -2.9430865400176733
+    ],
+    [
+      0.5353929650879885,
+      -0.3224646012180514,
+      -3.4865879779088624
+    ],
+    [
+      -0.27206722106910797,
+      -1.8899725812050505,
+      -3.2001312336818595
+    ],
+    [
+      0.019443418313044525,
+      -3.4958214797360476,
+      1.2860022579151806
+    ],
+    [
+      -1.007340043913602,
+      -2.4615113214080466,
+      2.318251325825168
+    ],
+    [
+      0.7546823927030077,
+      -2.406457070986047,
+      2.4921069060631584
+    ]
+  ],
+  "bonds": [
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      8,
+      3,
+      1.5
+    ],
+    [
+      8,
+      1,
+      1.5
+    ],
+    [
+      8,
+      0,
+      1.0
+    ],
+    [
+      9,
+      2,
+      1.5
+    ],
+    [
+      9,
+      1,
+      1.5
+    ],
+    [
+      10,
+      7,
+      1.0
+    ],
+    [
+      10,
+      6,
+      1.5
+    ],
+    [
+      10,
+      2,
+      1.5
+    ],
+    [
+      11,
+      6,
+      1.5
+    ],
+    [
+      11,
+      5,
+      1.0
+    ],
+    [
+      11,
+      4,
+      1.5
+    ],
+    [
+      12,
+      6,
+      2.0
+    ],
+    [
+      13,
+      4,
+      2.0
+    ],
+    [
+      14,
+      0,
+      1.0
+    ],
+    [
+      15,
+      0,
+      1.0
+    ],
+    [
+      16,
+      0,
+      1.0
+    ],
+    [
+      17,
+      1,
+      1.0
+    ],
+    [
+      18,
+      5,
+      1.0
+    ],
+    [
+      19,
+      5,
+      1.0
+    ],
+    [
+      20,
+      5,
+      1.0
+    ],
+    [
+      21,
+      7,
+      1.0
+    ],
+    [
+      22,
+      7,
+      1.0
+    ],
+    [
+      23,
+      7,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -227,6 +227,8 @@ def parse_formula(text):
     pt = GetPeriodicTable()
     if not text or text.lower() in MISSING:
         return {"status": "missing", "reason": "No formula reported"}
+    if re.search(r"\d\s+\d", text):
+        return {"status": "missing", "reason": "Separated numeric tokens are ambiguous; an element may be missing (e.g. N2 03). Whitespace must not join them into an atom count."}
     separated = re.sub(r"\s+-\s+", "|", text)
     separated = re.sub(r"\s+\+\s+(?=[A-Z])", "|", separated)
     compact = re.sub(r"\s+", "", separated)

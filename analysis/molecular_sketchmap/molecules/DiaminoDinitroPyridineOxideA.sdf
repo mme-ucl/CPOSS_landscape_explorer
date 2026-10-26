@@ -1,0 +1,70 @@
+DiaminoDinitroPyridineOxideA
+     RDKit          3D
+
+ 20 20  0  0  0  0  0  0  0  0999 V2000
+   -0.1010   -1.3231   -0.0644 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3606   -1.3340   -0.0320 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1312   -1.6721   -0.1142 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3126    1.6699    0.1227 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5391    1.3051    0.0221 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1999   -2.6238   -0.1276 O   0  0  0  0  0  1  0  0  0  0  0  0
+   -3.4317    1.1136    0.1197 O   0  0  0  0  0  1  0  0  0  0  0  0
+    3.5614    0.5883   -0.0369 O   0  0  0  0  0  1  0  0  0  0  0  0
+   -2.1483    2.8975    0.1765 O   0  0  0  0  0  1  0  0  0  0  0  0
+    2.5630    2.5428    0.0883 O   0  0  0  0  0  1  0  0  0  0  0  0
+   -1.2586   -0.5795   -0.0080 C   0  0  0  0  0  3  0  0  0  0  0  0
+    1.1565   -0.7613   -0.0574 C   0  0  0  0  0  3  0  0  0  0  0  0
+   -1.1343    0.8260    0.0588 C   0  0  0  0  0  3  0  0  0  0  0  0
+    1.2466    0.6468    0.0129 C   0  0  0  0  0  3  0  0  0  0  0  0
+    0.1089    1.4296    0.0695 C   0  0  0  0  0  3  0  0  0  0  0  0
+   -3.2635   -0.8978    0.0177 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.0904   -1.3747   -0.1281 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1770   -2.3296   -0.0756 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7993   -2.6282   -0.1657 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1909    2.5042    0.1218 H   0  0  0  0  0  0  0  0  0  0  0  0
+  6  1  1  0
+  7  4  1  0
+  8  5  1  0
+  9  4  1  0
+ 10  5  1  0
+ 11  2  1  0
+ 11  1  1  0
+ 12  3  1  0
+ 12  1  1  0
+ 13 11  1  0
+ 13  4  1  0
+ 14 12  1  0
+ 14  5  1  0
+ 15 14  1  0
+ 15 13  1  0
+ 16  2  1  0
+ 17  3  1  0
+ 18  2  1  0
+ 19  3  1  0
+ 20 15  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+DiaminoDinitroPyridineOxideA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyridineOxide/DiaminoDinitroPyridineOxideA/1.DiaminoDinitroPyridineOxideA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.DiaminoDinitroPyridineOxideA_MOLPAK/TIBMIA_OPT_DE18.res
+
+>  <reported_formula>  (1) 
+C5 H5 N5 O5
+
+>  <selected_formula>  (1) 
+C5H5N5O5
+
+>  <bond_assignment_status>  (1) 
+connectivity_only_unresolved_bond_orders
+
+>  <structure_count>  (1) 
+11
+
+$$$$

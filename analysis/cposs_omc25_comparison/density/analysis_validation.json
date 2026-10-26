@@ -1,0 +1,15 @@
+{
+  "source_inputs_checksum_verified": true,
+  "shared_window": [
+    0.8,
+    2.4
+  ],
+  "common_bin_width": 0.02,
+  "primary_records": 114222,
+  "primary_systems": 186,
+  "primary_searches": 257,
+  "multicomponent_records": 29065,
+  "normalization_max_error": 2.220446049250313e-16,
+  "reference_status": "approximate_vector_histogram_recovery",
+  "results_section_updated_in_place": true
+}

@@ -1,0 +1,54 @@
+UracilA
+     RDKit          3D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+    0.0014   -1.4378    0.0296 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5310    0.7361   -1.1278 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0287    1.4237    0.0279 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5174    0.7099    1.0659 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9430    1.1716    1.9456 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8701   -1.1900    1.8478 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8697   -1.1859   -1.7922 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0408    2.5007    0.0286 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5038   -0.6658    1.0689 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4914   -0.6666   -1.0106 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0071   -2.6613    0.0456 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0032    1.2653   -2.1292 O   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  8  3  1  0
+  9  6  1  0
+  9  4  1  0
+  9  1  1  0
+ 10  7  1  0
+ 10  2  1  0
+ 10  1  1  0
+ 11  1  2  0
+ 12  2  2  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+UracilA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.Uracils/Uracil/UracilA/1.UracilA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.UracilA_MOLPAK/URACIL_opt_da12.res
+
+>  <reported_formula>  (1) 
+C4 H4 N2 O2
+
+>  <selected_formula>  (1) 
+C4H4N2O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+217
+
+$$$$

@@ -1,0 +1,56 @@
+IsocytosineA
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+    0.9451   -0.0998   -2.8338 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9579    1.0375    0.5507 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5315    0.4883   -1.1714 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0257   -0.1510    1.0570 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8123    0.4505    0.0995 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6491   -0.1165   -1.6385 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5055   -0.7648   -0.6330 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1505   -0.7649    0.6693 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5378    1.4779   -0.1400 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2359    1.0473    1.5127 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4186   -1.2374   -0.9596 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7284   -1.2200    1.4608 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2962   -0.1471    2.0264 H   0  0  0  0  0  0  0  0  0  0  0  0
+  5  4  1  0
+  5  3  2  0
+  5  2  1  0
+  6  3  1  0
+  6  1  2  0
+  7  6  1  0
+  8  7  2  0
+  8  4  1  0
+  9  2  1  0
+ 10  2  1  0
+ 11  7  1  0
+ 12  8  1  0
+ 13  4  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+IsocytosineA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Isocytosine/IsocytosineA/1.IsocytosineA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.IsocytosineA_MOLPAK/ICYTIN_taut1opt_fa200.res
+
+>  <reported_formula>  (1) 
+C4 H5 N3 O1
+
+>  <selected_formula>  (1) 
+C4H5N3O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+98
+
+$$$$

@@ -1,0 +1,39 @@
+[
+  {
+    "stem": "cposs_omc25_comparison",
+    "size_inches": [
+      7.6,
+      3.05
+    ],
+    "png_dpi": 300,
+    "actual_font_families": [
+      "Helvetica"
+    ],
+    "out_of_bounds_text": [],
+    "population_counts": {
+      "CPOSS_single_verified": 190,
+      "OMC25_train": 44403
+    },
+    "family": "Helvetica",
+    "font_source_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3"
+  },
+  {
+    "stem": "cposs_omc25_multicomponent",
+    "size_inches": [
+      7.6,
+      3.05
+    ],
+    "png_dpi": 300,
+    "actual_font_families": [
+      "Helvetica"
+    ],
+    "out_of_bounds_text": [],
+    "population_counts": {
+      "CPOSS_single_verified": 190,
+      "CPOSS_multicomponent_formula_units": 44,
+      "OMC25_train": 44403
+    },
+    "family": "Helvetica",
+    "font_source_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3"
+  }
+]

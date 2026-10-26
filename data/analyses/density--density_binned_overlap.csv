@@ -1,0 +1,5 @@
+cp_population,reference,shared_window_g_cm3,bin_width_g_cm3,histogram_overlap_percent,status
+CPOSS_single_records,OMC25_last_frames,0.8--2.4,0.02,77.9935233229,descriptive_approximate_binned_overlap_not_a_significance_test
+CPOSS_single_records,CSD_organic,0.8--2.4,0.02,86.6496480596,descriptive_approximate_binned_overlap_not_a_significance_test
+CPOSS_single_system_balanced,OMC25_last_frames,0.8--2.4,0.02,71.9174073824,descriptive_approximate_binned_overlap_not_a_significance_test
+CPOSS_single_system_balanced,CSD_organic,0.8--2.4,0.02,81.0929980312,descriptive_approximate_binned_overlap_not_a_significance_test

@@ -1,0 +1,83 @@
+{
+  "selected_initialization_seed": 41,
+  "metrics": {
+    "sigmoid_pair_mse": 0.006284347637141943,
+    "distance_spearman": 0.9381328351309733,
+    "trustworthiness_k10": 0.9600444000444001,
+    "neighbor_retention_k10": 0.5912337662337663
+  },
+  "refinement": {
+    "iterations": 2,
+    "stress_before": 0.006284352356370319,
+    "stress_after": 0.006284347637141943,
+    "max_abs_stress_gradient": 4.533126712156879e-07
+  },
+  "initialization_stability": [
+    {
+      "seed": 0,
+      "procrustes_relative_rms_no_scaling": 0.24182270912857412,
+      "distance_spearman_to_selected": 0.9943316698212296,
+      "neighbor_retention_k10_to_selected": 0.9496753246753247
+    },
+    {
+      "seed": 17,
+      "procrustes_relative_rms_no_scaling": 0.24185299643343067,
+      "distance_spearman_to_selected": 0.9943316845897737,
+      "neighbor_retention_k10_to_selected": 0.9493506493506495
+    },
+    {
+      "seed": 41,
+      "procrustes_relative_rms_no_scaling": 0.00014999914290932356,
+      "distance_spearman_to_selected": 0.9999999581611094,
+      "neighbor_retention_k10_to_selected": 0.9987012987012988
+    },
+    {
+      "seed": 83,
+      "procrustes_relative_rms_no_scaling": 0.1937542656905826,
+      "distance_spearman_to_selected": 0.9975136988478088,
+      "neighbor_retention_k10_to_selected": 0.9623376623376625
+    },
+    {
+      "seed": 137,
+      "procrustes_relative_rms_no_scaling": 0.19376833228895773,
+      "distance_spearman_to_selected": 0.9975121668082154,
+      "neighbor_retention_k10_to_selected": 0.9623376623376625
+    }
+  ],
+  "parameters": "parameters.json",
+  "sigma_sensitivity": [
+    {
+      "kind": "sigma_sensitivity",
+      "seed": 0,
+      "sigma": 0.39743867859946497,
+      "sigma_factor": 0.8,
+      "iterations": 228,
+      "library_stress": 0.006390708404388701,
+      "seconds": 0.22318370902212337,
+      "sigmoid_pair_mse": 0.006390708404388701,
+      "distance_spearman": 0.9378114007869796,
+      "trustworthiness_k10": 0.9586979686979687,
+      "neighbor_retention_k10": 0.5964285714285714,
+      "distance_spearman_to_selected": 0.9922686203539598,
+      "neighbor_retention_k10_to_selected": 0.8915584415584417
+    },
+    {
+      "kind": "sigma_sensitivity",
+      "seed": 0,
+      "sigma": 0.5961580178991974,
+      "sigma_factor": 1.2,
+      "iterations": 163,
+      "library_stress": 0.0059943966038342586,
+      "seconds": 0.15738933300599456,
+      "sigmoid_pair_mse": 0.0059943966038342586,
+      "distance_spearman": 0.9374277908541037,
+      "trustworthiness_k10": 0.9575013875013875,
+      "neighbor_retention_k10": 0.5857142857142856,
+      "distance_spearman_to_selected": 0.9943868431426895,
+      "neighbor_retention_k10_to_selected": 0.9347402597402599
+    }
+  ],
+  "invariance_max_abs_error": 7.077671781985373e-16,
+  "sample_weights": "All datasets equal; counts used only for marker areas",
+  "jitter": "None; coincident or near-coincident points retained"
+}

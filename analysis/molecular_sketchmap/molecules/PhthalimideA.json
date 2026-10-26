@@ -1,0 +1,307 @@
+{
+  "dataset_id": "PhthalimideA",
+  "dataset_name": "Phthalimide",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Phthalimide/Phthalimide.html",
+  "reported_formula": "C8 H5 N1 O2",
+  "reported_formula_normalised": "C8H5NO2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 127,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Phthalimide/PhthalimideA/1.PhthalimideA_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "719d6931d62c2670f460b328ae244de6c39d274b",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 125,
+  "candidates_with_title_energy": 125,
+  "selected_filename": "1.PhthalimideA/PHALIM_opt_ai24.res",
+  "selected_file_sha256": "7a76b477444e5200de1c00c49136ecb7a46cc5f8942c7594ee379bab7da1b57d",
+  "selected_title_energy": -98.337,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C8H5NO2",
+  "selected_smiles": "O=C1NC(=O)c2ccccc21",
+  "constitution_smiles": "O=C1NC(=O)c2ccccc21",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 16,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 147.13299999999998,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H5NO2": 4
+  },
+  "component_identities_per_cell": {
+    "O=C1NC(=O)c2ccccc21": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H5NO2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PHALIM_opt_ai24(-98.337)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 16,
+    "expanded_unit_cell_atoms": 64,
+    "warnings": [],
+    "source_atom_labels": [
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "O",
+    "O",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.8675893754019413,
+      2.250905879676812,
+      1.9963875644046325
+    ],
+    [
+      -1.7993694743974498,
+      -1.5341510486271879,
+      2.0525712140813317
+    ],
+    [
+      -0.5402516556171237,
+      0.41554755825181233,
+      2.3478082014705293
+    ],
+    [
+      0.30444068131035884,
+      1.2436871152848124,
+      1.5972599964690735
+    ],
+    [
+      -1.0461867906395605,
+      -0.6732037280511873,
+      1.625633098434063
+    ],
+    [
+      -0.46022225308233455,
+      -0.5255049315031877,
+      0.2619893621690672
+    ],
+    [
+      -0.6182294577998464,
+      -1.3214423707261873,
+      -0.8644683540300906
+    ],
+    [
+      0.0637225282837246,
+      -0.9329128477381867,
+      -2.023044595411105
+    ],
+    [
+      0.8714169687641133,
+      0.21366682440581236,
+      -2.0399686898731266
+    ],
+    [
+      1.0240129697712481,
+      1.0092998087988125,
+      -0.8989977643664431
+    ],
+    [
+      0.3434045593496,
+      0.6153813283058123,
+      0.2451216525874555
+    ],
+    [
+      -0.7632745844987046,
+      0.5870221367428123,
+      3.316735911336174
+    ],
+    [
+      -1.2442257108993395,
+      -2.2040460609751875,
+      -0.8390971715910442
+    ],
+    [
+      -0.03162617135158907,
+      -1.5250406792721871,
+      -2.9242291797599522
+    ],
+    [
+      1.384368510143256,
+      0.48461016679881236,
+      -2.953894962643948
+    ],
+    [
+      1.6444305052617016,
+      1.8961808486278124,
+      -0.8998062832766167
+    ]
+  ],
+  "bonds": [
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      3,
+      0,
+      2.0
+    ],
+    [
+      4,
+      2,
+      1.0
+    ],
+    [
+      4,
+      1,
+      2.0
+    ],
+    [
+      5,
+      4,
+      1.0
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      10,
+      9,
+      1.5
+    ],
+    [
+      10,
+      5,
+      1.5
+    ],
+    [
+      10,
+      3,
+      1.0
+    ],
+    [
+      11,
+      2,
+      1.0
+    ],
+    [
+      12,
+      6,
+      1.0
+    ],
+    [
+      13,
+      7,
+      1.0
+    ],
+    [
+      14,
+      8,
+      1.0
+    ],
+    [
+      15,
+      9,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

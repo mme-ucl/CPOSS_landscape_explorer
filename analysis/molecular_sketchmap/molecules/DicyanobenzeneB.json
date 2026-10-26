@@ -1,0 +1,328 @@
+{
+  "dataset_id": "DicyanobenzeneB",
+  "dataset_name": "Dicyanobenzene",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/Dicyanobenzene.html",
+  "reported_formula": "C8 H4 N2",
+  "reported_formula_normalised": "C8H4N2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 112,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/DicyanobenzeneB/1.DicyanobenzeneB_MOLPAK_will.zip?raw=true",
+  "archive_git_blob_sha": "8f090fc03f92ad93e5a6ed4dad209174ca38a19a",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 105,
+  "candidates_with_title_energy": 105,
+  "selected_filename": "1.DicyanobenzeneB_MOLPAK_will/TEPNIT_opt_de8.res",
+  "selected_file_sha256": "a9d630d1ac15bd778d1decb986380ecb196c9ce16fd1bef770da4eb873822b29",
+  "selected_title_energy": -84.994,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 8.0,
+  "selected_formula": "C8H4N2",
+  "selected_smiles": "N#Cc1ccc(C#N)cc1",
+  "constitution_smiles": "N#Cc1ccc(C#N)cc1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 14,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 128.134,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H4N2": 8
+  },
+  "component_identities_per_cell": {
+    "N#Cc1ccc(C#N)cc1": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H4N2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL TEPNIT_opt_de8(-84.994) C2/c",
+    "lattice": 7,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 112,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N"
+  ],
+  "coordinates_angstrom": [
+    [
+      2.653494545084179,
+      -0.0003449126599983643,
+      -0.9757613553221152
+    ],
+    [
+      1.3065536629661096,
+      -6.407027999877357e-05,
+      -0.48037793822575114
+    ],
+    [
+      0.6525593201841318,
+      1.218690123440001,
+      -0.23976280259325033
+    ],
+    [
+      -0.6521705486858913,
+      1.2186781139600003,
+      0.2399893287508288
+    ],
+    [
+      -1.3067401772461888,
+      6.133906000016509e-05,
+      0.4803566440141731
+    ],
+    [
+      -0.6525573158090605,
+      -1.21869388996,
+      0.23980266508359716
+    ],
+    [
+      0.6524188650340665,
+      -1.2186829847999991,
+      -0.2399610429207657
+    ],
+    [
+      -2.653434135308194,
+      0.00034100810000037285,
+      0.9757285642892874
+    ],
+    [
+      1.1678418127344017,
+      2.150875416780001,
+      -0.42946809759618265
+    ],
+    [
+      -1.1674801453394856,
+      2.150898607500001,
+      0.4291828555300876
+    ],
+    [
+      -1.167781626334417,
+      -2.1508792523199993,
+      0.4294353065633576
+    ],
+    [
+      1.1674820916694983,
+      -2.15090237402,
+      -0.4291429132007032
+    ],
+    [
+      3.7643864904457303,
+      0.00012594178000036038,
+      -1.3843269259482236
+    ],
+    [
+      -3.764572839394857,
+      -0.00010306657999947788,
+      1.3843057115756832
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      6,
+      1,
+      1.5
+    ],
+    [
+      7,
+      4,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      5,
+      1.0
+    ],
+    [
+      11,
+      6,
+      1.0
+    ],
+    [
+      12,
+      0,
+      3.0
+    ],
+    [
+      13,
+      7,
+      3.0
+    ]
+  ],
+  "rejected_candidates": []
+}

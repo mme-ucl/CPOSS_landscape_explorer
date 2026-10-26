@@ -1,0 +1,59 @@
+24-dichloronitrobenzeneA
+     RDKit          3D
+
+ 14 14  0  0  0  0  0  0  0  0999 V2000
+    3.2850   -1.3306   -0.6440 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    0.1461    2.8403    0.6250 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6684   -1.0466   -0.1240 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5962   -1.5630   -0.3785 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6983   -0.7066   -0.3352 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5474    0.6451   -0.0328 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2758    1.1719    0.2037 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8258    0.3108    0.1514 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1927    0.7795    0.3691 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5318    1.8398   -0.1814 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.9243    0.0556    1.0668 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4103    1.2939    0.0197 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5449   -1.6791   -0.1329 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7288   -2.6111   -0.6071 H   0  0  0  0  0  0  0  0  0  0  0  0
+  4  3  2  0
+  5  4  1  0
+  5  1  1  0
+  6  5  2  0
+  7  6  1  0
+  7  2  1  0
+  8  7  2  0
+  8  3  1  0
+  9  8  1  0
+ 10  9  2  0
+ 11  9  1  0
+ 12  6  1  0
+ 13  3  1  0
+ 14  4  1  0
+M  CHG  2   9   1  11  -1
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+24-dichloronitrobenzeneA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/24-dichloronitrobenzene/24-dichloronitrobenzeneA/1.24-dichloronitrobenzeneA_Molpak.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.24-dichloronitrobenzeneA_Molpak/JIWQEM_F_av18.res
+
+>  <reported_formula>  (1) 
+C6 H3 N1 O2 Cl2
+
+>  <selected_formula>  (1) 
+C6H3Cl2NO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+68
+
+$$$$

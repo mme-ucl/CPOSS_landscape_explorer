@@ -1,0 +1,177 @@
+{
+  "dataset_id": "BTXIIB",
+  "dataset_name": "Propenal (Blind Test XII)",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XII/BTXII.html",
+  "reported_formula": "C3 H4 O1",
+  "reported_formula_normalised": "C3H4O",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 331,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XII/BTXIIB/1.BTXIIB_Molpak_Will.zip?raw=true",
+  "archive_git_blob_sha": "e0307b32891bb6f0ca1130aeebb9dd7a0c6e438f",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 330,
+  "candidates_with_title_energy": 330,
+  "selected_filename": "1.BTXIIB_Molpak_Will/AXOSOW_trans_ay21.res",
+  "selected_file_sha256": "15d038c1d1676723ebe014ad501f67f80557516e725f7373b7fd07215aed3c94",
+  "selected_title_energy": -45.527,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H4O",
+  "selected_smiles": "C=CC=O",
+  "constitution_smiles": "C=CC=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 8,
+  "selected_heavy_atoms": 4,
+  "selected_molar_mass_g_mol": 56.064,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H4O": 4
+  },
+  "component_identities_per_cell": {
+    "C=CC=O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H4O": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL AXOSOW_trans_ay21(-45.527) Pca21",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 8,
+    "expanded_unit_cell_atoms": 32,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.7612418511297498,
+      -0.6621881475825004,
+      -0.693923287983
+    ],
+    [
+      0.4134322780797497,
+      0.24843647193749963,
+      0.2273409737909997
+    ],
+    [
+      -1.004855691510251,
+      0.49260321321749956,
+      0.5371407909750001
+    ],
+    [
+      -1.3950762896362505,
+      1.3078207763774992,
+      1.3661512455689993
+    ],
+    [
+      0.00659479980374833,
+      -1.2299510309625004,
+      -1.224160319739
+    ],
+    [
+      1.7926429498657495,
+      -0.8635941416024999,
+      -0.9433413864390001
+    ],
+    [
+      1.1453580395417493,
+      0.8299777614974997,
+      0.7723808728620005
+    ],
+    [
+      -1.7193379372742505,
+      -0.12310490288250042,
+      -0.04158888903600033
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      2.0
+    ],
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      2,
+      2.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      0,
+      1.0
+    ],
+    [
+      6,
+      1,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,56 @@
+MethylazetidineoneA
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+    0.4809   -0.3161    0.0857 C   0  0  1  0  0  0  0  0  0  0  0  0
+    0.2855    1.1336   -0.4265 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0791   -0.6041    1.5172 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6549    0.5246   -1.4831 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2843    0.9356   -2.4393 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5033   -0.7273   -0.9260 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4815   -0.7033   -0.1243 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2070    1.8033    0.2766 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1686    1.6152   -0.8409 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0505   -1.6767    1.7078 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9104   -0.1931    1.7131 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7909   -0.1555    2.2101 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7771   -1.6363   -1.2702 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  1  1  0
+  4  2  1  0
+  5  4  2  0
+  6  4  1  0
+  6  1  1  0
+  1  7  1  6
+  8  2  1  0
+  9  2  1  0
+ 10  3  1  0
+ 11  3  1  0
+ 12  3  1  0
+ 13  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+MethylazetidineoneA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Methylazetidineone/MethylazetidineoneA/1.MethylazetidineoneA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.MethylazetidineoneA_MOLPAK/UCLPKC_opt_cb33.res
+
+>  <reported_formula>  (1) 
+C4 H7 N1 O1
+
+>  <selected_formula>  (1) 
+C4H7NO
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+1573
+
+$$$$

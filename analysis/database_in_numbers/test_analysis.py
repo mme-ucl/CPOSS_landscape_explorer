@@ -36,6 +36,11 @@ class MetadataRules(unittest.TestCase):
         self.assertEqual(parse_formula("C7 H6 O4 - 0.5 H2O")["status"], "missing")
         self.assertEqual(parse_formula("(C7H6O4")["status"], "missing")
 
+    def test_separated_numbers_are_not_concatenated_into_atom_counts(self):
+        for text in ["C4 H4 N2 03", "C6 H10 N2 02", "C1 H3 2"]:
+            self.assertEqual(parse_formula(text)["status"], "missing")
+        self.assertEqual(parse_formula("2 (C7 H6 O4) - H2 O1")["atom_count"], 37)
+
     def test_interval_is_not_silently_assigned_a_year(self):
         self.assertEqual(study_year("April 2023"), 2023)
         for value in ["pre-2010", "2005-7", "2005-2008", "2006-10", "2015-2019"]:

@@ -1,0 +1,283 @@
+{
+  "dataset_id": "GentisicAcidA",
+  "dataset_name": "Gentisic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcid.html",
+  "reported_formula": "C7 H6 O4",
+  "reported_formula_normalised": "C7H6O4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 1070,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcidA/1.GentisicAcidA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "93d79c5d76ee0a9037459226c0d108d17cec8e1b",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 1068,
+  "candidates_with_title_energy": 1068,
+  "selected_filename": "1.GentisicAcidA_CrystPred/BESKAL_Conf1_A681.res",
+  "selected_file_sha256": "8c700584de4a79831a97d6e72a8ab02c1298413007816ab2304343d3840acb68",
+  "selected_title_energy": -116.942,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C7H6O4",
+  "selected_smiles": "O=C(O)c1cc(O)ccc1O",
+  "constitution_smiles": "O=C(O)c1cc(O)ccc1O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 154.121,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C7H6O4": 2
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1cc(O)ccc1O": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6O4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL BESKAL_Conf1_A681(-116.942) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 17,
+    "expanded_unit_cell_atoms": 34,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.22744335451015374,
+      -0.47154217935405196,
+      0.372654171194152
+    ],
+    [
+      1.3038751142332474,
+      0.2636254312788022,
+      -0.11540470685350446
+    ],
+    [
+      1.047823312352957,
+      1.3519335198803324,
+      -0.9578358251644801
+    ],
+    [
+      -0.2343750012515029,
+      1.6884741589589254,
+      -1.2966820064032918
+    ],
+    [
+      -1.319161347644064,
+      0.9519722322298501,
+      -0.8083959479255451
+    ],
+    [
+      -1.0861791983638192,
+      -0.11333284834870128,
+      0.015289071559924317
+    ],
+    [
+      0.47445103280515877,
+      -1.6202579628974987,
+      1.2607005681337666
+    ],
+    [
+      2.581343290594069,
+      0.004660534174247388,
+      0.1644066496555867
+    ],
+    [
+      -2.5572675566199283,
+      1.3514563159176793,
+      -1.1921334963051633
+    ],
+    [
+      -0.6189807034492976,
+      -2.2472138384410147,
+      1.6646117577480775
+    ],
+    [
+      1.5624854813000173,
+      -1.9894046494600155,
+      1.6122036319174944
+    ],
+    [
+      2.645061180917004,
+      -0.7483172400020823,
+      0.7412889816692028
+    ],
+    [
+      -3.2221508624086237,
+      0.7987370621332435,
+      -0.8168130495100936
+    ],
+    [
+      -0.35617616018779774,
+      -2.9643874581034746,
+      2.2263579317687094
+    ],
+    [
+      1.8852640954274031,
+      1.9125104771479622,
+      -1.3287570076712694
+    ],
+    [
+      -0.42973296359484614,
+      2.524166890426362,
+      -1.9436705433772765
+    ],
+    [
+      -1.9037230686201365,
+      -0.693080445540577,
+      0.40217981956370785
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      4,
+      1.0
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      10,
+      6,
+      2.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      8,
+      1.0
+    ],
+    [
+      13,
+      9,
+      1.0
+    ],
+    [
+      14,
+      2,
+      1.0
+    ],
+    [
+      15,
+      3,
+      1.0
+    ],
+    [
+      16,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

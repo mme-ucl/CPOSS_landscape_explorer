@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Gharakhanyan et~al.(2026)Gharakhanyan, Barroso-Luque, Yang, Shuaibi,
+  Michel, Levine, Dzamba, Fu, Gao, Liu, et~al.]{gharakhanyan2026omc25}
+Vahe Gharakhanyan, Luis Barroso-Luque, Yi~Yang, Muhammed Shuaibi, Kyle Michel,
+  Daniel~S. Levine, Misko Dzamba, Xiang Fu, Meng Gao, Xingyu Liu, et~al.
+\newblock {Open Molecular Crystals 2025 (OMC25) dataset and models}.
+\newblock \emph{Scientific Data}, 2026.
+\newblock \doi{10.1038/s41597-026-06628-2}.
+\newblock URL \url{https://www.nature.com/articles/s41597-026-06628-2}.
+
+\end{thebibliography}

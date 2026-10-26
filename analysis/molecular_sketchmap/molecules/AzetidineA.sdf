@@ -1,0 +1,52 @@
+AzetidineA
+     RDKit          3D
+
+ 11 11  0  0  0  0  0  0  0  0999 V2000
+    1.0092    0.0282   -0.2947 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3741   -0.3825   -0.8272 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8990    0.0957    0.5371 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4662   -0.1057    1.0779 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2099    1.1460    0.4920 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6783   -0.4846    1.0314 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7472    0.1098   -1.7219 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4582   -1.4616   -0.9331 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2495    1.0589   -0.5801 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8650   -0.6108   -0.5137 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7768    0.6065    1.7323 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  1  0
+  4  3  1  0
+  4  1  1  0
+  5  3  1  0
+  6  3  1  0
+  7  2  1  0
+  8  2  1  0
+  9  1  1  0
+ 10  1  1  0
+ 11  4  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+AzetidineA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XI/AzetidineA/1.AzetidineA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.AzetidineA_MOLPAK/XATMOV_OPT_am85.res
+
+>  <reported_formula>  (1) 
+C3 H7 N1
+
+>  <selected_formula>  (1) 
+C3H7N
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+31
+
+$$$$

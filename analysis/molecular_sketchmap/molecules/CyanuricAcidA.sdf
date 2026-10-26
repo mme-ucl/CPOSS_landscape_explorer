@@ -1,0 +1,54 @@
+CyanuricAcidA
+     RDKit          3D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+   -1.2545   -0.5626    0.4199 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0217    0.2831    0.9711 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2330    0.2793   -1.3907 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0469    0.9178   -0.6847 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3798   -0.4564    2.2694 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6671   -0.4615   -1.5846 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1654    0.5226   -0.3901 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2155   -0.2616    1.2918 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9501   -0.2611   -0.9018 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3176   -1.0392    0.7754 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8864    0.5255    1.7942 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4311    0.5140   -2.5700 O   0  0  0  0  0  0  0  0  0  0  0  0
+  7  4  1  0
+  7  3  1  0
+  7  2  1  0
+  8  5  1  0
+  8  2  1  0
+  8  1  1  0
+  9  6  1  0
+  9  3  1  0
+  9  1  1  0
+ 10  1  2  0
+ 11  2  2  0
+ 12  3  2  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+CyanuricAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/CyanuricAcid/CyanuricAcidA/1.CyanuricAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.CyanuricAcidA_MOLPAK/CYURAC_OPT_de2b.res
+
+>  <reported_formula>  (1) 
+C3 H3 N3 O3
+
+>  <selected_formula>  (1) 
+C3H3N3O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+18
+
+$$$$

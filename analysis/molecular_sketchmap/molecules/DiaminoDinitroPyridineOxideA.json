@@ -1,0 +1,442 @@
+{
+  "dataset_id": "DiaminoDinitroPyridineOxideA",
+  "dataset_name": "Diamino Dinitro Pyridine Oxide",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyridineOxide/DiaminoDinitroPyridineOxide.html",
+  "reported_formula": "C5 H5 N5 O5",
+  "reported_formula_normalised": "C5H5N5O5",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 11,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyridineOxide/DiaminoDinitroPyridineOxideA/1.DiaminoDinitroPyridineOxideA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "c714488453f79b5fdc3864987a42f54eae3fc6d3",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 5,
+  "candidates_with_title_energy": 5,
+  "selected_filename": "1.DiaminoDinitroPyridineOxideA_MOLPAK/TIBMIA_OPT_DE18.res",
+  "selected_file_sha256": "4ff639e1c7fc8b32aece73b0256c4880652c1a1c88b02b495af0beb6da531e5d",
+  "selected_title_energy": -121.933,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 8.0,
+  "selected_formula": "C5H5N5O5",
+  "selected_smiles": "",
+  "constitution_smiles": "C5H5N5O5",
+  "inferred_formal_charge": null,
+  "bond_assignment_status": "connectivity_only_unresolved_bond_orders",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 20,
+  "selected_heavy_atoms": 15,
+  "selected_molar_mass_g_mol": 215.125,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H5N5O5": 8
+  },
+  "component_identities_per_cell": {
+    "C5H5N5O5": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H5N5O5": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL TIBMIA_OPT_DE18(-121.933) C2/c",
+    "lattice": 7,
+    "asymmetric_unit_atoms": 20,
+    "expanded_unit_cell_atoms": 160,
+    "warnings": [],
+    "source_atom_labels": [
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "NIT5",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "OXY5",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.10096663708621723,
+      -1.3230597138472002,
+      -0.06440059141442767
+    ],
+    [
+      -2.360555059815167,
+      -1.334000979207199,
+      -0.03202972013431804
+    ],
+    [
+      2.1312345502858996,
+      -1.6721359413192003,
+      -0.11417197551938507
+    ],
+    [
+      -2.312600950474689,
+      1.6699473312728004,
+      0.12270391944017511
+    ],
+    [
+      2.5391225635612598,
+      1.3051303556088016,
+      0.022072077549529112
+    ],
+    [
+      -0.199919328505624,
+      -2.6237962728391997,
+      -0.12763357263428787
+    ],
+    [
+      -3.4317363200710505,
+      1.1136118431128001,
+      0.11971543710417443
+    ],
+    [
+      3.561440713834907,
+      0.5883155068888,
+      -0.03686511979120688
+    ],
+    [
+      -2.1482622128439735,
+      2.897454313752801,
+      0.1765087522600588
+    ],
+    [
+      2.562996382748831,
+      2.542808526120799,
+      0.08826413623751783
+    ],
+    [
+      -1.2586161100773685,
+      -0.5795469776072002,
+      -0.007985772801605506
+    ],
+    [
+      1.1564704258220253,
+      -0.7612702644711993,
+      -0.05736079872888311
+    ],
+    [
+      -1.1342507945886116,
+      0.8260306841048002,
+      0.058754771727599575
+    ],
+    [
+      1.246620166935008,
+      0.6468482954488,
+      0.012892412433842537
+    ],
+    [
+      0.10887169378590844,
+      1.4296381654008,
+      0.0694851183465186
+    ],
+    [
+      -3.2634527167314706,
+      -0.8977714267272003,
+      0.017655393490517923
+    ],
+    [
+      3.0903710029360703,
+      -1.3746803387432003,
+      -0.12813248332636284
+    ],
+    [
+      -2.1769661252284758,
+      -2.3296034162791996,
+      -0.07557492723667103
+    ],
+    [
+      1.7993190104815802,
+      -2.6281695889991994,
+      -0.1657372995799733
+    ],
+    [
+      0.19087974503115923,
+      2.504249898328799,
+      0.12184024257722292
+    ]
+  ],
+  "bonds": [
+    [
+      5,
+      0,
+      1.0
+    ],
+    [
+      6,
+      3,
+      1.0
+    ],
+    [
+      7,
+      4,
+      1.0
+    ],
+    [
+      8,
+      3,
+      1.0
+    ],
+    [
+      9,
+      4,
+      1.0
+    ],
+    [
+      10,
+      1,
+      1.0
+    ],
+    [
+      10,
+      0,
+      1.0
+    ],
+    [
+      11,
+      2,
+      1.0
+    ],
+    [
+      11,
+      0,
+      1.0
+    ],
+    [
+      12,
+      10,
+      1.0
+    ],
+    [
+      12,
+      3,
+      1.0
+    ],
+    [
+      13,
+      11,
+      1.0
+    ],
+    [
+      13,
+      4,
+      1.0
+    ],
+    [
+      14,
+      13,
+      1.0
+    ],
+    [
+      14,
+      12,
+      1.0
+    ],
+    [
+      15,
+      1,
+      1.0
+    ],
+    [
+      16,
+      2,
+      1.0
+    ],
+    [
+      17,
+      1,
+      1.0
+    ],
+    [
+      18,
+      2,
+      1.0
+    ],
+    [
+      19,
+      14,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

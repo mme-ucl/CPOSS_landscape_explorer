@@ -1,0 +1,56 @@
+BarbituricAcidA
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+   -1.0564   -1.4540    1.1332 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8191    2.1224   -0.3099 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6086   -0.5374   -1.5001 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1002   -0.7395    1.7988 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9585   -2.4184   -0.1325 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9747    0.9252    1.4169 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9894    1.7219   -1.8940 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4693    1.3210   -0.2092 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0077   -0.3318   -0.9398 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0383    0.5233    0.7650 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5538   -1.2756   -0.0591 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5307    0.9485   -1.0654 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3912   -0.8056    0.9962 C   0  0  0  0  0  0  0  0  0  0  0  0
+  8  2  1  0
+  9  3  1  0
+ 10  8  1  0
+ 10  6  2  0
+ 11  9  1  0
+ 11  5  2  0
+ 12  9  1  0
+ 12  8  1  0
+ 12  7  2  0
+ 13 11  1  0
+ 13 10  1  0
+ 13  4  1  0
+ 13  1  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+BarbituricAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/BarbituricAcid/BarbituricAcidA/1.BarbituricAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.BarbituricAcidA_MOLPAK/BARBAC_EXPT_am16.res
+
+>  <reported_formula>  (1) 
+C4 H4 N2 O3
+
+>  <selected_formula>  (1) 
+C4H4N2O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+86
+
+$$$$

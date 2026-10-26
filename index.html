@@ -30,6 +30,7 @@
   <div class="cposs-topbar">
     <a class="cposs-brand" href="./">CPOSS CSP Landscape Navigator</a>
     <nav class="cposs-toplinks" aria-label="CPOSS resources">
+      <a id="dataset-analyses-link" href="analyses.html">Analyses &amp; statistics</a>
       <a href="https://louiseprice.github.io/CPOSS_Database/index.html">← Back to the CPOSS database</a>
       <a href="https://www.chem.ucl.ac.uk/cposs/results/databasenotes.html" target="_blank" rel="noopener noreferrer">CPOSS website ↗</a>
       <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#load-save" type="button">Load / save</button>
@@ -38,11 +39,12 @@
   <section class="cposs-controls" aria-label="Find a dataset">
     <div class="cposs-search">
       <label for="dataset-search">Search datasets</label>
-      <input id="dataset-search" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="dataset-results" aria-describedby="dataset-results-count" autocomplete="off" placeholder="Molecule name, REFCODE or dataset code…" disabled/>
+      <span id="dataset-search-help" hidden>Search by molecule name, molecular formula, REFCODE or dataset code. Formulas accept spaces and subscript digits.</span>
+      <input id="dataset-search" type="search" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="dataset-results" aria-describedby="dataset-search-help dataset-results-count" autocomplete="off" placeholder="Molecule name, formula, REFCODE or dataset code…" disabled/>
       <div class="cposs-results" id="dataset-browser" hidden>
         <p class="cposs-results-caption">Choose a dataset · ↑ ↓ to navigate · Enter to load · Esc to close</p>
         <ul id="dataset-results" role="listbox" aria-label="Matching datasets"></ul>
-        <p class="cposs-empty" id="dataset-empty" hidden>No matching datasets. Try another name or code, or reset the filters.</p>
+        <p class="cposs-empty" id="dataset-empty" hidden>No matching datasets. Try another name, formula or code, or reset the filters.</p>
       </div>
     </div>
     <div>
@@ -279,9 +281,9 @@
 </div>
 </div>
 </div>
-<script src="assets/catalogue.js?v=20261023-urea"></script>
+<script src="assets/catalogue.js?v=20261026-formula"></script>
 <script src="assets/spacegroups.js?v=20261023-global-style"></script>
 <script src="assets/visualization.js?v=20261023-global-style"></script>
-<script src="assets/navigator.js?v=20261023-global-style"></script>
+<script src="assets/navigator.js?v=20261026-formula"></script>
 </body>
 </html>

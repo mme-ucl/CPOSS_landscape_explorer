@@ -1,0 +1,287 @@
+{
+  "dataset_id": "ThymineA",
+  "dataset_name": "Thymine",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/Thymine.html",
+  "reported_formula": "C5 H6 N2 O2",
+  "reported_formula_normalised": "C5H6N2O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 56,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/ThymineA/1.ThymineA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "248cdfdc11a0b4298c58ad3b9055fa38b2e7f1d6",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 53,
+  "candidates_with_title_energy": 53,
+  "selected_filename": "1.ThymineA_MOLPAK/THYMIN_opt_fa84.res",
+  "selected_file_sha256": "81a1f8c365adfa9c60c0f4889d22b29ba01af6e942ac0f87a4c15823d7a9d93e",
+  "selected_title_energy": -108.468,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C5H6N2O2",
+  "selected_smiles": "Cc1c[nH]c(=O)[nH]c1=O",
+  "constitution_smiles": "Cc1c[nH]c(=O)[nH]c1=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 9,
+  "selected_molar_mass_g_mol": 126.115,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H6N2O2": 4
+  },
+  "component_identities_per_cell": {
+    "Cc1c[nH]c(=O)[nH]c1=O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H6N2O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL THYMIN_opt_fa84(-108.468)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "OXY1",
+      "OXY2",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "OXY1",
+      "OXY2",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "OXY1",
+      "OXY2",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "OXY1",
+      "OXY2",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6"
+    ]
+  },
+  "symbols": [
+    "O",
+    "O",
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.5389933507414559,
+      3.282654043724999,
+      -0.4627613993509865
+    ],
+    [
+      -1.0540335121251878,
+      -0.4933915814099983,
+      2.109120488877039
+    ],
+    [
+      0.3556023754294515,
+      1.2955797391110024,
+      -1.2015746511052958
+    ],
+    [
+      -0.7777888030302148,
+      1.3637386088550014,
+      0.7985394172209936
+    ],
+    [
+      -0.33967256224593,
+      2.085346024524,
+      -0.30037865265781605
+    ],
+    [
+      -0.6008639061137973,
+      0.0003420252359980225,
+      1.078108030608739
+    ],
+    [
+      0.14646542391846107,
+      -0.7316098882049995,
+      0.05629972177654263
+    ],
+    [
+      0.5870761998866032,
+      -0.05334736096200032,
+      -1.0296383708904555
+    ],
+    [
+      0.37785773790515154,
+      -2.192168375334001,
+      0.27737141486708783
+    ],
+    [
+      0.6924052128608926,
+      1.7795847960870004,
+      -2.0188950239699293
+    ],
+    [
+      -1.2908950909249406,
+      1.8949290234629994,
+      1.4900734104687423
+    ],
+    [
+      1.145829950016391,
+      -0.5303517465330025,
+      -1.823651722745392
+    ],
+    [
+      0.9436379271429061,
+      -2.625649797392999,
+      -0.5456246572227315
+    ],
+    [
+      0.9243166487105585,
+      -2.356189654476002,
+      1.20520451240722
+    ],
+    [
+      -0.5709442506888894,
+      -2.719465856688001,
+      0.36780748171621447
+    ]
+  ],
+  "bonds": [
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      4,
+      2,
+      1.5
+    ],
+    [
+      4,
+      0,
+      2.0
+    ],
+    [
+      5,
+      3,
+      1.5
+    ],
+    [
+      5,
+      1,
+      2.0
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      7,
+      2,
+      1.5
+    ],
+    [
+      8,
+      6,
+      1.0
+    ],
+    [
+      9,
+      2,
+      1.0
+    ],
+    [
+      10,
+      3,
+      1.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      8,
+      1.0
+    ],
+    [
+      13,
+      8,
+      1.0
+    ],
+    [
+      14,
+      8,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

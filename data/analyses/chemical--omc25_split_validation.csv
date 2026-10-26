@@ -1,0 +1,3 @@
+split,starting_crystals,molecular_records,sampled_relaxation_frames,count_status
+train,207271,44403,24870226,computed_from_official_metadata
+val,11570,2467,1386816,computed_from_official_metadata

@@ -1,0 +1,64 @@
+BromoAminoBenzoicAcidA
+     RDKit          3D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+    0.1922   -0.5262    0.1769 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6510    0.7801   -0.0832 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2838    1.7191   -0.5621 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5921    1.3799   -0.7747 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0321    0.0826   -0.5190 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1514   -0.8518   -0.0514 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1076   -1.5558    0.7016 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9406    1.1599    0.0809 N   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2628   -1.3890    0.9742 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5385   -2.7441    0.8677 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0467    2.7215   -0.7686 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2823    2.1168   -1.1412 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4843   -1.8498    0.1499 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1648    2.1241    0.0352 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5765    0.5398    0.5240 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1959   -3.3347    1.2095 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.8506   -0.3724   -0.8198 Br  0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  2  1  0
+  9  7  2  0
+ 10  7  1  0
+ 11  3  1  0
+ 12  4  1  0
+ 13  6  1  0
+ 14  8  1  0
+ 15  8  1  0
+ 16 10  1  0
+ 17  5  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+BromoAminoBenzoicAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/BromoAminoBenzoicAcid/BromoAminoBenzoicAcidA/1.BromoAminoBenzoicAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.BromoAminoBenzoicAcidA_MOLPAK/TONIBR_opt_ca111.res
+
+>  <reported_formula>  (1) 
+C7 H6 N1 O2 Br1
+
+>  <selected_formula>  (1) 
+C7H6BrNO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+381
+
+$$$$

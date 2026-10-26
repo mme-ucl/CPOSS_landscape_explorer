@@ -10,6 +10,7 @@ SPEC.loader.exec_module(catalogue)
 CASE = """
 <h2>Alpha molecule (Blind Test IV)</h2><table>
 <tr><td>REFCODE</td><td><table><tr><td>ABCDEF</td></tr><tr><td><a href='Alpha.docx'>Download Word</a></td></tr></table></td></tr>
+<tr><td>Formula</td><td>C<sub>9</sub> H<sub>8</sub> O<sub>4</sub> . H<sub>2</sub> O</td></tr>
 <tr><td>Common Name</td><td>Alpha molecule</td></tr>
 <tr><td>Other Names</td><td>First alias; Second alias</td></tr>
 <tr><td>CSD Refcodes</td><td>ABCDEF01, ABCDEF02</td></tr>
@@ -28,6 +29,7 @@ class CatalogueTest(unittest.TestCase):
     def test_nested_tables_keep_molecule_search_and_models_separate(self):
         heading, metadata, searches = catalogue.parse_case(CASE)
         self.assertEqual(metadata["refcode"], "ABCDEF")
+        self.assertEqual(metadata["formula"], "C 9 H 8 O 4 . H 2 O")
         self.assertEqual(heading, "Alpha molecule (Blind Test IV)")
         self.assertEqual([s["filenames"] for s in searches], [["AlphaA.json"], ["AlphaB.json"]])
         self.assertEqual([m["id"] for m in searches[0]["models"]], ["1", "2"])
@@ -51,6 +53,29 @@ class CatalogueTest(unittest.TestCase):
         self.assertEqual(unmatched["label"], "UnmatchedA")
         self.assertEqual(report["unmappedDatasets"], ["UnmatchedA.json"])
         self.assertEqual(report["brokenSourceLinks"][0]["target"], "0.Chemiscope/AlphaB.json")
+
+    def test_source_formula_is_kept_for_each_explicit_search_and_shared_page(self):
+        tree = {"sha": "test", "tree": [{"type": "blob", "path": p} for p in ["Alpha/Alpha.html", "0.Chemiscope/AlphaA.json", "0.Chemiscope/AlphaB.json", "0.Chemiscope/UnmatchedA.json"]]}
+        data, report = catalogue.build_catalogue(tree, {"Alpha/Alpha.html": CASE})
+        for item in data["datasets"]:
+            expected = [] if item["id"] == "UnmatchedA" else ["C 9 H 8 O 4 . H 2 O"]
+            self.assertEqual(item["formulas"], expected)
+            if item["cases"]:
+                self.assertEqual(item["cases"][0]["formula"], expected[0])
+        self.assertEqual(report["formulaDatasetCount"], 2)
+        self.assertEqual(report["datasetsWithoutFormula"], ["UnmatchedA.json"])
+
+    def test_missing_formula_is_not_inferred_from_dataset_name_or_other_metadata(self):
+        source = CASE.replace("<tr><td>Formula</td><td>C<sub>9</sub> H<sub>8</sub> O<sub>4</sub> . H<sub>2</sub> O</td></tr>", "")
+        tree = {"sha": "test", "tree": [{"type": "blob", "path": p} for p in ["Alpha/Alpha.html", "0.Chemiscope/AlphaA.json", "0.Chemiscope/AlphaB.json"]]}
+        data, report = catalogue.build_catalogue(tree, {"Alpha/Alpha.html": source})
+        self.assertTrue(all(item["formulas"] == [] for item in data["datasets"]))
+        self.assertEqual(report["formulaDatasetCount"], 0)
+
+    def test_nested_formula_components_are_not_truncated_to_the_first_row(self):
+        source = "<table><tr><td>Formula</td><td><table><tr><td>C9H8O4</td></tr><tr><td>. H2O</td></tr></table></td></tr></table>"
+        _, metadata, _ = catalogue.parse_case(source)
+        self.assertEqual(metadata["formula"], "C9H8O4 . H2O")
 
     def test_truncated_inventory_is_rejected(self):
         with self.assertRaises(ValueError):

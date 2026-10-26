@@ -1,0 +1,171 @@
+{
+  "dataset_id": "MethanolA",
+  "dataset_name": "Methanol",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Methanol/Methanol.html",
+  "reported_formula": "C1 H4 O1",
+  "reported_formula_normalised": "CH4O",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 870,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Methanol/MethanolA/1.MethanolA_CrystOpt.zip?raw=true",
+  "archive_git_blob_sha": "96d583697510d4f73956c58b547dc8832c591c32",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 855,
+  "candidates_with_title_energy": 855,
+  "selected_filename": "1.MethanolA_CrystOpt/METHOL_dfA2245_A2245.res",
+  "selected_file_sha256": "1a6bfddd4e971b193c899b7faf2f0c38a72cd3bab3ef5da47f0206cc4f38950e",
+  "selected_title_energy": -41.271,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 8.0,
+  "selected_formula": "CH4O",
+  "selected_smiles": "CO",
+  "constitution_smiles": "CO",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 6,
+  "selected_heavy_atoms": 2,
+  "selected_molar_mass_g_mol": 32.042,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "CH4O": 8
+  },
+  "component_identities_per_cell": {
+    "CO": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "CH4O": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL METHOL_dfA2245_A2245(-41.271) P1",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 48,
+    "expanded_unit_cell_atoms": 48,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "H23",
+      "H24",
+      "H25",
+      "H26",
+      "H27",
+      "H28",
+      "H29",
+      "H30",
+      "H31",
+      "H32"
+    ]
+  },
+  "symbols": [
+    "C",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.06935571616350877,
+      0.10574041807053502,
+      0.32673612673438956
+    ],
+    [
+      -0.4866611900857234,
+      0.1799249222394126,
+      -0.9637956496864937
+    ],
+    [
+      -0.22367264465112902,
+      -0.6111610678835211,
+      -1.4419180532199443
+    ],
+    [
+      1.1690630723560105,
+      0.06720118990215873,
+      0.3184413655603846
+    ],
+    [
+      -0.22842816632992813,
+      1.0139510995317411,
+      0.8568516430681186
+    ],
+    [
+      -0.2996567874527396,
+      -0.7556565618603281,
+      0.903684567543543
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      0,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      0,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

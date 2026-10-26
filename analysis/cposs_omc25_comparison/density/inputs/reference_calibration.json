@@ -1,0 +1,64 @@
+{
+  "source_page_1_based": 8,
+  "source_figure": "3a",
+  "x_ticks_pdf_points": [
+    134.0540274671654,
+    181.581931386836,
+    229.10983530650657,
+    276.63438550087693,
+    324.16228404598775,
+    371.68682886579825,
+    419.2147381600286,
+    466.7392829798392,
+    514.26718152495
+  ],
+  "x_tick_density_values": [
+    0.8,
+    1.0,
+    1.2000000000000002,
+    1.4000000000000001,
+    1.6,
+    1.8,
+    2.0,
+    2.2,
+    2.4000000000000004
+  ],
+  "y_ticks_pdf_points": [
+    652.47339205866,
+    677.105671332315,
+    701.7379506059699,
+    726.370229879625
+  ],
+  "y_tick_count_values": [
+    0,
+    5000,
+    10000,
+    15000
+  ],
+  "colour_populations": [
+    {
+      "population": "CSD_organic",
+      "bars_recovered": 220,
+      "inferred_histogram_bin_width_g_cm3": 0.008000750673652206,
+      "recovered_displayed_count_sum": 614663.1667803077
+    },
+    {
+      "population": "OMC25_last_frames",
+      "bars_recovered": 86,
+      "inferred_histogram_bin_width_g_cm3": 0.01999491130763618,
+      "recovered_displayed_count_sum": 207099.40856402536
+    },
+    {
+      "population": "OMC25_generated_first_frames",
+      "bars_recovered": 87,
+      "inferred_histogram_bin_width_g_cm3": 0.01999491095424465,
+      "recovered_displayed_count_sum": 101720.98363561746
+    },
+    {
+      "population": "OMC25_rigid_press_first_frames",
+      "bars_recovered": 81,
+      "inferred_histogram_bin_width_g_cm3": 0.02000188859341429,
+      "recovered_displayed_count_sum": 104927.72173735137
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "dataset_id": "ImidazoleA",
+  "dataset_name": "Imidazole",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Imidazole/Imidazole.html",
+  "reported_formula": "C3 H4 N2",
+  "reported_formula_normalised": "C3H4N2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 65,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Imidazole/ImidazoleA/1.ImidazoleA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "09e872e3b5d8bb0961937bd06b483117a9789143",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 64,
+  "candidates_with_title_energy": 64,
+  "selected_filename": "1.ImidazoleA_MOLPAK/IMAZOL_OPT_ak34.res",
+  "selected_file_sha256": "6f75670cb594162aedf201380d0dac337a0cbafbd2448f61ad95992efe4c7742",
+  "selected_title_energy": -74.997,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H4N2",
+  "selected_smiles": "c1c[nH]cn1",
+  "constitution_smiles": "c1c[nH]cn1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 9,
+  "selected_heavy_atoms": 5,
+  "selected_molar_mass_g_mol": 68.079,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H4N2": 4
+  },
+  "component_identities_per_cell": {
+    "c1c[nH]cn1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H4N2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL IMAZOL_OPT_ak34(-74.997) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 9,
+    "expanded_unit_cell_atoms": 36,
+    "warnings": [],
+    "source_atom_labels": [
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "HPD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "HPD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "HPD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "NIT1",
+      "NIT2",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "HPD1",
+      "HYD2",
+      "HYD3",
+      "HYD4"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.036880317876433644,
+      -0.4054532970277789,
+      0.8775145307324355
+    ],
+    [
+      -0.5295480581455783,
+      -0.3795378800057785,
+      -1.27467688156894
+    ],
+    [
+      -0.5682764435631107,
+      -1.0747026097157781,
+      -0.14765207978825678
+    ],
+    [
+      0.130307107233401,
+      0.7837779052522214,
+      -0.949494716683529
+    ],
+    [
+      0.4916449614291585,
+      0.7927467663622219,
+      0.3798097871642998
+    ],
+    [
+      0.1320292350491572,
+      -0.7287568467397785,
+      1.8260898385230888
+    ],
+    [
+      -1.0122132674989217,
+      -2.0476016137157784,
+      -0.018453915821345035
+    ],
+    [
+      0.3094922311115411,
+      1.5500009619282213,
+      -1.6844885252567972
+    ],
+    [
+      1.0096839165079192,
+      1.5095266136622216,
+      0.9913519626990439
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      2,
+      0,
+      1.5
+    ],
+    [
+      3,
+      1,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      4,
+      0,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.0
+    ],
+    [
+      6,
+      2,
+      1.0
+    ],
+    [
+      7,
+      3,
+      1.0
+    ],
+    [
+      8,
+      4,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

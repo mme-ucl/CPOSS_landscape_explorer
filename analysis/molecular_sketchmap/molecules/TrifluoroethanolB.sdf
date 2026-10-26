@@ -1,0 +1,47 @@
+TrifluoroethanolB
+     RDKit          3D
+
+  9  8  0  0  0  0  0  0  0  0999 V2000
+   -0.4359   -0.4100   -0.3523 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8242    0.1040    0.3167 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2881    0.6355   -0.7305 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5268    0.8580    1.3984 F   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5700    0.8612   -0.5008 F   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5895   -0.9237    0.7355 F   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9071   -1.1274    0.3372 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1340   -0.9455   -1.2608 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7454    0.9477    0.0567 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  1  1  0
+  4  2  1  0
+  5  2  1  0
+  6  2  1  0
+  7  1  1  0
+  8  1  1  0
+  9  3  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+TrifluoroethanolB
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Trifluoroethanol/TrifluoroethanolB/1.TrifluoroethanolB_CrystOptZ2.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.TrifluoroethanolB_CrystOptZ2/KOHCUI_dfA7369_A7369.res
+
+>  <reported_formula>  (1) 
+C2 H3 O1 F3
+
+>  <selected_formula>  (1) 
+C2H3F3O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+8159
+
+$$$$

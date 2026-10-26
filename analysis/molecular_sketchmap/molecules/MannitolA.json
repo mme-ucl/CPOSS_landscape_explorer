@@ -1,0 +1,447 @@
+{
+  "dataset_id": "MannitolA",
+  "dataset_name": "Mannitol",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Mannitol/Mannitol.html",
+  "reported_formula": "C6 H14 O6",
+  "reported_formula_normalised": "C6H14O6",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 619,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Mannitol/MannitolA/1.MannitolA_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "0724ef093c6deb44f08d4b47d3d417a46745cc40",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 608,
+  "candidates_with_title_energy": 608,
+  "selected_filename": "1.MannitolA_Molpak/DMANTL_d8_bc81.res",
+  "selected_file_sha256": "b4f6ab06f930d93dcd04ae06731897cf7940432517bc9cab756a154638182b60",
+  "selected_title_energy": -144.829,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C6H14O6",
+  "selected_smiles": "OC[C@H](O)[C@H](O)[C@@H](O)[C@@H](O)CO",
+  "constitution_smiles": "OCC(O)C(O)C(O)C(O)CO",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 26,
+  "selected_heavy_atoms": 12,
+  "selected_molar_mass_g_mol": 182.172,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C6H14O6": 4
+  },
+  "component_identities_per_cell": {
+    "OC[C@H](O)[C@H](O)[C@@H](O)[C@@H](O)CO": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C6H14O6": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL DMANTL_d8_bc81(-144.829) P1121",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 52,
+    "expanded_unit_cell_atoms": 104,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "O9",
+      "O10",
+      "O11",
+      "O12",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "H23",
+      "H24",
+      "H25",
+      "H26",
+      "H27",
+      "H28",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "O9",
+      "O10",
+      "O11",
+      "O12",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "H13",
+      "H14",
+      "H15",
+      "H16",
+      "H17",
+      "H18",
+      "H19",
+      "H20",
+      "H21",
+      "H22",
+      "H23",
+      "H24",
+      "H25",
+      "H26",
+      "H27",
+      "H28"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.226148128044648,
+      0.4275407072003844,
+      -3.147679178520992
+    ],
+    [
+      -0.12024821762129145,
+      -0.374557272541149,
+      -1.8950215239209953
+    ],
+    [
+      0.4552868913906838,
+      0.28904401304810684,
+      -0.6347470888809923
+    ],
+    [
+      0.02687251864275475,
+      -0.429051068401733,
+      0.6433071840330058
+    ],
+    [
+      0.3226963009690047,
+      0.4186351116899144,
+      1.8845639609430123
+    ],
+    [
+      0.029042370987154564,
+      -0.3309929628271946,
+      3.176948096253007
+    ],
+    [
+      -0.6275793006629229,
+      1.558253266977816,
+      -3.2468430820609946
+    ],
+    [
+      -1.5196255987182867,
+      -0.5091911410665468,
+      -1.7848263695729933
+    ],
+    [
+      1.8640711292265386,
+      0.3372187488929445,
+      -0.7126856639249937
+    ],
+    [
+      0.7643785723309848,
+      -1.6477528788842255,
+      0.7617522309930109
+    ],
+    [
+      -0.4536943358392743,
+      1.5953146064502377,
+      1.840628442877005
+    ],
+    [
+      -1.3689290529766043,
+      -0.5671745477370156,
+      3.2878869892210076
+    ],
+    [
+      0.026777906684262165,
+      -0.17332038683575768,
+      -4.040123663864989
+    ],
+    [
+      1.286499361791482,
+      0.7027488114509368,
+      -3.135505036908988
+    ],
+    [
+      0.32569577232051183,
+      -1.377485720642822,
+      -1.9890196208249904
+    ],
+    [
+      0.07993072575077753,
+      1.318767319621056,
+      -0.5683805635309938
+    ],
+    [
+      -1.0525163193814702,
+      -0.6238032996179554,
+      0.5918696230930038
+    ],
+    [
+      1.376517563551409,
+      0.7203321846205599,
+      1.8605419509930101
+    ],
+    [
+      0.3011731021182058,
+      0.30795670003481135,
+      4.022635715369006
+    ],
+    [
+      0.6083582824711706,
+      -1.2587625956551167,
+      3.2349866177490156
+    ],
+    [
+      -0.27829893980372666,
+      2.248356233550175,
+      -2.6735607577909875
+    ],
+    [
+      -1.8763977127974765,
+      0.24457570804969364,
+      -2.2797403200989947
+    ],
+    [
+      2.1596020409949412,
+      -0.49626456884372194,
+      -0.31616908030099466
+    ],
+    [
+      0.3499040284992794,
+      -2.3008308029546,
+      0.18872629099100635
+    ],
+    [
+      -1.3423554009852925,
+      1.3113003051900556,
+      2.099412856313009
+    ],
+    [
+      -1.563309816987461,
+      -1.390856470768853,
+      2.8310419913750025
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      5,
+      4,
+      1.0
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      4,
+      1.0
+    ],
+    [
+      11,
+      5,
+      1.0
+    ],
+    [
+      12,
+      0,
+      1.0
+    ],
+    [
+      13,
+      0,
+      1.0
+    ],
+    [
+      14,
+      1,
+      1.0
+    ],
+    [
+      15,
+      2,
+      1.0
+    ],
+    [
+      16,
+      3,
+      1.0
+    ],
+    [
+      17,
+      4,
+      1.0
+    ],
+    [
+      18,
+      5,
+      1.0
+    ],
+    [
+      19,
+      5,
+      1.0
+    ],
+    [
+      20,
+      6,
+      1.0
+    ],
+    [
+      21,
+      7,
+      1.0
+    ],
+    [
+      22,
+      8,
+      1.0
+    ],
+    [
+      23,
+      9,
+      1.0
+    ],
+    [
+      24,
+      10,
+      1.0
+    ],
+    [
+      25,
+      11,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -121,7 +121,7 @@ def parse_case(source):
             continue
         key, value = clean(cells[0].text()).casefold(), cells[1]
         if key in ("refcode", "formula", "common name", "iupac systematic name", "other names", "csd refcodes") and current is None:
-            metadata[key] = value_text(value)
+            metadata[key] = value.text() if key == "formula" else value_text(value)
         elif key == "search identifier":
             current = {"code": value_text(value), "filenames": [], "models": []}
             for link in value.walk("a"):
@@ -208,10 +208,11 @@ def build_catalogue(tree, sources):
     for path in sorted(files, key=str.casefold):
         if path.startswith("0.Chemiscope/") and path.lower().endswith(".json"):
             name = Path(path).name
-            datasets[name] = {"id": name[:-5], "filename": name, "url": RAW + "main/" + quote(path), "label": name[:-5], "molecule": "", "aliases": [], "codes": [], "collections": [], "cases": []}
+            datasets[name] = {"id": name[:-5], "filename": name, "url": RAW + "main/" + quote(path), "label": name[:-5], "molecule": "", "formulas": [], "aliases": [], "codes": [], "collections": [], "cases": []}
     for path in sorted(case_paths):
         heading, metadata, searches = parse_case(sources[path])
         common = heading or metadata.get("common name", "")
+        formula = metadata.get("formula", "")
         names = sorted({clean(x) for x in [heading, metadata.get("common name", ""), metadata.get("iupac systematic name", ""), *aliases[path], *re.split(r"[;\n]", metadata.get("other names", ""))]} - {""})
         codes = re.findall(r"[A-Za-z][A-Za-z0-9_-]*", metadata.get("refcode", "") + " " + metadata.get("csd refcodes", ""))
         for alias in names:
@@ -224,8 +225,10 @@ def build_catalogue(tree, sources):
                 item = datasets[name]
                 page_url = SITE + quote(path)
                 models, metadata_downloads = search_resources(search["models"], page_url, files)
-                page = {"url": page_url, "molecule": common, "search": search["code"], "models": models, "metadataDownloads": metadata_downloads}
+                page = {"url": page_url, "molecule": common, "search": search["code"], "formula": formula, "models": models, "metadataDownloads": metadata_downloads}
                 item["cases"].append(page)
+                if formula and formula not in item["formulas"]:
+                    item["formulas"].append(formula)
                 item["aliases"] = sorted(set(item["aliases"]) | set(names))
                 item["codes"] = sorted(set(item["codes"]) | set(codes))
                 item["collections"] = sorted(set(item["collections"]) | memberships[path])
@@ -237,6 +240,8 @@ def build_catalogue(tree, sources):
     report = {
         "datasetCount": len(items), "casePageCount": len(case_paths),
         "mappedDatasetCount": sum(bool(x["cases"]) for x in items),
+        "formulaDatasetCount": sum(bool(x["formulas"]) for x in items),
+        "datasetsWithoutFormula": [x["filename"] for x in items if not x["formulas"]],
         "collectionCounts": counts,
         "unmappedDatasets": [x["filename"] for x in items if not x["cases"]],
         "multipleCaseMappings": [x["filename"] for x in items if len(x["cases"]) > 1],

@@ -1,0 +1,296 @@
+{
+  "dataset_id": "OtolicAcidA",
+  "dataset_name": "Otolic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/OtolicAcid/OtolicAcid.html",
+  "reported_formula": "C8 H8 O2",
+  "reported_formula_normalised": "C8H8O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 645,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/OtolicAcid/OtolicAcidA/1.OtolicAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "8ba365c38e35c6c0651c2335ee6ce7855ad920bf",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 644,
+  "candidates_with_title_energy": 644,
+  "selected_filename": "1.OtolicAcidA_MOLPAK/OTOLIC_opt_ca58.res",
+  "selected_file_sha256": "aacd030cce0e398cd96abc819fae6a1ff08916c391f6be42f29757a193b82bbb",
+  "selected_title_energy": -88.483,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C8H8O2",
+  "selected_smiles": "Cc1ccccc1C(=O)O",
+  "constitution_smiles": "Cc1ccccc1C(=O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 18,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 136.15,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H8O2": 2
+  },
+  "component_identities_per_cell": {
+    "Cc1ccccc1C(=O)O": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H8O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL OTOLIC_opt_ca58(-88.483) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 18,
+    "expanded_unit_cell_atoms": 36,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "O1",
+      "O2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.42202376537804387,
+      0.33862961352535004,
+      0.3272035165840106
+    ],
+    [
+      0.7601532492715783,
+      -0.00930806339749074,
+      -0.3637310133390732
+    ],
+    [
+      0.8421725926795673,
+      -1.304935651985613,
+      -0.8899084224228333
+    ],
+    [
+      -0.1904415511503208,
+      -2.2304792482928795,
+      -0.7474316208511855
+    ],
+    [
+      -1.3500758720009038,
+      -1.8710162614656718,
+      -0.062264628210463524
+    ],
+    [
+      -1.4633877285525276,
+      -0.5914386589893079,
+      0.47242321957581135
+    ],
+    [
+      -0.5823180023528911,
+      1.6954802847530104,
+      0.9132527260532441
+    ],
+    [
+      1.9218289556866592,
+      0.9296023010999056,
+      -0.5627193875157506
+    ],
+    [
+      -1.7638829948200163,
+      2.765946562275799,
+      1.8756320476834367
+    ],
+    [
+      1.6234498576666807,
+      1.8245270006228802,
+      -1.104755389774172
+    ],
+    [
+      2.70597014277132,
+      0.42291138643775317,
+      -1.1235452658523313
+    ],
+    [
+      2.3302591095541887,
+      1.2667136506356163,
+      0.3877223247833137
+    ],
+    [
+      1.7410622097190762,
+      -1.590317854872835,
+      -1.423360580233429
+    ],
+    [
+      -0.08839798956692668,
+      -3.2229284862577776,
+      -1.1685472165369357
+    ],
+    [
+      -2.1596835870066693,
+      -2.5796167613840355,
+      0.05605952885496812
+    ],
+    [
+      -2.357316273961504,
+      -0.30178764518745604,
+      1.0049772740503031
+    ],
+    [
+      -1.7823629757795567,
+      1.854228871652928,
+      1.5414903716514954
+    ],
+    [
+      0.23499462322030862,
+      2.603788960829824,
+      0.8675025154995937
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      9,
+      7,
+      1.0
+    ],
+    [
+      10,
+      7,
+      1.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      2,
+      1.0
+    ],
+    [
+      13,
+      3,
+      1.0
+    ],
+    [
+      14,
+      4,
+      1.0
+    ],
+    [
+      15,
+      5,
+      1.0
+    ],
+    [
+      16,
+      8,
+      1.0
+    ],
+    [
+      16,
+      6,
+      1.0
+    ],
+    [
+      17,
+      6,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

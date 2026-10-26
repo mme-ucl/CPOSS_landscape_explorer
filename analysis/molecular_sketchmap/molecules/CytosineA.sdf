@@ -1,0 +1,56 @@
+CytosineA
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+    0.8635   -0.2005   -1.4676 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1656    0.8700    0.3314 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5926   -0.3564    0.8828 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2623   -1.4717    0.2155 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8350   -2.2494   -1.3356 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2183    2.8840    0.4723 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7653    2.0090    1.9110 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1859   -0.3949    1.7842 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5757   -2.4635    0.5059 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4549   -1.4060   -0.9304 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5279    0.9463   -0.8089 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4507    2.0257    0.9513 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5352   -0.1925   -2.5117 O   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  4  3  2  0
+  8  3  1  0
+  9  4  1  0
+ 10  5  1  0
+ 10  4  1  0
+ 10  1  1  0
+ 11  2  2  0
+ 11  1  1  0
+ 12  7  1  0
+ 12  6  1  0
+ 12  2  1  0
+ 13  1  2  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+CytosineA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Cytosine/CytosineA/1.CytosineA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.CytosineA_MOLPAK/CYTSIN_expt_fc42.res
+
+>  <reported_formula>  (1) 
+C4 H5 N3 O1
+
+>  <selected_formula>  (1) 
+C4H5N3O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+30
+
+$$$$

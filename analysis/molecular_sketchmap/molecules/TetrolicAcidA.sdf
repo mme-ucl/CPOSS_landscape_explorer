@@ -1,0 +1,49 @@
+TetrolicAcidA
+     RDKit          3D
+
+ 10  9  0  0  0  0  0  0  0  0999 V2000
+    0.7839    1.3593    1.0713 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2099    0.2922    0.2912 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2491   -0.6450   -0.3202 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7999   -1.7680   -1.0539 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5148    2.5666    0.5435 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4313    1.2037    2.0807 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9384    3.2083    1.1336 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5052   -1.4332   -1.8205 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0011   -2.3314   -1.5472 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3230   -2.4524   -0.3785 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  3  0
+  4  3  1  0
+  5  1  1  0
+  6  1  2  0
+  7  5  1  0
+  8  4  1  0
+  9  4  1  0
+ 10  4  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+TetrolicAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/TetrolicAcid/TetrolicAcidA/1.TetrolicAcidA_PCM.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.TetrolicAcidA_PCM/TETROL_B_B6.res
+
+>  <reported_formula>  (1) 
+C4 H4 O2
+
+>  <selected_formula>  (1) 
+C4H4O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+543
+
+$$$$

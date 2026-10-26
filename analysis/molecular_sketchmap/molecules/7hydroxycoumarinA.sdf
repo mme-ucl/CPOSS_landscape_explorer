@@ -1,0 +1,67 @@
+7hydroxycoumarinA
+     RDKit          3D
+
+ 18 19  0  0  0  0  0  0  0  0999 V2000
+   -1.0958    0.2369   -1.7287 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1112    1.8971   -2.8416 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9356   -3.4255    0.4049 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4546    1.5805   -1.8687 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9985    2.4852   -0.8176 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2698    2.0478    0.2360 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8305    0.1165    1.4075 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1321   -1.2367    1.4476 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6756   -2.0821    0.4226 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0665   -1.5745   -0.6407 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3585   -0.2137   -0.6617 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0850    0.6580    0.3474 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2838    3.5200   -0.9370 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0578    2.7387    1.0046 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1797    0.7728    2.1959 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7082   -1.6444    2.2702 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4520   -3.6524    1.1887 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4179   -2.2241   -1.4296 H   0  0  0  0  0  0  0  0  0  0  0  0
+  4  2  2  0
+  4  1  1  0
+  5  4  1  0
+  6  5  2  0
+  8  7  1  0
+  9  8  2  0
+  9  3  1  0
+ 10  9  1  0
+ 11 10  2  0
+ 11  1  1  0
+ 12 11  1  0
+ 12  7  2  0
+ 12  6  1  0
+ 13  5  1  0
+ 14  6  1  0
+ 15  7  1  0
+ 16  8  1  0
+ 17  3  1  0
+ 18 10  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+7hydroxycoumarinA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/7Hydroxycoumarin/7hydroxycoumarinA/1.7hydroxycoumarinA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.7hydroxycoumarinA_MOLPAK/DETFOX_opt_ag61.res
+
+>  <reported_formula>  (1) 
+C9 H6 O3
+
+>  <selected_formula>  (1) 
+C9H6O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+173
+
+$$$$

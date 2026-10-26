@@ -1,0 +1,62 @@
+5vinyluracilA
+     RDKit          3D
+
+ 16 16  0  0  0  0  0  0  0  0999 V2000
+   -0.0026   -0.1087   -3.6556 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0013    2.2223    0.2914 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0001   -1.2882   -1.6793 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0008    1.0065   -1.6330 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0007   -0.1237   -2.4319 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000    1.1100   -0.2319 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0011   -0.1860    0.4605 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0000   -1.3125   -0.3069 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0003   -0.3083    1.9160 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0019    0.6915    2.8141 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0018   -2.1432   -2.2137 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0008    1.8880   -2.1306 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0003   -2.2995    0.1367 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0018   -1.3321    2.2792 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0037    1.7262    2.5160 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0015    0.4577    3.8692 H   0  0  0  0  0  0  0  0  0  0  0  0
+  5  4  1  0
+  5  3  1  0
+  5  1  2  0
+  6  4  1  0
+  6  2  2  0
+  7  6  1  0
+  8  7  2  0
+  8  3  1  0
+  9  7  1  0
+ 10  9  2  0
+ 11  3  1  0
+ 12  4  1  0
+ 13  8  1  0
+ 14  9  1  0
+ 15 10  1  0
+ 16 10  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+5vinyluracilA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.Uracils/5vinyluracil/5vinyluracilA/1.5vinyluracilA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.5vinyluracilA_MOLPAK/UCLVUR_ConfB_ai72.res
+
+>  <reported_formula>  (1) 
+C6 H6 N2 O2
+
+>  <selected_formula>  (1) 
+C6H6N2O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+470
+
+$$$$

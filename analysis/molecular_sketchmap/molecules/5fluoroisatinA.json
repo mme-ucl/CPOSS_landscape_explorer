@@ -1,0 +1,307 @@
+{
+  "dataset_id": "5fluoroisatinA",
+  "dataset_name": "5-fluoroisatin",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatin.html",
+  "reported_formula": "C8 H4 N1 O2 F1",
+  "reported_formula_normalised": "C8FH4NO2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 56,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatinA/1.5fluoroisatinA_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "c78c1e95af1d572c7e44e0133e8e29c3284fcb90",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 54,
+  "candidates_with_title_energy": 54,
+  "selected_filename": "1.5fluoroisatinA_Molpak/WOCGOK_opt_fc91.res",
+  "selected_file_sha256": "d46352ea21201e3b0ac09f59eba95522ec761f5c49e0469a18a89360b41baac6",
+  "selected_title_energy": -111.645,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C8H4FNO2",
+  "selected_smiles": "O=C1Nc2ccc(F)cc2C1=O",
+  "constitution_smiles": "O=C1Nc2ccc(F)cc2C1=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 16,
+  "selected_heavy_atoms": 12,
+  "selected_molar_mass_g_mol": 165.123,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H4FNO2": 4
+  },
+  "component_identities_per_cell": {
+    "O=C1Nc2ccc(F)cc2C1=O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H4FNO2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL WOCGOK_opt_fc91(-111.645) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 16,
+    "expanded_unit_cell_atoms": 64,
+    "warnings": [],
+    "source_atom_labels": [
+      "F1",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "F1",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "F1",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "F1",
+      "O1",
+      "O2",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ]
+  },
+  "symbols": [
+    "F",
+    "O",
+    "O",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.498005167112419,
+      1.60200113607875,
+      2.781484078929555
+    ],
+    [
+      -1.766123491636698,
+      -2.4096213145112504,
+      -0.9658417645058002
+    ],
+    [
+      0.578075673948697,
+      -2.4008742423512506,
+      -2.8342051650816913
+    ],
+    [
+      1.170281227547271,
+      -0.5718333247012499,
+      -1.5017282285463587
+    ],
+    [
+      0.6259301664855395,
+      0.10545734990374978,
+      -0.39704576088458055
+    ],
+    [
+      1.1299726965532075,
+      1.2061388605287502,
+      0.28655994108601135
+    ],
+    [
+      0.3879193690050622,
+      1.6979970861237503,
+      1.3665287817206426
+    ],
+    [
+      -0.8145295083568946,
+      1.09146917178875,
+      1.730082764704136
+    ],
+    [
+      -1.332608730143523,
+      -0.009870779086249282,
+      1.0573086961516474
+    ],
+    [
+      -0.5867614036013187,
+      -0.4898041452612497,
+      -0.013930021104371804
+    ],
+    [
+      -0.8345654602209738,
+      -1.6185712514762503,
+      -0.9303674045774208
+    ],
+    [
+      0.37693530865092484,
+      -1.6289457106962502,
+      -1.9106690721032429
+    ],
+    [
+      2.0359805286409127,
+      -0.33292235858624997,
+      -1.958784549597972
+    ],
+    [
+      2.0629696110659577,
+      1.6748760767037503,
+      0.0025883953545644545
+    ],
+    [
+      0.7314016414404714,
+      2.55151233603375,
+      1.9342643195252478
+    ],
+    [
+      -2.266872462266228,
+      -0.4670088904912494,
+      1.353754988929662
+    ]
+  ],
+  "bonds": [
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      7,
+      0,
+      1.0
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      9,
+      4,
+      1.5
+    ],
+    [
+      10,
+      9,
+      1.0
+    ],
+    [
+      10,
+      1,
+      2.0
+    ],
+    [
+      11,
+      10,
+      1.0
+    ],
+    [
+      11,
+      3,
+      1.0
+    ],
+    [
+      11,
+      2,
+      2.0
+    ],
+    [
+      12,
+      3,
+      1.0
+    ],
+    [
+      13,
+      5,
+      1.0
+    ],
+    [
+      14,
+      6,
+      1.0
+    ],
+    [
+      15,
+      8,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

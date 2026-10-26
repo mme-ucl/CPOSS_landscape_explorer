@@ -1,0 +1,57 @@
+SuccinicAcidD
+     RDKit          3D
+
+ 14 13  0  0  0  0  0  0  0  0999 V2000
+   -1.2664   -0.3873   -1.3889 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0788   -0.5786   -0.4845 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0832    0.5821    0.4795 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2603    0.3824    1.3958 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0350    0.5589   -1.3691 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3916   -1.4232   -2.2589 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0039   -0.5836    1.4042 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4061    1.4347    2.2426 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8109   -0.7058   -1.1018 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1996   -1.5206    0.0515 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2148    1.5234   -0.0549 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8115    0.7147    1.0887 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1750   -1.2197   -2.7957 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1787    1.2226    2.7916 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  1  0
+  4  3  1  0
+  5  1  2  0
+  6  1  1  0
+  7  4  2  0
+  8  4  1  0
+  9  2  1  0
+ 10  2  1  0
+ 11  3  1  0
+ 12  3  1  0
+ 13  6  1  0
+ 14  8  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+SuccinicAcidD
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidD/1.SuccinicAcidD_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.SuccinicAcidD_CrystPred/SUCACB_planar_A1.res
+
+>  <reported_formula>  (1) 
+C4 H6 O4
+
+>  <selected_formula>  (1) 
+C4H6O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+3013
+
+$$$$

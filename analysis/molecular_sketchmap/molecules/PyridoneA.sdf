@@ -1,0 +1,54 @@
+PyridoneA
+     RDKit          3D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+    0.5452    1.0038   -0.6625 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5905    0.4218   -1.2337 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1245   -0.6667   -0.4501 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5486   -1.0503    0.7178 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6058   -0.3996    1.2234 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1219    0.6244    0.5012 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0263    0.8468   -2.2907 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9330    1.7671   -1.1958 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0045   -1.1555   -0.8448 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9783   -1.8724    1.2795 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0678   -0.7005    2.1516 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9988    1.1811    0.8041 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  2  2  0
+  8  1  1  0
+  9  3  1  0
+ 10  4  1  0
+ 11  5  1  0
+ 12  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+PyridoneA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Pyridone/PyridoneA/1.PyridoneA_MOLPAK_Fit.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.PyridoneA_MOLPAK_Fit/PYRIDO_opt_ai109.res
+
+>  <reported_formula>  (1) 
+C5 H5 N1 O1
+
+>  <selected_formula>  (1) 
+C5H5NO
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+455
+
+$$$$

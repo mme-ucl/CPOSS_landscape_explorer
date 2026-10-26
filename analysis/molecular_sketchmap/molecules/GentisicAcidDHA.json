@@ -1,0 +1,346 @@
+{
+  "dataset_id": "GentisicAcidDHA",
+  "dataset_name": "Gentisic Acid Dihydrate",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidDH/GentisicAcidDH.html",
+  "reported_formula": "C7 H6 O4 - 2(H2 O1)",
+  "reported_formula_normalised": "C7H10O6",
+  "composition_basis": "formula unit (multicomponent)",
+  "structure_count": 20,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidDH/GentisicAcidDHA/1.GentisicAcidDHA_PCM.zip?raw=true",
+  "archive_git_blob_sha": "e6bacad9733ea9de6bf210349c40a1b635b61963",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 20,
+  "candidates_with_title_energy": 20,
+  "selected_filename": "1.GentisicAcidDHA_PCM/UCLDBE_dfA720_A720.res",
+  "selected_file_sha256": "e3004ad049cf9a249989f92725119dcc925fe411d4be131ca94f9609d642e841",
+  "selected_title_energy": -259.345,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C7H6O4",
+  "selected_smiles": "O=C(O)c1cc(O)ccc1O",
+  "constitution_smiles": "O=C(O)c1cc(O)ccc1O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 154.121,
+  "observed_multicomponent": true,
+  "component_counts_per_cell": {
+    "C7H6O4": 4,
+    "H2O": 8
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1cc(O)ccc1O": 4,
+    "O": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6O4": 1.0,
+    "H2O": 2.0
+  },
+  "omitted_component_types_per_cell": {
+    "H2O": 8
+  },
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL UCLDBE_dfA720_A720(-259.345) P212121",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 23,
+    "expanded_unit_cell_atoms": 92,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.1424224998550001,
+      -0.5122749908001225,
+      0.3574220817294122
+    ],
+    [
+      -0.5187645689450004,
+      -0.7517191955001188,
+      -0.9812121889205875
+    ],
+    [
+      -0.2935628919550002,
+      0.2561043120698816,
+      -1.9301891173705892
+    ],
+    [
+      0.3052532012349993,
+      1.4451828151558814,
+      -1.5662485119705876
+    ],
+    [
+      0.6790354457699994,
+      1.68584844315588,
+      -0.23496335882058828
+    ],
+    [
+      0.4510020374699999,
+      0.7112859507678806,
+      0.7177751150794122
+    ],
+    [
+      -0.42448443180500006,
+      -1.5425891235271187,
+      1.351792781829412
+    ],
+    [
+      -1.0887653993150002,
+      -1.8895371261661182,
+      -1.38806954277059
+    ],
+    [
+      1.250704505605,
+      2.8910446068398805,
+      0.04539491512941096
+    ],
+    [
+      -0.06562926940500002,
+      -1.2319698688621195,
+      2.604343783479412
+    ],
+    [
+      -0.9656105421100003,
+      -2.617137930425118,
+      1.102449182229412
+    ],
+    [
+      -1.2291049818350002,
+      -2.44059084316212,
+      -0.5853246690705899
+    ],
+    [
+      1.761700779384999,
+      2.8141374625658813,
+      0.8568208377294121
+    ],
+    [
+      -0.3412369084250002,
+      -1.9815626258271202,
+      3.1519239411794118
+    ],
+    [
+      -0.5883951029500001,
+      0.06722582564588109,
+      -2.956807409420588
+    ],
+    [
+      0.4926546428899998,
+      2.220269692251879,
+      -2.3027639219205884
+    ],
+    [
+      0.7176259842449992,
+      0.8762825958168801,
+      1.757656081879412
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      4,
+      1.0
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      10,
+      6,
+      2.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      8,
+      1.0
+    ],
+    [
+      13,
+      9,
+      1.0
+    ],
+    [
+      14,
+      2,
+      1.0
+    ],
+    [
+      15,
+      3,
+      1.0
+    ],
+    [
+      16,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

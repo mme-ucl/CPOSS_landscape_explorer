@@ -1,0 +1,267 @@
+{
+  "dataset_id": "SuccinicAcidC",
+  "dataset_name": "Succinic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcid.html",
+  "reported_formula": "C4 H6 O4",
+  "reported_formula_normalised": "C4H6O4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 910,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcidC/1.SuccinicAcidC_CrystOpt.zip?raw=true",
+  "archive_git_blob_sha": "b469eff72ffff7a833df7c20b4762e968bfb1df9",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 450,
+  "candidates_with_title_energy": 450,
+  "selected_filename": "1.SuccinicAcidC_CrystOpt/SUCACB_dfFA1_FA1.res",
+  "selected_file_sha256": "36d7212f747611169a110b160d93fbf37fcbd459c93e96d5d88dcd8aab97bda2",
+  "selected_title_energy": -108.313,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C4H6O4",
+  "selected_smiles": "O=C(O)CCC(=O)O",
+  "constitution_smiles": "O=C(O)CCC(=O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 14,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 118.088,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C4H6O4": 4
+  },
+  "component_identities_per_cell": {
+    "O=C(O)CCC(=O)O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C4H6O4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL SUCACB_dfFA1_FA1(-108.313)",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 56,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.3925574868647142,
+      0.35143596808000055,
+      1.5084332685964286
+    ],
+    [
+      0.7533746658072857,
+      0.5266748921500004,
+      0.5433143368834283
+    ],
+    [
+      0.7537849926882858,
+      -0.5272182895199997,
+      -0.5435470380145718
+    ],
+    [
+      -0.3920843922377142,
+      -0.35055669027999947,
+      -1.50867463290257
+    ],
+    [
+      -0.3731548189307142,
+      1.3165181256300005,
+      2.4430530884404282
+    ],
+    [
+      -1.2198351577757147,
+      -0.5249913391999999,
+      1.4586045341404283
+    ],
+    [
+      -0.37277523868671425,
+      -1.3163014769299994,
+      -2.4426198801865713
+    ],
+    [
+      -1.2197051085287145,
+      0.5253560100400008,
+      -1.4574735360175721
+    ],
+    [
+      0.6734271965562859,
+      1.5316520834100005,
+      0.11657892686442836
+    ],
+    [
+      1.686702001486286,
+      0.5031145132099999,
+      1.1162104461604283
+    ],
+    [
+      1.6874693398362857,
+      -0.5032249014299994,
+      -1.1158921693615707
+    ],
+    [
+      0.6732508945962858,
+      -1.5323650524899994,
+      -0.11746922073257163
+    ],
+    [
+      -1.1295253815167148,
+      1.1662526511800007,
+      3.0286610786764285
+    ],
+    [
+      -1.128371506429714,
+      -1.1663464938499997,
+      -3.0291792025465707
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      0,
+      2.0
+    ],
+    [
+      6,
+      3,
+      1.0
+    ],
+    [
+      7,
+      3,
+      2.0
+    ],
+    [
+      8,
+      1,
+      1.0
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      2,
+      1.0
+    ],
+    [
+      11,
+      2,
+      1.0
+    ],
+    [
+      12,
+      4,
+      1.0
+    ],
+    [
+      13,
+      6,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

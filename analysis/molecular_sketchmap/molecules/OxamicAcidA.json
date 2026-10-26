@@ -1,0 +1,192 @@
+{
+  "dataset_id": "OxamicAcidA",
+  "dataset_name": "Oxamic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/OxamicAcid/OxamicAcid.html",
+  "reported_formula": "C2 H3 N1 O3",
+  "reported_formula_normalised": "C2H3NO3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 350,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/OxamicAcid/OxamicAcidA/1.OxamicAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "b458faeea53200f6304b472373276582e0b71804",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 349,
+  "candidates_with_title_energy": 349,
+  "selected_filename": "1.OxamicAcidA_MOLPAK/AFIGOO_transcis_ak12.res",
+  "selected_file_sha256": "ddb7e608af707489658ec8948961fba13dae7535b2496e5c55db41936df7e8b6",
+  "selected_title_energy": -84.773,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C2H3NO3",
+  "selected_smiles": "NC(=O)C(=O)O",
+  "constitution_smiles": "NC(=O)C(=O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 9,
+  "selected_heavy_atoms": 6,
+  "selected_molar_mass_g_mol": 89.05,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C2H3NO3": 4
+  },
+  "component_identities_per_cell": {
+    "NC(=O)C(=O)O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C2H3NO3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL AFIGOO_transcis_ak12(-84.773) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 9,
+    "expanded_unit_cell_atoms": 36,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "C1",
+      "C2",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "C1",
+      "C2",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "C1",
+      "C2",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "H1",
+      "H2",
+      "H3"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "N",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.2904261314764083,
+      0.38727432778122206,
+      0.7256977728306007
+    ],
+    [
+      0.28792734244614726,
+      0.14355962769722255,
+      -0.6739667825820534
+    ],
+    [
+      -0.36366927249878134,
+      1.694446142766222,
+      1.0129297236167334
+    ],
+    [
+      -0.6381407387467529,
+      -0.5124430174467779,
+      1.4771325570895568
+    ],
+    [
+      0.633693265434214,
+      1.053249540871222,
+      -1.419733811382632
+    ],
+    [
+      0.3524193555598085,
+      -1.1824749199727775,
+      -0.9421480406326239
+    ],
+    [
+      0.714271141799447,
+      -1.4816314484847775,
+      -1.8304425516204814
+    ],
+    [
+      0.04127047058587552,
+      -1.8497383964547776,
+      -0.25803738828932765
+    ],
+    [
+      -0.7373454331035505,
+      1.747758143243222,
+      1.9085685209702286
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      0,
+      2.0
+    ],
+    [
+      4,
+      1,
+      2.0
+    ],
+    [
+      5,
+      1,
+      1.0
+    ],
+    [
+      6,
+      5,
+      1.0
+    ],
+    [
+      7,
+      5,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

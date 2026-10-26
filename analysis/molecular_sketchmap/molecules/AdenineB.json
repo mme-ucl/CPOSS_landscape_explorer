@@ -1,0 +1,292 @@
+{
+  "dataset_id": "AdenineB",
+  "dataset_name": "Adenine",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Adenine/Adenine.html",
+  "reported_formula": "C5 H5 N5",
+  "reported_formula_normalised": "C5H5N5",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 746,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Adenine/AdenineB/1.AdenineB_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "963e6124810e0075dff2f16f289782ad91122ea2",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 739,
+  "candidates_with_title_energy": 739,
+  "selected_filename": "1.AdenineB_CrystPred/KOBFUD_opt_A166.res",
+  "selected_file_sha256": "ce42f9db358a543054b9ad2680e6390d411973fceefd9bd33522c0ff35dfe7e5",
+  "selected_title_energy": -137.748,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C5H5N5",
+  "selected_smiles": "Nc1ncnc2[nH]cnc12",
+  "constitution_smiles": "Nc1ncnc2[nH]cnc12",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 135.13,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H5N5": 4
+  },
+  "component_identities_per_cell": {
+    "Nc1ncnc2[nH]cnc12": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H5N5": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL KOBFUD_opt_A166(-137.748) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.41932403988452815,
+      -1.0277473446165324,
+      0.12614071565205753
+    ],
+    [
+      0.42589875050247183,
+      0.039207248255467064,
+      -0.17896215451936381
+    ],
+    [
+      1.5265559557141186,
+      -1.698638870753534,
+      -0.6581145908445967
+    ],
+    [
+      -2.025525739239794,
+      0.30732206582746713,
+      0.803225783141571
+    ],
+    [
+      -0.09903296739282741,
+      1.3227195001024672,
+      0.06511354535818148
+    ],
+    [
+      1.6383644873939378,
+      -0.39666186235853473,
+      -0.6672325009301452
+    ],
+    [
+      0.3134168663674828,
+      -2.1416765902625325,
+      -0.1927795041608622
+    ],
+    [
+      -1.6574717651854711,
+      -0.9587078190755332,
+      0.6191991185054104
+    ],
+    [
+      -1.3378183516179627,
+      1.4302263395354675,
+      0.5635165931309714
+    ],
+    [
+      0.5980428777514994,
+      2.4448064082124663,
+      -0.19726686792357828
+    ],
+    [
+      0.005594869466092334,
+      -3.0958104980105325,
+      -0.09697860237607436
+    ],
+    [
+      2.294271719620615,
+      -2.3906308121775357,
+      -0.978408860839687
+    ],
+    [
+      -3.0255557244716114,
+      0.45589795225146723,
+      1.2063580488355794
+    ],
+    [
+      0.20471975611169313,
+      3.3293166635964653,
+      0.07317410015086212
+    ],
+    [
+      1.5578633048642807,
+      2.3803776194734674,
+      -0.4869848231803351
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      4,
+      1,
+      1.5
+    ],
+    [
+      5,
+      2,
+      1.5
+    ],
+    [
+      5,
+      1,
+      1.5
+    ],
+    [
+      6,
+      2,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.5
+    ],
+    [
+      7,
+      3,
+      1.5
+    ],
+    [
+      7,
+      0,
+      1.5
+    ],
+    [
+      8,
+      4,
+      1.5
+    ],
+    [
+      8,
+      3,
+      1.5
+    ],
+    [
+      9,
+      4,
+      1.0
+    ],
+    [
+      10,
+      6,
+      1.0
+    ],
+    [
+      11,
+      2,
+      1.0
+    ],
+    [
+      12,
+      3,
+      1.0
+    ],
+    [
+      13,
+      9,
+      1.0
+    ],
+    [
+      14,
+      9,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

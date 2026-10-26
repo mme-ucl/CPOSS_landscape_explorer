@@ -1,0 +1,326 @@
+dataset_id,scientist_name,role,source_name,source_field,status,source_url
+2-fluoroethynylbenzeneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Fluoroethynylbenzene/2-fluoroethynylbenzene.html
+2-fluoroethynylbenzeneA,Louise Price,scientist (source field),Louise Price,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Fluoroethynylbenzene/2-fluoroethynylbenzene.html
+2-fluorotolueneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/2-fluorotoluene/2-fluorotoluene.html
+2-fluorotolueneA,Louise Price,scientist (source field),Louise Price,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/2-fluorotoluene/2-fluorotoluene.html
+23-dichloronitrobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/23-dichloronitrobenzene/23-dichloronitrobenzene.html
+23-dichloronitrobenzeneB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/23-dichloronitrobenzene/23-dichloronitrobenzene.html
+24-dichloronitrobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/24-dichloronitrobenzene/24-dichloronitrobenzene.html
+24-dichloronitrobenzeneB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/24-dichloronitrobenzene/24-dichloronitrobenzene.html
+25-dichloronitrobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzene.html
+25-dichloronitrobenzeneB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/25-dichloronitrobenzene/25-dichloronitrobenzene.html
+26-dichloronitrobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/26-dichloronitrobenzene/26-dichloronitrobenzene.html
+2C4NBAA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C4NBA/2C4NBA.html
+2C4NBAMHA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C4NBAMH/2C4NBAMH.html
+2C5NBAA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C5NBA/2C5NBA.html
+2C5NBAMHA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C5NBAMH/2C5NBAMH.html
+2CannabinolTetramethylpyrazineA,Yiming Ding,scientist (source field),Yiming Ding,Yiming Ding,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/2CannabinolTetramethylpyrazine/2CannabinolTetramethylpyrazine.html
+2H4NBAA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2H4NBA/2H4NBA.html
+2H4NBAMHA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2H4NBAMH/2H4NBAMH.html
+2M4NBAA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2M4NBA/2M4NBA.html
+2M4NBAMHA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2M4NBAMH/2M4NBAMH.html
+2aminobenzamideA,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2aminobenzamide/2aminobenzamide.html
+2bromobenzamideA,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2bromobenzamide/2bromobenzamide.html
+2chlorobenzamideA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamide.html
+2chlorobenzamideB,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamide.html
+2chlorobenzamideC,Bob Lancaster,scientist (source field),Bob Lancaster,Bob Lancaster,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2chlorobenzamide/2chlorobenzamide.html
+2fluorobenzamideA,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2fluorobenzamide/2fluorobenzamide.html
+2fluorobenzamideB,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2fluorobenzamide/2fluorobenzamide.html
+3-fluorotolueneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/3-fluorotoluene/3-fluorotoluene.html
+3-fluorotolueneA,Louise Price,scientist (source field),Louise Price,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/3-fluorotoluene/3-fluorotoluene.html
+34-dichloronitrobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/34-dichloronitrobenzene/34-dichloronitrobenzene.html
+34-dichloronitrobenzeneB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/34-dichloronitrobenzene/34-dichloronitrobenzene.html
+34-dinitrochlorobenzeneA,Juliette Pradon,scientist (source field),Juliette Pradon,Juliette Pradon / Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzene.html
+34-dinitrochlorobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Juliette Pradon / Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzene.html
+34-dinitrochlorobenzeneB,Juliette Pradon,scientist (source field),Juliette Pradon,Juliette Pradon / Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzene.html
+34-dinitrochlorobenzeneB,Sarah Barnett,scientist (source field),Sarah Barnett,Juliette Pradon / Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzene.html
+34-dinitrochlorobenzeneC,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dinitrochlorobenzene/34-dinitrochlorobenzene.html
+35-dichloronitrobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/35-dichloronitrobenzene/35-dichloronitrobenzene.html
+35-dichloronitrobenzeneB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/35-dichloronitrobenzene/35-dichloronitrobenzene.html
+3OxauracilA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Oxauracil/3Oxauracil.html
+3aminobenzamideA,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/3aminobenzamide/3aminobenzamide.html
+4-fluorotolueneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotoluene.html
+4-fluorotolueneA,Louise Price,scientist (source field),Louise Price,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotoluene.html
+4C2NBAA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBA/4C2NBA.html
+4C2NBAMHA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBAMH/4C2NBAMH.html
+4HydroxycoumarinA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/4Hydroxycoumarin/4Hydroxycoumarin.html
+4aminobenzamideA,Anastasia Ntantou,scientist (source field),Anastasia Ntantou,Anastasia Ntantou,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/4aminobenzamide/4aminobenzamide.html
+4cyanopyridine4fluorobenzoicacidA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridine4fluorobenzoicacid/4cyanopyridine4fluorobenzoicacid.html
+4cyanopyridinium4fluorobenzoateA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridinium4fluorobenzoate/4cyanopyridinium4fluorobenzoate.html
+4dimethylaminopyridinemaleicacidA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridinemaleicacid/4dimethylaminopyridinemaleicacid.html
+4dimethylaminopyridiniummaleateA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridiniummaleate/4dimethylaminopyridiniummaleate.html
+5AzauracilA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Azauracil/5Azauracil/5Azauracil.html
+5AzauracilMonohydrateA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Azauracil/5AzauracilMonohydrate/5AzauracilMonohydrate.html
+5C2NBAA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/5C2NBA/5C2NBA.html
+5aminouracilA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa (Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5aminouracil/5aminouracil.html
+5aminouracilA,Louise Price,additional credit (parenthesised),Louise Price,Nizar Issa (Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5aminouracil/5aminouracil.html
+5chlorouracilA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5chlorouracil/5chlorouracil.html
+5cyanouracilA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5cyanouracil/5cyanouracil.html
+5eniluracilA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5eniluracil/5eniluracil.html
+5eniluracilB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5eniluracil/5eniluracil.html
+5ethyluracilA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa (Weijia Zhu),reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5ethyluracil/5ethyluracil.html
+5ethyluracilA,Weijia Zhu,additional credit (parenthesised),Weijia Zhu,Nizar Issa (Weijia Zhu),reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5ethyluracil/5ethyluracil.html
+5fluorocytosineA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Fluorocytosine/5fluorocytosine.html
+5fluoroisatinA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,"Sharmarke Mohamed (Weijia Zhu, L Price)",reported,https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatin.html
+5fluoroisatinA,Weijia Zhu,additional credit (parenthesised),Weijia Zhu,"Sharmarke Mohamed (Weijia Zhu, L Price)",reported,https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatin.html
+5fluoroisatinA,Louise Price,additional credit (parenthesised),L Price,"Sharmarke Mohamed (Weijia Zhu, L Price)",inferred,https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatin.html
+5nitrouracilA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5nitrouracil/5nitrouracil.html
+5nitrouracilB,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5nitrouracil/5nitrouracil.html
+5vinyluracilA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5vinyluracil/5vinyluracil.html
+6methoxycoumarinA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Methoxycoumarin/6methoxycoumarin.html
+6methyluracilA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Methyluracil/6methyluracil.html
+7fluoroisatinA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed (Weijia Zhu),reported,https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/7fluoroisatin/7fluoroisatin.html
+7fluoroisatinA,Weijia Zhu,additional credit (parenthesised),Weijia Zhu,Sharmarke Mohamed (Weijia Zhu),reported,https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/7fluoroisatin/7fluoroisatin.html
+7hydroxycoumarinA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/7Hydroxycoumarin/7hydroxycoumarin.html
+AMebendazoleA,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/Mebendazole/AMebendazole/AMebendazole.html
+AMebendazoleB,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/Mebendazole/AMebendazole/AMebendazole.html
+AcridineA,Louise Price,scientist (source field),Louise Price,Louise Price / Einat Schur,reported,https://louiseprice.github.io/CPOSS_Database/Acridine/Acridine.html
+AcridineA,Einat Schur,scientist (source field),Einat Schur,Louise Price / Einat Schur,reported,https://louiseprice.github.io/CPOSS_Database/Acridine/Acridine.html
+AcridineB,Louise Price,scientist (source field),Louise Price,Louise Price / Einat Schur (Rui Guo),reported,https://louiseprice.github.io/CPOSS_Database/Acridine/Acridine.html
+AcridineB,Einat Schur,scientist (source field),Einat Schur,Louise Price / Einat Schur (Rui Guo),reported,https://louiseprice.github.io/CPOSS_Database/Acridine/Acridine.html
+AcridineB,Rui Guo,additional credit (parenthesised),Rui Guo,Louise Price / Einat Schur (Rui Guo),reported,https://louiseprice.github.io/CPOSS_Database/Acridine/Acridine.html
+AdenineA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Adenine/Adenine.html
+AdenineB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Adenine/Adenine.html
+AlloxanA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Alloxan/Alloxan.html
+AmantadineHydrochlorideA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/AmantadineHydrochloride/AmantadineHydrochloride.html
+AminoPyrimidineA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/AminoPyrimidine/AminoPyrimidine.html
+AminobenzoicAcidA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/AminobenzoicAcid/AminobenzoicAcid.html
+AminobenzoicAcidA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/AminobenzoicAcid/AminobenzoicAcid.html
+AmoxapineA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Amoxapine/Amoxapine.html
+AmoxapineB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Amoxapine/Amoxapine.html
+AnisoleA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Anisole/Anisole.html
+AnisoleA,Louise Price,scientist (source field),Louise Price,Joe Ridout and Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Anisole/Anisole.html
+AspirinA,Carole Ouvrard,scientist (source field),Carole Ouvrard,Carole Ouvrard,reported,https://louiseprice.github.io/CPOSS_Database/Aspirin/Aspirin.html
+AzabicyclononanedioneA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IV/Azabicyclononanedione.html
+AzabicyclononanedioneB,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IV/Azabicyclononanedione.html
+AzetidineA,Antonio Torrisi,scientist (source field),Antonio Torrisi,Antonio Torrisi,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XI/Azetidine.html
+BTVIIIA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/VIII/BTVIII.html
+BTXIIIA,Gareth Welch,scientist (source field),Gareth Welch,"Gareth Welch, Alston Misquitta",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIII/BTXIII.html
+BTXIIIA,Alston Misquitta,scientist (source field),Alston Misquitta,"Gareth Welch, Alston Misquitta",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIII/BTXIII.html
+BTXIVA,Gareth Welch,scientist (source field),Gareth Welch,Gareth Welch,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIV/BTXIV.html
+BTXIXA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIX/BTXIX/BTXIX.html
+BTXVA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXV.html
+BTXVB,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXV.html
+BTXVIA,Alston Misquitta,scientist (source field),Alston Misquitta,Alston Misquitta,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVI/BTXVI.html
+BTXVIIA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVII/BTXVII.html
+BTXVIIB,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVII/BTXVII.html
+BTXVIIIA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVIII/BTXVIII.html
+BTXVIIIB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVIII/BTXVIII.html
+BTXXA,Andrei Kazantsev,scientist (source field),Andrei Kazantsev,Andrei Kazantsev,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XX/BTXX.html
+BTXXB,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XX/BTXX.html
+BTXXIIA,Rebecca Hylton,scientist (source field),Rebecca Hylton,Rebecca Hylton,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXII/BTXXII.html
+BTXXIVA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIV/BTXXIV.html
+BTXXIXA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIX/BTXXIX.html
+BTXXVCA,Rona Watson,scientist (source field),Rona Watson,Rona Watson,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVC/BTXXVC.html
+BTXXVIA,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVI.html
+BTXXVIB,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVI.html
+BTXXVIC,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVI/BTXXVI.html
+BTXXVIIIA,Rui Guo,scientist (source field),Rui Guo,"Rui Guo, Louise Price",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVIII/BTXXVIII.html
+BTXXVIIIA,Louise Price,scientist (source field),Louise Price,"Rui Guo, Louise Price",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVIII/BTXXVIII.html
+BTXXVIIIB,Rui Guo,scientist (source field),Rui Guo,"Rui Guo, Louise Price",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVIII/BTXXVIII.html
+BTXXVIIIB,Louise Price,scientist (source field),Louise Price,"Rui Guo, Louise Price",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVIII/BTXXVIII.html
+BTXXXIA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXI/BTXXXI.html
+BTXXXIB,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXI/BTXXXI.html
+BTXXXIIA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXII.html
+BTXXXIIB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXII/BTXXXII.html
+BXXIIIA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIII/BXXIII.html
+BXXIIIB,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXIII/BXXIII.html
+BarbituricAcidA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/BarbituricAcid/BarbituricAcid.html
+BenzophenanthreneA,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/Benzophenanthrene.html
+BenzophenanthreneB,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/Benzophenanthrene.html
+BenzophenanthreneC,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Benzophenanthrene/Benzophenanthrene.html
+BenzylTetrazoleA,Ogaga Uzoh,scientist (source field),Ogaga Uzoh,Ogaga Uzoh,reported,https://louiseprice.github.io/CPOSS_Database/BenzylTetrazole/BenzylTetrazole.html
+Bipy-2AminobenzoicA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-2Aminobenzoic/Bipy-2Aminobenzoic.html
+Bipy-2AminobenzoicA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-2Aminobenzoic/Bipy-2Aminobenzoic.html
+Bipy-AminobenzoicA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Aminobenzoic/Bipy-Aminobenzoic.html
+Bipy-AminobenzoicA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Aminobenzoic/Bipy-Aminobenzoic.html
+Bipy-SuccinicA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Succinic/Bipy-Succinic.html
+Bipy-SuccinicA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Succinic/Bipy-Succinic.html
+BipyridineA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Bipyridine/Bipyridine.html
+BipyridineA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Bipyridine/Bipyridine.html
+BipyridineB,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Bipyridine/Bipyridine.html
+BipyridineB,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Bipyridine/Bipyridine.html
+BromoAminoBenzoicAcidA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/BromoAminoBenzoicAcid/BromoAminoBenzoicAcid.html
+CMebendazoleA,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/Mebendazole/CMebendazole/CMebendazole.html
+CMebendazoleB,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/Mebendazole/CMebendazole/CMebendazole.html
+Caffeine3HBAA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeine3HBA/Caffeine3HBA.html
+Caffeine4HBAA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeine4HBA/Caffeine4HBA.html
+CaffeineA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/Caffeine/Caffeine.html
+CaffeineB,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa,reported,https://louiseprice.github.io/CPOSS_Database/Caffeine/Caffeine.html
+CaffeineC,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Caffeine/Caffeine.html
+CaffeineParacetamolA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CaffeineParacetamol/CaffeineParacetamol.html
+CaffeineSalicylicAcidA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CaffeineSalicylicAcid/CaffeineSalicylicAcid.html
+Caffeinebis4HBAA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Caffeinebis4HBA/Caffeinebis4HBA.html
+Cannabinol2TetramethylpyrazineA,Yiming Ding,scientist (source field),Yiming Ding,Yiming Ding,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Cannabinol2Tetramethylpyrazine/Cannabinol2Tetramethylpyrazine.html
+CannabinolA,Yiming Ding,scientist (source field),Yiming Ding,Yiming Ding,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Cannabinol/Cannabinol.html
+CannabinolTetramethylpyrazineA,Yiming Ding,scientist (source field),Yiming Ding,Yiming Ding,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/CannabinolTetramethylpyrazine/CannabinolTetramethylpyrazine.html
+CarbamazepineA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Carbamazepine/Carbamazepine.html
+CarbamazepineB,Harriott Nowell,scientist (source field),Harriott Nowell,Harriott Nowell,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Carbamazepine/Carbamazepine.html
+CarbamazepinePicolinamideA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/CarbamazepinePicolinamide/CarbamazepinePicolinamide.html
+ChalconeA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Chalcone/Chalcone.html
+ChlorobenzoicAcidA,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/ChlorobenzoicAcid/ChlorobenzoicAcid.html
+ChloromandelicAcidA,Rebecca Hylton,scientist (source field),Rebecca Hylton,Rebecca Hylton,reported,https://louiseprice.github.io/CPOSS_Database/ChloromandelicAcid/ChloromandelicAcid.html
+ChloromandelicAcidB,Rebecca Hylton,scientist (source field),Rebecca Hylton,Rebecca Hylton,reported,https://louiseprice.github.io/CPOSS_Database/ChloromandelicAcid/ChloromandelicAcid.html
+ChlorothalonilA,Helen Tsui,scientist (source field),Helen Tsui,Helen Tsui,reported,https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/Chlorothalonil.html
+ChlorothiazideA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/Chlorothiazide/Chlorothiazide.html
+ClozapineA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Clozapine/Clozapine.html
+ClozapineB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Clozapine/Clozapine.html
+CoroneneA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/Coronene/Coronene.html
+CoumarinA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Coumarin/Coumarin.html
+CyanuricAcidA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/CyanuricAcid/CyanuricAcid.html
+CyclopentaneA,Antonio Torrisi,scientist (source field),Antonio Torrisi,Antonio Torrisi,reported,https://louiseprice.github.io/CPOSS_Database/Cyclopentane/Cyclopentane.html
+CyclopentaneB,Antonio Torrisi,scientist (source field),Antonio Torrisi,Antonio Torrisi,reported,https://louiseprice.github.io/CPOSS_Database/Cyclopentane/Cyclopentane.html
+CyheptamideA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cyheptamide/Cyheptamide.html
+CyheptamideB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cyheptamide/Cyheptamide.html
+CytenamideA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cytenamide/Cytenamide.html
+CytenamideB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Cytenamide/Cytenamide.html
+CytosineA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Cytosine/Cytosine.html
+DeazauracilA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Deazauracil/Deazauracil.html
+DeazauracilB,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Deazauracil/Deazauracil.html
+DeazauracilC,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Deazauracil/Deazauracil.html
+DehydroprolineA,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Dehydroproline/Dehydroproline.html
+DehydroprolineB,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Dehydroproline/Dehydroproline.html
+DesloratadineA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/Desloratadine/Desloratadine.html
+DiaminoDinitroPyrazineA,Binal Patel,scientist (source field),Binal Patel,Binal Patel / Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyrazine/DiaminoDinitroPyrazine.html
+DiaminoDinitroPyrazineA,Tom Lewis,scientist (source field),Tom Lewis,Binal Patel / Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyrazine/DiaminoDinitroPyrazine.html
+DiaminoDinitroPyridineOxideA,Harriott Nowell,scientist (source field),Harriott Nowell,Harriott Nowell,reported,https://louiseprice.github.io/CPOSS_Database/DiaminoDinitroPyridineOxide/DiaminoDinitroPyridineOxide.html
+DibenzoCycloheptenylEthanoneA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/DibenzoCycloheptenylEthanone/DibenzoCycloheptenylEthanone.html
+DiclofenacA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Diclofenac/Diclofenac.html
+Dicyanobenzene-SuccinicA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Dicyanobenzene-Succinic/Dicyanobenzene-Succinic.html
+Dicyanobenzene-SuccinicA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Dicyanobenzene-Succinic/Dicyanobenzene-Succinic.html
+DicyanobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/Dicyanobenzene.html
+DicyanobenzeneB,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/Dicyanobenzene.html
+DicyanobenzeneC,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/Dicyanobenzene.html
+DicyanobenzeneC,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Dicyanobenzene/Dicyanobenzene.html
+DihydroDibenzoCycloheptenylEthanoneA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/DihydroDibenzoCycloheptenylEthanone/DihydroDibenzoCycloheptenylEthanone.html
+DihydrocarbamazepineA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Dihydrocarbamazepine/Dihydrocarbamazepine.html
+DihydrocarbamazepineB,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Dihydrocarbamazepine/Dihydrocarbamazepine.html
+DiiodoanthanthroneA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/IX/Diiodoanthanthrone.html
+DimethylureaA,Ricarda Duss,scientist (source field),Ricarda Duss,Ricarda Duss,reported,https://louiseprice.github.io/CPOSS_Database/Dimethylurea/Dimethylurea.html
+EphedriniumTartrateA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/EphedriniumTartrate/EphedriniumTartrate.html
+EstradiolA,Eric Stevenson,scientist (source field),Eric Stevenson,Eric Stevenson,reported,https://louiseprice.github.io/CPOSS_Database/Estradiol/Estradiol.html
+FOX7A,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7.html
+FOX7B,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7.html
+FenamicAcidA,Ogaga Uzoh,scientist (source field),Ogaga Uzoh,Ogaga Uzoh,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcid.html
+FlufenamicAcidA,Dave Case,scientist (source field),Dave Case,Dave Case,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FlufenamicAcid/FlufenamicAcid.html
+FluorouracilA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme (Weijia Zhu; Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/Fluorouracil/Fluorouracil.html
+FluorouracilA,Weijia Zhu,additional credit (parenthesised),Weijia Zhu,Ashley Hulme (Weijia Zhu; Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/Fluorouracil/Fluorouracil.html
+FluorouracilA,Louise Price,additional credit (parenthesised),Louise Price,Ashley Hulme (Weijia Zhu; Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/Fluorouracil/Fluorouracil.html
+FormyluracilA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/Formyluracil/Formyluracil.html
+GSK269984BA,Salima Ismail,scientist (source field),Salima Ismail,Salima Ismail / Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GSK269984BA,Louise Price,scientist (source field),Louise Price,Salima Ismail / Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GSK269984BB,Salima Ismail,scientist (source field),Salima Ismail,Salima Ismail / Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GSK269984BB,Louise Price,scientist (source field),Louise Price,Salima Ismail / Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GSK269984BC,Salima Ismail,scientist (source field),Salima Ismail,Salima Ismail / Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GSK269984BC,Louise Price,scientist (source field),Louise Price,Salima Ismail / Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GSK269984BD,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984B.html
+GallicAcidA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/GallicAcid/GallicAcid.html
+GallicAcidMHA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXI/GallicAcidMH.html
+GallicAcidMHB,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXI/GallicAcidMH.html
+GalunisertibA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Galunisertib/Galunisertib.html
+GentisicAcidA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcid.html
+GentisicAcidB,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcid.html
+GentisicAcidDHA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidDH/GentisicAcidDH.html
+GentisicAcidHHA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidHH/GentisicAcidHH.html
+GentisicAcidMHA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidMH/GentisicAcidMH.html
+GlucoseA,Isaac Sugden,scientist (source field),Isaac Sugden,Isaac Sugden,reported,https://louiseprice.github.io/CPOSS_Database/Glucose/Glucose.html
+GuanineA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Guanine/Guanine.html
+GuanineB,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Guanine/Guanine.html
+GuanineC,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Guanine/Guanine.html
+HydrochlorothiazideA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/Hydrochlorothiazide/Hydrochlorothiazide.html
+HydroxymethyloxazolidinoneA,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Hydroxymethyloxazolidinone/Hydroxymethyloxazolidinone.html
+IbuprofenA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Ibuprofen/Ibuprofen.html
+ImidazoleA,Antonio Torrisi,scientist (source field),Antonio Torrisi,Antonio Torrisi,reported,https://louiseprice.github.io/CPOSS_Database/Imidazole/Imidazole.html
+IndomethacinA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/Indomethacin/Indomethacin.html
+IsobarbituricAcidA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcid.html
+IsobarbituricAcidB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcid.html
+IsocaffeineA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/Isocaffeine/Isocaffeine.html
+IsocytosineA,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Isocytosine/Isocytosine.html
+IsocytosineB,Ashley Hulme,scientist (source field),Ashley Hulme,Ashley Hulme,reported,https://louiseprice.github.io/CPOSS_Database/Isocytosine/Isocytosine.html
+IsonicotinamideA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa,reported,https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/Isonicotinamide.html
+IsonicotinamideB,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/Isonicotinamide.html
+LY2624803A,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/LY2624803/LY2624803.html
+LY2806920A,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/LY2806920/LY2806920/LY2806920.html
+LY2806920HClA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/LY2806920/LY2806920HCl/LY2806920HCl.html
+LactideA,Rebecca Hylton,scientist (source field),Rebecca Hylton,Rebecca Hylton,reported,https://louiseprice.github.io/CPOSS_Database/Lactide/Lactide.html
+LamotrigineA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Lamotrigine/Lamotrigine.html
+LoxapineA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Loxapine/Loxapine.html
+LoxapineB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Loxapine/Loxapine.html
+M-XyleneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout,reported,https://louiseprice.github.io/CPOSS_Database/1.Xylenes/M-Xylene/M-Xylene.html
+MannitolA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Mannitol/Mannitol.html
+MefenamicAcidA,Rona Watson,scientist (source field),Rona Watson,Rona Watson,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/MefenamicAcid/MefenamicAcid.html
+MemantineHydrochlorideA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/MemantineHydrochloride/MemantineHydrochloride.html
+MetacetamolA,Shihao Ying,scientist (source field),Shihao Ying,Shihao Ying,reported,https://louiseprice.github.io/CPOSS_Database/Metacetamol/Metacetamol.html
+Methyl-p-hydroxybenzoateA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/Methyl-p-hydroxybenzoate/Methyl-p-hydroxybenzoate.html
+MethylazetidineoneA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Methylazetidineone/Methylazetidineone.html
+NaproxenA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Naproxen/Naproxen.html
+NaproxenB,Emiliana D'Oria,scientist (source field),Emiliana D'Oria,Emiliana D'Oria,reported,https://louiseprice.github.io/CPOSS_Database/Naproxen/Naproxen.html
+NiflumicAcidA,Michael Lawrence,scientist (source field),Michael Lawrence,Michael Lawrence / Dave Case,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/NiflumicAcid/NiflumicAcid.html
+NiflumicAcidA,Dave Case,scientist (source field),Dave Case,Michael Lawrence / Dave Case,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/NiflumicAcid/NiflumicAcid.html
+NitrofurantoinA,Agris Berzins,scientist (source field),Agris Berzins,Agris Berzins,reported,https://louiseprice.github.io/CPOSS_Database/Nitrofurantoin/Nitrofurantoin.html
+Nitrophenyl-AminobenzoicA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Nitrophenyl-Aminobenzoic/Nitrophenyl-Aminobenzoic.html
+Nitrophenyl-AminobenzoicA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Nitrophenyl-Aminobenzoic/Nitrophenyl-Aminobenzoic.html
+NitrophenylAceticAcidA,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/NitrophenylAceticAcid/NitrophenylAceticAcid.html
+NitrophenylAceticAcidA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Nizar Issa / Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/NitrophenylAceticAcid/NitrophenylAceticAcid.html
+O-XyleneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout,reported,https://louiseprice.github.io/CPOSS_Database/1.Xylenes/O-Xylene/O-Xylene.html
+OlanzapineA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Olanzapine/Olanzapine.html
+OlanzapineB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.OlanzapineFamily/Olanzapine/Olanzapine.html
+OroticAcidA,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/OroticAcid/OroticAcid.html
+OtolicAcidA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/OtolicAcid/OtolicAcid.html
+OtolicAcidB,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/OtolicAcid/OtolicAcid.html
+OxcarbazepineA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Oxcarbazepine/Oxcarbazepine.html
+P-XyleneA,Joe Ridout,scientist (source field),Joe Ridout,Joe Ridout,reported,https://louiseprice.github.io/CPOSS_Database/1.Xylenes/P-Xylene/P-Xylene.html
+ParabanicAcidA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/ParabanicAcid/ParabanicAcid.html
+ParacetamolA,Tinoziva Sango,scientist (source field),Tinoziva Sango,Tinoziva Sango,reported,https://louiseprice.github.io/CPOSS_Database/Paracetamol/Paracetamol.html
+ParacetamolB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Paracetamol/Paracetamol.html
+PhenanthrenolA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Phenanthrenol/Phenanthrenol.html
+PhloroglucinolA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/Phloroglucinol.html
+PhloroglucinolDihydrateA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/PhloroglucinolDihydrate/PhloroglucinolDihydrate.html
+PiracetamA,Harriott Nowell,scientist (source field),Harriott Nowell,Harriott Nowell,reported,https://louiseprice.github.io/CPOSS_Database/Piracetam/Piracetam.html
+ProgesteroneA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Progesterone/Progesterone.html
+ProgesteroneB,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Progesterone/Progesterone.html
+PyreneA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/Pyrene/Pyrene.html
+PyridineA,Alex Aina,scientist (source field),Alex Aina,Alex Aina,reported,https://louiseprice.github.io/CPOSS_Database/Pyridine/Pyridine.html
+QuinoliniumFumarateA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIX/QuinoliniumFumarate/QuinoliniumFumarate.html
+SaccharinA,Merina Corpinot,scientist (source field),Merina Corpinot,Merina Corpinot (Rui Guo/Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/Saccharin/Saccharin.html
+SaccharinA,Rui Guo,additional credit (parenthesised),Rui Guo,Merina Corpinot (Rui Guo/Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/Saccharin/Saccharin.html
+SaccharinA,Louise Price,additional credit (parenthesised),Louise Price,Merina Corpinot (Rui Guo/Louise Price),reported,https://louiseprice.github.io/CPOSS_Database/Saccharin/Saccharin.html
+SalsalateA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/Salsalate/Salsalate.html
+SorbitolA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Sorbitol/Sorbitol.html
+SuccinicAcidA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcid.html
+SuccinicAcidB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcid.html
+SuccinicAcidC,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcid.html
+SuccinicAcidD,Nizar Issa,scientist (source field),Nizar Issa,Nizar Issa,reported,https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcid.html
+SulfadiazineA,William Wood,scientist (source field),William Wood,William Wood,reported,https://louiseprice.github.io/CPOSS_Database/Sulfadiazine/Sulfadiazine.html
+SulfamerazineA,William Wood,scientist (source field),William Wood,William Wood,reported,https://louiseprice.github.io/CPOSS_Database/Sulfamerazine/Sulfamerazine.html
+TazofeloneA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Tazofelone/Tazofelone.html
+TetrachlorobenzeneA,Sarah Barnett,scientist (source field),Sarah Barnett,Sarah Barnett,reported,https://louiseprice.github.io/CPOSS_Database/Tetrachlorobenzene/Tetrachlorobenzene.html
+TetrahydroDimethylQuinolineA,Panos Karamertzanis,scientist (source field),Panos Karamertzanis,Panos Karamertzanis,reported,https://louiseprice.github.io/CPOSS_Database/TetrahydroDimethylQuinoline/TetrahydroDimethylQuinoline.html
+TetramethylpyrazineA,Yiming Ding,scientist (source field),Yiming Ding,Yiming Ding,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXX/Tetramethylpyrazine/Tetramethylpyrazine.html
+TetrazolPyrazineA,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/TetrazolPyrazine/TetrazolPyrazine.html
+TetrazolPyrimidineA,Luca Iuzzolino,scientist (source field),Luca Iuzzolino,Luca Iuzzolino,reported,https://louiseprice.github.io/CPOSS_Database/TetrazolPyrimidine/TetrazolPyrimidine.html
+TetrolicAcidA,Matthew Habgood,scientist (source field),Matthew Habgood,Matthew Habgood,reported,https://louiseprice.github.io/CPOSS_Database/TetrolicAcid/TetrolicAcid.html
+ThymineA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/Thymine.html
+ThymineB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/Thymine.html
+TolfenamicAcidA,Ogaga Uzoh,scientist (source field),Ogaga Uzoh,Ogaga Uzoh,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcid.html
+TolfenamicAcidB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcid.html
+TransFOX7A,Sally Price,scientist (source field),Sally Price,Sally Price,reported,https://louiseprice.github.io/CPOSS_Database/1.FOX7/TransFOX7/TransFOX7.html
+TrifluoroethanolA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Trifluoroethanol/Trifluoroethanol.html
+TrifluoroethanolB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/Trifluoroethanol/Trifluoroethanol.html
+TrinitrobenzeneA,Alex Aina,scientist (source field),Alex Aina,Alex Aina,reported,https://louiseprice.github.io/CPOSS_Database/Trinitrobenzene/Trinitrobenzene.html
+UracilA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/1.Uracils/Uracil/Uracil.html
+UrazoleA,Tom Lewis,scientist (source field),Tom Lewis,Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/Urazole/Urazole.html
+UreaA,Stephen Tendyra,scientist (source field),Stephen Tendyra,Stephen Tendyra,reported,https://louiseprice.github.io/CPOSS_Database/Urea/Urea.html
+UricAcidA,Pinky Pridhanani-Jethani,scientist (source field),Pinky Pridhanani-Jethani,Pinky Pridhanani-Jethani / Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcid.html
+UricAcidA,Tom Lewis,scientist (source field),Tom Lewis,Pinky Pridhanani-Jethani / Tom Lewis,reported,https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcid.html
+UricAcidB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcid.html
+XXVIIA,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVII/XXVII.html
+XXVIIB,Louise Price,scientist (source field),Louise Price,Louise Price,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXVII/XXVII.html
+XXXIIIA,Rui Guo,scientist (source field),Rui Guo,Rui Guo,reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIII.html
+XXXIIIB,Louise Price,scientist (source field),Louise Price,"Louise Price, Rui Guo",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIII.html
+XXXIIIB,Rui Guo,scientist (source field),Rui Guo,"Louise Price, Rui Guo",reported,https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXXIII/XXXIII.html
+bResorcylicAcidDihydrateA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidDihydrate/bResorcylicAcidDihydrate.html
+bResorcylicAcidHemihydrateA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidHemihydrate/bResorcylicAcidHemihydrate.html
+bResorcylicAcidMonohydrateA,Doris Braun,scientist (source field),Doris Braun,Doris Braun,reported,https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidMonohydrate/bResorcylicAcidMonohydrate.html
+pyridineisophthalicacidA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/pyridineisophthalicacid/pyridineisophthalicacid.html
+pyridiniumisophthalateA,Sharmarke Mohamed,scientist (source field),Sharmarke Mohamed,Sharmarke Mohamed,reported,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/pyridiniumisophthalate/pyridiniumisophthalate.html

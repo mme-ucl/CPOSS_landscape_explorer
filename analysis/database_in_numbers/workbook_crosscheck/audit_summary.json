@@ -1,0 +1,1102 @@
+{
+  "workbook_path": "/Users/matteo/Downloads/Database 2023 checkup.xlsx",
+  "workbook_sha256": "e8a410fa55c3e5cab90d4352a985f694e7f1d5e4b4085f1331edf68602eed2dc",
+  "workbook_modified_metadata": "2026-10-23 10:37:35",
+  "molecular_summary_rows": 235,
+  "summary_searches_sum": 310,
+  "summary_studies_sum": 503,
+  "figure_datasets": 311,
+  "matched_archived_models": 509,
+  "archive_coordinate_files": 519167,
+  "matched_workbook_structure_count_sum": 563297,
+  "matched_models_with_workbook_counts": 505,
+  "archive_files_for_models_with_workbook_counts": 513403,
+  "count_statuses": {
+    "different": 122,
+    "equal": 383,
+    "missing workbook count": 4
+  },
+  "count_differences_at_most_2": 75,
+  "formula_comparison_statuses": {
+    "equal composition": 225,
+    "different composition": 8,
+    "workbook resolves invalid website formula": 2
+  },
+  "formula_differences": [
+    {
+      "excel_row": 6,
+      "molecular_system": "DipicolinicAcid",
+      "dataset_ids": "DipicolinicAcidA",
+      "workbook_formula": "C7 H5 N1 O4",
+      "website_formula": "C8 H5 N1 O4",
+      "workbook_formula_normalised": "C7H5NO4",
+      "website_formula_normalised": "C8H5NO4",
+      "workbook_atom_count": 17,
+      "website_atom_count": "18.0",
+      "workbook_molar_mass_g_mol": 167.12,
+      "website_molar_mass_g_mol": "179.131",
+      "composition_basis": "reported molecular formula",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/DipicolinicAcid/DipicolinicAcid.html"
+    },
+    {
+      "excel_row": 43,
+      "molecular_system": "Piracetam",
+      "dataset_ids": "PiracetamA",
+      "workbook_formula": "C6 H10 N2 O2",
+      "website_formula": "C6 H10 N2 02",
+      "workbook_formula_normalised": "C6H10N2O2",
+      "website_formula_normalised": "",
+      "workbook_atom_count": 20,
+      "website_atom_count": "",
+      "workbook_molar_mass_g_mol": 142.158,
+      "website_molar_mass_g_mol": "",
+      "composition_basis": "reported molecular formula",
+      "website_composition_basis": "",
+      "composition_basis_agrees": null,
+      "status": "workbook resolves invalid website formula",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/Piracetam/Piracetam.html"
+    },
+    {
+      "excel_row": 99,
+      "molecular_system": "Bipy-2Aminobenzoic",
+      "dataset_ids": "Bipy-2AminobenzoicA",
+      "workbook_formula": "C10 H8 N2 . C7 H7 N1 O2 . C7 H7 N1 O2",
+      "website_formula": "(C7 H7 N1 O2)2 - C8 H7 N1 O4",
+      "workbook_formula_normalised": "C24H22N4O4",
+      "website_formula_normalised": "C22H21N3O8",
+      "workbook_atom_count": 54,
+      "website_atom_count": "54.0",
+      "workbook_molar_mass_g_mol": 430.464,
+      "website_molar_mass_g_mol": "455.423",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "formula unit (multicomponent)",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-2Aminobenzoic/Bipy-2Aminobenzoic.html"
+    },
+    {
+      "excel_row": 237,
+      "molecular_system": "Naphthalene",
+      "dataset_ids": "NaphthaleneA; NaphthaleneB",
+      "workbook_formula": "C10 H8",
+      "website_formula": "C8 H10",
+      "workbook_formula_normalised": "C10H8",
+      "website_formula_normalised": "C8H10",
+      "workbook_atom_count": 18,
+      "website_atom_count": "18.0",
+      "workbook_molar_mass_g_mol": 128.174,
+      "website_molar_mass_g_mol": "106.168",
+      "composition_basis": "reported molecular formula",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/Naphthalene/Naphthalene.html"
+    },
+    {
+      "excel_row": 313,
+      "molecular_system": "IsobarbituricAcid",
+      "dataset_ids": "IsobarbituricAcidA; IsobarbituricAcidB",
+      "workbook_formula": "C4 H4 N2 O3",
+      "website_formula": "C4 H4 N2 03",
+      "workbook_formula_normalised": "C4H4N2O3",
+      "website_formula_normalised": "",
+      "workbook_atom_count": 13,
+      "website_atom_count": "",
+      "workbook_molar_mass_g_mol": 128.087,
+      "website_molar_mass_g_mol": "",
+      "composition_basis": "reported molecular formula",
+      "website_composition_basis": "",
+      "composition_basis_agrees": null,
+      "status": "workbook resolves invalid website formula",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcid.html"
+    },
+    {
+      "excel_row": 321,
+      "molecular_system": "FenamicAcid",
+      "dataset_ids": "FenamicAcidA",
+      "workbook_formula": "C13 H11 N1 O2",
+      "website_formula": "C13 H12 N1 O2",
+      "workbook_formula_normalised": "C13H11NO2",
+      "website_formula_normalised": "C13H12NO2",
+      "workbook_atom_count": 27,
+      "website_atom_count": "28.0",
+      "workbook_molar_mass_g_mol": 213.236,
+      "website_molar_mass_g_mol": "214.244",
+      "composition_basis": "reported molecular formula",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcid.html"
+    },
+    {
+      "excel_row": 327,
+      "molecular_system": "QuinoliniumFumarate",
+      "dataset_ids": "QuinoliniumFumarateA",
+      "workbook_formula": "C9 H8 N1 + . C4 H4 O3 -",
+      "website_formula": "C9 H8 N1 - C4 H4 O4",
+      "workbook_formula_normalised": "C13H12NO3",
+      "website_formula_normalised": "C13H12NO4",
+      "workbook_atom_count": 29,
+      "website_atom_count": "30.0",
+      "workbook_molar_mass_g_mol": 230.243,
+      "website_molar_mass_g_mol": "246.242",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "formula unit (multicomponent)",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIX/QuinoliniumFumarate/QuinoliniumFumarate.html"
+    },
+    {
+      "excel_row": 418,
+      "molecular_system": "Dicyanobenzene-Succinic",
+      "dataset_ids": "Dicyanobenzene-SuccinicA",
+      "workbook_formula": "C8 H4 N2 . C4 H6 O4",
+      "website_formula": "C6 N2 H4 - C4 O4 H6",
+      "workbook_formula_normalised": "C12H10N2O4",
+      "website_formula_normalised": "C10H10N2O4",
+      "workbook_atom_count": 28,
+      "website_atom_count": "26.0",
+      "workbook_molar_mass_g_mol": 246.222,
+      "website_molar_mass_g_mol": "222.2",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "formula unit (multicomponent)",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Dicyanobenzene-Succinic/Dicyanobenzene-Succinic.html"
+    },
+    {
+      "excel_row": 420,
+      "molecular_system": "Bipy-Aminobenzoic",
+      "dataset_ids": "Bipy-AminobenzoicA",
+      "workbook_formula": "C10 H8 N2 . C7 H7 N1 O2",
+      "website_formula": "C7 H7 N1 O2 - C8 H7 N1 O4",
+      "workbook_formula_normalised": "C17H15N3O2",
+      "website_formula_normalised": "C15H14N2O6",
+      "workbook_atom_count": 37,
+      "website_atom_count": "37.0",
+      "workbook_molar_mass_g_mol": 293.326,
+      "website_molar_mass_g_mol": "318.285",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "formula unit (multicomponent)",
+      "composition_basis_agrees": true,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Cocrystals/Bipy-Aminobenzoic/Bipy-Aminobenzoic.html"
+    },
+    {
+      "excel_row": 448,
+      "molecular_system": "BTXV",
+      "dataset_ids": "BTXVA; BTXVB",
+      "workbook_formula": "C8 H4 O2 . C5 H7 N3",
+      "website_formula": "C13 H15 N3 O2",
+      "workbook_formula_normalised": "C13H11N3O2",
+      "website_formula_normalised": "C13H15N3O2",
+      "workbook_atom_count": 29,
+      "website_atom_count": "33.0",
+      "workbook_molar_mass_g_mol": 241.25,
+      "website_molar_mass_g_mol": "245.282",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": false,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXV.html"
+    }
+  ],
+  "workbook_composition_counts": {
+    "reported molecular formula": 191,
+    "formula unit (multicomponent)": 44
+  },
+  "component_encoding_differences": [
+    {
+      "excel_row": 159,
+      "molecular_system": "LY2806920HCl",
+      "dataset_ids": "LY2806920HClA",
+      "workbook_formula": "C16 H22 N3 O3 + . Cl -",
+      "website_formula": "(C16 H22 N3 O3)+ Cl-",
+      "workbook_formula_normalised": "C16ClH22N3O3",
+      "website_formula_normalised": "C16ClH22N3O3",
+      "workbook_atom_count": 45,
+      "website_atom_count": "45.0",
+      "workbook_molar_mass_g_mol": 339.823,
+      "website_molar_mass_g_mol": "339.823",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": false,
+      "status": "equal composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/LY2806920/LY2806920HCl/LY2806920HCl.html"
+    },
+    {
+      "excel_row": 426,
+      "molecular_system": "MemantineHydrochloride",
+      "dataset_ids": "MemantineHydrochlorideA",
+      "workbook_formula": "C12 H22 N1 + . Cl1 -",
+      "website_formula": "C12 H22 N1 Cl1",
+      "workbook_formula_normalised": "C12ClH22N",
+      "website_formula_normalised": "C12ClH22N",
+      "workbook_atom_count": 36,
+      "website_atom_count": "36.0",
+      "workbook_molar_mass_g_mol": 215.768,
+      "website_molar_mass_g_mol": "215.768",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": false,
+      "status": "equal composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/MemantineHydrochloride/MemantineHydrochloride.html"
+    },
+    {
+      "excel_row": 448,
+      "molecular_system": "BTXV",
+      "dataset_ids": "BTXVA; BTXVB",
+      "workbook_formula": "C8 H4 O2 . C5 H7 N3",
+      "website_formula": "C13 H15 N3 O2",
+      "workbook_formula_normalised": "C13H11N3O2",
+      "website_formula_normalised": "C13H15N3O2",
+      "workbook_atom_count": 29,
+      "website_atom_count": "33.0",
+      "workbook_molar_mass_g_mol": 241.25,
+      "website_molar_mass_g_mol": "245.282",
+      "composition_basis": "formula unit (multicomponent)",
+      "website_composition_basis": "reported molecular formula",
+      "composition_basis_agrees": false,
+      "status": "different composition",
+      "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XV/BTXV/BTXV.html"
+    }
+  ],
+  "workbook_formula_atom_range": [
+    5,
+    120
+  ],
+  "workbook_formula_mass_range_g_mol": [
+    32.042,
+    890.88
+  ],
+  "verified_workbook_count_formulas": [
+    {
+      "cell": "AA467",
+      "formula": "=2663+3+4432+1+8542+1+12547",
+      "cached_value": 28189,
+      "independent_value": 28189
+    },
+    {
+      "cell": "AA476",
+      "formula": "=3093+9+13123",
+      "cached_value": 16225,
+      "independent_value": 16225
+    },
+    {
+      "cell": "AA528",
+      "formula": "=11725+5109",
+      "cached_value": 16834,
+      "independent_value": 16834
+    }
+  ],
+  "molecular_scope_differences": [
+    {
+      "excel_row": 18,
+      "molecular_system": "BTXII",
+      "workbook_searches_summary": 1,
+      "website_searches": 2,
+      "workbook_studies_summary": 2,
+      "documented_model_archives": 2
+    },
+    {
+      "excel_row": 50,
+      "molecular_system": "Benzophenanthrene",
+      "workbook_searches_summary": 3,
+      "website_searches": 3,
+      "workbook_studies_summary": 1,
+      "documented_model_archives": 3
+    },
+    {
+      "excel_row": 81,
+      "molecular_system": "Chloroform",
+      "workbook_searches_summary": 2,
+      "website_searches": 2,
+      "workbook_studies_summary": 1,
+      "documented_model_archives": 2
+    },
+    {
+      "excel_row": 104,
+      "molecular_system": "Dichloromethane",
+      "workbook_searches_summary": 2,
+      "website_searches": 2,
+      "workbook_studies_summary": 1,
+      "documented_model_archives": 2
+    },
+    {
+      "excel_row": 168,
+      "molecular_system": "Ibuprofen",
+      "workbook_searches_summary": 1,
+      "website_searches": 1,
+      "workbook_studies_summary": 3,
+      "documented_model_archives": 4
+    },
+    {
+      "excel_row": 293,
+      "molecular_system": "Phloroglucinol",
+      "workbook_searches_summary": 1,
+      "website_searches": 1,
+      "workbook_studies_summary": 4,
+      "documented_model_archives": 3
+    },
+    {
+      "excel_row": 380,
+      "molecular_system": "Trinitrobenzene",
+      "workbook_searches_summary": 1,
+      "website_searches": 1,
+      "workbook_studies_summary": 8,
+      "documented_model_archives": 9
+    },
+    {
+      "excel_row": 548,
+      "molecular_system": "Cyclopentane",
+      "workbook_searches_summary": 2,
+      "website_searches": 2,
+      "workbook_studies_summary": 1,
+      "documented_model_archives": 2
+    }
+  ],
+  "uploaded_rows_outside_figure_scope": [
+    {
+      "excel_row": 204,
+      "refcode": "KEMDOW",
+      "study_id": 3,
+      "github_raw": "Guanine_ABC2",
+      "upload_status": "Yes",
+      "structure_count": 109,
+      "programs_raw": "Study_ID=0/1/2,"
+    },
+    {
+      "excel_row": 294,
+      "refcode": "PHGLOL",
+      "study_id": 12,
+      "github_raw": "Phloroglucinol_A2a",
+      "upload_status": "Yes",
+      "structure_count": 422,
+      "programs_raw": "Study_ID=20, CrystOpt (2.0), DMACRYS (2.3.1.1)"
+    },
+    {
+      "excel_row": 358,
+      "refcode": "SUCACB",
+      "study_id": 42,
+      "github_raw": "Not stored",
+      "upload_status": "Yes",
+      "structure_count": 732,
+      "programs_raw": "Study_ID=12, DMACRYS (2.2.0.1), BZ-averaged props"
+    },
+    {
+      "excel_row": 359,
+      "refcode": "SUCACB",
+      "study_id": 43,
+      "github_raw": "Not stored",
+      "upload_status": "Yes",
+      "structure_count": 808,
+      "programs_raw": "Study_ID=13, DMACRYS (2.2.0.1), BZ-averaged props"
+    },
+    {
+      "excel_row": 503,
+      "refcode": "XYANAC",
+      "study_id": 20,
+      "github_raw": "Not to be archived",
+      "upload_status": "Yes",
+      "structure_count": 7253,
+      "programs_raw": "Flexible CrystalPredictor (1.6), DMACRYS (2.0.4)"
+    }
+  ],
+  "primary_credit_agreements": 292,
+  "primary_credit_differences": [
+    {
+      "dataset_id": "2-fluoroethynylbenzeneA",
+      "primary_excel_row": 20,
+      "website_scientists": "Joe Ridout; Louise Price",
+      "workbook_primary_scientists": "Joe Ridout",
+      "workbook_all_model_scientists": "Joe Ridout",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2013",
+      "website_date": "2013",
+      "workbook_primary_year": 2013,
+      "website_year": 2013,
+      "primary_year_agrees": true,
+      "model_years": "2013",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Ridout J, Price LS, Howard JAK, Probert MR 2014. Cryst Growth Des 14, 3384-3391.",
+      "workbook_primary_publication": "Ridout J, Price LS, Howard JAK, Probert MR 2014. Cryst Growth Des 14, 3384-3391."
+    },
+    {
+      "dataset_id": "2-fluorotolueneA",
+      "primary_excel_row": 516,
+      "website_scientists": "Joe Ridout; Louise Price",
+      "workbook_primary_scientists": "Joe Ridout",
+      "workbook_all_model_scientists": "Joe Ridout",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2013",
+      "website_date": "2013",
+      "workbook_primary_year": 2013,
+      "website_year": 2013,
+      "primary_year_agrees": true,
+      "model_years": "2013",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "No publication planned.",
+      "workbook_primary_publication": "Not published - see Ridout J, Probert MR, Cryst Growth Des 2013, 13(5), 1943-1948."
+    },
+    {
+      "dataset_id": "3-fluorotolueneA",
+      "primary_excel_row": 510,
+      "website_scientists": "Joe Ridout; Louise Price",
+      "workbook_primary_scientists": "Joe Ridout",
+      "workbook_all_model_scientists": "Joe Ridout",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2013",
+      "website_date": "2013",
+      "workbook_primary_year": 2013,
+      "website_year": 2013,
+      "primary_year_agrees": true,
+      "model_years": "2013",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "No publication planned.",
+      "workbook_primary_publication": "Not published - see Ridout J, Probert MR, Cryst Growth Des 2013, 13(5), 1943-1948."
+    },
+    {
+      "dataset_id": "4-fluorotolueneA",
+      "primary_excel_row": 505,
+      "website_scientists": "Joe Ridout; Louise Price",
+      "workbook_primary_scientists": "Joe Ridout",
+      "workbook_all_model_scientists": "Joe Ridout",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2013",
+      "website_date": "2013",
+      "workbook_primary_year": 2013,
+      "website_year": 2013,
+      "primary_year_agrees": true,
+      "model_years": "2013",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "No publication planned.",
+      "workbook_primary_publication": "Not published - see Ridout J, Probert MR, Cryst Growth Des 2013, 13(5), 1943-1948."
+    },
+    {
+      "dataset_id": "5chlorouracilA",
+      "primary_excel_row": 87,
+      "website_scientists": "Ashley Hulme",
+      "workbook_primary_scientists": "Ashley Hulme; Sarah Barnett",
+      "workbook_all_model_scientists": "Ashley Hulme; Sarah Barnett",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775.",
+      "workbook_primary_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775."
+    },
+    {
+      "dataset_id": "5ethyluracilA",
+      "primary_excel_row": 44,
+      "website_scientists": "Nizar Issa; Weijia Zhu",
+      "workbook_primary_scientists": "Nizar Issa",
+      "workbook_all_model_scientists": "Nizar Issa",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775.",
+      "workbook_primary_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775."
+    },
+    {
+      "dataset_id": "5fluoroisatinA",
+      "primary_excel_row": 458,
+      "website_scientists": "Louise Price; Sharmarke Mohamed; Weijia Zhu",
+      "workbook_primary_scientists": "Sharmarke Mohamed",
+      "workbook_all_model_scientists": "Sharmarke Mohamed",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2008",
+      "website_date": "2008",
+      "workbook_primary_year": 2008,
+      "website_year": 2008,
+      "primary_year_agrees": true,
+      "model_years": "2008",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Mohamed S, Barnett SA, Tocher DA, Shankland K, Leech CK, Price SL 2008. CrystEngComm 10,399-404.",
+      "workbook_primary_publication": "Mohamed S, Barnett SA, Tocher DA, Shankland K, Leech CK, Price SL 2008. CrystEngComm 10, 399-404."
+    },
+    {
+      "dataset_id": "5nitrouracilA",
+      "primary_excel_row": 250,
+      "website_scientists": "Nizar Issa",
+      "workbook_primary_scientists": "Nizar Issa; Sarah Barnett",
+      "workbook_all_model_scientists": "Nizar Issa; Sarah Barnett",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775.",
+      "workbook_primary_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775."
+    },
+    {
+      "dataset_id": "5nitrouracilB",
+      "primary_excel_row": 251,
+      "website_scientists": "Nizar Issa",
+      "workbook_primary_scientists": "Nizar Issa; Sarah Barnett",
+      "workbook_all_model_scientists": "Nizar Issa; Sarah Barnett",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775.",
+      "workbook_primary_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775."
+    },
+    {
+      "dataset_id": "7fluoroisatinA",
+      "primary_excel_row": 256,
+      "website_scientists": "Sharmarke Mohamed; Weijia Zhu",
+      "workbook_primary_scientists": "Sharmarke Mohamed",
+      "workbook_all_model_scientists": "Sharmarke Mohamed",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2008",
+      "website_date": "2008",
+      "workbook_primary_year": 2008,
+      "website_year": 2008,
+      "primary_year_agrees": true,
+      "model_years": "2008",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Mohamed S, Barnett SA, Tocher DA, Shankland K, Leech CK, Price SL 2008. CrystEngComm 10, 399-404.",
+      "workbook_primary_publication": "Mohamed S, Barnett SA, Tocher DA, Shankland K, Leech CK, Price SL 2008. CrystEngComm 10, 399-404."
+    },
+    {
+      "dataset_id": "AnisoleA",
+      "primary_excel_row": 165,
+      "website_scientists": "Joe Ridout; Louise Price",
+      "workbook_primary_scientists": "Joe Ridout",
+      "workbook_all_model_scientists": "Joe Ridout",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2013",
+      "website_date": "2013",
+      "workbook_primary_year": 2013,
+      "website_year": 2013,
+      "primary_year_agrees": true,
+      "model_years": "2013",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "Not published - see Smith EL; Ridout J; Sellars JD; Probert MR Crystengcomm 2019, 21(30), 4422",
+      "workbook_primary_publication": "Not published - see Smith, E. L.; Ridout, J.; Sellars, J. D.; Probert, M. R., Crystengcomm 2019, 21, (30), 4422-4426."
+    },
+    {
+      "dataset_id": "CaffeineB",
+      "primary_excel_row": 254,
+      "website_scientists": "Nizar Issa",
+      "workbook_primary_scientists": "Nizar Issa; Panos Karamertzanis",
+      "workbook_all_model_scientists": "Nizar Issa; Panos Karamertzanis",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "pre-2010",
+      "website_date": "pre-2010",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "No publication planned",
+      "workbook_primary_publication": "No publication planned"
+    },
+    {
+      "dataset_id": "EstradiolA",
+      "primary_excel_row": 299,
+      "website_scientists": "Eric Stevenson",
+      "workbook_primary_scientists": "Erin Stevenson",
+      "workbook_all_model_scientists": "Erin Stevenson",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2017",
+      "website_date": "2017",
+      "workbook_primary_year": 2017,
+      "website_year": 2017,
+      "primary_year_agrees": true,
+      "model_years": "2017",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Stevenson, E. L.; Lancaster, R. W.; Buanz, A. B. M.; Price, L. S.; Tocher, D. A.; Price, S. L., CrystEngComm 2019, 21(13), 2154-2163.",
+      "workbook_primary_publication": "Stevenson, E. L.; Lancaster, R. W.; Buanz, A. B. M.; Price, L. S.; Tocher, D. A.; Price, S. L., CrystEngComm 2019, 21(13), 2154-2163."
+    },
+    {
+      "dataset_id": "FluorouracilA",
+      "primary_excel_row": 146,
+      "website_scientists": "Ashley Hulme; Louise Price; Weijia Zhu",
+      "workbook_primary_scientists": "Ashley Hulme",
+      "workbook_all_model_scientists": "Ashley Hulme",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Hulme AT, Price SL, Tocher DA 2005. J Am Chem Soc 127(4) 1116-7 Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32-1761-1775.",
+      "workbook_primary_publication": "Hulme AT, Price SL, Tocher DA 2005. J Am Chem Soc 127(4) 1116-7 # Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32, 1761-1775."
+    },
+    {
+      "dataset_id": "IsobarbituricAcidB",
+      "primary_excel_row": 314,
+      "website_scientists": "Louise Price",
+      "workbook_primary_scientists": "Louise Price; Sarah Barnett",
+      "workbook_all_model_scientists": "Louise Price; Sarah Barnett",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775.",
+      "workbook_primary_publication": "Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32 1761-1775."
+    },
+    {
+      "dataset_id": "NaproxenB",
+      "primary_excel_row": 94,
+      "website_scientists": "Emiliana D'Oria",
+      "workbook_primary_scientists": "Doris Braun; Emiliana D'Oria",
+      "workbook_all_model_scientists": "Doris Braun; Emiliana D'Oria",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2009-2010",
+      "website_date": "2009-2010",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "Braun DE; Ardid-Candel M; D'Oria E; Karamertzanis PG; Arlin JB; Florence AJ; Jones AG; Price SL. Cryst Growth Des 2011, 11(12), 5659-5669 (Paper reports PCM refinement of structures in this set.)",
+      "workbook_primary_publication": "See Study_ID=10"
+    },
+    {
+      "dataset_id": "SaccharinA",
+      "primary_excel_row": 332,
+      "website_scientists": "Louise Price; Merina Corpinot; Rui Guo",
+      "workbook_primary_scientists": "Merina Corpinot",
+      "workbook_all_model_scientists": "Merina Corpinot",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2015",
+      "website_date": "2015",
+      "workbook_primary_year": 2015,
+      "website_year": 2015,
+      "primary_year_agrees": true,
+      "model_years": "2015",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "Corpinot M, Guo R, Tocher DA, Buanz A, Gaisford S, Price SL, Bucar DK, 2017, Cryst. Growth Des. 17, 827-833.",
+      "workbook_primary_publication": "Corpinot, M.; Guo, R.; Tocher, D.; Buanz, A.; Gaisford, S.; Price, S.; Bucar, D., Are Oxygen and Sulfur Atoms Structurally Equivalent in Organic Crystals? Crystal Growth & Design 2017, 17, (2), 827-833. "
+    },
+    {
+      "dataset_id": "SuccinicAcidD",
+      "primary_excel_row": 352,
+      "website_scientists": "Nizar Issa",
+      "workbook_primary_scientists": "Nizar Issa; Panos Karamertzanis",
+      "workbook_all_model_scientists": "Nizar Issa; Panos Karamertzanis",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2012",
+      "website_date": "2012",
+      "workbook_primary_year": 2012,
+      "website_year": 2012,
+      "primary_year_agrees": true,
+      "model_years": "2012",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "N Issa, SA Barnett, S Mohamed, DE Braun, RCB Copley, DA Tocher, SL Price, CrystEngComm, 2012, 14, 2454-2464",
+      "workbook_primary_publication": "See Study_ID=10"
+    },
+    {
+      "dataset_id": "XXXIIIB",
+      "primary_excel_row": 533,
+      "website_scientists": "Louise Price; Rui Guo",
+      "workbook_primary_scientists": "Rui Guo",
+      "workbook_all_model_scientists": "Rui Guo",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "June 2022",
+      "website_date": "June 2022",
+      "workbook_primary_year": 2022,
+      "website_year": 2022,
+      "primary_year_agrees": true,
+      "model_years": "2022",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Hunnisett LM, et al, Acta Cryst B, 2024, 80(6), 548-574",
+      "workbook_primary_publication": "Hunnisett LM, et al, Acta Cryst B, 2024, 80(6), 548-574"
+    }
+  ],
+  "primary_workbook_named_scientists": 44,
+  "primary_workbook_named_searches": 286,
+  "primary_workbook_top_credits": [
+    [
+      "Louise Price",
+      56
+    ],
+    [
+      "Panos Karamertzanis",
+      23
+    ],
+    [
+      "Tom Lewis",
+      22
+    ],
+    [
+      "Nizar Issa",
+      18
+    ],
+    [
+      "Doris Braun",
+      18
+    ],
+    [
+      "Sarah Barnett",
+      17
+    ],
+    [
+      "Matthew Habgood",
+      14
+    ],
+    [
+      "Ashley Hulme",
+      13
+    ],
+    [
+      "Luca Iuzzolino",
+      13
+    ],
+    [
+      "Rui Guo",
+      13
+    ],
+    [
+      "Agris Berzins",
+      12
+    ],
+    [
+      "Sharmarke Mohamed",
+      12
+    ],
+    [
+      "Sally Price",
+      12
+    ],
+    [
+      "Joe Ridout",
+      8
+    ],
+    [
+      "Emiliana D'Oria",
+      8
+    ],
+    [
+      "Anastasia Ntantou",
+      7
+    ],
+    [
+      "Yiming Ding",
+      5
+    ],
+    [
+      "Antonio Torrisi",
+      4
+    ],
+    [
+      "Rebecca Hylton",
+      4
+    ],
+    [
+      "Ogaga Uzoh",
+      3
+    ],
+    [
+      "Harriott Nowell",
+      3
+    ],
+    [
+      "Salima Ismail",
+      3
+    ],
+    [
+      "Juliette Pradon",
+      2
+    ],
+    [
+      "Einat Schur",
+      2
+    ],
+    [
+      "Alston Misquitta",
+      2
+    ],
+    [
+      "Gareth Welch",
+      2
+    ],
+    [
+      "Rona Watson",
+      2
+    ],
+    [
+      "Dave Case",
+      2
+    ],
+    [
+      "Alex Aina",
+      2
+    ],
+    [
+      "William Wood",
+      2
+    ],
+    [
+      "Bob Lancaster",
+      1
+    ],
+    [
+      "Carole Ouvrard",
+      1
+    ],
+    [
+      "Andrei Kazantsev",
+      1
+    ],
+    [
+      "Helen Tsui",
+      1
+    ],
+    [
+      "Binal Patel",
+      1
+    ],
+    [
+      "Ricarda Duss",
+      1
+    ],
+    [
+      "Erin Stevenson",
+      1
+    ],
+    [
+      "Isaac Sugden",
+      1
+    ],
+    [
+      "Shihao Ying",
+      1
+    ],
+    [
+      "Michael Lawrence",
+      1
+    ],
+    [
+      "Tinoziva Sango",
+      1
+    ],
+    [
+      "Merina Corpinot",
+      1
+    ],
+    [
+      "Stephen Tendyra",
+      1
+    ],
+    [
+      "Pinky Pridhanani-Jethani",
+      1
+    ]
+  ],
+  "primary_date_agreements": 303,
+  "primary_date_differences": [
+    {
+      "dataset_id": "BarbituricAcidA",
+      "primary_excel_row": 22,
+      "website_scientists": "Tom Lewis",
+      "workbook_primary_scientists": "Tom Lewis",
+      "workbook_all_model_scientists": "Tom Lewis",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2005",
+      "website_date": "2004",
+      "workbook_primary_year": 2005,
+      "website_year": 2004,
+      "primary_year_agrees": false,
+      "model_years": "2005",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Lewis, T. C., Tocher, D. A., Price, S. L., Crystal Growth and Design, 4(5), 979-987 (2004) Lewis, T. C., Tocher, D. A., Price, S. L., Cryst. Growth Des., 5(3), 983-993 (2005)",
+      "workbook_primary_publication": "Lewis, T. C., Tocher, D. A., Price, S. L., Crystal Growth and Design, 4(5), 979-987 (2004) # Lewis, T. C., Tocher, D. A., Price, S. L., Cryst. Growth Des., 5(3), 983-993 (2005)"
+    },
+    {
+      "dataset_id": "CaffeineSalicylicAcidA",
+      "primary_excel_row": 499,
+      "website_scientists": "Matthew Habgood",
+      "workbook_primary_scientists": "Matthew Habgood",
+      "workbook_all_model_scientists": "Matthew Habgood",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2009",
+      "website_date": "2010",
+      "workbook_primary_year": 2009,
+      "website_year": 2010,
+      "primary_year_agrees": false,
+      "model_years": "2009",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Habgood M, Price SL 2010. Cryst Growth Des 10, 3263-3272.",
+      "workbook_primary_publication": "Habgood M, Price SL 2010. Cryst Growth Des 10, 3263-3272."
+    },
+    {
+      "dataset_id": "Caffeinebis4HBAA",
+      "primary_excel_row": 227,
+      "website_scientists": "Matthew Habgood",
+      "workbook_primary_scientists": "Matthew Habgood",
+      "workbook_all_model_scientists": "Matthew Habgood",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2009",
+      "website_date": "2010",
+      "workbook_primary_year": 2009,
+      "website_year": 2010,
+      "primary_year_agrees": false,
+      "model_years": "2009",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Habgood M, Price SL 2010. Cryst Growth Des 10, 3263-3272.",
+      "workbook_primary_publication": "Habgood M, Price SL 2010. Cryst Growth Des 10, 3263-3272."
+    },
+    {
+      "dataset_id": "ClozapineB",
+      "primary_excel_row": 241,
+      "website_scientists": "Louise Price",
+      "workbook_primary_scientists": "Louise Price",
+      "workbook_all_model_scientists": "Louise Price",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2014",
+      "website_date": "2025",
+      "workbook_primary_year": 2014,
+      "website_year": 2025,
+      "primary_year_agrees": false,
+      "model_years": "2014; 2025",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "No publication planned.",
+      "workbook_primary_publication": "No publication planned"
+    },
+    {
+      "dataset_id": "IbuprofenA",
+      "primary_excel_row": 170,
+      "website_scientists": "Louise Price",
+      "workbook_primary_scientists": "Louise Price",
+      "workbook_all_model_scientists": "Louise Price",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2017",
+      "website_date": "2019",
+      "workbook_primary_year": 2017,
+      "website_year": 2019,
+      "primary_year_agrees": false,
+      "model_years": "2017; 2018; 2019",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Francia NF, Price LS, Salvalaglio M, CrystEngComm 2021. 23, 5575-5584.",
+      "workbook_primary_publication": "See Study_ID=11"
+    },
+    {
+      "dataset_id": "OxcarbazepineA",
+      "primary_excel_row": 59,
+      "website_scientists": "Rui Guo",
+      "workbook_primary_scientists": "Rui Guo",
+      "workbook_all_model_scientists": "Rui Guo",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2016",
+      "website_date": "2017",
+      "workbook_primary_year": 2016,
+      "website_year": 2017,
+      "primary_year_agrees": false,
+      "model_years": "2016",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Polyzois, H.; Guo, R.; Srirambhatla, V. K.; Warzecha, M.; Prasad, E.; Turner, A.; Halbert, G. W.; Keating, P.; Price, S. L.; Florence, A. J. Crystal Structure and Twisted Aggregates of Oxcarbazepine Form III. Crystal Growth & Design 2022. 22 (7), 4146-4156.",
+      "workbook_primary_publication": "Polyzois, H.; Guo, R.; Srirambhatla, V. K.; Warzecha, M.; Prasad, E.; Turner, A.; Halbert, G. W.; Keating, P.; Price, S. L.; Florence, A. J. Crystal Structure and Twisted Aggregates of Oxcarbazepine Form III. Crystal Growth & Design 2022. 22 (7), 4146-4156."
+    },
+    {
+      "dataset_id": "PhthalimideA",
+      "primary_excel_row": 290,
+      "website_scientists": "",
+      "workbook_primary_scientists": "",
+      "workbook_all_model_scientists": "",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "2006",
+      "website_date": "2006-10",
+      "workbook_primary_year": 2006,
+      "website_year": null,
+      "primary_year_agrees": false,
+      "model_years": "2006",
+      "raw_publication_matches_a_workbook_model": false,
+      "website_publication": "No publication planned.",
+      "workbook_primary_publication": "None"
+    },
+    {
+      "dataset_id": "SulfadiazineA",
+      "primary_excel_row": 361,
+      "website_scientists": "William Wood",
+      "workbook_primary_scientists": "William Wood",
+      "workbook_all_model_scientists": "William Wood",
+      "primary_scientists_agree": true,
+      "workbook_primary_date": "December 2022",
+      "website_date": "March 2023",
+      "workbook_primary_year": 2022,
+      "website_year": 2023,
+      "primary_year_agrees": false,
+      "model_years": "2022; 2023",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "In preparation",
+      "workbook_primary_publication": "See later structure refinements"
+    }
+  ],
+  "primary_workbook_dated_searches": 237,
+  "raw_publication_matches": 290,
+  "proposed_panel_c": [
+    {
+      "program": "DMACRYS",
+      "datasets": 189,
+      "denominator": 311
+    },
+    {
+      "program": "MOLPAK",
+      "datasets": 156,
+      "denominator": 311
+    },
+    {
+      "program": "CrystalPredictor",
+      "datasets": 148,
+      "denominator": 311
+    },
+    {
+      "program": "DMAREL",
+      "datasets": 126,
+      "denominator": 311
+    },
+    {
+      "program": "CrystalOptimizer",
+      "datasets": 110,
+      "denominator": 311
+    },
+    {
+      "program": "DMAflex",
+      "datasets": 28,
+      "denominator": 311
+    }
+  ],
+  "DFTB3_D3_method_mentions_excluded_from_software_panel": 8,
+  "program_mentions_missing": [],
+  "polymorph_counts_vary_by_model_in_molecular_systems": 29,
+  "polymorph_counts_missing_on_summary_rows": 3,
+  "wide_figure_source_is_current": false,
+  "current_portrait_pdf_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+  "wide_figure_recorded_source_sha256": "ad75a2ed382dde92df58a0dc0424848d59ce41a12551e0a9f14e8108b32188eb",
+  "portrait_component_legends": [
+    "Multicomponent formula unit (41)",
+    "Single component (192)"
+  ],
+  "wide_component_legends": [
+    "Multicomponent formula unit (41)",
+    "Single component (194)"
+  ]
+}

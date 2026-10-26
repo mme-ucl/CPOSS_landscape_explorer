@@ -11,6 +11,12 @@
             .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
     }
 
+    function normalizeFormula(value) {
+        // Matching only: NFKC converts subscript digits. Keep every other
+        // count, charge, separator, coefficient and element in source order.
+        return String(value).normalize('NFKC').toLowerCase().replace(/\s+/g, '');
+    }
+
     function externalDataUrl(value) {
         // Preserve relative URLs for Chemiscope's existing local/shared loaders.
         if (!/^(?:[a-z][a-z\d+.-]*:|\/\/)/i.test(value)) return value;
@@ -46,11 +52,14 @@
 
     function filter(datasets, query = '', collection = '') {
         const tokens = normalize(query).split(' ').filter(Boolean);
+        const formulaQuery = normalizeFormula(query);
         return datasets.filter(item => {
             if (collection && !item.collections.includes(collection)) return false;
             const text = normalize([item.id, item.filename, item.label, item.molecule, ...item.aliases, ...item.codes].join(' '));
             const compact = text.replace(/ /g, '');
-            return tokens.every(token => text.includes(token) || compact.includes(token));
+            const textMatch = tokens.every(token => text.includes(token) || compact.includes(token));
+            const formulaMatch = formulaQuery && (item.formulas || []).some(formula => normalizeFormula(formula) === formulaQuery);
+            return textMatch || formulaMatch;
         });
     }
 
@@ -84,5 +93,5 @@
         return { archives, metadata };
     }
 
-    return { normalize, externalDataUrl, datasetKey, find, filter, resources };
+    return { normalize, normalizeFormula, externalDataUrl, datasetKey, find, filter, resources };
 });

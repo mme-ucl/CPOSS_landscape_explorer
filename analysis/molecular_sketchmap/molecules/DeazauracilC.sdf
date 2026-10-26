@@ -1,0 +1,56 @@
+DeazauracilC
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+    1.3006    1.7689    1.1116 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9748    0.1352   -1.9614 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5595    0.8412    0.4704 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2088   -1.5060    0.3522 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7372   -1.3551   -0.5957 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1175   -0.0292   -1.0998 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3819    1.0671   -0.4806 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8587   -0.4211    0.8881 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5661   -0.5310    1.5966 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5134   -2.4676    0.7462 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2417   -2.2188   -1.0096 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6084    2.0775   -0.8020 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0544    2.6389    0.7841 H   0  0  0  0  0  0  0  0  0  0  0  0
+  3  1  1  0
+  5  4  2  0
+  6  5  1  0
+  6  2  2  0
+  7  6  1  0
+  7  3  2  0
+  8  4  1  0
+  8  3  1  0
+  9  8  1  0
+ 10  4  1  0
+ 11  5  1  0
+ 12  7  1  0
+ 13  1  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+DeazauracilC
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilC/1.DeazauracilC_MOLPAK-Taut1.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.DeazauracilC_MOLPAK-Taut1/CAXKOB_Taut2h4p_be41.res
+
+>  <reported_formula>  (1) 
+C5 H5 N1 O2
+
+>  <selected_formula>  (1) 
+C5H5NO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+59
+
+$$$$

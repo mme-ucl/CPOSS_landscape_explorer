@@ -1,0 +1,60 @@
+PhloroglucinolA
+     RDKit          3D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+    0.4401    1.2128    0.4834 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5507    1.1879   -0.4949 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9795   -0.0413   -0.9680 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4442   -1.2342   -0.4887 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5398   -1.1716    0.4842 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9951    0.0462    0.9833 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8295    2.4288    0.9175 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9349   -0.1453   -1.9141 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1049   -2.2834    0.9971 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5007    2.3517    1.5752 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2377    0.7068   -2.1808 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7376   -3.0583    0.6051 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9629    2.1156   -0.8624 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8009   -2.1755   -0.8789 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7629    0.0598    1.7420 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  3  1  0
+  9  5  1  0
+ 10  7  1  0
+ 11  8  1  0
+ 12  9  1  0
+ 13  2  1  0
+ 14  4  1  0
+ 15  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+PhloroglucinolA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/1.PhloroglucinolA_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.PhloroglucinolA_CrystPred/PHGLOL_conf1_A2.res
+
+>  <reported_formula>  (1) 
+C6 H6 O3
+
+>  <selected_formula>  (1) 
+C6H6O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+1314
+
+$$$$

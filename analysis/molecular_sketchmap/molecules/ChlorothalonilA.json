@@ -1,0 +1,244 @@
+{
+  "dataset_id": "ChlorothalonilA",
+  "dataset_name": "Chlorothalonil",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/Chlorothalonil.html",
+  "reported_formula": "C8 N2 Cl4",
+  "reported_formula_normalised": "C8Cl4N2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 22,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/ChlorothalonilA/1.ChlorothalonilA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "62beab6503cdfcd40ce62800835277c8263119c2",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 21,
+  "candidates_with_title_energy": 20,
+  "selected_filename": "1.ChlorothalonilA/BAWNIW_opt_ab15.res",
+  "selected_file_sha256": "f2abeae1fdce6d80e37a1d297aa8d6220e29719460b1befc3827b27fa9aa2228",
+  "selected_title_energy": -99.385,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C8Cl4N2",
+  "selected_smiles": "N#Cc1c(Cl)c(Cl)c(Cl)c(C#N)c1Cl",
+  "constitution_smiles": "N#Cc1c(Cl)c(Cl)c(Cl)c(C#N)c1Cl",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 14,
+  "selected_heavy_atoms": 14,
+  "selected_molar_mass_g_mol": 265.914,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8Cl4N2": 2
+  },
+  "component_identities_per_cell": {
+    "N#Cc1c(Cl)c(Cl)c(Cl)c(C#N)c1Cl": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8Cl4N2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL BAWNIW_opt_ab15(-99.385)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 28,
+    "warnings": [],
+    "source_atom_labels": [
+      "CL1",
+      "CL2",
+      "CL3",
+      "CL4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "CL1",
+      "CL2",
+      "CL3",
+      "CL4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ]
+  },
+  "symbols": [
+    "Cl",
+    "Cl",
+    "Cl",
+    "Cl",
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C"
+  ],
+  "coordinates_angstrom": [
+    [
+      -2.6323868184154744,
+      -0.8732369169753276,
+      0.6259033872297319
+    ],
+    [
+      2.6838947777626565,
+      -1.4655769629175897,
+      1.0809151383121458
+    ],
+    [
+      3.136474473442913,
+      1.0405701234770666,
+      -0.7457510444981219
+    ],
+    [
+      0.6430901187032596,
+      2.5694212567339774,
+      -1.8720404568367153
+    ],
+    [
+      -2.889340271169287,
+      2.038816140987082,
+      -1.5001223312261827
+    ],
+    [
+      -0.29290094463507543,
+      -3.094582832935708,
+      2.256702576788851
+    ],
+    [
+      -0.8552524683537435,
+      0.767113950872119,
+      -0.5634052136433798
+    ],
+    [
+      -1.0418994500067402,
+      -0.34568373593176993,
+      0.2477575331566415
+    ],
+    [
+      0.055178224670804354,
+      -1.0326217723396334,
+      0.753770598624274
+    ],
+    [
+      1.3447784974725323,
+      -0.6001547169156072,
+      0.4436325705651294
+    ],
+    [
+      1.5438010756803955,
+      0.5121893079739728,
+      -0.3670304693041908
+    ],
+    [
+      0.43859188712164965,
+      1.1917822502656383,
+      -0.8676769188149436
+    ],
+    [
+      -1.9934230138712046,
+      1.478717258248908,
+      -1.0875635720500059
+    ],
+    [
+      -0.14060608840268785,
+      -2.186753350543138,
+      1.5949082016967688
+    ]
+  ],
+  "bonds": [
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      7,
+      0,
+      1.0
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      9,
+      1.5
+    ],
+    [
+      10,
+      2,
+      1.0
+    ],
+    [
+      11,
+      10,
+      1.5
+    ],
+    [
+      11,
+      6,
+      1.5
+    ],
+    [
+      11,
+      3,
+      1.0
+    ],
+    [
+      12,
+      6,
+      1.0
+    ],
+    [
+      12,
+      4,
+      3.0
+    ],
+    [
+      13,
+      8,
+      1.0
+    ],
+    [
+      13,
+      5,
+      3.0
+    ]
+  ],
+  "rejected_candidates": []
+}

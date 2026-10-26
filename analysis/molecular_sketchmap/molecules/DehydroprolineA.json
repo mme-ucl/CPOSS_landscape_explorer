@@ -1,0 +1,384 @@
+{
+  "dataset_id": "DehydroprolineA",
+  "dataset_name": "Dehydroproline",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Dehydroproline/Dehydroproline.html",
+  "reported_formula": "C10 H10 N2 O2",
+  "reported_formula_normalised": "C10H10N2O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 564,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Dehydroproline/DehydroprolineA/1.DehydroprolineA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "1115c1b4fe8cd6009820f8cad763835fd0d906af",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 544,
+  "candidates_with_title_energy": 544,
+  "selected_filename": "1.DehydroprolineA_MOLPAK/DHPROA_opt_ca76.res",
+  "selected_file_sha256": "79bd82a20fbd269fd56e112044a1008eb74abc2ec15ec8d4a1ad3df56c3637d8",
+  "selected_title_energy": -97.88,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C10H10N2O2",
+  "selected_smiles": "O=C1[C@@H]2C=CCN2C(=O)[C@@H]2C=CCN12",
+  "constitution_smiles": "O=C1C2C=CCN2C(=O)C2C=CCN12",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 24,
+  "selected_heavy_atoms": 14,
+  "selected_molar_mass_g_mol": 190.202,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C10H10N2O2": 2
+  },
+  "component_identities_per_cell": {
+    "O=C1[C@@H]2C=CCN2C(=O)[C@@H]2C=CCN12": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C10H10N2O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL DHPROA_opt_ca76(-97.880) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 24,
+    "expanded_unit_cell_atoms": 48,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "N1",
+      "N2",
+      "O1",
+      "O2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.26785513340536227,
+      0.07756561325309796,
+      1.522724678790093
+    ],
+    [
+      -0.7207965145914237,
+      -1.0118596241181121,
+      2.4505101340825917
+    ],
+    [
+      -1.9064713822098298,
+      -1.5061644810735704,
+      2.0732433501835734
+    ],
+    [
+      -2.4234878511004565,
+      -0.8391995234469345,
+      0.831784153662307
+    ],
+    [
+      1.1137211521972947,
+      -0.1728806099765965,
+      0.9209812425586195
+    ],
+    [
+      -1.1243271743071155,
+      0.5016753219418515,
+      -0.7760931930229091
+    ],
+    [
+      0.22677573536596007,
+      1.1893629656514868,
+      -0.9645940833794654
+    ],
+    [
+      2.4448164379972273,
+      0.18015479140074753,
+      -1.1222255248045698
+    ],
+    [
+      0.7159199716742695,
+      1.1644307569290735,
+      -2.3832081729269508
+    ],
+    [
+      1.9352792225162752,
+      0.6182442415654759,
+      -2.4644953554709716
+    ],
+    [
+      -0.2430481884359157,
+      1.0513358358896827,
+      2.034346147456562
+    ],
+    [
+      -0.12784548694365938,
+      -1.3181495965394525,
+      3.2976825854659415
+    ],
+    [
+      -2.4511053725462446,
+      -2.2870070619699288,
+      2.5837995411424606
+    ],
+    [
+      -3.3465469452520216,
+      -0.27802541875217557,
+      1.00553717797621
+    ],
+    [
+      -2.610555125148516,
+      -1.5277412868746563,
+      0.004431483601529784
+    ],
+    [
+      0.13703668998997465,
+      2.221100170772635,
+      -0.5923211177949834
+    ],
+    [
+      3.331578483422666,
+      0.7365127768593673,
+      -0.8034572289508626
+    ],
+    [
+      2.688694823678073,
+      -0.8831342415183618,
+      -1.0668632002904752
+    ],
+    [
+      0.12042426779868265,
+      1.5503504830740695,
+      -3.195351766102318
+    ],
+    [
+      2.508926718768956,
+      0.49846165331284276,
+      -3.371858980812256
+    ],
+    [
+      -1.3143257562276176,
+      0.05402411066292245,
+      0.49143029532378146
+    ],
+    [
+      1.2973630772863203,
+      0.47030532474180653,
+      -0.2603485555818239
+    ],
+    [
+      1.9688156530840022,
+      -0.8743722813314321,
+      1.4667310850973865
+    ],
+    [
+      -1.952987303611585,
+      0.3850100795461664,
+      -1.6823846962034659
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      2.0
+    ],
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      6,
+      5,
+      1.0
+    ],
+    [
+      8,
+      6,
+      1.0
+    ],
+    [
+      9,
+      8,
+      2.0
+    ],
+    [
+      9,
+      7,
+      1.0
+    ],
+    [
+      10,
+      0,
+      1.0
+    ],
+    [
+      11,
+      1,
+      1.0
+    ],
+    [
+      12,
+      2,
+      1.0
+    ],
+    [
+      13,
+      3,
+      1.0
+    ],
+    [
+      14,
+      3,
+      1.0
+    ],
+    [
+      15,
+      6,
+      1.0
+    ],
+    [
+      16,
+      7,
+      1.0
+    ],
+    [
+      17,
+      7,
+      1.0
+    ],
+    [
+      18,
+      8,
+      1.0
+    ],
+    [
+      19,
+      9,
+      1.0
+    ],
+    [
+      20,
+      5,
+      1.0
+    ],
+    [
+      20,
+      3,
+      1.0
+    ],
+    [
+      20,
+      0,
+      1.0
+    ],
+    [
+      21,
+      7,
+      1.0
+    ],
+    [
+      21,
+      6,
+      1.0
+    ],
+    [
+      21,
+      4,
+      1.0
+    ],
+    [
+      22,
+      4,
+      2.0
+    ],
+    [
+      23,
+      5,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

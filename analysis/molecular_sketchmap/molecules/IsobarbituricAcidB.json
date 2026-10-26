@@ -1,0 +1,256 @@
+{
+  "dataset_id": "IsobarbituricAcidB",
+  "dataset_name": "Isobarbituric Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcid.html",
+  "reported_formula": "C4 H4 N2 03",
+  "reported_formula_normalised": "",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 51,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/IsobarbituricAcid/IsobarbituricAcidB/1.IsobarbituricAcidB_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "13f8b4a6835ae9e5334547acc52e63d8043cd3b7",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 50,
+  "candidates_with_title_energy": 50,
+  "selected_filename": "1.IsobarbituricAcidB_MOLPAK/QARWAI_opt_am88.res",
+  "selected_file_sha256": "9e1f67f809109b88e87e11bb203ed91bbbb8e99d9dbe641255ba46878442075f",
+  "selected_title_energy": -114.795,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "source_formula_conflict_coordinates_retained",
+  "formula_units_in_cell": null,
+  "selected_formula": "C4H4N2O3",
+  "selected_smiles": "O=c1[nH]cc(O)c(=O)[nH]1",
+  "constitution_smiles": "O=c1[nH]cc(O)c(=O)[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 13,
+  "selected_heavy_atoms": 9,
+  "selected_molar_mass_g_mol": 128.087,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C4H4N2O3": 4
+  },
+  "component_identities_per_cell": {
+    "O=c1[nH]cc(O)c(=O)[nH]1": 4
+  },
+  "component_stoichiometry_per_formula_unit": null,
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL QARWAI_opt_am88(-114.795)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 13,
+    "expanded_unit_cell_atoms": 52,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.39554377467455915,
+      1.069862785621,
+      1.054959653588119
+    ],
+    [
+      0.4681141257247079,
+      0.7803010061660003,
+      -1.064479888956931
+    ],
+    [
+      -0.5155506217483106,
+      -0.30445469835999983,
+      1.2207901458265793
+    ],
+    [
+      -0.13740593620432406,
+      -1.1396947341849997,
+      0.22615366702164552
+    ],
+    [
+      0.39815700502421825,
+      -0.6012190445109997,
+      -1.020104200171979
+    ],
+    [
+      0.09408180766994345,
+      1.690732838983,
+      -0.0722452427276652
+    ],
+    [
+      -0.22235536168812287,
+      -2.492707714205,
+      0.30941123875221055
+    ],
+    [
+      0.7548708182685031,
+      -1.3329214468899997,
+      -1.9496751953561549
+    ],
+    [
+      0.1957617489853849,
+      2.9039314376990006,
+      -0.20462255024777565
+    ],
+    [
+      -0.6761016474000128,
+      1.6979283497080004,
+      1.794622978602312
+    ],
+    [
+      -0.9165883347767403,
+      -0.6530740072679997,
+      2.160986320315545
+    ],
+    [
+      0.11846667355527929,
+      -2.811423080823998,
+      -0.5452500018653714
+    ],
+    [
+      0.8340934972640333,
+      1.1927383080660006,
+      -1.9105469247805291
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      0,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      4,
+      1,
+      1.5
+    ],
+    [
+      5,
+      1,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      3,
+      1.0
+    ],
+    [
+      7,
+      4,
+      2.0
+    ],
+    [
+      8,
+      5,
+      2.0
+    ],
+    [
+      9,
+      0,
+      1.0
+    ],
+    [
+      10,
+      2,
+      1.0
+    ],
+    [
+      11,
+      6,
+      1.0
+    ],
+    [
+      12,
+      1,
+      1.0
+    ]
+  ],
+  "rejected_candidates": [],
+  "source_formula_note": "Separated numeric tokens in the reported formula are ambiguous and were not concatenated; original formula is unchanged."
+}

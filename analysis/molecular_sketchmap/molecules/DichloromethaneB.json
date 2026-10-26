@@ -1,0 +1,152 @@
+{
+  "dataset_id": "DichloromethaneB",
+  "dataset_name": "Dichloromethane",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Dichloromethane/Dichloromethane.html",
+  "reported_formula": "C1 H2 Cl2",
+  "reported_formula_normalised": "CCl2H2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 324,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Dichloromethane/DichloromethaneB/1.DichloromethaneB_MOLPAKaniso.zip?raw=true",
+  "archive_git_blob_sha": "153049ca3b80c5dcc6145e8528432928130281dc",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 320,
+  "candidates_with_title_energy": 320,
+  "selected_filename": "1.DichloromethaneB_MOLPAKaniso/DCLMET_expt_dc47.res",
+  "selected_file_sha256": "49c1183e8a91255dc3897315d31bdae86152193b512598c6caba59b94d2a8b29",
+  "selected_title_energy": -43.206,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 8.0,
+  "selected_formula": "CH2Cl2",
+  "selected_smiles": "ClCCl",
+  "constitution_smiles": "ClCCl",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 5,
+  "selected_heavy_atoms": 3,
+  "selected_molar_mass_g_mol": 84.933,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "CH2Cl2": 8
+  },
+  "component_identities_per_cell": {
+    "ClCCl": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "CH2Cl2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL DCLMET_expt_dc47(-43.206) C2/c",
+    "lattice": 7,
+    "asymmetric_unit_atoms": 5,
+    "expanded_unit_cell_atoms": 40,
+    "warnings": [],
+    "source_atom_labels": [
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2",
+      "Cl1",
+      "Cl2",
+      "C1",
+      "H1",
+      "H2"
+    ]
+  },
+  "symbols": [
+    "Cl",
+    "Cl",
+    "C",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.4949055009534713,
+      0.668328043422,
+      0.3686197064916674
+    ],
+    [
+      1.4235436090514044,
+      0.7550118668169996,
+      0.47066560091524523
+    ],
+    [
+      0.0064225132685518105,
+      -0.12859058850299987,
+      -0.07582097483760286
+    ],
+    [
+      0.03279373440090971,
+      -1.1044032168130005,
+      0.39318097866892887
+    ],
+    [
+      0.03214564423261024,
+      -0.19034610492299997,
+      -1.156645311238239
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      4,
+      2,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

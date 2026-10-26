@@ -1,0 +1,257 @@
+{
+  "dataset_id": "OroticAcidA",
+  "dataset_name": "Orotic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/OroticAcid/OroticAcid.html",
+  "reported_formula": "C5 H4 N2 O4",
+  "reported_formula_normalised": "C5H4N2O4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 314,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/OroticAcid/OroticAcidA/1.OroticAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "0419a9077d4bef423a7a328200435bf5c47da74c",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 314,
+  "candidates_with_title_energy": 314,
+  "selected_filename": "1.OroticAcidA_MOLPAK/OROTIC_opt_ca40.res",
+  "selected_file_sha256": "74758a435a0bc5908961897b1c12b3c11bfa958a6f3c5ca7f24623348022cc38",
+  "selected_title_energy": -129.111,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C5H4N2O4",
+  "selected_smiles": "O=C(O)c1cc(=O)[nH]c(=O)[nH]1",
+  "constitution_smiles": "O=C(O)c1cc(=O)[nH]c(=O)[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 156.097,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H4N2O4": 2
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1cc(=O)[nH]c(=O)[nH]1": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H4N2O4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL OROTIC_opt_ca40(-129.111) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 30,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "O3",
+      "O4"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N",
+    "O",
+    "O",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.629841706172145,
+      0.34913979015497376,
+      -1.0411350271321311
+    ],
+    [
+      -0.34560670742270716,
+      1.831054279704942,
+      0.5424550165352433
+    ],
+    [
+      0.5839870917927374,
+      0.7241940975057359,
+      0.7420679218223585
+    ],
+    [
+      0.37864016509618814,
+      -0.44460331146112453,
+      0.08404949613251889
+    ],
+    [
+      1.247557057852731,
+      -1.6481380675888375,
+      0.19707174903797098
+    ],
+    [
+      -0.7838507466537137,
+      -1.518843767413136,
+      -1.2334545546948805
+    ],
+    [
+      -2.054774213566613,
+      2.271393162643312,
+      -0.5171840737099338
+    ],
+    [
+      1.4187465570091655,
+      0.8552087177509107,
+      1.4098390443243187
+    ],
+    [
+      2.783251973524383,
+      -2.295501860559887,
+      1.0397221971047066
+    ],
+    [
+      -0.6811093661555176,
+      -0.6254034262565386,
+      -0.7701434210358913
+    ],
+    [
+      -1.386566612650587,
+      1.529790943842493,
+      -0.35029256839945044
+    ],
+    [
+      -2.5712596799089904,
+      0.18304577326250193,
+      -1.8023614290755743
+    ],
+    [
+      -0.2690992626311637,
+      2.93359914632377,
+      1.0774865490430696
+    ],
+    [
+      1.026383395657204,
+      -2.6829767620129914,
+      -0.41435316062488137
+    ],
+    [
+      2.283542054229028,
+      -1.4619587158961238,
+      1.0362322606725627
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ],
+    [
+      9,
+      5,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.5
+    ],
+    [
+      9,
+      0,
+      1.5
+    ],
+    [
+      10,
+      6,
+      1.0
+    ],
+    [
+      10,
+      1,
+      1.5
+    ],
+    [
+      10,
+      0,
+      1.5
+    ],
+    [
+      11,
+      0,
+      2.0
+    ],
+    [
+      12,
+      1,
+      2.0
+    ],
+    [
+      13,
+      4,
+      2.0
+    ],
+    [
+      14,
+      8,
+      1.0
+    ],
+    [
+      14,
+      4,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

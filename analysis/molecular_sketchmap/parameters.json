@@ -1,0 +1,92 @@
+{
+  "descriptor": {
+    "name": "DScribe SOAP",
+    "species": [
+      "H",
+      "C",
+      "N",
+      "O",
+      "F",
+      "Si",
+      "S",
+      "Cl",
+      "Cu",
+      "Br",
+      "I"
+    ],
+    "periodic": false,
+    "r_cut": 4.5,
+    "n_max": 6,
+    "l_max": 4,
+    "sigma": 0.4,
+    "average": "outer",
+    "rbf": "gto",
+    "dtype": "float64",
+    "normalization": "L2 per molecule after outer average; no per-feature standardization",
+    "kernel": "K_ij=(x_i dot x_j)^2",
+    "distance": "sqrt(max(0,2-2*K_ij))",
+    "centres": "all atoms including hydrogen",
+    "molecular_size": "No explicit atom-count or mass feature; average local environments, including composition and geometry inside 4.5 A; mass is a display variable only",
+    "chirality": "SOAP is reflection invariant; enantiomers cannot be separated by these descriptors",
+    "features": 11055
+  },
+  "sketchmap": {
+    "implementation": "skmatter.decomposition.SketchMap",
+    "dissimilarity": "precomputed",
+    "n_components": 2,
+    "a_high": 1.0,
+    "b_high": 4.0,
+    "a_low": 1.0,
+    "b_low": 4.0,
+    "mds_opt_steps": 100,
+    "max_iter": 2500,
+    "global_opt_steps": 5,
+    "global_optimizer": "gradient",
+    "mixing_schedule": "auto",
+    "mixing_ratio": 0.0,
+    "weights": "equal per dataset; archive counts never enter descriptors or optimization",
+    "initialization_seeds": [
+      0,
+      17,
+      41,
+      83,
+      137
+    ],
+    "initialization": "Classical MDS; seed 0 unperturbed, other seeds add Gaussian noise with SD 0.25 times coordinate RMS",
+    "sigma_rule": "0.8 times mode of positive pair distances, histogram bins=clip(Freedman-Diaconis count,30,80)",
+    "sigma_sensitivity_factors": [
+      0.8,
+      1.2
+    ],
+    "sigma": 0.49679834824933117,
+    "distance_histogram_mode": 0.6209979353116639,
+    "distance_histogram_bins": 60
+  },
+  "versions": {
+    "ase": "3.29.0",
+    "dscribe": "2.1.2",
+    "skmatter": "0.4.1",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.8.0",
+    "rdkit": "2026.9.1",
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "fonttools": "4.67.0",
+    "pypdf": "6.21.2",
+    "Pillow": "13.0.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "documentation": {
+    "sketchmap": "https://scikit-matter.readthedocs.io/en/stable/references/decomposition.html#sketchmap",
+    "soap": "https://singroup.github.io/dscribe/latest/tutorials/descriptors/soap.html",
+    "molecular_sketchmap_paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5289135/",
+    "shelx": "https://shelx.uni-goettingen.de/shelxl_html.php"
+  },
+  "validation": {
+    "invariance_max_abs_error": 7.077671781985373e-16,
+    "number_of_datasets": 308,
+    "source_extraction_csv_sha256": "0994e2b502a2e4d64ff3bb0296fe2124959d5b11d35d56d015efd5d3bdc99fee",
+    "sketchmap_implementation_sha256": "10384510712e4ab460505089a94364b9c4aa9d70fad969561b6e11659b694a0f"
+  }
+}

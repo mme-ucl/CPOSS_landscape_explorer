@@ -1,0 +1,58 @@
+5aminouracilA
+     RDKit          3D
+
+ 14 14  0  0  0  0  0  0  0  0999 V2000
+   -1.1030   -1.2191    0.2875 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2744    0.1093    1.5600 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6421    1.2096   -1.9045 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0281   -1.5058    2.5705 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6337    1.7035    0.6214 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6577   -0.9260    1.5559 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7789    0.8261    0.4805 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2223    0.4375   -0.8187 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7030   -0.5547   -0.8650 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7872   -1.9604    0.2386 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6423    0.3537    2.4682 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1672   -0.8832   -1.7831 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4739    1.7251   -1.6548 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7786    0.6845   -2.7565 H   0  0  0  0  0  0  0  0  0  0  0  0
+  6  4  2  0
+  6  2  1  0
+  6  1  1  0
+  7  5  2  0
+  7  2  1  0
+  8  7  1  0
+  8  3  1  0
+  9  8  2  0
+  9  1  1  0
+ 10  1  1  0
+ 11  2  1  0
+ 12  9  1  0
+ 13  3  1  0
+ 14  3  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+5aminouracilA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.Uracils/5aminouracil/5aminouracilA/1.5aminouracilA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.5aminouracilA_MOLPAK/JAVRIM_opt_am91.res
+
+>  <reported_formula>  (1) 
+C4 H5 N3 O2
+
+>  <selected_formula>  (1) 
+C4H5N3O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+114
+
+$$$$

@@ -1,0 +1,39 @@
+ChloroformA
+     RDKit          3D
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+   -0.1114   -0.0074   -0.0250 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1565   -0.0973   -0.2942 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7251    0.8530   -1.3143 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0202    0.8776    1.4919 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    0.5631   -1.6260    0.1416 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  1  1  0
+  4  1  1  0
+  5  1  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+ChloroformA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Chloroform/ChloroformA/1.ChloroformA_MOLPAK_aniso.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.ChloroformA_MOLPAK_aniso/CLFORM_expt_cb18.res
+
+>  <reported_formula>  (1) 
+C1 H1 Cl3
+
+>  <selected_formula>  (1) 
+CHCl3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+204
+
+$$$$

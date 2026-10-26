@@ -1,0 +1,227 @@
+{
+  "dataset_id": "BTVIIIA",
+  "dataset_name": "Hydantoin (Blind Test VIII)",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/VIII/BTVIII.html",
+  "reported_formula": "C3 H4 N2 O2",
+  "reported_formula_normalised": "C3H4N2O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 49,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/VIII/BTVIIIA/1.BTVIIIA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "258170c56d2547205234a164558d24a541fae79a",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 45,
+  "candidates_with_title_energy": 45,
+  "selected_filename": "1.BTVIIIA_MOLPAK/PAHYON_PLANAR_am10.res",
+  "selected_file_sha256": "58a28c02e09ba75e56c63637bcb37d4f5b0f5a49390d36b7319b000b2eedf2fb",
+  "selected_title_energy": -97.99,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H4N2O2",
+  "selected_smiles": "O=C1CNC(=O)N1",
+  "constitution_smiles": "O=C1CNC(=O)N1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 11,
+  "selected_heavy_atoms": 7,
+  "selected_molar_mass_g_mol": 100.077,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H4N2O2": 4
+  },
+  "component_identities_per_cell": {
+    "O=C1CNC(=O)N1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H4N2O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PAHYON_PLANAR_am10(-97.990) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 11,
+    "expanded_unit_cell_atoms": 44,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.7071989350141581,
+      0.12059093130136378,
+      -0.9025180361745218
+    ],
+    [
+      0.3681237828528747,
+      -0.9898887175236364,
+      0.670011075083635
+    ],
+    [
+      -0.528834363706213,
+      -1.1452020038486366,
+      -0.40854058545337235
+    ],
+    [
+      0.7649967824496007,
+      0.3131431900013635,
+      0.880555173260416
+    ],
+    [
+      0.042148019642930024,
+      1.1306701101913634,
+      -0.19165193143295323
+    ],
+    [
+      -1.3141634791522252,
+      0.2809958740213636,
+      -1.6868016981393836
+    ],
+    [
+      0.6807838372297161,
+      -1.771208941008637,
+      1.2242386910523724
+    ],
+    [
+      -0.5907341509176711,
+      1.8790903624763637,
+      0.2881429112414242
+    ],
+    [
+      0.777874291665174,
+      1.6408842653263638,
+      -0.8158932302848223
+    ],
+    [
+      -1.0205134760340897,
+      -2.192055911903636,
+      -0.7919272569387168
+    ],
+    [
+      1.5275176909840589,
+      0.7329808409663636,
+      1.734384887785919
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      1,
+      1.0
+    ],
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      0,
+      1.0
+    ],
+    [
+      6,
+      1,
+      1.0
+    ],
+    [
+      7,
+      4,
+      1.0
+    ],
+    [
+      8,
+      4,
+      1.0
+    ],
+    [
+      9,
+      2,
+      2.0
+    ],
+    [
+      10,
+      3,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,218 @@
+{
+  "dataset_id": "CyanuricAcidA",
+  "dataset_name": "Cyanuric Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/CyanuricAcid/CyanuricAcid.html",
+  "reported_formula": "C3 H3 N3 O3",
+  "reported_formula_normalised": "C3H3N3O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 18,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/CyanuricAcid/CyanuricAcidA/1.CyanuricAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "44b17c21a06b0aaa77758347bac65461f2e8dd95",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 13,
+  "candidates_with_title_energy": 13,
+  "selected_filename": "1.CyanuricAcidA_MOLPAK/CYURAC_OPT_de2b.res",
+  "selected_file_sha256": "f26dac1739a462bbf93677656a239dd87f7051a52b86b81d9e5dd147fb143bd8",
+  "selected_title_energy": -216.958,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C3H3N3O3",
+  "selected_smiles": "O=c1[nH]c(=O)[nH]c(=O)[nH]1",
+  "constitution_smiles": "O=c1[nH]c(=O)[nH]c(=O)[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 12,
+  "selected_heavy_atoms": 9,
+  "selected_molar_mass_g_mol": 129.075,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H3N3O3": 2
+  },
+  "component_identities_per_cell": {
+    "O=c1[nH]c(=O)[nH]c(=O)[nH]1": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H3N3O3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL CYURAC_OPT_de2b(-216.958) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 12,
+    "expanded_unit_cell_atoms": 24,
+    "warnings": [],
+    "source_atom_labels": [
+      "C13",
+      "C14",
+      "C15",
+      "H16",
+      "H17",
+      "H18",
+      "N19",
+      "N20",
+      "N21",
+      "O22",
+      "O23",
+      "O24",
+      "C13",
+      "C14",
+      "C15",
+      "H16",
+      "H17",
+      "H18",
+      "N19",
+      "N20",
+      "N21",
+      "O22",
+      "O23",
+      "O24"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N",
+    "N",
+    "O",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.2544773261771323,
+      -0.5625959028211511,
+      0.41986340115780063
+    ],
+    [
+      1.0216959879009726,
+      0.28307702841305904,
+      0.9711344316855994
+    ],
+    [
+      0.23300877896557393,
+      0.27933914433219886,
+      -1.390661637305186
+    ],
+    [
+      2.046860134148718,
+      0.9177870877151983,
+      -0.6847406591988452
+    ],
+    [
+      -0.3797782686450082,
+      -0.45639051084006255,
+      2.269387122053637
+    ],
+    [
+      -1.6671338498646613,
+      -0.4615309807187229,
+      -1.584579223747149
+    ],
+    [
+      1.1654052662005823,
+      0.5226470657183029,
+      -0.3900540634361398
+    ],
+    [
+      -0.2154533881835916,
+      -0.2615604286915785,
+      1.291820149070205
+    ],
+    [
+      -0.9500909246182501,
+      -0.26109653453908876,
+      -0.9017884986699465
+    ],
+    [
+      -2.317554858827781,
+      -1.0391578924866485,
+      0.7754238023731612
+    ],
+    [
+      1.8864416839246387,
+      0.5254501435528347,
+      1.7942307613775372
+    ],
+    [
+      0.43107676517593485,
+      0.5140317803656647,
+      -2.5700355853606736
+    ]
+  ],
+  "bonds": [
+    [
+      6,
+      3,
+      1.0
+    ],
+    [
+      6,
+      2,
+      1.5
+    ],
+    [
+      6,
+      1,
+      1.5
+    ],
+    [
+      7,
+      4,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.5
+    ],
+    [
+      7,
+      0,
+      1.5
+    ],
+    [
+      8,
+      5,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.5
+    ],
+    [
+      8,
+      0,
+      1.5
+    ],
+    [
+      9,
+      0,
+      2.0
+    ],
+    [
+      10,
+      1,
+      2.0
+    ],
+    [
+      11,
+      2,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

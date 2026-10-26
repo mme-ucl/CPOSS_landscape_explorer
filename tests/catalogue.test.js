@@ -99,3 +99,70 @@ test('resource selection is case-specific and clears for unmapped/local data', (
     assert.match(single[0].detail, /has not been checked/);
     assert.equal(tools.resources({ models: [{ id: '2', downloads: ['javascript:alert(1)', 'https://example.org/page.html'] }] }).archives.length, 0);
 });
+
+test('formula metadata is source-backed per case and absent for unmapped datasets', () => {
+    assert.equal(datasets.filter(item => item.formulas.length).length, report.formulaDatasetCount);
+    assert.deepEqual(datasets.filter(item => !item.formulas.length).map(item => item.filename), report.datasetsWithoutFormula);
+    for (const item of datasets) {
+        assert.deepEqual(item.formulas, [...new Set(item.cases.map(page => page.formula).filter(Boolean))]);
+        if (!item.cases.length) assert.deepEqual(item.formulas, []);
+    }
+    assert.deepEqual(datasets.find(item => item.id === 'AspirinA').formulas, ['C9 H8 O4']);
+});
+
+test('plain, spaced, lowercase and subscript formula queries return identical complete matches', () => {
+    const expected = tools.filter(datasets, 'C9H8O4').map(item => item.id);
+    assert.ok(expected.includes('AspirinA'));
+    for (const query of ['C9 H8 O4', 'c9h8o4', 'C₉H₈O₄', '\t c₉ h₈ o₄ \n']) {
+        assert.deepEqual(tools.filter(datasets, query).map(item => item.id), expected, query);
+    }
+});
+
+function formulaEntry(id, formulas, collections = []) {
+    return { id, filename: id + '.json', label: id, molecule: '', aliases: [], codes: [], collections, ...(formulas ? { formulas } : {}) };
+}
+
+test('one formula returns every search and molecule, respecting the collection filter', () => {
+    const input = [formulaEntry('AlphaA', ['C9 H8 O4'], ['BlindTest']), formulaEntry('AlphaB', ['C9 H8 O4']), formulaEntry('DifferentA', ['C9 H8 O4'], ['BlindTest']), formulaEntry('UnmappedA')];
+    assert.deepEqual(tools.filter(input, 'C₉H₈O₄').map(item => item.id), ['AlphaA', 'AlphaB', 'DifferentA']);
+    assert.deepEqual(tools.filter(input, 'C9 H8 O4', 'BlindTest').map(item => item.id), ['AlphaA', 'DifferentA']);
+    assert.deepEqual(tools.filter(input, 'C9H8O4', 'CPOSS209'), []);
+    assert.equal(tools.filter(input, 'UnmappedA')[0].id, 'UnmappedA');
+    const carbamazepine = datasets.find(item => item.id === 'CarbamazepineA');
+    const matches = tools.filter(datasets, carbamazepine.formulas[0], 'CPOSS209');
+    assert.ok(matches.some(item => item.id === 'CarbamazepineA'));
+    assert.ok(matches.some(item => item.id === 'CarbamazepineB'));
+});
+
+test('formula matching preserves counts, components, charges, coefficients, parentheses and element order', () => {
+    const input = [
+        formulaEntry('Plain', ['C9 H8 O4']),
+        formulaEntry('DifferentCount', ['C9 H8 O40']),
+        formulaEntry('Hydrate', ['C9 H8 O4 . H2 O']),
+        formulaEntry('Salt', ['C4 H7 N2 O2 S1+ . Cl- . H2 O']),
+        formulaEntry('Coefficient', ['2(C7 H6 O4) - H2 O1']),
+        formulaEntry('Reordered', ['H8 C9 O4']),
+    ];
+    const ids = query => tools.filter(input, query).map(item => item.id);
+    assert.deepEqual(ids('C9H8O4'), ['Plain']);
+    assert.deepEqual(ids('C9H8O40'), ['DifferentCount']);
+    assert.deepEqual(ids('c9h8o4.h2o'), ['Hydrate']);
+    assert.deepEqual(ids('C9H8O4H2O'), []);
+    assert.deepEqual(ids('C4H7N2O2S1+.Cl-.H2O'), ['Salt']);
+    assert.deepEqual(ids('C4H7N2O2S1.Cl.H2O'), []);
+    assert.deepEqual(ids('2(C7H6O4)-H2O1'), ['Coefficient']);
+    assert.deepEqual(ids('C7H6O4-2(H2O1)'), []);
+    assert.deepEqual(ids('H8C9O4'), ['Reordered']);
+    assert.deepEqual(ids('C9H8O'), []);
+    assert.deepEqual(ids('C9H8O4.H2O1'), []);
+});
+
+test('formula matching does not alter tokenized name, REFCODE or dataset-code search', () => {
+    const input = [formulaEntry('AlphaA', ['C9 H8 O4']), formulaEntry('AlphaB')];
+    input[0].label = 'Alpha — Search A'; input[0].aliases = ['Résumé molecule']; input[0].codes = ['ABCDEF01'];
+    for (const query of ['resume molecule', 'ABCDEF01', 'Alpha A', 'AlphaA']) {
+        assert.ok(tools.filter(input, query).some(item => item.id === 'AlphaA'), query);
+    }
+    assert.equal(tools.filter(input, 'no such molecule').length, 0);
+    assert.equal(tools.filter(input, '').length, 2);
+});

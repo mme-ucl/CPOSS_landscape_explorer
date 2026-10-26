@@ -1,0 +1,275 @@
+{
+  "dataset_id": "UricAcidA",
+  "dataset_name": "Uric Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcid.html",
+  "reported_formula": "C5 H4 N4 O3",
+  "reported_formula_normalised": "C5H4N4O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 51,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/UricAcid/UricAcidA/1.UricAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "63c5f76c89e86d58195c8f454526c311e22875f7",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 47,
+  "candidates_with_title_energy": 47,
+  "selected_filename": "1.UricAcidA_MOLPAK+DFT/URICAC_EXPT_ca44.res",
+  "selected_file_sha256": "c21056a876d1788bca37e91131323985430561cdc8972f956f96a8f1b886cce2",
+  "selected_title_energy": -180.563,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C5H4N4O3",
+  "selected_smiles": "O=c1[nH]c(=O)c2[nH]c(=O)[nH]c2[nH]1",
+  "constitution_smiles": "O=c1[nH]c(=O)c2[nH]c(=O)[nH]c2[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 16,
+  "selected_heavy_atoms": 12,
+  "selected_molar_mass_g_mol": 168.112,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H4N4O3": 2
+  },
+  "component_identities_per_cell": {
+    "O=c1[nH]c(=O)c2[nH]c(=O)[nH]c2[nH]1": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H4N4O3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL URICAC_EXPT_ca44(-180.563) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 16,
+    "expanded_unit_cell_atoms": 32,
+    "warnings": [],
+    "source_atom_labels": [
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "NIT4",
+      "OXY1",
+      "OXY2",
+      "OXY3"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N",
+    "N",
+    "N",
+    "O",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.5856843516689114,
+      -1.314738979487731,
+      -1.6579526029404867
+    ],
+    [
+      0.684805690994298,
+      0.16925211301961873,
+      0.1646056470406192
+    ],
+    [
+      -0.6648352014896342,
+      0.16671841892093475,
+      0.3328566638146513
+    ],
+    [
+      -1.502677025813824,
+      -0.6131425657929874,
+      -0.4924044024789853
+    ],
+    [
+      0.1945465929155913,
+      1.5468951833714284,
+      1.8489507562160568
+    ],
+    [
+      -1.3499691105684057,
+      -1.8968497630965526,
+      -2.0304842625620925
+    ],
+    [
+      2.271489055734637,
+      -0.3098821015167621,
+      -1.0963268327631248
+    ],
+    [
+      -1.9245716084811673,
+      1.1148654358359948,
+      1.6871043086573168
+    ],
+    [
+      2.1891691064974723,
+      1.2365253795579978,
+      1.216708038009637
+    ],
+    [
+      -0.7614480729301012,
+      -1.3402544556312805,
+      -1.4274675569784114
+    ],
+    [
+      1.332995895181645,
+      -0.5330662938107595,
+      -0.7972146140688954
+    ],
+    [
+      -0.9698198363903809,
+      1.040127266520793,
+      1.3663648961488861
+    ],
+    [
+      1.2116906942263583,
+      1.0154738638071583,
+      1.0903388333747714
+    ],
+    [
+      1.1108314205910665,
+      -1.943880502461032,
+      -2.5664513922922536
+    ],
+    [
+      -2.7327996448416205,
+      -0.680701874160679,
+      -0.43144332119876605
+    ],
+    [
+      0.32490769270515374,
+      2.3426588749238677,
+      2.792815842021082
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      9,
+      5,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.5
+    ],
+    [
+      9,
+      0,
+      1.5
+    ],
+    [
+      10,
+      6,
+      1.0
+    ],
+    [
+      10,
+      1,
+      1.5
+    ],
+    [
+      10,
+      0,
+      1.5
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      11,
+      4,
+      1.5
+    ],
+    [
+      11,
+      2,
+      1.5
+    ],
+    [
+      12,
+      8,
+      1.0
+    ],
+    [
+      12,
+      4,
+      1.5
+    ],
+    [
+      12,
+      1,
+      1.5
+    ],
+    [
+      13,
+      0,
+      2.0
+    ],
+    [
+      14,
+      3,
+      2.0
+    ],
+    [
+      15,
+      4,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

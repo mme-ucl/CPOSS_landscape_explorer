@@ -1,0 +1,109 @@
+{
+  "renderer": "Actual open-source PyMOL CPU ray tracer",
+  "pymol_version": [
+    "3.1.0",
+    3.0,
+    3000000,
+    1774376178,
+    "",
+    0
+  ],
+  "settings": {
+    "sphere_scale": 0.28,
+    "hydrogen_sphere_scale": 0.23,
+    "stick_radius": 0.12,
+    "valence": 0,
+    "orthoscopic": 1,
+    "antialias": 2,
+    "ambient": 0.32,
+    "direct": 0.68,
+    "specular": 0.35,
+    "shininess": 35,
+    "ray_opaque_background": 0,
+    "depth_cue": 0,
+    "ray_trace_fog": 0,
+    "width": 1800,
+    "height": 1200,
+    "dpi": 600,
+    "view_rotation_degrees": {
+      "x": 17,
+      "y": -12
+    },
+    "camera": "PyMOL orient followed by fixed rotations and zoom; no atomic coordinate changes"
+  },
+  "geometry": "Same extracted representatives as the embedding; experimental references identify compounds, not selected predicted crystal packings",
+  "renders": [
+    {
+      "dataset_id": "UreaA",
+      "sdf_sha256": "f784c5ddc3f643d82fa42779b540f997e1bd175beadefc0a97dc4e9a48ce1c79",
+      "render_sha256": "67b27cda3a6928f7f38b5d8a2b9ac9718dc3f4d5366b08e7a6e7442468d2a0c3",
+      "atom_count": 8,
+      "coordinate_max_abs_error_angstrom": 4.94723486110793e-05,
+      "render": "figures/callouts/UreaA.png",
+      "pymol_session": "figures/callouts/UreaA.pse"
+    },
+    {
+      "dataset_id": "SuccinicAcidA",
+      "sdf_sha256": "c3046be2cc798e159e9b270fcdeef845d913dc767c3ee2412ffeb9a58cbcf432",
+      "render_sha256": "76a7b10d15e45a12de37f7909399c5072cb1599c2f100c505de58dfc97f97587",
+      "atom_count": 14,
+      "coordinate_max_abs_error_angstrom": 4.7912658519555507e-05,
+      "render": "figures/callouts/SuccinicAcidA.png",
+      "pymol_session": "figures/callouts/SuccinicAcidA.pse"
+    },
+    {
+      "dataset_id": "AspirinA",
+      "sdf_sha256": "a7006a939fdb5a390b95c4d7bf15ea47401f3f0140323530e2965fe36ab5fa08",
+      "render_sha256": "07e4e897a5c8bd51f36c3212bab0e9beba1ca7aadd56cc9ae2dc37908011b4e7",
+      "atom_count": 21,
+      "coordinate_max_abs_error_angstrom": 4.746433561697572e-05,
+      "render": "figures/callouts/AspirinA.png",
+      "pymol_session": "figures/callouts/AspirinA.pse"
+    },
+    {
+      "dataset_id": "ParacetamolA",
+      "sdf_sha256": "1bc43c1453e9236fef39dfa70be183ac756515037c32c849d3d00a909eecdfad",
+      "render_sha256": "314ea7a1f831a4a97cc8a8350eabd0f95dfad51ad7e46bde07a9d59030763a24",
+      "atom_count": 20,
+      "coordinate_max_abs_error_angstrom": 4.958033585467092e-05,
+      "render": "figures/callouts/ParacetamolA.png",
+      "pymol_session": "figures/callouts/ParacetamolA.pse"
+    },
+    {
+      "dataset_id": "CaffeineB",
+      "sdf_sha256": "8479ff7255e8738182fd7792704ff0c7bca86f54251921f0faf7896dbebfcb0a",
+      "render_sha256": "f548458f051628f4db2d03682480801f53d2f44bf1a9358f54bdc8ab7033e493",
+      "atom_count": 24,
+      "coordinate_max_abs_error_angstrom": 5.00023426992513e-05,
+      "render": "figures/callouts/CaffeineB.png",
+      "pymol_session": "figures/callouts/CaffeineB.pse"
+    },
+    {
+      "dataset_id": "CarbamazepineA",
+      "sdf_sha256": "38258dd101be307726fe2bee23f2b167889630d28987298a084564cbbe830f4a",
+      "render_sha256": "6a6af531f3df056f0df0e0b9d836212bbd3d2efbac8eedfbf5e301b172f63514",
+      "atom_count": 30,
+      "coordinate_max_abs_error_angstrom": 4.8429841008612584e-05,
+      "render": "figures/callouts/CarbamazepineA.png",
+      "pymol_session": "figures/callouts/CarbamazepineA.pse"
+    },
+    {
+      "dataset_id": "NaproxenA",
+      "sdf_sha256": "60a24f1173578f5ae2fe49a8c1eb99050ce0c17db7afbcfb0dde0831b0718185",
+      "render_sha256": "6fb78b0aa40ee5ecd5fd9f03f2de2b09cff54eb41c27ee878d0fc55040740342",
+      "atom_count": 31,
+      "coordinate_max_abs_error_angstrom": 4.9691037412813444e-05,
+      "render": "figures/callouts/NaproxenA.png",
+      "pymol_session": "figures/callouts/NaproxenA.pse"
+    },
+    {
+      "dataset_id": "ChlorothalonilA",
+      "sdf_sha256": "f2c0cac24d48a1b43bbb80be9fc342083df93f3780aa6e846e71fbc0dec70ec1",
+      "render_sha256": "48bb325e494cc75b62ca7dfdaa3c1b8cf9f92d79926bff5f99a1d4e4672a59b7",
+      "atom_count": 14,
+      "coordinate_max_abs_error_angstrom": 4.8973812424968344e-05,
+      "render": "figures/callouts/ChlorothalonilA.png",
+      "pymol_session": "figures/callouts/ChlorothalonilA.pse"
+    }
+  ]
+}

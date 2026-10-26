@@ -1,0 +1,64 @@
+GentisicAcidMHA
+     RDKit          3D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+    0.2386   -0.5818   -0.1085 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7286   -0.6579    0.9152 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3829    0.5197    1.3060 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0814    1.7257    0.7075 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1194    1.8034   -0.3122 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5328    0.6537   -0.7146 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9060   -1.8108   -0.5245 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0549   -1.7984    1.5305 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1134    3.0310   -0.8509 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8054   -1.6609   -1.5062 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6882   -2.9174   -0.0373 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5174   -2.5094    1.1144 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8558    2.9704   -1.4601 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1763   -2.5418   -1.6617 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1263    0.4547    2.0931 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5845    2.6377    1.0130 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2789    0.6821   -1.5037 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  2  1  0
+  9  5  1  0
+ 10  7  1  0
+ 11  7  2  0
+ 12  8  1  0
+ 13  9  1  0
+ 14 10  1  0
+ 15  3  1  0
+ 16  4  1  0
+ 17  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+GentisicAcidMHA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidMH/GentisicAcidMHA/1.GentisicAcidMHA_PCM.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.GentisicAcidMHA_PCM/UCLDBD_dfA891_A891.res
+
+>  <reported_formula>  (1) 
+C7 H6 O4 - H2 O1
+
+>  <selected_formula>  (1) 
+C7H6O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+29
+
+$$$$

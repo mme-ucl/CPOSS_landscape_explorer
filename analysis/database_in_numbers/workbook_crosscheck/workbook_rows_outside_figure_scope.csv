@@ -1,0 +1,40 @@
+excel_row,refcode,study_id,github_raw,upload_status,structure_count,programs_raw
+53,BZPHAN,2,,No,453,
+69,CBMZPN,11,Not stored,No,29,
+73,CEBGOF,11,,No,23,
+83,CLFORM,0,,No,381,
+134,EXEVUY,1,Not stored,No,525,
+172,IBPRAC,0,Not stored,No,71,
+204,KEMDOW,3,Guanine_ABC2,Yes,109,"Study_ID=0/1/2,"
+207,KOBFUD,1,Not stored,No,18,
+218,LOFKIB,0,,No,90,
+245,NENXAF,0,,No,114,
+257,NLTRXN,0,,No,380,
+258,NMACEP,0,,No,40,"MOLPAK, DMAREL (4.1.1)"
+273,OBEQUJ,0,Not stored,No,291,
+274,OBEQUJ,1,Not stored,No,227,
+275,OBEQUJ,2,Not stored,No,315,
+284,OTOLIC,10,,No,780,
+287,PBUPEA,10,,No,54,
+289,PEAPEA,10,,No,50,
+294,PHGLOL,12,Phloroglucinol_A2a,Yes,422,"Study_ID=20, CrystOpt (2.0), DMACRYS (2.3.1.1)"
+297,PHGLOL,0,Not stored,No,67,MOLPAK
+298,PHGLOL,10,Not stored,No,9,"MOLPAK, dmaflex2, DMACRYS (1.1.1)"
+300,PMACEP,0,,No,48,
+358,SUCACB,42,Not stored,Yes,732,"Study_ID=12, DMACRYS (2.2.0.1), BZ-averaged props"
+359,SUCACB,43,Not stored,Yes,808,"Study_ID=13, DMACRYS (2.2.0.1), BZ-averaged props"
+371,TFRLPA,0,,No,4057,
+372,TFRLPA,10,,No,20,
+373,TFRLPB,0,,No,3483,
+374,TFRLPB,10,,No,32,
+375,TFRLPD,0,,No,2423,
+376,TFRLPD,10,,No,20,
+435,UNOGIN,31,Not stored,No,1027,
+450,WICZUF,11,,No,34,
+451,WICZUF,12,,No,34,
+456,WIMBAV,0,,No,2168,
+457,WIMBAV,Study_ID=20 deleted and reused,,No,8765,
+503,XYANAC,20,Not to be archived,Yes,7253,"Flexible CrystalPredictor (1.6), DMACRYS (2.0.4)"
+538,ZZZEEU,0,,No,1226,
+539,ZZZEEU,1,,No,5960,
+540,ZZZEEU,11,,No,35,

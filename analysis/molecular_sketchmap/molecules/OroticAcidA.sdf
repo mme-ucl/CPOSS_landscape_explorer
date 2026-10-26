@@ -1,0 +1,60 @@
+OroticAcidA
+     RDKit          3D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+   -1.6298    0.3491   -1.0411 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3456    1.8311    0.5425 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5840    0.7242    0.7421 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3786   -0.4446    0.0840 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2476   -1.6481    0.1971 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7839   -1.5188   -1.2335 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0548    2.2714   -0.5172 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4187    0.8552    1.4098 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.7833   -2.2955    1.0397 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6811   -0.6254   -0.7701 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3866    1.5298   -0.3503 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.5713    0.1830   -1.8024 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2691    2.9336    1.0775 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0264   -2.6830   -0.4144 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.2835   -1.4620    1.0362 O   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  8  3  1  0
+ 10  6  1  0
+ 10  4  1  0
+ 10  1  1  0
+ 11  7  1  0
+ 11  2  1  0
+ 11  1  1  0
+ 12  1  2  0
+ 13  2  2  0
+ 14  5  2  0
+ 15  9  1  0
+ 15  5  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+OroticAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/OroticAcid/OroticAcidA/1.OroticAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.OroticAcidA_MOLPAK/OROTIC_opt_ca40.res
+
+>  <reported_formula>  (1) 
+C5 H4 N2 O4
+
+>  <selected_formula>  (1) 
+C5H4N2O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+314
+
+$$$$

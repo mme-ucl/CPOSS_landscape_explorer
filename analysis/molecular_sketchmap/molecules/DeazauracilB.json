@@ -1,0 +1,257 @@
+{
+  "dataset_id": "DeazauracilB",
+  "dataset_name": "Deazauracil",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Deazauracil/Deazauracil.html",
+  "reported_formula": "C5 H5 N1 O2",
+  "reported_formula_normalised": "C5H5NO2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 19,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Deazauracil/DeazauracilB/1.DeazauracilB_MOLPAK-Taut2.zip?raw=true",
+  "archive_git_blob_sha": "a48be22c012c4908ff723066747423897c8cb6d6",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 19,
+  "candidates_with_title_energy": 19,
+  "selected_filename": "1.DeazauracilB_MOLPAK-Taut2/CAXKOB_Taut24hh_am23.res",
+  "selected_file_sha256": "b318177e648796d059e56997e26e6670d601a336a28ccd35b759bbda205be679",
+  "selected_title_energy": -102.316,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C5H5NO2",
+  "selected_smiles": "Oc1ccnc(O)c1",
+  "constitution_smiles": "Oc1ccnc(O)c1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 13,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 111.1,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H5NO2": 4
+  },
+  "component_identities_per_cell": {
+    "Oc1ccnc(O)c1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H5NO2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL CAXKOB_Taut24hh_am23(-102.316) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 13,
+    "expanded_unit_cell_atoms": 52,
+    "warnings": [],
+    "source_atom_labels": [
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "O",
+    "O",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.3315513845242353,
+      0.3556177810322301,
+      2.345529213057885
+    ],
+    [
+      1.7133602550927547,
+      -1.72614176101177,
+      -0.5646182749634412
+    ],
+    [
+      -0.7424007186024446,
+      0.2859072772742306,
+      1.1381881697129812
+    ],
+    [
+      -0.5289167691302086,
+      1.1200968022892304,
+      -0.9611462850485419
+    ],
+    [
+      0.4231263625138961,
+      0.1774317577862301,
+      -1.3071581915032158
+    ],
+    [
+      0.7946722409743279,
+      -0.7622299715907701,
+      -0.3362579576769309
+    ],
+    [
+      0.20288707730304179,
+      -0.7132270952697697,
+      0.9171504927428616
+    ],
+    [
+      -1.1132586346913458,
+      1.1889750260042304,
+      0.23673292991221673
+    ],
+    [
+      -0.843901622670824,
+      1.8659933664362298,
+      -1.6863788253056406
+    ],
+    [
+      0.863492340951252,
+      0.17160920635223054,
+      -2.299018645570444
+    ],
+    [
+      2.0393787784246893,
+      -1.64443121902177,
+      -1.465238865063906
+    ],
+    [
+      0.4648867230211424,
+      -1.42210708256077,
+      1.6912023038018327
+    ],
+    [
+      -1.9417746486620482,
+      1.1025059122802303,
+      2.291013935904343
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      1,
+      1.0
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      6,
+      2,
+      1.5
+    ],
+    [
+      7,
+      3,
+      1.5
+    ],
+    [
+      7,
+      2,
+      1.5
+    ],
+    [
+      8,
+      3,
+      1.0
+    ],
+    [
+      9,
+      4,
+      1.0
+    ],
+    [
+      10,
+      1,
+      1.0
+    ],
+    [
+      11,
+      6,
+      1.0
+    ],
+    [
+      12,
+      0,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

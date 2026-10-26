@@ -1,0 +1,71 @@
+4dimethylaminopyridiniummaleateA
+     RDKit          3D
+
+ 20 20  0  0  0  0  0  0  0  0999 V2000
+   -0.9379   -2.0294    0.8670 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0221   -2.0406   -0.7357 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0008    0.0417   -0.0012 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9231    0.7870   -0.7943 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8714    2.1564   -0.8193 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9608    2.1670    0.6798 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9559    0.7978    0.7431 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7456   -3.0905    0.7619 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8301   -1.7594    1.9171 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9570   -1.8270    0.5390 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8746   -3.0997   -0.5611 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9034   -1.8446   -1.8009 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0316   -1.7747   -0.4240 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6786    0.3003   -1.3889 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5512    2.7567   -1.4054 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0794    3.8364   -0.1238 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6658    2.7750    1.2269 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6916    0.3195    1.3688 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0270   -1.2969    0.0420 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0584    2.8251   -0.0912 N   0  0  0  0  0  0  0  0  0  0  0  0
+  4  3  2  0
+  5  4  1  0
+  7  6  2  0
+  7  3  1  0
+  8  1  1  0
+  9  1  1  0
+ 10  1  1  0
+ 11  2  1  0
+ 12  2  1  0
+ 13  2  1  0
+ 14  4  1  0
+ 15  5  1  0
+ 17  6  1  0
+ 18  7  1  0
+ 19  3  1  0
+ 19  2  1  0
+ 19  1  1  0
+ 20 16  1  0
+ 20  6  1  0
+ 20  5  2  0
+M  CHG  1  20   1
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+4dimethylaminopyridiniummaleateA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridiniummaleate/4dimethylaminopyridiniummaleateA/1.4dimethylaminopyridiniummaleateA_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.4dimethylaminopyridiniummaleateA_CrystPred/GUKVUE_opt_A27.res
+
+>  <reported_formula>  (1) 
+C7 H11 N2 - C4 H3 O4
+
+>  <selected_formula>  (1) 
+C7H11N2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+725
+
+$$$$

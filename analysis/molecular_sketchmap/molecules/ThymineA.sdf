@@ -1,0 +1,60 @@
+ThymineA
+     RDKit          3D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+   -0.5390    3.2827   -0.4628 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0540   -0.4934    2.1091 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3556    1.2956   -1.2016 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7778    1.3637    0.7985 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3397    2.0853   -0.3004 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6009    0.0003    1.0781 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1465   -0.7316    0.0563 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5871   -0.0533   -1.0296 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3779   -2.1922    0.2774 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6924    1.7796   -2.0189 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2909    1.8949    1.4901 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1458   -0.5304   -1.8237 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9436   -2.6256   -0.5456 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9243   -2.3562    1.2052 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5709   -2.7195    0.3678 H   0  0  0  0  0  0  0  0  0  0  0  0
+  5  4  1  0
+  5  3  1  0
+  5  1  2  0
+  6  4  1  0
+  6  2  2  0
+  7  6  1  0
+  8  7  2  0
+  8  3  1  0
+  9  7  1  0
+ 10  3  1  0
+ 11  4  1  0
+ 12  8  1  0
+ 13  9  1  0
+ 14  9  1  0
+ 15  9  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+ThymineA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.Uracils/Thymine/ThymineA/1.ThymineA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.ThymineA_MOLPAK/THYMIN_opt_fa84.res
+
+>  <reported_formula>  (1) 
+C5 H6 N2 O2
+
+>  <selected_formula>  (1) 
+C5H6N2O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+56
+
+$$$$

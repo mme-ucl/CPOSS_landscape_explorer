@@ -1,0 +1,168 @@
+{
+  "renderer": "Tachyon 0.99b6 CPU ray tracer (the renderer used by VMD)",
+  "source_repository": "https://github.com/thesketh/Tachyon",
+  "source_revision": "4e347495c3d996ed5f68d96a424d481d030843da",
+  "executable_sha256": "b9a79faac762fc272a76c7427a1afa4573e4ccc45049cd4091eb304e4b8f527a",
+  "style": "VMD-inspired matte/chalky ball-and-stick with true ray-traced ambient occlusion",
+  "settings": {
+    "ao_ambient": 0.8,
+    "ao_direct": 0.3,
+    "ao_samples": 128,
+    "material_ambient": 0,
+    "material_diffuse": 1,
+    "material_specular": 0,
+    "phong": 0,
+    "sphere_scale": 0.28,
+    "hydrogen_sphere_scale": 0.23,
+    "stick_radius_angstrom": 0.12,
+    "antialias_samples": 3,
+    "width": 1800,
+    "height": 1200,
+    "dpi": 600,
+    "background": "opaque white",
+    "projection": "orthographic",
+    "camera_handedness": "Tachyon horizontal frustum reversed to preserve PyMOL screen handedness; proper rotation only on nuclear coordinates",
+    "element_colours_and_vdw_radii": {
+      "H": [
+        [
+          0.94,
+          0.94,
+          0.94
+        ],
+        1.2
+      ],
+      "C": [
+        [
+          0.58,
+          0.58,
+          0.58
+        ],
+        1.7
+      ],
+      "N": [
+        [
+          0.18,
+          0.28,
+          0.85
+        ],
+        1.55
+      ],
+      "O": [
+        [
+          0.86,
+          0.14,
+          0.12
+        ],
+        1.52
+      ],
+      "Cl": [
+        [
+          0.16,
+          0.72,
+          0.22
+        ],
+        1.75
+      ]
+    }
+  },
+  "geometry": "Original extracted nuclear coordinates/connectivity; rigid frozen camera rotation only; no optimization, atom additions or substitutions",
+  "camera_source": "inputs/callout_views.json",
+  "renders": [
+    {
+      "dataset_id": "UreaA",
+      "molecule_json_sha256": "1cba2dbe2dcf4dac7f0599967bef41542d7083aaef523abab99df46deb007cdb",
+      "sdf_sha256": "f784c5ddc3f643d82fa42779b540f997e1bd175beadefc0a97dc4e9a48ce1c79",
+      "render_sha256": "2da81c5bd2747ccd05128f88a70cb6fdaf0533fe675004ce77fa8174702e4de4",
+      "scene_sha256": "8c63a08e9cc2f5d21f7ae29328d434eed788993ae7367bdf58ba4eb17543a8a4",
+      "atom_count": 8,
+      "bond_count": 7,
+      "camera_orthogonality_max_error": 3.066850045030378e-07,
+      "render": "figures/callouts_ao/UreaA.png",
+      "scene": "figures/callouts_ao/UreaA.dat"
+    },
+    {
+      "dataset_id": "SuccinicAcidA",
+      "molecule_json_sha256": "9b223f1e88e08f0fd4ccfe90b6ec8a90c4987a533887e5e6b65cda47b774f317",
+      "sdf_sha256": "c3046be2cc798e159e9b270fcdeef845d913dc767c3ee2412ffeb9a58cbcf432",
+      "render_sha256": "d0b87309c818221a5007260e264b6e8075ea1b4bb2ee141a48cedafe3299c605",
+      "scene_sha256": "b978ac2f6884e4b9561c5a580d66b42abed00f793b492600644ea5cffc9d885b",
+      "atom_count": 14,
+      "bond_count": 13,
+      "camera_orthogonality_max_error": 1.190443033038946e-07,
+      "render": "figures/callouts_ao/SuccinicAcidA.png",
+      "scene": "figures/callouts_ao/SuccinicAcidA.dat"
+    },
+    {
+      "dataset_id": "AspirinA",
+      "molecule_json_sha256": "3d5553ebaa46574ae6a4690402c65b235155ea32ce99c1d2f731b95ef6a7d1b3",
+      "sdf_sha256": "a7006a939fdb5a390b95c4d7bf15ea47401f3f0140323530e2965fe36ab5fa08",
+      "render_sha256": "3ec1ab9a9118805db14f908944bb2f151d2343f58ff6514a91f58e75c7b579d5",
+      "scene_sha256": "fa2d3a23bff73d8e063f4881de81ed5ed804bb602f40ca20f62d4db75b3a7a35",
+      "atom_count": 21,
+      "bond_count": 21,
+      "camera_orthogonality_max_error": 1.6222620047301461e-07,
+      "render": "figures/callouts_ao/AspirinA.png",
+      "scene": "figures/callouts_ao/AspirinA.dat"
+    },
+    {
+      "dataset_id": "ParacetamolA",
+      "molecule_json_sha256": "d4488b4f9c49f3374a13652113c29b2ee885e1c3a3168df1a42b2f4f58b91561",
+      "sdf_sha256": "1bc43c1453e9236fef39dfa70be183ac756515037c32c849d3d00a909eecdfad",
+      "render_sha256": "dbbc7f1acfdc13bce1f019b5ab4e6397d7fa086f576529a536c219717530d1f4",
+      "scene_sha256": "5541bae9ae7628becbe776b6f15af0c8a52708e8fe4391f87f7861de902bd7b5",
+      "atom_count": 20,
+      "bond_count": 20,
+      "camera_orthogonality_max_error": 2.3729020970364445e-07,
+      "render": "figures/callouts_ao/ParacetamolA.png",
+      "scene": "figures/callouts_ao/ParacetamolA.dat"
+    },
+    {
+      "dataset_id": "CaffeineB",
+      "molecule_json_sha256": "f2724eb70ce0578fa6e1c678ef2d71a6a56ff4ee5d12e099cecfdf0084b4164e",
+      "sdf_sha256": "8479ff7255e8738182fd7792704ff0c7bca86f54251921f0faf7896dbebfcb0a",
+      "render_sha256": "24fb01bc1021c8558d38cbcc1edcb2edf3d7b7a32fafeb6121999e48a0a31146",
+      "scene_sha256": "df2d8caf9fac9526742a52290e1585bb41faaaa4bf38d64ff1d78d2b0bb9e0e3",
+      "atom_count": 24,
+      "bond_count": 25,
+      "camera_orthogonality_max_error": 1.5049647839049385e-07,
+      "render": "figures/callouts_ao/CaffeineB.png",
+      "scene": "figures/callouts_ao/CaffeineB.dat"
+    },
+    {
+      "dataset_id": "CarbamazepineA",
+      "molecule_json_sha256": "e3958b203596ce3724949b7692dda8936e518fbab25a821598176f1c26f4f5b1",
+      "sdf_sha256": "38258dd101be307726fe2bee23f2b167889630d28987298a084564cbbe830f4a",
+      "render_sha256": "b660ada5f8e354d3b12c81bbf6069b2bd8bd065442b986d5d3482f2a0f62f40b",
+      "scene_sha256": "3c34c013d6d1cd872fea347639371342032c734adb00ef0e795450a3be2c4b63",
+      "atom_count": 30,
+      "bond_count": 32,
+      "camera_orthogonality_max_error": 1.0314180376447268e-07,
+      "render": "figures/callouts_ao/CarbamazepineA.png",
+      "scene": "figures/callouts_ao/CarbamazepineA.dat"
+    },
+    {
+      "dataset_id": "NaproxenA",
+      "molecule_json_sha256": "9268f7d8bd0b8df74ac09b19eef09da7506bac5feb3f65e4ed0de4f72831dcd6",
+      "sdf_sha256": "60a24f1173578f5ae2fe49a8c1eb99050ce0c17db7afbcfb0dde0831b0718185",
+      "render_sha256": "868f0bcec3fecd86348ce89b0f0440ee5a465f69ce4ca05819f91cf5d7331937",
+      "scene_sha256": "111358484fb60bbfc48c0aae241a130867cff78426dd122caa44c32e8941a80d",
+      "atom_count": 31,
+      "bond_count": 32,
+      "camera_orthogonality_max_error": 3.864754305471507e-07,
+      "render": "figures/callouts_ao/NaproxenA.png",
+      "scene": "figures/callouts_ao/NaproxenA.dat"
+    },
+    {
+      "dataset_id": "ChlorothalonilA",
+      "molecule_json_sha256": "1cb8e0ff7e6d24e3172718ed45076ba4a7627d35d23648dbcf52fb0a86cd93f3",
+      "sdf_sha256": "f2c0cac24d48a1b43bbb80be9fc342083df93f3780aa6e846e71fbc0dec70ec1",
+      "render_sha256": "ac837c103c41a95ea759bc300a6b55e3063241303650c108b92c5f3e069bb686",
+      "scene_sha256": "54fe2065f6dcdb55ef752426966a747205ffc7fb3a881c967bb2ac297ab1bfef",
+      "atom_count": 14,
+      "bond_count": 14,
+      "camera_orthogonality_max_error": 2.3070448396111942e-07,
+      "render": "figures/callouts_ao/ChlorothalonilA.png",
+      "scene": "figures/callouts_ao/ChlorothalonilA.dat"
+    }
+  ]
+}

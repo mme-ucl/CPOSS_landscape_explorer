@@ -1,0 +1,66 @@
+3aminobenzamideA
+     RDKit          3D
+
+ 18 18  0  0  0  0  0  0  0  0999 V2000
+   -0.7235    1.1049    0.5062 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2924    1.2280   -0.7616 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9732    0.3289   -1.7766 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1037   -0.7452   -1.5265 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4708   -0.8665   -0.2562 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1641    0.0490    0.7527 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8092   -0.1680    2.0848 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9090    0.9513    2.8789 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.2636   -1.6162   -2.5594 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2009   -1.2746    2.4586 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9434    1.8545    2.4379 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4720    0.8323    3.7066 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5792   -2.5173   -2.2302 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4488   -1.7291   -3.2661 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1428   -1.6843   -0.0252 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4163    0.4387   -2.7601 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9879    2.0328   -0.9651 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0094    1.7809    1.3011 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  6  1  0
+  8  7  1  0
+  9  4  1  0
+ 10  7  2  0
+ 11  8  1  0
+ 12  8  1  0
+ 13  9  1  0
+ 14  9  1  0
+ 15  5  1  0
+ 16  3  1  0
+ 17  2  1  0
+ 18  1  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+3aminobenzamideA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/3aminobenzamide/3aminobenzamideA/1.3aminobenzamideA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.3aminobenzamideA_MOLPAK/UCLANA_opt_au35.res
+
+>  <reported_formula>  (1) 
+C7 H8 N2 O1
+
+>  <selected_formula>  (1) 
+C7H8N2O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+668
+
+$$$$

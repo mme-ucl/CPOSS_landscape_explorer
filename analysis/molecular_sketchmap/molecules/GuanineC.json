@@ -1,0 +1,371 @@
+{
+  "dataset_id": "GuanineC",
+  "dataset_name": "Guanine",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Guanine/Guanine.html",
+  "reported_formula": "C5 H5 N5 O1",
+  "reported_formula_normalised": "C5H5N5O",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 23,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Guanine/GuanineC/1.GuanineC_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "48d6d0c0da14bdfcfea20498d0bf8ddb49fbdbe0",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 23,
+  "candidates_with_title_energy": 23,
+  "selected_filename": "1.GuanineC/KEMDOW_taut39_de87.res",
+  "selected_file_sha256": "3221c8f15e988ac844bb54b15bb6efba017a3283f84d3bb7b1da351fbfd867e9",
+  "selected_title_energy": -179.721,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 8.0,
+  "selected_formula": "C5H5N5O",
+  "selected_smiles": "Nc1nc(=O)c2nc[nH]c2[nH]1",
+  "constitution_smiles": "Nc1nc(=O)c2nc[nH]c2[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 16,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 151.129,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H5N5O": 8
+  },
+  "component_identities_per_cell": {
+    "Nc1nc(=O)c2nc[nH]c2[nH]1": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H5N5O": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL KEMDOW_taut39_de87(-179.721)",
+    "lattice": 7,
+    "asymmetric_unit_atoms": 16,
+    "expanded_unit_cell_atoms": 128,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "N5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "N",
+    "N",
+    "N",
+    "N",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.7278350530696258,
+      -0.5710546518468753,
+      -1.6620224679027409
+    ],
+    [
+      -1.1993986065956594,
+      -0.42773434865087534,
+      -0.2848845753550222
+    ],
+    [
+      -0.326088247006167,
+      -0.018883452140874724,
+      0.7035355634172529
+    ],
+    [
+      1.354984848497752,
+      0.27220219254112354,
+      -0.8763024284807539
+    ],
+    [
+      -2.3139835455252973,
+      -0.41790918883087524,
+      1.5386787907144441
+    ],
+    [
+      0.9654010769791697,
+      0.4053117667611241,
+      0.45919168388503273
+    ],
+    [
+      0.6079238064372268,
+      -0.10875920168487507,
+      -1.86225556333466
+    ],
+    [
+      -2.4435662411460006,
+      -0.6917378655328754,
+      0.2554638611666675
+    ],
+    [
+      -1.0416816376546514,
+      0.014869659923125056,
+      1.8675666427237818
+    ],
+    [
+      2.6988977543650456,
+      0.5643239610251243,
+      -1.0726786373137678
+    ],
+    [
+      -1.384530551815999,
+      -1.0161570562648752,
+      -2.594112936136275
+    ],
+    [
+      -3.0821715500715925,
+      -0.5158598368008755,
+      2.2876861682222493
+    ],
+    [
+      -0.7149344246305169,
+      0.28208509951912397,
+      2.782609617150735
+    ],
+    [
+      1.687207799997962,
+      0.26015807612112507,
+      1.1521655028755369
+    ],
+    [
+      3.0053060576377373,
+      1.4221684432471253,
+      -0.6344811426701789
+    ],
+    [
+      2.9144685136006387,
+      0.5469764026151243,
+      -2.0601600789623244
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      5,
+      3,
+      1.5
+    ],
+    [
+      5,
+      2,
+      1.5
+    ],
+    [
+      6,
+      3,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.5
+    ],
+    [
+      7,
+      4,
+      1.5
+    ],
+    [
+      7,
+      1,
+      1.5
+    ],
+    [
+      8,
+      4,
+      1.5
+    ],
+    [
+      8,
+      2,
+      1.5
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      0,
+      2.0
+    ],
+    [
+      11,
+      4,
+      1.0
+    ],
+    [
+      12,
+      8,
+      1.0
+    ],
+    [
+      13,
+      5,
+      1.0
+    ],
+    [
+      14,
+      9,
+      1.0
+    ],
+    [
+      15,
+      9,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

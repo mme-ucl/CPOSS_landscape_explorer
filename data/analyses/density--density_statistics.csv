@@ -1,0 +1,11 @@
+population,scope,n_records,n_systems,n_searches,minimum_g_cm3,q1_g_cm3,median_g_cm3,q3_g_cm3,maximum_g_cm3,mean_g_cm3,status,quantile_method
+CPOSS_single_records,all_available,114222,186,257,0.0015,1.234,1.3476105,1.5139,2.517068,1.37388060612,computed_from_source_reported_density_values,numpy_linear
+CPOSS_single_records,shared_window,113203,186,257,0.8016,1.2364,1.3494,1.5149,2.39959,1.37959468801,computed_from_source_reported_density_values,numpy_linear
+CPOSS_single_system_balanced,all_available,114222,186,257,0.0015,1.2507,1.3848,1.6178,2.517068,1.42957298757,computed_from_source_reported_density_values,inverse_weighted_ecdf
+CPOSS_single_system_balanced,shared_window,113203,186,257,0.8016,1.2514,1.384702,1.61583,2.39959,1.42894400904,computed_from_source_reported_density_values,inverse_weighted_ecdf
+CPOSS_multicomponent_records,all_available,29065,41,44,0.028196,1.291305,1.3508,1.523402,1.7777,1.36508082243,computed_from_source_reported_density_values,numpy_linear
+CPOSS_multicomponent_records,shared_window,28344,41,44,0.804095,1.29650825,1.353886,1.5298695,1.7777,1.38883689567,computed_from_source_reported_density_values,numpy_linear
+CSD_organic,shared_window,,,,,1.24042366077,1.33583280916,1.46339277235,,1.37558359484,approximate_binned_paper_reference_conditional_on_window,uniform_within_rebinned_histogram_bins
+OMC25_generated_first_frames,shared_window,,,,,0.923447077497,0.986775308855,1.06922838624,,1.01343013583,approximate_binned_paper_reference_conditional_on_window,uniform_within_rebinned_histogram_bins
+OMC25_last_frames,shared_window,,,,,1.21102025839,1.29345432444,1.38933451451,,1.31452572764,approximate_binned_paper_reference_conditional_on_window,uniform_within_rebinned_histogram_bins
+OMC25_rigid_press_first_frames,shared_window,,,,,1.29937481277,1.41723985849,1.56094717474,,1.44833033522,approximate_binned_paper_reference_conditional_on_window,uniform_within_rebinned_histogram_bins

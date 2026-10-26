@@ -1,0 +1,58 @@
+ChlorothalonilA
+     RDKit          3D
+
+ 14 14  0  0  0  0  0  0  0  0999 V2000
+   -2.6324   -0.8732    0.6259 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    2.6839   -1.4656    1.0809 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    3.1365    1.0406   -0.7458 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    0.6431    2.5694   -1.8720 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8893    2.0388   -1.5001 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2929   -3.0946    2.2567 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8553    0.7671   -0.5634 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0419   -0.3457    0.2478 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0552   -1.0326    0.7538 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3448   -0.6002    0.4436 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5438    0.5122   -0.3670 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4386    1.1918   -0.8677 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9934    1.4787   -1.0876 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1406   -2.1868    1.5949 C   0  0  0  0  0  0  0  0  0  0  0  0
+  8  7  2  0
+  8  1  1  0
+  9  8  1  0
+ 10  9  2  0
+ 10  2  1  0
+ 11 10  1  0
+ 11  3  1  0
+ 12 11  2  0
+ 12  7  1  0
+ 12  4  1  0
+ 13  7  1  0
+ 13  5  3  0
+ 14  9  1  0
+ 14  6  3  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+ChlorothalonilA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/ChlorothalonilA/1.ChlorothalonilA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.ChlorothalonilA/BAWNIW_opt_ab15.res
+
+>  <reported_formula>  (1) 
+C8 N2 Cl4
+
+>  <selected_formula>  (1) 
+C8Cl4N2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+22
+
+$$$$

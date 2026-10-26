@@ -1,0 +1,59 @@
+PentachloronitrobenzeneA
+     RDKit          3D
+
+ 14 14  0  0  0  0  0  0  0  0999 V2000
+   -0.8206    0.1046   -0.4097 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0426   -1.0183   -0.6624 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2013   -1.1518   -0.0579 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6694   -0.1598    0.7952 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8913    0.9631    1.0478 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3526    1.0965    0.4434 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1483    0.2036   -1.0152 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2106    0.4910   -2.1753 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -3.0986   -0.0884   -0.2771 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6273   -2.2441   -1.7230 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    2.1605   -2.5478   -0.3733 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    3.2136   -0.3299    1.5401 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    1.4762    2.1888    2.1085 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3118    2.4924    0.7589 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  7  2  0
+  9  7  1  0
+ 10  2  1  0
+ 11  3  1  0
+ 12  4  1  0
+ 13  5  1  0
+ 14  6  1  0
+M  CHG  2   7   1   9  -1
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+PentachloronitrobenzeneA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Pentachloronitrobenzene/PentachloronitrobenzeneA/1.PentachloronitrobenzeneA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.PentachloronitrobenzeneA_MOLPAK/PCLNBZ_expt_ab51.res
+
+>  <reported_formula>  (1) 
+C6 N1 O2 Cl5
+
+>  <selected_formula>  (1) 
+C6Cl5NO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+893
+
+$$$$

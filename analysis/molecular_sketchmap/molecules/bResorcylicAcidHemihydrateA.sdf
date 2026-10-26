@@ -1,0 +1,64 @@
+bResorcylicAcidHemihydrateA
+     RDKit          3D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+   -0.3589   -0.5588    0.4179 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0345    0.7303    0.8102 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6653    1.5705   -0.1033 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9019    1.1351   -1.3900 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5178   -0.1470   -1.8024 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1009   -0.9663   -0.9003 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0215   -1.4404    1.3786 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3481   -2.6318    0.9013 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2693   -1.1477    2.5206 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1612    1.2120    2.0289 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5049    1.9085   -2.3009 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7674   -3.1207    1.5966 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5965    0.5606    2.5718 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7290    2.7514   -1.9412 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9566    2.5529    0.2223 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7159   -0.4564   -2.8104 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4020   -1.9522   -1.1997 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  7  1  0
+  9  7  2  0
+ 10  2  1  0
+ 11  4  1  0
+ 12  8  1  0
+ 13 10  1  0
+ 14 11  1  0
+ 15  3  1  0
+ 16  5  1  0
+ 17  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+bResorcylicAcidHemihydrateA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidHemihydrate/bResorcylicAcidHemihydrateA/1.bResorcylicAcidHemihydrateA_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.bResorcylicAcidHemihydrateA_CrystPred/QIVTUK_C1C2_AB3324.res
+
+>  <reported_formula>  (1) 
+2(C7 H6 O4) - H2 O1
+
+>  <selected_formula>  (1) 
+C7H6O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+1089
+
+$$$$

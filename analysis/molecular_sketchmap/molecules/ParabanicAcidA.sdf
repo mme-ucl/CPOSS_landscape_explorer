@@ -1,0 +1,50 @@
+ParabanicAcidA
+     RDKit          3D
+
+ 10 10  0  0  0  0  0  0  0  0999 V2000
+   -1.0038    0.3857   -0.4883 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7979    0.2340    0.8403 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3325    1.0042    0.5624 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8767   -0.8434    0.0155 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3599   -0.7352   -0.9034 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6543    2.0210    1.1216 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7130   -1.7191   -0.0162 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6599   -1.5103   -1.7863 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7845    0.7163   -0.8559 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4072    0.4469    1.5103 H   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  3  1  1  0
+  4  2  1  0
+  5  4  1  0
+  5  1  1  0
+  6  3  2  0
+  7  4  2  0
+  8  5  2  0
+  9  1  1  0
+ 10  2  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+ParabanicAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/ParabanicAcid/ParabanicAcidA/1.ParabanicAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.ParabanicAcidA_MOLPAK/PARBAC_OPT_fc16.res
+
+>  <reported_formula>  (1) 
+C3 H2 N2 O3
+
+>  <selected_formula>  (1) 
+C3H2N2O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+30
+
+$$$$

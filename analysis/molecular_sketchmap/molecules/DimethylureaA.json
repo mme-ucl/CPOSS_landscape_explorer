@@ -1,0 +1,267 @@
+{
+  "dataset_id": "DimethylureaA",
+  "dataset_name": "Dimethylurea",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Dimethylurea/Dimethylurea.html",
+  "reported_formula": "C3 H8 N2 O1",
+  "reported_formula_normalised": "C3H8N2O",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 870,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Dimethylurea/DimethylureaA/1.DimethylureaA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "41df95c5bba29ea5f799313c15c0729e20db9fe7",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 476,
+  "candidates_with_title_energy": 476,
+  "selected_filename": "1.DimethylureaA_CrystPred/NIJHUJ_A_A92.res",
+  "selected_file_sha256": "07538983df7e9272876a65b8bf799804c4ef78765ed5f8630e196cf86c9a373e",
+  "selected_title_energy": -70.883,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H8N2O",
+  "selected_smiles": "CNC(=O)NC",
+  "constitution_smiles": "CNC(=O)NC",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 14,
+  "selected_heavy_atoms": 6,
+  "selected_molar_mass_g_mol": 88.11,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H8N2O": 4
+  },
+  "component_identities_per_cell": {
+    "CNC(=O)NC": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H8N2O": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL NIJHUJ_A_A92(-70.883)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 56,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "N1",
+      "N2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "N1",
+      "N2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "N1",
+      "N2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "N1",
+      "N2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "O",
+    "N",
+    "N",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.06445755007122767,
+      0.12920308663442848,
+      -0.2214967799837595
+    ],
+    [
+      2.426296163600001,
+      -0.2206328705985714,
+      0.4102471677404558
+    ],
+    [
+      -2.3581015471339337,
+      0.3573826207224289,
+      -0.6446136031532079
+    ],
+    [
+      0.3639118260148333,
+      0.7296466106034285,
+      -1.2506907298919892
+    ],
+    [
+      1.0063888287203717,
+      -0.37214864707357154,
+      0.6529777134912997
+    ],
+    [
+      -1.2421282265139872,
+      -0.10051253049957154,
+      0.15726036448206848
+    ],
+    [
+      0.7103885774806038,
+      -0.8578609929775713,
+      1.4848466823867623
+    ],
+    [
+      -1.436745665963444,
+      -0.5984741826425712,
+      1.0113798071177174
+    ],
+    [
+      2.5340725807062014,
+      0.3250891642764282,
+      -0.5273483318132461
+    ],
+    [
+      2.9165744246399443,
+      0.3487297100214284,
+      1.209230336843084
+    ],
+    [
+      2.9278564223708825,
+      -1.1912832711995716,
+      0.31407640349868604
+    ],
+    [
+      -1.9402208338889864,
+      0.8657002224564283,
+      -1.5138443150876268
+    ],
+    [
+      -2.9807340417098542,
+      -0.47742591327157147,
+      -0.9885893645749424
+    ],
+    [
+      -2.9920160583938573,
+      1.062586993548429,
+      -0.0934353510553021
+    ]
+  ],
+  "bonds": [
+    [
+      3,
+      0,
+      2.0
+    ],
+    [
+      4,
+      1,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      2,
+      1.0
+    ],
+    [
+      5,
+      0,
+      1.0
+    ],
+    [
+      6,
+      4,
+      1.0
+    ],
+    [
+      7,
+      5,
+      1.0
+    ],
+    [
+      8,
+      1,
+      1.0
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      1,
+      1.0
+    ],
+    [
+      11,
+      2,
+      1.0
+    ],
+    [
+      12,
+      2,
+      1.0
+    ],
+    [
+      13,
+      2,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

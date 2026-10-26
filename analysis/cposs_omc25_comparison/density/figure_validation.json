@@ -1,0 +1,15 @@
+{
+  "vector_pdf": "/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/cposs_omc25_comparison/output/pdf/cposs_omc25_csd_density_comparison.pdf",
+  "png": "/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/cposs_omc25_comparison/figures/cposs_omc25_csd_density_comparison.png",
+  "size_inches": [
+    7.6,
+    3.5
+  ],
+  "actual_fonts": [
+    "Helvetica"
+  ],
+  "out_of_bounds_text": [],
+  "png_dpi": 300,
+  "family": "Helvetica",
+  "font_source_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3"
+}

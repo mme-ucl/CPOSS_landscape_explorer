@@ -1,0 +1,377 @@
+{
+  "dataset_id": "AspirinA",
+  "dataset_name": "Aspirin",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Aspirin/Aspirin.html",
+  "reported_formula": "C9 H8 O4",
+  "reported_formula_normalised": "C9H8O4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 21,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Aspirin/AspirinA/1.AspirinA_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "545e18c0bdc948dab640b28d870cd76907fad59e",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 19,
+  "candidates_with_title_energy": 12,
+  "selected_filename": "1.AspirinA_Molpak/ACSALA_2a_AI11.res",
+  "selected_file_sha256": "97a9c4a9f1a878c5e9b84f98fb37c7d1f34bb7f46ec9fb6c0fcf6be742527e88",
+  "selected_title_energy": -103.269,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C9H8O4",
+  "selected_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+  "constitution_smiles": "CC(=O)Oc1ccccc1C(=O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 21,
+  "selected_heavy_atoms": 13,
+  "selected_molar_mass_g_mol": 180.159,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C9H8O4": 4
+  },
+  "component_identities_per_cell": {
+    "CC(=O)Oc1ccccc1C(=O)O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C9H8O4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL ACSALA_2a_AI11(-103.269)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 21,
+    "expanded_unit_cell_atoms": 84,
+    "warnings": [],
+    "source_atom_labels": [
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "CAR6",
+      "CAR7",
+      "CAR8",
+      "CAR9",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HYD7",
+      "HPD8",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "CAR6",
+      "CAR7",
+      "CAR8",
+      "CAR9",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HYD7",
+      "HPD8",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "CAR6",
+      "CAR7",
+      "CAR8",
+      "CAR9",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HYD7",
+      "HPD8",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "CAR6",
+      "CAR7",
+      "CAR8",
+      "CAR9",
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "OXY4",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "HYD7",
+      "HPD8"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.0233633052792195,
+      -0.10398709238199982,
+      0.5752674574979219
+    ],
+    [
+      0.10363285565540892,
+      -0.6361621529320001,
+      -0.07634437796103999
+    ],
+    [
+      0.6054140730890456,
+      -1.886385225142,
+      0.27829502599688716
+    ],
+    [
+      -0.0025319312209326483,
+      -2.6249903292459997,
+      1.2902891384643165
+    ],
+    [
+      -1.1150771088554077,
+      -2.1094451332480006,
+      1.9577774853170409
+    ],
+    [
+      -1.6125570940445302,
+      -0.8623160521899995,
+      1.6002275776702342
+    ],
+    [
+      -1.6751729885373239,
+      1.20438036134,
+      0.28209470284594507
+    ],
+    [
+      1.5286933994686933,
+      1.0941739562060002,
+      -0.866889209193
+    ],
+    [
+      2.0165794020494623,
+      1.6962821100560002,
+      -2.1568708053105947
+    ],
+    [
+      -1.199864561798818,
+      1.8530867223559995,
+      -0.8092264144385749
+    ],
+    [
+      -2.58365362758244,
+      1.6664105391380002,
+      0.9435030247679645
+    ],
+    [
+      0.7290683303078822,
+      0.005032170026000149,
+      -1.1381533017325622
+    ],
+    [
+      1.7766548580716837,
+      1.475902277852,
+      0.24707866861003966
+    ],
+    [
+      1.4737075287365151,
+      -2.2623813780940005,
+      -0.2517638463274032
+    ],
+    [
+      0.39606241289417454,
+      -3.5989791358479994,
+      1.557943696072503
+    ],
+    [
+      -1.5915104107674862,
+      -2.6768984101839997,
+      2.750510303532865
+    ],
+    [
+      -2.475187294234111,
+      -0.4378410639099997,
+      2.1010392583109807
+    ],
+    [
+      2.7585208653106736,
+      2.464328786264,
+      -1.9415852159660434
+    ],
+    [
+      1.165446840284293,
+      2.138252637068,
+      -2.683452587162796
+    ],
+    [
+      2.441575967454371,
+      0.9258130328600003,
+      -2.8052687455528797
+    ],
+    [
+      -1.7164382110019556,
+      2.6757233800100004,
+      -0.8544718354418064
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      8,
+      7,
+      1.0
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      10,
+      6,
+      2.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      11,
+      1,
+      1.0
+    ],
+    [
+      12,
+      7,
+      2.0
+    ],
+    [
+      13,
+      2,
+      1.0
+    ],
+    [
+      14,
+      3,
+      1.0
+    ],
+    [
+      15,
+      4,
+      1.0
+    ],
+    [
+      16,
+      5,
+      1.0
+    ],
+    [
+      17,
+      8,
+      1.0
+    ],
+    [
+      18,
+      8,
+      1.0
+    ],
+    [
+      19,
+      8,
+      1.0
+    ],
+    [
+      20,
+      9,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

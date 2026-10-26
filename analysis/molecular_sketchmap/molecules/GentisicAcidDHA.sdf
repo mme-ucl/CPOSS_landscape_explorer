@@ -1,0 +1,64 @@
+GentisicAcidDHA
+     RDKit          3D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+   -0.1424   -0.5123    0.3574 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5188   -0.7517   -0.9812 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2936    0.2561   -1.9302 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3053    1.4452   -1.5662 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6790    1.6858   -0.2350 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4510    0.7113    0.7178 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4245   -1.5426    1.3518 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0888   -1.8895   -1.3881 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2507    2.8910    0.0454 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0656   -1.2320    2.6043 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9656   -2.6171    1.1024 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2291   -2.4406   -0.5853 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7617    2.8141    0.8568 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3412   -1.9816    3.1519 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5884    0.0672   -2.9568 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4927    2.2203   -2.3028 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7176    0.8763    1.7577 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  2  1  0
+  9  5  1  0
+ 10  7  1  0
+ 11  7  2  0
+ 12  8  1  0
+ 13  9  1  0
+ 14 10  1  0
+ 15  3  1  0
+ 16  4  1  0
+ 17  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+GentisicAcidDHA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcidDH/GentisicAcidDHA/1.GentisicAcidDHA_PCM.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.GentisicAcidDHA_PCM/UCLDBE_dfA720_A720.res
+
+>  <reported_formula>  (1) 
+C7 H6 O4 - 2(H2 O1)
+
+>  <selected_formula>  (1) 
+C7H6O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+20
+
+$$$$

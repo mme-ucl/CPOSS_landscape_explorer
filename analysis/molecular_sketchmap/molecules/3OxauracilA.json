@@ -1,0 +1,205 @@
+{
+  "dataset_id": "3OxauracilA",
+  "dataset_name": "3-Oxauracil",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Oxauracil/3Oxauracil.html",
+  "reported_formula": "C4 H3 N1 O3",
+  "reported_formula_normalised": "C4H3NO3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 31,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Oxauracil/3OxauracilA/1.3OxauracilA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "53f1c67bf44b5d85f83c9f5d666f366580aa0841",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 29,
+  "candidates_with_title_energy": 29,
+  "selected_filename": "1.3OxauracilA_MOLPAK/QARVOV_OPT_cc28.res",
+  "selected_file_sha256": "ff16c729abbb0212bcb0fb20f8b942ed7b109986041d3b6bed436bbd9da21e9b",
+  "selected_title_energy": -95.901,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C4H3NO3",
+  "selected_smiles": "O=c1cc[nH]c(=O)o1",
+  "constitution_smiles": "O=c1cc[nH]c(=O)o1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 11,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 113.072,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C4H3NO3": 2
+  },
+  "component_identities_per_cell": {
+    "O=c1cc[nH]c(=O)o1": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C4H3NO3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL QARVOV_OPT_cc28(-95.901) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 11,
+    "expanded_unit_cell_atoms": 22,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "H1",
+      "H2",
+      "H3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "H1",
+      "H2",
+      "H3"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "N",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      1.228816391971909,
+      0.16147095010772716,
+      0.4636389823827276
+    ],
+    [
+      0.843306413842909,
+      -1.2343249822622724,
+      0.37105859664272733
+    ],
+    [
+      -1.3612677131230906,
+      -0.49814099558427394,
+      -0.5010310441772727
+    ],
+    [
+      0.3574808218429091,
+      1.1209314368757255,
+      0.09264569370272735
+    ],
+    [
+      -0.46867388143609123,
+      -1.4662665414752727,
+      -0.12158478386727256
+    ],
+    [
+      1.506804582454909,
+      -2.201664554328273,
+      0.6629044866327276
+    ],
+    [
+      -2.465844249277091,
+      -0.7729840028552726,
+      -0.9125942794172728
+    ],
+    [
+      -0.8945302138510917,
+      0.8016934735587284,
+      -0.37357628810727284
+    ],
+    [
+      -1.5491402136940908,
+      1.518638187911728,
+      -0.6521934901472726
+    ],
+    [
+      0.5863802760859085,
+      2.175400229315727,
+      0.1385809971927272
+    ],
+    [
+      2.216667785182909,
+      0.39524679873572666,
+      0.8321511291627273
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      3,
+      0,
+      1.5
+    ],
+    [
+      4,
+      2,
+      1.5
+    ],
+    [
+      4,
+      1,
+      1.5
+    ],
+    [
+      5,
+      1,
+      2.0
+    ],
+    [
+      6,
+      2,
+      2.0
+    ],
+    [
+      7,
+      3,
+      1.5
+    ],
+    [
+      7,
+      2,
+      1.5
+    ],
+    [
+      8,
+      7,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      0,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

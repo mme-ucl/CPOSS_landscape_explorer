@@ -1,0 +1,271 @@
+{
+  "dataset_id": "CoumarinA",
+  "dataset_name": "Coumarin",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Coumarin/Coumarin.html",
+  "reported_formula": "C9 H6 O2",
+  "reported_formula_normalised": "C9H6O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 53,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Coumarin/CoumarinA/1.CoumarinA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "b34dcd786ff23afd80440d202f40f379339eb2d0",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 51,
+  "candidates_with_title_energy": 51,
+  "selected_filename": "1.CoumarinA_MOLPAK/COUMAR_OPT_aa121.res",
+  "selected_file_sha256": "40fbb63beade3a4ed1d2b0e4386916fcba9510203583e2bedd02b14a5a037583",
+  "selected_title_energy": -97.633,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 1.0,
+  "selected_formula": "C9H6O2",
+  "selected_smiles": "O=c1ccc2ccccc2o1",
+  "constitution_smiles": "O=c1ccc2ccccc2o1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 146.14499999999998,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C9H6O2": 1
+  },
+  "component_identities_per_cell": {
+    "O=c1ccc2ccccc2o1": 1
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C9H6O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL COUMAR_OPT_aa121(-97.633) P1",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 17,
+    "expanded_unit_cell_atoms": 17,
+    "warnings": [],
+    "source_atom_labels": [
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "CAR4",
+      "CAR5",
+      "CAR6",
+      "CAR7",
+      "CAR8",
+      "CAR9",
+      "HYD1",
+      "HYD2",
+      "HYD3",
+      "HYD4",
+      "HYD5",
+      "HYD6",
+      "OXY1",
+      "OXY2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      1.5880310135181053,
+      -1.028604210392536,
+      -1.8301296911933127
+    ],
+    [
+      1.0627724843094797,
+      0.2545052174978588,
+      -2.293957840084583
+    ],
+    [
+      0.21826664841643817,
+      0.9961320774942797,
+      -1.5412625922678913
+    ],
+    [
+      -0.1925072202374647,
+      0.5335735960102799,
+      -0.23973315907702641
+    ],
+    [
+      -1.064810102922746,
+      1.243228711434603,
+      0.6047069381926109
+    ],
+    [
+      -1.4142147201624886,
+      0.7285366698593343,
+      1.8457933486334577
+    ],
+    [
+      -0.8960812656290718,
+      -0.506133251095938,
+      2.2650615523664035
+    ],
+    [
+      -0.032548091909463395,
+      -1.2264260606881665,
+      1.4473134761549202
+    ],
+    [
+      0.31267808739554026,
+      -0.6998766349770325,
+      0.20127771754818014
+    ],
+    [
+      1.3935989762762975,
+      0.5659085614236137,
+      -3.274017485570112
+    ],
+    [
+      -0.15893384723013138,
+      1.944566155866629,
+      -1.906468485407153
+    ],
+    [
+      -1.4593970769640303,
+      2.1955624396942346,
+      0.27030647454623313
+    ],
+    [
+      -2.0860554506248428,
+      1.2794528216816508,
+      2.4905599508324743
+    ],
+    [
+      -1.1695482756294249,
+      -0.9061993147919853,
+      3.2327290835616873
+    ],
+    [
+      0.38033407589990254,
+      -2.1799750961355358,
+      1.7469353283324578
+    ],
+    [
+      1.169534111870173,
+      -1.447942817115309,
+      -0.5688282522725734
+    ],
+    [
+      2.3488806536237257,
+      -1.746308865765994,
+      -2.4502863642957893
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      8,
+      3,
+      1.5
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      2,
+      1.0
+    ],
+    [
+      11,
+      4,
+      1.0
+    ],
+    [
+      12,
+      5,
+      1.0
+    ],
+    [
+      13,
+      6,
+      1.0
+    ],
+    [
+      14,
+      7,
+      1.0
+    ],
+    [
+      15,
+      8,
+      1.5
+    ],
+    [
+      15,
+      0,
+      1.5
+    ],
+    [
+      16,
+      0,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "source_pdf": "output/pdf/database_in_numbers.pdf",
+  "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+  "output_pdf": "output/pdf/database_in_numbers_3x2.pdf",
+  "output_sha256": "f5bccff802f4b47a6696a6151e4e7ae86cc164e6f933d935efce82024f47956c",
+  "layout": [
+    [
+      "A",
+      "B",
+      "C"
+    ],
+    [
+      "D",
+      "E",
+      "F"
+    ]
+  ],
+  "page_size_pt": [
+    818.97637795278,
+    607.9593700787213
+  ],
+  "page_size_mm": [
+    288.91666666667516,
+    214.4745555555489
+  ],
+  "png_dimensions": [
+    3413,
+    2534
+  ],
+  "png_dpi": 300,
+  "fonts": [
+    "/CJIGXG+Helvetica",
+    "/CNFDKF+Helvetica",
+    "/CNNTVI+Helvetica-Bold",
+    "/CUBKGR+Helvetica-Bold",
+    "/DBEONC+Helvetica",
+    "/FPHMKF+Helvetica"
+  ],
+  "vector_graphics": true,
+  "all_panel_scales_unchanged": true,
+  "all_panel_rotations_zero": true,
+  "panel_c": {
+    "title": "Reported CSP software",
+    "counts": {
+      "DMACRYS": 189,
+      "MOLPAK": 156,
+      "CrystalPredictor": 148,
+      "DMAREL": 126,
+      "CrystalOptimizer": 110,
+      "DMAflex": 28
+    },
+    "denominator": 311,
+    "counting_rule": "Explicit program mentions; one count per search and program family; versions pooled; categories overlap; bare Study_ID pointers not expanded",
+    "counts_csv": "workbook_crosscheck/proposed_panel_c_counts.csv",
+    "counts_csv_sha256": "bd0ee5e8b0a5d53b249598297552429d08b275269aebb8f8765ae3671228182a",
+    "workbook_path": "/Users/matteo/Downloads/Database 2023 checkup.xlsx",
+    "workbook_sha256": "e8a410fa55c3e5cab90d4352a985f694e7f1d5e4b4085f1331edf68602eed2dc",
+    "matched_energy_models": 509
+  },
+  "placements": {
+    "header": {
+      "source_pdf": "output/pdf/database_in_numbers.pdf",
+      "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+      "source_crop_pt": [
+        0,
+        753.4913385826525,
+        595.2755905512,
+        841.8897637795
+      ],
+      "translation_pt": [
+        111.85039370079,
+        -233.9303937007786
+      ],
+      "destination_crop_pt": [
+        111.85039370079,
+        519.5609448818739,
+        707.1259842519901,
+        607.9593700787213
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    },
+    "A": {
+      "source_pdf": "output/pdf/database_in_numbers.pdf",
+      "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+      "source_crop_pt": [
+        45.598425196852006,
+        513.552755905495,
+        298.590551181112,
+        749.230551181078
+      ],
+      "translation_pt": [
+        -33.598425196852006,
+        -233.9303937007786
+      ],
+      "destination_crop_pt": [
+        12.0,
+        279.6223622047164,
+        264.99212598426,
+        515.3001574802994
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    },
+    "B": {
+      "source_pdf": "output/pdf/database_in_numbers.pdf",
+      "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+      "source_crop_pt": [
+        310.49606299213605,
+        513.552755905495,
+        563.488188976396,
+        749.230551181078
+      ],
+      "translation_pt": [
+        -27.503937007876004,
+        -233.9303937007786
+      ],
+      "destination_crop_pt": [
+        282.99212598426004,
+        279.6223622047164,
+        535.9842519685201,
+        515.3001574802994
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    },
+    "C": {
+      "source_pdf": "output/pdf/panel_c_software_proposal.pdf",
+      "source_sha256": "70395f9d0c182df3ad9b7863b57d5c3bccbbf62d7d9baf5acd6cf09aa51ae806",
+      "source_crop_pt": [
+        0,
+        0,
+        252.9921259843,
+        228.9426771654
+      ],
+      "translation_pt": [
+        553.9842519685201,
+        286.35748031489936
+      ],
+      "destination_crop_pt": [
+        553.9842519685201,
+        286.35748031489936,
+        806.97637795282,
+        515.3001574802994
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    },
+    "D": {
+      "source_pdf": "output/pdf/database_in_numbers.pdf",
+      "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+      "source_crop_pt": [
+        310.49606299213605,
+        277.823622047235,
+        563.488188976396,
+        506.76629921258194
+      ],
+      "translation_pt": [
+        -298.49606299213605,
+        -248.14393700786547
+      ],
+      "destination_crop_pt": [
+        12.0,
+        29.67968503936953,
+        264.99212598426,
+        258.62236220471647
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    },
+    "E": {
+      "source_pdf": "output/pdf/database_in_numbers.pdf",
+      "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+      "source_crop_pt": [
+        45.598425196852006,
+        22.7310236220465,
+        298.590551181112,
+        269.353385826763
+      ],
+      "translation_pt": [
+        237.39370078740802,
+        -10.731023622046507
+      ],
+      "destination_crop_pt": [
+        282.99212598426004,
+        11.999999999999993,
+        535.9842519685201,
+        258.62236220471647
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    },
+    "F": {
+      "source_pdf": "output/pdf/database_in_numbers.pdf",
+      "source_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+      "source_crop_pt": [
+        310.49606299213605,
+        22.7310236220465,
+        563.488188976396,
+        269.353385826763
+      ],
+      "translation_pt": [
+        243.48818897638404,
+        -10.731023622046507
+      ],
+      "destination_crop_pt": [
+        553.9842519685201,
+        11.999999999999993,
+        806.97637795278,
+        258.62236220471647
+      ],
+      "scale_x": 1,
+      "scale_y": 1,
+      "rotation_degrees": 0
+    }
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "dataset_id": "O-XyleneA",
+  "dataset_name": "O-Xylene",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/O-Xylene/O-Xylene.html",
+  "reported_formula": "C8 H10",
+  "reported_formula_normalised": "C8H10",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 426,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.Xylenes/O-Xylene/O-XyleneA/1.O-XyleneA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "801e2ee4c8e95c64d41c6a2db7b13b7ce17e93d6",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 425,
+  "candidates_with_title_energy": 425,
+  "selected_filename": "1.O-XyleneA_MOLPAK/ZZZRTI_opt_az12.res",
+  "selected_file_sha256": "45ac4eda5d9524764f824e6fa5f6a2220cb6f836884e7d6a245b0580f2284b5e",
+  "selected_title_energy": -60.202,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C8H10",
+  "selected_smiles": "Cc1ccccc1C",
+  "constitution_smiles": "Cc1ccccc1C",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 18,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 106.16799999999999,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8H10": 4
+  },
+  "component_identities_per_cell": {
+    "Cc1ccccc1C": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8H10": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL ZZZRTI_opt_az12(-60.202)",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 18,
+    "expanded_unit_cell_atoms": 72,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.39347624957972216,
+      -0.5879159584979998,
+      0.21778255556238957
+    ],
+    [
+      0.23199794111827776,
+      0.6747551461200008,
+      0.19697683953938938
+    ],
+    [
+      0.9686458281442776,
+      1.051386575646002,
+      -0.9311397713616101
+    ],
+    [
+      1.0952715786402778,
+      0.2018758015560005,
+      -2.0307859426176105
+    ],
+    [
+      0.47683582313527806,
+      -1.0471367292540004,
+      -2.0101029436886106
+    ],
+    [
+      -0.2603619579927221,
+      -1.4322188714460005,
+      -0.8897649869006097
+    ],
+    [
+      -1.1936645645517223,
+      -1.026099035214,
+      1.4153278022153897
+    ],
+    [
+      0.10950865612527805,
+      1.6089550025340014,
+      1.3710931630703884
+    ],
+    [
+      1.449323542522278,
+      2.0232047120340013,
+      -0.9456571592796106
+    ],
+    [
+      1.670389045012278,
+      0.5138633911620003,
+      -2.8934524838846105
+    ],
+    [
+      0.566638254476278,
+      -1.716610430435999,
+      -2.8563422291956106
+    ],
+    [
+      -0.7419569100857221,
+      -2.4035541683999995,
+      -0.8722437621486101
+    ],
+    [
+      -0.5788034197277221,
+      -1.0572749939400001,
+      2.3164901494763885
+    ],
+    [
+      -2.020956319570722,
+      -0.343063315715999,
+      1.6144845766283886
+    ],
+    [
+      -1.6095800634357222,
+      -2.019971797008,
+      1.25882503828839
+    ],
+    [
+      0.6565413053742772,
+      2.53243571196,
+      1.188206445444389
+    ],
+    [
+      -0.932023665042722,
+      1.8687411482520009,
+      1.567605760676389
+    ],
+    [
+      0.5056711754382781,
+      1.1586278106480012,
+      2.2826969481753903
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      4,
+      1.0
+    ],
+    [
+      11,
+      5,
+      1.0
+    ],
+    [
+      12,
+      6,
+      1.0
+    ],
+    [
+      13,
+      6,
+      1.0
+    ],
+    [
+      14,
+      6,
+      1.0
+    ],
+    [
+      15,
+      7,
+      1.0
+    ],
+    [
+      16,
+      7,
+      1.0
+    ],
+    [
+      17,
+      7,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

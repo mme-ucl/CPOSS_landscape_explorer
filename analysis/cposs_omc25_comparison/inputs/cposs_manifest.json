@@ -1,0 +1,166 @@
+{
+  "source_index": "https://louiseprice.github.io/CPOSS_Database/index.html",
+  "snapshot_revision": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
+  "accessed_date": "2026-10-23",
+  "timezone": "Europe/London",
+  "dataset_definition": "Unique CSP search identified by explicit linked Chemiscope filename; no-link searches by page and search code; repeated pages referencing same file merged",
+  "year_rule": "Single unambiguous year in source Date field (study date); ranges and pre-2010 excluded; no release dates or publication-year substitution",
+  "structure_rule": "RES coordinate members in documented energy-model ZIP archives; separate models retained; MacOS resource forks excluded; no geometric deduplication",
+  "reachable_html_pages": 243,
+  "inventory_html_pages": 245,
+  "case_pages_with_searches": 235,
+  "search_occurrences_before_deduplication": 311,
+  "datasets": 311,
+  "unlinked_json_files": 8,
+  "font_verification": {
+    "requested_font": "/System/Library/Fonts/Helvetica.ttc",
+    "source_font_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3",
+    "family": "Helvetica",
+    "faces": [
+      "Helvetica.ttf",
+      "Helvetica-Bold.ttf",
+      "Helvetica-Oblique.ttf",
+      "Helvetica-BoldOblique.ttf"
+    ],
+    "all_figure_text_families": [
+      "Helvetica"
+    ],
+    "text_outside_page": []
+  },
+  "extracted_json_structure_rule": "Array-entry count of linked JSON only; retained in datasets.csv as a separate visualization-export measurement",
+  "figure_structure_counts": {
+    "archive_structure_files": 519167,
+    "archives": 509,
+    "datasets": 311,
+    "visualization_entries": 155824,
+    "workbook_filename_rows": 402863,
+    "workbook_numeric_energy_records": 548587,
+    "annual_structure_files": 488411,
+    "unassigned_year_structure_files": 30756,
+    "geometrically_deduplicated": false
+  },
+  "colour_scheme": {
+    "name": "CPOSS Plasma (truncated)",
+    "anchors": [
+      "#0d0887",
+      "#6100a7",
+      "#a21d9a",
+      "#d24f71",
+      "#f3854b",
+      "#fdc627"
+    ],
+    "white_page_adjustment": "Plasma truncated at 0.88 to avoid pale yellow",
+    "molecular_components": {
+      "single_component": "#6100a7",
+      "multicomponent": "#fdc627"
+    },
+    "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales",
+    "time_panels": "Common study/publication year colour ramp in E and F; structure-file line is charcoal",
+    "year_limits": [
+      2003.0,
+      2025.0
+    ],
+    "new_colourbar_axes": false
+  },
+  "figure_presentation": {
+    "title": "The CPOSS database in numbers",
+    "layout": "Compact journal-style A4 page with aligned panel baselines and reduced vertical and horizontal gutters",
+    "horizontal_column_inset_fraction": 0.018,
+    "plot_geometry_fraction": {
+      "A": [
+        0.143,
+        0.646,
+        0.31499999999999995,
+        0.21799999999999997
+      ],
+      "B": [
+        0.588,
+        0.646,
+        0.31500000000000006,
+        0.21799999999999997
+      ],
+      "C": [
+        0.244,
+        0.363,
+        0.21699999999999997,
+        0.18900000000000006
+      ],
+      "D": [
+        0.693,
+        0.363,
+        0.21299999999999997,
+        0.21299999999999997
+      ],
+      "E_annual": [
+        0.144,
+        0.19,
+        0.281,
+        0.10399999999999998
+      ],
+      "E_structures": [
+        0.144,
+        0.19,
+        0.281,
+        0.10399999999999998
+      ],
+      "E_cumulative": [
+        0.144,
+        0.1,
+        0.281,
+        0.07399999999999998
+      ],
+      "F": [
+        0.588,
+        0.1,
+        0.31500000000000006,
+        0.19400000000000003
+      ]
+    },
+    "plot_heights_unchanged": true,
+    "title_font_size_pt": 14,
+    "panel_heading_font_size_pt": 9,
+    "summary_strip_scale": 0.7,
+    "panels": {
+      "A": "Molecular size",
+      "B": "Structures per dataset",
+      "C": "Electronic structure theory level",
+      "D": "Scientist credits (top 20)",
+      "E": "Annual landscapes and archive structure files; cumulative datasets",
+      "F": "Cumulative unique CSP papers"
+    },
+    "displayed_scientists": [
+      "Louise Price",
+      "Tom Lewis",
+      "Panos Karamertzanis",
+      "Nizar Issa",
+      "Doris Braun",
+      "Rui Guo",
+      "Matthew Habgood",
+      "Luca Iuzzolino",
+      "Sarah Barnett",
+      "Ashley Hulme",
+      "Sharmarke Mohamed",
+      "Sally Price",
+      "Agris Berzins",
+      "Emiliana D'Oria",
+      "Joe Ridout",
+      "Anastasia Ntantou",
+      "Yiming Ding",
+      "Antonio Torrisi",
+      "Weijia Zhu",
+      "Rebecca Hylton"
+    ],
+    "scientist_plot_exclusions": [],
+    "cumulative_datasets_endpoint": 236,
+    "cumulative_dataset_scope": "Only single unambiguous source study years; intervals and pre-2010 dates excluded"
+  },
+  "software_versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "fonttools": "4.67.0",
+    "requests": "2.34.2",
+    "rdkit": "2026.9.1",
+    "pypdf": "6.21.2"
+  }
+}

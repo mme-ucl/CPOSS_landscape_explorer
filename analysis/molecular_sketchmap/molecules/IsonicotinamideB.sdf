@@ -1,0 +1,60 @@
+IsonicotinamideB
+     RDKit          3D
+
+ 15 15  0  0  0  0  0  0  0  0999 V2000
+   -0.6719    0.7294   -2.0389 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0053    0.7646   -0.6968 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2429    0.0244    0.1922 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8027   -0.7331   -0.3127 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0397   -0.7030   -1.6774 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6067    0.0663    1.6526 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3283    0.0149   -2.5246 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3883   -0.2252    2.5261 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7189    0.3326    2.0079 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2390    1.3015   -2.7522 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8344    1.3462   -0.3433 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4058   -1.3593    0.3183 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8388   -1.2877   -2.0991 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3410   -0.1626    2.2577 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1746   -0.1090    3.4904 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  2  0
+  4  3  1  0
+  5  4  2  0
+  6  3  1  0
+  7  5  1  0
+  7  1  2  0
+  8  6  1  0
+  9  6  2  0
+ 10  1  1  0
+ 11  2  1  0
+ 12  4  1  0
+ 13  5  1  0
+ 14  8  1  0
+ 15  8  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+IsonicotinamideB
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/IsonicotinamideB/1.IsonicotinamideB_CrystOpt.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.IsonicotinamideB_CrystOpt/EHOWIH_dfA11_A11.res
+
+>  <reported_formula>  (1) 
+C6 H6 N2 O1
+
+>  <selected_formula>  (1) 
+C6H6N2O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+667
+
+$$$$

@@ -1,0 +1,21 @@
+{
+  "attempted": 311,
+  "included": 308,
+  "excluded": 3,
+  "represented_archive_structure_files": 519004,
+  "all_archive_structure_files": 519167,
+  "exclusions": [
+    {
+      "dataset_id": "25-dichloronitrobenzeneA",
+      "error": "Atom SFAC index outside reported element list"
+    },
+    {
+      "dataset_id": "35-dichloronitrobenzeneA",
+      "error": "Atom SFAC index outside reported element list"
+    },
+    {
+      "dataset_id": "TetrachlorobenzeneA",
+      "error": "Element table conflicts with atom labels and reported formula: [('C1', 'B'), ('C4', 'B'), ('C2', 'B'), ('C5', 'B'), ('C1', 'B')]"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "dataset_id": "BTXXIIA",
+  "dataset_name": "Blind Test XXII (NACJAF)",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXII/BTXXII.html",
+  "reported_formula": "C8 N4 S3",
+  "reported_formula_normalised": "C8N4S3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 7690,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XXII/BTXXIIA/1.BTXXIIA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "0ffaa8f5fc636cd09d20d1ad86d811e59625b1e7",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 1843,
+  "candidates_with_title_energy": 1843,
+  "selected_filename": "1.BTXXIIA_CrystPred/NACJAF_opt_A467.res",
+  "selected_file_sha256": "2d8244b5d5d9736b866b91585b0064b2695275a329af6b2460be8b27211a9791",
+  "selected_title_energy": -107.496,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C8N4S3",
+  "selected_smiles": "N#CC1=C(C#N)Sc2c(nsc2C#N)S1",
+  "constitution_smiles": "N#CC1=C(C#N)Sc2c(nsc2C#N)S1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 15,
+  "selected_molar_mass_g_mol": 248.317,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C8N4S3": 4
+  },
+  "component_identities_per_cell": {
+    "N#CC1=C(C#N)Sc2c(nsc2C#N)S1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C8N4S3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL NACJAF_opt_A467(-107.496) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "S1",
+      "S2",
+      "S3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "S1",
+      "S2",
+      "S3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "S1",
+      "S2",
+      "S3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "N",
+    "N",
+    "N",
+    "S",
+    "S",
+    "S"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.27794454574973493,
+      -0.022493927066533304,
+      -1.1781675946104748
+    ],
+    [
+      0.23876382944244545,
+      1.2844486333534673,
+      -0.9562968046127422
+    ],
+    [
+      1.162129961272886,
+      0.4415473622144669,
+      1.4457907735832132
+    ],
+    [
+      0.6702865897718251,
+      -0.8045160840145331,
+      1.220038423638659
+    ],
+    [
+      -1.2406378604549086,
+      0.02809146148146735,
+      -2.1640145101769526
+    ],
+    [
+      1.466559982310688,
+      0.8756410775744666,
+      2.7670132657109203
+    ],
+    [
+      0.4471359647117841,
+      -1.7135316825355336,
+      2.2913862902287674
+    ],
+    [
+      -2.005827420127094,
+      -1.0392941380765333,
+      -2.685337971719287
+    ],
+    [
+      -0.25456873102999733,
+      2.256107779182466,
+      -1.6799274549358567
+    ],
+    [
+      1.7418696588206015,
+      1.2617745027764666,
+      3.8278446803088233
+    ],
+    [
+      0.26562141099523995,
+      -2.490459221202533,
+      3.1363067658488104
+    ],
+    [
+      -2.6403899798563075,
+      -1.9076590616195332,
+      -3.125270560899679
+    ],
+    [
+      0.2866984180474761,
+      -1.4721490340605343,
+      -0.3741504879488948
+    ],
+    [
+      -1.3814701625579129,
+      1.6563962301574655,
+      -2.727468499505611
+    ],
+    [
+      1.5217728844029987,
+      1.6460961018354667,
+      0.20225368509031494
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      3,
+      2,
+      2.0
+    ],
+    [
+      4,
+      0,
+      1.5
+    ],
+    [
+      5,
+      2,
+      1.0
+    ],
+    [
+      6,
+      3,
+      1.0
+    ],
+    [
+      7,
+      4,
+      1.0
+    ],
+    [
+      8,
+      1,
+      1.5
+    ],
+    [
+      9,
+      5,
+      3.0
+    ],
+    [
+      10,
+      6,
+      3.0
+    ],
+    [
+      11,
+      7,
+      3.0
+    ],
+    [
+      12,
+      3,
+      1.0
+    ],
+    [
+      12,
+      0,
+      1.0
+    ],
+    [
+      13,
+      8,
+      1.5
+    ],
+    [
+      13,
+      4,
+      1.5
+    ],
+    [
+      14,
+      2,
+      1.0
+    ],
+    [
+      14,
+      1,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

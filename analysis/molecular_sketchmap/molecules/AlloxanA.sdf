@@ -1,0 +1,54 @@
+AlloxanA
+     RDKit          3D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+   -0.3603   -0.8207   -1.0295 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.8854    0.2016    1.0190 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2960   -0.6440   -0.0109 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3102    0.6512    0.0111 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9054   -0.2661   -1.1493 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3192    0.8746    1.1596 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3864   -1.1859   -0.0200 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4017    1.1935    0.0202 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6421   -0.4870   -2.0960 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5749    1.5889    2.1147 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6607   -1.4326   -1.7787 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5647    0.3266    1.7598 H   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  3  1  1  0
+  5  4  1  0
+  5  1  1  0
+  6  4  1  0
+  6  2  1  0
+  7  3  2  0
+  8  4  2  0
+  9  5  2  0
+ 10  6  2  0
+ 11  1  1  0
+ 12  2  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+AlloxanA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Alloxan/AlloxanA/1.AlloxanA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.AlloxanA_MOLPAK/ALOXAN_OPT_aq9.res
+
+>  <reported_formula>  (1) 
+C4 H2 N2 O4
+
+>  <selected_formula>  (1) 
+C4H2N2O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+28
+
+$$$$

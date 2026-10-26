@@ -1,0 +1,10 @@
+population,variable,omc25_minimum,omc25_maximum,n,below_n,above_n,outside_n,outside_percent
+CPOSS_single_verified,atom_count,4,164,190,0,0,0,0
+CPOSS_single_verified,heavy_atom_count,2,92,190,0,0,0,0
+CPOSS_single_verified,molar_mass_g_mol,30.026,1386.316,190,0,0,0,0
+CPOSS_multicomponent_formula_units,atom_count,4,164,44,0,0,0,0
+CPOSS_multicomponent_formula_units,heavy_atom_count,2,92,44,0,0,0,0
+CPOSS_multicomponent_formula_units,molar_mass_g_mol,30.026,1386.316,44,0,0,0,0
+CPOSS_single_metadata_sensitivity,atom_count,4,164,191,0,0,0,0
+CPOSS_single_metadata_sensitivity,heavy_atom_count,2,92,191,0,0,0,0
+CPOSS_single_metadata_sensitivity,molar_mass_g_mol,30.026,1386.316,191,0,0,0,0

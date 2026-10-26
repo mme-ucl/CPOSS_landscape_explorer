@@ -1,0 +1,218 @@
+{
+  "dataset_id": "BTXIIIA",
+  "dataset_name": "Blind Test XIII (SOXLEX)",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIII/BTXIII.html",
+  "reported_formula": "C6 H2 Br2 Cl1 F1",
+  "reported_formula_normalised": "Br2C6ClFH2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 211,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XIII/BTXIIIA/1.BTXIIIA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "6bcb9ff42901fa3eba5ac1a7048574a0ca3efd7d",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 210,
+  "candidates_with_title_energy": 210,
+  "selected_filename": "1.BTXIIIA_MOLPAK/SOXLEX_opt_ab43.res",
+  "selected_file_sha256": "a43da3e278bda37de38555248f51404af4dc8071d0d27962fbe79fa37791415f",
+  "selected_title_energy": -90.707,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C6H2Br2ClF",
+  "selected_smiles": "Fc1cc(Br)c(Cl)c(Br)c1",
+  "constitution_smiles": "Fc1cc(Br)c(Cl)c(Br)c1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 12,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 288.341,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C6H2Br2ClF": 2
+  },
+  "component_identities_per_cell": {
+    "Fc1cc(Br)c(Cl)c(Br)c1": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C6H2Br2ClF": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL SOXLEX_opt_ab43(-90.707) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 12,
+    "expanded_unit_cell_atoms": 24,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "BR1",
+      "BR3",
+      "CL2",
+      "F5",
+      "H4",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "BR1",
+      "BR3",
+      "CL2",
+      "F5",
+      "H4",
+      "H6"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "Br",
+    "Br",
+    "Cl",
+    "F",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.42170221665475793,
+      0.1009889141695881,
+      -1.2734105970641396
+    ],
+    [
+      0.910234661104047,
+      -0.2019474753253867,
+      -0.9418400630350687
+    ],
+    [
+      1.245979913647922,
+      -0.28386120518552715,
+      0.41990281057169554
+    ],
+    [
+      0.29607757418603065,
+      -0.0731430655918821,
+      1.4196561765264253
+    ],
+    [
+      -1.004770528766855,
+      0.22291098966424538,
+      1.040223853481649
+    ],
+    [
+      -1.3871278272486443,
+      0.31523243431272263,
+      -0.2902297959794371
+    ],
+    [
+      -0.9671862433552789,
+      0.2322230236153633,
+      -3.0824259082845638
+    ],
+    [
+      3.015658987245219,
+      -0.6867573290062436,
+      0.9615174352396938
+    ],
+    [
+      2.091691830497,
+      -0.46408295712723024,
+      -2.165200944047066
+    ],
+    [
+      -1.9324964181967736,
+      0.4288166820055421,
+      2.0002717169269832
+    ],
+    [
+      0.5622536727822585,
+      -0.13794326853378625,
+      2.4642053730967444
+    ],
+    [
+      -2.4086134052401897,
+      0.5475632570026132,
+      -0.5526700574329233
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ],
+    [
+      8,
+      1,
+      1.0
+    ],
+    [
+      9,
+      4,
+      1.0
+    ],
+    [
+      10,
+      3,
+      1.0
+    ],
+    [
+      11,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

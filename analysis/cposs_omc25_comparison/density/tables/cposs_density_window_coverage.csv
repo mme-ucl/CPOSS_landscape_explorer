@@ -1,0 +1,4 @@
+population,records_all,systems_all,searches_all,records_in_window,below_window_n,above_window_n,outside_window_percent,weighted_mass_outside_window_percent
+CPOSS_single_records,114222,186,257,113203,900,119,0.892122358215,0.892122358215
+CPOSS_single_system_balanced,114222,186,257,113203,900,119,0.892122358215,0.576425112332
+CPOSS_multicomponent_records,29065,41,44,28344,721,0,2.48064682608,2.48064682608

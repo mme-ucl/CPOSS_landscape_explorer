@@ -1,0 +1,147 @@
+{
+  "dataset_id": "CarbonicAcidA",
+  "dataset_name": "Carbonic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/CarbonicAcid/CarbonicAcid.html",
+  "reported_formula": "C1 H2 O3",
+  "reported_formula_normalised": "CH2O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 607,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/CarbonicAcid/CarbonicAcidA/1.CarbonicAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "cdd39cf74c0a5f16e1027c8f409fa349340ab0d0",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 607,
+  "candidates_with_title_energy": 607,
+  "selected_filename": "1.CarbonicAcidA_MOLPAK/CBNCAC_transtrans_ak11.res",
+  "selected_file_sha256": "45b1b0d5af4ce3625f0f772154e9e9f7dee58c71e43b03f62881d4a89814b9e8",
+  "selected_title_energy": -81.802,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "CH2O3",
+  "selected_smiles": "O=C(O)O",
+  "constitution_smiles": "O=C(O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 6,
+  "selected_heavy_atoms": 4,
+  "selected_molar_mass_g_mol": 62.024,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "CH2O3": 4
+  },
+  "component_identities_per_cell": {
+    "O=C(O)O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "CH2O3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL CBNCAC_transtrans_ak11(-81.802) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 6,
+    "expanded_unit_cell_atoms": 24,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "C1",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "C1",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "C1",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.06155827593453811,
+      0.06835222256799994,
+      -0.08094365899277145
+    ],
+    [
+      -0.6719205738990386,
+      0.7465626517930001,
+      -0.8843287108461526
+    ],
+    [
+      -0.10761349148718757,
+      -1.272339571454,
+      0.01774475038971035
+    ],
+    [
+      0.7779099105018759,
+      0.527593165939,
+      0.8644602011985696
+    ],
+    [
+      -0.718717182877957,
+      -1.5599456416670001,
+      -0.6758328713816883
+    ],
+    [
+      0.7818996136968481,
+      1.4897771728210003,
+      0.7589002896323311
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      2.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      0,
+      1.0
+    ],
+    [
+      4,
+      2,
+      1.0
+    ],
+    [
+      5,
+      3,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

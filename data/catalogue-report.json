@@ -2,6 +2,17 @@
   "datasetCount": 315,
   "casePageCount": 236,
   "mappedDatasetCount": 307,
+  "formulaDatasetCount": 307,
+  "datasetsWithoutFormula": [
+    "4C2NBMHA.json",
+    "5fluorouracilA.json",
+    "GalunisertibAworking.json",
+    "MefenamicAcidA_full.json",
+    "NiflumicAcidA_full.json",
+    "PhloroglucinolDihydrateB.json",
+    "SuccinicAcidD_full.json",
+    "TolfenamicAcidB_full.json"
+  ],
   "collectionCounts": {
     "BlindTest": 49,
     "CPOSS209": 26,

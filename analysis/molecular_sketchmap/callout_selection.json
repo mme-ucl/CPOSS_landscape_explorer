@@ -1,0 +1,81 @@
+{
+  "mode": "curated_experimental_compounds",
+  "dataset_ids": [
+    "UreaA",
+    "SuccinicAcidA",
+    "AspirinA",
+    "ParacetamolA",
+    "CaffeineB",
+    "CarbamazepineA",
+    "NaproxenA",
+    "ChlorothalonilA"
+  ],
+  "rationale": "Replace hypothetical/unestablished examples with recognizable experimentally characterized compounds. This is an illustrative selection, not descriptor-space farthest-point sampling.",
+  "geometry_scope": "Callouts show the same extracted dataset representatives used in the embedding. Experimental references establish the compound crystal identity, not observation of the selected predicted packing or conformer.",
+  "molecules": [
+    {
+      "dataset_id": "UreaA",
+      "label": "Urea",
+      "csd_refcode": "UREAXX",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/Urea/Urea.html",
+      "experimental_reference_count": 18,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "SuccinicAcidA",
+      "label": "Succinic Acid",
+      "csd_refcode": "SUCACB",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/SuccinicAcid/SuccinicAcid.html",
+      "experimental_reference_count": 9,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "AspirinA",
+      "label": "Aspirin",
+      "csd_refcode": "ACSALA",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/Aspirin/Aspirin.html",
+      "experimental_reference_count": 11,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "ParacetamolA",
+      "label": "Paracetamol",
+      "csd_refcode": "HXACAN",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/Paracetamol/Paracetamol.html",
+      "experimental_reference_count": 30,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "CaffeineB",
+      "label": "Caffeine",
+      "csd_refcode": "NIWFEE",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/Caffeine/Caffeine.html",
+      "experimental_reference_count": 4,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "CarbamazepineA",
+      "label": "Carbamazepine",
+      "csd_refcode": "CBMZPN",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/1.CarbamazepineFamily/Carbamazepine/Carbamazepine.html",
+      "experimental_reference_count": 19,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "NaproxenA",
+      "label": "Naproxen",
+      "csd_refcode": "COYRUD",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/Naproxen/Naproxen.html",
+      "experimental_reference_count": 5,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    },
+    {
+      "dataset_id": "ChlorothalonilA",
+      "label": "Chlorothalonil",
+      "csd_refcode": "BAWNIW",
+      "database_source_url": "https://louiseprice.github.io/CPOSS_Database/Chlorothalonil/Chlorothalonil.html",
+      "experimental_reference_count": 3,
+      "selection_reason": "Curated familiar compound with explicit experimental crystal references; included to cover hydrogen-bonding, aromatic, pharmaceutical and halogenated chemistry"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "dataset_id": "ChloroformB",
+  "dataset_name": "Chloroform",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Chloroform/Chloroform.html",
+  "reported_formula": "C1 H1 Cl3",
+  "reported_formula_normalised": "CCl3H",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 498,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Chloroform/ChloroformB/1.ChloroformB_MOLPAK_charges.zip?raw=true",
+  "archive_git_blob_sha": "5c2a74a29e821bbeca182e32fc8f7f76c2858ca6",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 495,
+  "candidates_with_title_energy": 495,
+  "selected_filename": "1.ChloroformB_MOLPAK_charges/CLFORM_expt_ai2.res",
+  "selected_file_sha256": "f155b9eb0f8b1136d37eced86136fd0932829e6c01ab595557217337699852f8",
+  "selected_title_energy": -44.165,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "CHCl3",
+  "selected_smiles": "ClC(Cl)Cl",
+  "constitution_smiles": "ClC(Cl)Cl",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 5,
+  "selected_heavy_atoms": 4,
+  "selected_molar_mass_g_mol": 119.37800000000001,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "CHCl3": 4
+  },
+  "component_identities_per_cell": {
+    "ClC(Cl)Cl": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "CHCl3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL CLFORM_expt_ai2(-44.165) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 5,
+    "expanded_unit_cell_atoms": 20,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "H1",
+      "Cl1",
+      "Cl2",
+      "Cl3",
+      "C1",
+      "H1",
+      "Cl1",
+      "Cl2",
+      "Cl3",
+      "C1",
+      "H1",
+      "Cl1",
+      "Cl2",
+      "Cl3",
+      "C1",
+      "H1",
+      "Cl1",
+      "Cl2",
+      "Cl3"
+    ]
+  },
+  "symbols": [
+    "C",
+    "H",
+    "Cl",
+    "Cl",
+    "Cl"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.0001069057941505136,
+      0.04285198700639903,
+      -0.10604926917778457
+    ],
+    [
+      1.1457556248650747e-05,
+      0.4123501916363992,
+      -1.1240212922579698
+    ],
+    [
+      1.4396898465983439,
+      -0.9440515209616,
+      0.1294130658743038
+    ],
+    [
+      -5.248523410195105e-05,
+      1.4328998792183993,
+      0.9712416621151458
+    ],
+    [
+      -1.4397557247146384,
+      -0.9440505368996002,
+      0.12941583344630292
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      0,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,249 @@
+{
+  "dataset_id": "AlloxanA",
+  "dataset_name": "Alloxan",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Alloxan/Alloxan.html",
+  "reported_formula": "C4 H2 N2 O4",
+  "reported_formula_normalised": "C4H2N2O4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 28,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Alloxan/AlloxanA/1.AlloxanA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "c73274fb50186ce97778a2c6a2cdf314a99eccef",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 27,
+  "candidates_with_title_energy": 27,
+  "selected_filename": "1.AlloxanA_MOLPAK/ALOXAN_OPT_aq9.res",
+  "selected_file_sha256": "9663ebe553039648ae9a156bb4d2f44a55e8ab6edf6388cf290a75cde039afa0",
+  "selected_title_energy": -113.745,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 2,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C4H2N2O4",
+  "selected_smiles": "O=C1NC(=O)C(=O)C(=O)N1",
+  "constitution_smiles": "O=C1NC(=O)C(=O)C(=O)N1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 12,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 142.07,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C4H2N2O4": 4
+  },
+  "component_identities_per_cell": {
+    "O=C1NC(=O)C(=O)C(=O)N1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C4H2N2O4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL ALOXAN_OPT_aq9(-113.745) P212121",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 12,
+    "expanded_unit_cell_atoms": 48,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "H1",
+      "H2"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.360258003725499,
+      -0.8206609372690004,
+      -1.0294532657471667
+    ],
+    [
+      -0.885430220531501,
+      0.20156012966599945,
+      1.019030320630834
+    ],
+    [
+      -1.2960379420974988,
+      -0.6440488842150005,
+      -0.010887259153166573
+    ],
+    [
+      1.3102159766145007,
+      0.6511821967140001,
+      0.011096461882833308
+    ],
+    [
+      0.9053745240245004,
+      -0.266126869583001,
+      -1.1493108534451664
+    ],
+    [
+      0.31916586288850013,
+      0.8746055657840008,
+      1.1595594956408337
+    ],
+    [
+      -2.386400538667501,
+      -1.185862267497999,
+      -0.020048536433166397
+    ],
+    [
+      2.4017226678945,
+      1.1934946354490004,
+      0.020170412222833445
+    ],
+    [
+      1.642076999934499,
+      -0.4870161127649997,
+      -2.0959576747571664
+    ],
+    [
+      0.5749467630785006,
+      1.588854988065,
+      2.1146964154748336
+    ],
+    [
+      -0.6606733881834996,
+      -1.4326230960230015,
+      -1.7786618652051658
+    ],
+    [
+      -1.564702701229499,
+      0.32664065167500045,
+      1.759766348888833
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      3,
+      1.0
+    ],
+    [
+      5,
+      1,
+      1.0
+    ],
+    [
+      6,
+      2,
+      2.0
+    ],
+    [
+      7,
+      3,
+      2.0
+    ],
+    [
+      8,
+      4,
+      2.0
+    ],
+    [
+      9,
+      5,
+      2.0
+    ],
+    [
+      10,
+      0,
+      1.0
+    ],
+    [
+      11,
+      1,
+      1.0
+    ]
+  ],
+  "rejected_candidates": [
+    {
+      "candidate_rank": 1,
+      "filename": "1.AlloxanA_MOLPAK/ALOXAN_OPT_ba16.res",
+      "energy": -114.969,
+      "error": "Unresolved overlapping atomic sites"
+    }
+  ]
+}

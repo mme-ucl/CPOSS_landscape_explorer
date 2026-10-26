@@ -1,0 +1,227 @@
+{
+  "dataset_id": "5AzauracilA",
+  "dataset_name": "5-Azauracil",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Azauracil/5Azauracil/5Azauracil.html",
+  "reported_formula": "C3 H3 N3 O2",
+  "reported_formula_normalised": "C3H3N3O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 49,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Azauracil/5Azauracil/5AzauracilA/1.5AzauracilA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "aa0fe4e8cf15286dd0827110b171989c714dda5d",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 48,
+  "candidates_with_title_energy": 48,
+  "selected_filename": "1.5AzauracilA_MOLPAK/XERBEB_opt_da92.res",
+  "selected_file_sha256": "3c0b1c330c14c2ec1fd14ffd7daef11a20d0b570f4e657ab081860e2e313bde1",
+  "selected_title_energy": -109.276,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H3N3O2",
+  "selected_smiles": "O=c1nc[nH]c(=O)[nH]1",
+  "constitution_smiles": "O=c1nc[nH]c(=O)[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 11,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 113.076,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H3N3O2": 4
+  },
+  "component_identities_per_cell": {
+    "O=c1nc[nH]c(=O)[nH]1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H3N3O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL XERBEB_opt_da92(-109.276) Cc",
+    "lattice": -7,
+    "asymmetric_unit_atoms": 11,
+    "expanded_unit_cell_atoms": 44,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "N2",
+      "N3",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "N1",
+      "N2",
+      "N3",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "N1",
+      "N2",
+      "N3",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3",
+      "N1",
+      "N2",
+      "N3",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "H1",
+      "H2",
+      "H3"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "N",
+    "O",
+    "O",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.24330638853739672,
+      1.1794186219072742,
+      -0.35521379350391413
+    ],
+    [
+      0.19332414591544556,
+      -0.6853727917827266,
+      0.9627548173622493
+    ],
+    [
+      -0.798150974981404,
+      -0.7712249950677261,
+      -1.2115890241656997
+    ],
+    [
+      1.19568145604753,
+      1.2462732975672726,
+      1.7453485807068212
+    ],
+    [
+      -0.7914462701666383,
+      -2.6013100135377263,
+      0.20780743665557466
+    ],
+    [
+      0.6019758599369529,
+      0.6292016975972725,
+      0.8772768415622778
+    ],
+    [
+      -0.49438132379672717,
+      -1.441959902247726,
+      -0.010485034120550907
+    ],
+    [
+      -0.4238147307454547,
+      0.4611841987522727,
+      -1.311521326302472
+    ],
+    [
+      0.5030751525148927,
+      2.142569881642274,
+      -0.5073357991329672
+    ],
+    [
+      0.4123242509091336,
+      -1.165375872732727,
+      1.825798773295599
+    ],
+    [
+      -0.641893954171125,
+      1.0065958779022726,
+      -2.222841472356924
+    ]
+  ],
+  "bonds": [
+    [
+      5,
+      3,
+      2.0
+    ],
+    [
+      5,
+      1,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      4,
+      2.0
+    ],
+    [
+      6,
+      2,
+      1.5
+    ],
+    [
+      6,
+      1,
+      1.5
+    ],
+    [
+      7,
+      2,
+      1.5
+    ],
+    [
+      7,
+      0,
+      1.5
+    ],
+    [
+      8,
+      0,
+      1.0
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      7,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

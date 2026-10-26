@@ -4,16 +4,16 @@
   "annotation_comments_addressed": 24,
   "previous_review_comments_addressed": 23,
   "current_review_comments_addressed": 1,
-  "scientific_rule_tests": 12,
+  "scientific_rule_tests": 13,
   "output_verification_checks": 292,
-  "visual_review": "Final PDF rendered with Poppler at 140 dpi and visually inspected. Compact A4 layout, unchanged panel geometry/heights, all labels and legends fit. Continuous truncated Plasma gradients render cleanly without raster images or transparency stitching artefacts. Reconciled 519,167-file headline, 311-search ranking and annual structure counts are displayed. Top 20 scientists include Sally Price. All text is embedded Helvetica.",
+  "visual_review": "Final PDF rendered with Poppler at 140 dpi and visually inspected. Compact A4 layout, unchanged panel geometry/heights, all labels and legends fit. Continuous truncated Plasma gradients render cleanly without raster images or transparency stitching artefacts. Reconciled 519,167-file headline, 311-search ranking and annual structure counts are displayed. Top 20 scientists include Sally Price. All text is embedded Helvetica. Formula-parser correction was rendered with Poppler and visually inspected: two spurious high-mass molecular-system outliers are removed, while the compact A4 layout is retained.",
   "displayed_contributors": 20,
   "includes_sally_price": true,
   "plot_heights_unchanged": true,
   "cumulative_dataset_count": 236,
   "cumulative_dataset_scope": "Only single reported study years; 75 searches with intervals or pre-2010 dates excluded.",
-  "pdf_sha256": "ad75a2ed382dde92df58a0dc0424848d59ce41a12551e0a9f14e8108b32188eb",
-  "png_sha256": "4a7b07829fdd7059d48d71ead8cb67d4737d0d5e00381dd282236ca6355d9f50",
+  "pdf_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
+  "png_sha256": "fe0a76fd3166108d11690bb3f018b562191e98538970d629d77c5204866e3f05",
   "colour_scheme": {
     "name": "CPOSS Plasma (truncated)",
     "anchors": [
@@ -46,5 +46,10 @@
     "visualization_entries": 155824,
     "workbook_numeric_energy_records": 548587,
     "geometrically_deduplicated": false
+  },
+  "formula_parser_correction": {
+    "ambiguous_dataset_rows": 3,
+    "parseable_molecular_systems": 233,
+    "rule": "Separated numeric tokens are missing/ambiguous, never concatenated. Source formulas unchanged."
   }
 }

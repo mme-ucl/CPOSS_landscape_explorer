@@ -1,0 +1,412 @@
+{
+  "dataset_id": "ChlorothiazideA",
+  "dataset_name": "Chlorothiazide",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Chlorothiazide/Chlorothiazide.html",
+  "reported_formula": "C7 H6 N3 O4 Cl1 S2",
+  "reported_formula_normalised": "C7ClH6N3O4S2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 138,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Chlorothiazide/ChlorothiazideA/1.ChlorothiazideA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "f2fe96952d516e0f46997aa5cbceb509e7833abd",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 134,
+  "candidates_with_title_energy": 134,
+  "selected_filename": "1.ChlorothiazideA_MOLPAK/QQQAUG_minsa_am7.res",
+  "selected_file_sha256": "0bf2f74035c61d8532551222242de56c86af6679200393da6798f5a3c87a1633",
+  "selected_title_energy": -154.456,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C7H6ClN3O4S2",
+  "selected_smiles": "NS(=O)(=O)c1cc2c(cc1Cl)NC=NS2(=O)=O",
+  "constitution_smiles": "NS(=O)(=O)c1cc2c(cc1Cl)NC=NS2(=O)=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 23,
+  "selected_heavy_atoms": 17,
+  "selected_molar_mass_g_mol": 295.729,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C7H6ClN3O4S2": 4
+  },
+  "component_identities_per_cell": {
+    "NS(=O)(=O)c1cc2c(cc1Cl)NC=NS2(=O)=O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6ClN3O4S2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL QQQAUG_minsa_am7(-154.456) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 23,
+    "expanded_unit_cell_atoms": 92,
+    "warnings": [],
+    "source_atom_labels": [
+      "CL1",
+      "S1",
+      "S2",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "N1",
+      "N2",
+      "N3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "CL1",
+      "S1",
+      "S2",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "N1",
+      "N2",
+      "N3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "CL1",
+      "S1",
+      "S2",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "N1",
+      "N2",
+      "N3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "CL1",
+      "S1",
+      "S2",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "N1",
+      "N2",
+      "N3",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6"
+    ]
+  },
+  "symbols": [
+    "Cl",
+    "S",
+    "S",
+    "O",
+    "O",
+    "O",
+    "O",
+    "N",
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -3.075256278411608,
+      0.07062130399373912,
+      -1.5102419354090664
+    ],
+    [
+      2.246056023699701,
+      -0.125966502358261,
+      1.7714300184571954
+    ],
+    [
+      -0.15207711203316698,
+      -0.050589169670260725,
+      -3.0814936273787215
+    ],
+    [
+      3.1470697290651906,
+      -1.0827962024222608,
+      1.2252156680286888
+    ],
+    [
+      2.6541627670765635,
+      1.2357306580737388,
+      1.8974776295088915
+    ],
+    [
+      -0.9617572865266251,
+      -1.090047607366261,
+      -3.626127975224996
+    ],
+    [
+      1.2543607609882095,
+      0.00012024511373920355,
+      -3.324052814138657
+    ],
+    [
+      1.7561834853291227,
+      -0.6357325966782608,
+      3.25265659732543
+    ],
+    [
+      -0.534961160033582,
+      -0.29197373485426104,
+      2.8447275069280096
+    ],
+    [
+      -0.7856918592634816,
+      1.3811310879617391,
+      -3.552466728603944
+    ],
+    [
+      0.5455166965040981,
+      -0.5985537941502606,
+      3.6073572911805982
+    ],
+    [
+      -0.47206412759306104,
+      -0.17256293711026105,
+      1.4659345246678726
+    ],
+    [
+      0.7547664666361964,
+      -0.16791283005426072,
+      0.8268999654611839
+    ],
+    [
+      0.8145490057362164,
+      -0.1279883905342607,
+      -0.5579990070195961
+    ],
+    [
+      -0.3393512660577205,
+      -0.05808415635826103,
+      -1.3113229055913678
+    ],
+    [
+      -1.5757645195834638,
+      -0.03684805655026069,
+      -0.6545734129322405
+    ],
+    [
+      -1.6437315602728617,
+      -0.10040022943026106,
+      0.7162066495362716
+    ],
+    [
+      -1.429775230761697,
+      -0.3330033799582608,
+      3.275367877033517
+    ],
+    [
+      -0.09200947541262572,
+      2.010772177017739,
+      -3.899219194320965
+    ],
+    [
+      -1.5850315495668763,
+      1.2763069810497387,
+      -4.1417653733757795
+    ],
+    [
+      0.3099927162970957,
+      -0.8501738117502606,
+      4.627861534204534
+    ],
+    [
+      1.7662598624631531,
+      -0.15213340239026096,
+      -1.0530991465784574
+    ],
+    [
+      -2.6014460882788146,
+      -0.09991565157426074,
+      1.201226858241487
+    ]
+  ],
+  "bonds": [
+    [
+      3,
+      1,
+      2.0
+    ],
+    [
+      4,
+      1,
+      2.0
+    ],
+    [
+      5,
+      2,
+      2.0
+    ],
+    [
+      6,
+      2,
+      2.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      9,
+      2,
+      1.0
+    ],
+    [
+      10,
+      8,
+      1.0
+    ],
+    [
+      10,
+      7,
+      2.0
+    ],
+    [
+      11,
+      8,
+      1.0
+    ],
+    [
+      12,
+      11,
+      1.5
+    ],
+    [
+      12,
+      1,
+      1.0
+    ],
+    [
+      13,
+      12,
+      1.5
+    ],
+    [
+      14,
+      13,
+      1.5
+    ],
+    [
+      14,
+      2,
+      1.0
+    ],
+    [
+      15,
+      14,
+      1.5
+    ],
+    [
+      15,
+      0,
+      1.0
+    ],
+    [
+      16,
+      15,
+      1.5
+    ],
+    [
+      16,
+      11,
+      1.5
+    ],
+    [
+      17,
+      8,
+      1.0
+    ],
+    [
+      18,
+      9,
+      1.0
+    ],
+    [
+      19,
+      9,
+      1.0
+    ],
+    [
+      20,
+      10,
+      1.0
+    ],
+    [
+      21,
+      13,
+      1.0
+    ],
+    [
+      22,
+      16,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

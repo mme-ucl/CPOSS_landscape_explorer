@@ -1,0 +1,202 @@
+{
+  "dataset_id": "5AzauracilMonohydrateA",
+  "dataset_name": "5-Azauracil Monohydrate",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Azauracil/5AzauracilMonohydrate/5AzauracilMonohydrate.html",
+  "reported_formula": "C3 H3 N3 O2 . H2 O1",
+  "reported_formula_normalised": "C3H5N3O3",
+  "composition_basis": "formula unit (multicomponent)",
+  "structure_count": 25,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Azauracil/5AzauracilMonohydrate/5AzauracilMonohydrateA/1.5AzauracilMonohydrateA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "7876e836b0d80ba8ae52a5fc5642ba973c739147",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 24,
+  "candidates_with_title_energy": 24,
+  "selected_filename": "1.5AzauracilMonohydrateA_MOLPAK/HOQHAW_OPT_ad32.res",
+  "selected_file_sha256": "437240eba41f124d898e65819e428a13128e53c6f80ca83e1441e69d144f1f42",
+  "selected_title_energy": -165.011,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 1.0,
+  "selected_formula": "C3H3N3O2",
+  "selected_smiles": "O=c1nc[nH]c(=O)[nH]1",
+  "constitution_smiles": "O=c1nc[nH]c(=O)[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 11,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 113.076,
+  "observed_multicomponent": true,
+  "component_counts_per_cell": {
+    "H2O": 1,
+    "C3H3N3O2": 1
+  },
+  "component_identities_per_cell": {
+    "O": 1,
+    "O=c1nc[nH]c(=O)[nH]1": 1
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "H2O": 1.0,
+    "C3H3N3O2": 1.0
+  },
+  "omitted_component_types_per_cell": {
+    "H2O": 1
+  },
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL HOQHAW_OPT_ad32(-165.011) P1",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 14,
+    "warnings": [],
+    "source_atom_labels": [
+      "OXY1",
+      "OXY2",
+      "OXY3",
+      "NIT1",
+      "NIT2",
+      "NIT3",
+      "CAR1",
+      "CAR2",
+      "CAR3",
+      "HPD1",
+      "HPD2",
+      "HPD3",
+      "HPD4",
+      "HYD5"
+    ]
+  },
+  "symbols": [
+    "O",
+    "O",
+    "N",
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      1.9495870086777343,
+      0.23686657494872776,
+      1.474153251754541
+    ],
+    [
+      -1.1261541772952817,
+      -2.375799288867273,
+      -0.7246863968706312
+    ],
+    [
+      0.31106524117855827,
+      1.2047710956687263,
+      0.16911794735346997
+    ],
+    [
+      0.3971789581977536,
+      -1.0696314756752727,
+      0.36364633230710264
+    ],
+    [
+      -1.3071772695991726,
+      -0.08212854632727229,
+      -0.9927710092496325
+    ],
+    [
+      0.9813710685452883,
+      0.12125995619672736,
+      0.7419017166438905
+    ],
+    [
+      -0.720328447247754,
+      -1.2555204402512725,
+      -0.47850281386655946
+    ],
+    [
+      -0.7746225294454816,
+      1.0438436749527273,
+      -0.6501873096963453
+    ],
+    [
+      0.6707440880064749,
+      2.120906330000727,
+      0.39164921592780033
+    ],
+    [
+      0.8196090959433855,
+      -1.9110369967592726,
+      0.7336202494209558
+    ],
+    [
+      -1.201273036961506,
+      1.9664691161127266,
+      -1.02794118372459
+    ]
+  ],
+  "bonds": [
+    [
+      5,
+      3,
+      1.5
+    ],
+    [
+      5,
+      2,
+      1.5
+    ],
+    [
+      5,
+      0,
+      2.0
+    ],
+    [
+      6,
+      4,
+      1.5
+    ],
+    [
+      6,
+      3,
+      1.5
+    ],
+    [
+      6,
+      1,
+      2.0
+    ],
+    [
+      7,
+      4,
+      1.5
+    ],
+    [
+      7,
+      2,
+      1.5
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      7,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

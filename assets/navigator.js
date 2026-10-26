@@ -240,7 +240,7 @@
     }
 
     async function loadCatalogue() {
-        const response = await fetch('data/catalogue.json?v=20261023', { cache: 'no-cache' });
+        const response = await fetch('data/catalogue.json?v=20261026-formula', { cache: 'no-cache' });
         if (!response.ok) throw new Error('The dataset catalogue could not be loaded. Serve this folder over HTTP (see README).');
         const catalogue = await response.json();
         if (catalogue.schemaVersion !== 1 || !Array.isArray(catalogue.datasets) || !catalogue.datasets.length) throw new Error('The dataset catalogue is empty or unsupported.');
@@ -259,6 +259,13 @@
     }
 
     function bindBrowser() {
+        const analysesLink = byId('dataset-analyses-link');
+        if (analysesLink) analysesLink.addEventListener('click', () => {
+            const target = new URL('analyses.html', window.location.href);
+            const load = new URL(window.location.href).searchParams.get('load');
+            if (load) target.searchParams.set('load', load);
+            analysesLink.href = target.href;
+        });
         const input = byId('dataset-search');
         input.addEventListener('input', () => { renderResults(); openResults(); });
         input.addEventListener('focus', openResults);

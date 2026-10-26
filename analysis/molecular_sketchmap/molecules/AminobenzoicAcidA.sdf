@@ -1,0 +1,64 @@
+AminobenzoicAcidA
+     RDKit          3D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+    0.4196   -0.9745   -0.3095 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2603   -0.1189   -1.1714 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7291    1.0991   -0.7306 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5366    1.4916    0.5961 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1512    0.6364    1.4607 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6233   -0.5749    1.0078 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.9509   -2.2822   -0.7421 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6300   -2.6009   -1.9957 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5920   -3.0189   -0.0572 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0723   -3.4111   -2.2087 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4185   -0.4088   -2.1931 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2413    1.7576   -1.4101 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3140    0.9303    2.4830 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1532   -1.2317    1.6722 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7656    3.1050    0.5641 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9877    2.8704    2.0095 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9674    2.7315    1.0251 N   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  2  0
+  4  3  1  0
+  5  4  2  0
+  6  5  1  0
+  6  1  2  0
+  7  1  1  0
+  8  7  1  0
+  9  7  2  0
+ 10  8  1  0
+ 11  2  1  0
+ 12  3  1  0
+ 13  5  1  0
+ 14  6  1  0
+ 17 16  1  0
+ 17 15  1  0
+ 17  4  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+AminobenzoicAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/AminobenzoicAcid/AminobenzoicAcidA/1.AminobenzoicAcidA_spDMAflex_Will.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.AminobenzoicAcidA_spDMAflex_Will/AMBNAC_dfA14_A14.res
+
+>  <reported_formula>  (1) 
+C7 H7 N1 O2
+
+>  <selected_formula>  (1) 
+C7H7NO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+689
+
+$$$$

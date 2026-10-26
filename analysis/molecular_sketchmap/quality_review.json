@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "review_date": "2026-10-23",
+  "scientific_rule_tests": 10,
+  "output_verification_checks": 1975,
+  "datasets_attempted": 311,
+  "datasets_included": 308,
+  "represented_structure_files": 519004,
+  "visual_review": "Latest A4 PDF rendered with Poppler at 1600-pixel page height and visually inspected. Title/count subtitle and bottom explanatory notes are absent. Eight Tachyon matte/chalky ambient-occlusion callouts are sharp and readable. Side callouts and leaders leave plot frame and axis labels clear. Native 1800x1200 molecular images, vector map/colourbar and embedded Helvetica verified. No clipping or label collisions.",
+  "callout_selection": "Eight curated compounds with explicit experimental crystal references in CPOSS; identities documented by 99 dataset-reference records. Selected predicted geometries are not asserted to be experimentally observed.",
+  "callouts": [
+    "UreaA",
+    "SuccinicAcidA",
+    "AspirinA",
+    "ParacetamolA",
+    "CaffeineB",
+    "CarbamazepineA",
+    "NaproxenA",
+    "ChlorothalonilA"
+  ],
+  "renderer": "Tachyon 0.99b6 CPU ray tracer; VMD-inspired matte/chalky ambient-occlusion materials",
+  "pdf_sha256": "ec4c733235926c4d92186f4733417f83c962bf00ba63af351c116286ee75ebee",
+  "png_sha256": "44b9cc31a8a31c964f1fe54fdaa4a537d615dbb3a1918d682fd5afd089a9d49f",
+  "descriptor_archive_sha256": "f9dde8720c9141f21bf691501785c30eed1d16db8f38772f6ab538344e4948a7",
+  "embedding_runs_sha256": "a436f289fe880053980110435a75faade27805ac41fd9c9b8c6750006676bbe8",
+  "annotation_comments_addressed": 3,
+  "ambient_occlusion": {
+    "ambient": 0.8,
+    "direct": 0.3,
+    "samples": 128,
+    "specular": 0,
+    "phong": 0
+  },
+  "removed_figure_text": [
+    "title",
+    "dataset/count subtitle",
+    "bottom exclusion/coformer notes"
+  ],
+  "unchanged_scientific_inputs_sha256": {
+    "tables/dataset_embedding.csv": "eda7c41b88b9d442606e1557212c703b25f4e8579afe86bc58e5223e6c3c777c",
+    "data/molecular_descriptors.npz": "f9dde8720c9141f21bf691501785c30eed1d16db8f38772f6ab538344e4948a7",
+    "data/sketchmap_runs.npz": "a436f289fe880053980110435a75faade27805ac41fd9c9b8c6750006676bbe8",
+    "inputs/callout_experimental_references.csv": "7c8131d945bb4d9d70c7563f86d53d0c20bf14fa9790423f0fcd0240cf68803d",
+    "callout_selection.json": "a83d60d67489dafe696cd5c89782511a8b080c9db7178c41bf83f2f8a5e1382a"
+  },
+  "molecular_rendering_manifest_sha256": "957f33f459cbb9ed469a91168fa76f254d40fa036d6b2453660cf191f616532f"
+}

@@ -1,0 +1,361 @@
+{
+  "dataset_id": "PiracetamA",
+  "dataset_name": "Piracetam",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Piracetam/Piracetam.html",
+  "reported_formula": "C6 H10 N2 02",
+  "reported_formula_normalised": "",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 61,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Piracetam/PiracetamA/1.PiracetamA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "5a573ad5b571560e94fed025d335f57042a60d58",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 33,
+  "candidates_with_title_energy": 33,
+  "selected_filename": "1.PiracetamA/BISMEV_4b_fc28.res",
+  "selected_file_sha256": "cce0d0928a468d176cc19e4841e6d91534c14e83c9d93cd3740da887a61ffbd4",
+  "selected_title_energy": -112.032,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "source_formula_conflict_coordinates_retained",
+  "formula_units_in_cell": null,
+  "selected_formula": "C6H10N2O2",
+  "selected_smiles": "NC(=O)CN1CCCC1=O",
+  "constitution_smiles": "NC(=O)CN1CCCC1=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 20,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 142.158,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C6H10N2O2": 4
+  },
+  "component_identities_per_cell": {
+    "NC(=O)CN1CCCC1=O": 4
+  },
+  "component_stoichiometry_per_formula_unit": null,
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL BISMEV_4b_fc28(-112.032)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 20,
+    "expanded_unit_cell_atoms": 80,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "N",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.12492049178162956,
+      1.4108272174227503,
+      -0.7105350543738016
+    ],
+    [
+      -0.9300791336563479,
+      2.18788316993275,
+      0.05481482197842347
+    ],
+    [
+      -2.0097777891895845,
+      1.1642975540477498,
+      0.4135332284376023
+    ],
+    [
+      -1.3562099652770994,
+      -0.2181444671422501,
+      0.20058255967307126
+    ],
+    [
+      0.8394484825916817,
+      -0.9073259383922502,
+      -0.8363148206541915
+    ],
+    [
+      1.6008334387241079,
+      -1.2340486377172502,
+      0.45238662397741614
+    ],
+    [
+      -0.1735252393590403,
+      0.07349097844774977,
+      -0.5875126000491733
+    ],
+    [
+      2.2668657624804984,
+      -2.4229228334572497,
+      0.4285456118545934
+    ],
+    [
+      1.1022961886203606,
+      1.86155327981275,
+      -1.3008989811717004
+    ],
+    [
+      1.6130241438810233,
+      -0.4714533151022502,
+      1.4142244192663167
+    ],
+    [
+      -1.2912815086294929,
+      3.0297599594977505,
+      -0.5323148893338772
+    ],
+    [
+      -0.4337954802897799,
+      2.5893346268077493,
+      0.9396657622882731
+    ],
+    [
+      -2.8646594093930196,
+      1.2721651186927496,
+      -0.2531925648503712
+    ],
+    [
+      -2.373201492229305,
+      1.2733559359427504,
+      1.4326365934775573
+    ],
+    [
+      -1.0687029103328545,
+      -0.6736949763672502,
+      1.1525716224431157
+    ],
+    [
+      -2.011590358303651,
+      -0.9129580225222502,
+      -0.329273253150312
+    ],
+    [
+      1.540232412139349,
+      -0.4725171546422502,
+      -1.5520903835190971
+    ],
+    [
+      0.4054768435322438,
+      -1.8096488683472494,
+      -1.2756072694885106
+    ],
+    [
+      2.198173619982005,
+      -3.064670169842251,
+      -0.33967867850770084
+    ],
+    [
+      2.8215519029272658,
+      -2.6752834570722497,
+      1.2284572517023875
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      2,
+      1.0
+    ],
+    [
+      5,
+      4,
+      1.0
+    ],
+    [
+      6,
+      4,
+      1.0
+    ],
+    [
+      6,
+      3,
+      1.0
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      5,
+      1.0
+    ],
+    [
+      8,
+      0,
+      2.0
+    ],
+    [
+      9,
+      5,
+      2.0
+    ],
+    [
+      10,
+      1,
+      1.0
+    ],
+    [
+      11,
+      1,
+      1.0
+    ],
+    [
+      12,
+      2,
+      1.0
+    ],
+    [
+      13,
+      2,
+      1.0
+    ],
+    [
+      14,
+      3,
+      1.0
+    ],
+    [
+      15,
+      3,
+      1.0
+    ],
+    [
+      16,
+      4,
+      1.0
+    ],
+    [
+      17,
+      4,
+      1.0
+    ],
+    [
+      18,
+      7,
+      1.0
+    ],
+    [
+      19,
+      7,
+      1.0
+    ]
+  ],
+  "rejected_candidates": [],
+  "source_formula_note": "Separated numeric tokens in the reported formula are ambiguous and were not concatenated; original formula is unchanged."
+}

@@ -1,0 +1,467 @@
+{
+  "dataset_id": "PyreneA",
+  "dataset_name": "Pyrene",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Pyrene/Pyrene.html",
+  "reported_formula": "C16 H10",
+  "reported_formula_normalised": "C16H10",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 699,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Pyrene/PyreneA/1.PyreneA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "171fd269a0367a8cf6ae402dc0e98f0c8ffc201c",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 686,
+  "candidates_with_title_energy": 686,
+  "selected_filename": "1.PyreneA_CrystPred/PYRENE_opt_A156.res",
+  "selected_file_sha256": "b2767008463b0bc7cdade99939abd8e34fd8fa2a73bac81bb31e06b7b84f57e8",
+  "selected_title_energy": -107.447,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C16H10",
+  "selected_smiles": "c1cc2ccc3cccc4ccc(c1)c2c34",
+  "constitution_smiles": "c1cc2ccc3cccc4ccc(c1)c2c34",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 26,
+  "selected_heavy_atoms": 16,
+  "selected_molar_mass_g_mol": 202.256,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C16H10": 4
+  },
+  "component_identities_per_cell": {
+    "c1cc2ccc3cccc4ccc(c1)c2c34": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C16H10": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PYRENE_opt_A156(-107.447) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 26,
+    "expanded_unit_cell_atoms": 104,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      2.6331717642929053,
+      0.007838426110038647,
+      -2.340910750862558
+    ],
+    [
+      2.853103992788494,
+      0.4918242730700386,
+      -1.0526327823977244
+    ],
+    [
+      1.8195793034467593,
+      0.4990099184110384,
+      -0.10237663408698161
+    ],
+    [
+      2.0065857132775093,
+      0.9897270512960383,
+      1.2360606166153953
+    ],
+    [
+      0.9892469205809968,
+      0.9867282486360384,
+      2.140416942652422
+    ],
+    [
+      -0.31637556020726976,
+      0.49267112395603846,
+      1.7964379821441483
+    ],
+    [
+      -1.3810739567081693,
+      0.4791827674380385,
+      2.7115407257299733
+    ],
+    [
+      -2.633298675967225,
+      -0.008023950727961917,
+      2.3408703345106794
+    ],
+    [
+      -2.852907015633709,
+      -0.4919955322059617,
+      1.052646952322295
+    ],
+    [
+      -1.8194132961594738,
+      -0.49902311295496155,
+      0.10218331323738017
+    ],
+    [
+      -2.0066913391184844,
+      -0.9896319960059612,
+      -1.235951274652633
+    ],
+    [
+      -0.9892182527267384,
+      -0.9866141981319612,
+      -2.140468527954237
+    ],
+    [
+      0.3164049714320951,
+      -0.49259365258896176,
+      -1.7964848481713425
+    ],
+    [
+      1.3812661588974997,
+      -0.4791347043239619,
+      -2.711555500689747
+    ],
+    [
+      0.5329787849167644,
+      0.0016345053030386483,
+      -0.47390624790562175
+    ],
+    [
+      -0.5331105695320293,
+      -0.0016007076709616134,
+      0.47383720128770435
+    ],
+    [
+      3.4450160670568746,
+      0.010242274256038646,
+      -3.062493503554255
+    ],
+    [
+      3.8325501330836396,
+      0.8697144119550385,
+      -0.7719945100711127
+    ],
+    [
+      2.9871981263547767,
+      1.3670856674760385,
+      1.5138778638826818
+    ],
+    [
+      1.14879312847643,
+      1.3618884548680383,
+      3.148008344880358
+    ],
+    [
+      -1.2186787264465444,
+      0.8548657616280384,
+      3.718105685727828
+    ],
+    [
+      -3.444789983365495,
+      -0.010498477852961824,
+      3.0627055683946036
+    ],
+    [
+      -3.832347637592828,
+      -0.8701415343349618,
+      0.7720423441546487
+    ],
+    [
+      -2.987303142928425,
+      -1.3670271531799616,
+      -1.5137636453361445
+    ],
+    [
+      -1.1490662841196082,
+      -1.3615446309319612,
+      -3.1479598815602072
+    ],
+    [
+      1.2183793759013204,
+      -0.8545832334929614,
+      -3.7182357682975073
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      10,
+      9,
+      1.5
+    ],
+    [
+      11,
+      10,
+      1.5
+    ],
+    [
+      12,
+      11,
+      1.5
+    ],
+    [
+      13,
+      12,
+      1.5
+    ],
+    [
+      13,
+      0,
+      1.5
+    ],
+    [
+      14,
+      12,
+      1.5
+    ],
+    [
+      14,
+      2,
+      1.5
+    ],
+    [
+      15,
+      14,
+      1.5
+    ],
+    [
+      15,
+      9,
+      1.5
+    ],
+    [
+      15,
+      5,
+      1.5
+    ],
+    [
+      16,
+      0,
+      1.0
+    ],
+    [
+      17,
+      1,
+      1.0
+    ],
+    [
+      18,
+      3,
+      1.0
+    ],
+    [
+      19,
+      4,
+      1.0
+    ],
+    [
+      20,
+      6,
+      1.0
+    ],
+    [
+      21,
+      7,
+      1.0
+    ],
+    [
+      22,
+      8,
+      1.0
+    ],
+    [
+      23,
+      10,
+      1.0
+    ],
+    [
+      24,
+      11,
+      1.0
+    ],
+    [
+      25,
+      13,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

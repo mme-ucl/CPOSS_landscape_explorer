@@ -1,0 +1,45 @@
+BTXIIB
+     RDKit          3D
+
+  8  7  0  0  0  0  0  0  0  0999 V2000
+    0.7612   -0.6622   -0.6939 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4134    0.2484    0.2273 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0049    0.4926    0.5371 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3951    1.3078    1.3662 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0066   -1.2300   -1.2242 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.7926   -0.8636   -0.9433 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1454    0.8300    0.7724 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7193   -0.1231   -0.0416 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  1  1  0
+  6  1  1  0
+  7  2  1  0
+  8  3  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+BTXIIB
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XII/BTXIIB/1.BTXIIB_Molpak_Will.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.BTXIIB_Molpak_Will/AXOSOW_trans_ay21.res
+
+>  <reported_formula>  (1) 
+C3 H4 O1
+
+>  <selected_formula>  (1) 
+C3H4O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+331
+
+$$$$

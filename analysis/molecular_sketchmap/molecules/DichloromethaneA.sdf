@@ -1,0 +1,39 @@
+DichloromethaneA
+     RDKit          3D
+
+  5  4  0  0  0  0  0  0  0  0999 V2000
+   -0.5444    1.4371   -0.6752 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5775   -1.4809   -0.5395 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    0.1014    0.0040    0.1097 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1711   -0.0297   -0.0561 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1506    0.0696    1.1610 H   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  3  1  1  0
+  4  3  1  0
+  5  3  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+DichloromethaneA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Dichloromethane/DichloromethaneA/1.DichloromethaneA_MOLPAKiso.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.DichloromethaneA_MOLPAKiso/DCLMET_expt_fc48.res
+
+>  <reported_formula>  (1) 
+C1 H2 Cl2
+
+>  <selected_formula>  (1) 
+CH2Cl2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+115
+
+$$$$

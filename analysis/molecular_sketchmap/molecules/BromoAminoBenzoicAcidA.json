@@ -1,0 +1,283 @@
+{
+  "dataset_id": "BromoAminoBenzoicAcidA",
+  "dataset_name": "Bromo Amino Benzoic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/BromoAminoBenzoicAcid/BromoAminoBenzoicAcid.html",
+  "reported_formula": "C7 H6 N1 O2 Br1",
+  "reported_formula_normalised": "BrC7H6NO2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 381,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/BromoAminoBenzoicAcid/BromoAminoBenzoicAcidA/1.BromoAminoBenzoicAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "0c896f262dc892ff847aa55790e1dd2f3b9fb9e0",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 378,
+  "candidates_with_title_energy": 378,
+  "selected_filename": "1.BromoAminoBenzoicAcidA_MOLPAK/TONIBR_opt_ca111.res",
+  "selected_file_sha256": "73ee638f3696fef0cdec2aec5ce501ed83af3281559e32bba0b0cf08843911d5",
+  "selected_title_energy": -100.36,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C7H6BrNO2",
+  "selected_smiles": "Nc1ccc(Br)cc1C(=O)O",
+  "constitution_smiles": "Nc1ccc(Br)cc1C(=O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 216.034,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C7H6BrNO2": 2
+  },
+  "component_identities_per_cell": {
+    "Nc1ccc(Br)cc1C(=O)O": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6BrNO2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL TONIBR_opt_ca111(-100.360) P-1",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 17,
+    "expanded_unit_cell_atoms": 34,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "N1",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "BR7",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "N1",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "BR7"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "Br"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.19218587357712202,
+      -0.5262017667497743,
+      0.17690340715432784
+    ],
+    [
+      0.6510276843688345,
+      0.7800674338471287,
+      -0.08316101269207565
+    ],
+    [
+      -0.283839270675009,
+      1.719087221619982,
+      -0.5620826936965089
+    ],
+    [
+      -1.5921189228492305,
+      1.3799427571114569,
+      -0.774742373757692
+    ],
+    [
+      -2.0321289904131756,
+      0.08263983426081545,
+      -0.518980368767137
+    ],
+    [
+      -1.151386673138076,
+      -0.851801534268108,
+      -0.05136704910598122
+    ],
+    [
+      1.107647647112696,
+      -1.555841621704979,
+      0.7015710230743233
+    ],
+    [
+      1.9405746405971884,
+      1.1599274561580026,
+      0.08093621153592445
+    ],
+    [
+      2.2628140314062106,
+      -1.3889610696737007,
+      0.9742263853487927
+    ],
+    [
+      0.5384846324195021,
+      -2.744133121047451,
+      0.8676846140627625
+    ],
+    [
+      0.04674993704478103,
+      2.7215279135895427,
+      -0.7686267692719779
+    ],
+    [
+      -2.2822728906475707,
+      2.116762726075419,
+      -1.1412259392805901
+    ],
+    [
+      -1.48434355215855,
+      -1.8497912803772891,
+      0.14994809946810372
+    ],
+    [
+      2.1648429162027103,
+      2.1240668192050647,
+      0.0351754149665231
+    ],
+    [
+      2.5764543676172025,
+      0.5398149163159536,
+      0.5240348599507709
+    ],
+    [
+      1.1959262241773239,
+      -3.334683916398715,
+      1.2094842619253066
+    ],
+    [
+      -3.8506176546419524,
+      -0.3724227679633634,
+      -0.8197780709148732
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      6,
+      2.0
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      10,
+      2,
+      1.0
+    ],
+    [
+      11,
+      3,
+      1.0
+    ],
+    [
+      12,
+      5,
+      1.0
+    ],
+    [
+      13,
+      7,
+      1.0
+    ],
+    [
+      14,
+      7,
+      1.0
+    ],
+    [
+      15,
+      9,
+      1.0
+    ],
+    [
+      16,
+      4,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

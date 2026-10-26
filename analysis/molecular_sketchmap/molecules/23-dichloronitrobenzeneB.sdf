@@ -1,0 +1,59 @@
+23-dichloronitrobenzeneB
+     RDKit          3D
+
+ 14 14  0  0  0  0  0  0  0  0999 V2000
+   -0.1226    0.8585   -0.0276 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1412    0.2835   -0.2019 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2277   -1.1153   -0.1335 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0965   -1.8890    0.1133 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1458   -1.2884    0.2688 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2605    0.0908    0.1795 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3257    2.3108   -0.0597 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4733    3.0085    0.5340 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3229    2.7026   -0.6433 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.5323    1.2216   -0.5590 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    2.7400   -1.9146   -0.3611 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    0.2055   -2.9664    0.1696 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.0238   -1.8980    0.4517 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2153    0.5953    0.2692 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  2  0
+  4  3  1  0
+  5  4  2  0
+  6  5  1  0
+  6  1  2  0
+  7  1  1  0
+  8  7  2  0
+  9  7  1  0
+ 10  2  1  0
+ 11  3  1  0
+ 12  4  1  0
+ 13  5  1  0
+ 14  6  1  0
+M  CHG  2   7   1   9  -1
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+23-dichloronitrobenzeneB
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.DiChloroNitroBenzene/23-dichloronitrobenzene/23-dichloronitrobenzeneB/1.23-dichloronitrobenzeneB_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.23-dichloronitrobenzeneB_CrystPred/DOXWIW_dfA900_A900.res
+
+>  <reported_formula>  (1) 
+C6 H3 N1 O2 Cl2
+
+>  <selected_formula>  (1) 
+C6H3Cl2NO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+4091
+
+$$$$

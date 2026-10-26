@@ -1,0 +1,68 @@
+4dimethylaminopyridinemaleicacidA
+     RDKit          3D
+
+ 19 19  0  0  0  0  0  0  0  0999 V2000
+   -0.7873    0.9042    1.8807 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1905   -0.6444    1.7732 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0366   -0.0300   -0.2468 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8533   -0.7783   -1.0445 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6572   -0.8331   -2.4198 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1749    0.5027   -2.3128 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0782    0.6289   -0.9318 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5061    0.8560    2.9286 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7300    1.9473    1.5583 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8259    0.5760    1.7922 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1058   -0.4966    2.8459 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1459   -1.7174    1.5742 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1699   -0.2777    1.4527 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.6876   -1.3104   -0.6123 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.3437   -1.4109   -3.0297 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9791    1.0099   -2.8356 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.8067    1.2296   -0.4078 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1062    0.0571    1.1176 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3354   -0.2127   -3.0825 N   0  0  0  0  0  0  0  0  0  0  0  0
+  4  3  2  0
+  5  4  1  0
+  7  6  2  0
+  7  3  1  0
+  8  1  1  0
+  9  1  1  0
+ 10  1  1  0
+ 11  2  1  0
+ 12  2  1  0
+ 13  2  1  0
+ 14  4  1  0
+ 15  5  1  0
+ 16  6  1  0
+ 17  7  1  0
+ 18  3  1  0
+ 18  2  1  0
+ 18  1  1  0
+ 19  6  1  0
+ 19  5  2  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+4dimethylaminopyridinemaleicacidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4dimethylaminopyridinemaleicacid/4dimethylaminopyridinemaleicacidA/1.4dimethylaminopyridinemaleicacidA_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.4dimethylaminopyridinemaleicacidA_CrystPred/UCLSMB_opt_A30.res
+
+>  <reported_formula>  (1) 
+C7 H10 N2 - C4 H4 O4
+
+>  <selected_formula>  (1) 
+C7H10N2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+943
+
+$$$$

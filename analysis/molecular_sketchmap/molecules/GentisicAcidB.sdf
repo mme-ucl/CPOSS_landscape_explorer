@@ -1,0 +1,64 @@
+GentisicAcidB
+     RDKit          3D
+
+ 17 17  0  0  0  0  0  0  0  0999 V2000
+    0.5615   -0.3084    0.0507 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0678   -0.7270   -1.1178 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3174   -0.1843   -1.4400 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9109    0.7396   -0.6236 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2816    1.1630    0.5520 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0614    0.6429    0.8809 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.8767   -0.8665    0.4086 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4389   -1.6208   -1.9674 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9372    2.0813    1.3049 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.3824   -0.3995    1.5389 O   0  0  0  0  0  0  0  0  0  0  0  0
+    2.4733   -1.6795   -0.2445 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2852   -1.9245   -1.6586 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4401    2.3049    2.0738 H   0  0  0  0  0  0  0  0  0  0  0  0
+    3.2225   -0.8161    1.6796 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.7942   -0.5140   -2.3440 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8702    1.1555   -0.8720 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4404    0.9534    1.7785 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  6  1  1  0
+  7  1  1  0
+  8  2  1  0
+  9  5  1  0
+ 10  7  1  0
+ 11  7  2  0
+ 12  8  1  0
+ 13  9  1  0
+ 14 10  1  0
+ 15  3  1  0
+ 16  4  1  0
+ 17  6  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+GentisicAcidB
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/GentisicAcid/GentisicAcid/GentisicAcidB/1.GentisicAcidB_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.GentisicAcidB_CrystPred/BESKAL_Conf12_A246.res
+
+>  <reported_formula>  (1) 
+C7 H6 O4
+
+>  <selected_formula>  (1) 
+C7H6O4
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+6233
+
+$$$$

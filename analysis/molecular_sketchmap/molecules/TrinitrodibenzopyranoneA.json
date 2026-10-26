@@ -1,0 +1,520 @@
+{
+  "dataset_id": "TrinitrodibenzopyranoneA",
+  "dataset_name": "Trinitrodibenzopyranone",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrodibenzopyranone/Trinitrodibenzopyranone.html",
+  "reported_formula": "C13 H5 N3 O8",
+  "reported_formula_normalised": "C13H5N3O8",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 158,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Trinitrodibenzopyranone/TrinitrodibenzopyranoneA/1.TrinitrodibenzopyranoneA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "aaba29ec80279cf398b72a10789e5a360019aeac",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 156,
+  "candidates_with_title_energy": 156,
+  "selected_filename": "1.TrinitrodibenzopyranoneA_MOLPAK/CIVTUW_EXPT01_ak33.res",
+  "selected_file_sha256": "31918d6d95bbb6a1ba4ae77b493f1bb02d81754e5184ff6e2752ffca9c83bf7c",
+  "selected_title_energy": -173.341,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 3,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C13H5N3O8",
+  "selected_smiles": "O=c1oc2cc([N+](=O)[O-])c([N+](=O)[O-])cc2c2ccc([N+](=O)[O-])cc12",
+  "constitution_smiles": "O=c1oc2cc([N+](=O)[O-])c([N+](=O)[O-])cc2c2ccc([N+](=O)[O-])cc12",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 29,
+  "selected_heavy_atoms": 24,
+  "selected_molar_mass_g_mol": 331.19599999999997,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C13H5N3O8": 4
+  },
+  "component_identities_per_cell": {
+    "O=c1oc2cc([N+](=O)[O-])c([N+](=O)[O-])cc2c2ccc([N+](=O)[O-])cc12": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C13H5N3O8": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL CIVTUW_EXPT01_ak33(-173.341) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 29,
+    "expanded_unit_cell_atoms": 116,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "N1",
+      "N2",
+      "N3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "N1",
+      "N2",
+      "N3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "N1",
+      "N2",
+      "N3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "O7",
+      "O8",
+      "N1",
+      "N2",
+      "N3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "O",
+    "N",
+    "N",
+    "N",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.49353306381284767,
+      -1.4357401893883086,
+      -0.8546686540128352
+    ],
+    [
+      -0.20767451993477515,
+      -2.398644884355309,
+      -1.536869552833556
+    ],
+    [
+      -1.5840814613350034,
+      -2.337118648593309,
+      -1.6377320346935358
+    ],
+    [
+      -2.2860737129713424,
+      -1.3018260031683093,
+      -1.077566066888398
+    ],
+    [
+      -1.7764169419269287,
+      1.7507281713306906,
+      0.8040538900712324
+    ],
+    [
+      0.25073034355485824,
+      2.771359840774691,
+      1.7258135857339028
+    ],
+    [
+      1.6043947567283503,
+      2.7454287494036915,
+      1.9356993590838698
+    ],
+    [
+      2.419639618931374,
+      1.746819232800691,
+      1.4387997892221467
+    ],
+    [
+      1.8531062075714964,
+      0.7332826777516903,
+      0.7006938219597014
+    ],
+    [
+      0.47323691403446055,
+      0.7029975035496907,
+      0.4778355795929361
+    ],
+    [
+      -0.19265041721616782,
+      -0.36224512580930934,
+      -0.26750416192459525
+    ],
+    [
+      -1.5752051300339094,
+      -0.3168624117533092,
+      -0.40806086085196647
+    ],
+    [
+      -0.3233769843070551,
+      1.7350226666346895,
+      0.9888957905717106
+    ],
+    [
+      1.4190879973324435,
+      -4.0269648153903095,
+      -1.5787619098086765
+    ],
+    [
+      0.37841642158005406,
+      -3.583239814057309,
+      -3.423242485157635
+    ],
+    [
+      -1.9381867445429126,
+      -4.556674977681309,
+      -2.153990588286992
+    ],
+    [
+      -3.345043478246078,
+      -3.088619727254309,
+      -2.9001589367214367
+    ],
+    [
+      -2.3331036021975358,
+      0.7136129461226908,
+      0.08939699637143761
+    ],
+    [
+      -2.5226470725350243,
+      2.5910862940406894,
+      1.2120754319850366
+    ],
+    [
+      1.5063802262292771,
+      4.70870257148669,
+      3.1395342105517727
+    ],
+    [
+      3.4107868336702616,
+      3.7246439384376906,
+      2.983082750473095
+    ],
+    [
+      0.5833005980428982,
+      -3.431734920073309,
+      -2.231287632911659
+    ],
+    [
+      -2.343145185642525,
+      -3.416509158178309,
+      -2.287889018127024
+    ],
+    [
+      2.2227215637981104,
+      3.801771260622692,
+      2.751027616996314
+    ],
+    [
+      1.568114522313806,
+      -1.5040801845433096,
+      -0.7704339813974102
+    ],
+    [
+      -3.3622557231170536,
+      -1.2543853011353097,
+      -1.155233150861763
+    ],
+    [
+      -0.35598071006914545,
+      3.572923910980691,
+      2.1201489805694838
+    ],
+    [
+      3.4830438593071555,
+      1.7614348155496895,
+      1.6258411209658057
+    ],
+    [
+      2.479348757168129,
+      -0.045168418105309804,
+      0.2905001103289866
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      10,
+      9,
+      1.5
+    ],
+    [
+      10,
+      0,
+      1.5
+    ],
+    [
+      11,
+      10,
+      1.5
+    ],
+    [
+      11,
+      3,
+      1.5
+    ],
+    [
+      12,
+      9,
+      1.5
+    ],
+    [
+      12,
+      5,
+      1.5
+    ],
+    [
+      12,
+      4,
+      1.5
+    ],
+    [
+      17,
+      11,
+      1.5
+    ],
+    [
+      17,
+      4,
+      1.5
+    ],
+    [
+      18,
+      4,
+      2.0
+    ],
+    [
+      21,
+      14,
+      1.0
+    ],
+    [
+      21,
+      13,
+      2.0
+    ],
+    [
+      21,
+      1,
+      1.0
+    ],
+    [
+      22,
+      16,
+      1.0
+    ],
+    [
+      22,
+      15,
+      2.0
+    ],
+    [
+      22,
+      2,
+      1.0
+    ],
+    [
+      23,
+      20,
+      1.0
+    ],
+    [
+      23,
+      19,
+      2.0
+    ],
+    [
+      23,
+      6,
+      1.0
+    ],
+    [
+      24,
+      0,
+      1.0
+    ],
+    [
+      25,
+      3,
+      1.0
+    ],
+    [
+      26,
+      5,
+      1.0
+    ],
+    [
+      27,
+      7,
+      1.0
+    ],
+    [
+      28,
+      8,
+      1.0
+    ]
+  ],
+  "rejected_candidates": [
+    {
+      "candidate_rank": 1,
+      "filename": "1.TrinitrodibenzopyranoneA_MOLPAK/CIVTUW_EXPT_ba18.res",
+      "energy": -181.635,
+      "error": "Periodic covalent network or excessive bond cutoff"
+    },
+    {
+      "candidate_rank": 2,
+      "filename": "1.TrinitrodibenzopyranoneA_MOLPAK/CIVTUW_EXPT_be101.res",
+      "energy": -174.173,
+      "error": "Unresolved overlapping atomic sites"
+    }
+  ]
+}

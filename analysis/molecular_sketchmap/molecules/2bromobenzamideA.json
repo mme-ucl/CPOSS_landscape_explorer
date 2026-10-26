@@ -1,0 +1,270 @@
+{
+  "dataset_id": "2bromobenzamideA",
+  "dataset_name": "2-bromobenzamide",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2bromobenzamide/2bromobenzamide.html",
+  "reported_formula": "C7 H6 N1 O1 Br1",
+  "reported_formula_normalised": "BrC7H6NO",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 427,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/2bromobenzamide/2bromobenzamideA/1.2bromobenzamideA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "3a4ec7216309bd5e8f93e0966c73b56432416958",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 426,
+  "candidates_with_title_energy": 426,
+  "selected_filename": "1.2bromobenzamideA_MOLPAK/BRBZAO_opt_ab77.res",
+  "selected_file_sha256": "274d4b86e3df16bab80d7fdcd116682f18fa2de54dff1e952bb4d600bd51615f",
+  "selected_title_energy": -92.894,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C7H6BrNO",
+  "selected_smiles": "NC(=O)c1ccccc1Br",
+  "constitution_smiles": "NC(=O)c1ccccc1Br",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 16,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 200.035,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C7H6BrNO": 2
+  },
+  "component_identities_per_cell": {
+    "NC(=O)c1ccccc1Br": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6BrNO": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL BRBZAO_opt_ab77(-92.894)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 16,
+    "expanded_unit_cell_atoms": 32,
+    "warnings": [],
+    "source_atom_labels": [
+      "BR1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "N1",
+      "O1",
+      "BR1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "N1",
+      "O1"
+    ]
+  },
+  "symbols": [
+    "Br",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.5944144838896586,
+      -2.0005006895031707,
+      1.654910055480201
+    ],
+    [
+      -1.5125528689670826,
+      -0.47248093649594036,
+      -1.1661593947932358
+    ],
+    [
+      -0.3380440308849497,
+      -0.24167978542190305,
+      -0.25973423225428593
+    ],
+    [
+      -0.2067520945806729,
+      -0.889379957802019,
+      0.9753128329274219
+    ],
+    [
+      0.9256305048073505,
+      -0.6983007329703463,
+      1.7683933981475644
+    ],
+    [
+      1.9530959102081615,
+      0.13122396215023535,
+      1.3190686685936335
+    ],
+    [
+      1.8418456993121266,
+      0.7826874196255478,
+      0.09015374272216725
+    ],
+    [
+      0.7011666331591124,
+      0.5969802322034363,
+      -0.688941111320962
+    ],
+    [
+      0.99661960760029,
+      -1.1992910456541441,
+      2.7241751085605905
+    ],
+    [
+      2.833569062493484,
+      0.26895969383982177,
+      1.9337867432303018
+    ],
+    [
+      2.6390468374265152,
+      1.4242847239804028,
+      -0.2621650327567142
+    ],
+    [
+      0.6098025038522596,
+      1.085909485481145,
+      -1.6509759271834819
+    ],
+    [
+      -1.9579094705022264,
+      1.5392377799353616,
+      -1.123365625685138
+    ],
+    [
+      -2.9293107283291,
+      0.5760231778791329,
+      -2.164893086771838
+    ],
+    [
+      -2.0728734297136224,
+      0.6868410789315691,
+      -1.644612770678929
+    ],
+    [
+      -1.8889196519919844,
+      -1.5905144061791185,
+      -1.5049533682173122
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      3,
+      0,
+      1.0
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      6,
+      5,
+      1.5
+    ],
+    [
+      7,
+      6,
+      1.5
+    ],
+    [
+      7,
+      2,
+      1.5
+    ],
+    [
+      8,
+      4,
+      1.0
+    ],
+    [
+      9,
+      5,
+      1.0
+    ],
+    [
+      10,
+      6,
+      1.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      14,
+      13,
+      1.0
+    ],
+    [
+      14,
+      12,
+      1.0
+    ],
+    [
+      14,
+      1,
+      1.0
+    ],
+    [
+      15,
+      1,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

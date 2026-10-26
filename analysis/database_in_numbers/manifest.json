@@ -27,14 +27,40 @@
     ],
     "text_outside_page": []
   },
-  "software_versions": {
-    "pandas": "3.1.0",
-    "numpy": "2.5.4",
-    "matplotlib": "3.11.2",
-    "fonttools": "4.67.0",
-    "requests": "2.34.2",
-    "rdkit": "2026.9.1",
-    "pypdf": "6.21.2"
+  "extracted_json_structure_rule": "Array-entry count of linked JSON only; retained in datasets.csv as a separate visualization-export measurement",
+  "figure_structure_counts": {
+    "archive_structure_files": 519167,
+    "archives": 509,
+    "datasets": 311,
+    "visualization_entries": 155824,
+    "workbook_filename_rows": 402863,
+    "workbook_numeric_energy_records": 548587,
+    "annual_structure_files": 488411,
+    "unassigned_year_structure_files": 30756,
+    "geometrically_deduplicated": false
+  },
+  "colour_scheme": {
+    "name": "CPOSS Plasma (truncated)",
+    "anchors": [
+      "#0d0887",
+      "#6100a7",
+      "#a21d9a",
+      "#d24f71",
+      "#f3854b",
+      "#fdc627"
+    ],
+    "white_page_adjustment": "Plasma truncated at 0.88 to avoid pale yellow",
+    "molecular_components": {
+      "single_component": "#6100a7",
+      "multicomponent": "#fdc627"
+    },
+    "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales",
+    "time_panels": "Common study/publication year colour ramp in E and F; structure-file line is charcoal",
+    "year_limits": [
+      2003.0,
+      2025.0
+    ],
+    "new_colourbar_axes": false
   },
   "figure_presentation": {
     "title": "The CPOSS database in numbers",
@@ -128,39 +154,13 @@
     "cumulative_datasets_endpoint": 236,
     "cumulative_dataset_scope": "Only single unambiguous source study years; intervals and pre-2010 dates excluded"
   },
-  "colour_scheme": {
-    "name": "CPOSS Plasma (truncated)",
-    "anchors": [
-      "#0d0887",
-      "#6100a7",
-      "#a21d9a",
-      "#d24f71",
-      "#f3854b",
-      "#fdc627"
-    ],
-    "white_page_adjustment": "Plasma truncated at 0.88 to avoid pale yellow",
-    "molecular_components": {
-      "single_component": "#6100a7",
-      "multicomponent": "#fdc627"
-    },
-    "count_panels": "Within-panel logarithmic colour mapping in B, C and D; axes and bar lengths carry the quantitative scales",
-    "time_panels": "Common study/publication year colour ramp in E and F; structure-file line is charcoal",
-    "year_limits": [
-      2003.0,
-      2025.0
-    ],
-    "new_colourbar_axes": false
-  },
-  "extracted_json_structure_rule": "Array-entry count of linked JSON only; retained in datasets.csv as a separate visualization-export measurement",
-  "figure_structure_counts": {
-    "archive_structure_files": 519167,
-    "archives": 509,
-    "datasets": 311,
-    "visualization_entries": 155824,
-    "workbook_filename_rows": 402863,
-    "workbook_numeric_energy_records": 548587,
-    "annual_structure_files": 488411,
-    "unassigned_year_structure_files": 30756,
-    "geometrically_deduplicated": false
+  "software_versions": {
+    "pandas": "3.1.0",
+    "numpy": "2.5.4",
+    "matplotlib": "3.11.2",
+    "fonttools": "4.67.0",
+    "requests": "2.34.2",
+    "rdkit": "2026.9.1",
+    "pypdf": "6.21.2"
   }
 }

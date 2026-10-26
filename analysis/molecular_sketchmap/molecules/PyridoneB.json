@@ -1,0 +1,242 @@
+{
+  "dataset_id": "PyridoneB",
+  "dataset_name": "Pyridone",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Pyridone/Pyridone.html",
+  "reported_formula": "C5 H5 N1 O1",
+  "reported_formula_normalised": "C5H5NO",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 482,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Pyridone/PyridoneB/1.PyridoneB_MOLPAK_Will.zip?raw=true",
+  "archive_git_blob_sha": "a315ac17c129e13122928f8a14333f20b0289443",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 481,
+  "candidates_with_title_energy": 481,
+  "selected_filename": "1.PyridoneB_MOLPAK_Will/PYRIDO_opt_fa14.res",
+  "selected_file_sha256": "5cda2ef6b7657f4d0585c3a06c325922972e71cce33243edc5479d2194e5ac58",
+  "selected_title_energy": -78.124,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C5H5NO",
+  "selected_smiles": "O=c1cccc[nH]1",
+  "constitution_smiles": "O=c1cccc[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 12,
+  "selected_heavy_atoms": 7,
+  "selected_molar_mass_g_mol": 95.101,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H5NO": 4
+  },
+  "component_identities_per_cell": {
+    "O=c1cccc[nH]1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H5NO": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PYRIDO_opt_fa14(-78.124) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 12,
+    "expanded_unit_cell_atoms": 48,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.0546976589616168,
+      0.7932158696303322,
+      0.0499646720805762
+    ],
+    [
+      -0.5127313378848406,
+      0.3966414060023311,
+      1.275822211460988
+    ],
+    [
+      0.6344642821073396,
+      -0.46871377834166594,
+      1.1352869286823886
+    ],
+    [
+      1.1047782971778357,
+      -0.8319372701336682,
+      -0.08495780770216843
+    ],
+    [
+      0.4902201597643998,
+      -0.37865596960566705,
+      -1.2803271801514704
+    ],
+    [
+      -0.5886590954541333,
+      0.4332890448343303,
+      -1.1683222750764939
+    ],
+    [
+      -1.0145738773866508,
+      0.7843035507463316,
+      2.317672205064838
+    ],
+    [
+      -1.8577200414040167,
+      1.398904523214334,
+      0.12731907721435043
+    ],
+    [
+      1.0946816282020624,
+      -0.8080578592776675,
+      2.0530681903960835
+    ],
+    [
+      1.96891528104865,
+      -1.483826715081669,
+      -0.15113514539458084
+    ],
+    [
+      0.8598504232482966,
+      -0.6646183526896667,
+      -2.253517532626067
+    ],
+    [
+      -1.1245280604573171,
+      0.8294555507023329,
+      -2.0208733439484585
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      1,
+      2.0
+    ],
+    [
+      7,
+      0,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      4,
+      1.0
+    ],
+    [
+      11,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

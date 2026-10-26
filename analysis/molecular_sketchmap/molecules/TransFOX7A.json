@@ -1,0 +1,239 @@
+{
+  "dataset_id": "TransFOX7A",
+  "dataset_name": "Trans FOX7",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.FOX7/TransFOX7/TransFOX7.html",
+  "reported_formula": "C2 H4 N4 O4",
+  "reported_formula_normalised": "C2H4N4O4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 39,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.FOX7/TransFOX7/TransFOX7A/1.TransFOX7A_Molpak.zip?raw=true",
+  "archive_git_blob_sha": "34284925dc8a825e9d95a6f5b9abd84f9c180a24",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 39,
+  "candidates_with_title_energy": 39,
+  "selected_filename": "1.TransFOX7A/TRFOXS_opt_af86.res",
+  "selected_file_sha256": "020ab7c7bc45c23de2962d80475843214683bc0cb503c73b901ec36c707d1a31",
+  "selected_title_energy": -93.248,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C2H4N4O4",
+  "selected_smiles": "N/C(=C(/N)[N+](=O)[O-])[N+](=O)[O-]",
+  "constitution_smiles": "NC(=C(N)[N+](=O)[O-])[N+](=O)[O-]",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 14,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 148.078,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C2H4N4O4": 2
+  },
+  "component_identities_per_cell": {
+    "N/C(=C(/N)[N+](=O)[O-])[N+](=O)[O-]": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C2H4N4O4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL TRFOXS_opt_af86(-93.248)",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 14,
+    "expanded_unit_cell_atoms": 28,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "C1",
+      "C2",
+      "N1",
+      "N2",
+      "N3",
+      "N4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "O3",
+      "O4"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "N",
+    "N",
+    "N",
+    "N",
+    "H",
+    "H",
+    "H",
+    "H",
+    "O",
+    "O",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.03941220318157068,
+      0.40895489150935693,
+      0.5485992452734942
+    ],
+    [
+      -0.039411574899168134,
+      -0.4090237930266428,
+      -0.5486844194291418
+    ],
+    [
+      1.079936710035693,
+      0.5748503026583572,
+      1.4580440528733458
+    ],
+    [
+      -1.0798742730662747,
+      -0.5749156359096431,
+      -1.4581217895889047
+    ],
+    [
+      1.157747770103295,
+      -1.1936815521846427,
+      -0.9373760533253988
+    ],
+    [
+      -1.1577170281268745,
+      1.1936948122793576,
+      0.9373938735932361
+    ],
+    [
+      1.0237944409208342,
+      1.4931488644103568,
+      1.8947217677773214
+    ],
+    [
+      1.98443216555046,
+      0.3792693887273567,
+      1.0401494516921943
+    ],
+    [
+      -1.023825397595576,
+      -1.4931391725816425,
+      -1.894711290804759
+    ],
+    [
+      -1.9844330242133355,
+      -0.3791774895396432,
+      -1.0400358861513368
+    ],
+    [
+      -0.9820759484430774,
+      2.0705615513003575,
+      1.7677241832212065
+    ],
+    [
+      -2.2358725415851524,
+      0.9339529988963576,
+      0.4184083628652875
+    ],
+    [
+      0.9820449132271825,
+      -2.0705518594716428,
+      -1.767713612103834
+    ],
+    [
+      2.23584158491041,
+      -0.9339433070676428,
+      -0.4183978858927251
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      2.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      1,
+      1.0
+    ],
+    [
+      4,
+      1,
+      1.0
+    ],
+    [
+      5,
+      0,
+      1.0
+    ],
+    [
+      6,
+      2,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ],
+    [
+      8,
+      3,
+      1.0
+    ],
+    [
+      9,
+      3,
+      1.0
+    ],
+    [
+      10,
+      5,
+      2.0
+    ],
+    [
+      11,
+      5,
+      1.0
+    ],
+    [
+      12,
+      4,
+      2.0
+    ],
+    [
+      13,
+      4,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,59 @@
+4cyanopyridinium4fluorobenzoateA
+     RDKit          3D
+
+ 14 14  0  0  0  0  0  0  0  0999 V2000
+   -1.1562   -2.1037   -0.4599 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4232   -0.7700   -0.1683 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2856   -0.3021    1.1436 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3729    0.8983    1.4192 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8930    1.6249    0.3552 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7781    1.1960   -0.9613 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.1154   -0.0076   -1.2113 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7113   -0.9113    1.9303 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4892    1.2766    2.4275 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2014    1.7995   -1.7550 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0055   -0.3930   -2.2156 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2149   -2.4177   -1.6809 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5968   -2.6982    0.5624 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5435    2.8084    0.6140 F   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  1  0
+  4  3  2  0
+  5  4  1  0
+  6  5  2  0
+  7  6  1  0
+  7  2  2  0
+  8  3  1  0
+  9  4  1  0
+ 10  6  1  0
+ 11  7  1  0
+ 12  1  2  0
+ 13  1  1  0
+ 14  5  1  0
+M  CHG  1  13  -1
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+4cyanopyridinium4fluorobenzoateA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridinium4fluorobenzoate/4cyanopyridinium4fluorobenzoateA/1.4cyanopyridinium4fluorobenzoateA_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.4cyanopyridinium4fluorobenzoateA_CrystPred/UCLSME_opt_A1.res
+
+>  <reported_formula>  (1) 
+C6 H5 N2 - C7 H4 O2 F1
+
+>  <selected_formula>  (1) 
+C7H4FO2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+917
+
+$$$$

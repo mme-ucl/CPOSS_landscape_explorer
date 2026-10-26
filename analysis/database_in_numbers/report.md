@@ -9,7 +9,7 @@ Source: [CPOSS database index](https://louiseprice.github.io/CPOSS_Database/inde
 - **519,167 archived structure files** across **509 energy-model ZIP archives**, covering all **311 datasets**. This supports the manuscript's statement of more than 500,000 stored structures when model-specific representations are counted separately. The median per dataset is **498**, the interquartile range is **113.0-1435.5**, and the range is **11-20408** files.
 - The former **155,824** total counted only available Chemiscope visualization exports. The spreadsheets contain **402,863 Filename rows** and **548,587 numeric energy records**. These overlapping scopes are compared in [the structure-count reconciliation](structure_count_reconciliation.md); they must not be added together.
 - **45 named scientists** across **286 datasets**; **25 datasets** say Unknown/Not sure rather than naming a scientist. The most frequently credited person is **Louise Price**, associated with **65 datasets**. Credits overlap and are not an assessment of research productivity.
-- **235 documented molecular systems** have parseable formulas. Molar masses span **32.04-2911.56 g/mol** and atom counts span **5-218**, on the written molecule/formula-unit basis.
+- **233 documented molecular systems** have parseable formulas. Molar masses span **32.04-890.88 g/mol** and atom counts span **5-120**, on the written molecule/formula-unit basis.
 - **75 unique linked CSP papers**, **577 unique linked references overall**, including experimental-context papers and research data records. **192 datasets** link at least one CSP paper after explicit publication cross-references are resolved.
 - The largest annual count with an unambiguous study date is **27 datasets in 2018**. **236 datasets** have single years; **75** have ranges or pre-2010 dates, so this is incomplete chronology.
 
@@ -21,7 +21,7 @@ Source: [CPOSS database index](https://louiseprice.github.io/CPOSS_Database/inde
 | Complete workbook Filename/energy counts | 311 | 311 |
 | Named scientist credits | 286 | 311 |
 | Single study year | 236 | 311 |
-| Molar mass and atom count from formula | 311 | 311 |
+| Molar mass and atom count from formula | 308 | 311 |
 | Dataset release/deposition year | 0 | 311 |
 | Original generated/optimised/retained counts as numeric HTML fields | 0 | 311 |
 

@@ -1,0 +1,317 @@
+{
+  "dataset_id": "2C4NBAA",
+  "dataset_name": "2-Chloro-4-Nitrobenzoic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C4NBA/2C4NBA.html",
+  "reported_formula": "C7 H4 N1 O4 Cl1",
+  "reported_formula_normalised": "C7ClH4NO4",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 1689,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/2C4NBA/2C4NBAA/1.2C4NBAA_CrystOpt.zip?raw=true",
+  "archive_git_blob_sha": "bc6e629dd3004877cc742d2108a48ec30fb5b829",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 1688,
+  "candidates_with_title_energy": 1687,
+  "selected_filename": "1.2C4NBAA_CrystOpt/VOLZEC_dfA30_A30.res",
+  "selected_file_sha256": "f68d1d8058f5345b22bce10791dd6dea3cb7e7e4489ca51756b552a53876656e",
+  "selected_title_energy": -119.212,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C7H4ClNO4",
+  "selected_smiles": "O=C(O)c1ccc([N+](=O)[O-])cc1Cl",
+  "constitution_smiles": "O=C(O)c1ccc([N+](=O)[O-])cc1Cl",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 13,
+  "selected_molar_mass_g_mol": 201.565,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C7H4ClNO4": 4
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1ccc([N+](=O)[O-])cc1Cl": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H4ClNO4": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL VOLZEC_dfA30_A30(-119.212) P21/c",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 17,
+    "expanded_unit_cell_atoms": 68,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "N1",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "N1",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "N1",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "N1",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "Cl1",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "O",
+    "O",
+    "O",
+    "O",
+    "Cl",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.7731515932510336,
+      0.2778923331211196,
+      -0.7605545631073798
+    ],
+    [
+      -0.736536179322191,
+      -1.0607961747168808,
+      -0.34502599179099125
+    ],
+    [
+      0.22123543387081668,
+      -1.4852166350268803,
+      0.5709947905212527
+    ],
+    [
+      1.1351614141016686,
+      -0.5608027067648802,
+      1.0466095629733778
+    ],
+    [
+      1.1296879395119737,
+      0.7722353983591201,
+      0.6666071046248256
+    ],
+    [
+      0.15984551296417493,
+      1.1794924628701207,
+      -0.2367580236887017
+    ],
+    [
+      -1.765539579648883,
+      0.7764694382021204,
+      -1.7675632060504678
+    ],
+    [
+      2.150516562584981,
+      -1.0187936895768797,
+      2.01543236037086
+    ],
+    [
+      -2.2781115171934316,
+      0.11776370702411931,
+      -2.6320059364432025
+    ],
+    [
+      -2.013546105446103,
+      2.0868074314301204,
+      -1.5950413258166243
+    ],
+    [
+      2.160075793967941,
+      -2.2003749539128794,
+      2.299573363031195
+    ],
+    [
+      2.9104247753180097,
+      -0.18063876372688092,
+      2.4601817829701034
+    ],
+    [
+      -1.879465181432903,
+      -2.23952186654188,
+      -0.8924314913765805
+    ],
+    [
+      0.2580709550672706,
+      -2.51322013965388,
+      0.9080983297077352
+    ],
+    [
+      1.862739669626973,
+      1.4550476173931202,
+      1.0760926847510603
+    ],
+    [
+      0.11175692805545889,
+      2.2142338490541196,
+      -0.553740892602121
+    ],
+    [
+      -2.6531648287747376,
+      2.379422692467122,
+      -2.2604685480743405
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      3,
+      1.0
+    ],
+    [
+      8,
+      6,
+      2.0
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      10,
+      7,
+      2.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      1,
+      1.0
+    ],
+    [
+      13,
+      2,
+      1.0
+    ],
+    [
+      14,
+      4,
+      1.0
+    ],
+    [
+      15,
+      5,
+      1.0
+    ],
+    [
+      16,
+      9,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

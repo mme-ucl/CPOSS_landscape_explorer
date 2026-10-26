@@ -1,0 +1,42 @@
+{
+  "font_verification": {
+    "source": "/System/Library/Fonts/Helvetica.ttc",
+    "source_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3",
+    "embedded_faces": [
+      "Helvetica.ttf",
+      "Helvetica-Bold.ttf",
+      "Helvetica-Oblique.ttf",
+      "Helvetica-BoldOblique.ttf"
+    ],
+    "all_figure_text_families": [
+      "Helvetica"
+    ],
+    "text_outside_page": []
+  },
+  "page": "A4 portrait",
+  "dpi": 300,
+  "map_points": 308,
+  "represented_structure_files": 519004,
+  "marker_area_rule": "s = 1.8 sqrt(N) pt^2; N counts model-specific RES files; no optimization weights",
+  "colour": "Truncated Plasma [0,0.88]; logarithmic extracted molecule molar mass",
+  "callout_selection": "Replace hypothetical/unestablished examples with recognizable experimentally characterized compounds. This is an illustrative selection, not descriptor-space farthest-point sampling.",
+  "molecular_rendering": "VMD-inspired matte/chalky ball-and-stick with true ray-traced ambient occlusion; 1800x1200 white-background PNGs at 600 dpi; vector map and text",
+  "molecular_renderer": "Tachyon 0.99b6 CPU ray tracer (the renderer used by VMD)",
+  "removed_annotations": [
+    "title",
+    "dataset/count subtitle",
+    "bottom exclusion/coformer notes"
+  ],
+  "geometry_scope": "Callouts show the same extracted dataset representatives used in the embedding. Experimental references establish the compound crystal identity, not observation of the selected predicted packing or conformer.",
+  "jitter": false,
+  "callouts": [
+    "UreaA",
+    "SuccinicAcidA",
+    "AspirinA",
+    "ParacetamolA",
+    "CaffeineB",
+    "CarbamazepineA",
+    "NaproxenA",
+    "ChlorothalonilA"
+  ]
+}

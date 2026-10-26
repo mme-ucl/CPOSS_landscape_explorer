@@ -1,0 +1,236 @@
+excel_row,molecular_system,summary_row_polymorphs,matched_model_polymorph_counts,model_counts_vary
+2,Acridine,6,6,False
+5,Aspirin,3,3,False
+6,DipicolinicAcid,1,1,False
+7,OxamicAcid,1,1,False
+8,Alloxan,1,1,False
+9,AminobenzoicAcid,1,1,False
+12,4aminobenzamide,1,1,False
+13,Amoxapine,1,1,False
+16,Anthracene,1,1,False
+17,CarbamazepinePicolinamide,0,0,False
+18,BTXII,1,1,False
+20,2-fluoroethynylbenzene,3,3,False
+22,BarbituricAcid,2,2,False
+23,Chlorothalonil,3,3,False
+24,Hydroxyazabenzotriazole,2,2,False
+25,GentisicAcid,2,2,False
+27,Lactide,2,2,False
+31,GSK269984B,1,1,False
+36,2fluorobenzamide,1,1,False
+38,Bipyridine,1,1,False
+43,Piracetam,4,4,False
+44,5ethyluracil,1,1,False
+45,5cyanouracil,1,1,False
+46,Azabicyclononanedione,2,2,False
+48,NAcetyldibenzazepine,1,1,False
+49,2bromobenzamide,1,1,False
+50,Benzophenanthrene,1,1,False
+54,Chalcone,2,2,False
+55,34-dichloronitrobenzene,1,1,False
+59,Oxcarbazepine,3,3,False
+61,Cannabinol,1,1,False
+62,Deazauracil,1,0; 1,True
+65,Carbamazepine,,5,False
+70,CarbonicAcid,0,0,False
+71,Methyl-p-hydroxybenzoate,1,1,False
+74,6methyluracil,1,1,False
+75,Trinitrodibenzopyranone,1,1,False
+76,DiaminoDinitroPyrazine,1,1,False
+77,ChlorobenzoicAcid,1,1,False
+78,2chlorobenzamide,1,1; 2,True
+81,Chloroform,2,2,False
+84,2C5NBAMH,0,0,False
+85,2C5NBA,1,1,False
+86,4C2NBAMH,0,0,False
+87,5chlorouracil,1,1,False
+88,Coronene,2,2,False
+89,Coumarin,2,2,False
+90,Naproxen,2,2,False
+95,Phenanthrenol,1,1,False
+97,Cytosine,1,1,False
+98,CyanuricAcid,1,1,False
+99,Bipy-2Aminobenzoic,1,1,False
+102,6methoxycoumarin,1,1,False
+103,Dibenzosuberenone,1,1,False
+104,Dichloromethane,1,1,False
+106,34-dinitrochlorobenzene,2,1; 2,True
+109,7hydroxycoumarin,1,1,False
+110,Dehydroproline,1,1,False
+113,Mannitol,4,4,False
+114,5eniluracil,1,1,False
+116,Galunisertib,10,10,False
+120,23-dichloronitrobenzene,1,1,False
+124,Lamotrigine,1,1,False
+126,Isonicotinamide,4,4,False
+132,Hydroxymethyloxazolidinone,1,1,False
+135,BTXXIX,1,1,False
+136,AmantadineHydrochloride,1,1,False
+137,LY2806920,0,0; 1,True
+140,LY2624803,0,0; 2,True
+143,FlufenamicAcid,6,6; 7,True
+146,Fluorouracil,2,2,False
+147,Desloratadine,3,2; 3,True
+149,Formyluracil,1,1,False
+150,Sorbitol,2,2,False
+151,Glucose,1,1,False
+152,Equilin,1,1,False
+154,Chlorodibenzosuberone,1,1,False
+155,4dimethylaminopyridiniummaleate,1,1,False
+156,Iminodibenzyl,0,0; 1,True
+158,Hydrochlorothiazide,2,2,False
+159,LY2806920HCl,1,1,False
+160,35-dichloronitrobenzene,1,1,False
+164,5AzauracilMonohydrate,1,1,False
+165,Anisole,2,2,False
+166,Paracetamol,2,2; 3,True
+168,Ibuprofen,3,3,False
+173,Isocytosine,0,0,False
+175,GallicAcid,2,1; 2,True
+177,2C4NBAMH,1,1,False
+178,Imidazole,1,1,False
+179,Indomethacin,2,1; 2,True
+182,Isocaffeine,1,1,False
+183,pyridineisophthalicacid,,,False
+184,pyridiniumisophthalate,,,False
+185,5aminouracil,0,0,False
+186,BTXXXII,2,0; 2,True
+190,24-dichloronitrobenzene,1,1,False
+194,2aminobenzamide,1,1,False
+195,TolfenamicAcid,4,3; 4; 5; 8,True
+201,Guanine,0,0; 2,True
+205,Adenine,1,1; 2,True
+208,Trifluoroethanol,0,0; 3,True
+210,GallicAcidMH,4,3; 4,True
+214,Urazole,1,1,False
+215,Nitrofurantoin,1,1,False
+216,Bipy-Succinic,1,1,False
+219,5fluorocytosine,1,1,False
+220,2M4NBAMH,0,0,False
+221,Metacetamol,2,2,False
+223,Methanol,3,3,False
+224,2CannabinolTetramethylpyrazine,0,0,False
+225,CannabinolTetramethylpyrazine,0,0,False
+226,Caffeine3HBA,1,1,False
+227,Caffeinebis4HBA,1,1,False
+228,Tetramethylpyrazine,1,1,False
+230,BTXXII,1,1,False
+237,Naphthalene,1,1,False
+239,Clozapine,1,1,False
+242,Loxapine,2,2,False
+246,NiflumicAcid,1,1,False
+248,Dimethylurea,2,2,False
+250,5nitrouracil,3,3,False
+252,Caffeine,1,1,False
+256,7fluoroisatin,3,3,False
+259,BTXVIII,0,0; 1,True
+264,BTXX,1,1,False
+267,BTXVII,0,0; 1,True
+269,BTXVI,1,1,False
+276,2H4NBAMH,0,0,False
+277,BTXXVIII,1,1,False
+281,OroticAcid,0,0,False
+282,OtolicAcid,1,1,False
+285,BTVIII,1,1,False
+286,ParabanicAcid,1,1,False
+288,Pentachloronitrobenzene,1,1,False
+290,Phthalimide,1,1,False
+291,PhloroglucinolDihydrate,1,1,False
+293,Phloroglucinol,1,1,False
+299,Estradiol,1,1,False
+301,Progesterone,3,2; 3,True
+305,Pyridine,3,3,False
+308,Pyrene,1,1; 2,True
+310,Pyridone,1,1,False
+312,3Oxauracil,1,1,False
+313,IsobarbituricAcid,1,1,False
+315,bResorcylicAcidHemihydrate,1,1,False
+318,Equilinin,1,1,False
+320,Chlorothiazide,3,3,False
+321,FenamicAcid,1,1,False
+324,2M4NBA,1,1,False
+325,2H4NBA,1,1,False
+326,5C2NBA,1,1,False
+327,QuinoliniumFumarate,1,1,False
+328,Nitrophenyl-Aminobenzoic,1,1,False
+331,4cyanopyridine4fluorobenzoicacid,1,1,False
+332,Saccharin,1,1,False
+333,FOX7,2,2,False
+335,NitrophenylAceticAcid,2,2,False
+338,Diclofenac,3,2; 3,True
+342,Sulfamerazine,5,5,False
+344,Cytenamide,2,2,False
+347,BTXIII,1,1,False
+348,SuccinicAcid,3,3,False
+360,Sulfadiazine,1,1,False
+362,Tetrachlorobenzene,1,1,False
+363,Dicyanobenzene,2,2,False
+366,TetrolicAcid,2,2,False
+368,Cyheptamide,2,2; 3,True
+377,Thymine,2,2,False
+379,DiaminoDinitroPyridineOxide,1,1,False
+380,Trinitrobenzene,3,3,False
+389,BromoAminoBenzoicAcid,0,0,False
+390,TransFOX7,0,0,False
+391,AMebendazole,1,1,False
+396,ChloromandelicAcid,0,0; 3; 4,True
+400,3aminobenzamide,0,0,False
+401,bResorcylicAcidDihydrate,0,0,False
+404,GentisicAcidHH,0,0,False
+405,GentisicAcidMH,0,0,False
+406,GentisicAcidDH,0,0,False
+407,CaffeineParacetamol,0,0,False
+408,4Hydroxycoumarin,0,0,False
+409,TetrazolPyrazine,0,0,False
+412,TetrazolPyrimidine,0,0,False
+415,DihydroDibenzoCycloheptenylEthanone,0,0,False
+416,DibenzoCycloheptenylEthanone,0,0,False
+417,Caffeine4HBA,0,0,False
+418,Dicyanobenzene-Succinic,0,0,False
+420,Bipy-Aminobenzoic,0,0,False
+423,TetrahydroDimethylQuinoline,0,0,False
+424,Methylazetidineone,0,0,False
+425,26-dichloronitrobenzene,0,0,False
+426,MemantineHydrochloride,0,0,False
+427,4dimethylaminopyridinemaleicacid,0,0,False
+428,4cyanopyridinium4fluorobenzoate,0,0,False
+429,5vinyluracil,0,0,False
+430,Olanzapine,4,4,False
+436,Uracil,1,1,False
+437,Urea,1,1; 2,True
+439,UricAcid,1,1,False
+441,Dihydrocarbamazepine,4,4,False
+444,2C4NBA,1,1,False
+445,4C2NBA,1,1,False
+446,EphedriniumTartrate,1,1,False
+448,BTXV,0,0; 1,True
+452,BTXIV,1,1,False
+454,Tazofelone,5,1; 5,True
+458,5fluoroisatin,2,2,False
+459,Salsalate,1,1,False
+461,BXXIII,5,1; 2; 4; 5,True
+470,BTXXVC,1,1,False
+473,BTXXVI,1,1,False
+479,BTXXIV,0,0,False
+486,AminoPyrimidine,1,1,False
+487,BTXIX,1,0; 1,True
+489,Diiodoanthanthrone,0,0,False
+490,Azetidine,0,0,False
+491,5Azauracil,1,1,False
+492,XXVII,1,1,False
+499,CaffeineSalicylicAcid,1,1,False
+500,Cannabinol2Tetramethylpyrazine,0,0,False
+501,MefenamicAcid,3,3,False
+505,4-fluorotoluene,2,2,False
+510,3-fluorotoluene,2,2,False
+516,2-fluorotoluene,2,2,False
+522,CMebendazole,1,1,False
+527,bResorcylicAcidMonohydrate,1,1,False
+530,BenzylTetrazole,1,1,False
+532,XXXIII,2,2,False
+534,BTXXXI,3,3,False
+541,25-dichloronitrobenzene,1,1,False
+545,P-Xylene,1,1,False
+546,O-Xylene,1,1,False
+547,M-Xylene,1,1,False
+548,Cyclopentane,1,1,False

@@ -1,0 +1,212 @@
+{
+  "dataset_id": "ParabanicAcidA",
+  "dataset_name": "Parabanic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/ParabanicAcid/ParabanicAcid.html",
+  "reported_formula": "C3 H2 N2 O3",
+  "reported_formula_normalised": "C3H2N2O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 30,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/ParabanicAcid/ParabanicAcidA/1.ParabanicAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "024d0188825095336e3f138578c6336ee576a60d",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 28,
+  "candidates_with_title_energy": 28,
+  "selected_filename": "1.ParabanicAcidA_MOLPAK/PARBAC_OPT_fc16.res",
+  "selected_file_sha256": "f5fc50e2ac970dee2a3b157dc9aefff912e7e87135eee390dbf0a05ea86641ed",
+  "selected_title_energy": -103.739,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C3H2N2O3",
+  "selected_smiles": "O=C1NC(=O)C(=O)N1",
+  "constitution_smiles": "O=C1NC(=O)C(=O)N1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 10,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 114.06,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C3H2N2O3": 4
+  },
+  "component_identities_per_cell": {
+    "O=C1NC(=O)C(=O)N1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C3H2N2O3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PARBAC_OPT_fc16(-103.739) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 10,
+    "expanded_unit_cell_atoms": 40,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2"
+    ]
+  },
+  "symbols": [
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.003772940159858,
+      0.3856873674468,
+      -0.48825527414576975
+    ],
+    [
+      0.7979191310838774,
+      0.2339796605808,
+      0.8403407824101876
+    ],
+    [
+      -0.3324846759257918,
+      1.0041865314947995,
+      0.5623771988786075
+    ],
+    [
+      0.8767409437447169,
+      -0.8434490998332,
+      0.015475455269841731
+    ],
+    [
+      -0.35988180777096446,
+      -0.7351970257932001,
+      -0.9034263248464782
+    ],
+    [
+      -0.6542617303295817,
+      2.0210287839228,
+      1.1216188171770813
+    ],
+    [
+      1.7129697234203158,
+      -1.7191271466612,
+      -0.016225988994349905
+    ],
+    [
+      -0.6599380821161889,
+      -1.5102864970632002,
+      -1.7862658632844415
+    ],
+    [
+      -1.78449968698136,
+      0.7162757176187999,
+      -0.8559069304463272
+    ],
+    [
+      1.4072091250348295,
+      0.44690170828679987,
+      1.5102681279816235
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      1,
+      1.0
+    ],
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      4,
+      0,
+      1.0
+    ],
+    [
+      5,
+      2,
+      2.0
+    ],
+    [
+      6,
+      3,
+      2.0
+    ],
+    [
+      7,
+      4,
+      2.0
+    ],
+    [
+      8,
+      0,
+      1.0
+    ],
+    [
+      9,
+      1,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

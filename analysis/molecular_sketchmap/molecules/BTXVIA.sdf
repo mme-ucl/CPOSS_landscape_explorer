@@ -1,0 +1,57 @@
+BTXVIA
+     RDKit          3D
+
+ 13 13  0  0  0  0  0  0  0  0999 V2000
+   -0.0827    0.5070    1.2469 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4654   -0.7203    0.6199 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.4152   -1.0134   -0.7739 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1761   -0.1101   -1.6044 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7256    1.0963   -1.0628 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6874    1.3944    0.2673 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0285   -1.5642    1.4693 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4740   -2.1886    2.2954 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.0180    0.7200    2.4539 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8460   -1.9442   -1.1449 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2316   -0.3028   -2.6753 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1950    1.8056   -1.7492 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1128    2.3203    0.6578 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  2  0
+  4  3  1  0
+  5  4  2  0
+  6  5  1  0
+  6  1  2  0
+  7  2  1  0
+  8  7  3  0
+  9  1  1  0
+ 10  3  1  0
+ 11  4  1  0
+ 12  5  1  0
+ 13  6  1  0
+M  CHG  2   7   1   9  -1
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+BTXVIA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.BlindTest/XVI/BTXVIA/1.BTXVIA_CrystPred.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.BTXVIA_CrystPred/OBEQUJ_CamOptNI_A57.res
+
+>  <reported_formula>  (1) 
+C6 H4 N2 O1
+
+>  <selected_formula>  (1) 
+C6H4N2O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+1662
+
+$$$$

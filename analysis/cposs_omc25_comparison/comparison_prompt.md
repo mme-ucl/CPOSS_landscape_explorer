@@ -1,0 +1,38 @@
+Produce a reproducible, publication-quality comparison of the chemical content of CPOSS and Open Molecular Crystals 2025 (OMC25). Focus on elemental occurrence, molecular atom counts and molar masses. OMC25 is a molecular-crystal dataset; do not confuse it with OMol25. Complete the analysis and deliver the figure and manuscript text, rather than stopping at a plan.
+
+Work in `/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer`. Save new outputs under `analysis/cposs_omc25_comparison/`, preserving existing analyses and the reference/prompt files already there.
+
+Inputs and sources:
+
+- CPOSS molecular table: `/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/database_in_numbers/tables/molecular_systems.csv`.
+- CPOSS inventory/provenance: `/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/database_in_numbers/tables/datasets.csv`, `plot_datasets.csv`, and the parent directory's `manifest.json`.
+- Workbook: `/Users/matteo/Downloads/Database 2023 checkup.xlsx`.
+- Existing formula audit: `/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/database_in_numbers/workbook_crosscheck/report.md` and `molecular_formula_comparison.csv` in the same directory.
+- Existing isolated molecular representatives, if useful: `/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/molecular_sketchmap/`. Read its README and source/exclusion audits first: these representatives are dataset-based and may describe only one component of a salt or co-crystal.
+- Reference extraction: `/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/cposs_omc25_comparison/reference_statistics.md`.
+- Primary OMC25 paper: https://arxiv.org/pdf/2508.02651 .
+- Official metadata documentation: https://huggingface.co/datasets/facebook/OMC25/blob/main/README.md .
+- Official metadata file: https://huggingface.co/datasets/facebook/OMC25/resolve/main/omc25-starting-crystals.csv . Download this small metadata file; the full relaxation-frame archives are unnecessary for this task. Record the repository revision, access date and SHA-256. If access fails, finish the CPOSS preparation and explicitly identify which OMC results remain unavailable; do not substitute invented masses or exact-looking digitized values.
+
+Define comparable populations before calculating statistics:
+
+1. Use the OMC25 training split for the principal comparison so it matches the reference figure. Validate the reported 44,403 molecular records and 207,271 starting crystals against the metadata. If also analysing train + validation, label this separately. Do not silently use full-dataset counts for a training-only table.
+2. Build the OMC molecular table using one record per documented molecular identifier, initially `csd_refcode`, after checking that molecular composition, atom count and mass are invariant across its starting-crystal rows. Investigate inconsistent identifiers. Do not merge distinct compounds by formula or assume that repeated formulas are duplicate molecules.
+3. Count each documented CPOSS molecular system once. Repeated searches, models and archived structures must not weight the primary chemical distributions. Report record counts and the identity convention; use verified connectivity-based deduplication only as an explicitly labelled sensitivity analysis.
+4. Use a verified single-component CPOSS subset for the principal molecule-to-molecule comparison. Present salts, solvates and co-crystals separately on an explicitly defined formula-unit or component basis. Preserve stoichiometry. Never label a whole formula unit as one molecule or silently replace it with its largest component. Validate the OMC component basis as well.
+5. Reuse the existing CPOSS formula audit. It identified eight composition conflicts and two malformed website formulas; reconcile these using traceable chemical evidence and record every source choice. If a conflict remains unresolved, exclude it from the primary formula-derived statistics and show a sensitivity result where useful. Recheck salt/component classifications. Do not reuse the invalid historical maxima of 218 atoms and 2911.56 g/mol. Do not let a formula parser repair ambiguous numeric tokens silently.
+
+Calculate and export:
+
+- Elemental prevalence: for each element, the percentage of valid molecular records containing at least one atom of that species. Use the union of elements in both datasets, including CPOSS elements outside OMC25's H, B, C, N, O, F, Si, P, S, Cl, Br and I. Report numerator and denominator. These overlapping percentages need not sum to 100%. If also reporting fractions of all atoms, give them a separate label and denominator.
+- Molecular size: counts of all atoms and of non-H atoms, including all explicit/formula hydrogens consistently. Use comparable normalized histograms or empirical cumulative distribution functions (ECDFs).
+- Molar mass in g/mol: use OMC25 `mol.mass` and validated CPOSS compositions. Verify atomic-weight conventions and use a common convention for the final comparison if discrepancies matter. Do not use monoisotopic mass for one dataset and average mass for the other. Never infer mass from atom count or use `xtal.mass` as molecular mass.
+- For each population and size/mass variable, report N, missing/excluded N, minimum, Q1, median, Q3, maximum and mean. Quantify the fraction of CPOSS outside OMC25's observed size/mass ranges without treating range overlap as proof of chemical equivalence.
+
+Keep starting-unit-cell statistics separate from molecular statistics. Any optional Z, space-group or crystal-system comparison must count each documented starting crystal once using its full identifier, not weight it by trajectory frames; discuss differences in sampling and cell conventions. CPOSS archived files are not automatically geometrically unique minima.
+
+The CCDC reference in the supplied image is organic CSD 6.00. It supplies crystallographic frequencies only. It provides no CSD elemental, molecular-size or mass distribution. Include CSD chemical curves only if a suitable, documented CSD extract is actually available; otherwise state that this comparison cannot be recovered from the image. Do not treat OE62 or OMC25 as representative of the complete CSD. Keep visually extracted values explicitly approximate.
+
+Create a wide three-panel figure suitable for a manuscript page: (A) elemental prevalence for CPOSS and OMC25; (B) molecular-size ECDFs, with dataset colour and clearly labelled line styles for all atoms versus non-H atoms; (C) molecular-mass ECDFs in g/mol. Show the primary single-component populations, and put the CPOSS multicomponent sensitivity view in a separate supplementary figure. Use consistent colours, readable Helvetica typography, unobscured legends, natural panel proportions, vector PDF and a 300-dpi PNG. Include sample sizes and transparent denominator definitions in the caption. Use scientific plotting tools, not generative image synthesis.
+
+Deliver runnable analysis code, frozen input metadata/checksums, cleaned molecular tables, CSV summaries and an inclusion/exclusion audit. Distinguish values computed from metadata, reported in the paper, estimated from the image, and unavailable. Supply a concise LaTeX results section and comprehensive LaTeX caption with `\label{fig:cposs_omc25_comparison}` and an embedding snippet. Interpret chemical coverage, molecular size and mass descriptively, acknowledging the different purposes and sampling strategies of CPOSS and OMC25. Avoid equating relaxation frames or repeated CSP searches with independent chemical diversity.

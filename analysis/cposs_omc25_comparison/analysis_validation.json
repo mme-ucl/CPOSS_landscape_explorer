@@ -1,0 +1,27 @@
+{
+  "starting_crystals": 218841,
+  "molecular_records": 46870,
+  "invariant_molecular_fields": true,
+  "duplicate_starting_crystal_keys": 0,
+  "training_reported_mass_minus_common_min": -0.0321800000000394,
+  "training_reported_mass_minus_common_max": 0.010915199999772085,
+  "training_reported_mass_minus_common_max_absolute": 0.0321800000000394,
+  "cposs_total_systems": 235,
+  "cposs_single_verified": 190,
+  "cposs_multicomponent_verified": 44,
+  "cposs_excluded_systems": [
+    "Tetrachlorobenzene"
+  ],
+  "cposs_unresolved_composition_conflicts": 0,
+  "cposs_formula_conflicts_reviewed": 8,
+  "cposs_malformed_formula_repairs": 2,
+  "atomic_weights_sha256": "252f58ef84ad9a6867d8d1e79089b983ca208b0330b7924f69bb219ef1e658e7",
+  "software_versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "rdkit": "2026.9.1",
+    "matplotlib": "3.11.2",
+    "pypdf": "6.21.2",
+    "Pillow": "13.0.0"
+  }
+}

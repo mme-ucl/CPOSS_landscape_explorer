@@ -1,0 +1,287 @@
+{
+  "dataset_id": "IsonicotinamideB",
+  "dataset_name": "Isonicotinamide",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/Isonicotinamide.html",
+  "reported_formula": "C6 H6 N2 O1",
+  "reported_formula_normalised": "C6H6N2O",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 667,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Isonicotinamide/IsonicotinamideB/1.IsonicotinamideB_CrystOpt.zip?raw=true",
+  "archive_git_blob_sha": "8e78b4c7154f0b5dac82d8b50a76c32f147c336d",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 148,
+  "candidates_with_title_energy": 148,
+  "selected_filename": "1.IsonicotinamideB_CrystOpt/EHOWIH_dfA11_A11.res",
+  "selected_file_sha256": "69d32a1cc6a693bec7f44c84428771959cdd288847c74936278daaa98bbc5288",
+  "selected_title_energy": -104.045,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C6H6N2O",
+  "selected_smiles": "NC(=O)c1ccncc1",
+  "constitution_smiles": "NC(=O)c1ccncc1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 9,
+  "selected_molar_mass_g_mol": 122.127,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C6H6N2O": 4
+  },
+  "component_identities_per_cell": {
+    "NC(=O)c1ccncc1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C6H6N2O": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL EHOWIH_dfA11_A11(-104.045)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "N",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.6718845106820002,
+      0.729441349786069,
+      -2.0388678790429138
+    ],
+    [
+      -1.0052789785202787,
+      0.7645772777950688,
+      -0.6967951781622483
+    ],
+    [
+      -0.24292632677686132,
+      0.024415140262068924,
+      0.1921896337502309
+    ],
+    [
+      0.8027069035570928,
+      -0.7330902682809324,
+      -0.31274546474459
+    ],
+    [
+      1.03970443385119,
+      -0.7030043523949328,
+      -1.6773871210428624
+    ],
+    [
+      -0.6067390946399254,
+      0.06631261820906875,
+      1.6525968576313197
+    ],
+    [
+      0.3282651191486119,
+      0.014885628621069458,
+      -2.5246378287037734
+    ],
+    [
+      0.3883414638844114,
+      -0.2251927874759323,
+      2.5260527495917735
+    ],
+    [
+      -1.7189338509635466,
+      0.33262399994806824,
+      2.007933273494876
+    ],
+    [
+      -1.2390322186634508,
+      1.3015222010630687,
+      -2.7522477193672685
+    ],
+    [
+      -1.834399866084146,
+      1.3461573590590694,
+      -0.3432503834111076
+    ],
+    [
+      1.405801349646727,
+      -1.3592605533329305,
+      0.31827482300250676
+    ],
+    [
+      1.838822594395281,
+      -1.2877430911349323,
+      -2.0991476258881736
+    ],
+    [
+      1.3409959425579911,
+      -0.16259592592793215,
+      2.2576707985543063
+    ],
+    [
+      0.1745570392889082,
+      -0.10904859619593221,
+      3.49036106433792
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      2,
+      1.0
+    ],
+    [
+      6,
+      4,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.5
+    ],
+    [
+      7,
+      5,
+      1.0
+    ],
+    [
+      8,
+      5,
+      2.0
+    ],
+    [
+      9,
+      0,
+      1.0
+    ],
+    [
+      10,
+      1,
+      1.0
+    ],
+    [
+      11,
+      3,
+      1.0
+    ],
+    [
+      12,
+      4,
+      1.0
+    ],
+    [
+      13,
+      7,
+      1.0
+    ],
+    [
+      14,
+      7,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,287 @@
+{
+  "dataset_id": "ChlorobenzoicAcidA",
+  "dataset_name": "2-Chlorobenzoic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/ChlorobenzoicAcid/ChlorobenzoicAcid.html",
+  "reported_formula": "C7 H5 O2 Cl1",
+  "reported_formula_normalised": "C7ClH5O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 668,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/ChlorobenzoicAcid/ChlorobenzoicAcidA/1.ChlorobenzoicAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "b1ad44f25484d4e8848cb927f6a0b754335b72fc",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 665,
+  "candidates_with_title_energy": 665,
+  "selected_filename": "1.ChlorobenzoicAcidA_MOLPAK/CLBZAC_opt_am58.res",
+  "selected_file_sha256": "22715186d3bbcac08f324fbcb21e69e06e8e5640719c3ab185ab2c3109d7a3f0",
+  "selected_title_energy": -97.205,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C7H5ClO2",
+  "selected_smiles": "O=C(O)c1ccccc1Cl",
+  "constitution_smiles": "O=C(O)c1ccccc1Cl",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 10,
+  "selected_molar_mass_g_mol": 156.568,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C7H5ClO2": 4
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1ccccc1Cl": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H5ClO2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL CLBZAC_opt_am58(-97.205) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "CL1",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "CL1",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "CL1",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "CL1",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ]
+  },
+  "symbols": [
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "Cl",
+    "O",
+    "O",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.1338991053905652,
+      0.8459210600400002,
+      3.478117260890345
+    ],
+    [
+      0.002397991598882321,
+      -1.5363164297599994,
+      1.4532313598952786
+    ],
+    [
+      0.35672189519721176,
+      0.8551939306400005,
+      -2.856299248855876
+    ],
+    [
+      0.5535511505584942,
+      -2.7989327413600003,
+      -0.6064989700632042
+    ],
+    [
+      0.7336714206349058,
+      -1.5904669737600003,
+      -2.7751709885862335
+    ],
+    [
+      -0.28563216671770864,
+      2.74064811384,
+      -0.9085591332923082
+    ],
+    [
+      -1.060297176754649,
+      0.2933032768399997,
+      2.624136311204098
+    ],
+    [
+      0.018794759106031123,
+      2.19929863804,
+      2.0459808931905528
+    ],
+    [
+      -0.10784098334368775,
+      0.3647717858399995,
+      0.4744662859029001
+    ],
+    [
+      0.092050004149832,
+      -1.0244013435600001,
+      0.5066260533696938
+    ],
+    [
+      -0.35852954032823625,
+      1.0779004860399999,
+      1.7576462320765511
+    ],
+    [
+      7.480476571775085e-05,
+      1.0358041506399998,
+      -0.7545184311099349
+    ],
+    [
+      0.291648341713719,
+      0.32243139404000143,
+      -1.9192331060708534
+    ],
+    [
+      0.39609935874619406,
+      -1.7314143523599999,
+      -0.6523381510357136
+    ],
+    [
+      0.5011892460638556,
+      -1.0537409951599996,
+      -1.8675863675153006
+    ]
+  ],
+  "bonds": [
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      8,
+      1.0
+    ],
+    [
+      10,
+      7,
+      2.0
+    ],
+    [
+      10,
+      6,
+      1.0
+    ],
+    [
+      11,
+      8,
+      1.5
+    ],
+    [
+      11,
+      5,
+      1.0
+    ],
+    [
+      12,
+      11,
+      1.5
+    ],
+    [
+      12,
+      2,
+      1.0
+    ],
+    [
+      13,
+      9,
+      1.5
+    ],
+    [
+      13,
+      3,
+      1.0
+    ],
+    [
+      14,
+      13,
+      1.5
+    ],
+    [
+      14,
+      12,
+      1.5
+    ],
+    [
+      14,
+      4,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

@@ -1,0 +1,242 @@
+{
+  "dataset_id": "UracilA",
+  "dataset_name": "Uracil",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Uracil/Uracil.html",
+  "reported_formula": "C4 H4 N2 O2",
+  "reported_formula_normalised": "C4H4N2O2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 217,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.Uracils/Uracil/UracilA/1.UracilA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "a4704fb5483258ac57685d62ab257f296273433e",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 216,
+  "candidates_with_title_energy": 216,
+  "selected_filename": "1.UracilA_MOLPAK/URACIL_opt_da12.res",
+  "selected_file_sha256": "d0c8b8807cea3a24853241bb85b07d99ee5e12ad954652f7e583b6bf85077843",
+  "selected_title_energy": -101.541,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C4H4N2O2",
+  "selected_smiles": "O=c1cc[nH]c(=O)[nH]1",
+  "constitution_smiles": "O=c1cc[nH]c(=O)[nH]1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 12,
+  "selected_heavy_atoms": 8,
+  "selected_molar_mass_g_mol": 112.088,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C4H4N2O2": 4
+  },
+  "component_identities_per_cell": {
+    "O=c1cc[nH]c(=O)[nH]1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C4H4N2O2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL URACIL_opt_da12(-101.541)",
+    "lattice": -7,
+    "asymmetric_unit_atoms": 12,
+    "expanded_unit_cell_atoms": 48,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "O1",
+      "O2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "N1",
+      "N2",
+      "O1",
+      "O2"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "N",
+    "N",
+    "O",
+    "O"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.001432595329319497,
+      -1.4377580454434995,
+      0.029629931327291692
+    ],
+    [
+      0.5310163847155507,
+      0.7360518815885011,
+      -1.1277720912166262
+    ],
+    [
+      -0.028712275293730105,
+      1.4236898360885006,
+      0.027881832574576715
+    ],
+    [
+      -0.5173975663049828,
+      0.7099464500125001,
+      1.0659370765983562
+    ],
+    [
+      -0.9429681654198867,
+      1.1716356408365014,
+      1.9455566054476598
+    ],
+    [
+      -0.8701187338520877,
+      -1.1900052067694997,
+      1.847766693745109
+    ],
+    [
+      0.8696973319454888,
+      -1.1859045169114988,
+      -1.792195396776091
+    ],
+    [
+      -0.040829881389300215,
+      2.5007444629284987,
+      0.028555947244990165
+    ],
+    [
+      -0.5038147967987574,
+      -0.6658038612875004,
+      1.0688763249377982
+    ],
+    [
+      0.49135049758852034,
+      -0.666622450635499,
+      -1.0105758581056885
+    ],
+    [
+      0.00714267666864199,
+      -2.6612829101255,
+      0.045572634245296784
+    ],
+    [
+      1.0032019328112196,
+      1.265308719718501,
+      -2.1292337000226733
+    ]
+  ],
+  "bonds": [
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ],
+    [
+      8,
+      5,
+      1.0
+    ],
+    [
+      8,
+      3,
+      1.5
+    ],
+    [
+      8,
+      0,
+      1.5
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      9,
+      1,
+      1.5
+    ],
+    [
+      9,
+      0,
+      1.5
+    ],
+    [
+      10,
+      0,
+      2.0
+    ],
+    [
+      11,
+      1,
+      2.0
+    ]
+  ],
+  "rejected_candidates": []
+}

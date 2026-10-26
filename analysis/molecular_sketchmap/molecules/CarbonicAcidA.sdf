@@ -1,0 +1,41 @@
+CarbonicAcidA
+     RDKit          3D
+
+  6  5  0  0  0  0  0  0  0  0999 V2000
+   -0.0616    0.0684   -0.0809 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.6719    0.7466   -0.8843 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1076   -1.2723    0.0177 O   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7779    0.5276    0.8645 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7187   -1.5599   -0.6758 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7819    1.4898    0.7589 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  2  0
+  3  1  1  0
+  4  1  1  0
+  5  3  1  0
+  6  4  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+CarbonicAcidA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/CarbonicAcid/CarbonicAcidA/1.CarbonicAcidA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.CarbonicAcidA_MOLPAK/CBNCAC_transtrans_ak11.res
+
+>  <reported_formula>  (1) 
+C1 H2 O3
+
+>  <selected_formula>  (1) 
+CH2O3
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+607
+
+$$$$

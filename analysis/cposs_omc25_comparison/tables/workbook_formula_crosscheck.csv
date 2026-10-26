@@ -1,0 +1,236 @@
+molecular_system,workbook_cell,source_text,audit_text_agrees
+Acridine,Database!B2,C13 H9 N1,True
+Aspirin,Database!B5,C9 H8 O4,True
+DipicolinicAcid,Database!B6,C7 H5 N1 O4,True
+OxamicAcid,Database!B7,C2 H3 N1 O3,True
+Alloxan,Database!B8,C4 H2 N2 O4,True
+AminobenzoicAcid,Database!B9,C7 H7 N1 O2,True
+4aminobenzamide,Database!B12,C7 H8 N2 O1,True
+Amoxapine,Database!B13,C17 H16 N3 O1 Cl1,True
+Anthracene,Database!B16,C14 H10,True
+CarbamazepinePicolinamide,Database!B17,C15 H12 N2 O1 . C6 H6 N2 O1,True
+BTXII,Database!B18,C3 H4 O1,True
+2-fluoroethynylbenzene,Database!B20,C8 H5 F1,True
+BarbituricAcid,Database!B22,C4 H4 N2 O3,True
+Chlorothalonil,Database!B23,C8 N2 Cl4,True
+Hydroxyazabenzotriazole,Database!B24,C5 H4 N4 O1,True
+GentisicAcid,Database!B25,C7 H6 O4,True
+Lactide,Database!B27,C6 H8 O4,True
+GSK269984B,Database!B31,C20 H14 N1 O3 Cl2 F1,True
+2fluorobenzamide,Database!B36,C7 H6 N1 O1 F1,True
+Bipyridine,Database!B38,C10 H8 N2,True
+Piracetam,Database!B43,C6 H10 N2 O2,True
+5ethyluracil,Database!B44,C6 H8 N2 O2,True
+5cyanouracil,Database!B45,C5 H3 N3 O2 ,True
+Azabicyclononanedione,Database!B46,C8 H11 N1 O2,True
+NAcetyldibenzazepine,Database!B48,C16 H13 N1 O1,True
+2bromobenzamide,Database!B49,C7 H6 N1 O1 Br1,True
+Benzophenanthrene,Database!B50,C18 H12,True
+Chalcone,Database!B54,C15 H12 O1,True
+34-dichloronitrobenzene,Database!B55,C6 H3 N1 O2 Cl2,True
+Oxcarbazepine,Database!B59,C15 H12 N2 O2,True
+Cannabinol,Database!B61,C21 H26 O2,True
+Deazauracil,Database!B62,C5 H5 N1 O2,True
+Carbamazepine,Database!B65,C15 H12 N2 O1,True
+CarbonicAcid,Database!B70,C1 H2 O3,True
+Methyl-p-hydroxybenzoate,Database!B71,C8 H8 O3,True
+6methyluracil,Database!B74,C5 H6 N2 O2,True
+Trinitrodibenzopyranone,Database!B75,C13 H5 N3 O8,True
+DiaminoDinitroPyrazine,Database!B76,C4 H4 N6 O4,True
+ChlorobenzoicAcid,Database!B77,C7 H5 O2 Cl1,True
+2chlorobenzamide,Database!B78,C7 H6 N1 O1 Cl1,True
+Chloroform,Database!B81,C1 H1 Cl3,True
+2C5NBAMH,Database!B84,C7 H4 N1 O4 Cl1 . H2 O1,True
+2C5NBA,Database!B85,C7 H4 N1 O4 Cl1,True
+4C2NBAMH,Database!B86,C7 H4 N1 O4 Cl1 . H2 O1,True
+5chlorouracil,Database!B87,C4 H3 N2 O2 Cl,True
+Coronene,Database!B88,C24 H12,True
+Coumarin,Database!B89,C9 H6 O2,True
+Naproxen,Database!B90,C14 H14 O3,True
+Phenanthrenol,Database!B95,C14 H10 O1,True
+Cytosine,Database!B97,C4 H5 N3 O1,True
+CyanuricAcid,Database!B98,C3 H3 N3 O3,True
+Bipy-2Aminobenzoic,Database!B99,C10 H8 N2 . C7 H7 N1 O2 . C7 H7 N1 O2,True
+6methoxycoumarin,Database!B102,C10 H8 O3,True
+Dibenzosuberenone,Database!B103,C15 H10 O1,True
+Dichloromethane,Database!B104,C1 H2 Cl2,True
+34-dinitrochlorobenzene,Database!B106,C6 H3 N2 O4 Cl1,True
+7hydroxycoumarin,Database!B109,C9 H6 O3,True
+Dehydroproline,Database!B110,C10 H10 N2 O2,True
+Mannitol,Database!B113,C6 H14 O6,True
+5eniluracil,Database!B114,C6 H4 N2 O2,True
+Galunisertib,Database!B116,C22 H19 N5 O1,True
+23-dichloronitrobenzene,Database!B120,C6 H3 N1 O2 Cl2,True
+Lamotrigine,Database!B124,C9 H7 N5 Cl2,True
+Isonicotinamide,Database!B126,C6 H6 N2 O1,True
+Hydroxymethyloxazolidinone,Database!B132,C4 H7 N1 O3,True
+BTXXIX,Database!B135,C8 H9 N1 O2,True
+AmantadineHydrochloride,Database!B136,C10 H18 N1 + . Cl1 -,True
+LY2806920,Database!B137,C16 H21 N3 O3,True
+LY2624803,Database!B140,C22 H25 N3 O3,True
+FlufenamicAcid,Database!B143,C14 H10 N1 O2 F3,True
+Fluorouracil,Database!B146,C4 H3 N2 O2 F1,True
+Desloratadine,Database!B147,C19 H19 N2 Cl1,True
+Formyluracil,Database!B149,C5 H4 N2 O3,True
+Sorbitol,Database!B150,C6 H14 O6,True
+Glucose,Database!B151,C6 H12 O6,True
+Equilin,Database!B152,C18 H20 O2,True
+Chlorodibenzosuberone,Database!B154,C21 H20 N1 Cl1,True
+4dimethylaminopyridiniummaleate,Database!B155,C7 H11 N2 . C4 H3 O4,True
+Iminodibenzyl,Database!B156,C14 H13 N1,True
+Hydrochlorothiazide,Database!B158,C7 H8 N3 O4 Cl1 S2,True
+LY2806920HCl,Database!B159,C16 H22 N3 O3 + . Cl -,True
+35-dichloronitrobenzene,Database!B160,C6 H3 N1 O2 Cl2,True
+5AzauracilMonohydrate,Database!B164,C3 H3 N3 O2 . H2 O1,True
+Anisole,Database!B165,C7 H8 O1,True
+Paracetamol,Database!B166,C8 H9 N1 O2,True
+Ibuprofen,Database!B168,C13 H18 O2,True
+Isocytosine,Database!B173,C4 H5 N3 O1,True
+GallicAcid,Database!B175,C7 H6 O5,True
+2C4NBAMH,Database!B177,C7 H4 N1 O4 Cl1 . H2 O1,True
+Imidazole,Database!B178,C3 H4 N2,True
+Indomethacin,Database!B179,C19 H16 N1 O4 Cl1,True
+Isocaffeine,Database!B182,C8 H10 N4 O2,True
+pyridineisophthalicacid,Database!B183,C8 H6 O4 . C5 H5 N1,True
+pyridiniumisophthalate,Database!B184,C8 H5 O4 - . C5 H6 N1 +,True
+5aminouracil,Database!B185,C4 H5 N3 O2,True
+BTXXXII,Database!B186,C29 H32 N8 O4 F2 S1,True
+24-dichloronitrobenzene,Database!B190,C6 H3 N1 O2 Cl2,True
+2aminobenzamide,Database!B194,C7 H8 N2 O1,True
+TolfenamicAcid,Database!B195,C14 H12 N1 O2 Cl1,True
+Guanine,Database!B201,C5 H5 N5 O1,True
+Adenine,Database!B205,C5 H5 N5,True
+Trifluoroethanol,Database!B208,C2 H3 O1 F3,True
+GallicAcidMH,Database!B210,C7 H6 O5 . H2 O1,True
+Urazole,Database!B214,C2 H3 N3 O2,True
+Nitrofurantoin,Database!B215,C8 H6 N4 O5,True
+Bipy-Succinic,Database!B216,C10 H8 N2 . C4 H6 O4,True
+5fluorocytosine,Database!B219,C4 H4 N3 O1 F1,True
+2M4NBAMH,Database!B220,C8 H7 N1 O4 . H2 O1,True
+Metacetamol,Database!B221,C8 H9 N1 O2,True
+Methanol,Database!B223,C1 H4 O1,True
+2CannabinolTetramethylpyrazine,Database!B224,C21 H26 O2 . C21 H26 O2 . C8 H12 N2,True
+CannabinolTetramethylpyrazine,Database!B225,C21 H26 O2 . C8 H12 N2,True
+Caffeine3HBA,Database!B226,C8 H10 N4 O2 . C7 H6 O3,True
+Caffeinebis4HBA,Database!B227,C8 H10 N4 O2 . C7 H6 O3 . C7 H6 O3,True
+Tetramethylpyrazine,Database!B228,C8 H12 N2,True
+BTXXII,Database!B230,C8 N4 S3,True
+Naphthalene,Database!B237,C10 H8,True
+Clozapine,Database!B239,C18 H19 N4 Cl1,True
+Loxapine,Database!B242,C18 H18 N3 O1 Cl1,True
+NiflumicAcid,Database!B246,C13 H9 N2 O2 F3,True
+Dimethylurea,Database!B248,C3 H8 N2 O1,True
+5nitrouracil,Database!B250,C4 H3 N3 O4,True
+Caffeine,Database!B252,C8 H10 N4 O2,True
+7fluoroisatin,Database!B256,C8 H4 N1 O2 F1,True
+BTXVIII,Database!B259,C9 H7 N2 O3 Cl1 S1,True
+BTXX,Database!B264,C25 H22 N2 O4 S2,True
+BTXVII,Database!B267,C6 H2 N2 O4 Cl2,True
+BTXVI,Database!B269,C6 H4 N2 O1,True
+2H4NBAMH,Database!B276,C7 H5 N1 O5 . H2 O1,True
+BTXXVIII,Database!B277,C26 H22 N2 Cl2 Cu1,True
+OroticAcid,Database!B281,C5 H4 N2 O4,True
+OtolicAcid,Database!B282,C8 H8 O2,True
+BTVIII,Database!B285,C3 H4 N2 O2,True
+ParabanicAcid,Database!B286,C3 H2 N2 O3,True
+Pentachloronitrobenzene,Database!B288,C6 N1 O2 Cl5,True
+Phthalimide,Database!B290,C8 H5 N1 O2,True
+PhloroglucinolDihydrate,Database!B291,C6 H6 O3 . H2 O1 . H2 O1,True
+Phloroglucinol,Database!B293,C6 H6 O3,True
+Estradiol,Database!B299,C18 H24 O2,True
+Progesterone,Database!B301,C21 H30 O2,True
+Pyridine,Database!B305,C5 H5 N1,True
+Pyrene,Database!B308,C16 H10,True
+Pyridone,Database!B310,C5 H5 N1 O1,True
+3Oxauracil,Database!B312,C4 H3 N1 O3,True
+IsobarbituricAcid,Database!B313,C4 H4 N2 O3,True
+bResorcylicAcidHemihydrate,Database!B315,C7 H6 O4 . C7 H6 O4 . H2 O1,True
+Equilinin,Database!B318,C18 H18 O2,True
+Chlorothiazide,Database!B320,C7 H6 N3 O4 Cl1 S2,True
+FenamicAcid,Database!B321,C13 H11 N1 O2,True
+2M4NBA,Database!B324,C8 H7 N1 O4,True
+2H4NBA,Database!B325,C7 H5 N1 O5,True
+5C2NBA,Database!B326,C7 H4 N1 O4 Cl1,True
+QuinoliniumFumarate,Database!B327,C9 H8 N1 + . C4 H4 O3 -,True
+Nitrophenyl-Aminobenzoic,Database!B328,C8 H7 N1 O4 . C7 H7 N1 O2,True
+4cyanopyridine4fluorobenzoicacid,Database!B331,C7 H5 O2 F1 . C6 H4 N2,True
+Saccharin,Database!B332,C7 H5 N1 O3 S1,True
+FOX7,Database!B333,C2 H4 N4 O4,True
+NitrophenylAceticAcid,Database!B335,C8 H7 N1 O4,True
+Diclofenac,Database!B338,C14 H11 N1 O2 Cl2,True
+Sulfamerazine,Database!B342,C11 H12 N4 O2 S1,True
+Cytenamide,Database!B344,C16 H13 N1 O1,True
+BTXIII,Database!B347,C6 H2 Br2 Cl1 F1,True
+SuccinicAcid,Database!B348,C4 H6 O4,True
+Sulfadiazine,Database!B360,C10 H10 N4 O2 S1,True
+Tetrachlorobenzene,Database!B362,C6 H2 Cl4,True
+Dicyanobenzene,Database!B363,C8 H4 N2,True
+TetrolicAcid,Database!B366,C4 H4 O2,True
+Cyheptamide,Database!B368,C16 H15 N1 O1,True
+Thymine,Database!B377,C5 H6 N2 O2,True
+DiaminoDinitroPyridineOxide,Database!B379,C5 H5 N5 O5,True
+Trinitrobenzene,Database!B380,C6 H3 N3 O6,True
+BromoAminoBenzoicAcid,Database!B389,C7 H6 N1 O2 Br1,True
+TransFOX7,Database!B390,C2 H4 N4 O4 ,True
+AMebendazole,Database!B391,C16 H13 N3 O3,True
+ChloromandelicAcid,Database!B396,C8 H7 O3 Cl1,True
+3aminobenzamide,Database!B400,C7 H8 N2 O1,True
+bResorcylicAcidDihydrate,Database!B401,C7 H6 O4 . H2 O1 . H2 O1,True
+GentisicAcidHH,Database!B404,C7 H6 O4 . C7 H6 O4 . H2 O1,True
+GentisicAcidMH,Database!B405,C7 H6 O4 . H2 O1,True
+GentisicAcidDH,Database!B406,C7 H6 O4 . H2 O1 . H2 O1,True
+CaffeineParacetamol,Database!B407,C8 H10 N4 O2 . C8 H9 N1 O2,True
+4Hydroxycoumarin,Database!B408,C9 H6 O3,True
+TetrazolPyrazine,Database!B409,C8 H4 N18,True
+TetrazolPyrimidine,Database!B412,C7 H4 N14,True
+DihydroDibenzoCycloheptenylEthanone,Database!B415,C17 H16 O1,True
+DibenzoCycloheptenylEthanone,Database!B416,C17 H14 O1,True
+Caffeine4HBA,Database!B417,C8 H10 N4 O2 . C7 H6 O3,True
+Dicyanobenzene-Succinic,Database!B418,C8 H4 N2 . C4 H6 O4,True
+Bipy-Aminobenzoic,Database!B420,C10 H8 N2 . C7 H7 N1 O2,True
+TetrahydroDimethylQuinoline,Database!B423,C11 H15 N1,True
+Methylazetidineone,Database!B424,C4 H7 N1 O1,True
+26-dichloronitrobenzene,Database!B425,C6 H3 N1 O2 Cl2,True
+MemantineHydrochloride,Database!B426,C12 H22 N1 + . Cl1 -,True
+4dimethylaminopyridinemaleicacid,Database!B427,C7 H10 N2 . C4 H4 O4,True
+4cyanopyridinium4fluorobenzoate,Database!B428,C7 H4 O2 F1 - . C6 H5 N2 +,True
+5vinyluracil,Database!B429,C6 H6 N2 O2,True
+Olanzapine,Database!B430,C17 H20 N4 S1,True
+Uracil,Database!B436,C4 H4 N2 O2,True
+Urea,Database!B437,C1 H4 N2 O1,True
+UricAcid,Database!B439,C5 H4 N4 O3,True
+Dihydrocarbamazepine,Database!B441,C15 H14 N2 O1,True
+2C4NBA,Database!B444,C7 H4 N1 O4 Cl1,True
+4C2NBA,Database!B445,C7 H4 N1 O4 Cl1,True
+EphedriniumTartrate,Database!B446,C10 H16 N1 O1 + . C4 H5 O6 -,True
+BTXV,Database!B448,C8 H4 O2 . C5 H7 N3,True
+BTXIV,Database!B452,C10 H10 N2 S3,True
+Tazofelone,Database!B454,C18 H27 N1 O2 S1,True
+5fluoroisatin,Database!B458,C8 H4 N1 O2 F1,True
+Salsalate,Database!B459,C14 H10 O5,True
+BXXIII,Database!B461,C21 H17 N1 O2 Cl2,True
+BTXXVC,Database!B470,C17 H18 N2 . C7 H4 N2 O6,True
+BTXXVI,Database!B473,C34 H22 N2 O2 Cl2,True
+BTXXIV,Database!B479,C4 H7 N2 O2 S1 + . Cl - . H2 O1,True
+AminoPyrimidine,Database!B486,C5 H7 N3,True
+BTXIX,Database!B487,C8 H7 N2 + . C4 H3 O4 -,True
+Diiodoanthanthrone,Database!B489,C22 H8 O2 I2,True
+Azetidine,Database!B490,C3 H7 N1,True
+5Azauracil,Database!B491,C3 H3 N3 O2,True
+XXVII,Database!B492,C44 H52 I2 Si2,True
+CaffeineSalicylicAcid,Database!B499,C8 H10 N4 O2 . C7 H6 O3,True
+Cannabinol2Tetramethylpyrazine,Database!B500,C21 H26 O2 . C8 H12 N2 . C8 H12 N2,True
+MefenamicAcid,Database!B501,C15 H15 N1 O2,True
+4-fluorotoluene,Database!B505,C7 H7 F1,True
+3-fluorotoluene,Database!B510,C7 H7 F1,True
+2-fluorotoluene,Database!B516,C7 H7 F1,True
+CMebendazole,Database!B522,C16 H13 N3 O3,True
+bResorcylicAcidMonohydrate,Database!B527,C7 H6 O4 . H2 O1,True
+BenzylTetrazole,Database!B530,C8 H8 N4,True
+XXXIII,Database!B532,C10 H10 N3 O3 S1 - . C4 H10 N1 O1 +,True
+BTXXXI,Database!B534,C12 H12 N1 O3 F3 S1,True
+25-dichloronitrobenzene,Database!B541,C6 H3 N1 O2 Cl2,True
+P-Xylene,Database!B545,C8 H10,True
+O-Xylene,Database!B546,C8 H10,True
+M-Xylene,Database!B547,C8 H10,True
+Cyclopentane,Database!B548,C5 H10,True

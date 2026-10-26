@@ -1,0 +1,457 @@
+{
+  "dataset_id": "TolfenamicAcidB",
+  "dataset_name": "Tolfenamic Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcid.html",
+  "reported_formula": "C14 H12 Cl1 N1 O2",
+  "reported_formula_normalised": "C14ClH12NO2",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 3226,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/TolfenamicAcid/TolfenamicAcidB/1.TolfenamicAcidB_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "d1beb6e188a30d62d3779143dc2b856445ee9edc",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 1858,
+  "candidates_with_title_energy": 1858,
+  "selected_filename": "1.TolfenamicAcidB_CrystPred/KAXXAI_dfA6_A6.res",
+  "selected_file_sha256": "a2b764bd68c92bafb0c4b48159480066f850e760117d73dc1e64c4004e05a98e",
+  "selected_title_energy": -133.497,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 2.0,
+  "selected_formula": "C14H12ClNO2",
+  "selected_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+  "constitution_smiles": "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 30,
+  "selected_heavy_atoms": 18,
+  "selected_molar_mass_g_mol": 261.70799999999997,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C14H12ClNO2": 2
+  },
+  "component_identities_per_cell": {
+    "Cc1c(Cl)cccc1Nc1ccccc1C(=O)O": 2
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C14H12ClNO2": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL KAXXAI_dfA6_A6(-133.497)",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 30,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "N1",
+      "Cl1",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "N1",
+      "Cl1",
+      "O1",
+      "O2",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "H11",
+      "H12"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "N",
+    "Cl",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.6924857227658952,
+      1.3988518434469581,
+      -1.0707669911889348
+    ],
+    [
+      -0.6160700719586112,
+      0.7371156279809963,
+      -0.40060707011847363
+    ],
+    [
+      0.39717445643474214,
+      1.5405893853671566,
+      0.17053914555482752
+    ],
+    [
+      0.3315093731969121,
+      2.923078091045193,
+      0.11194754860920675
+    ],
+    [
+      -0.7383992869539933,
+      3.573469179201169,
+      -0.5181170580649779
+    ],
+    [
+      -1.729792909296167,
+      2.806561742107359,
+      -1.10602845306401
+    ],
+    [
+      -2.754703754189686,
+      0.6271946827805248,
+      -1.7310752581299842
+    ],
+    [
+      0.21158079672616115,
+      -1.4642765645770552,
+      0.4736854467183367
+    ],
+    [
+      1.6092807779381477,
+      -1.2331112947251928,
+      0.524613123632979
+    ],
+    [
+      2.36802298039012,
+      -2.1162255722231396,
+      1.305167575314659
+    ],
+    [
+      1.8050111737952577,
+      -3.1615319824323005,
+      2.0356089701019098
+    ],
+    [
+      0.4280367916684975,
+      -3.356764222183827,
+      1.972110935980937
+    ],
+    [
+      -0.3638305638105317,
+      -2.5259938556844252,
+      1.1867703011380009
+    ],
+    [
+      2.2211159431333263,
+      -0.08789684937792064,
+      -0.24125900207394313
+    ],
+    [
+      -0.5619871350380885,
+      -0.6390428004375694,
+      -0.36679118464208393
+    ],
+    [
+      4.122975202510984,
+      -1.9264275077606259,
+      1.3991908818494458
+    ],
+    [
+      -3.754828144808047,
+      1.3865675898737466,
+      -2.239612724029351
+    ],
+    [
+      -2.7916303162344196,
+      -0.5960032342772221,
+      -1.851381467932924
+    ],
+    [
+      1.2468598551709427,
+      1.0610930586821379,
+      0.6403207285943804
+    ],
+    [
+      1.133898854655932,
+      3.5058882400902487,
+      0.5560879909014114
+    ],
+    [
+      -0.784107573216879,
+      4.656363470844488,
+      -0.55574424955274
+    ],
+    [
+      -2.5590981148442373,
+      3.282832360572696,
+      -1.615180360294136
+    ],
+    [
+      2.43909842444942,
+      -3.8083780531093723,
+      2.630004499056695
+    ],
+    [
+      -0.0260424528415637,
+      -4.176758125173282,
+      2.5198816307859007
+    ],
+    [
+      -1.4285039955309342,
+      -2.7099827916527066,
+      1.1011965415706397
+    ],
+    [
+      1.536010033335101,
+      0.7628200394010696,
+      -0.2727091171597502
+    ],
+    [
+      3.1594143628000886,
+      0.23468358784998866,
+      0.21076454143803858
+    ],
+    [
+      2.440782481906508,
+      -0.36888303521455956,
+      -1.279473765837365
+    ],
+    [
+      -1.277922032257286,
+      -1.08558131243732,
+      -0.9369057603348385
+    ],
+    [
+      -4.371369434365849,
+      0.7597483020227571,
+      -2.6522373988238463
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      8,
+      7,
+      1.5
+    ],
+    [
+      9,
+      8,
+      1.5
+    ],
+    [
+      10,
+      9,
+      1.5
+    ],
+    [
+      11,
+      10,
+      1.5
+    ],
+    [
+      12,
+      11,
+      1.5
+    ],
+    [
+      12,
+      7,
+      1.5
+    ],
+    [
+      13,
+      8,
+      1.0
+    ],
+    [
+      14,
+      7,
+      1.0
+    ],
+    [
+      14,
+      1,
+      1.0
+    ],
+    [
+      15,
+      9,
+      1.0
+    ],
+    [
+      16,
+      6,
+      1.0
+    ],
+    [
+      17,
+      6,
+      2.0
+    ],
+    [
+      18,
+      2,
+      1.0
+    ],
+    [
+      19,
+      3,
+      1.0
+    ],
+    [
+      20,
+      4,
+      1.0
+    ],
+    [
+      21,
+      5,
+      1.0
+    ],
+    [
+      22,
+      10,
+      1.0
+    ],
+    [
+      23,
+      11,
+      1.0
+    ],
+    [
+      24,
+      12,
+      1.0
+    ],
+    [
+      25,
+      13,
+      1.0
+    ],
+    [
+      26,
+      13,
+      1.0
+    ],
+    [
+      27,
+      13,
+      1.0
+    ],
+    [
+      28,
+      14,
+      1.0
+    ],
+    [
+      29,
+      16,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

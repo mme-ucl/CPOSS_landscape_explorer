@@ -1,0 +1,54 @@
+5chlorouracilA
+     RDKit          3D
+
+ 12 12  0  0  0  0  0  0  0  0999 V2000
+   -0.0154    3.0849   -0.0165 Cl  0  0  0  0  0  0  0  0  0  0  0  0
+    0.0859   -2.7140    0.0231 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.3675    1.1646   -0.2640 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1884   -0.6976    0.1323 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.1013   -0.7391   -0.1161 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0567   -1.4918    0.0135 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.2621    0.6547   -0.1407 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0140    1.3670   -0.0052 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1715    0.6779    0.1242 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.0568   -1.2007    0.2301 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.9549   -1.2757   -0.2065 H   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1279    1.1698    0.2259 H   0  0  0  0  0  0  0  0  0  0  0  0
+  6  5  1  0
+  6  4  1  0
+  6  2  2  0
+  7  5  1  0
+  7  3  2  0
+  8  7  1  0
+  8  1  1  0
+  9  8  2  0
+  9  4  1  0
+ 10  4  1  0
+ 11  5  1  0
+ 12  9  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+5chlorouracilA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.Uracils/5chlorouracil/5chlorouracilA/1.5chlorouracilA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.5chlorouracilA_MOLPAK/CLURAC_opt_ak41.res
+
+>  <reported_formula>  (1) 
+C4 H3 N2 O2 Cl
+
+>  <selected_formula>  (1) 
+C4H3ClN2O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+244
+
+$$$$

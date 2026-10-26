@@ -1,0 +1,227 @@
+{
+  "dataset_id": "PyridineA",
+  "dataset_name": "Pyridine",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Pyridine/Pyridine.html",
+  "reported_formula": "C5 H5 N1",
+  "reported_formula_normalised": "C5H5N",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 309,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Pyridine/PyridineA/1.PyridineA_DIFF.zip?raw=true",
+  "archive_git_blob_sha": "edd4c66d065557dcafb55e9d1244e9de5f1283c3",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 98,
+  "candidates_with_title_energy": 98,
+  "selected_filename": "1.PyridineA_DIFF/PYRDNA_opt_A2.res",
+  "selected_file_sha256": "9e04408d36e3c73ee0254575df424026b936af6e2a314e04102bbc2e3185da08",
+  "selected_title_energy": -68.237,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C5H5N",
+  "selected_smiles": "c1ccncc1",
+  "constitution_smiles": "c1ccncc1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 11,
+  "selected_heavy_atoms": 6,
+  "selected_molar_mass_g_mol": 79.10199999999999,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C5H5N": 4
+  },
+  "component_identities_per_cell": {
+    "c1ccncc1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C5H5N": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PYRDNA_opt_A2(-68.237) Pna21",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 11,
+    "expanded_unit_cell_atoms": 44,
+    "warnings": [],
+    "source_atom_labels": [
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "N1",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5"
+    ]
+  },
+  "symbols": [
+    "N",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.13062402033545428,
+      -1.5830171124018175,
+      0.18286857913136367
+    ],
+    [
+      -0.4749637963025455,
+      -0.8284422527438178,
+      1.0939593538913637
+    ],
+    [
+      -0.6154027017905452,
+      0.5474130125301828,
+      0.9844136919463636
+    ],
+    [
+      -0.09703528630854485,
+      1.176044855112182,
+      -0.1358604489636359
+    ],
+    [
+      0.5369874465174549,
+      0.40239082930418313,
+      -1.0941267983436365
+    ],
+    [
+      0.6230857671474546,
+      -0.9665805186478167,
+      -0.8866088079386362
+    ],
+    [
+      -0.8705314041365453,
+      -1.3507976297398177,
+      1.9603236072913637
+    ],
+    [
+      -1.1198039581145456,
+      1.1081474527681818,
+      1.7614403359863637
+    ],
+    [
+      -0.18561675622254548,
+      2.248866720592183,
+      -0.25979264433863664
+    ],
+    [
+      0.9585169909674542,
+      0.8465398112301825,
+      -1.987250923918637
+    ],
+    [
+      1.1141396779074553,
+      -1.6005651680038175,
+      -1.6193659447436366
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      1,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ],
+    [
+      8,
+      3,
+      1.0
+    ],
+    [
+      9,
+      4,
+      1.0
+    ],
+    [
+      10,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

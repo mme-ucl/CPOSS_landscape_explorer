@@ -1,0 +1,257 @@
+{
+  "dataset_id": "BarbituricAcidA",
+  "dataset_name": "Barbituric Acid",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/BarbituricAcid/BarbituricAcid.html",
+  "reported_formula": "C4 H4 N2 O3",
+  "reported_formula_normalised": "C4H4N2O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 86,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/BarbituricAcid/BarbituricAcidA/1.BarbituricAcidA_MOLPAK.zip?raw=true",
+  "archive_git_blob_sha": "035c875e56822aea0f5afdc3d994b22af0dff014",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 78,
+  "candidates_with_title_energy": 78,
+  "selected_filename": "1.BarbituricAcidA_MOLPAK/BARBAC_EXPT_am16.res",
+  "selected_file_sha256": "e949762d94aa769d15bc881a23fd4670523501ff41f79d64c771c46b95281b56",
+  "selected_title_energy": -106.473,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C4H4N2O3",
+  "selected_smiles": "O=C1CC(=O)NC(=O)N1",
+  "constitution_smiles": "O=C1CC(=O)NC(=O)N1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 13,
+  "selected_heavy_atoms": 9,
+  "selected_molar_mass_g_mol": 128.087,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C4H4N2O3": 4
+  },
+  "component_identities_per_cell": {
+    "O=C1CC(=O)NC(=O)N1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C4H4N2O3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL BARBAC_EXPT_am16(-106.473) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 13,
+    "expanded_unit_cell_atoms": 52,
+    "warnings": [],
+    "source_atom_labels": [
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "O1",
+      "O2",
+      "O3",
+      "N1",
+      "N2",
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ]
+  },
+  "symbols": [
+    "H",
+    "H",
+    "H",
+    "H",
+    "O",
+    "O",
+    "O",
+    "N",
+    "N",
+    "C",
+    "C",
+    "C",
+    "C"
+  ],
+  "coordinates_angstrom": [
+    [
+      -1.0563546827749986,
+      -1.4539990454849998,
+      1.133232103458555
+    ],
+    [
+      -0.8191432996447818,
+      2.1224004047980003,
+      -0.3098572077042313
+    ],
+    [
+      1.6086427829639716,
+      -0.537419047457,
+      -1.5001469177452038
+    ],
+    [
+      0.1002151836358669,
+      -0.7395256143189997,
+      1.7988357278126412
+    ],
+    [
+      0.9585374658913963,
+      -2.4183834507650004,
+      -0.13253832092831574
+    ],
+    [
+      -1.9747020128894914,
+      0.9251616588639995,
+      1.4168779388133377
+    ],
+    [
+      0.9893983737744776,
+      1.7218972862439998,
+      -1.8939884397321354
+    ],
+    [
+      -0.4693212712374768,
+      1.3210363577660003,
+      -0.20922606039415337
+    ],
+    [
+      1.0076707027929155,
+      -0.33182961117599974,
+      -0.9398354129309567
+    ],
+    [
+      -1.0382761487875163,
+      0.5232891181519999,
+      0.7650431703774476
+    ],
+    [
+      0.5537835500168784,
+      -1.275552611703,
+      -0.05911723916887768
+    ],
+    [
+      0.5307225627256926,
+      0.9485001866840004,
+      -1.0654319072065375
+    ],
+    [
+      -0.3911732064669442,
+      -0.8055756316029998,
+      0.9961525653484316
+    ]
+  ],
+  "bonds": [
+    [
+      7,
+      1,
+      1.0
+    ],
+    [
+      8,
+      2,
+      1.0
+    ],
+    [
+      9,
+      7,
+      1.0
+    ],
+    [
+      9,
+      5,
+      2.0
+    ],
+    [
+      10,
+      8,
+      1.0
+    ],
+    [
+      10,
+      4,
+      2.0
+    ],
+    [
+      11,
+      8,
+      1.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      11,
+      6,
+      2.0
+    ],
+    [
+      12,
+      10,
+      1.0
+    ],
+    [
+      12,
+      9,
+      1.0
+    ],
+    [
+      12,
+      3,
+      1.0
+    ],
+    [
+      12,
+      0,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

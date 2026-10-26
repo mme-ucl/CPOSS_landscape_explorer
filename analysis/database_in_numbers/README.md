@@ -6,6 +6,9 @@ Reproducible HTML metadata extraction, complete coordinate-archive counting, pap
 
 - `output/pdf/database_in_numbers.pdf`: vector PDF with embedded Helvetica.
 - `figures/database_in_numbers.png`: the same A4 page at 300 dpi.
+- `output/pdf/database_in_numbers_3x2.pdf` and `figures/database_in_numbers_3x2.png`: wider paper figure with A-C above D-F. The approved panel C shows reported CSP software from the matched curation-workbook records. Panels A, B and D-F come from the current portrait PDF, including its latest formula checks (233 plotted systems). Panel sizes, fonts and proportions are retained, with translation only. Rebuild using `python make_wide_figure.py` after the portrait PDF and `workbook_crosscheck/plot_panel_c.py`; `verification_3x2.json` records both source PDFs, software data, provenance, panel placements and output checks.
+- `caption_3x2.tex`: comprehensive LaTeX caption and `fig:database_in_numbers` label for the wider figure. Input this fragment inside the manuscript's figure environment after the image. The existing `caption.md` describes the portrait reference figure.
+- `workbook_crosscheck/report.md`: the worksheet reconciliation and remaining formula, credit and date differences. The wider figure adopts the approved software panel; the other spreadsheet conflicts remain recorded for review.
 - `tables/datasets.csv`: one row per documented CSP search, including missing linked files.
 - `tables/plot_datasets.csv`: figure view with archive structure counts and the original visualization counts in separate columns. The `structure_count` column in the original `datasets.csv` retains its original JSON-array definition.
 - `tables/structure_archive_counts.csv`, `dataset_archive_counts.csv`: all 509 checksum-verified model archives and their per-dataset coordinate-file totals.

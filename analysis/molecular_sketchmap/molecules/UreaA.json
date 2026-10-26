@@ -1,0 +1,177 @@
+{
+  "dataset_id": "UreaA",
+  "dataset_name": "Urea",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Urea/Urea.html",
+  "reported_formula": "C1 H4 N2 O1",
+  "reported_formula_normalised": "CH4N2O",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 1643,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Urea/UreaA/1.UreaA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "cc4e435bdd65a987fbb1b3f977ac38acced021c4",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 848,
+  "candidates_with_title_energy": 848,
+  "selected_filename": "1.UreaA_CrystPred/UREAXX_planar_A242.res",
+  "selected_file_sha256": "5d4cae615c16e5eeb20f7622575975056904ec16cd32c893c82d2da3f8b69443",
+  "selected_title_energy": -95.835,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "CH4N2O",
+  "selected_smiles": "NC(N)=O",
+  "constitution_smiles": "NC(N)=O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 8,
+  "selected_heavy_atoms": 4,
+  "selected_molar_mass_g_mol": 60.056,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "CH4N2O": 4
+  },
+  "component_identities_per_cell": {
+    "NC(N)=O": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "CH4N2O": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL UREAXX_planar_A242(-95.835) P212121",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 8,
+    "expanded_unit_cell_atoms": 32,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "C1",
+      "N1",
+      "N2",
+      "O1",
+      "H1",
+      "H2",
+      "H3",
+      "H4"
+    ]
+  },
+  "symbols": [
+    "C",
+    "N",
+    "N",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.29530317751625,
+      0.009058137055000692,
+      -0.4268505270315006
+    ],
+    [
+      0.06753316170375012,
+      1.1468942125300012,
+      0.23599685135950033
+    ],
+    [
+      0.17421158352375,
+      -1.154345518795,
+      0.11339542568750005
+    ],
+    [
+      -0.98696759802625,
+      0.030288454639999962,
+      -1.4266257745685003
+    ],
+    [
+      -0.07673218841624996,
+      -2.0045536921949996,
+      -0.3526569641704995
+    ],
+    [
+      0.7446103281637501,
+      -1.1963946693299992,
+      0.9349952625035005
+    ],
+    [
+      -0.26302679277624996,
+      2.0149857911650004,
+      -0.13845128167749943
+    ],
+    [
+      0.63567468334375,
+      1.15406728493,
+      1.060197007897501
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.0
+    ],
+    [
+      2,
+      0,
+      1.0
+    ],
+    [
+      3,
+      0,
+      2.0
+    ],
+    [
+      4,
+      2,
+      1.0
+    ],
+    [
+      5,
+      2,
+      1.0
+    ],
+    [
+      6,
+      1,
+      1.0
+    ],
+    [
+      7,
+      1,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

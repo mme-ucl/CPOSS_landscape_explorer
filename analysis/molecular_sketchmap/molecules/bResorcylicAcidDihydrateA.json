@@ -1,0 +1,346 @@
+{
+  "dataset_id": "bResorcylicAcidDihydrateA",
+  "dataset_name": "beta-Resorcylic Acid Dihydrate",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidDihydrate/bResorcylicAcidDihydrate.html",
+  "reported_formula": "C7 H6 O4 - 2(H2 O1)",
+  "reported_formula_normalised": "C7H10O6",
+  "composition_basis": "formula unit (multicomponent)",
+  "structure_count": 1670,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/BetaResorcylicAcidHydrates/bResorcylicAcidDihydrate/bResorcylicAcidDihydrateA/1.bResorcylicAcidDihydrateA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "4b1ee45ab297451daf4d86674baf6d3e69cfe50d",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 1627,
+  "candidates_with_title_energy": 1627,
+  "selected_filename": "1.bResorcylicAcidDihydrateA_CrystPred/UCLDBB_conf1_A5462.res",
+  "selected_file_sha256": "ccd5c2fa40520585ffd3c54bcb10c335fff91ae87537de482b27594d483cd856",
+  "selected_title_energy": -233.222,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C7H6O4",
+  "selected_smiles": "O=C(O)c1ccc(O)cc1O",
+  "constitution_smiles": "O=C(O)c1ccc(O)cc1O",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 17,
+  "selected_heavy_atoms": 11,
+  "selected_molar_mass_g_mol": 154.121,
+  "observed_multicomponent": true,
+  "component_counts_per_cell": {
+    "C7H6O4": 4,
+    "H2O": 8
+  },
+  "component_identities_per_cell": {
+    "O=C(O)c1ccc(O)cc1O": 4,
+    "O": 8
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C7H6O4": 1.0,
+    "H2O": 2.0
+  },
+  "omitted_component_types_per_cell": {
+    "H2O": 8
+  },
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL UCLDBB_conf1_A5462(-233.222) P21/n",
+    "lattice": 1,
+    "asymmetric_unit_atoms": 23,
+    "expanded_unit_cell_atoms": 92,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "O1",
+      "O2",
+      "O3",
+      "O4",
+      "O5",
+      "O6",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "H7",
+      "H8",
+      "H9",
+      "H10"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      -0.46274984700511346,
+      -0.23847497654894134,
+      0.5870758317190372
+    ],
+    [
+      -0.08869625924078983,
+      -0.9186315785479414,
+      -0.5820889944561038
+    ],
+    [
+      0.7530371513777123,
+      -0.30162053006894163,
+      -1.5038439231223037
+    ],
+    [
+      1.216866835361591,
+      0.9749109757540579,
+      -1.2660549247830595
+    ],
+    [
+      0.8560306559701123,
+      1.6717495664050586,
+      -0.1058633879279185
+    ],
+    [
+      0.029538136496242262,
+      1.0596478983460589,
+      0.7941419894394137
+    ],
+    [
+      -1.347069549815975,
+      -0.8879168681719415,
+      1.5545364441670024
+    ],
+    [
+      -1.634152615008768,
+      -0.15516844696994125,
+      2.619279764922073
+    ],
+    [
+      -1.8002359094396787,
+      -1.9975293745519425,
+      1.4320047978802002
+    ],
+    [
+      -0.4971365576611724,
+      -2.144824080403942,
+      -0.8738803856161219
+    ],
+    [
+      2.0273933902399346,
+      1.6065975137890582,
+      -2.1237471765840468
+    ],
+    [
+      -2.207761229084542,
+      -0.6627263772829415,
+      3.177962159764
+    ],
+    [
+      -1.0654704728032969,
+      -2.4730832793709423,
+      -0.1824615100617919
+    ],
+    [
+      2.2193367416890353,
+      1.0682151386080587,
+      -2.8744854244287836
+    ],
+    [
+      1.0244729836691182,
+      -0.8440168808869415,
+      -2.39157126957409
+    ],
+    [
+      1.2334956713290657,
+      2.663672546908059,
+      0.05035362735354809
+    ],
+    [
+      -0.2568991260734744,
+      1.579198752994059,
+      1.6886423813090055
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      6,
+      1.0
+    ],
+    [
+      8,
+      6,
+      2.0
+    ],
+    [
+      9,
+      1,
+      1.0
+    ],
+    [
+      10,
+      3,
+      1.0
+    ],
+    [
+      11,
+      7,
+      1.0
+    ],
+    [
+      12,
+      9,
+      1.0
+    ],
+    [
+      13,
+      10,
+      1.0
+    ],
+    [
+      14,
+      2,
+      1.0
+    ],
+    [
+      15,
+      4,
+      1.0
+    ],
+    [
+      16,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

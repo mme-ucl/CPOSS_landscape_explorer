@@ -1,0 +1,52 @@
+BTVIIIA
+     RDKit          3D
+
+ 11 11  0  0  0  0  0  0  0  0999 V2000
+   -0.7072    0.1206   -0.9025 N   0  0  0  0  0  0  0  0  0  0  0  0
+    0.3681   -0.9899    0.6700 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5288   -1.1452   -0.4085 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7650    0.3131    0.8806 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0421    1.1307   -0.1917 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.3142    0.2810   -1.6868 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.6808   -1.7712    1.2242 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5907    1.8791    0.2881 H   0  0  0  0  0  0  0  0  0  0  0  0
+    0.7779    1.6409   -0.8159 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.0205   -2.1921   -0.7919 O   0  0  0  0  0  0  0  0  0  0  0  0
+    1.5275    0.7330    1.7344 O   0  0  0  0  0  0  0  0  0  0  0  0
+  3  2  1  0
+  3  1  1  0
+  4  2  1  0
+  5  4  1  0
+  5  1  1  0
+  6  1  1  0
+  7  2  1  0
+  8  5  1  0
+  9  5  1  0
+ 10  3  2  0
+ 11  4  2  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+BTVIIIA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/1.BlindTest/VIII/BTVIIIA/1.BTVIIIA_MOLPAK.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.BTVIIIA_MOLPAK/PAHYON_PLANAR_am10.res
+
+>  <reported_formula>  (1) 
+C3 H4 N2 O2
+
+>  <selected_formula>  (1) 
+C3H4N2O2
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+49
+
+$$$$

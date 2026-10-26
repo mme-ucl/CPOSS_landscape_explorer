@@ -12,13 +12,27 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Open <http://127.0.0.1:8765/>. Use HTTP rather than opening the HTML as a local file: the catalogue is loaded with `fetch`. Internet access is required for remote datasets, database previews, and the existing Font Awesome stylesheet.
 
-Search by a molecule name, alias, REFCODE, or dataset code. Select a result with a click or the arrow keys and Enter; Escape dismisses the list. Collection filters combine with the search. Filtering does not change the displayed landscape.
+Search by a molecule name, alias, molecular formula, REFCODE, or dataset code. Formula matching ignores whitespace, case and Unicode subscript formatting: `C9H8O4`, `C9 H8 O4` and `C₉H₈O₄` find the same datasets. It otherwise matches the complete source formula, retaining element order, explicit counts, charges, coefficients and hydrate/salt/component notation. It does not reorder elements or equate alternative chemical notations. All matching molecules/searches are returned within the selected collection. Formula metadata comes only from explicitly linked database case pages and is stored in the local catalogue; unmapped datasets retain name/code search. Select a result with a click or the arrow keys and Enter; Escape dismisses the list. Collection filters combine with the search. Filtering does not change the displayed landscape.
 
 Opening the navigator without `?load=...` starts with the small Aspirin — Search A example. Every dataset uses the same scientific preset, including datasets with missing properties. Shared `?load=...` URLs and embedded/local datasets retain their dataset selection. Initial embedded settings and `?settings=...` are superseded by the preset; deliberate settings imports after loading remain available.
 
 “Open molecule database page” opens the source page separately. “Preview beside landscape” embeds it beside the viewer on wide screens and below the viewer on smaller screens. The external link is always available if embedding fails. The preview shows the original database page, whose fixed-width content may require horizontal scrolling.
 
 The existing Chemiscope load/save modal, plot/structure settings, exports, and local file loader remain available. A local upload clears the shared dataset URL and does not inherit a database-page association just because its filename resembles a catalogue entry.
+
+## Dataset figures and statistics
+
+Use **Analyses & statistics** in the Navigator header to open [the analyses page](analyses.html). It includes eight analysis figures, expandable previews, original PDF/PNG and caption downloads, dataset and comparison statistics, a searchable inventory of 311 documented searches, and 72 CSV result tables. The return links preserve a landscape selected through its `?load=...` URL. The analyses page uses local static assets and works without remote dataset downloads.
+
+Counting notes distinguish molecular systems, searches, model-specific archived files and density records. Earlier figure exports are labelled, and the current chemistry summaries use the reconciled composition audit. OMC25/CSD density references remain explicitly approximate histogram recoveries. The available Navigator JSON catalogue and documented archive inventory have different scopes.
+
+After regenerating the scientific analyses, rebuild the checked-in page and public table bundle using Python 3.9+ (standard library only):
+
+```sh
+python3 scripts/build_analyses.py
+```
+
+The builder reads the existing outputs under `analysis/database_in_numbers/`, `analysis/cposs_omc25_comparison/` and `analysis/molecular_sketchmap/`. It writes `analyses.html` and `data/analyses/`, including source checksums, a data guide and a ZIP of figures, captions and result tables. Public table copies omit local filesystem provenance paths. Raw source workbooks and caches are excluded. It does not rerun or change scientific calculations. Source counts are checked against the frozen analysis snapshot; update those checks and the displayed scope together when preparing a new snapshot.
 
 ## One global visualization
 
@@ -98,8 +112,8 @@ The script retrieves the complete GitHub file tree and the database's HTML pages
 
 Generated files:
 
-- `data/catalogue.json`: dataset URLs, labels, names/codes, collections, case-page links and energy-model associations.
-- `data/catalogue-report.json`: totals, missing mappings, broken source references, ambiguous mappings, and collection cases without mapped datasets.
+- `data/catalogue.json`: dataset URLs, labels, names/codes, collections, case-page links, source formulas and energy-model associations.
+- `data/catalogue-report.json`: totals, missing mappings, broken source references, ambiguous mappings, datasets without source formulas, and collection cases without mapped datasets.
 
 HTML is cached outside the repository at `/tmp/cposs-catalogue-cache`, keyed by blob SHA. To archive an inventory for reproducible offline refreshes:
 

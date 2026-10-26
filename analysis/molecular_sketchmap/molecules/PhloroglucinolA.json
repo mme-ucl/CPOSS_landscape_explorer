@@ -1,0 +1,287 @@
+{
+  "dataset_id": "PhloroglucinolA",
+  "dataset_name": "Phloroglucinol",
+  "source_url": "https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/Phloroglucinol.html",
+  "reported_formula": "C6 H6 O3",
+  "reported_formula_normalised": "C6H6O3",
+  "composition_basis": "reported molecular formula",
+  "structure_count": 1314,
+  "extraction_status": "calculated",
+  "included": true,
+  "selection_rule": "Lowest numeric model ID with a reconstructable molecule; lowest finite TITL energy among non-reference archived members; deterministic filename tie-break; validate up to five lowest candidates per model",
+  "selected_model_id": 1,
+  "archive_url": "https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/1.PhloroglucinolA_CrystPred.zip?raw=true",
+  "archive_git_blob_sha": "132d10b6dc202460b39444984af1596c8e5f08e5",
+  "experimental_reference_rule": "explicit_nonempty_Experimental_Info",
+  "candidate_files": 877,
+  "candidates_with_title_energy": 877,
+  "selected_filename": "1.PhloroglucinolA_CrystPred/PHGLOL_conf1_A2.res",
+  "selected_file_sha256": "44827daf6662fb2220c3212119793fa47b50c7027e416f35654973fac8814a7e",
+  "selected_title_energy": -111.296,
+  "energy_source": "TITL parentheses; numerical values compared only inside selected model archive",
+  "selected_candidate_rank": 1,
+  "formula_validation": "matches_full_unit_cell_stoichiometry",
+  "formula_units_in_cell": 4.0,
+  "selected_formula": "C6H6O3",
+  "selected_smiles": "Oc1cc(O)cc(O)c1",
+  "constitution_smiles": "Oc1cc(O)cc(O)c1",
+  "inferred_formal_charge": 0,
+  "bond_assignment_status": "inferred_from_coordinates",
+  "principal_selection": "Largest non-water component by heavy-atom count; first equivalent component in source/symmetry order",
+  "selected_atoms": 15,
+  "selected_heavy_atoms": 9,
+  "selected_molar_mass_g_mol": 126.11099999999999,
+  "observed_multicomponent": false,
+  "component_counts_per_cell": {
+    "C6H6O3": 4
+  },
+  "component_identities_per_cell": {
+    "Oc1cc(O)cc(O)c1": 4
+  },
+  "component_stoichiometry_per_formula_unit": {
+    "C6H6O3": 1.0
+  },
+  "omitted_component_types_per_cell": {},
+  "multiple_largest_stereoisomers": false,
+  "crystal_reconstruction": {
+    "title": "TITL PHGLOL_conf1_A2(-111.296)",
+    "lattice": -1,
+    "asymmetric_unit_atoms": 15,
+    "expanded_unit_cell_atoms": 60,
+    "warnings": [],
+    "source_atom_labels": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6",
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "O1",
+      "O2",
+      "O3",
+      "H1",
+      "H2",
+      "H3",
+      "H4",
+      "H5",
+      "H6"
+    ]
+  },
+  "symbols": [
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "C",
+    "O",
+    "O",
+    "O",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H",
+    "H"
+  ],
+  "coordinates_angstrom": [
+    [
+      0.44012923334080023,
+      1.2127633341995994,
+      0.4833810501613316
+    ],
+    [
+      -0.5506977558872004,
+      1.1879493653405993,
+      -0.4949176028836675
+    ],
+    [
+      -0.9795155443351999,
+      -0.04130865548340079,
+      -0.9679635421096675
+    ],
+    [
+      -0.44418148740319996,
+      -1.2342432284484008,
+      -0.4886836012706697
+    ],
+    [
+      0.5398066398567996,
+      -1.1715708402384006,
+      0.4841946368443324
+    ],
+    [
+      0.9951347716167995,
+      0.04617919875359977,
+      0.9833184708363296
+    ],
+    [
+      0.8295146591847993,
+      2.4287943436086,
+      0.9175355414003326
+    ],
+    [
+      -1.9349003820632,
+      -0.14530578125640048,
+      -1.914112410088669
+    ],
+    [
+      1.1049179714008002,
+      -2.2834114956294007,
+      0.9970516648703329
+    ],
+    [
+      1.5006797162967995,
+      2.3517068476025997,
+      1.5751662464883323
+    ],
+    [
+      -2.2376774647592,
+      0.706833212091599,
+      -2.1808209490456676
+    ],
+    [
+      0.7375959507327998,
+      -3.0582729462084006,
+      0.6050575362253312
+    ],
+    [
+      -0.9628675506512003,
+      2.1155934416915994,
+      -0.8623864226086697
+    ],
+    [
+      -0.8008769615792004,
+      -2.175483835991401,
+      -0.8788612907176674
+    ],
+    [
+      1.7629382042487993,
+      0.05977703996759942,
+      1.7420406718983328
+    ]
+  ],
+  "bonds": [
+    [
+      1,
+      0,
+      1.5
+    ],
+    [
+      2,
+      1,
+      1.5
+    ],
+    [
+      3,
+      2,
+      1.5
+    ],
+    [
+      4,
+      3,
+      1.5
+    ],
+    [
+      5,
+      4,
+      1.5
+    ],
+    [
+      5,
+      0,
+      1.5
+    ],
+    [
+      6,
+      0,
+      1.0
+    ],
+    [
+      7,
+      2,
+      1.0
+    ],
+    [
+      8,
+      4,
+      1.0
+    ],
+    [
+      9,
+      6,
+      1.0
+    ],
+    [
+      10,
+      7,
+      1.0
+    ],
+    [
+      11,
+      8,
+      1.0
+    ],
+    [
+      12,
+      1,
+      1.0
+    ],
+    [
+      13,
+      3,
+      1.0
+    ],
+    [
+      14,
+      5,
+      1.0
+    ]
+  ],
+  "rejected_candidates": []
+}

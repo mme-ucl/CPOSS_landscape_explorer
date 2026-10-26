@@ -1,0 +1,41 @@
+MethanolA
+     RDKit          3D
+
+  6  5  0  0  0  0  0  0  0  0999 V2000
+    0.0694    0.1057    0.3267 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.4867    0.1799   -0.9638 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2237   -0.6112   -1.4419 H   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1691    0.0672    0.3184 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2284    1.0140    0.8569 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.2997   -0.7557    0.9037 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  1  1  0
+  3  2  1  0
+  4  1  1  0
+  5  1  1  0
+  6  1  1  0
+M  END
+>  <_FileComments>  (1) 
+extracted coordinates
+
+>  <dataset_id>  (1) 
+MethanolA
+
+>  <archive_url>  (1) 
+https://louiseprice.github.io/CPOSS_Database/Methanol/MethanolA/1.MethanolA_CrystOpt.zip?raw=true
+
+>  <selected_filename>  (1) 
+1.MethanolA_CrystOpt/METHOL_dfA2245_A2245.res
+
+>  <reported_formula>  (1) 
+C1 H4 O1
+
+>  <selected_formula>  (1) 
+CH4O
+
+>  <bond_assignment_status>  (1) 
+inferred_from_coordinates
+
+>  <structure_count>  (1) 
+870
+
+$$$$
