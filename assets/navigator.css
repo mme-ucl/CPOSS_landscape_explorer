@@ -3,7 +3,9 @@
 body { margin: 0; padding-bottom: var(--footer-height); color: #252131; }
 header.cposs-header { height: auto; background: #fff; position: relative; z-index: 30; }
 .cposs-topbar { background: var(--ucl-purple); color: #fff; padding: .65rem 1.2rem; display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex-wrap: wrap; }
-.cposs-brand { font-size: 1.08rem; font-weight: 650; color: #fff; text-decoration: none; }
+.cposs-brand { display: inline-flex; align-items: center; gap: .9rem; min-width: 0; max-width: 100%; font-size: 1.08rem; font-weight: 650; line-height: 1.35; color: #fff; text-decoration: none; }
+.cposs-brand-logo { display: block; width: 80px; height: 80px; flex: 0 0 auto; object-fit: contain; background: transparent; border-radius: 50%; }
+.cposs-brand:focus-visible { outline: 3px solid #edc8ff; outline-offset: 5px; border-radius: .25rem; }
 .cposs-brand:hover { color: #fff; text-decoration: underline; }
 .cposs-toplinks { display: flex; gap: .9rem; align-items: center; flex-wrap: wrap; font-size: .84rem; }
 .cposs-toplinks a { color: #fff; }
@@ -75,7 +77,8 @@ header.cposs-header { height: auto; background: #fff; position: relative; z-inde
 }
 @media (max-width: 767px) {
     .cposs-topbar, .cposs-current { padding: .65rem .8rem; }
-    .cposs-brand { font-size: 1rem; }
+    .cposs-brand { gap: .75rem; font-size: 1rem; }
+    .cposs-brand-logo { width: 64px; height: 64px; }
     .cposs-toplinks { gap: .55rem; font-size: .77rem; }
     .cposs-controls { padding: .65rem .8rem; grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; }
     .cposs-search { grid-column: 1 / -1; }
