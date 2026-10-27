@@ -39,14 +39,13 @@ class AnalysesTest(unittest.TestCase):
         cls.html = (ROOT / 'analyses.html').read_text()
         cls.page = Page(cls.html)
 
-    def test_search_inventory_and_headlines_match_the_archive_census(self):
+    def test_headlines_match_the_archive_census(self):
         with (ROOT / 'analysis/database_in_numbers/tables/plot_datasets.csv').open() as stream:
             source = list(csv.DictReader(stream))
         self.assertEqual(len(source), self.summary['searches'])
-        self.assertEqual(len(self.page.inventory), len(source))
+        self.assertFalse(self.page.inventory)
         self.assertEqual(sum(int(float(row['structure_count'])) for row in source), self.summary['archived_structure_files'])
-        self.assertEqual(sum(int(row['data-files']) for row in self.page.inventory), self.summary['archived_structure_files'])
-        self.assertEqual(sum(int(row['data-models']) for row in self.page.inventory), self.summary['model_archives'])
+        self.assertEqual(sum(int(float(row['energy_model_count'])) for row in source), self.summary['model_archives'])
 
     def test_scientific_populations_and_approximate_reference_scope_are_explicit(self):
         self.assertEqual(self.summary['coordinate_verified_single_component_systems'], 190)
@@ -54,9 +53,23 @@ class AnalysesTest(unittest.TestCase):
         self.assertEqual(self.summary['molecular_systems'], 235)
         self.assertIn('44,403 OMC25 training molecular records', self.html)
         self.assertIn('approximate histogram recoveries', self.html)
-        self.assertIn('without automatic repair', self.html)
         self.assertEqual(len(self.page.figures), len(self.summary['figures']))
-        self.assertEqual(sum(f['data-earlier'] == 'true' for f in self.page.figures), 2)
+
+    def test_marked_sections_and_figure_resources_are_removed(self):
+        self.assertEqual({figure['id'] for figure in self.summary['figures']}, {
+            'chemical-content', 'density', 'molecular-map', 'multicomponent', 'software'})
+        for ident in ['figure-map-diagnostics', 'figure-overview-wide', 'figure-overview-portrait',
+                      'molecular-map', 'searches', 'data-methods', 'methods', 'inventory-table', 'download-search']:
+            self.assertNotIn(ident, self.page.ids)
+        for text in ['All molecular populations, quartiles, means and source-mass statistics',
+                     'All available and shared-window density statistics, including multicomponent systems',
+                     'Earlier exports', 'Sketch-map diagnostics', 'Database in numbers: wide overview',
+                     'Database in numbers: portrait overview']:
+            self.assertNotIn(text, self.html)
+        self.assertIn('figure-molecular-map', self.page.ids)
+        self.assertNotIn('map--optimization_runs.csv', self.html)
+        self.assertNotIn('database--annual_counts.csv', self.html)
+        self.assertNotIn('database--structure_count_ranking.csv', self.html)
 
     def test_page_has_unique_ids_and_resolving_local_links(self):
         self.assertEqual(len(self.page.ids), len(set(self.page.ids)))
@@ -71,13 +84,20 @@ class AnalysesTest(unittest.TestCase):
                 self.assertIn(unquote(url.fragment), self.page.ids, ref)
         navigator = (ROOT / 'index.html').read_text()
         self.assertIn('id="dataset-analyses-link" href="analyses.html"', navigator)
+        header = navigator.split('<nav class="cposs-toplinks"', 1)[1].split('</nav>', 1)[0]
+        self.assertEqual(header.count('class="btn btn-sm btn-outline-light"'), 4)
 
-    def test_all_source_tables_are_exported_and_scientific_values_preserved(self):
-        expected = {str(p.relative_to(ROOT)) for directory in [
-            'analysis/database_in_numbers/tables', 'analysis/database_in_numbers/workbook_crosscheck',
-            'analysis/molecular_sketchmap/tables', 'analysis/cposs_omc25_comparison/tables',
-            'analysis/cposs_omc25_comparison/density/tables'] for p in (ROOT / directory).glob('*.csv')}
+    def test_retained_figure_tables_preserve_scientific_values(self):
+        expected = {
+            'analysis/cposs_omc25_comparison/tables/summary_statistics.csv',
+            'analysis/cposs_omc25_comparison/density/tables/density_statistics.csv',
+            'analysis/molecular_sketchmap/tables/dataset_embedding.csv',
+            'analysis/cposs_omc25_comparison/tables/cposs_multicomponent_formula_units.csv',
+            'analysis/database_in_numbers/workbook_crosscheck/proposed_panel_c_counts.csv',
+        }
         self.assertEqual({item['source'] for item in self.summary['downloads']}, expected)
+        self.assertEqual({item['path'] for item in self.summary['downloads']},
+                         {figure['data'] for figure in self.summary['figures']})
         for item in self.summary['downloads']:
             raw = (ROOT / item['path']).read_bytes()
             self.assertEqual(hashlib.sha256(raw).hexdigest(), item['sha256'])
@@ -95,12 +115,16 @@ class AnalysesTest(unittest.TestCase):
     def test_bundle_has_figures_and_all_tables_without_private_sources(self):
         with zipfile.ZipFile(PUBLIC / 'cposs_figures_and_statistics.zip') as bundle:
             names = set(bundle.namelist())
+            expected = {'data/analyses/summary.json', 'data/analyses/build-manifest.json', 'data/analyses/README.md'}
             for item in self.summary['downloads']:
                 self.assertIn(item['path'], names)
+                expected.add(item['path'])
             for figure in self.summary['figures']:
                 for key in ['image', 'pdf', 'caption']:
                     if figure[key]:
                         self.assertIn(figure[key], names)
+                        expected.add(figure[key])
+            self.assertEqual(names, expected)
             self.assertFalse(any(name.lower().endswith(('.xlsx', '.xls')) or '/sources/' in name for name in names))
             self.assertTrue(all(not name.startswith('/') and '..' not in Path(name).parts for name in names))
         for source, checksum in self.manifest['source_sha256'].items():

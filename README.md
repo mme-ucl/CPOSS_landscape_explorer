@@ -22,9 +22,9 @@ The existing Chemiscope load/save modal, plot/structure settings, exports, and l
 
 ## Dataset figures and statistics
 
-Use **Analyses & statistics** in the Navigator header to open [the analyses page](analyses.html). It includes eight analysis figures, expandable previews, original PDF/PNG and caption downloads, dataset and comparison statistics, a searchable inventory of 311 documented searches, and 72 CSV result tables. The return links preserve a landscape selected through its `?load=...` URL. The analyses page uses local static assets and works without remote dataset downloads.
+Use **Analyses & statistics** in the Navigator header to open [the analyses page](analyses.html). It includes five analysis figures, expandable previews, original PDF/PNG and caption downloads, five linked CSV result tables, and dataset, chemistry and density statistics. The return links preserve a landscape selected through its `?load=...` URL. The analyses page uses local static assets and works without remote dataset downloads.
 
-Counting notes distinguish molecular systems, searches, model-specific archived files and density records. Earlier figure exports are labelled, and the current chemistry summaries use the reconciled composition audit. OMC25/CSD density references remain explicitly approximate histogram recoveries. The available Navigator JSON catalogue and documented archive inventory have different scopes.
+Counting notes distinguish molecular systems, searches, model-specific archived files and density records. The chemistry summaries use the reconciled composition audit. OMC25/CSD density references remain explicitly approximate histogram recoveries. The available Navigator JSON catalogue and documented archive inventory have different scopes.
 
 After regenerating the scientific analyses, rebuild the checked-in page and public table bundle using Python 3.9+ (standard library only):
 
@@ -32,7 +32,7 @@ After regenerating the scientific analyses, rebuild the checked-in page and publ
 python3 scripts/build_analyses.py
 ```
 
-The builder reads the existing outputs under `analysis/database_in_numbers/`, `analysis/cposs_omc25_comparison/` and `analysis/molecular_sketchmap/`. It writes `analyses.html` and `data/analyses/`, including source checksums, a data guide and a ZIP of figures, captions and result tables. Public table copies omit local filesystem provenance paths. Raw source workbooks and caches are excluded. It does not rerun or change scientific calculations. Source counts are checked against the frozen analysis snapshot; update those checks and the displayed scope together when preparing a new snapshot.
+The builder reads the existing outputs under `analysis/database_in_numbers/`, `analysis/cposs_omc25_comparison/` and `analysis/molecular_sketchmap/`. It writes `analyses.html` and `data/analyses/`, including source checksums, a data guide and a ZIP containing the five retained figures, their captions and linked result tables. Earlier exports, diagnostics and unrelated table downloads are excluded from the page catalogue and ZIP; original analysis files and previous CSV exports remain on disk. Public table copies omit local filesystem provenance paths. Raw source workbooks and caches are excluded. It does not rerun or change scientific calculations. Source counts are checked against the frozen analysis snapshot; update those checks and the displayed scope together when preparing a new snapshot.
 
 ## One global visualization
 
