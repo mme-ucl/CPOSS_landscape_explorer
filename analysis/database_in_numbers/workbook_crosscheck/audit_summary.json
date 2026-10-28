@@ -2,23 +2,23 @@
   "workbook_path": "/Users/matteo/Downloads/Database 2023 checkup.xlsx",
   "workbook_sha256": "e8a410fa55c3e5cab90d4352a985f694e7f1d5e4b4085f1331edf68602eed2dc",
   "workbook_modified_metadata": "2026-10-23 10:37:35",
-  "molecular_summary_rows": 235,
-  "summary_searches_sum": 310,
-  "summary_studies_sum": 503,
-  "figure_datasets": 311,
-  "matched_archived_models": 509,
-  "archive_coordinate_files": 519167,
-  "matched_workbook_structure_count_sum": 563297,
-  "matched_models_with_workbook_counts": 505,
-  "archive_files_for_models_with_workbook_counts": 513403,
+  "molecular_summary_rows": 234,
+  "summary_searches_sum": 309,
+  "summary_studies_sum": 502,
+  "figure_datasets": 310,
+  "matched_archived_models": 508,
+  "archive_coordinate_files": 517594,
+  "matched_workbook_structure_count_sum": 561725,
+  "matched_models_with_workbook_counts": 504,
+  "archive_files_for_models_with_workbook_counts": 511830,
   "count_statuses": {
-    "different": 122,
+    "different": 121,
     "equal": 383,
     "missing workbook count": 4
   },
-  "count_differences_at_most_2": 75,
+  "count_differences_at_most_2": 74,
   "formula_comparison_statuses": {
-    "equal composition": 225,
+    "equal composition": 224,
     "different composition": 8,
     "workbook resolves invalid website formula": 2
   },
@@ -205,7 +205,7 @@
     }
   ],
   "workbook_composition_counts": {
-    "reported molecular formula": 191,
+    "reported molecular formula": 190,
     "formula unit (multicomponent)": 44
   },
   "component_encoding_differences": [
@@ -396,6 +396,15 @@
       "programs_raw": "Study_ID=13, DMACRYS (2.2.0.1), BZ-averaged props"
     },
     {
+      "excel_row": 424,
+      "refcode": "UCLPKC",
+      "study_id": 0,
+      "github_raw": "Methylazetidineone_A1",
+      "upload_status": "Yes",
+      "structure_count": 1572,
+      "programs_raw": "MOLPAK, DMAREL (4.1.1)"
+    },
+    {
       "excel_row": 503,
       "refcode": "XYANAC",
       "study_id": 20,
@@ -405,7 +414,7 @@
       "programs_raw": "Flexible CrystalPredictor (1.6), DMACRYS (2.0.4)"
     }
   ],
-  "primary_credit_agreements": 292,
+  "primary_credit_agreements": 291,
   "primary_credit_differences": [
     {
       "dataset_id": "2-fluoroethynylbenzeneA",
@@ -527,6 +536,23 @@
       "workbook_primary_publication": "Mohamed S, Barnett SA, Tocher DA, Shankland K, Leech CK, Price SL 2008. CrystEngComm 10, 399-404."
     },
     {
+      "dataset_id": "5fluorouracilA",
+      "primary_excel_row": 146,
+      "website_scientists": "Ashley Hulme; Louise Price; Weijia Zhu",
+      "workbook_primary_scientists": "Ashley Hulme",
+      "workbook_all_model_scientists": "Ashley Hulme",
+      "primary_scientists_agree": false,
+      "workbook_primary_date": "2005-7",
+      "website_date": "2005-7",
+      "workbook_primary_year": null,
+      "website_year": null,
+      "primary_year_agrees": true,
+      "model_years": "",
+      "raw_publication_matches_a_workbook_model": true,
+      "website_publication": "Hulme AT, Price SL, Tocher DA 2005. J Am Chem Soc 127(4) 1116-7 Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32-1761-1775.",
+      "workbook_primary_publication": "Hulme AT, Price SL, Tocher DA 2005. J Am Chem Soc 127(4) 1116-7 # Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32, 1761-1775."
+    },
+    {
       "dataset_id": "5nitrouracilA",
       "primary_excel_row": 250,
       "website_scientists": "Nizar Issa",
@@ -629,23 +655,6 @@
       "workbook_primary_publication": "Stevenson, E. L.; Lancaster, R. W.; Buanz, A. B. M.; Price, L. S.; Tocher, D. A.; Price, S. L., CrystEngComm 2019, 21(13), 2154-2163."
     },
     {
-      "dataset_id": "FluorouracilA",
-      "primary_excel_row": 146,
-      "website_scientists": "Ashley Hulme; Louise Price; Weijia Zhu",
-      "workbook_primary_scientists": "Ashley Hulme",
-      "workbook_all_model_scientists": "Ashley Hulme",
-      "primary_scientists_agree": false,
-      "workbook_primary_date": "2005-7",
-      "website_date": "2005-7",
-      "workbook_primary_year": null,
-      "website_year": null,
-      "primary_year_agrees": true,
-      "model_years": "",
-      "raw_publication_matches_a_workbook_model": true,
-      "website_publication": "Hulme AT, Price SL, Tocher DA 2005. J Am Chem Soc 127(4) 1116-7 Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32-1761-1775.",
-      "workbook_primary_publication": "Hulme AT, Price SL, Tocher DA 2005. J Am Chem Soc 127(4) 1116-7 # Barnett SA, Hulme AT, Issa N, Lewis TC, Price LS, Tocher DA, Price SL 2008. New J Chem 32, 1761-1775."
-    },
-    {
       "dataset_id": "IsobarbituricAcidB",
       "primary_excel_row": 314,
       "website_scientists": "Louise Price",
@@ -732,18 +741,18 @@
     }
   ],
   "primary_workbook_named_scientists": 44,
-  "primary_workbook_named_searches": 286,
+  "primary_workbook_named_searches": 285,
   "primary_workbook_top_credits": [
     [
       "Louise Price",
       56
     ],
     [
-      "Panos Karamertzanis",
-      23
+      "Tom Lewis",
+      22
     ],
     [
-      "Tom Lewis",
+      "Panos Karamertzanis",
       22
     ],
     [
@@ -911,7 +920,7 @@
       1
     ]
   ],
-  "primary_date_agreements": 303,
+  "primary_date_agreements": 302,
   "primary_date_differences": [
     {
       "dataset_id": "BarbituricAcidA",
@@ -1051,52 +1060,52 @@
     }
   ],
   "primary_workbook_dated_searches": 237,
-  "raw_publication_matches": 290,
+  "raw_publication_matches": 289,
   "proposed_panel_c": [
     {
       "program": "DMACRYS",
       "datasets": 189,
-      "denominator": 311
+      "denominator": 310
     },
     {
       "program": "MOLPAK",
-      "datasets": 156,
-      "denominator": 311
+      "datasets": 155,
+      "denominator": 310
     },
     {
       "program": "CrystalPredictor",
       "datasets": 148,
-      "denominator": 311
+      "denominator": 310
     },
     {
       "program": "DMAREL",
-      "datasets": 126,
-      "denominator": 311
+      "datasets": 125,
+      "denominator": 310
     },
     {
       "program": "CrystalOptimizer",
       "datasets": 110,
-      "denominator": 311
+      "denominator": 310
     },
     {
       "program": "DMAflex",
       "datasets": 28,
-      "denominator": 311
+      "denominator": 310
     }
   ],
   "DFTB3_D3_method_mentions_excluded_from_software_panel": 8,
   "program_mentions_missing": [],
   "polymorph_counts_vary_by_model_in_molecular_systems": 29,
   "polymorph_counts_missing_on_summary_rows": 3,
-  "wide_figure_source_is_current": false,
-  "current_portrait_pdf_sha256": "9683e8725c60111ee156df9f425cad77a4d1d50e9ee16ac2e17ac8f6037d239a",
-  "wide_figure_recorded_source_sha256": "ad75a2ed382dde92df58a0dc0424848d59ce41a12551e0a9f14e8108b32188eb",
+  "wide_figure_source_is_current": true,
+  "current_portrait_pdf_sha256": "21809d42183f52f8b8304e59974cbea49285949c05939d57b80a7cba282bfe27",
+  "wide_figure_recorded_source_sha256": "21809d42183f52f8b8304e59974cbea49285949c05939d57b80a7cba282bfe27",
   "portrait_component_legends": [
     "Multicomponent formula unit (41)",
-    "Single component (192)"
+    "Single component (191)"
   ],
   "wide_component_legends": [
     "Multicomponent formula unit (41)",
-    "Single component (194)"
+    "Single component (191)"
   ]
 }

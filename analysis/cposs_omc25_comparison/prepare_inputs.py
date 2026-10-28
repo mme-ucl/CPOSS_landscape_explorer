@@ -19,21 +19,29 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+REFRESH = False
+
+
 def freeze(source, target):
     target.parent.mkdir(parents=True, exist_ok=True)
     if target.exists():
-        if sha(source) != sha(target):
+        if sha(source) != sha(target) and REFRESH:
+            shutil.copyfile(source, target)
+        elif sha(source) != sha(target):
             raise ValueError(f'Frozen input differs: {target}. Review before replacing it.')
     else:
         shutil.copyfile(source, target)
 
 
 def main():
+    global REFRESH
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--refresh', action='store_true', help='Refresh CPOSS evidence and its checksum manifest; retain the official OMC25 reference')
     parser.add_argument('--metadata', type=Path)
     parser.add_argument('--repository-info', type=Path)
     parser.add_argument('--workbook', type=Path, default=Path('/Users/matteo/Downloads/Database 2023 checkup.xlsx'))
     args = parser.parse_args()
+    REFRESH = args.refresh
     dest = BASE / 'inputs'
     dest.mkdir(exist_ok=True)
     info_path = dest / 'omc25_repository_info.json'
@@ -87,13 +95,13 @@ def main():
             evidence.append(item)
     evidence_file = dest / 'cposs_coordinate_evidence.json'
     text = json.dumps(evidence, indent=2, sort_keys=True) + '\n'
-    if evidence_file.exists() and evidence_file.read_text() != text:
+    if evidence_file.exists() and evidence_file.read_text() != text and not REFRESH:
         raise ValueError('Frozen coordinate evidence differs')
     evidence_file.write_text(text)
 
     manifest_path = dest / 'manifest.json'
     manifest = {
-        'accessed_utc': datetime.now(timezone.utc).isoformat(),
+        'accessed_utc': json.loads((dest / 'cposs_manifest.json').read_text())['accessed_date'] + 'T00:00:00+00:00' if REFRESH else datetime.now(timezone.utc).isoformat(),
         'omc25_repository': 'https://huggingface.co/datasets/facebook/OMC25',
         'omc25_revision': revision,
         'omc25_metadata_url': url,
@@ -104,7 +112,7 @@ def main():
         'files': {str(path.relative_to(dest)): sha(path) for path in sorted(dest.rglob('*'))
                   if path.is_file() and path != manifest_path and path.name != 'atomic_weights.json'},
     }
-    if manifest_path.exists():
+    if manifest_path.exists() and not REFRESH:
         old = json.loads(manifest_path.read_text())
         assert old['files'] == manifest['files'], 'Frozen input manifest has changed'
     else:

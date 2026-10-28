@@ -28,7 +28,7 @@ def main():
     check(data.dataset_id.is_unique and set(data.dataset_id)==set(source.dataset_id),"All source datasets attempted exactly once")
     check(data.set_index("dataset_id").structure_count.sort_index().equals(counts.archive_coordinate_files.sort_index()),"Every dataset's count equals verified archive count")
     check(data.loc[~data.included,["sketchmap_x","sketchmap_y","marker_area_pt2"]].isna().all().all(),"Excluded datasets have missing coordinates and marker areas, never fabricated zeros")
-    check(int(data.structure_count.sum())==519167,"Complete source inventory retains 519,167 structure files")
+    check(len(data)==310 and int(data.structure_count.sum())==517594,"Current 310-record inventory retains 517,594 archived structure files")
     check(int(valid.structure_count.sum())==figure["represented_structure_files"],"Represented structure count matches figure metadata")
     for row in valid.itertuples():
         label=row.dataset_id
@@ -105,7 +105,10 @@ def main():
             descriptor=child.get_object()["/FontDescriptor"].get_object()
             check(any(k in descriptor for k in ["/FontFile","/FontFile2","/FontFile3"]),"PDF embeds font: "+name)
     text=page.extract_text()
-    check("square root of count" in text,"Compressed-area legend retains its quantitative definition")
+    check("Archived structure files" in text and "square root of count" not in text,
+          "Count legend retained; marker-area explanation is in the caption")
+    check("sketch-map 1" not in text and "sketch-map 2" not in text,
+          "Map axis labels are removed and explained in the caption")
     check(all(phrase not in text for phrase in ["The molecular landscape of CPOSS",f"{len(valid)} datasets",f"{int(valid.structure_count.sum()):,}","3 datasets excluded", "One isolated molecular component per dataset", "Source-formula conflicts have dark marker outlines"]),"Requested title, count subtitle and bottom explanatory notes are absent")
     check(figure["font_verification"]["all_figure_text_families"]==["Helvetica"] and not figure["font_verification"]["text_outside_page"],"All figure text resolves to Helvetica and stays on page")
     image=Image.open(BASE/"figures/cposs_molecular_sketchmap.png")

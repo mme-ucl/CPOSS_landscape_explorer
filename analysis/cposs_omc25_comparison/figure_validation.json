@@ -11,7 +11,7 @@
     ],
     "out_of_bounds_text": [],
     "population_counts": {
-      "CPOSS_single_verified": 190,
+      "CPOSS_single_verified": 189,
       "OMC25_train": 44403
     },
     "family": "Helvetica",
@@ -29,7 +29,7 @@
     ],
     "out_of_bounds_text": [],
     "population_counts": {
-      "CPOSS_single_verified": 190,
+      "CPOSS_single_verified": 189,
       "CPOSS_multicomponent_formula_units": 44,
       "OMC25_train": 44403
     },

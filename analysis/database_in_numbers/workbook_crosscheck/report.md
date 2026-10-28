@@ -1,6 +1,6 @@
 # Spreadsheet crosscheck and proposed panel C
 
-The workbook matches all **235 molecular systems, 311 public searches and 509 documented energy-model archives** when records are joined at the correct level. It also exposes unresolved differences in chemical formulas, structure counts, search credits and dates. The wider figure currently predates the latest formula-validation changes and should be regenerated after the data choices below are resolved.
+The workbook matches all **234 molecular systems, 310 current JSON records and 508 documented energy-model archives** when records are joined at the correct level. It also exposes unresolved differences in chemical formulas, structure counts, search credits and dates. The paper figure is regenerated from the current frozen tables after this audit.
 
 Source: `/Users/matteo/Downloads/Database 2023 checkup.xlsx`. The workbook metadata records modification on `2026-10-23 10:37:35`; it contains updates through 2026 despite its filename. The source workbook and the existing figures have not been edited by this audit. Source SHA-256: `e8a410fa55c3e5cab90d4352a985f694e7f1d5e4b4085f1331edf68602eed2dc`.
 
@@ -8,13 +8,13 @@ Source: `/Users/matteo/Downloads/Database 2023 checkup.xlsx`. The workbook metad
 
 The `Database` worksheet mixes model records (Study_ID in C), molecule summaries (AC:AN), and administrative notes. Molecule summaries in AC:AN are not additional models. Formulae are read from B; the repeated `Formula` heading in AJ must not overwrite B. Free-text notes with no Study_ID are not converted into data records. `Sheet1` and `Progress` are auxiliary lists/tracking sheets and do not describe the complete scientific population.
 
-All 509 public model archives were matched once, primarily by molecule page and Study_ID. Explicit Github identifiers resolve a Study_ID discrepancy for QuinoliniumFumarate (row 327: workbook 0, website 20). This also handles the shared IYUPEX refcode for pyridineisophthalicacid and pyridiniumisophthalate without merging their distinct pages. The methyl-p-hydroxybenzoate typo in row 72 is resolved by its molecule/Study_ID, not by an unreviewed fuzzy name match. Full joins and evidence are in `model_count_comparison.csv`.
+All 508 public model archives were matched once, primarily by molecule page and Study_ID. Explicit Github identifiers resolve a Study_ID discrepancy for QuinoliniumFumarate (row 327: workbook 0, website 20). This also handles the shared IYUPEX refcode for pyridineisophthalicacid and pyridiniumisophthalate without merging their distinct pages. The methyl-p-hydroxybenzoate typo in row 72 is resolved by its molecule/Study_ID, not by an unreviewed fuzzy name match. Full joins and evidence are in `model_count_comparison.csv`.
 
-The workbook's `Searches` summary sums to **310**, while the website has **311** explicitly linked searches. The difference is BTXII (row 18): the workbook groups Study_IDs 0 and 1 as A1/A2 within one search, whereas the website exposes A and B separately. Both model records are present. This is a grouping difference, not a missing molecule or archive. The `Studies` summary sums to **503**, so it should not be substituted for the 509 counted public model archives. Five additional rows marked uploaded have no corresponding documented model archive in the figure's scope; see `workbook_rows_outside_figure_scope.csv` and `molecule_scope_comparison.csv`.
+The in-scope workbook `Searches` summary sums to **309**, while the current JSON inventory has **310** records. The difference is BTXII (row 18): the workbook groups Study_IDs 0 and 1 as A1/A2 within one search, whereas the website exposes A and B separately. Both model records are present. This is a grouping difference, not a missing molecule or archive. The `Studies` summary sums to **502**, so it should not be substituted for the 508 counted public model archives. Five additional rows marked uploaded have no corresponding documented model archive in the figure's scope; see `workbook_rows_outside_figure_scope.csv` and `molecule_scope_comparison.csv`.
 
 ## Panel A: molecular size
 
-Canonical elemental compositions agree for **225 of 235 systems**. The workbook supplies valid oxygen symbols for **Piracetam and Isobarbituric acid**, which are unparseable in the current website metadata. There are **eight further composition conflicts**. These conflicts require a source choice or chemical verification; the workbook has not automatically been treated as correct wherever the two sources disagree.
+Canonical elemental compositions agree for **224 of 234 systems**. The workbook supplies valid oxygen symbols for **Piracetam and Isobarbituric acid**, which are unparseable in the current website metadata. There are **eight further composition conflicts**. These conflicts require a source choice or chemical verification; the workbook has not automatically been treated as correct wherever the two sources disagree.
 
 | Workbook cell | System | Spreadsheet formula | Website formula | Finding |
 | --- | --- | --- | --- | --- |
@@ -29,9 +29,9 @@ Canonical elemental compositions agree for **225 of 235 systems**. The workbook 
 | Database!B420 | Bipy-Aminobenzoic | C10 H8 N2 . C7 H7 N1 O2 | C7 H7 N1 O2 - C8 H7 N1 O4 | different composition |
 | Database!B448 | BTXV | C8 H4 O2 . C5 H7 N3 | C13 H15 N3 O2 | different composition |
 
-For the two recoverable website typos, the workbook gives Piracetam `C6 H10 N2 O2` (20 atoms, 142.158 g/mol) and Isobarbituric acid `C4 H4 N2 O3` (13 atoms, 128.087 g/mol). This restores two molecular-system points, corresponding to three searches because Isobarbituric acid has A and B searches. The earlier caption's maximum of 218 atoms / 2911.56 g/mol is not supported by the corrected parsing: these were inflated by joining ambiguous numeric tokens in erroneous formula strings.
+For the two recoverable website typos, the workbook gives Piracetam `C6 H10 N2 O2` (20 atoms, 142.158 g mol⁻¹) and Isobarbituric acid `C4 H4 N2 O3` (13 atoms, 128.087 g mol⁻¹). This restores two molecular-system points, corresponding to three searches because Isobarbituric acid has A and B searches. The earlier caption's maximum of 218 atoms / 2911.56 g mol⁻¹ is not supported by the corrected parsing: these were inflated by joining ambiguous numeric tokens in erroneous formula strings.
 
-The current portrait PDF contains **192 single-component + 41 multicomponent systems = 233 points**. The delivered wider PDF still contains **194 + 41 = 235 points**, and its recorded source hash differs from the current portrait PDF. It retains the old formula-based geometry. Restoring the two points from the workbook must use their corrected coordinates, not the old inflated masses. All 235 workbook formulas are parseable after normalizing ionic charge signs and comma-separated formatting, and give a range of **5--120 atoms and 32.042--890.880 g/mol**.
+The overview figure uses the current website-formula subset; the chemical comparison additionally reconciles workbook formulas with coordinate evidence. The current legend strings are recorded in `audit_summary.json`. All 234 in-scope workbook formulas are parseable after normalizing ionic charge signs and comma-separated formatting.
 
 The formula-based colour classification also differs for three systems:
 
@@ -41,7 +41,7 @@ The formula-based colour classification also differs for three systems:
 | Database!B426 | MemantineHydrochloride | C12 H22 N1 + . Cl1 - | C12 H22 N1 Cl1 |
 | Database!B448 | BTXV | C8 H4 O2 . C5 H7 N3 | C13 H15 N3 O2 |
 
-The spreadsheet's explicit component notation yields **191 single-component and 44 multicomponent formula units**. Two of these component-encoding differences have the same elemental composition; BTXV additionally has a stoichiometric conflict. Salt/component classification should therefore be reconciled along with the coordinates. Full per-system formulas, atom counts, masses, cell references and source URLs are in `molecular_formula_comparison.csv`. Molar masses use the same RDKit average atomic weights and complete written formula-unit basis as the existing analysis.
+The spreadsheet's explicit component notation yields **190 single-component and 44 multicomponent formula units**. Two of these component-encoding differences have the same elemental composition; BTXV additionally has a stoichiometric conflict. Salt/component classification should therefore be reconciled along with the coordinates. Full per-system formulas, atom counts, masses, cell references and source URLs are in `molecular_formula_comparison.csv`. Molar masses use the same RDKit average atomic weights and complete written formula-unit basis as the existing analysis.
 
 ## Panel B and the structure headline
 
@@ -83,12 +83,12 @@ The workbook has a `Programs` column L and informal `DFT-D calculations` notes i
 
 | Program family | Searches with an explicit mention | Denominator |
 | --- | --- | --- |
-| DMACRYS | 189 | 311 |
-| MOLPAK | 156 | 311 |
-| CrystalPredictor | 148 | 311 |
-| DMAREL | 126 | 311 |
-| CrystalOptimizer | 110 | 311 |
-| DMAflex | 28 | 311 |
+| DMACRYS | 189 | 310 |
+| MOLPAK | 155 | 310 |
+| CrystalPredictor | 148 | 310 |
+| DMAREL | 125 | 310 |
+| CrystalOptimizer | 110 | 310 |
+| DMAflex | 28 | 310 |
 
 Categories overlap: this is a software-coverage plot, not a partition or a count of software executions. Version suffixes are pooled. `CrystOpt` is grouped with CrystalOptimizer; `CrystalPrecictor` is treated as an explicit spelling variant of CrystalPredictor; DMAflex-Q and numbered DMAflex variants are grouped with DMAflex. Bare Study_ID references are not recursively expanded, so these are direct recorded mentions. DFTB3-D3 appears explicitly in Programs for eight searches but is omitted from this software-only panel because the label specifies a calculation method rather than an identifiable software package.
 
@@ -119,13 +119,13 @@ The primary-model Scientist cells contain **44 distinct names**, whereas the web
 | Database!K87 | 5chlorouracilA | Ashley Hulme; Sarah Barnett | Ashley Hulme |
 | Database!K44 | 5ethyluracilA | Nizar Issa | Nizar Issa; Weijia Zhu |
 | Database!K458 | 5fluoroisatinA | Sharmarke Mohamed | Louise Price; Sharmarke Mohamed; Weijia Zhu |
+| Database!K146 | 5fluorouracilA | Ashley Hulme | Ashley Hulme; Louise Price; Weijia Zhu |
 | Database!K250 | 5nitrouracilA | Nizar Issa; Sarah Barnett | Nizar Issa |
 | Database!K251 | 5nitrouracilB | Nizar Issa; Sarah Barnett | Nizar Issa |
 | Database!K256 | 7fluoroisatinA | Sharmarke Mohamed | Sharmarke Mohamed; Weijia Zhu |
 | Database!K165 | AnisoleA | Joe Ridout | Joe Ridout; Louise Price |
 | Database!K254 | CaffeineB | Nizar Issa; Panos Karamertzanis | Nizar Issa |
 | Database!K299 | EstradiolA | Erin Stevenson | Eric Stevenson |
-| Database!K146 | FluorouracilA | Ashley Hulme | Ashley Hulme; Louise Price; Weijia Zhu |
 | Database!K314 | IsobarbituricAcidB | Louise Price; Sarah Barnett | Louise Price |
 | Database!K94 | NaproxenB | Doris Braun; Emiliana D'Oria | Emiliana D'Oria |
 | Database!K332 | SaccharinA | Merina Corpinot | Louise Price; Merina Corpinot; Rui Guo |
@@ -134,7 +134,7 @@ The primary-model Scientist cells contain **44 distinct names**, whereas the web
 
 ## Panel E: study dates
 
-Single-year inclusion and year values agree for **303 of 311 searches** under the primary-model comparison above. Eight dates differ:
+Single-year inclusion and year values agree for **303 of 310 searches** under the primary-model comparison above. Eight dates differ:
 
 | Workbook cell | Dataset | Spreadsheet primary-model date | Website search date |
 | --- | --- | --- | --- |
@@ -153,12 +153,12 @@ Column N is the study/model date. Column W (`Date to Github`) records later uplo
 
 ## Panel F: linked literature
 
-For **290 of 311 searches**, the website's raw publication text matches at least one associated workbook model after punctuation/case normalization. This is a text-consistency check, not an independent reconstruction of **75 unique linked CSP papers**. The workbook has plain citations, within-molecule Study_ID pointers, notes and unpublished work, rather than a complete standardized DOI/URL identity table. The existing DOI-deduplicated paper table and linked references remain necessary to verify the cumulative curve. The other 21 text differences are recorded in `search_metadata_comparison.csv`; a text difference does not by itself mean a publication is missing or incorrect.
+For **290 of 310 searches**, the website's raw publication text matches at least one associated workbook model after punctuation/case normalization. This is a text-consistency check, not an independent reconstruction of **75 unique linked CSP papers**. The workbook has plain citations, within-molecule Study_ID pointers, notes and unpublished work, rather than a complete standardized DOI/URL identity table. The existing DOI-deduplicated paper table and linked references remain necessary to verify the cumulative curve. The other 21 text differences are recorded in `search_metadata_comparison.csv`; a text difference does not by itself mean a publication is missing or incorrect.
 
 ## Recommended next revision
 
 1. Resolve the eight formula conflicts and explicitly source the two oxygen-symbol repairs to the workbook.
-2. Keep the 519,167 headline labelled archived structure files; retain the separate spreadsheet/archive reconciliation.
+2. Keep the 517,594 headline labelled archived structure files; retain the separate spreadsheet/archive reconciliation.
 3. Adopt the proposed software panel C, with its counting rule and overlapping categories stated in the caption.
 4. Agree a consistent rule for search versus later-model credits and dates, then regenerate D and E.
 5. Rebuild the 3x2 figure from the reconciled data so that panel A and all associated text/captions match the latest source.

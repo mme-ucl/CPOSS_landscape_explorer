@@ -517,19 +517,42 @@ def extract(args):
     for page in parsed.values():
         resolve_publication_crossrefs(page)
     grouped = defaultdict(list)
+    inventory_json = {p for p in inventory if p.startswith("0.Chemiscope/") and p.endswith(".json")}
+    reconciliation = json.loads(args.reconcile.read_text()) if args.reconcile else {}
+    aliases = reconciliation.get("verified_json_aliases", {})
+    excluded_searches = []
     for path, page in parsed.items():
         for search in page["searches"]:
             targets = search["json_paths"]
+            if args.current_json_inventory:
+                original_targets = list(targets)
+                targets = [aliases.get(p, p) for p in targets]
+                if not targets or any(p not in inventory_json for p in targets):
+                    excluded_searches.append({"source_page": path, "search_identifier": search["search"],
+                                              "original_json_paths": original_targets,
+                                              "reason": "No corresponding JSON record in the current pinned inventory"})
+                    continue
+                search["original_json_paths"] = original_targets
+                search["json_paths"] = targets
             # Explicit same JSON URL means same dataset, even across duplicate pages.
             ident = Path(targets[0]).stem if targets else path.removesuffix(".html") + "::" + search["search"]
             grouped[ident].append((page, search))
     all_json_paths = {p for group in grouped.values() for _, search in group for p in search["json_paths"]}
+    if args.current_json_inventory and all_json_paths != inventory_json:
+        raise ValueError({"current_json_records_without_verified_search_metadata": sorted(inventory_json - all_json_paths)})
+    write_json(BASE / "sources/current_inventory_scope.json", {
+        "snapshot_revision": tree["sha"], "json_records": len(inventory_json),
+        "included_records": len(grouped), "verified_json_aliases": aliases,
+        "excluded_legacy_searches": excluded_searches,
+        "alias_evidence": reconciliation.get("alias_evidence", [])})
     summaries = obtain_structure_counts(args, all_json_paths, inventory, tree["sha"])
     refs = [ref for group in grouped.values() for page, search in group for ref in search["publications"] + page["context_refs"]]
     doi_metadata = enrich_papers(args, refs)
     papers, relations, datasets, models, contributions, provenance, conflicts = {}, [], [], [], [], [], []
     accessed = datetime.now(ZoneInfo("Europe/London")).date().isoformat()
-    if args.offline and (BASE / "manifest.json").exists():
+    if args.accessed_date:
+        accessed = args.accessed_date
+    if args.offline and not args.refresh and (BASE / "manifest.json").exists():
         accessed = json.loads((BASE / "manifest.json").read_text())["accessed_date"]
 
     def prov(ident, field, value, status, url, evidence="", method=""):
@@ -633,11 +656,16 @@ def extract(args):
                 file_links.append({"source_path": path, "target_path": target, "status": "missing_from_snapshot", "original_link": href})
     out = BASE / "tables"
     out.mkdir(parents=True, exist_ok=True)
-    tables = {"datasets": df, "contributors": contributor_df, "dataset_contributors": contrib_df, "energy_models": pd.DataFrame(models), "papers": paper_df, "dataset_papers": rel, "provenance": pd.DataFrame(provenance), "page_audit": pd.DataFrame(audit).sort_values("path"), "html_link_audit": pd.DataFrame(links).drop_duplicates(), "broken_source_links": pd.DataFrame(file_links).drop_duplicates(), "unlinked_json_inventory": pd.DataFrame(orphan_json), "metadata_conflicts": pd.DataFrame(conflicts, columns=["dataset_id", "field", "selected", "alternative", "source_url"]), "structure_file_audit": pd.DataFrame(summaries.values()), "contributor_aliases": pd.DataFrame([{"source_name": "L Price", "normalised_name": "Louise Price", "status": "inferred", "rationale": "Initial expansion within explicit scientist field; source spelling retained"}, {"source_name": "Sally Price", "normalised_name": "Sally Price", "status": "reported", "rationale": "Distinct from Louise Price; UCL lists Sarah (Sally) L. Price", "verification_url": "https://www.ucl.ac.uk/mathematical-physical-sciences/chemistry/people/emeritus-honorary-staff"}])}
+    tables = {"datasets": df, "contributors": contributor_df, "dataset_contributors": contrib_df, "energy_models": pd.DataFrame(models), "papers": paper_df, "dataset_papers": rel, "provenance": pd.DataFrame(provenance), "page_audit": pd.DataFrame(audit).sort_values("path"), "html_link_audit": pd.DataFrame(links).drop_duplicates(), "broken_source_links": pd.DataFrame(file_links).drop_duplicates(), "unlinked_json_inventory": pd.DataFrame(orphan_json, columns=["path", "git_blob_sha", "bytes", "reason"]), "metadata_conflicts": pd.DataFrame(conflicts, columns=["dataset_id", "field", "selected", "alternative", "source_url"]), "structure_file_audit": pd.DataFrame(summaries.values()), "contributor_aliases": pd.DataFrame([{"source_name": "L Price", "normalised_name": "Louise Price", "status": "inferred", "rationale": "Initial expansion within explicit scientist field; source spelling retained"}, {"source_name": "Sally Price", "normalised_name": "Sally Price", "status": "reported", "rationale": "Distinct from Louise Price; UCL lists Sarah (Sally) L. Price", "verification_url": "https://www.ucl.ac.uk/mathematical-physical-sciences/chemistry/people/emeritus-honorary-staff"}])}
     for name, table in tables.items():
         table.to_csv(out / (name + ".csv"), index=False)
     manifest = {"source_index": SITE + "index.html", "snapshot_revision": tree["sha"], "accessed_date": accessed, "timezone": "Europe/London", "dataset_definition": "Unique CSP search identified by explicit linked Chemiscope filename; no-link searches by page and search code; repeated pages referencing same file merged", "year_rule": "Single unambiguous year in source Date field (study date); ranges and pre-2010 excluded; no release dates or publication-year substitution", "structure_rule": "Array-entry count of linked JSON only; original search generation size and cross-dataset packing identity unknown", "reachable_html_pages": len(reachable), "inventory_html_pages": len(pages), "case_pages_with_searches": sum(bool(p["searches"]) for p in parsed.values()), "search_occurrences_before_deduplication": sum(len(p["searches"]) for p in parsed.values()), "datasets": len(df), "unlinked_json_files": len(orphan_json)}
     write_json(BASE / "manifest.json", manifest)
+    if args.current_json_inventory:
+        manifest.update({"dataset_definition": "One record per JSON file in the current pinned 0.Chemiscope inventory; outdated page identifiers reconciled using verified structure-filename overlap",
+                         "case_pages_with_searches": int(df.source_url.nunique()),
+                         "inventory_scope": "current_json_records", "inventory_reconciliation": "sources/current_inventory_scope.json"})
+        write_json(BASE / "manifest.json", manifest)
     print(json.dumps(manifest, indent=2), flush=True)
 
 
@@ -645,6 +673,9 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--tree", type=Path)
     p.add_argument("--refresh", action="store_true", help="Retrieve a fresh repository inventory")
+    p.add_argument("--current-json-inventory", action="store_true", help="Use every current JSON record exactly once; exclude legacy searches without a current record")
+    p.add_argument("--reconcile", type=Path, help="Verified old-to-current JSON filename mapping and evidence")
+    p.add_argument("--accessed-date", help="ISO date of the verified source refresh")
     p.add_argument("--offline", action="store_true", help="Use archived HTML, structure summaries and DOI metadata")
     p.add_argument("--plot-only", action="store_true", help="Recreate figure/report from extracted tables")
     p.add_argument("--extract-only", action="store_true")

@@ -1,6 +1,6 @@
 # CPOSS versus OMC25
 
-Reproducible molecular-content comparison: 190 coordinate-validated single-component CPOSS systems, 44 separate CPOSS multicomponent formula units and 44,403 OMC25 training molecular records. `report.md` explains populations, every formula decision, exclusions and mass harmonization.
+Reproducible molecular-content comparison: 189 coordinate-validated single-component CPOSS systems, 44 separate CPOSS multicomponent formula units and 44,403 OMC25 training molecular records. `report.md` explains populations, every formula decision, exclusions and mass harmonization.
 
 ## Main deliverables
 
@@ -31,4 +31,4 @@ To integrate with a paper, copy the two PDFs and the LaTeX fragments to the pape
 
 ## Density comparison extension
 
-See density/report.md for the comparison with the OMC25 paper Figure 3a density histograms, including reference recovery, source coverage and weighting. The figure is output/pdf/cposs_omc25_csd_density_comparison.pdf. Density statistics and inclusion audits are under density/tables and density/inputs. Reproduce with density/analyse_density.py and density/plot_density.py from that folder, then run density/test_density.py and density/verify_density.py. The open results_section.tex contains the density subsection and supports both its editor preview and inclusion in a paper.
+The density/ folder adds the CPOSS--OMC25--CSD comparison using the OMC25 paper Fig. 3a. Its report explains histogram recovery, the shared density window, source coverage and weighting. The new figure is output/pdf/cposs_omc25_csd_density_comparison.pdf. Reproduce it with density/analyse_density.py and density/plot_density.py, then run density/test_density.py and density/verify_density.py from that folder. The density subsection and editor preview wrappers in results_section.tex are preserved on regeneration.

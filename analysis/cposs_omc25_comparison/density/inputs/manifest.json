@@ -1,24 +1,24 @@
 {
-  "accessed_utc": "2026-10-24T14:24:38.158276+00:00",
-  "paper_url": "https://arxiv.org/pdf/2508.02651v1",
-  "paper_sha256": "0d0323aae495bb787445a4ab43f3b4cff87922d52d1e7c4a59460e213d462dae",
-  "source_figure": "3a",
-  "cp_records": 143306,
-  "searches_with_density": 302,
-  "cp_snapshot_revision": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
-  "reader_version": {
-    "pdfplumber": "0.11.9"
-  },
-  "source_rule": "Lowest numbered archived model with one unambiguous density column labelled gcm-3; positive finite values; filename matched to its RES archive; one entry per filename per search",
+  "accessed_utc": "2026-10-27T18:51:11.299063+00:00",
+  "cp_records": 145763,
+  "cp_snapshot_revision": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
   "files": {
-    "cposs_density_source_checksums.csv": "dabe0c82eba78077e3bb72ddb5f19b5b6fa252f3c938372afcaf8fdf5c42fed9",
-    "cposs_molecular_population_audit.csv": "d5a5476668f4ff247604653cc48364019aae925d4d94514a7b207b708de891d2",
-    "cposs_reported_density_records.csv.gz": "e6dabe24f0ceaf9ceaff6653c74dc5d63d68e0f4ca7cdcccc7672f2af4b05d39",
-    "cposs_search_density_audit.csv": "61e19034a45cbdeb082c48b83311fe623b761188f98e683e225790f7c3052143",
-    "cposs_source_archive_manifest.csv": "5da2950188d50cd81d635d5423d152571be6fd6dddfaa435135fa49d222d55a1",
-    "cposs_source_datasets.csv": "b28d70a9c51e5a8154f6820e368184f09f8a20df88c20163925fc7eeabd3ccb0",
+    "cposs_density_source_checksums.csv": "b84e7ef6acd63dbd094197b2275c091a7f9c1d87583d865c44c0618497d006da",
+    "cposs_molecular_population_audit.csv": "dc4fbecc3d498d596cf24f44cc7f697cbc8b07197c2f9c17891af5c43413c180",
+    "cposs_reported_density_records.csv.gz": "319873e37540d82b656f85400d70ffec0122e630cff3754fc64cc0153416ccc2",
+    "cposs_search_density_audit.csv": "c52e38091c5a429ec621708b1620ae3a10c8a9d29703ce6434107c8c36b7ccd3",
+    "cposs_source_archive_manifest.csv": "795c1499801c75a48654285f5043418521ab8673dba74b5f9ba2b6ea33d2a153",
+    "cposs_source_datasets.csv": "564f4dc7f392fe20d939556ac6c0f843665c8b75ed2841bad5f6b95a7a47adb1",
     "omc25_arxiv_2508.02651v1.pdf": "0d0323aae495bb787445a4ab43f3b4cff87922d52d1e7c4a59460e213d462dae",
     "reference_calibration.json": "e6b7b256f6061915f0a4f552de7a6c30d193b36f4f67637928d5617cfd381fa9",
     "reference_histogram_bars.csv": "fcc3ca6b686a50fee7dd311c7e361726a9fbe6112881f09b38dd96aed137cf37"
-  }
+  },
+  "paper_sha256": "0d0323aae495bb787445a4ab43f3b4cff87922d52d1e7c4a59460e213d462dae",
+  "paper_url": "https://arxiv.org/pdf/2508.02651v1",
+  "reader_version": {
+    "pdfplumber": "0.11.10"
+  },
+  "searches_with_density": 305,
+  "source_figure": "3a",
+  "source_rule": "Lowest numbered archived model with one unambiguous density column labelled gcm-3; positive finite values; filename matched to its RES archive; one entry per filename per search"
 }

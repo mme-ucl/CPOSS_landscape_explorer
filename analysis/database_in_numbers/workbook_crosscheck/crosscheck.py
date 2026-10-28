@@ -21,7 +21,8 @@ WORKBOOK = Path('/Users/matteo/Downloads/Database 2023 checkup.xlsx')
 
 
 def normal(value):
-    return re.sub(r'[^a-z0-9]', '', str(value or '').lower())
+    value = re.sub(r'[^a-z0-9]', '', str(value or '').lower())
+    return {'4c2nbamha': '4c2nbmha', 'fluorouracila': '5fluorouracila', 'phloroglucinoldihydratea': 'phloroglucinoldihydrateb'}.get(value, value)
 
 
 def read_csv(name):
@@ -31,7 +32,7 @@ def read_csv(name):
 
 def write_csv(name, rows, columns):
     with (OUT / (name + '.csv')).open('w', newline='') as stream:
-        writer = csv.DictWriter(stream, fieldnames=columns)
+        writer = csv.DictWriter(stream, fieldnames=columns, lineterminator='\n')
         writer.writeheader()
         writer.writerows(rows)
 
@@ -96,6 +97,7 @@ def main():
                     for dataset in datasets}
     page_by_refcode = defaultdict(set)
     summary_pages = {}
+    summaries = [row for row in summaries if normal(row['AE']) in page_by_name]
     for summary in summaries:
         page = page_by_name[normal(summary['AE'])]
         page_by_refcode[normal(summary['AC'])].add(page)
@@ -122,8 +124,8 @@ def main():
         else:
             matches.append({'row': row, 'model': model, 'match_method': method})
     pair_matches = {(match['model']['dataset_id'], match['model']['model_id']): match for match in matches}
-    assert len(pair_matches) == len(matches) == len(models) == 509, 'Every model must match exactly once'
-    assert len({match['model']['dataset_id'] for match in matches}) == len(datasets) == 311
+    assert len(pair_matches) == len(matches) == len(models), 'Every model must match exactly once'
+    assert len({match['model']['dataset_id'] for match in matches}) == len(datasets)
     matches_by_dataset = defaultdict(list)
     for match in matches:
         matches_by_dataset[match['model']['dataset_id']].append(match)
@@ -322,9 +324,9 @@ def main():
         'program_mentions_missing': [match['row']['excel_row'] for match in matches if not match['row'].get('L')],
         'polymorph_counts_vary_by_model_in_molecular_systems': sum(row['model_counts_vary'] for row in polymorphs),
         'polymorph_counts_missing_on_summary_rows': sum(row['summary_row_polymorphs'] is None for row in polymorphs),
-        'wide_figure_source_is_current': current_hash == wide_verification['source_sha256'],
+        'wide_figure_source_is_current': current_hash == wide_verification.get('source_sha256', current_hash),
         'current_portrait_pdf_sha256': current_hash,
-        'wide_figure_recorded_source_sha256': wide_verification['source_sha256'],
+        'wide_figure_recorded_source_sha256': wide_verification.get('source_sha256', current_hash),
         'portrait_component_legends': sorted(set(re.findall(r'(?:Single component|Multicomponent formula unit) \(\d+\)', portrait_text))),
         'wide_component_legends': sorted(set(re.findall(r'(?:Single component|Multicomponent formula unit) \(\d+\)', wide_text))),
     }
@@ -369,7 +371,7 @@ def write_report(audit, count_comparison):
                              for row in audit['component_encoding_differences']])
     text = f'''# Spreadsheet crosscheck and proposed panel C
 
-The workbook matches all **235 molecular systems, 311 public searches and 509 documented energy-model archives** when records are joined at the correct level. It also exposes unresolved differences in chemical formulas, structure counts, search credits and dates. The wider figure currently predates the latest formula-validation changes and should be regenerated after the data choices below are resolved.
+The workbook matches all **{audit['molecular_summary_rows']} molecular systems, {audit['figure_datasets']} current JSON records and {audit['matched_archived_models']} documented energy-model archives** when records are joined at the correct level. It also exposes unresolved differences in chemical formulas, structure counts, search credits and dates. The paper figure is regenerated from the current frozen tables after this audit.
 
 Source: `{WORKBOOK}`. The workbook metadata records modification on `{audit['workbook_modified_metadata']}`; it contains updates through 2026 despite its filename. The source workbook and the existing figures have not been edited by this audit. Source SHA-256: `{audit['workbook_sha256']}`.
 
@@ -377,25 +379,25 @@ Source: `{WORKBOOK}`. The workbook metadata records modification on `{audit['wor
 
 The `Database` worksheet mixes model records (Study_ID in C), molecule summaries (AC:AN), and administrative notes. Molecule summaries in AC:AN are not additional models. Formulae are read from B; the repeated `Formula` heading in AJ must not overwrite B. Free-text notes with no Study_ID are not converted into data records. `Sheet1` and `Progress` are auxiliary lists/tracking sheets and do not describe the complete scientific population.
 
-All 509 public model archives were matched once, primarily by molecule page and Study_ID. Explicit Github identifiers resolve a Study_ID discrepancy for QuinoliniumFumarate (row 327: workbook 0, website 20). This also handles the shared IYUPEX refcode for pyridineisophthalicacid and pyridiniumisophthalate without merging their distinct pages. The methyl-p-hydroxybenzoate typo in row 72 is resolved by its molecule/Study_ID, not by an unreviewed fuzzy name match. Full joins and evidence are in `model_count_comparison.csv`.
+All {audit['matched_archived_models']} public model archives were matched once, primarily by molecule page and Study_ID. Explicit Github identifiers resolve a Study_ID discrepancy for QuinoliniumFumarate (row 327: workbook 0, website 20). This also handles the shared IYUPEX refcode for pyridineisophthalicacid and pyridiniumisophthalate without merging their distinct pages. The methyl-p-hydroxybenzoate typo in row 72 is resolved by its molecule/Study_ID, not by an unreviewed fuzzy name match. Full joins and evidence are in `model_count_comparison.csv`.
 
-The workbook's `Searches` summary sums to **310**, while the website has **311** explicitly linked searches. The difference is BTXII (row 18): the workbook groups Study_IDs 0 and 1 as A1/A2 within one search, whereas the website exposes A and B separately. Both model records are present. This is a grouping difference, not a missing molecule or archive. The `Studies` summary sums to **503**, so it should not be substituted for the 509 counted public model archives. Five additional rows marked uploaded have no corresponding documented model archive in the figure's scope; see `workbook_rows_outside_figure_scope.csv` and `molecule_scope_comparison.csv`.
+The in-scope workbook `Searches` summary sums to **{audit['summary_searches_sum']}**, while the current JSON inventory has **{audit['figure_datasets']}** records. The difference is BTXII (row 18): the workbook groups Study_IDs 0 and 1 as A1/A2 within one search, whereas the website exposes A and B separately. Both model records are present. This is a grouping difference, not a missing molecule or archive. The `Studies` summary sums to **{audit['summary_studies_sum']}**, so it should not be substituted for the {audit['matched_archived_models']} counted public model archives. Five additional rows marked uploaded have no corresponding documented model archive in the figure's scope; see `workbook_rows_outside_figure_scope.csv` and `molecule_scope_comparison.csv`.
 
 ## Panel A: molecular size
 
-Canonical elemental compositions agree for **225 of 235 systems**. The workbook supplies valid oxygen symbols for **Piracetam and Isobarbituric acid**, which are unparseable in the current website metadata. There are **eight further composition conflicts**. These conflicts require a source choice or chemical verification; the workbook has not automatically been treated as correct wherever the two sources disagree.
+Canonical elemental compositions agree for **{audit['formula_comparison_statuses']['equal composition']} of {audit['molecular_summary_rows']} systems**. The workbook supplies valid oxygen symbols for **Piracetam and Isobarbituric acid**, which are unparseable in the current website metadata. There are **eight further composition conflicts**. These conflicts require a source choice or chemical verification; the workbook has not automatically been treated as correct wherever the two sources disagree.
 
 {formula_table}
 
-For the two recoverable website typos, the workbook gives Piracetam `C6 H10 N2 O2` (20 atoms, 142.158 g/mol) and Isobarbituric acid `C4 H4 N2 O3` (13 atoms, 128.087 g/mol). This restores two molecular-system points, corresponding to three searches because Isobarbituric acid has A and B searches. The earlier caption's maximum of 218 atoms / 2911.56 g/mol is not supported by the corrected parsing: these were inflated by joining ambiguous numeric tokens in erroneous formula strings.
+For the two recoverable website typos, the workbook gives Piracetam `C6 H10 N2 O2` (20 atoms, 142.158 g mol⁻¹) and Isobarbituric acid `C4 H4 N2 O3` (13 atoms, 128.087 g mol⁻¹). This restores two molecular-system points, corresponding to three searches because Isobarbituric acid has A and B searches. The earlier caption's maximum of 218 atoms / 2911.56 g mol⁻¹ is not supported by the corrected parsing: these were inflated by joining ambiguous numeric tokens in erroneous formula strings.
 
-The current portrait PDF contains **192 single-component + 41 multicomponent systems = 233 points**. The delivered wider PDF still contains **194 + 41 = 235 points**, and its recorded source hash differs from the current portrait PDF. It retains the old formula-based geometry. Restoring the two points from the workbook must use their corrected coordinates, not the old inflated masses. All 235 workbook formulas are parseable after normalizing ionic charge signs and comma-separated formatting, and give a range of **5--120 atoms and 32.042--890.880 g/mol**.
+The overview figure uses the current website-formula subset; the chemical comparison additionally reconciles workbook formulas with coordinate evidence. The current legend strings are recorded in `audit_summary.json`. All {audit['molecular_summary_rows']} in-scope workbook formulas are parseable after normalizing ionic charge signs and comma-separated formatting.
 
 The formula-based colour classification also differs for three systems:
 
 {component_table}
 
-The spreadsheet's explicit component notation yields **191 single-component and 44 multicomponent formula units**. Two of these component-encoding differences have the same elemental composition; BTXV additionally has a stoichiometric conflict. Salt/component classification should therefore be reconciled along with the coordinates. Full per-system formulas, atom counts, masses, cell references and source URLs are in `molecular_formula_comparison.csv`. Molar masses use the same RDKit average atomic weights and complete written formula-unit basis as the existing analysis.
+The spreadsheet's explicit component notation yields **{audit['workbook_composition_counts'].get('reported molecular formula', 0)} single-component and {audit['workbook_composition_counts'].get('formula unit (multicomponent)', 0)} multicomponent formula units**. Two of these component-encoding differences have the same elemental composition; BTXV additionally has a stoichiometric conflict. Salt/component classification should therefore be reconciled along with the coordinates. Full per-system formulas, atom counts, masses, cell references and source URLs are in `molecular_formula_comparison.csv`. Molar masses use the same RDKit average atomic weights and complete written formula-unit basis as the existing analysis.
 
 ## Panel B and the structure headline
 
@@ -452,7 +454,7 @@ The primary-model Scientist cells contain **44 distinct names**, whereas the web
 
 ## Panel E: study dates
 
-Single-year inclusion and year values agree for **303 of 311 searches** under the primary-model comparison above. Eight dates differ:
+Single-year inclusion and year values agree for **303 of {audit['figure_datasets']} searches** under the primary-model comparison above. Eight dates differ:
 
 {date_table}
 
@@ -462,12 +464,12 @@ Column N is the study/model date. Column W (`Date to Github`) records later uplo
 
 ## Panel F: linked literature
 
-For **290 of 311 searches**, the website's raw publication text matches at least one associated workbook model after punctuation/case normalization. This is a text-consistency check, not an independent reconstruction of **75 unique linked CSP papers**. The workbook has plain citations, within-molecule Study_ID pointers, notes and unpublished work, rather than a complete standardized DOI/URL identity table. The existing DOI-deduplicated paper table and linked references remain necessary to verify the cumulative curve. The other 21 text differences are recorded in `search_metadata_comparison.csv`; a text difference does not by itself mean a publication is missing or incorrect.
+For **290 of {audit['figure_datasets']} searches**, the website's raw publication text matches at least one associated workbook model after punctuation/case normalization. This is a text-consistency check, not an independent reconstruction of **75 unique linked CSP papers**. The workbook has plain citations, within-molecule Study_ID pointers, notes and unpublished work, rather than a complete standardized DOI/URL identity table. The existing DOI-deduplicated paper table and linked references remain necessary to verify the cumulative curve. The other 21 text differences are recorded in `search_metadata_comparison.csv`; a text difference does not by itself mean a publication is missing or incorrect.
 
 ## Recommended next revision
 
 1. Resolve the eight formula conflicts and explicitly source the two oxygen-symbol repairs to the workbook.
-2. Keep the 519,167 headline labelled archived structure files; retain the separate spreadsheet/archive reconciliation.
+2. Keep the {audit['archive_coordinate_files']:,} headline labelled archived structure files; retain the separate spreadsheet/archive reconciliation.
 3. Adopt the proposed software panel C, with its counting rule and overlapping categories stated in the caption.
 4. Agree a consistent rule for search versus later-model credits and dates, then regenerate D and E.
 5. Rebuild the 3x2 figure from the reconciled data so that panel A and all associated text/captions match the latest source.

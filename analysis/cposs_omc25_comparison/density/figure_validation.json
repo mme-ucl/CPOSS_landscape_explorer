@@ -10,6 +10,26 @@
   ],
   "out_of_bounds_text": [],
   "png_dpi": 300,
+  "plotted_populations": [
+    "CPOSS_single_system_balanced",
+    "OMC25_last_frames",
+    "CSD_organic"
+  ],
+  "normalization": {
+    "CPOSS_single_system_balanced": {
+      "density_integral": 0.999999999999932,
+      "cdf_endpoint": 1.0
+    },
+    "OMC25_last_frames": {
+      "density_integral": 1.0000000000001783,
+      "cdf_endpoint": 1.0
+    },
+    "CSD_organic": {
+      "density_integral": 1.0000000000000075,
+      "cdf_endpoint": 1.0
+    }
+  },
+  "embedded_comments": false,
   "family": "Helvetica",
   "font_source_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3"
 }

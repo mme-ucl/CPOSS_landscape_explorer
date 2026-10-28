@@ -20,9 +20,12 @@ from matplotlib.patches import ConnectionPatch
 from matplotlib.text import Text
 import numpy as np
 import pandas as pd
-from scipy.optimize import linear_sum_assignment
+BASE = Path(__file__).resolve().parent
+FONT_SCALE = 1.55
 
-from extract_molecules import BASE, write_json
+
+def write_json(path, value):
+    path.write_text(json.dumps(value, indent=2) + "\n")
 
 INK, MUTED = "#172F3D", "#566974"
 
@@ -39,7 +42,7 @@ def helvetica(path):
     else:
         fonts = [path] + [p for p in path.parent.glob("Helvetica*.ttf") if p != path]
     for font in fonts: font_manager.fontManager.addfont(str(font))
-    plt.rcParams.update({"font.family": "Helvetica", "font.sans-serif": ["Helvetica"], "font.size": 8, "text.color": INK, "axes.labelcolor": INK, "axes.edgecolor": "#A5B0B6", "axes.linewidth": .6, "xtick.color": MUTED, "ytick.color": MUTED, "pdf.fonttype": 42, "ps.fonttype": 42, "savefig.facecolor": "white"})
+    plt.rcParams.update({"font.family": "Helvetica", "font.sans-serif": ["Helvetica"], "font.size": 8, "text.color": INK, "axes.labelcolor": INK, "axes.edgecolor": "#A5B0B6", "axes.linewidth": .6, "xtick.color": MUTED, "ytick.color": MUTED, "pdf.fonttype": 42, "ps.fonttype": 42, "savefig.facecolor": "white", "mathtext.fontset": "custom", "mathtext.rm": "Helvetica", "mathtext.it": "Helvetica:italic", "mathtext.bf": "Helvetica:bold"})
     return {"source": str(path), "source_sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "embedded_faces": [p.name for p in fonts]}
 
 
@@ -65,7 +68,7 @@ def main():
     descriptors = np.load(BASE / "data/molecular_descriptors.npz")
     if list(descriptors["dataset_ids"]) != list(frame.dataset_id): raise AssertionError("Descriptor/map ordering mismatch")
     embedding = frame[["sketchmap_x", "sketchmap_y"]].to_numpy()
-    anchors = np.array([[.13,.85],[.50,.85],[.87,.85],[.92,.52],[.87,.235],[.50,.235],[.13,.235],[.08,.52]])
+    anchors = np.array([[.13,.85],[.50,.85],[.87,.85],[.92,.52],[.87,.245],[.50,.245],[.13,.245],[.08,.52]])
     selection=json.loads((BASE/"callout_selection.json").read_text())
     rendering=json.loads((BASE/"data/tachyon_rendering.json").read_text())
     if selection["mode"]!="curated_experimental_compounds":raise ValueError("Unknown callout-selection rule")
@@ -77,10 +80,12 @@ def main():
     centre = embedding.mean(axis=0)
     span = max(np.ptp(embedding[:,0]), np.ptp(embedding[:,1]))*1.18
     limits = np.array([centre-span/2,centre+span/2])
-    normalized = (embedding-limits[0])/span
-    page_xy = normalized*np.array(map_rect[2:])+np.array(map_rect[:2])
-    assignment, positions = linear_sum_assignment(np.sum((page_xy[indices,None,:]-anchors[None,:,:])**2,axis=2))
-    callouts = [(indices[i], int(j)) for i,j in zip(assignment,positions)]
+    # Retain the approved callout assignment without rerunning molecular analysis.
+    approved = pd.read_csv(BASE / "tables/callouts.csv").set_index("dataset_id")
+    callouts = [(index, int(approved.loc[frame.iloc[index].dataset_id, "anchor_index"]))
+                for index in indices]
+    if sorted(anchor for _, anchor in callouts) != list(range(8)):
+        raise ValueError("The approved callout positions must cover all eight anchors")
     palette = LinearSegmentedColormap.from_list("CPOSS_Plasma_truncated",plt.get_cmap("plasma")(np.linspace(0,.88,256)))
     norm = LogNorm(vmin=float(frame.selected_molar_mass_g_mol.min()), vmax=float(frame.selected_molar_mass_g_mol.max()))
     fig = plt.figure(figsize=(210/25.4,297/25.4),facecolor="white")
@@ -93,7 +98,6 @@ def main():
     edge = np.where(conflicts,"#172F3D","white")
     scatter = ax.scatter(embedding[order,0],embedding[order,1],s=frame.marker_area_pt2.to_numpy()[order],c=frame.selected_molar_mass_g_mol.to_numpy()[order],cmap=palette,norm=norm,alpha=.88,edgecolors=edge[order],linewidths=np.where(conflicts[order],.8,.32),zorder=4)
     ax.set_xticks([]); ax.set_yticks([])
-    ax.set_xlabel("sketch-map 1",fontsize=8,labelpad=5); ax.set_ylabel("sketch-map 2",fontsize=8,labelpad=5)
     for spine in ax.spines.values(): spine.set_color("#A5B0B6")
     callout_rows = []
     for index, anchor_index in callouts:
@@ -108,7 +112,8 @@ def main():
         if len(title)>48: title=row.dataset_id
         label = "\n".join(textwrap.wrap(str(title),27))
         line_count = len(label.splitlines())
-        if anchor_index in {0,1,2}: start = (x,y-height/2-.006-.010*line_count-.014)
+        label_step = .010 * FONT_SCALE
+        if anchor_index in {0,1,2}: start = (x,y-height/2-.006-label_step*line_count-.020)
         elif anchor_index in {4,5,6}:
             # Route beneath the x-axis label, entering away from its central text.
             initial = (x,y+height/2+.004)
@@ -127,22 +132,25 @@ def main():
         line = ConnectionPatch(xyA=start,coordsA=fig.transFigure,xyB=embedding[index],coordsB=ax.transData,arrowstyle="-",lw=.65,color="#7A858D",zorder=-.5,shrinkA=0,shrinkB=3)
         fig.add_artist(line)
         fig.text(x,y-height/2-.006,label,ha="center",va="top",fontsize=7.0,weight="bold")
-        fig.text(x,y-height/2-.006-.010*line_count,f"{int(row.structure_count):,} archived files",ha="center",va="top",fontsize=6.2,color=MUTED)
+        fig.text(x,y-height/2-.006-label_step*line_count,f"{int(row.structure_count):,} archived files",ha="center",va="top",fontsize=6.2,color=MUTED)
         evidence=next(r for r in selection["molecules"] if r["dataset_id"]==row.dataset_id)
         callout_rows.append({"dataset_id":row.dataset_id,"dataset_name":row.dataset_name,"selection":evidence["selection_reason"],"csd_refcode":evidence["csd_refcode"],"experimental_reference_count":evidence["experimental_reference_count"],"experimental_evidence_table":"inputs/callout_experimental_references.csv","geometry_scope":selection["geometry_scope"],"renderer":rendering["renderer"]+"; matte ambient-occlusion ball-and-stick","anchor_index":anchor_index,"sketchmap_x":row.sketchmap_x,"sketchmap_y":row.sketchmap_y,"selected_formula":row.selected_formula,"structure_count":row.structure_count})
     # Quantitative legends in the free lower margin.
-    cax = fig.add_axes([.31,.082,.38,.008])
+    cax = fig.add_axes([.24,.068,.52,.010])
     colorbar = fig.colorbar(scatter,cax=cax,orientation="horizontal")
     colorbar.solids.set_rasterized(False)
     colorbar.solids.set_edgecolor("face")
+    colorbar.solids.set_alpha(1)
     ticks = [v for v in [50,100,300,1000,3000] if norm.vmin <= v <= norm.vmax]
     colorbar.set_ticks(ticks,labels=[f"{v:,}" for v in ticks])
     colorbar.ax.minorticks_off()
     colorbar.ax.tick_params(labelsize=7,length=2,width=.5)
-    colorbar.set_label("Extracted molecule molar mass (g/mol; log colour scale)",fontsize=7,labelpad=4)
-    legend_ax = fig.add_axes([.18,.112,.64,.030]); legend_ax.axis("off")
+    colorbar.set_label(r"Molar mass (g mol$^{-1}$)",fontsize=7,labelpad=5)
+    legend_ax = fig.add_axes([.10,.112,.80,.038]); legend_ax.axis("off")
     handles = [legend_ax.scatter([],[],s=1.8*np.sqrt(n),color="#9F77AF",edgecolors=INK,linewidths=.4) for n in [10,100,1000,10000]]
-    legend_ax.legend(handles,[f"{n:,}" for n in [10,100,1000,10000]],title="Archived structure files; marker area proportional to square root of count",loc="center",ncol=4,frameon=False,fontsize=7,title_fontsize=7,labelspacing=.9,columnspacing=2.5,handletextpad=.9)
+    legend_ax.legend(handles,[f"{n:,}" for n in [10,100,1000,10000]],title="Archived structure files",loc="center",ncol=4,frameon=False,fontsize=7,title_fontsize=7,labelspacing=.9,columnspacing=2.0,handletextpad=.9)
+    for text in fig.findobj(Text):
+        text.set_fontsize(text.get_fontsize() * FONT_SCALE)
     fig.canvas.draw(); renderer=fig.canvas.get_renderer(); outside=[]; families=set()
     for text in fig.findobj(Text):
         if not text.get_visible() or not text.get_text():continue
@@ -151,13 +159,14 @@ def main():
         box=text.get_window_extent(renderer)
         if box.x0 < -1 or box.y0 < -1 or box.x1>fig.bbox.width+1 or box.y1>fig.bbox.height+1:outside.append(text.get_text())
     if families!={"Helvetica"} or outside:raise AssertionError({"fonts":list(families),"outside":outside})
-    timestamp=datetime(2026,10,23,tzinfo=ZoneInfo("Europe/London"))
+    snapshot=json.loads((BASE/"inputs/manifest.json").read_text())
+    timestamp=datetime.fromisoformat(snapshot["accessed_date"]).replace(tzinfo=ZoneInfo("Europe/London"))
     fig.savefig(BASE/"output/pdf/cposs_molecular_sketchmap.pdf",metadata={"Title":"The molecular landscape of CPOSS","Author":"CPOSS molecular analysis","CreationDate":timestamp,"ModDate":timestamp})
     fig.savefig(BASE/"figures/cposs_molecular_sketchmap.png",dpi=300)
     plt.close(fig)
     pd.DataFrame(callout_rows).to_csv(BASE/"tables/callouts.csv",index=False)
-    font.update({"all_figure_text_families":sorted(families),"text_outside_page":outside})
-    write_json(BASE/"data/figure_manifest.json",{"font_verification":font,"page":"A4 portrait","dpi":300,"map_points":len(frame),"represented_structure_files":int(frame.structure_count.sum()),"marker_area_rule":"s = 1.8 sqrt(N) pt^2; N counts model-specific RES files; no optimization weights","colour":"Truncated Plasma [0,0.88]; logarithmic extracted molecule molar mass","callout_selection":selection["rationale"],"molecular_rendering":rendering["style"]+"; 1800x1200 white-background PNGs at 600 dpi; vector map and text","molecular_renderer":rendering["renderer"],"removed_annotations":["title","dataset/count subtitle","bottom exclusion/coformer notes"],"geometry_scope":selection["geometry_scope"],"jitter":False,"callouts":list(pd.DataFrame(callout_rows).dataset_id)})
+    font.update({"all_figure_text_families":sorted(families),"text_outside_page":outside,"font_scale":FONT_SCALE,"map_axis_labels":False})
+    write_json(BASE/"data/figure_manifest.json",{"source_revision":snapshot["snapshot_revision"],"accessed_date":snapshot["accessed_date"],"font_verification":font,"page":"A4 portrait","dpi":300,"map_points":len(frame),"represented_structure_files":int(frame.structure_count.sum()),"marker_area_rule":"s = 1.8 sqrt(N) pt^2; N counts model-specific RES files; no optimization weights","colour":"Truncated Plasma [0,0.88]; logarithmic extracted molecule molar mass","callout_selection":selection["rationale"],"molecular_rendering":rendering["style"]+"; 1800x1200 white-background PNGs at 600 dpi; vector map and text","molecular_renderer":rendering["renderer"],"removed_annotations":["title","dataset/count subtitle","bottom exclusion/coformer notes"],"geometry_scope":selection["geometry_scope"],"jitter":False,"callouts":list(pd.DataFrame(callout_rows).dataset_id)})
     print("Created PDF/PNG with",len(frame),"dataset points and",len(callouts),"molecular callouts",flush=True)
 
 

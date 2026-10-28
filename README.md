@@ -129,11 +129,11 @@ Runtime search uses only the static catalogue. It does not call GitHub's API or 
 
 ## Current source limitations
 
-Snapshot refreshed on 23 October 2026, tree `d65c1732ab6db46b8af34e0646a760c56a8d559c`:
+Snapshot refreshed on 27 October 2026, tree `6a77cc47b35f268f81a1d433b62c3e0917e20ffd`:
 
-- 315 datasets and 236 case HTML pages; 307 datasets have an explicit case-page mapping.
+- 310 datasets and 236 case HTML pages; 307 datasets have an explicit case-page mapping.
 - Collections contain 49 Blind Test, 26 CPOSS209, 30 unpublished, 25 Tricyclics, and 11 Dichloronitrobenzene datasets. Membership can overlap.
-- Eight datasets have no verified page association, including the three previously unmapped files and five new `working`/`_full` variants; see the report for exact names. They remain searchable by filename and have no inferred resource links.
+- Three datasets have no verified page association: `4C2NBMHA.json`, `5fluorouracilA.json`, and `PhloroglucinolDihydrateB.json`. They remain searchable by filename and have no inferred resource links.
 - Five source-page dataset links refer to filenames absent from the repository; see the report for exact paths. One is a duplicate misspelled molecule page, and one references a dataset that is not present at all.
 
 Counts are snapshot documentation, not hardcoded application limits. Dataset/case/archive/metadata paths are checked against the repository tree. The refresh does not parse every dataset or verify every external DOI/archive URL with HTTP requests. Archive contents have been inspected for Urea's two models; other content labels remain conservative. Cross-origin browsers do not reliably expose iframe rejection to the parent page, so the preview always provides a visible external-page fallback.

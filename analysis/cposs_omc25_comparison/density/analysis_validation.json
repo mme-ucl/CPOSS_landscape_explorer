@@ -5,11 +5,14 @@
     2.4
   ],
   "common_bin_width": 0.02,
-  "primary_records": 114222,
-  "primary_systems": 186,
-  "primary_searches": 257,
-  "multicomponent_records": 29065,
+  "primary_records": 114284,
+  "primary_systems": 187,
+  "primary_searches": 258,
+  "multicomponent_records": 31460,
   "normalization_max_error": 2.220446049250313e-16,
   "reference_status": "approximate_vector_histogram_recovery",
+  "figure_cposs_population": "CPOSS_single_system_balanced",
+  "system_balance_scope": "after_restricting_to_shared_window",
+  "reference_system_reweighting_available": false,
   "results_section_updated_in_place": true
 }

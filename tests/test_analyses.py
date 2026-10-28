@@ -48,9 +48,9 @@ class AnalysesTest(unittest.TestCase):
         self.assertEqual(sum(int(float(row['energy_model_count'])) for row in source), self.summary['model_archives'])
 
     def test_scientific_populations_and_approximate_reference_scope_are_explicit(self):
-        self.assertEqual(self.summary['coordinate_verified_single_component_systems'], 190)
+        self.assertEqual(self.summary['coordinate_verified_single_component_systems'], 189)
         self.assertEqual(self.summary['coordinate_verified_multicomponent_systems'], 44)
-        self.assertEqual(self.summary['molecular_systems'], 235)
+        self.assertEqual(self.summary['molecular_systems'], 234)
         self.assertIn('44,403 OMC25 training molecular records', self.html)
         self.assertIn('approximate histogram recoveries', self.html)
         self.assertEqual(len(self.page.figures), len(self.summary['figures']))

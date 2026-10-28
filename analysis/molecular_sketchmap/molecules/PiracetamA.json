@@ -4,7 +4,7 @@
   "source_url": "https://louiseprice.github.io/CPOSS_Database/Piracetam/Piracetam.html",
   "reported_formula": "C6 H10 N2 02",
   "reported_formula_normalised": "",
-  "composition_basis": "reported molecular formula",
+  "composition_basis": "",
   "structure_count": 61,
   "extraction_status": "calculated",
   "included": true,
@@ -356,6 +356,5 @@
       1.0
     ]
   ],
-  "rejected_candidates": [],
-  "source_formula_note": "Separated numeric tokens in the reported formula are ambiguous and were not concatenated; original formula is unchanged."
+  "rejected_candidates": []
 }

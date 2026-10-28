@@ -84,9 +84,9 @@
     "shelx": "https://shelx.uni-goettingen.de/shelxl_html.php"
   },
   "validation": {
-    "invariance_max_abs_error": 7.077671781985373e-16,
-    "number_of_datasets": 308,
-    "source_extraction_csv_sha256": "0994e2b502a2e4d64ff3bb0296fe2124959d5b11d35d56d015efd5d3bdc99fee",
+    "invariance_max_abs_error": 9.992007221626409e-16,
+    "number_of_datasets": 307,
+    "source_extraction_csv_sha256": "7f94160d8a1395c211f5645a5151e247a466af4132dd75bbd4ed86979ee4d524",
     "sketchmap_implementation_sha256": "10384510712e4ab460505089a94364b9c4aa9d70fad969561b6e11659b694a0f"
   }
 }

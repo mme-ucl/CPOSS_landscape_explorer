@@ -1,0 +1,73 @@
+{
+  "snapshot_revision": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+  "json_records": 310,
+  "included_records": 310,
+  "verified_json_aliases": {
+    "0.Chemiscope/4C2NBAMHA.json": "0.Chemiscope/4C2NBMHA.json",
+    "0.Chemiscope/FluorouracilA.json": "0.Chemiscope/5fluorouracilA.json",
+    "0.Chemiscope/PhloroglucinolDihydrateA.json": "0.Chemiscope/PhloroglucinolDihydrateB.json"
+  },
+  "excluded_legacy_searches": [
+    {
+      "source_page": "Methylazetidineone/Methylazetidineone.html",
+      "search_identifier": "A",
+      "original_json_paths": [
+        "0.Chemiscope/MethylazetidineoneA.json"
+      ],
+      "reason": "No corresponding JSON record in the current pinned inventory"
+    }
+  ],
+  "alias_evidence": [
+    {
+      "old": "4C2NBAMHA",
+      "current": "4C2NBMHA",
+      "json_unique_filenames": 1000,
+      "matched_across_documented_models": 1000,
+      "models": [
+        {
+          "model_id": 1,
+          "matching_archive_filenames": 1000,
+          "archive_unique_filenames": 1322,
+          "archive_sha": "9c0d0f9569a02bad209b987dfa57fe4025926eaa"
+        }
+      ],
+      "evidence_rule": "Every current JSON structure filename occurs in the documented source search archives"
+    },
+    {
+      "old": "FluorouracilA",
+      "current": "5fluorouracilA",
+      "json_unique_filenames": 62,
+      "matched_across_documented_models": 62,
+      "models": [
+        {
+          "model_id": 1,
+          "matching_archive_filenames": 62,
+          "archive_unique_filenames": 62,
+          "archive_sha": "4def6edf08bdbffafd32c55200f20e82e03ec257"
+        }
+      ],
+      "evidence_rule": "Every current JSON structure filename occurs in the documented source search archives"
+    },
+    {
+      "old": "PhloroglucinolDihydrateA",
+      "current": "PhloroglucinolDihydrateB",
+      "json_unique_filenames": 1458,
+      "matched_across_documented_models": 1458,
+      "models": [
+        {
+          "model_id": 1,
+          "matching_archive_filenames": 1395,
+          "archive_unique_filenames": 1458,
+          "archive_sha": "4f215f0a7232c93cd364c12dd32ce1622c4803bf"
+        },
+        {
+          "model_id": 2,
+          "matching_archive_filenames": 63,
+          "archive_unique_filenames": 63,
+          "archive_sha": "ecf8ebc8a5a8f54385f3e1dd5fc4911d85aa5d84"
+        }
+      ],
+      "evidence_rule": "Every current JSON structure filename occurs in the documented source search archives"
+    }
+  ]
+}

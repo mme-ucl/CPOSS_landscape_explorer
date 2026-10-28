@@ -1,7 +1,6 @@
 {
-  "compiler": "Codex desktop editor compiler",
-  "main_document": "/Users/matteo/Projects/github_loader/CPOSS_landscape_explorer/analysis/cposs_omc25_comparison/results_section.tex",
-  "status": "success",
-  "checked_with": "compile_latex_document",
-  "standalone_preview_and_paper_input_supported": true
+  "pdflatex_compiled": true,
+  "bibtex_resolved": true,
+  "undefined_references": false,
+  "overfull_boxes": false
 }

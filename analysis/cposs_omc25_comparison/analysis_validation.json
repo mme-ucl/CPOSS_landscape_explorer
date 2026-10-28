@@ -6,8 +6,8 @@
   "training_reported_mass_minus_common_min": -0.0321800000000394,
   "training_reported_mass_minus_common_max": 0.010915199999772085,
   "training_reported_mass_minus_common_max_absolute": 0.0321800000000394,
-  "cposs_total_systems": 235,
-  "cposs_single_verified": 190,
+  "cposs_total_systems": 234,
+  "cposs_single_verified": 189,
   "cposs_multicomponent_verified": 44,
   "cposs_excluded_systems": [
     "Tetrachlorobenzene"

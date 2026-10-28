@@ -1,10 +1,10 @@
 category,datasets,kind
-FIT,281,potential_family
+FIT,280,potential_family
 Williams,35,potential_family
 Day / Rice,22,potential_family
 Non-empirical / SAPT,4,potential_family
 Custom Delaware,1,potential_family
-MP2,176,electronic_method
+MP2,175,electronic_method
 PBE0 / PBE1PBE,109,electronic_method
 HF / SCF,41,electronic_method
 M06-2X,12,electronic_method

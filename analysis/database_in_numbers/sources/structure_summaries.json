@@ -9610,5 +9610,94 @@
     "unit_cell_atom_count_max": 232,
     "status": "calculated",
     "count_definition": "Number of entries in the linked Chemiscope structures array; includes experimental-reference entries and may include repeats; not the original search size or globally distinct packings"
+  },
+  "0.Chemiscope/5fluorouracilA.json": {
+    "path": "0.Chemiscope/5fluorouracilA.json",
+    "git_blob_sha": "e419a572cee29fafbbdc53d8873d23ab60badf9b",
+    "sha256": "fa7ae37a0aa710228319fc700d43929b4e4ad0f502f309ba2aa4a26acb36163b",
+    "bytes": 209031,
+    "structure_count": 62,
+    "unique_filename_count": 62,
+    "duplicate_filename_count": 0,
+    "property_lengths_valid": true,
+    "property_length_errors": {},
+    "property_names": [
+      "Filename",
+      "Density 1 /gcm-3",
+      "Packing Coefficient 1",
+      "Lattice Energy 1 /kJmol-1",
+      "Unit Cell Free Energy 1 /kJmol-1",
+      "Density 2 (PBE+TS) /kJmol-1",
+      "Lattice Energy (PBE+TS) 2 /kJmol-1",
+      "Lattice Energy (PBE+MBD) 3 /kJmol-1",
+      "Experimental Info"
+    ],
+    "experimental_info_unique_values": [
+      "",
+      "FURACL01 (Form IE)",
+      "FURACL03 (Form II)"
+    ],
+    "nonempty_experimental_info_count": 2,
+    "unit_cell_atom_count_min": 24,
+    "unit_cell_atom_count_max": 96,
+    "status": "calculated",
+    "count_definition": "Number of entries in the linked Chemiscope structures array; includes experimental-reference entries and may include repeats; not the original search size or globally distinct packings"
+  },
+  "0.Chemiscope/4C2NBMHA.json": {
+    "path": "0.Chemiscope/4C2NBMHA.json",
+    "git_blob_sha": "8ba09e17fcbfc2ab1ab6045493f7993de0d61bb7",
+    "sha256": "3192c6dbb9bafcb0baafdb42511205fc7b8cb6d117c50c84a21c991dbd62c057",
+    "bytes": 6092700,
+    "structure_count": 1000,
+    "unique_filename_count": 1000,
+    "duplicate_filename_count": 0,
+    "property_lengths_valid": true,
+    "property_length_errors": {},
+    "property_names": [
+      "Filename",
+      "Density 1 /gcm-3",
+      "Lattice Energy 1 /kJmol-1",
+      "Packing Coefficient 1",
+      "Space Group Number",
+      "Experimental Info"
+    ],
+    "experimental_info_unique_values": [
+      ""
+    ],
+    "nonempty_experimental_info_count": 0,
+    "unit_cell_atom_count_min": 2,
+    "unit_cell_atom_count_max": 720,
+    "status": "calculated",
+    "count_definition": "Number of entries in the linked Chemiscope structures array; includes experimental-reference entries and may include repeats; not the original search size or globally distinct packings"
+  },
+  "0.Chemiscope/PhloroglucinolDihydrateB.json": {
+    "path": "0.Chemiscope/PhloroglucinolDihydrateB.json",
+    "git_blob_sha": "3085b074d1128317a7eb8c030463b092e6f0ab99",
+    "sha256": "50492317a4040f0fe3538edabd9049114440be776bc849ffac2fe2d683ffaaac",
+    "bytes": 9211164,
+    "structure_count": 1458,
+    "unique_filename_count": 1458,
+    "duplicate_filename_count": 0,
+    "property_lengths_valid": true,
+    "property_length_errors": {},
+    "property_names": [
+      "Filename",
+      "Density 2 /gcm-3",
+      "Lattice Energy 2 /kJmol-1",
+      "Packing Coefficient 2",
+      "Density 1 /gcm-3",
+      "Lattice Energy 1 /kJmol-1",
+      "Packing Coefficient 1",
+      "Experimental Info"
+    ],
+    "experimental_info_unique_values": [
+      "",
+      "PHGLOH02 (disordered Form 1)"
+    ],
+    "nonempty_experimental_info_count": 13,
+    "unit_cell_atom_count_min": 21,
+    "unit_cell_atom_count_max": 168,
+    "status": "calculated",
+    "count_definition": "Number of entries in the linked Chemiscope structures array; includes experimental-reference entries and may include repeats; not the original search size or globally distinct packings"
   }
 }

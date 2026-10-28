@@ -1,6 +1,6 @@
 # CPOSS molecular sketch-map
 
-One isolated molecular representative per dataset, mapped with genuine scikit-matter sketch-map using molecular SOAP distances. The final map includes **308 of 311 datasets** and represents **519,004 of 519,167 archived structure files**. Three inconsistent source element tables are excluded and documented. The marker **area is proportional to the square root of the archive count**, with a numerical bubble legend. Counts do not weight the embedding.
+One isolated molecular representative per dataset, mapped with genuine scikit-matter sketch-map using molecular SOAP distances. The final map includes **307 of 310 datasets** and represents **517,431 of 517,594 archived structure files**. Three inconsistent source element tables are excluded and documented. The marker **area is proportional to the square root of the archive count**, with a numerical bubble legend. Counts do not weight the embedding.
 
 ## Deliverables
 
@@ -11,7 +11,7 @@ One isolated molecular representative per dataset, mapped with genuine scikit-ma
 - `molecules/`: extracted XYZ and SDF files, plus complete per-dataset JSON audits. Three SDFs have unresolved bond orders and are explicitly connectivity-only.
 - `selected_crystals/`: original selected RES files, unchanged from their verified archives.
 - `excluded_sources/`: original source files with contradictory element tables.
-- `tables/dataset_embedding.csv`: all 311 datasets, archived counts, source/model/crystal selections, molecular identity, geometry validation, map coordinates and exclusions.
+- `tables/dataset_embedding.csv`: all 310 datasets, archived counts, source/model/crystal selections, molecular identity, geometry validation, map coordinates and exclusions.
 - `tables/provenance.csv`, `source_issues.csv`, `exclusions.csv`: reported/calculated/inferred/missing statuses and source URLs.
 - `tables/molecular_distances.csv`, `data/molecular_descriptors.npz`: full indexed molecular distances, normalized SOAP vectors and kernel.
 - `data/sketchmap_runs.npz`, `tables/optimization_runs.csv`, `initialization_stability.csv`: all five initialization runs, two sigma sensitivity runs and diagnostics.
@@ -70,3 +70,9 @@ The callouts are urea, succinic acid, aspirin, paracetamol, caffeine, carbamazep
 The original ZIPs and workbooks are cached by Git blob SHA at `/tmp/cposs-model-archive-cache/` and `/tmp/cposs-workbook-cache/`. To prohibit source downloads use `extract_molecules.py --offline`. Without `--force`, existing per-dataset extraction audits are reused. To inspect a subset use `--dataset DatasetID ...`; this writes subset audit tables and leaves the complete inventory table intact. The extraction preserves the coordinate files and reported metadata, makes no geometry optimizations and adds no missing atoms. Full source archives are excluded from the deliverable; selected original crystals and all extracted molecules are included.
 
 SOAP captures relative composition and local molecular geometry, not crystal packing, enantiomeric identity or complete multicomponent chemistry. Source formulas and inferred molecular assignments are distinct fields. Refer to the report before interpreting map proximity or reusing connectivity-only SDFs.
+
+The paper figure uses 55% larger fonts. Map axis labels are omitted; the caption explains the dimensionless coordinates, arbitrary orientation, logarithmic colour scale and square-root marker-area rule. The plotted coordinates and approved callout assignments are preserved.
+
+## Refreshed source scope
+
+This run uses the 310 current JSON records from the 27 October 2026 CPOSS snapshot. Molecular extraction, SOAP descriptors, all five initializations and the two switching-distance sensitivity runs were repeated. The three element-table exclusions remain, giving 307 mapped records. For a later parent-source refresh, run `extract_molecules.py --refresh-inputs`, then `embed.py`, `plot.py` and `analyse_results.py`. Presentation remains unchanged.

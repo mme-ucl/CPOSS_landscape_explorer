@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "checks_passed": 292,
-  "datasets": 311,
-  "archive_structure_files": 519167,
-  "model_archives_counted": 509,
-  "visualization_entries": 155824,
-  "workbook_energy_records": 548587,
+  "checks_passed": 294,
+  "datasets": 310,
+  "archive_structure_files": 517594,
+  "model_archives_counted": 508,
+  "visualization_entries": 158344,
+  "workbook_energy_records": 547014,
   "named_scientists": 45,
   "unique_csp_papers": 75,
   "unique_scientific_papers_all_scopes": 574,
@@ -13,7 +13,7 @@
   "pdf_fonts": [
     "/DBEONC+Helvetica",
     "/CJIGXG+Helvetica",
-    "/CNNTVI+Helvetica-Bold"
+    "/HCZMWH+Helvetica-Bold"
   ],
   "png_dimensions": [
     2480,
@@ -21,6 +21,8 @@
   ],
   "checks": [
     "Dataset identifiers are unique and match manifest",
+    "Every JSON record in the pinned source inventory is included exactly once",
+    "All current JSON records have verified visualization counts",
     "Annual landscape totals equal all datasets with single study years",
     "Cumulative dataset series sums annual counts and ends at all single-year datasets",
     "Annual structure totals equal dated archive structure counts",
@@ -299,8 +301,8 @@
     "PDF font is embedded: /DBEONC+Helvetica",
     "PDF font is Helvetica: /CJIGXG+Helvetica",
     "PDF font is embedded: /CJIGXG+Helvetica",
-    "PDF font is Helvetica: /CNNTVI+Helvetica-Bold",
-    "PDF font is embedded: /CNNTVI+Helvetica-Bold",
+    "PDF font is Helvetica: /HCZMWH+Helvetica-Bold",
+    "PDF font is embedded: /HCZMWH+Helvetica-Bold",
     "Updated PDF title is present and extractable",
     "Cumulative dataset panel is present",
     "PDF headline displays the reconciled archive count and its counting basis",

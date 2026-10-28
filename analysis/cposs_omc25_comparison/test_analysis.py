@@ -40,8 +40,8 @@ class PopulationTests(unittest.TestCase):
         cls.prevalence = pd.read_csv(analysis.TABLES / 'elemental_prevalence.csv')
 
     def test_cposs_counting_unit_and_exclusion_reconciliation(self):
-        self.assertEqual((len(self.audit), len(self.primary)), (235, 190))
-        self.assertEqual(self.primary.source_url.nunique(), 190)
+        self.assertEqual((len(self.audit), len(self.primary)), (234, 189))
+        self.assertEqual(self.primary.source_url.nunique(), 189)
         self.assertEqual(int(self.audit.included_multicomponent.sum()), 44)
         self.assertEqual(self.audit.loc[~self.audit.coordinate_validated, 'molecular_system'].tolist(), ['Tetrachlorobenzene'])
         self.assertEqual(int(self.audit.n_failed_search_representatives.sum()), 3)
@@ -67,8 +67,8 @@ class PopulationTests(unittest.TestCase):
         table = self.prevalence[self.prevalence.population == 'CPOSS_single_verified']
         for row in table.itertuples():
             self.assertEqual(row.records_with_element, counts[row.element])
-            self.assertEqual(row.valid_records, 190)
-            self.assertAlmostEqual(row.prevalence_percent, 100 * counts[row.element] / 190, places=8)
+            self.assertEqual(row.valid_records, 189)
+            self.assertAlmostEqual(row.prevalence_percent, 100 * counts[row.element] / 189, places=8)
 
     def test_atom_count_and_mass_have_consistent_basis(self):
         weights = json.loads((analysis.INPUTS / 'atomic_weights.json').read_text())['weights_g_mol']

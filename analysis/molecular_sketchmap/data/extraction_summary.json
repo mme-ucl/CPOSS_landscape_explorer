@@ -1,9 +1,9 @@
 {
-  "attempted": 311,
-  "included": 308,
+  "attempted": 310,
+  "included": 307,
   "excluded": 3,
-  "represented_archive_structure_files": 519004,
-  "all_archive_structure_files": 519167,
+  "represented_archive_structure_files": 517431,
+  "all_archive_structure_files": 517594,
   "exclusions": [
     {
       "dataset_id": "25-dichloronitrobenzeneA",

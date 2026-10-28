@@ -57,7 +57,8 @@ def main():
         raise AssertionError(f'Text outside panel: {outside}')
     pdf = BASE / 'output/pdf/panel_c_software_proposal.pdf'
     png = BASE / 'figures/panel_c_software_proposal.png'
-    timestamp = datetime(2026, 10, 23, tzinfo=ZoneInfo('Europe/London'))
+    snapshot = json.loads((BASE / 'manifest.json').read_text())
+    timestamp = datetime.fromisoformat(snapshot['accessed_date']).replace(tzinfo=ZoneInfo('Europe/London'))
     fig.savefig(pdf, metadata={'Title': 'Proposed panel C: reported CSP software',
                               'Author': 'CPOSS workbook crosscheck',
                               'CreationDate': timestamp, 'ModDate': timestamp})
@@ -67,7 +68,7 @@ def main():
     subprocess.run(['pdftoppm', '-r', '300', '-singlefile', '-png', str(pdf),
                     str(png.with_suffix(''))], check=True)
     print(json.dumps({'pdf': str(pdf), 'png': str(png), 'size_pt': [width, height],
-                      'text_outside_panel': outside, 'datasets': 311, 'counts': counts}, indent=2))
+                      'text_outside_panel': outside, 'datasets': int(counts[0]['denominator']), 'counts': counts}, indent=2))
 
 
 if __name__ == '__main__':

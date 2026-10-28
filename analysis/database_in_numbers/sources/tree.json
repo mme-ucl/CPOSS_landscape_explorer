@@ -1,13 +1,13 @@
 {
-  "sha": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
-  "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/trees/d65c1732ab6db46b8af34e0646a760c56a8d559c",
+  "sha": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+  "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/trees/6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
   "tree": [
     {
       "path": "0.Chemiscope",
       "mode": "040000",
       "type": "tree",
-      "sha": "5fc49a5c73c817bcfdef7447270046f6b748dd1d",
-      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/trees/5fc49a5c73c817bcfdef7447270046f6b748dd1d"
+      "sha": "6d6047c4761893a939145c0cec365ea50bbe7eee",
+      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/trees/6d6047c4761893a939145c0cec365ea50bbe7eee"
     },
     {
       "path": "0.Chemiscope/2-fluoroethynylbenzeneA.json",
@@ -1610,14 +1610,6 @@
       "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/c6f9a2a15865bbb91feb51cd4407cfba9f804db8"
     },
     {
-      "path": "0.Chemiscope/GalunisertibAworking.json",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "d3a7002f939348b2493c19f5411c629a9a0ed0fb",
-      "size": 14051387,
-      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/d3a7002f939348b2493c19f5411c629a9a0ed0fb"
-    },
-    {
       "path": "0.Chemiscope/GentisicAcidA.json",
       "mode": "100644",
       "type": "blob",
@@ -1882,14 +1874,6 @@
       "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/56d0b8557d839849846f51da84b8fd63d300ac00"
     },
     {
-      "path": "0.Chemiscope/MefenamicAcidA_full.json",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "4c75001e9e700c95b76c5fd4cead4ccf95126ad8",
-      "size": 16528568,
-      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/4c75001e9e700c95b76c5fd4cead4ccf95126ad8"
-    },
-    {
       "path": "0.Chemiscope/MemantineHydrochlorideA.json",
       "mode": "100644",
       "type": "blob",
@@ -1968,14 +1952,6 @@
       "sha": "742f9c9ad4632bef136ad3134d24df949c51de08",
       "size": 11017270,
       "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/742f9c9ad4632bef136ad3134d24df949c51de08"
-    },
-    {
-      "path": "0.Chemiscope/NiflumicAcidA_full.json",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "c9a8e839c36af6e631e8f3c0c596f8f052af398f",
-      "size": 16485172,
-      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/c9a8e839c36af6e631e8f3c0c596f8f052af398f"
     },
     {
       "path": "0.Chemiscope/NitrofurantoinA.json",
@@ -2258,14 +2234,6 @@
       "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/5701c9f05fcde7589244f64c90f9e459c23a307f"
     },
     {
-      "path": "0.Chemiscope/SuccinicAcidD_full.json",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "6aa8a66e2a23bd948b2497e0fbe04bd3502a92a9",
-      "size": 18368525,
-      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/6aa8a66e2a23bd948b2497e0fbe04bd3502a92a9"
-    },
-    {
       "path": "0.Chemiscope/SulfadiazineA.json",
       "mode": "100644",
       "type": "blob",
@@ -2368,14 +2336,6 @@
       "sha": "0481636e5d102f4f643a028a1d69bbaafc2dd80d",
       "size": 9880179,
       "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/0481636e5d102f4f643a028a1d69bbaafc2dd80d"
-    },
-    {
-      "path": "0.Chemiscope/TolfenamicAcidB_full.json",
-      "mode": "100644",
-      "type": "blob",
-      "sha": "9f417d4ffabc7efccdbca2019c40d296a4eb1994",
-      "size": 18477669,
-      "url": "https://api.github.com/repos/LouisePrice/CPOSS_Database/git/blobs/9f417d4ffabc7efccdbca2019c40d296a4eb1994"
     },
     {
       "path": "0.Chemiscope/TransFOX7A.json",

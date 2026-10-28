@@ -2,7 +2,7 @@
 
 ## Coverage and structure counts
 
-All **311 datasets** were attempted at frozen source revision `d65c1732ab6db46b8af34e0646a760c56a8d559c`, accessed 2026-10-23. The complete inventory contains **519,167 RES structure files in 509 documented energy-model ZIPs**. Molecules were extracted for **308 datasets**, representing **519,004 files** (99.969% of inventory files). Counts include separate model-specific representations; geometric uniqueness is unknown. The three excluded datasets account for **163 files**:
+All **310 datasets** were attempted at frozen source revision `6a77cc47b35f268f81a1d433b62c3e0917e20ffd`, accessed 2026-10-27. The complete inventory contains **517,594 RES structure files in 508 documented energy-model ZIPs**. Molecules were extracted for **307 datasets**, representing **517,431 files** (99.969% of inventory files). Counts include separate model-specific representations; geometric uniqueness is unknown. The 3 excluded datasets account for **163 files**:
 
 | Dataset | Archived files | Reason |
 | --- | --- | --- |
@@ -46,25 +46,25 @@ This audit also exposed a defect in the preceding formula parser: whitespace rem
 
 DScribe SOAP uses all atoms, including hydrogen, with a shared element set `H, C, N, O, F, Si, S, Cl, Cu, Br, I`; periodicity is disabled after extraction. Settings: cutoff 4.5 A, Gaussian width 0.4 A, Gaussian radial basis, n_max=6, l_max=4, outer averaging of atomic power spectra, and per-molecule L2 normalization. The result has **11,055 features**. There is no per-feature standardization, explicit molecular-mass feature or explicit atom-count feature. Averaging removes extensive size scaling; relative composition and local geometry within the cutoff determine similarity. Long-range shape beyond the cutoff, enantiomeric differences, crystal packing, complete conformational ensembles and omitted coformers are not represented.
 
-The molecular kernel is `K_ij=(x_i dot x_j)^2`; distance is `sqrt(max(0,2-2K_ij))`. The dot product uses DScribe's compact power-spectrum entries directly; this is a defined SOAP-feature polynomial kernel, without additional reweighting to reconstruct duplicated terms of the original analytical SOAP kernel. Rotation, translation and atom-permutation invariance were checked on an actual extracted molecule: maximum normalized descriptor difference **7.08e-16**. The normalized descriptors, kernel and complete indexed distance matrix are supplied in NPZ and CSV.
+The molecular kernel is `K_ij=(x_i dot x_j)^2`; distance is `sqrt(max(0,2-2K_ij))`. The dot product uses DScribe's compact power-spectrum entries directly; this is a defined SOAP-feature polynomial kernel, without additional reweighting to reconstruct duplicated terms of the original analytical SOAP kernel. Rotation, translation and atom-permutation invariance were checked on an actual extracted molecule: maximum normalized descriptor difference **9.99e-16**. The normalized descriptors, kernel and complete indexed distance matrix are supplied in NPZ and CSV.
 
 The genuine **scikit-matter 0.4.1 SketchMap** estimator is used with precomputed distances. Both sigmoid exponent pairs are (1,4), appropriate to the cited molecular mapping protocol, and sigma is 0.8 times the positive-distance histogram mode, giving **0.496798**. Histogram bins use the Freedman-Diaconis estimate clipped to 30-80. Optimization uses L-BFGS-B, 100 raw-distance refinement steps, up to 2,500 main iterations and five gradient-based annealing levels ending in pure sigmoid stress. All datasets have equal weight; structure counts do not enter descriptors, initialization or fitting.
 
-Five initializations use classical MDS coordinates, unperturbed for seed 0 and perturbed for seeds 17, 41, 83 and 137 (Gaussian SD 0.25 times coordinate RMS). The minimum-stress run, seed **41**, is refined for up to 5,000 further iterations. A rigid rotation/reflection sets the page orientation; no individual coordinates are shifted or jittered. The displayed orientation has no intrinsic physical meaning. Parameter values, source/code hashes, package versions and all run coordinates are archived.
+Five initializations use classical MDS coordinates, unperturbed for seed 0 and perturbed for seeds 17, 41, 83 and 137 (Gaussian SD 0.25 times coordinate RMS). The minimum-stress run, seed **83**, is refined for up to 5,000 further iterations. A rigid rotation/reflection sets the page orientation; no individual coordinates are shifted or jittered. The displayed orientation has no intrinsic physical meaning. Parameter values, source/code hashes, package versions and all run coordinates are archived.
 
 ## Projection quality and sensitivity
 
-- Final mean squared transformed-distance stress: **0.00628435**.
-- Spearman correlation of all high-/low-dimensional pair distances: **0.9381**.
-- Trustworthiness at 10 neighbours: **0.9600**.
-- Original 10-neighbour retention: **0.5912**. The projection does not preserve every molecular neighbour.
-- Extra refinement changed stress from **0.0062843524** to **0.0062843476** in 2 iterations; maximum absolute analytical stress-gradient component is **4.53e-07**. This is a convergence diagnostic, not proof of a global minimum.
-- Across initializations, pair-distance correlations with the chosen map are at least **0.9943**, with 10-neighbour agreement **0.949-0.999**. Rigid Procrustes relative RMS can reach **0.242**, so some island positions vary despite stable distance/neighbour relationships.
-- Changing sigma by -20%/+20% gives pair-distance correlations with the chosen map of **0.9923-0.9944**, and 10-neighbour agreements **0.892-0.935**. These settings are a sensitivity check, not a visual tuning procedure.
+- Final mean squared transformed-distance stress: **0.00629849**.
+- Spearman correlation of all high-/low-dimensional pair distances: **0.9377**.
+- Trustworthiness at 10 neighbours: **0.9590**.
+- Original 10-neighbour retention: **0.5879**. The projection does not preserve every molecular neighbour.
+- Extra refinement changed stress from **0.0062984869** to **0.0062984863** in 1 iterations; maximum absolute analytical stress-gradient component is **2.61e-07**. This is a convergence diagnostic, not proof of a global minimum.
+- Across initializations, pair-distance correlations with the chosen map are at least **0.9967**, with 10-neighbour agreement **0.979-1.000**. Rigid Procrustes relative RMS can reach **0.142**, so some island positions vary despite stable distance/neighbour relationships.
+- Changing sigma by -20%/+20% gives pair-distance correlations with the chosen map of **0.9952-0.9967**, and 10-neighbour agreements **0.912-0.953**. These settings are a sensitivity check, not a visual tuning procedure.
 
 ## Repeated identities and display
 
-There are **210 principal constitutional identity keys**, of which **69 occur in multiple datasets**. Unresolved graphs use formula-only keys and are separately flagged. Comparisons of repeated identities yield **97 calculable heavy-atom, symmetry-matched RMSDs**, ranging **0.000075-3.595763 A**; the same constitution can have different conformations. RMSDs use proper rotational alignment (no coordinate reflection), up to 10,000 atom mappings, and the first dataset in each identity group as reference. They are not exhaustive all-pair conformational comparisons. The unresolved metal-complex identity group has no graph-matched RMSD.
+There are **209 principal constitutional identity keys**, of which **69 occur in multiple datasets**. Unresolved graphs use formula-only keys and are separately flagged. Comparisons of repeated identities yield **97 calculable heavy-atom, symmetry-matched RMSDs**, ranging **0.000075-3.595763 A**; the same constitution can have different conformations. RMSDs use proper rotational alignment (no coordinate reflection), up to 10,000 atom mappings, and the first dataset in each identity group as reference. They are not exhaustive all-pair conformational comparisons. The unresolved metal-complex identity group has no graph-matched RMSD.
 
 **0 dataset pairs** have SOAP distances below 1e-6. Separate points are retained at their fitted coordinates; no offset is introduced to make them appear distinct. Large markers are drawn first and smaller markers afterward. Overlap can hide points, so the complete dataset table, rather than visual point counting, defines coverage.
 
@@ -72,7 +72,7 @@ Marker area is **1.8 sqrt(N) square points**, with an explicit reference-bubble 
 
 Assignment to surrounding positions minimizes leader length. The current ball-and-stick callouts use the **Tachyon 0.99b6 CPU ray tracer**, the rendering engine used by VMD, with a matte/chalky ambient-occlusion appearance. They are native sphere/cylinder scenes, using the original full-precision nuclear coordinates and inferred connectivity: sphere scale 0.28 (hydrogens 0.23), stick radius 0.12 A, orthographic camera and conventional element colours. Frozen camera rotations preserve the approved views without changing geometry. Ambient-occlusion settings are 0.8 ambient, 0.3 direct and 128 ray samples, with diffuse coefficient 1 and specular/Phong coefficients 0. Individual white-background RGB PNGs are 1800 x 1200 pixels with 600 dpi metadata; the full A4 PNG is 300 dpi. The PDF retains vector map points, leaders, colourbar and text, with native-resolution molecular images. Helvetica is used throughout and embedded in the PDF. Native scene files, logs, renderer/source hashes and settings are in `figures/callouts_ao/` and `data/tachyon_rendering.json`; build/reproduction instructions are in `tachyon_build.md`. Earlier PyMOL images and sessions remain as view provenance.
 
-The visible title, dataset/count subtitle and bottom exclusion/coformer notes were removed at the author's request. Their scientific context remains in the standalone caption and report. Map coordinates, marker sizing/colour, molecular selection and archive counts are unchanged.
+The figure retains the approved 55% larger typography, unlabelled map axes, palette and molecular callout style. Methodological explanations remain in the standalone caption and report. Source records, archive counts, descriptors and map coordinates were recalculated for the current JSON inventory.
 
 ## Primary methodological references
 

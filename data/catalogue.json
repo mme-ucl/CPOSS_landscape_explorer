@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "sourceTree": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
-  "generatedAt": "2026-10-26T12:39:58+00:00",
+  "sourceTree": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+  "generatedAt": "2026-10-27T18:19:10+00:00",
   "collections": [
     {
       "id": "BlindTest",
@@ -9881,18 +9881,6 @@
       ]
     },
     {
-      "id": "GalunisertibAworking",
-      "filename": "GalunisertibAworking.json",
-      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/GalunisertibAworking.json",
-      "label": "GalunisertibAworking",
-      "molecule": "",
-      "formulas": [],
-      "aliases": [],
-      "codes": [],
-      "collections": [],
-      "cases": []
-    },
-    {
       "id": "GentisicAcidA",
       "filename": "GentisicAcidA.json",
       "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/GentisicAcidA.json",
@@ -11719,18 +11707,6 @@
       ]
     },
     {
-      "id": "MefenamicAcidA_full",
-      "filename": "MefenamicAcidA_full.json",
-      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/MefenamicAcidA_full.json",
-      "label": "MefenamicAcidA_full",
-      "molecule": "",
-      "formulas": [],
-      "aliases": [],
-      "codes": [],
-      "collections": [],
-      "cases": []
-    },
-    {
       "id": "MemantineHydrochlorideA",
       "filename": "MemantineHydrochlorideA.json",
       "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/MemantineHydrochlorideA.json",
@@ -12231,18 +12207,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "NiflumicAcidA_full",
-      "filename": "NiflumicAcidA_full.json",
-      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/NiflumicAcidA_full.json",
-      "label": "NiflumicAcidA_full",
-      "molecule": "",
-      "formulas": [],
-      "aliases": [],
-      "codes": [],
-      "collections": [],
-      "cases": []
     },
     {
       "id": "NitrofurantoinA",
@@ -14070,18 +14034,6 @@
       ]
     },
     {
-      "id": "SuccinicAcidD_full",
-      "filename": "SuccinicAcidD_full.json",
-      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/SuccinicAcidD_full.json",
-      "label": "SuccinicAcidD_full",
-      "molecule": "",
-      "formulas": [],
-      "aliases": [],
-      "codes": [],
-      "collections": [],
-      "cases": []
-    },
-    {
       "id": "SulfadiazineA",
       "filename": "SulfadiazineA.json",
       "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/SulfadiazineA.json",
@@ -14794,18 +14746,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "TolfenamicAcidB_full",
-      "filename": "TolfenamicAcidB_full.json",
-      "url": "https://raw.githubusercontent.com/LouisePrice/CPOSS_Database/main/0.Chemiscope/TolfenamicAcidB_full.json",
-      "label": "TolfenamicAcidB_full",
-      "molecule": "",
-      "formulas": [],
-      "aliases": [],
-      "codes": [],
-      "collections": [],
-      "cases": []
     },
     {
       "id": "TransFOX7A",

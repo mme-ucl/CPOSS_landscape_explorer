@@ -34,12 +34,12 @@ def git_sha(raw):
     return hashlib.sha1(b"blob " + str(len(raw)).encode() + b"\0" + raw).hexdigest()
 
 
-def prepare_inputs():
+def prepare_inputs(refresh=False):
     INPUTS.mkdir(exist_ok=True)
     for name in ["datasets.csv", "structure_archive_counts.csv", "structure_count_reconciliation.csv", "dataset_archive_counts.csv", "manifest.json"]:
         target = INPUTS / name
         original = SOURCE / (name if name == "manifest.json" else "tables/" + name)
-        if not target.exists(): shutil.copy2(original, target)
+        if refresh or not target.exists(): shutil.copy2(original, target)
 
 
 def cached_source(path, sha, cache, suffix):
@@ -374,20 +374,21 @@ def main():
     global ALLOW_DOWNLOAD
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--force", action="store_true")
+    parser.add_argument("--refresh-inputs", action="store_true", help="Replace derived CPOSS input copies from the current parent analysis and repeat extraction")
     parser.add_argument("--dataset", nargs="*")
     parser.add_argument("--offline", action="store_true", help="Require cached originals; never download")
     args = parser.parse_args()
     ALLOW_DOWNLOAD = not args.offline
     for directory in ["molecules", "selected_crystals", "tables", "data", "figures", "output/pdf"]:
         (BASE / directory).mkdir(parents=True, exist_ok=True)
-    prepare_inputs()
+    prepare_inputs(args.refresh_inputs)
     datasets = pd.read_csv(INPUTS / "datasets.csv", keep_default_na=False)
     archives = pd.read_csv(INPUTS / "structure_archive_counts.csv")
     workbooks = pd.read_csv(INPUTS / "structure_count_reconciliation.csv").set_index("dataset_id")
     if args.dataset: datasets = datasets[datasets.dataset_id.isin(args.dataset)]
     results = []
     with ThreadPoolExecutor(max_workers=4) as pool:
-        futures = [pool.submit(extract_one, row, archives, workbooks, args.force) for row in datasets.itertuples()]
+        futures = [pool.submit(extract_one, row, archives, workbooks, args.force or args.refresh_inputs) for row in datasets.itertuples()]
         for i, future in enumerate(as_completed(futures), 1):
             result = future.result(); results.append(result)
             if i % 20 == 0 or not result["included"] or i == len(futures):

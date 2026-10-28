@@ -40,6 +40,12 @@ def main():
         checks.append(description)
 
     check(len(d) == manifest["datasets"] and d.dataset_id.is_unique, "Dataset identifiers are unique and match manifest")
+    if manifest.get("inventory_scope") == "current_json_records":
+        tree = json.loads((BASE / "sources/tree.json").read_text())
+        ids = {Path(row["path"]).stem for row in tree["tree"] if row["type"] == "blob"
+               and row["path"].startswith("0.Chemiscope/") and row["path"].endswith(".json")}
+        check(set(d.dataset_id) == ids, "Every JSON record in the pinned source inventory is included exactly once")
+        check(d.structure_count.notna().all(), "All current JSON records have verified visualization counts")
     check(int(a.landscapes.sum()) == int(d.study_year.notna().sum()), "Annual landscape totals equal all datasets with single study years")
     check(a.cumulative_datasets.iloc[-1] == int(d.study_year.notna().sum()) and np.array_equal(a.cumulative_datasets, a.landscapes.cumsum()), "Cumulative dataset series sums annual counts and ends at all single-year datasets")
     check(np.isclose(a.structures.sum(), plot_data[plot_data.study_year.notna()].structure_count.sum()), "Annual structure totals equal dated archive structure counts")

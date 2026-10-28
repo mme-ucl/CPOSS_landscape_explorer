@@ -1,45 +1,45 @@
 # CPOSS metadata audit and analysis
 
-Snapshot: `d65c1732ab6db46b8af34e0646a760c56a8d559c`. Accessed **2026-10-23**, Europe/London.
+Snapshot: `6a77cc47b35f268f81a1d433b62c3e0917e20ffd`. Accessed **2026-10-27**, Europe/London.
 Source: [CPOSS database index](https://louiseprice.github.io/CPOSS_Database/index.html). All source HTML and the repository inventory are archived in `sources/`.
 
 ## Findings
 
-- **311 documented CSP datasets** across **235 reachable molecule pages**.
-- **519,167 archived structure files** across **509 energy-model ZIP archives**, covering all **311 datasets**. This supports the manuscript's statement of more than 500,000 stored structures when model-specific representations are counted separately. The median per dataset is **498**, the interquartile range is **113.0-1435.5**, and the range is **11-20408** files.
-- The former **155,824** total counted only available Chemiscope visualization exports. The spreadsheets contain **402,863 Filename rows** and **548,587 numeric energy records**. These overlapping scopes are compared in [the structure-count reconciliation](structure_count_reconciliation.md); they must not be added together.
-- **45 named scientists** across **286 datasets**; **25 datasets** say Unknown/Not sure rather than naming a scientist. The most frequently credited person is **Louise Price**, associated with **65 datasets**. Credits overlap and are not an assessment of research productivity.
-- **233 documented molecular systems** have parseable formulas. Molar masses span **32.04-890.88 g/mol** and atom counts span **5-120**, on the written molecule/formula-unit basis.
+- **310 documented CSP datasets** across **234 reachable molecule pages**.
+- **517,594 archived structure files** across **508 energy-model ZIP archives**, covering all **310 datasets**. This supports the manuscript's statement of more than 500,000 stored structures when model-specific representations are counted separately. The median per dataset is **497**, the interquartile range is **112.5-1399.2**, and the range is **11-20408** files.
+- The former **158,344** total counted only available Chemiscope visualization exports. The spreadsheets contain **401,290 Filename rows** and **547,014 numeric energy records**. These overlapping scopes are compared in [the structure-count reconciliation](structure_count_reconciliation.md); they must not be added together.
+- **45 named scientists** across **285 datasets**; **25 datasets** say Unknown/Not sure rather than naming a scientist. The most frequently credited person is **Louise Price**, associated with **65 datasets**. Credits overlap and are not an assessment of research productivity.
+- **232 documented molecular systems** have parseable formulas. Molar masses span **32.04-890.88 g/mol** and atom counts span **5-120**, on the written molecule/formula-unit basis.
 - **75 unique linked CSP papers**, **577 unique linked references overall**, including experimental-context papers and research data records. **192 datasets** link at least one CSP paper after explicit publication cross-references are resolved.
-- The largest annual count with an unambiguous study date is **27 datasets in 2018**. **236 datasets** have single years; **75** have ranges or pre-2010 dates, so this is incomplete chronology.
+- The largest annual count with an unambiguous study date is **27 datasets in 2018**. **236 datasets** have single years; **74** have ranges or pre-2010 dates, so this is incomplete chronology.
 
 | Field | Available | Total datasets |
 | --- | --- | --- |
-| Documented CSP searches | 311 | 311 |
-| Complete coordinate-archive structure counts | 311 | 311 |
-| Linked JSON visualization counts | 307 | 311 |
-| Complete workbook Filename/energy counts | 311 | 311 |
-| Named scientist credits | 286 | 311 |
-| Single study year | 236 | 311 |
-| Molar mass and atom count from formula | 308 | 311 |
-| Dataset release/deposition year | 0 | 311 |
-| Original generated/optimised/retained counts as numeric HTML fields | 0 | 311 |
+| Documented CSP searches | 310 | 310 |
+| Complete coordinate-archive structure counts | 310 | 310 |
+| Linked JSON visualization counts | 310 | 310 |
+| Complete workbook Filename/energy counts | 310 | 310 |
+| Named scientist credits | 285 | 310 |
+| Single study year | 236 | 310 |
+| Molar mass and atom count from formula | 307 | 310 |
+| Dataset release/deposition year | 0 | 310 |
+| Original generated/optimised/retained counts as numeric HTML fields | 0 | 310 |
 
 ## Dataset scope and duplicate handling
 
-The extractor follows same-database HTML links from the index and validates them against a complete GitHub repository tree. **243 of 245 HTML files** are reachable. A contributor-statistics placeholder and a misspelled duplicate molecule page are unlinked and excluded. The audit has **311 search occurrences**, keyed by the explicitly linked Chemiscope filename. A molecule page can describe several searches; an individual search can have several energy models. The analysis includes searches with broken JSON links rather than silently dropping them from the dataset denominator.
+The extractor follows same-database HTML links from the index and validates them against a complete GitHub repository tree. **243 of 245 HTML files** are reachable. A contributor-statistics placeholder and a misspelled duplicate molecule page are unlinked and excluded. The audit has **311 search occurrences**, keyed by the explicitly linked Chemiscope filename. A molecule page can describe several searches; an individual search can have several energy models. The current analysis uses exactly one record per JSON file in the pinned inventory. Three outdated page identifiers are reconciled using complete structure-filename coverage against the documented archives. The legacy MethylazetidineoneA search has no current JSON file and is explicitly excluded; `sources/current_inventory_scope.json` preserves the reconciliation and exclusion evidence.
 
-**8 JSON files** exist in the repository but are not explicitly linked from reachable searches. These include full/filtered variants and unmatched files. They are inventoried in `unlinked_json_inventory.csv` and are not added to linked visualization exports or coordinate archives. The headline describes the public HTML-linked model archives, not every representation in the repository.
+**0 JSON files** exist in the repository but are not explicitly linked from reachable searches. These include full/filtered variants and unmatched files. They are inventoried in `unlinked_json_inventory.csv` and are not added to linked visualization exports or coordinate archives. The headline describes the public HTML-linked model archives, not every representation in the repository.
 
 Every archived HTML file, downloaded JSON, original workbook and model ZIP was checked against its Git blob SHA at the frozen revision. Lightweight summaries retain the original file hashes, counts and diagnostic checks. The large source caches stay outside the deliverable. Rebuilding the figure offline uses delivered CSVs and summaries; independent source verification requires downloading the originals.
 
 ## What the structure count means
 
-The figure uses **actual RES coordinate members in every documented energy-model ZIP**, excluding MacOS resource forks. Separate energy models are retained, while ancillary pDFT supplements are not added. All 509 archives were readable, checksum-verified and contained RES files; their Git hashes are distinct. No geometric deduplication across models or searches has been performed, so the total must not be described as unique predicted crystals. The HTML does not give original generation/optimization/retention counts; these remain missing.
+The figure uses **actual RES coordinate members in every documented energy-model ZIP**, excluding MacOS resource forks. Separate energy models are retained, while ancillary pDFT supplements are not added. All 508 archives were readable, checksum-verified and contained RES files; their Git hashes are distinct. No geometric deduplication across models or searches has been performed, so the total must not be described as unique predicted crystals. The HTML does not give original generation/optimization/retention counts; these remain missing.
 
-**76 linked visualizations have exactly 1,000 entries**, while their full workbooks contain 318,650 Filename rows. Many visualizations therefore represent subsets; no universal export limit is assumed. The JSON measurements remain in the original `datasets.csv`, while `plot_datasets.csv` names both visualization and archive counts explicitly. JSON filename repeats remain flagged: TetramethylpyrazineA.json (105 repeated labels), 3aminobenzamideA.json (145 repeated labels).
+**77 linked visualizations have exactly 1,000 entries**, while their full workbooks contain 318,650 Filename rows. Many visualizations therefore represent subsets; no universal export limit is assumed. The JSON measurements remain in the original `datasets.csv`, while `plot_datasets.csv` names both visualization and archive counts explicitly. JSON filename repeats remain flagged: 3aminobenzamideA.json (145 repeated labels), TetramethylpyrazineA.json (105 repeated labels).
 
-Four linked JSON files are absent: **4C2NBAMHA, FluorouracilA, MethylazetidineoneA, PhloroglucinolDihydrateA**. Their visualization counts remain missing; their intact model archives are now counted directly, contributing 4,478 RES files. `structure_file_audit.csv` retains the original broken-link and array checks. Of the 509 model archive counts, 454 match their numeric workbook energy columns and 55 differ. The workbook total also includes 109 energy records without unambiguous HTML model descriptions. These uncertainties are documented without adding spreadsheet records to coordinate-file counts; see `archive_workbook_discrepancies.csv` and `structure_count_reconciliation.md`.
+All 310 current JSON records have verified visualization summaries. Outdated page identifiers are reconciled in `sources/current_inventory_scope.json`; source searches without a current JSON record are outside this analysis. Archive and workbook counts are tabulated separately in `archive_workbook_discrepancies.csv` and `structure_count_reconciliation.md`.
 
 ## Scientist names and molecular composition
 
@@ -49,16 +49,16 @@ Formula masses use RDKit's average atomic weights, not monoisotopic masses. The 
 
 ## Energy models and DFT
 
-There are **509 energy-model records** and **31 supplementary pDFT links**. Programs, potential descriptions, intramolecular descriptions, basis sets and explicitly named dispersion corrections are retained in `energy_models.csv`. Raw descriptions remain authoritative; text-based normalisations are marked inferred. PBE0 and PBE1PBE are grouped as a single conventional electronic-method category; no missing method is filled from an unrelated search.
+There are **508 energy-model records** and **31 supplementary pDFT links**. Programs, potential descriptions, intramolecular descriptions, basis sets and explicitly named dispersion corrections are retained in `energy_models.csv`. Raw descriptions remain authoritative; text-based normalisations are marked inferred. PBE0 and PBE1PBE are grouped as a single conventional electronic-method category; no missing method is filled from an unrelated search.
 
 | Kind | Category | Datasets |
 | --- | --- | --- |
-| Potential family | FIT | 281 |
+| Potential family | FIT | 280 |
 | Potential family | Williams | 35 |
 | Potential family | Day / Rice | 22 |
 | Potential family | Non-empirical / SAPT | 4 |
 | Potential family | Custom Delaware | 1 |
-| Electronic method | MP2 | 176 |
+| Electronic method | MP2 | 175 |
 | Electronic method | PBE0 / PBE1PBE | 109 |
 | Electronic method | HF / SCF | 41 |
 | Electronic method | M06-2X | 12 |
@@ -68,15 +68,15 @@ There are **509 energy-model records** and **31 supplementary pDFT links**. Prog
 | Electronic method | CCSD | 2 |
 | Electronic method | PBE | 2 |
 
-These counts use each dataset at most once per category and may sum above 311. MP2, HF and hybrid functional labels commonly describe molecular charge densities, multipoles or intramolecular energies. They are **not evidence that the whole crystal landscape was computed with periodic DFT**. The 31 pDFT supplement links provide no functional/basis description in their HTML rows; those details remain missing. The linked ZIP archives and Word descriptions were not mined for additional methodology.
+These counts use each dataset at most once per category and may sum above 310. MP2, HF and hybrid functional labels commonly describe molecular charge densities, multipoles or intramolecular energies. They are **not evidence that the whole crystal landscape was computed with periodic DFT**. The 31 pDFT supplement links provide no functional/basis description in their HTML rows; those details remain missing. The linked ZIP archives and Word descriptions were not mined for additional methodology.
 
 ## Dates and the linked literature
 
-Dataset deposition/release years are not reported. Annual counts use the **source study Date field**, with no substitution of page update year or publication year. Single years and month-year dates are accepted. Ranges such as 2005-2008, abbreviated 2005-7, and pre-2010 are excluded instead of assigned arbitrary years. These exclusions leave **488,411 archived structure files** in annual bins and **30,756 files** without a single year. All 311 archive counts are complete, including searches with missing visualization exports.
+Dataset deposition/release years are not reported. Annual counts use the **source study Date field**, with no substitution of page update year or publication year. Single years and month-year dates are accepted. Ranges such as 2005-2008, abbreviated 2005-7, and pre-2010 are excluded instead of assigned arbitrary years. These exclusions leave **488,411 archived structure files** in annual bins and **29,183 files** without a single year. All 310 archive counts are complete for the current JSON-record inventory.
 
 | Linked CSP papers per dataset | Datasets |
 | --- | --- |
-| 0 | 119 |
+| 0 | 118 |
 | 1 | 187 |
 | 2 | 5 |
 

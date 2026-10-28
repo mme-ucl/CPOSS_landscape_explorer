@@ -44,8 +44,8 @@ Chloroform,minimum_integer_component_ratio,CHCl3,1,ChloroformA,CHCl3,"{""C"": 1,
 2C5NBAMH,minimum_integer_component_ratio,C7H4ClNO4,1,2C5NBAMHA,C7H4ClNO4,"{""C"": 7, ""Cl"": 1, ""H"": 4, ""N"": 1, ""O"": 4}",17,13,201.565
 2C5NBAMH,minimum_integer_component_ratio,H2O,1,2C5NBAMHA,H2O,"{""H"": 2, ""O"": 1}",3,1,18.015
 2C5NBA,minimum_integer_component_ratio,C7H4ClNO4,1,2C5NBAA,C7H4ClNO4,"{""C"": 7, ""Cl"": 1, ""H"": 4, ""N"": 1, ""O"": 4}",17,13,201.565
-4C2NBAMH,minimum_integer_component_ratio,C7H4ClNO4,1,4C2NBAMHA,C7H4ClNO4,"{""C"": 7, ""Cl"": 1, ""H"": 4, ""N"": 1, ""O"": 4}",17,13,201.565
-4C2NBAMH,minimum_integer_component_ratio,H2O,1,4C2NBAMHA,H2O,"{""H"": 2, ""O"": 1}",3,1,18.015
+4C2NBAMH,minimum_integer_component_ratio,C7H4ClNO4,1,4C2NBMHA,C7H4ClNO4,"{""C"": 7, ""Cl"": 1, ""H"": 4, ""N"": 1, ""O"": 4}",17,13,201.565
+4C2NBAMH,minimum_integer_component_ratio,H2O,1,4C2NBMHA,H2O,"{""H"": 2, ""O"": 1}",3,1,18.015
 5chlorouracil,minimum_integer_component_ratio,C4H3ClN2O2,1,5chlorouracilA,C4H3ClN2O2,"{""C"": 4, ""Cl"": 1, ""H"": 3, ""N"": 2, ""O"": 2}",12,9,146.533
 Coronene,minimum_integer_component_ratio,C24H12,1,CoroneneA,C24H12,"{""C"": 24, ""H"": 12}",36,24,300.36
 Coumarin,minimum_integer_component_ratio,C9H6O2,1,CoumarinA,C9H6O2,"{""C"": 9, ""H"": 6, ""O"": 2}",17,11,146.145
@@ -74,7 +74,7 @@ AmantadineHydrochloride,minimum_integer_component_ratio,Cl,1,AmantadineHydrochlo
 LY2806920,minimum_integer_component_ratio,C32H42N6O6,1,LY2806920A,C32H42N6O6,"{""C"": 32, ""H"": 42, ""N"": 6, ""O"": 6}",86,44,606.724
 LY2624803,minimum_integer_component_ratio,C22H25N3O3,1,LY2624803A,C22H25N3O3,"{""C"": 22, ""H"": 25, ""N"": 3, ""O"": 3}",53,28,379.46
 FlufenamicAcid,minimum_integer_component_ratio,C14H10F3NO2,1,FlufenamicAcidA,C14H10F3NO2,"{""C"": 14, ""F"": 3, ""H"": 10, ""N"": 1, ""O"": 2}",30,20,281.233
-Fluorouracil,minimum_integer_component_ratio,C4H3FN2O2,1,FluorouracilA,C4H3FN2O2,"{""C"": 4, ""F"": 1, ""H"": 3, ""N"": 2, ""O"": 2}",12,9,130.078
+Fluorouracil,minimum_integer_component_ratio,C4H3FN2O2,1,5fluorouracilA,C4H3FN2O2,"{""C"": 4, ""F"": 1, ""H"": 3, ""N"": 2, ""O"": 2}",12,9,130.078
 Desloratadine,minimum_integer_component_ratio,C19H19ClN2,1,DesloratadineA,C19H19ClN2,"{""C"": 19, ""Cl"": 1, ""H"": 19, ""N"": 2}",41,22,310.828
 Formyluracil,minimum_integer_component_ratio,C5H4N2O3,1,FormyluracilA,C5H4N2O3,"{""C"": 5, ""H"": 4, ""N"": 2, ""O"": 3}",14,10,140.098
 Sorbitol,minimum_integer_component_ratio,C6H14O6,1,SorbitolA,C6H14O6,"{""C"": 6, ""H"": 14, ""O"": 6}",26,12,182.172
@@ -154,8 +154,8 @@ BTVIII,minimum_integer_component_ratio,C3H4N2O2,1,BTVIIIA,C3H4N2O2,"{""C"": 3, "
 ParabanicAcid,minimum_integer_component_ratio,C3H2N2O3,1,ParabanicAcidA,C3H2N2O3,"{""C"": 3, ""H"": 2, ""N"": 2, ""O"": 3}",10,8,114.06
 Pentachloronitrobenzene,minimum_integer_component_ratio,C6Cl5NO2,1,PentachloronitrobenzeneA,C6Cl5NO2,"{""C"": 6, ""Cl"": 5, ""N"": 1, ""O"": 2}",14,14,295.336
 Phthalimide,minimum_integer_component_ratio,C8H5NO2,1,PhthalimideA,C8H5NO2,"{""C"": 8, ""H"": 5, ""N"": 1, ""O"": 2}",16,11,147.133
-PhloroglucinolDihydrate,minimum_integer_component_ratio,C6H6O3,1,PhloroglucinolDihydrateA,C6H6O3,"{""C"": 6, ""H"": 6, ""O"": 3}",15,9,126.111
-PhloroglucinolDihydrate,minimum_integer_component_ratio,H2O,2,PhloroglucinolDihydrateA,H2O,"{""H"": 2, ""O"": 1}",3,1,18.015
+PhloroglucinolDihydrate,minimum_integer_component_ratio,C6H6O3,1,PhloroglucinolDihydrateB,C6H6O3,"{""C"": 6, ""H"": 6, ""O"": 3}",15,9,126.111
+PhloroglucinolDihydrate,minimum_integer_component_ratio,H2O,2,PhloroglucinolDihydrateB,H2O,"{""H"": 2, ""O"": 1}",3,1,18.015
 Phloroglucinol,minimum_integer_component_ratio,C6H6O3,1,PhloroglucinolA,C6H6O3,"{""C"": 6, ""H"": 6, ""O"": 3}",15,9,126.111
 Estradiol,minimum_integer_component_ratio,C18H24O2,1,EstradiolA,C18H24O2,"{""C"": 18, ""H"": 24, ""O"": 2}",44,20,272.388
 Progesterone,minimum_integer_component_ratio,C21H30O2,1,ProgesteroneA,C21H30O2,"{""C"": 21, ""H"": 30, ""O"": 2}",53,23,314.469
@@ -220,7 +220,6 @@ Dicyanobenzene-Succinic,minimum_integer_component_ratio,C8H4N2,1,Dicyanobenzene-
 Bipy-Aminobenzoic,minimum_integer_component_ratio,C10H8N2,1,Bipy-AminobenzoicA,C10H8N2,"{""C"": 10, ""H"": 8, ""N"": 2}",20,12,156.188
 Bipy-Aminobenzoic,minimum_integer_component_ratio,C7H7NO2,1,Bipy-AminobenzoicA,C7H7NO2,"{""C"": 7, ""H"": 7, ""N"": 1, ""O"": 2}",17,10,137.138
 TetrahydroDimethylQuinoline,minimum_integer_component_ratio,C11H15N,1,TetrahydroDimethylQuinolineA,C11H15N,"{""C"": 11, ""H"": 15, ""N"": 1}",27,12,161.248
-Methylazetidineone,minimum_integer_component_ratio,C4H7NO,1,MethylazetidineoneA,C4H7NO,"{""C"": 4, ""H"": 7, ""N"": 1, ""O"": 1}",13,6,85.106
 26-dichloronitrobenzene,minimum_integer_component_ratio,C6H3Cl2NO2,1,26-dichloronitrobenzeneA,C6H3Cl2NO2,"{""C"": 6, ""Cl"": 2, ""H"": 3, ""N"": 1, ""O"": 2}",14,11,192.001
 MemantineHydrochloride,minimum_integer_component_ratio,C12H22N,1,MemantineHydrochlorideA,C12H22N,"{""C"": 12, ""H"": 22, ""N"": 1}",35,13,180.315
 MemantineHydrochloride,minimum_integer_component_ratio,Cl,1,MemantineHydrochlorideA,Cl,"{""Cl"": 1}",1,1,35.453

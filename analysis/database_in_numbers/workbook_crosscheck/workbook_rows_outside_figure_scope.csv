@@ -29,6 +29,7 @@ excel_row,refcode,study_id,github_raw,upload_status,structure_count,programs_raw
 374,TFRLPB,10,,No,32,
 375,TFRLPD,0,,No,2423,
 376,TFRLPD,10,,No,20,
+424,UCLPKC,0,Methylazetidineone_A1,Yes,1572,"MOLPAK, DMAREL (4.1.1)"
 435,UNOGIN,31,Not stored,No,1027,
 450,WICZUF,11,,No,34,
 451,WICZUF,12,,No,34,

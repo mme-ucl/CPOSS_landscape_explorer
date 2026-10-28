@@ -29,11 +29,21 @@ def main():
     if hasattr(objects, 'get_object'):
         objects = objects.get_object()
     assert not any(ref.get_object().get('/Subtype') == '/Image' for ref in objects.values())
+    validation = json.loads((BASE / 'figure_validation.json').read_text())
+    assert validation['plotted_populations'] == ['CPOSS_single_system_balanced', 'OMC25_last_frames', 'CSD_organic']
+    for values in validation['normalization'].values():
+        assert abs(values['density_integral'] - 1) < 1e-10
+        assert abs(values['cdf_endpoint'] - 1) < 1e-10
+    text = page.extract_text()
+    assert 'Cumulative probability' in text and 'Probability density' in text
+    assert not any(label in text for label in ['CPOSS records', 'Records per', 'records in the shared window', 'g/cm'])
     with Image.open(BASE.parent / 'figures/cposs_omc25_csd_density_comparison.png') as image:
         assert image.size == (2280, 1050)
         assert all(abs(value - 300) < .1 for value in image.info['dpi'])
     results = {'source_checksums_verified': True, 'vector_only': True, 'embedded_fonts': names,
-               'png_size': [2280, 1050], 'png_dpi': 300}
+               'png_size': [2280, 1050], 'png_dpi': 300,
+               'normalization': validation['normalization'],
+               'system_balanced_cposs_only': True, 'embedded_comments': False}
     (BASE / 'verification.json').write_text(json.dumps(results, indent=2) + '\n')
     print(json.dumps(results, indent=2))
 

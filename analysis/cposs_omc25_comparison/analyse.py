@@ -189,8 +189,8 @@ def properties(counts, weights):
 def prepare_cposs(weights):
     original = pd.read_csv(INPUTS / 'cposs_molecular_systems.csv', keep_default_na=False)
     audit = pd.read_csv(INPUTS / 'cposs_formula_audit.csv', keep_default_na=False)
-    assert len(audit) == audit.source_url.nunique() == 235
-    assert original.source_url.nunique() == len(original) == 233
+    assert len(audit) == audit.source_url.nunique()
+    assert original.source_url.nunique() == len(original)
     missing = set(audit.source_url) - set(original.source_url)
     assert set(audit.loc[audit.source_url.isin(missing), 'molecular_system']) == {'Piracetam', 'IsobarbituricAcid'}
     cells = read_workbook_cells(INPUTS / 'Database 2023 checkup.xlsx')

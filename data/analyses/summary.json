@@ -1,34 +1,34 @@
 {
-  "snapshot": "2026-10-23",
-  "snapshot_revision": "d65c1732ab6db46b8af34e0646a760c56a8d559c",
-  "searches": 311,
-  "molecular_systems": 235,
-  "archived_structure_files": 519167,
-  "model_archives": 509,
-  "navigator_catalogue_files": 315,
-  "visualization_entries": 155824,
+  "snapshot": "2026-10-27",
+  "snapshot_revision": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+  "searches": 310,
+  "molecular_systems": 234,
+  "archived_structure_files": 517594,
+  "model_archives": 508,
+  "navigator_catalogue_files": 310,
+  "visualization_entries": 158344,
   "linked_csp_papers": 75,
   "all_linked_references": 577,
   "searches_with_csp_papers": 192,
   "named_scientists": 45,
-  "searches_with_named_scientists": 286,
+  "searches_with_named_scientists": 285,
   "structure_files_per_search": {
     "minimum": 11,
-    "q1": 113.0,
-    "median": 498,
-    "q3": 1435.5,
+    "q1": 112.5,
+    "median": 497.0,
+    "q3": 1399.25,
     "maximum": 20408,
-    "mean": 1669.3472668810289
+    "mean": 1669.6580645161291
   },
-  "single_component_metadata_systems": 191,
+  "single_component_metadata_systems": 190,
   "multicomponent_formula_units": 44,
-  "coordinate_verified_single_component_systems": 190,
+  "coordinate_verified_single_component_systems": 189,
   "coordinate_verified_multicomponent_systems": 44,
   "formula_only_systems": [
     "Tetrachlorobenzene"
   ],
   "dated_searches": 236,
-  "undated_or_ambiguous_searches": 75,
+  "undated_or_ambiguous_searches": 74,
   "density": {
     "source_inputs_checksum_verified": true,
     "shared_window": [
@@ -36,22 +36,25 @@
       2.4
     ],
     "common_bin_width": 0.02,
-    "primary_records": 114222,
-    "primary_systems": 186,
-    "primary_searches": 257,
-    "multicomponent_records": 29065,
+    "primary_records": 114284,
+    "primary_systems": 187,
+    "primary_searches": 258,
+    "multicomponent_records": 31460,
     "normalization_max_error": 2.220446049250313e-16,
     "reference_status": "approximate_vector_histogram_recovery",
+    "figure_cposs_population": "CPOSS_single_system_balanced",
+    "system_balance_scope": "after_restricting_to_shared_window",
+    "reference_system_reweighting_available": false,
     "results_section_updated_in_place": true
   },
   "map": {
-    "datasets_included": 308,
-    "represented_structure_files": 519004,
+    "datasets_included": 307,
+    "represented_structure_files": 517431,
     "metrics": {
-      "sigmoid_pair_mse": 0.006284347637141943,
-      "distance_spearman": 0.9381328351309733,
-      "trustworthiness_k10": 0.9600444000444001,
-      "neighbor_retention_k10": 0.5912337662337663
+      "sigmoid_pair_mse": 0.0062984862501350184,
+      "distance_spearman": 0.9377166540739027,
+      "trustworthiness_k10": 0.9589956475827043,
+      "neighbor_retention_k10": 0.5879478827361564
     }
   },
   "figures": [
@@ -63,7 +66,7 @@
       "image": "analysis/cposs_omc25_comparison/figures/cposs_omc25_comparison.png",
       "pdf": "analysis/cposs_omc25_comparison/output/pdf/cposs_omc25_comparison.pdf",
       "caption": "analysis/cposs_omc25_comparison/caption.tex",
-      "description": "Elemental prevalence, molecular atom counts and molar-mass distributions for 190 verified single-component CPOSS systems and 44,403 OMC25 training molecular records. Every molecular record receives equal weight.",
+      "description": "Elemental prevalence, molecular atom counts and molar-mass distributions for 189 verified single-component CPOSS systems and 44,403 OMC25 training molecular records. Every molecular record receives equal weight.",
       "data": "data/analyses/chemical--summary_statistics.csv",
       "note": ""
     },
@@ -75,7 +78,7 @@
       "image": "analysis/cposs_omc25_comparison/figures/cposs_omc25_csd_density_comparison.png",
       "pdf": "analysis/cposs_omc25_comparison/output/pdf/cposs_omc25_csd_density_comparison.pdf",
       "caption": "analysis/cposs_omc25_comparison/density/caption.tex",
-      "description": "Archive-linked CPOSS density records compared with histogram references recovered from the OMC25 paper. The shared 0.8–2.4 g/cm³ window and a system-weighted sensitivity curve make the counting basis explicit.",
+      "description": "Archive-linked CPOSS density records compared with histogram references recovered from the OMC25 paper. CPOSS systems have equal total weight within the shared 0.8–2.4 g cm⁻³ window; each probability density has unit area.",
       "data": "data/analyses/density--density_statistics.csv",
       "note": ""
     },
@@ -87,7 +90,7 @@
       "image": "analysis/molecular_sketchmap/figures/cposs_molecular_sketchmap.png",
       "pdf": "analysis/molecular_sketchmap/output/pdf/cposs_molecular_sketchmap.pdf",
       "caption": "analysis/molecular_sketchmap/caption.md",
-      "description": "A molecular SOAP sketch-map of 308 documented searches. Marker area scales with the square root of archived-file count; colour shows representative-component molar mass. Multicomponent systems use their largest non-water component.",
+      "description": "A molecular SOAP sketch-map of 307 current records. Marker area scales with the square root of archived-file count; colour shows representative-component molar mass. Multicomponent systems use their largest non-water component.",
       "data": "data/analyses/map--dataset_embedding.csv",
       "note": ""
     },
@@ -111,7 +114,7 @@
       "image": "analysis/database_in_numbers/figures/panel_c_software_proposal.png",
       "pdf": "analysis/database_in_numbers/output/pdf/panel_c_software_proposal.pdf",
       "caption": null,
-      "description": "Explicit program mentions across 311 searches: each search counts once per program family. Versions are pooled and program categories overlap.",
+      "description": "Explicit program mentions across 310 searches: each search counts once per program family. Versions are pooled and program categories overlap.",
       "data": "data/analyses/audit--proposed_panel_c_counts.csv",
       "note": ""
     }
@@ -124,8 +127,8 @@
       "namespace": "chemical",
       "path": "data/analyses/chemical--summary_statistics.csv",
       "rows": 13,
-      "bytes": 1515,
-      "sha256": "0c093510b5d44da23a223b78562978f33428d68f68e0793aa0feb56559771fe7",
+      "bytes": 1498,
+      "sha256": "e4191be8b7f829dddfa9b870b4bec382bbed976b32808c3460098bb67ccf7802",
       "source": "analysis/cposs_omc25_comparison/tables/summary_statistics.csv"
     },
     {
@@ -135,8 +138,8 @@
       "namespace": "density",
       "path": "data/analyses/density--density_statistics.csv",
       "rows": 10,
-      "bytes": 1942,
-      "sha256": "3b7ce5ffc964b77fbafcc0ccea37c43e94e3ce81bc6ff71eb09d3591a35cd03f",
+      "bytes": 1953,
+      "sha256": "00dc32153f1fe875adcbe2fa1dd53a11ba86ba3f96d4325052646ed10e35d5bb",
       "source": "analysis/cposs_omc25_comparison/density/tables/density_statistics.csv"
     },
     {
@@ -146,8 +149,8 @@
       "namespace": "audit",
       "path": "data/analyses/audit--proposed_panel_c_counts.csv",
       "rows": 6,
-      "bytes": 147,
-      "sha256": "bd0ee5e8b0a5d53b249598297552429d08b275269aebb8f8765ae3671228182a",
+      "bytes": 140,
+      "sha256": "259a03f5c3cecdb95aa37fac6b4325984f6faf3e0e2320d51a5c346e15935128",
       "source": "analysis/database_in_numbers/workbook_crosscheck/proposed_panel_c_counts.csv"
     },
     {
@@ -156,9 +159,9 @@
       "group": "Molecular map",
       "namespace": "map",
       "path": "data/analyses/map--dataset_embedding.csv",
-      "rows": 311,
-      "bytes": 509381,
-      "sha256": "47ba96225de40bb3cdcfb8ea7838bfd8ae36dcf3b0381b5af0ff2b28541f2c30",
+      "rows": 310,
+      "bytes": 507447,
+      "sha256": "9f70028c8d17831c8b45b2b5f024b7edeb16a622ee2b67921d04b0cd2d98a806",
       "source": "analysis/molecular_sketchmap/tables/dataset_embedding.csv"
     },
     {
@@ -168,8 +171,8 @@
       "namespace": "chemical",
       "path": "data/analyses/chemical--cposs_multicomponent_formula_units.csv",
       "rows": 44,
-      "bytes": 36880,
-      "sha256": "93371f4d0fa2c69fcd0eea52a611993edaacdf5b085d6b425724946d7fcd2e92",
+      "bytes": 36833,
+      "sha256": "6a37524549c0e84dbcd2c51d2ac41c7d562afdb42e9a7b828f70469a30a65402",
       "source": "analysis/cposs_omc25_comparison/tables/cposs_multicomponent_formula_units.csv"
     }
   ],

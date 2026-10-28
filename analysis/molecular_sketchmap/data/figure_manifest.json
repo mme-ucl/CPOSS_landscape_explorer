@@ -1,4 +1,6 @@
 {
+  "source_revision": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+  "accessed_date": "2026-10-27",
   "font_verification": {
     "source": "/System/Library/Fonts/Helvetica.ttc",
     "source_sha256": "658718d77497145281cb0ec45ff2fe7c6e18062b2a38f837d0d792d9be3a9ba3",
@@ -11,12 +13,14 @@
     "all_figure_text_families": [
       "Helvetica"
     ],
-    "text_outside_page": []
+    "text_outside_page": [],
+    "font_scale": 1.55,
+    "map_axis_labels": false
   },
   "page": "A4 portrait",
   "dpi": 300,
-  "map_points": 308,
-  "represented_structure_files": 519004,
+  "map_points": 307,
+  "represented_structure_files": 517431,
   "marker_area_rule": "s = 1.8 sqrt(N) pt^2; N counts model-specific RES files; no optimization weights",
   "colour": "Truncated Plasma [0,0.88]; logarithmic extracted molecule molar mass",
   "callout_selection": "Replace hypothetical/unestablished examples with recognizable experimentally characterized compounds. This is an illustrative selection, not descriptor-space farthest-point sampling.",

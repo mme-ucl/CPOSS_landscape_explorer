@@ -54,8 +54,8 @@ The earlier **{workbook_summary['visualization_entries']:,}** total measured onl
 
 | Measurement | Total | Meaning |
 | --- | ---: | --- |
-| Linked visualization entries | {workbook_summary['visualization_entries']:,} | 307 available JSON exports; four missing |
-| Workbook Filename rows | {workbook_summary['mapped_workbook_rows']:,} | Complete per-search tables, all 311 datasets |
+| Linked visualization entries | {workbook_summary['visualization_entries']:,} | {len(datasets)-len(missing_json)} available JSON exports; {len(missing_json)} missing |
+| Workbook Filename rows | {workbook_summary['mapped_workbook_rows']:,} | Complete per-search tables, all {len(datasets)} datasets |
 | Workbook rows with at least one numeric model energy | {workbook_summary['rows_with_any_model_energy']:,} | Rows with some recorded lattice-energy result |
 | Numeric structure-energy records | {workbook_summary['structure_model_records']:,} | Sum of finite numeric lattice-energy cells across {workbook_summary['model_columns']} energy columns |
 | **Archived coordinate files (figure count)** | **{summary['coordinate_files']:,}** | **All {summary['archives_counted']} explicitly documented energy-model ZIPs, all {len(comparison)} datasets** |
@@ -64,9 +64,9 @@ These measurements overlap and must not be added together. The energy-record cou
 
 ## How the archive count was verified
 
-The audit follows each of the 509 explicitly documented energy-model ZIP links in `energy_models.csv`, using the frozen repository revision `{manifest['snapshot_revision']}` (accessed {manifest['accessed_date']}). Every archive was downloaded and its Git blob SHA-1 checked against the repository tree. All 509 were readable and contained RES files; no model archive was missing. All 509 archive hashes are distinct.
+The audit follows each of the {summary['archives_counted']} explicitly documented energy-model ZIP links in `energy_models.csv`, using the frozen repository revision `{manifest['snapshot_revision']}` (accessed {manifest['accessed_date']}). Every archive was downloaded and its Git blob SHA-1 checked against the repository tree. All {summary['archives_counted']} were readable and contained RES files; no model archive was missing. All {summary['archives_counted']} archive hashes are distinct.
 
-Only actual `.res` members are counted. Directory entries, `__MACOSX` resource forks and AppleDouble `._` files are excluded. There are no repeated coordinate-member names within an archive and no CIF/PDB/XYZ alternatives in these 509 archives. Ancillary periodic-DFT supplements and unrelated repository ZIPs are outside this count, avoiding an additional sum of overlapping representations. The reproducible counter reports format inventories and missing/error statuses rather than assuming zero on failure.
+Only actual `.res` members are counted. Directory entries, `__MACOSX` resource forks and AppleDouble `._` files are excluded. There are no repeated coordinate-member names within an archive and no CIF/PDB/XYZ alternatives in these {summary['archives_counted']} archives. Ancillary periodic-DFT supplements and unrelated repository ZIPs are outside this count, avoiding an additional sum of overlapping representations. The reproducible counter reports format inventories and missing/error statuses rather than assuming zero on failure.
 
 This is a count of stored coordinate files across model-specific archives. It retains experimental reference structures and possible repeated geometries across models or searches. Coordinate parsing and crystallographic/geometric deduplication have not been performed. The number of candidates originally generated, rejected or optimized before deposition remains unknown.
 
@@ -99,8 +99,8 @@ Panel B ranks archive totals per documented CSP search; it includes all {len(com
 ## Audit files
 
 - `reconciled_dataset_counts.csv`: one row per dataset, comparing all count scopes, with source URLs and revision.
-- `structure_archive_counts.csv`: all 509 model archives, SHA-1, format inventory, RES count and workbook comparison.
-- `dataset_archive_counts.csv`: complete archive counts aggregated over the 311 datasets.
+- `structure_archive_counts.csv`: all {summary['archives_counted']} model archives, SHA-1, format inventory, RES count and workbook comparison.
+- `dataset_archive_counts.csv`: complete archive counts aggregated over the {len(datasets)} datasets.
 - `structure_count_provenance.csv`: field-specific source, status, definition, date and revision.
 - `structure_model_counts.csv`, `structure_count_reconciliation.csv`: original workbook-derived measurements and visualization comparison.
 - `sources/structure_archive_counts.json`, `sources/workbook_summaries.json`: aggregate audit and original workbook headers/count diagnostics.

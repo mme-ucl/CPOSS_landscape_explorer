@@ -53,6 +53,8 @@ def configure_fonts(path):
                          'axes.labelsize': 8.5, 'axes.titlesize': 9.2,
                          'xtick.labelsize': 7.8, 'ytick.labelsize': 7.8,
                          'legend.fontsize': 7.6, 'axes.spines.top': False,
+                         'mathtext.fontset': 'custom', 'mathtext.rm': 'Helvetica',
+                         'mathtext.it': 'Helvetica:italic', 'mathtext.bf': 'Helvetica:bold',
                          'axes.spines.right': False, 'axes.edgecolor': MUTED,
                          'axes.linewidth': .65, 'text.color': INK, 'axes.labelcolor': INK,
                          'xtick.color': MUTED, 'ytick.color': MUTED,
@@ -118,7 +120,7 @@ def make_figure(populations, stem, font_info):
     axes[2].set_xlim(0, np.ceil(max_mass / 100) * 100)
     mass_step = max(200, np.ceil(axes[2].get_xlim()[1] / 400) * 100)
     axes[2].set_xticks(np.arange(0, axes[2].get_xlim()[1] + 1, mass_step))
-    axes[2].set_xlabel('Molar mass (g/mol)')
+    axes[2].set_xlabel(r'Molar mass (g mol$^{-1}$)')
     axes[1].legend(handles=[Line2D([], [], color=INK, lw=1.5, label='All atoms'),
                             Line2D([], [], color=INK, lw=1.5, linestyle=(0, (3, 1.8)), label='Non-H atoms')],
                    loc='lower right', frameon=False, borderaxespad=.4)

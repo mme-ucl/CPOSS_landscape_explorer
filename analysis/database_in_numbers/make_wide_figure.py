@@ -1,22 +1,23 @@
-"""Rearrange the reviewed vector figure into three columns and two rows.
-
-Panels are translated at their original physical size. The approved software
-panel replaces C, using its own vector PDF at exactly the same dimensions.
-Re-run this after rebuilding the portrait PDF or the software panel.
-"""
+"""Rebuild the paper overview from frozen tables with 55% larger typography."""
 from __future__ import annotations
 
-import copy
 import csv
 import hashlib
 import json
+import os
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/cposs-matplotlib")
 from pathlib import Path
-import shutil
-import subprocess
 
 from PIL import Image
-from pypdf import PdfReader, PdfWriter, Transformation
-from pypdf.generic import RectangleObject
+from pypdf import PdfReader
+import numpy as np
+import pandas as pd
+from matplotlib import pyplot as plt
+from matplotlib.colors import LogNorm, Normalize, to_hex
+from matplotlib.patches import Rectangle
+from matplotlib.text import Text
+from matplotlib.ticker import MaxNLocator
+from make_figure import helvetica, tidy, count_colors, spectral_line, INK, MUTED, LIGHT, COOL, WARM, SPECTRAL
 
 
 BASE = Path(__file__).resolve().parent
@@ -117,154 +118,146 @@ references are recorded separately.
     (BASE / "caption_3x2.tex").write_text(text)
 
 
+FONT_SCALE = 1.55
+
+
 def main():
-    source = BASE / "output/pdf/database_in_numbers.pdf"
-    output = source.with_name("database_in_numbers_3x2.pdf")
-    png = BASE / "figures/database_in_numbers_3x2.png"
-    pdftoppm = shutil.which("pdftoppm")
-    if pdftoppm is None:
-        raise RuntimeError("pdftoppm is required to render and verify the result")
-
-    reader = PdfReader(source)
-    if len(reader.pages) != 1 or reader.pages[0].rotation:
-        raise ValueError("Expected the reviewed, unrotated, single-page figure")
-    original = reader.pages[0]
-    width, height = float(original.mediabox.width), float(original.mediabox.height)
-    if len(original.images):
-        raise ValueError("Expected the original vector figure without raster images")
-    software_source = source.with_name("panel_c_software_proposal.pdf")
-    software_reader = PdfReader(software_source)
-    if len(software_reader.pages) != 1 or software_reader.pages[0].rotation or len(software_reader.pages[0].images):
-        raise ValueError("Panel C must be one unrotated vector page")
-    software = software_reader.pages[0]
+    font = helvetica(Path("/System/Library/Fonts/Helvetica.ttc"))
+    datasets = pd.read_csv(BASE / "tables/plot_datasets.csv")
+    chemistry = pd.read_csv(BASE / "tables/molecular_systems.csv")
+    contributors = pd.read_csv(BASE / "tables/contributors.csv")
+    annual = pd.read_csv(BASE / "tables/annual_counts.csv")
+    papers = pd.read_csv(BASE / "tables/cumulative_papers.csv")
+    software = pd.read_csv(BASE / "workbook_crosscheck/proposed_panel_c_counts.csv")
     software_info = panel_c_inputs()
-    software_text = software.extract_text()
-    if software_info["title"] not in software_text or any(
-            program not in software_text or str(count) not in software_text
-            for program, count in software_info["counts"].items()):
-        raise ValueError("The software panel PDF does not match the approved counts")
-
-    # Original panel heading anchors and crop boundaries, in page fractions.
-    # Crops include all axis labels, legends, headings and panel E's two notes.
-    panels = {
-        "A": (0.085, 0.884, 0.610),
-        "B": (0.530, 0.884, 0.610),
-        "C": (0.085, 0.596, 0.330),
-        "D": (0.530, 0.596, 0.330),
-        "E": (0.085, 0.314, 0.027),
-        "F": (0.530, 0.314, 0.027),
-    }
-    margin, gutter, heading_padding = 12.0, 18.0, 5.0
-    panel_width = 0.425 * width
-    first_row_depth = max((panels[p][1] - panels[p][2]) * height for p in "ABC")
-    second_row_depth = max((panels[p][1] - panels[p][2]) * height for p in "DEF")
-    row_pitch = first_row_depth + 26.0
-    header_depth = (1 - panels["A"][1]) * height
-    canvas_width = 2 * margin + 3 * panel_width + 2 * gutter
-    canvas_height = header_depth + row_pitch + second_row_depth + margin
-    row_headings = [canvas_height - header_depth, margin + second_row_depth]
-
-    writer = PdfWriter()
-    writer.pdf_header = reader.pdf_header
-    page = writer.add_blank_page(width=canvas_width, height=canvas_height)
-    placements = {}
-
-    def place(name, bounds, dx, dy, *, source_page=original, source_path=source):
-        tile = copy.copy(source_page)
-        tile.cropbox = RectangleObject(bounds)
-        tile.trimbox = RectangleObject(bounds)
-        transform = Transformation().translate(tx=dx, ty=dy)
-        if transform.ctm[:4] != (1, 0, 0, 1):
-            raise AssertionError("Only translations are allowed")
-        page.merge_transformed_page(tile, transform, expand=False)
-        destination = [bounds[0] + dx, bounds[1] + dy, bounds[2] + dx, bounds[3] + dy]
-        if not (0 <= destination[0] < destination[2] <= canvas_width + 1e-8
-                and 0 <= destination[1] < destination[3] <= canvas_height + 1e-8):
-            raise AssertionError(f"Content outside the destination page: {name}")
-        placements[name] = {
-            "source_pdf": str(source_path.relative_to(BASE)),
-            "source_sha256": hashlib.sha256(source_path.read_bytes()).hexdigest(),
-            "source_crop_pt": list(bounds),
-            "translation_pt": [dx, dy],
-            "destination_crop_pt": destination,
-            "scale_x": 1,
-            "scale_y": 1,
-            "rotation_degrees": 0,
-        }
-
-    # Recenter the complete title and summary strip without changing their size.
-    place("header", (0, 0.895 * height, width, height),
-          (canvas_width - width) / 2, canvas_height - height)
-    for index, (name, (heading_x, heading_y, bottom)) in enumerate(panels.items()):
-        row, column = divmod(index, 3)
-        left = heading_x * width - heading_padding
-        bounds = (left, bottom * height, left + panel_width,
-                  heading_y * height + heading_padding)
-        destination_left = margin + column * (panel_width + gutter)
-        if name == "C":
-            replacement_width = float(software.mediabox.width)
-            replacement_height = float(software.mediabox.height)
-            if abs(replacement_width - panel_width) > 0.01 or abs(replacement_height - (bounds[3] - bounds[1])) > 0.01:
-                raise ValueError("Replacement panel C must retain the original physical dimensions")
-            place(name, (0, 0, replacement_width, replacement_height), destination_left,
-                  row_headings[row] - replacement_height + heading_padding,
-                  source_page=software, source_path=software_source)
-        else:
-            place(name, bounds, destination_left - left,
-                  row_headings[row] - heading_y * height)
-
-    metadata = {key: value for key, value in (reader.metadata or {}).items()
-                if isinstance(value, str)}
-    metadata["/Subject"] = "CPOSS database in numbers; three columns by two rows; workbook-derived CSP software panel C"
-    writer.add_metadata(metadata)
-    page.compress_content_streams()
-    writer.compress_identical_objects()
-    with output.open("wb") as stream:
-        writer.write(stream)
-
-    result = PdfReader(output)
-    if len(result.pages) != 1 or result.pages[0].rotation or len(result.pages[0].images):
-        raise AssertionError("Output must remain a single unrotated vector page")
-    font_names = []
-    for font_ref in result.pages[0]["/Resources"]["/Font"].values():
-        font = font_ref.get_object()
-        font_names.append(str(font["/BaseFont"]))
-        if "Helvetica" not in font_names[-1]:
-            raise AssertionError("Original Helvetica fonts must be retained")
-        for descendant_ref in font.get("/DescendantFonts", []):
-            descriptor = descendant_ref.get_object()["/FontDescriptor"].get_object()
-            if not any(key in descriptor for key in ("/FontFile", "/FontFile2", "/FontFile3")):
-                raise AssertionError("Fonts must remain embedded")
-
-    subprocess.run([pdftoppm, "-r", "300", "-singlefile", "-png", str(output),
-                    str(png.with_suffix(""))], check=True)
-    with Image.open(png) as preview:
-        expected = [round(canvas_width / 72 * 300), round(canvas_height / 72 * 300)]
-        if any(abs(actual - target) > 1 for actual, target in zip(preview.size, expected)):
-            raise AssertionError("PNG dimensions must match the PDF at 300 dpi")
-        dimensions = list(preview.size)
-
-    verification = {
-        "status": "passed",
-        "source_pdf": str(source.relative_to(BASE)),
-        "source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
-        "output_pdf": str(output.relative_to(BASE)),
-        "output_sha256": hashlib.sha256(output.read_bytes()).hexdigest(),
-        "layout": [["A", "B", "C"], ["D", "E", "F"]],
-        "page_size_pt": [canvas_width, canvas_height],
-        "page_size_mm": [canvas_width / 72 * 25.4, canvas_height / 72 * 25.4],
-        "png_dimensions": dimensions,
-        "png_dpi": 300,
-        "fonts": sorted(set(font_names)),
-        "vector_graphics": True,
-        "all_panel_scales_unchanged": True,
-        "all_panel_rotations_zero": True,
-        "panel_c": software_info,
-        "placements": placements,
-    }
-    (BASE / "verification_3x2.json").write_text(json.dumps(verification, indent=2) + "\n")
+    total = int(datasets.structure_count.sum())
+    year_norm = Normalize(min(annual.year.min(), papers.year.min()),
+                          max(annual.year.max(), papers.year.max()))
+    # Keep the established paper canvas; reflow text and axes instead of enlarging it.
+    fig = plt.figure(figsize=(11.378, 8.45), facecolor="white")
+    fig.text(.5, .978, "The CPOSS database in numbers", fontsize=14,
+             weight="bold", ha="center", va="top")
+    fig.add_artist(Rectangle((.14, .872), .72, .066, facecolor=LIGHT,
+                             edgecolor="none", transform=fig.transFigure, zorder=-1))
+    stats = [(f"{len(datasets):,}", "CSP datasets"), (f"{total:,}", "archived structure files"),
+             (str(len(contributors)), "named scientists"),
+             (str(int(papers.cumulative_unique_papers.iloc[-1])), "unique CSP papers")]
+    for index, (value, label) in enumerate(stats):
+        x = .14 + (index + .5) * .72 / 4
+        fig.text(x, .929, value, fontsize=14, weight="bold", ha="center", va="top")
+        fig.text(x, .887, label, fontsize=6, color=MUTED, ha="center", va="center")
+    for x, y, letter, title in [(.018,.840,"A","Molecular size"),
+                               (.357,.840,"B","Structures per dataset"),
+                               (.701,.840,"C","Reported CSP software"),
+                               (.018,.447,"D","The scientists"),
+                               (.357,.447,"E","Landscapes through time"),
+                               (.701,.447,"F","The linked literature")]:
+        fig.text(x, y, letter, fontsize=9, weight="bold", va="top")
+        fig.text(x+.025, y, title, fontsize=9, weight="bold", va="top")
+    axa = fig.add_axes([.075,.548,.235,.263])
+    for basis, colour, label in [("reported molecular formula",COOL,"Single component"),
+                                  ("formula unit (multicomponent)",WARM,"Multicomponent formula unit")]:
+        part = chemistry[chemistry.composition_basis == basis]
+        axa.scatter(part.atom_count, part.molar_mass_g_mol, s=15, color=colour,
+                    alpha=.65, linewidth=.3, edgecolors="white", label=f"{label} ({len(part)})")
+    axa.set_xscale("log"); axa.set_yscale("log")
+    axa.set_xticks([5,10,20,50,100], ["5","10","20","50","100"])
+    axa.set_yticks([50,100,300,1000], ["50","100","300","1,000"])
+    axa.minorticks_off()
+    axa.set_xlim(chemistry.atom_count.min()*.8, chemistry.atom_count.max()*1.2)
+    axa.set_ylim(chemistry.molar_mass_g_mol.min()*.72, chemistry.molar_mass_g_mol.max()*2.1)
+    axa.set_xlabel("Atoms per molecule or formula unit", fontsize=7.3, labelpad=5)
+    axa.set_ylabel(r"Molar mass (g mol$^{-1}$)", fontsize=7.5, labelpad=4)
+    axa.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="none",
+               framealpha=.96, fontsize=6.4, borderpad=.2,
+               labelspacing=.5, handletextpad=.3, handlelength=.8)
+    tidy(axa)
+    axb = fig.add_axes([.408,.548,.235,.263])
+    ranked = datasets.sort_values("structure_count", ascending=False)
+    spectral_line(axb, np.arange(1,len(ranked)+1), ranked.structure_count, ranked.structure_count,
+                  LogNorm(ranked.structure_count.min(), ranked.structure_count.max()), baseline=8, fill_alpha=.17)
+    axb.set_yscale("log"); axb.set_ylim(8, ranked.structure_count.max()*1.4)
+    axb.set_yticks([10,100,1000,10000], ["10","100","1,000","10,000"])
+    axb.minorticks_off(); axb.set_xlim(1,len(ranked)); axb.set_xticks([1,100,200,len(ranked)])
+    axb.set_xlabel("Dataset rank (largest first)", labelpad=5)
+    axb.set_ylabel("Structure files", labelpad=4)
+    tidy(axb)
+    axc = fig.add_axes([.832,.548,.150,.263])
+    software = software.iloc[::-1]
+    axc.barh(software.program, software.datasets, color=count_colors(software.datasets), height=.61)
+    axc.set_xlim(0,225); axc.set_xticks([0,100,200]); axc.tick_params(axis="y",length=0,labelsize=7)
+    axc.set_xlabel("Datasets", labelpad=5)
+    for i, value in enumerate(software.datasets):
+        axc.text(value+3,i,str(value),va="center",fontsize=6.5)
+    tidy(axc,"x"); axc.spines["left"].set_visible(False)
+    axd = fig.add_axes([.156,.070,.154,.344])
+    top = contributors.head(20).iloc[::-1]
+    axd.barh(top.scientist_name, top.dataset_count, height=.58, color=count_colors(top.dataset_count), linewidth=0)
+    axd.set_ylim(-.6,len(top)-.4); axd.set_xlim(0,top.dataset_count.max()*1.15)
+    axd.tick_params(axis="y",length=0,labelsize=6.3); axd.xaxis.set_major_locator(MaxNLocator(4,integer=True))
+    axd.set_xlabel("Datasets credited", labelpad=5)
+    for i, value in enumerate(top.dataset_count):
+        axd.text(value+1,i,str(int(value)),va="center",fontsize=6.1)
+    tidy(axd,"x"); axd.spines["left"].set_visible(False)
+    axe = fig.add_axes([.408,.238,.208,.176])
+    axe.bar(annual.year, annual.landscapes, width=.76, color=SPECTRAL(year_norm(annual.year)), alpha=.93)
+    axe.set_ylabel(r"Datasets year$^{-1}$",fontsize=7.2,labelpad=5)
+    axe.yaxis.set_major_locator(MaxNLocator(4,integer=True))
+    axe.set_xlim(annual.year.min()-.7,annual.year.max()+.7)
+    axe.set_xticks([2005,2010,2015,2020,2025]); axe.tick_params(axis="x",labelbottom=False)
+    tidy(axe)
+    axr = axe.twinx()
+    axr.plot(annual.year,annual.structures/1000,color=INK,marker="o",markersize=2.5,linewidth=1.2)
+    axr.set_ylabel("Structure files\n(thousands)",fontsize=7,labelpad=4)
+    axr.spines[["top","left"]].set_visible(False); axr.set_ylim(bottom=0)
+    axr.yaxis.set_major_locator(MaxNLocator(4)); axr.tick_params(axis="y",labelsize=7,length=2.5,width=.5)
+    axec = fig.add_axes([.408,.070,.208,.119],sharex=axe)
+    spectral_line(axec,annual.year,annual.cumulative_datasets,annual.year,year_norm,step=True,fill_alpha=.13,linewidth=1.5)
+    axec.set_ylabel("Cumulative datasets",fontsize=7.2,labelpad=5)
+    axec.set_xlabel("Study year",fontsize=7.4,labelpad=5)
+    axec.set_ylim(0,annual.cumulative_datasets.max()*1.2); axec.set_yticks([0,100,200]); tidy(axec)
+    axf = fig.add_axes([.761,.070,.221,.344])
+    spectral_line(axf,papers.year,papers.cumulative_unique_papers,papers.year,year_norm,step=True,fill_alpha=.13,linewidth=1.5)
+    axf.set_ylabel("Unique papers",fontsize=7.5,labelpad=4)
+    axf.set_xlabel("Publication year",fontsize=7.2,labelpad=5)
+    axf.set_xlim(papers.year.min(),papers.year.max()+1); axf.set_ylim(0,papers.cumulative_unique_papers.max()*1.18)
+    axf.set_xticks([2000,2010,2020,2025]); axf.set_yticks([0,25,50,75]); tidy(axf)
+    for text in fig.findobj(Text):
+        text.set_fontsize(text.get_fontsize()*FONT_SCALE)
+    fig.canvas.draw()
+    outside = []
+    renderer = fig.canvas.get_renderer()
+    for text in fig.findobj(Text):
+        if text.get_visible() and text.get_text():
+            b = text.get_window_extent(renderer)
+            if b.x0 < -1 or b.y0 < -1 or b.x1 > fig.bbox.width+1 or b.y1 > fig.bbox.height+1:
+                outside.append(text.get_text())
+    if outside:
+        raise AssertionError({"text_outside_page":outside})
+    output = BASE / "output/pdf/database_in_numbers_3x2.pdf"
+    png = BASE / "figures/database_in_numbers_3x2.png"
+    fig.savefig(output, metadata={"Title":"The CPOSS database in numbers","CreationDate":None,"ModDate":None})
+    fig.savefig(png,dpi=300)
+    size = list(fig.get_size_inches())
+    plt.close(fig)
+    page = PdfReader(output).pages[0]
+    fonts = [str(ref.get_object()["/BaseFont"]) for ref in page["/Resources"]["/Font"].values()]
+    assert all("Helvetica" in name for name in fonts), fonts
+    assert not page.images
+    with Image.open(png) as im:
+        dimensions = list(im.size)
+    verification = {"status":"passed","layout":[["A","B","C"],["D","E","F"]],
+                    "output_pdf":str(output.relative_to(BASE)),
+                    "output_sha256":hashlib.sha256(output.read_bytes()).hexdigest(),
+                    "page_size_pt":[v*72 for v in size],"png_dimensions":dimensions,"png_dpi":300,
+                    "fonts":fonts,"vector_graphics":True,"font_scale":FONT_SCALE,
+                    "out_of_bounds_text":outside,"panel_c":software_info,
+                    "source_tables_sha256":{name:hashlib.sha256((BASE / "tables" / (name+".csv")).read_bytes()).hexdigest()
+                                            for name in ["plot_datasets","molecular_systems","contributors","annual_counts","cumulative_papers"]},
+                    "font_verification":font,"embedded_comments":False}
+    (BASE / "verification_3x2.json").write_text(json.dumps(verification,indent=2)+"\n")
     write_caption()
-    print(json.dumps({key: value for key, value in verification.items() if key != "placements"}, indent=2))
+    print(json.dumps({"status":"passed","font_scale":FONT_SCALE,"fonts":fonts,"size_inches":size},indent=2))
 
 
 if __name__ == "__main__":

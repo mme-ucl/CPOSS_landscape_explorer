@@ -36,7 +36,7 @@ dataset_id,archive_coordinate_files,archives,counted_archives,archive_urls,compl
 3aminobenzamideA,668,1,1,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/3aminobenzamide/3aminobenzamideA/1.3aminobenzamideA_MOLPAK.zip?raw=true,True
 4-fluorotolueneA,7262,5,5,https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotolueneA/1.4-fluorotolueneA_FIT.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotolueneA/2.4-fluorotolueneA_1GPa.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotolueneA/3.4-fluorotolueneA_2GPa.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotolueneA/4.4-fluorotolueneA_3GPa.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.Fluorotoluenes/4-fluorotoluene/4-fluorotolueneA/5.4-fluorotolueneA_4GPa.zip?raw=true,True
 4C2NBAA,525,1,1,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBA/4C2NBAA/1.4C2NBAA_CrystOpt.zip?raw=true,True
-4C2NBAMHA,1322,1,1,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBAMH/4C2NBAMHA/1.4C2NBAMHA_CrystOpt.zip?raw=true,True
+4C2NBMHA,1322,1,1,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedNitroBenzoicAcids/4C2NBAMH/4C2NBAMHA/1.4C2NBAMHA_CrystOpt.zip?raw=true,True
 4HydroxycoumarinA,150,1,1,https://louiseprice.github.io/CPOSS_Database/Hydroxycoumarin/4Hydroxycoumarin/4HydroxycoumarinA/1.4HydroxycoumarinA_MOLPAK.zip?raw=true,True
 4aminobenzamideA,244,1,1,https://louiseprice.github.io/CPOSS_Database/1.SubstitutedBenzamides/4aminobenzamide/4aminobenzamideA/1.4aminobenzamideA_MOLPAK.zip?raw=true,True
 4cyanopyridine4fluorobenzoicacidA,992,1,1,https://louiseprice.github.io/CPOSS_Database/1.SaltOrCocrystal/4cyanopyridine4fluorobenzoicacid/4cyanopyridine4fluorobenzoicacidA/1.4cyanopyridine4fluorobenzoicacidA_CrystPred.zip?raw=true,True
@@ -54,6 +54,7 @@ dataset_id,archive_coordinate_files,archives,counted_archives,archive_urls,compl
 5ethyluracilA,456,1,1,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5ethyluracil/5ethyluracilA/1.5ethyluracilA_MOLPAK.zip?raw=true,True
 5fluorocytosineA,79,1,1,https://louiseprice.github.io/CPOSS_Database/Fluorocytosine/5fluorocytosineA/1.5fluorocytosineA_MOLPAK.zip?raw=true,True
 5fluoroisatinA,56,1,1,https://louiseprice.github.io/CPOSS_Database/1.Fluoroisatins/5fluoroisatin/5fluoroisatinA/1.5fluoroisatinA_Molpak.zip?raw=true,True
+5fluorouracilA,62,1,1,https://louiseprice.github.io/CPOSS_Database/Fluorouracil/FluorouracilA/1.FluorouracilA_Molpak.zip?raw=true,True
 5nitrouracilA,282,1,1,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5nitrouracil/5nitrouracilA/1.5nitrouracilA_MOLPAK.zip?raw=true,True
 5nitrouracilB,184,1,1,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5nitrouracil/5nitrouracilB/1.5nitrouracilB_MOLPAK.zip?raw=true,True
 5vinyluracilA,470,1,1,https://louiseprice.github.io/CPOSS_Database/1.Uracils/5vinyluracil/5vinyluracilA/1.5vinyluracilA_MOLPAK.zip?raw=true,True
@@ -189,7 +190,6 @@ FOX7A,191,1,1,https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7A/1.F
 FOX7B,151,1,1,https://louiseprice.github.io/CPOSS_Database/1.FOX7/FOX7/FOX7B/1.FOX7B_Molpak.zip?raw=true,True
 FenamicAcidA,114,3,3,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcidA/1.FenamicAcidA_CrystOpt.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcidA/2.FenamicAcidA_PCM.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FenamicAcid/FenamicAcidA/3.FenamicAcidA_CrystOpt2.zip?raw=true,True
 FlufenamicAcidA,1712,3,3,https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FlufenamicAcid/FlufenamicAcidA/1.FlufenamicAcidA_CrystOpt.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FlufenamicAcid/FlufenamicAcidA/2.FlufenamicAcidA_PCM.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/1.FenamateFamily/FlufenamicAcid/FlufenamicAcidA/3.FlufenamicAcidA_CrystOpt2.zip?raw=true,True
-FluorouracilA,62,1,1,https://louiseprice.github.io/CPOSS_Database/Fluorouracil/FluorouracilA/1.FluorouracilA_Molpak.zip?raw=true,True
 FormyluracilA,564,1,1,https://louiseprice.github.io/CPOSS_Database/1.Uracils/Formyluracil/FormyluracilA/1.FormyluracilA_MOLPAK.zip?raw=true,True
 GSK269984BA,1000,1,1,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BA/1.GSK269984BA_MOLPAK.zip?raw=true,True
 GSK269984BB,11,1,1,https://louiseprice.github.io/CPOSS_Database/GSK269984B/GSK269984BB/1.GSK269984BB_MOLPAKExp.zip?raw=true,True
@@ -236,7 +236,6 @@ MemantineHydrochlorideA,1447,1,1,https://louiseprice.github.io/CPOSS_Database/Me
 MetacetamolA,6710,2,2,https://louiseprice.github.io/CPOSS_Database/Metacetamol/MetacetamolA/1.MetacetamolA_CrystPred.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Metacetamol/MetacetamolA/2.MetacetamolA_CrystOpt.zip?raw=true,True
 MethanolA,870,1,1,https://louiseprice.github.io/CPOSS_Database/Methanol/MethanolA/1.MethanolA_CrystOpt.zip?raw=true,True
 Methyl-p-hydroxybenzoateA,794,2,2,https://louiseprice.github.io/CPOSS_Database/Methyl-p-hydroxybenzoate/Methyl-p-hydroxybenzoateA/1.Methyl-p-hydroxybenzoateA_MOLPAK.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Methyl-p-hydroxybenzoate/Methyl-p-hydroxybenzoateA/2.Methyl-p-hydroxybenzoateA_dmaflex.zip?raw=true,True
-MethylazetidineoneA,1573,1,1,https://louiseprice.github.io/CPOSS_Database/Methylazetidineone/MethylazetidineoneA/1.MethylazetidineoneA_MOLPAK.zip?raw=true,True
 NAcetyldibenzazepineA,46,1,1,https://louiseprice.github.io/CPOSS_Database/NAcetylDibenzazepine/NAcetyldibenzazepineA/1.NAcetyldibenzazepineA_MOLPAK.zip?raw=true,True
 NaphthaleneA,49,1,1,https://louiseprice.github.io/CPOSS_Database/Naphthalene/NaphthaleneA/1.NaphthaleneA_DMA.zip?raw=true,True
 NaphthaleneB,24,1,1,https://louiseprice.github.io/CPOSS_Database/Naphthalene/NaphthaleneB/1.NaphthaleneB_Point_Charges.zip?raw=true,True
@@ -261,7 +260,7 @@ ParacetamolB,15,1,1,https://louiseprice.github.io/CPOSS_Database/Paracetamol/Par
 PentachloronitrobenzeneA,893,1,1,https://louiseprice.github.io/CPOSS_Database/Pentachloronitrobenzene/PentachloronitrobenzeneA/1.PentachloronitrobenzeneA_MOLPAK.zip?raw=true,True
 PhenanthrenolA,2701,2,2,https://louiseprice.github.io/CPOSS_Database/Phenanthrenol/PhenanthrenolA/1.PhenanthrenolA_CrystPred.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Phenanthrenol/PhenanthrenolA/2.PhenanthrenolA_CrystOpt.zip?raw=true,True
 PhloroglucinolA,1314,3,3,https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/1.PhloroglucinolA_CrystPred.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/2.PhloroglucinolA_CrystOpt.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/Phloroglucinol/PhloroglucinolA/3.PhloroglucinolA_PCM.zip?raw=true,True
-PhloroglucinolDihydrateA,1521,2,2,https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/PhloroglucinolDihydrate/PhloroglucinolDihydrateA/1.PhloroglucinolDihydrateA_CrystPred.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/PhloroglucinolDihydrate/PhloroglucinolDihydrateA/2.PhloroglucinolDihydrateA_CrystOpt.zip?raw=true,True
+PhloroglucinolDihydrateB,1521,2,2,https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/PhloroglucinolDihydrate/PhloroglucinolDihydrateA/1.PhloroglucinolDihydrateA_CrystPred.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Phloroglucinol/PhloroglucinolDihydrate/PhloroglucinolDihydrateA/2.PhloroglucinolDihydrateA_CrystOpt.zip?raw=true,True
 PhthalimideA,127,1,1,https://louiseprice.github.io/CPOSS_Database/Phthalimide/PhthalimideA/1.PhthalimideA_Molpak.zip?raw=true,True
 PiracetamA,61,1,1,https://louiseprice.github.io/CPOSS_Database/Piracetam/PiracetamA/1.PiracetamA_MOLPAK.zip?raw=true,True
 ProgesteroneA,159,2,2,https://louiseprice.github.io/CPOSS_Database/Progesterone/ProgesteroneA/1.ProgesteroneA_MOLPAK.zip?raw=true | https://louiseprice.github.io/CPOSS_Database/Progesterone/ProgesteroneA/2.ProgesteroneA_dmaflex.zip?raw=true,True

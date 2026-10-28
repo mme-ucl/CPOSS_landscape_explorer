@@ -4,7 +4,7 @@
       "stem": "cposs_omc25_comparison",
       "pages": 1,
       "embedded_fonts": [
-        "/PQTZVZ+Helvetica",
+        "/CFMUPS+Helvetica",
         "/EKZFVT+Helvetica-Bold"
       ],
       "vector_only": true,
@@ -18,7 +18,7 @@
       "stem": "cposs_omc25_multicomponent",
       "pages": 1,
       "embedded_fonts": [
-        "/EHYIWD+Helvetica",
+        "/BNXUVR+Helvetica",
         "/EKZFVT+Helvetica-Bold"
       ],
       "vector_only": true,
@@ -29,5 +29,5 @@
       "png_dpi": 300
     }
   ],
-  "frozen_inputs_checked": 319
+  "frozen_inputs_checked": 322
 }

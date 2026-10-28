@@ -2,12 +2,28 @@
   "source_checksums_verified": true,
   "vector_only": true,
   "embedded_fonts": [
-    "/EVTHKV+Helvetica",
+    "/GYHQIU+Helvetica",
     "/CQJXMA+Helvetica-Bold"
   ],
   "png_size": [
     2280,
     1050
   ],
-  "png_dpi": 300
+  "png_dpi": 300,
+  "normalization": {
+    "CPOSS_single_system_balanced": {
+      "density_integral": 0.999999999999932,
+      "cdf_endpoint": 1.0
+    },
+    "OMC25_last_frames": {
+      "density_integral": 1.0000000000001783,
+      "cdf_endpoint": 1.0
+    },
+    "CSD_organic": {
+      "density_integral": 1.0000000000000075,
+      "cdf_endpoint": 1.0
+    }
+  },
+  "system_balanced_cposs_only": true,
+  "embedded_comments": false
 }

@@ -22,10 +22,10 @@ class DensityTests(unittest.TestCase):
         frame = pd.read_csv(BASE / 'inputs/cposs_reported_density_records.csv.gz')
         self.assertFalse(frame.duplicated(['dataset_id', 'model_id', 'filename']).any())
         single = frame[(frame.component_basis == 'single_molecule') & frame.coordinate_validated_system]
-        self.assertEqual((len(single), single.source_url.nunique(), single.dataset_id.nunique()), (114222, 186, 257))
+        self.assertEqual((len(single), single.source_url.nunique(), single.dataset_id.nunique()), (114284, 187, 258))
         w = balanced_weights(single)
         sums = pd.Series(w, index=single.index).groupby(single.source_url).sum()
-        np.testing.assert_allclose(sums, np.full(186, 1/186))
+        np.testing.assert_allclose(sums, np.full(187, 1/187))
 
     def test_window_normalization_and_excluded_tails_are_explicit(self):
         frame = pd.read_csv(BASE / 'tables/density_histograms_common_bins.csv')
@@ -43,6 +43,26 @@ class DensityTests(unittest.TestCase):
         self.assertTrue(refs.n_records.isna().all())
         self.assertTrue(refs.status.str.startswith('approximate').all())
         self.assertTrue(refs.minimum_g_cm3.isna().all())
+
+    def test_displayed_density_and_cdf_use_equal_system_weights_after_windowing(self):
+        records = pd.read_csv(BASE / 'inputs/cposs_reported_density_records.csv.gz')
+        frame = records[(records.component_basis == 'single_molecule') & records.coordinate_validated_system]
+        frame = frame[frame.density_g_cm3.between(EDGES[0], EDGES[-1])]
+        weights = balanced_weights(frame)
+        sums = pd.Series(weights, index=frame.index).groupby(frame.source_url).sum()
+        np.testing.assert_allclose(sums, 1 / frame.source_url.nunique())
+        expected, _ = np.histogram(frame.density_g_cm3, bins=EDGES, weights=weights)
+        hist = pd.read_csv(BASE / 'tables/density_histograms_common_bins.csv')
+        hist = hist[hist.population == 'CPOSS_single_system_balanced']
+        np.testing.assert_allclose(hist.probability_mass, expected, atol=1e-10)
+        self.assertAlmostEqual(np.sum(hist.probability_density_cm3_g * np.diff(EDGES)), 1, places=10)
+        cdf = pd.read_csv(BASE / 'tables/cposs_density_ecdfs.csv')
+        cdf = cdf[cdf.population == 'CPOSS_single_system_balanced']
+        x, indices = np.unique(frame.density_g_cm3, return_inverse=True)
+        expected_cdf = np.cumsum(np.bincount(indices, weights=weights))
+        np.testing.assert_allclose(cdf.density_g_cm3, x)
+        np.testing.assert_allclose(cdf.cumulative_fraction, expected_cdf, atol=1e-10)
+        self.assertAlmostEqual(cdf.cumulative_fraction.iloc[-1], 1, places=10)
 
 
 if __name__ == '__main__':

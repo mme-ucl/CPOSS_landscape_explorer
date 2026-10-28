@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "source_snapshot": "2026-10-27",
+  "source_revision": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+  "current_json_records": 310,
+  "molecular_systems": 234,
+  "model_archives": 508,
+  "archived_structure_files": 517594,
+  "mapped_records": 307,
+  "excluded_records": 3,
+  "represented_structure_files": 517431,
+  "verified_json_aliases": 3,
+  "legacy_searches_without_current_json": 1,
+  "font_scale": 1.55,
+  "embedding_and_descriptors_recalculated": true,
+  "native_molecular_images_preserved": true,
+  "embedded_helvetica": true,
+  "normalization": {
+    "CPOSS_single_system_balanced": {
+      "density_integral": 0.999999999999932,
+      "cdf_endpoint": 1.0
+    },
+    "OMC25_last_frames": {
+      "density_integral": 1.0000000000001783,
+      "cdf_endpoint": 1.0
+    },
+    "CSD_organic": {
+      "density_integral": 1.0000000000000075,
+      "cdf_endpoint": 1.0
+    }
+  },
+  "database_tests_passed": 13,
+  "molecular_tests_passed": 10,
+  "chemical_comparison_tests_passed": 10,
+  "density_tests_passed": 6,
+  "molecular_output_checks_passed": 1970,
+  "latex_fragments_compiled": true,
+  "final_pdfs_visually_inspected": true,
+  "public_export_tests_passed": 6,
+  "total_tests_passed": 45,
+  "catalogue_and_analysis_identifiers_match_exactly": true
+}
