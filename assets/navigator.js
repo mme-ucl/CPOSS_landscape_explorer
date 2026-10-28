@@ -178,7 +178,7 @@
         state.current = local ? null : catalogueTools.find(state.datasets, url);
         const label = state.current?.label || fallbackLabel || 'No dataset loaded';
         byId('cposs-dataset-name').textContent = label;
-        document.title = `CPOSS CSP Landscape Navigator — ${label}`;
+        document.title = `CDCCS Landscape Navigator — ${label}`;
         byId('cposs-load-status').textContent = state.current ? state.current.id : (local ? 'Local dataset' : 'External dataset');
         const pages = state.current?.cases || [];
         const select = byId('case-page-select');
@@ -391,8 +391,9 @@
         } else if (url.searchParams.has('load')) {
             await loadUrl(url.searchParams.get('load'), { settingsUrl: url.searchParams.get('settings') });
         } else if (catalogue) {
-            // A small startup example; the same preset is used for every source.
-            const initial = catalogue.datasets.find(item => item.id === 'AspirinA') || catalogue.datasets[0];
+            // Urea Search A is the landing dataset; shared and embedded selections
+            // above retain priority, and all datasets use the same preset.
+            const initial = catalogue.datasets.find(item => item.id === 'UreaA') || catalogue.datasets[0];
             await loadUrl(initial.url, { settingsUrl: url.searchParams.get('settings') });
         } else {
             stopLoading();

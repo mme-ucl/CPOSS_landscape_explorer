@@ -15,6 +15,7 @@
             z: { property: '' },
             color: { property: 'Space Group Number', mode: 'log', min: 0, max: 2.37, palette: 'seismic' },
             size: { property: 'Experimental Info', mode: 'flip-linear', factor: 55 },
+            symbol: 'Experimental Info',
         },
         structure: [{ supercell: [3, 3, 3], unitCell: true }],
     };
@@ -157,9 +158,18 @@
         const expStats = { source: exp?.[0] || null, policy: numericInfo ? 'numeric' : 'annotation-presence', annotated: expValues.filter(value => !missing(value)).length, missing: expValues.filter(missing).length };
         const sizeName = numericInfo ? exp[0] : uniqueName(properties, 'Experimental Info (size)');
         properties[sizeName] = { target: 'structure', values: numericInfo ? expValues.map(numeric) : expValues.map(value => missing(value) ? 1 : 0), description: numericInfo ? 'Supplied numerical Experimental Info, scaled by native flip-linear; missing sizes use the native minimum.' : 'Display-only annotation score: supplied nonblank description = 0; blank/missing = 1. Native flip-linear makes annotated structures larger. A constant column uses the native uniform reference size. Original descriptions are retained.' };
+        // Native symbol selection accepts categorical text, not numeric fields.
+        // Use the supplied labels directly; never reuse the derived size score.
+        // This bundled native version only categorizes fields with <= 50 labels.
+        const textSymbols = exp && expStats.annotated > 0 && properties[exp[0]].values.every(value => typeof value === 'string');
+        const symbolCategories = textSymbols ? new Set(properties[exp[0]].values).size : 0;
+        const symbolName = textSymbols && symbolCategories <= 50 ? exp[0] : '';
+        expStats.markerField = symbolName || null;
+        expStats.markerPolicy = symbolName ? 'supplied-categories' : symbolCategories > 50 ? 'too-many-categories' : numericInfo ? 'numeric-unsupported' : exp ? 'no-annotations' : 'missing';
         const settings = copy(PRESET);
         settings.map.x.property = x; settings.map.y.property = y;
         settings.map.color.property = sgName; settings.map.size.property = sizeName;
+        settings.map.symbol = symbolName;
         const plotted = axes.chosen?.valid || 0;
         const diagnostics = { structures: count, axes: { x, y, model: axes.chosen?.x.model ?? null, plotted, missing: count - plotted, candidates: axes.candidates }, spaceGroups: sgStats, experimentalInfo: { ...expStats, field: sizeName }, normalized, ignoredInitialSettings: !!source.settings };
         // Bootstrap without embedded style or native colour/category heuristics.
@@ -168,6 +178,7 @@
         const bootstrap = copy(settings);
         bootstrap.map.color = { property: '', mode: 'linear', min: 0, max: 2.37, palette: 'seismic' };
         bootstrap.map.size = { property: '', mode: 'linear', factor: 55 };
+        bootstrap.map.symbol = '';
         if (!properties[x].values.some(Number.isFinite) || !properties[y].values.some(Number.isFinite)) {
             const helper = uniqueName(properties, 'Structure index (initialization only)');
             properties[helper] = { target: 'structure', values: Array.from({ length: count }, (_, index) => index) };
@@ -183,6 +194,7 @@
         if (d.spaceGroups.symbols) notes.push(`${d.spaceGroups.symbols} Hermann–Mauguin symbols were resolved with ${groups.generator}; colour is log10 of the international number, never a category index.`);
         const e = d.experimentalInfo;
         notes.push(e.policy === 'numeric' ? 'Experimental Info uses supplied numeric values with native flip-linear sizing.' : 'Experimental Info size score: annotated = 0, blank/missing = 1. Native flip-linear makes annotated structures larger; a constant score uses uniform reference sizes. Original descriptions are retained.');
+        notes.push(e.markerField ? `Marker shapes use the supplied ${e.markerField} text categories, including the original blank category.` : e.markerPolicy === 'too-many-categories' ? 'Marker shapes remain fixed: Experimental Info exceeds the native limit of 50 text categories.' : e.markerPolicy === 'numeric-unsupported' ? 'Marker shapes remain fixed: native Chemiscope symbols require text categories; numerical Experimental Info remains available for sizing.' : 'Marker shapes remain fixed because Experimental Info has no supplied nonblank text categories.');
         const count = d.structures, bad = new Set(), affected = [];
         for (const axis of ['x', 'y', 'z']) {
             const option = settings.map?.[axis];

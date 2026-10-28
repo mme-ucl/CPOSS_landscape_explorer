@@ -13,7 +13,7 @@
     ]
   ],
   "output_pdf": "output/pdf/database_in_numbers_3x2.pdf",
-  "output_sha256": "b8ea30cb0946a023443d146d3c311fa723ac3d5b2a923c7c0589aac6b5284420",
+  "output_sha256": "7733dba24543304d123a0ecfd28c48711e8c59f7539c5ccd23c2da23901a08f4",
   "page_size_pt": [
     819.216,
     608.4
@@ -24,30 +24,313 @@
   ],
   "png_dpi": 300,
   "fonts": [
-    "/HEAZWR+Helvetica",
-    "/CNFDKF+Helvetica",
-    "/BKPGAI+Helvetica-Bold"
+    "/EBPWGE+Helvetica",
+    "/CJIGXG+Helvetica",
+    "/HDZGLW+Helvetica-Bold",
+    "/CJIGXG+Helvetica-Bold"
   ],
   "vector_graphics": true,
   "font_scale": 1.55,
   "out_of_bounds_text": [],
   "panel_c": {
-    "title": "Reported CSP software",
-    "counts": {
-      "DMACRYS": 189,
-      "MOLPAK": 155,
-      "CrystalPredictor": 148,
-      "DMAREL": 125,
-      "CrystalOptimizer": 110,
-      "DMAflex": 28
+    "source_revision": "6a77cc47b35f268f81a1d433b62c3e0917e20ffd",
+    "source_accessed_date": "2026-10-27",
+    "classification_date": "2026-10-28",
+    "inventory_datasets": 310,
+    "energy_models": 508,
+    "total_archived_records": 517594,
+    "classified_models": 457,
+    "classified_datasets": 292,
+    "classified_archived_records": 468787,
+    "unresolved_models": 51,
+    "datasets_with_unresolved_models": 29,
+    "unresolved_archived_records": 48807,
+    "cell_counts": [
+      {
+        "search_program": "MOLPAK",
+        "refinement_engine": "DMAREL",
+        "rigid_records": 24310,
+        "flexible_records": 110,
+        "total_records": 24420,
+        "rigid_models": 114,
+        "flexible_models": 7,
+        "energy_models": 121,
+        "datasets": 114
+      },
+      {
+        "search_program": "CrystalPredictor",
+        "refinement_engine": "DMAREL",
+        "rigid_records": 1376,
+        "flexible_records": 83,
+        "total_records": 1459,
+        "rigid_models": 2,
+        "flexible_models": 3,
+        "energy_models": 5,
+        "datasets": 4
+      },
+      {
+        "search_program": "MOLPAK",
+        "refinement_engine": "DMACRYS",
+        "rigid_records": 23460,
+        "flexible_records": 38,
+        "total_records": 23498,
+        "rigid_models": 41,
+        "flexible_models": 3,
+        "energy_models": 44,
+        "datasets": 40
+      },
+      {
+        "search_program": "CrystalPredictor",
+        "refinement_engine": "DMACRYS",
+        "rigid_records": 239005,
+        "flexible_records": 180405,
+        "total_records": 419410,
+        "rigid_models": 130,
+        "flexible_models": 157,
+        "energy_models": 287,
+        "datasets": 138
+      }
+    ],
+    "unresolved_reason_counts": {
+      "optimization_not_established_for_current_model": 14,
+      "DFTB_sequence_requires_intramolecular_constraint_review": 10,
+      "other_origin_not_MOLPAK_or_CrystalPredictor": 12,
+      "flexible_method_in_potential_but_not_current_programs": 6,
+      "other_origin_not_MOLPAK_or_CrystalPredictor; optimization_not_established_for_current_model": 2,
+      "other_origin_not_MOLPAK_or_CrystalPredictor; DFTB_sequence_requires_intramolecular_constraint_review": 1,
+      "multiple_refinement_engines_without_explicit_final_assignment": 3,
+      "energy_model_1_missing; earliest_documented_model: missing_Study_ID_target": 3
     },
-    "denominator": 310,
-    "counting_rule": "Explicit program mentions; one count per search and program family; versions pooled; categories overlap; bare Study_ID pointers not expanded",
-    "counts_csv": "workbook_crosscheck/proposed_panel_c_counts.csv",
-    "counts_csv_sha256": "259a03f5c3cecdb95aa37fac6b4325984f6faf3e0e2320d51a5c346e15935128",
-    "workbook_path": "/Users/matteo/Downloads/Database 2023 checkup.xlsx",
-    "workbook_sha256": "e8a410fa55c3e5cab90d4352a985f694e7f1d5e4b4085f1331edf68602eed2dc",
-    "matched_energy_models": 508
+    "trinitrobenzene_audit": [
+      {
+        "model_id": "1",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "2",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "3",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "4",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "5",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "6",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "7",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "8",
+        "archived_structure_model_records": 203
+      },
+      {
+        "model_id": "9",
+        "archived_structure_model_records": 203
+      }
+    ],
+    "counting_unit": "RES members per documented energy-model archive; separate model representations retained; no geometric deduplication",
+    "method_documentation": {
+      "rigid_engines": "https://www.chem.ucl.ac.uk/cposs/results/methods.html",
+      "dmacrys": "https://www.chem.ucl.ac.uk/cposs/dmacrys/",
+      "crystaloptimizer": "https://www.chem.ucl.ac.uk/cposs/computational/crystaloptimizer.html",
+      "search_vs_refinement": "https://www.chem.ucl.ac.uk/cposs/computational/postprocessing.html"
+    },
+    "source_table_sha256": {
+      "energy_models.csv": "1896510a79a30cf513e39a9ce46b5bdffcdc2fb1dda9d244b6c8f2aa2ab91dc8",
+      "structure_archive_counts.csv": "795c1499801c75a48654285f5043418521ab8673dba74b5f9ba2b6ea33d2a153",
+      "plot_datasets.csv": "564f4dc7f392fe20d939556ac6c0f843665c8b75ed2841bad5f6b95a7a47adb1"
+    },
+    "audit_csv": "panel_c_methods/model_classification.csv",
+    "audit_csv_sha256": "32227d74d53dc2d66e660259d76c696bd332a48044353fbf388900710bb8cf80",
+    "counts_csv": "panel_c_methods/matrix_counts.csv",
+    "counts_csv_sha256": "e21f365812b301851fde8bdd8e53551d4211949dd5bb478f3e95f5e6fb7ef128",
+    "title": "Search and refinement methods",
+    "layout": "paired structures/models pies in each cell",
+    "colours": {
+      "Rigid": "#6100a7",
+      "Flexible": "#fdc627"
+    },
+    "row_label_rotation_deg": 90,
+    "bubble_area_pt2_per_unit": {
+      "records": 0.0020291171444493175,
+      "models": 2.9652683677821887
+    },
+    "bubble_radii": [
+      {
+        "search": "MOLPAK",
+        "engine": "DMAREL",
+        "measure": "records",
+        "count": 24420,
+        "flexible_count": 110,
+        "radius_pt": 3.9714715301944614
+      },
+      {
+        "search": "MOLPAK",
+        "engine": "DMAREL",
+        "measure": "models",
+        "count": 121,
+        "flexible_count": 7,
+        "radius_pt": 10.686850922279694
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMAREL",
+        "measure": "records",
+        "count": 1459,
+        "flexible_count": 83,
+        "radius_pt": 0.9707474754102778
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMAREL",
+        "measure": "models",
+        "count": 5,
+        "flexible_count": 3,
+        "radius_pt": 2.1724113752385197
+      },
+      {
+        "search": "MOLPAK",
+        "engine": "DMACRYS",
+        "measure": "records",
+        "count": 23498,
+        "flexible_count": 38,
+        "radius_pt": 3.895776859052831
+      },
+      {
+        "search": "MOLPAK",
+        "engine": "DMACRYS",
+        "measure": "models",
+        "count": 44,
+        "flexible_count": 3,
+        "radius_pt": 6.444413581757328
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMACRYS",
+        "measure": "records",
+        "count": 419410,
+        "flexible_count": 180405,
+        "radius_pt": 16.458794181818185
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMACRYS",
+        "measure": "models",
+        "count": 287,
+        "flexible_count": 157,
+        "radius_pt": 16.458794181818185
+      }
+    ],
+    "size_key_radii": [
+      {
+        "measure": "records",
+        "count": 10000,
+        "radius_pt": 2.5414327598880924
+      },
+      {
+        "measure": "records",
+        "count": 100000,
+        "radius_pt": 8.036716041414184
+      },
+      {
+        "measure": "models",
+        "count": 10,
+        "radius_pt": 3.0722536299159016
+      },
+      {
+        "measure": "models",
+        "count": 100,
+        "radius_pt": 9.715319020254267
+      }
+    ],
+    "size_key_counts": {
+      "records": [
+        10000,
+        100000
+      ],
+      "models": [
+        10,
+        100
+      ]
+    },
+    "flexible_callouts": [
+      {
+        "search": "MOLPAK",
+        "engine": "DMAREL",
+        "measure": "records",
+        "flexible_count": 110,
+        "text": "110",
+        "sector_angle_deg": 1.6216216216216217
+      },
+      {
+        "search": "MOLPAK",
+        "engine": "DMAREL",
+        "measure": "models",
+        "flexible_count": 7,
+        "text": "7",
+        "sector_angle_deg": 20.826446280991735
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMAREL",
+        "measure": "records",
+        "flexible_count": 83,
+        "text": "83",
+        "sector_angle_deg": 20.47978067169294
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMAREL",
+        "measure": "models",
+        "flexible_count": 3,
+        "text": "3",
+        "sector_angle_deg": 216.0
+      },
+      {
+        "search": "MOLPAK",
+        "engine": "DMACRYS",
+        "measure": "records",
+        "flexible_count": 38,
+        "text": "38",
+        "sector_angle_deg": 0.582177206570772
+      },
+      {
+        "search": "MOLPAK",
+        "engine": "DMACRYS",
+        "measure": "models",
+        "flexible_count": 3,
+        "text": "3",
+        "sector_angle_deg": 24.545454545454547
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMACRYS",
+        "measure": "records",
+        "flexible_count": 180405,
+        "text": "180,405",
+        "sector_angle_deg": 154.85038506473379
+      },
+      {
+        "search": "CrystalPredictor",
+        "engine": "DMACRYS",
+        "measure": "models",
+        "flexible_count": 157,
+        "text": "157",
+        "sector_angle_deg": 196.93379790940767
+      }
+    ],
+    "legend_scope": "rigid versus flexible molecular refinement; numeric callouts give flexible counts"
   },
   "source_tables_sha256": {
     "plot_datasets": "564f4dc7f392fe20d939556ac6c0f843665c8b75ed2841bad5f6b95a7a47adb1",

@@ -19,6 +19,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / 'data/analyses'
 DB = 'analysis/database_in_numbers'
+METHODS = DB + '/panel_c_methods'
 CMP = 'analysis/cposs_omc25_comparison'
 MAP = 'analysis/molecular_sketchmap'
 DENS = CMP + '/density'
@@ -82,7 +83,7 @@ def bar_list(rows, label, value, limit=None):
 def figure_inventory():
     chemical = read_json(CMP + '/analysis_validation.json')
     sketch = read_json(MAP + '/verification.json')
-    database = read_json(DB + '/manifest.json')
+    methods = read_json(METHODS + '/classification_summary.json')
     definitions = [
         ('chemical-content', 'CPOSS and OMC25: chemical content', 'comparison', 'Current', CMP, 'cposs_omc25_comparison', 'caption.tex',
          f"Elemental prevalence, molecular atom counts and molar-mass distributions for {chemical['cposs_single_verified']} verified single-component CPOSS systems and 44,403 OMC25 training molecular records. Every molecular record receives equal weight.", 'chemical--summary_statistics.csv', ''),
@@ -92,8 +93,8 @@ def figure_inventory():
          f"A molecular SOAP sketch-map of {sketch['datasets_included']} current records. Marker area scales with the square root of archived-file count; colour shows representative-component molar mass. Multicomponent systems use their largest non-water component.", 'map--dataset_embedding.csv', ''),
         ('multicomponent', 'Multicomponent formula units', 'comparison', 'Supplementary', CMP, 'cposs_omc25_multicomponent', 'caption_supplementary.tex',
          'The 44 verified salts, hydrates, solvates and co-crystals are shown separately from the single-component comparison. Atom counts and masses retain all components and stoichiometry of each formula unit.', 'chemical--cposs_multicomponent_formula_units.csv', ''),
-        ('software', 'Reported CSP software', 'overview', 'Supporting figure', DB, 'panel_c_software_proposal', '',
-         f"Explicit program mentions across {database['datasets']} searches: each search counts once per program family. Versions are pooled and program categories overlap.", 'audit--proposed_panel_c_counts.csv', ''),
+        ('software', 'Search and refinement methods', 'overview', 'Current', DB, 'panel_c_search_refinement', 'panel_c_methods/README.md',
+         f"Paired pie charts compare MOLPAK/CrystalPredictor searches with DMAREL/DMACRYS refinement. Purple and gold show rigid and flexible refinement. Structures and models use independent area scales. Includes {methods['classified_models']} of {methods['energy_models']} models and {methods['classified_archived_records']:,} archived records.", 'methods--matrix_counts.csv', ''),
     ]
     figures = []
     for ident, title, category, status, directory, stem, caption, description, data, note in definitions:
@@ -110,17 +111,17 @@ def figure_inventory():
 
 LABELS = {
     'summary_statistics': 'Molecular-size and mass summary statistics',
-    'proposed_panel_c_counts': 'Reported CSP software counts',
+    'matrix_counts': 'Search and refinement matrix counts',
     'dataset_embedding': 'Molecular sketch-map coordinates and representatives',
     'density_statistics': 'Density statistics and histogram-reference status',
     'cposs_multicomponent_formula_units': 'Verified multicomponent CPOSS formula units',
 }
-GROUPS = [('audit', 'Source audit', DB + '/workbook_crosscheck'),
+GROUPS = [('methods', 'Search and refinement methods', METHODS),
           ('map', 'Molecular map', MAP + '/tables'),
           ('chemical', 'Chemical comparison', CMP + '/tables'),
           ('density', 'Density comparison', DENS + '/tables')]
 PRIORITY = ['chemical--summary_statistics', 'density--density_statistics',
-            'audit--proposed_panel_c_counts', 'map--dataset_embedding',
+            'methods--matrix_counts', 'map--dataset_embedding',
             'chemical--cposs_multicomponent_formula_units']
 
 
@@ -193,7 +194,7 @@ def main():
     contributor_links = read_csv(DB + '/tables/dataset_contributors.csv')
     papers = read_csv(DB + '/tables/cumulative_papers.csv')
     paper_records = read_csv(DB + '/tables/papers.csv')
-    programs = read_csv(DB + '/workbook_crosscheck/proposed_panel_c_counts.csv')
+    method_summary = read_json(METHODS + '/classification_summary.json')
     methods = read_csv(DB + '/tables/method_frequencies.csv')
     density = read_csv(DENS + '/tables/density_statistics.csv')
     density_coverage = read_csv(DENS + '/tables/cposs_density_window_coverage.csv')
@@ -202,6 +203,7 @@ def main():
     q1, _, q3 = statistics.quantiles(files, n=4, method='inclusive')
     credited = len({r['dataset_id'] for r in contributor_links})
     figures = figure_inventory()
+    method_figure = next(figure for figure in figures if figure['id'] == 'software')
     for figure in figures:
         SOURCE_FILES.update(figure[key] for key in ['image', 'pdf', 'caption'] if figure[key])
     downloads = export_tables({figure['data'] for figure in figures})
@@ -209,6 +211,9 @@ def main():
     assert len(datasets) == len(catalogue['datasets']) == manifest['datasets']
     assert {r['dataset_id'] for r in datasets} == {r['id'] for r in catalogue['datasets']}
     assert sum(files) == counts['archive_structure_files']
+    assert method_summary['source_revision'] == manifest['snapshot_revision']
+    assert method_summary['energy_models'] == counts['archives']
+    assert method_summary['total_archived_records'] == sum(files)
     single = [r for r in chemical if r['component_basis'] == 'single_molecule']
     multi = [r for r in chemical if r['component_basis'] == 'formula_unit']
     linked_papers = sum(float(r['csp_paper_count'] or 0) > 0 for r in datasets)
@@ -226,6 +231,7 @@ def main():
                'formula_only_systems': comparison['cposs_excluded_systems'],
                'dated_searches': sum(int(r['landscapes']) for r in annual),
                'undated_or_ambiguous_searches': len(datasets) - sum(int(r['landscapes']) for r in annual),
+               'search_refinement': {key: method_summary[key] for key in ['classified_archived_records', 'total_archived_records', 'classified_models', 'energy_models', 'unresolved_models', 'unresolved_archived_records']},
                'density': density_validation, 'map': {k: sketch[k] for k in ['datasets_included', 'represented_structure_files', 'metrics']},
                'figures': figures, 'downloads': downloads, 'source_status': 'computed from frozen analysis outputs; OMC25/CSD density reference recovered approximately from a histogram'}
     summary_json = json.dumps(summary, indent=2, ensure_ascii=False) + '\n'
@@ -273,13 +279,14 @@ def main():
     html = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="CPOSS dataset figures, archived structure statistics, molecular diversity, and comparisons with OMC25 and the Cambridge Structural Database.">
-<title>Analyses &amp; statistics · CPOSS Landscape Navigator</title>
-<link rel="stylesheet" href="assets/analyses.css"><script src="assets/analyses.js?v=20261027-cleanup" defer></script></head><body>
+<title>Analyses &amp; statistics · CDCCS Landscape Navigator</title>
+<link rel="icon" type="image/png" href="assets/cposs-logo-circle-blue.png">
+<link rel="stylesheet" href="assets/analyses.css?v=20261028-purple-urea"><link rel="stylesheet" href="assets/site.css?v=20261028-purple-urea"><script src="assets/analyses.js?v=20261027-cleanup" defer></script></head><body>
 <a class="skip" href="#main">Skip to analyses</a>
-<header class="topbar"><div class="topbar-inner"><a class="brand nav-return" href="./">CPOSS<span>Landscape Navigator</span></a><nav class="toplinks" aria-label="Site navigation"><a href="https://louiseprice.github.io/CPOSS_Database/index.html">CPOSS database ↗</a><a class="nav-return" href="./">← Explore landscapes</a></nav></div></header>
+<header class="topbar"><div class="topbar-inner"><a class="cposs-brand nav-return" href="./"><img class="cposs-brand-logo" src="assets/cposs-logo-circle-blue.png" alt="" width="80" height="80" decoding="async"><span>CDCCS Landscape Navigator</span></a><nav class="toplinks site-toplinks" aria-label="Site navigation"><a class="btn btn-sm btn-outline-light" href="https://louiseprice.github.io/CPOSS_Database/index.html">CDCCS website</a><a class="btn btn-sm btn-outline-light nav-return" href="./">← Explore landscapes</a></nav></div></header>
 <div class="hero"><div class="wrap"><p class="eyebrow">The CPOSS dataset</p><h1>Analyses &amp; comparisons</h1><p class="intro">The figures, statistics and source data behind the landscapes. Explore molecular diversity, the scope of the archive, and comparisons with OMC25 and the Cambridge Structural Database.</p>
 <div class="snapshot"><span>Source snapshot · {date.fromisoformat(manifest['accessed_date']).strftime('%d %B %Y')}</span><span>Revision <code>{manifest['snapshot_revision'][:12]}</code></span></div><div class="stats">{metrics}</div>
-<details class="scope"><summary>What is counted? Why does the Navigator catalogue show {len(catalogue['datasets'])} files?</summary><p>These analyses follow <strong>{len(datasets)} current JSON records on {len(chemical)} molecular-system pages</strong>, matching the Navigator catalogue. Three outdated page-link identifiers were reconciled against structure filenames; one legacy search without a current JSON file is excluded. The {number(sum(files))}-file total counts model-specific RES records, with no geometric deduplication.</p></details></div></div>
+</div></div>
 <nav class="jump-nav" aria-label="Analysis sections"><div class="wrap"><a href="#figures">All figures</a><a href="#dataset-statistics">Dataset statistics</a><a href="#chemical-comparison">OMC25 comparison</a><a href="#density-comparison">Crystal densities</a></div></nav>
 <main id="main" class="wrap">
 <section id="figures" aria-labelledby="figures-title"><div class="section-head"><div><h2 id="figures-title">The figure collection</h2><p>Expand a figure to inspect it, or download the original image, vector PDF, caption and underlying tables.</p></div><span class="count">{len(figures)} analysis figures</span></div>
@@ -288,7 +295,7 @@ def main():
 <section id="dataset-statistics" aria-labelledby="statistics-title"><div class="section-head"><div><h2 id="statistics-title">The dataset in numbers</h2><p>Archive totals, source coverage, study history and the people and methods named in the database.</p></div><a class="detail-link" href="data/analyses/summary.json" download>Summary JSON ↓</a></div>
 <div class="two-up"><article class="panel"><h3>Archive size and coverage</h3><div class="metric-strip"><div><strong>{number(statistics.median(files))}</strong><span>median files per search</span></div><div><strong>{number(min(files))}–{number(max(files))}</strong><span>range per search</span></div></div><p>The middle half of searches contain {number(q1, 1)}–{number(q3, 1)} archived files. All {len(datasets)} records have complete archive counts.</p>{table(['Measurement', 'Available', 'Definition'], scope_rows)}<p class="source-note">Visualization entries, spreadsheet rows and archive files describe overlapping scopes and are not added together.</p></article>
 <article class="panel"><h3>Study history</h3>{svg_years(annual)}<div class="metric-strip"><div><strong>{summary['dated_searches']}</strong><span>searches with a single study year</span></div><div><strong>{summary['undated_or_ambiguous_searches']}</strong><span>ambiguous or interval dates</span></div></div><p>The dated searches contain {number(counts['annual_structure_files'])} archived files; {number(counts['unassigned_year_structure_files'])} files fall outside the dated series. Study dates do not measure database release or deposition.</p><details class="table-details"><summary>Annual searches and structure-file totals</summary>{chronology_table}</details><details class="table-details"><summary>Linked CSP papers by publication year</summary>{publication_table}</details></article></div>
-<div class="two-up"><article class="panel"><h3>Reported CSP software</h3>{bar_list(programs, 'program', 'datasets')}<p>Each search counts at most once per program family. Versions are pooled; categories overlap. Only explicit software mentions are counted.</p><a class="detail-link" href="data/analyses/audit--proposed_panel_c_counts.csv" download>Download software counts ↓</a>{method_tables}<p class="source-note">Molecular electronic-structure labels are not counts of periodic-DFT crystal landscapes.</p></article>
+<div class="two-up"><article class="panel"><h3>Search and refinement methods</h3><a class="methods-preview" href="{e(method_figure['image'])}" data-expand="software" aria-label="Expand search and refinement methods"><img src="{e(method_figure['image'])}" alt="{e(method_figure['description'])}" loading="lazy" decoding="async"></a><p>The paired pies show archived structure records and equally weighted energy models. Each measure has its own area scale; purple denotes rigid refinement and gold flexible refinement.</p><p class="source-note">{number(method_summary['classified_archived_records'])} of {number(method_summary['total_archived_records'])} records and {number(method_summary['classified_models'])} of {number(method_summary['energy_models'])} models are classified. The remaining {number(method_summary['unresolved_models'])} models / {number(method_summary['unresolved_archived_records'])} records lie outside the matrix or remain unresolved. Structure records retain separate energy-model representations.</p><a class="detail-link" href="{e(method_figure['data'])}" download>Download matrix counts ↓</a>{method_tables}</article>
 <article class="panel"><h3>Named scientists and linked literature</h3>{bar_list(contributors, 'scientist_name', 'dataset_count', 8)}<p>{credited} searches name at least one scientist. Credits overlap and follow the source Scientist field; paper authorship is recorded separately.</p><details class="table-details"><summary>All {len(contributors)} named scientists</summary>{contributors_table}</details><div class="metric-strip"><div><strong>{summary['linked_csp_papers']}</strong><span>unique linked CSP papers</span></div><div><strong>{number(summary['all_linked_references'])}</strong><span>linked references overall</span></div></div><p>{linked_papers} searches link a qualifying CSP paper. References are deduplicated by DOI or canonical URL; experimental-context references are recorded separately.</p></article></div></section>
 <section id="chemical-comparison" aria-labelledby="chemical-title"><div class="section-head"><div><h2 id="chemical-title">Chemical coverage relative to OMC25</h2><p>Equal weight per documented molecular record: {comparison['cposs_single_verified']} verified single-component CPOSS systems and 44,403 OMC25 training molecular records.</p></div><a class="detail-link" href="#figure-chemical-content">View figure ↑</a></div>
 <div class="two-up"><article class="panel"><h3>Molecular size and molar mass</h3>{table(['Variable', 'CPOSS median (range)', 'OMC25 median (range)'], comparison_rows)}<p>The observed CPOSS single-component size and mass ranges lie within OMC25’s ranges. Range overlap does not establish matching chemical environments or crystal packings.</p><div class="population-note"><p>The other 44 verified CPOSS systems are complete multicomponent formula units. They retain coformers, counterions and water; their masses are not single-molecule masses. One additional single-component system remains in the formula-only sensitivity population.</p></div><p class="source-note">Molar masses use one frozen average-atomic-weight convention. Original OMC25 masses are retained; harmonization changes a training mass by at most 0.032 g mol⁻¹.</p></article>
@@ -298,7 +305,7 @@ def main():
 <div class="two-up"><article class="panel"><h3>Shared interval: 0.8–2.4 g cm⁻³</h3>{table(['Population', 'Median', 'Q1', 'Q3', 'Mean'], density_rows)}<p class="source-note">All values are in g cm⁻³ and conditional on the shared interval. OMC25 and CSD values are approximate histogram recoveries, not statistics calculated from raw crystal records.</p></article>
 <article class="panel"><h3>Density coverage and weighting</h3><div class="metric-strip"><div><strong>{number(density_validation['primary_records'])}</strong><span>available source density records</span></div><div><strong>{density_validation['primary_systems']}</strong><span>single-component systems</span></div></div><p>{number(cov['records_in_window'])} records from {density_validation['primary_searches']} searches lie in the comparison window. {number(cov['outside_window_percent'], 2)}% lie outside it and remain in the data tables.</p><p>Each search contributes one archive-linked density column. The CPOSS curves give each molecular system equal total weight within the shared window, with equal weights for its represented searches. This prevents systems with more stored candidates from dominating. OMC25 and CSD are independently normalized histogram references; their molecular-system identities are unavailable for reweighting.</p><p class="source-note">This visualization subset is not a density census of all {number(sum(files))} archived files. Density agreement does not establish equal chemical, packing or stability coverage.</p></article></div>
 </section>
-</main><footer class="footer"><div class="wrap"><span>CPOSS · Dataset analyses &amp; comparisons</span><a class="nav-return" href="./">Return to the Landscape Navigator ↑</a><span>Source snapshot · October 2026</span></div></footer>
+</main><footer class="footer"><div class="wrap"><span>CDCCS Landscape Navigator · Analyses &amp; comparisons</span><a class="nav-return" href="./">Return to the Landscape Navigator ↑</a><span>Source snapshot · October 2026</span></div></footer>
 <dialog id="figure-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title"></h2><button id="dialog-close" type="button" aria-label="Close figure">Close ×</button></div><img class="dialog-image" id="dialog-image" alt=""><div class="dialog-footer"><span id="dialog-description"></span><a id="dialog-original" target="_blank" rel="noopener noreferrer">Full-resolution image ↗</a><a id="dialog-pdf" download>Vector PDF ↓</a></div></dialog>
 <script type="application/json" id="analysis-data">{figure_data_json}</script>
 </body></html>'''
@@ -314,6 +321,8 @@ The corrected chemical comparison contains {comparison['cposs_single_verified']}
 Density statistics use {density_validation['primary_records']:,} archive-linked CPOSS visualization records from {density_validation['primary_systems']} systems. The OMC25 and organic CSD references are approximate recoveries from paper Figure 3a. Comparisons are conditional on 0.8–2.4 g cm⁻³, with common 0.02-wide bins. Atomic fractions and molecular elemental prevalence are separate measurements.
 
 The molecular map contains {sketch['datasets_included']} of {len(datasets)} records. Its multicomponent representatives are the largest non-water components, not complete formula units.
+
+The search/refinement pie-chart matrix uses separate area scales for archived records and equally weighted energy models. It classifies {method_summary['classified_archived_records']:,} records and {method_summary['classified_models']} models; the remaining {method_summary['unresolved_models']} models are outside the matrix or unresolved. The linked matrix CSV and methods notes describe this figure, replacing the earlier program-frequency bar chart.
 
 Files: summary.json contains aggregate statistics and the five-figure catalogue; build-manifest.json records source checksums. The five CSVs are the complete result tables linked by the retained figures. The ZIP includes only these figures, captions and linked tables. Earlier overview exports, sketch-map diagnostics and separate molecular illustrations are excluded from the public downloads. Original analysis files and previously exported CSV copies remain on disk, but are not linked by this page or included in its download catalogue or ZIP. Source workbooks and large source caches are not included.
 

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "classification_tests_passed": 9,
+  "paired_pies": true,
+  "outside_panel_c_changed_pixels": 0,
+  "outside_panel_c_compared_pixels": 7539735,
+  "source_baseline_png_sha256": "a222c4e0fa06e2f237f3082f7216fe25baa832c217a7f5cf97f85eaa27ab655d",
+  "source_inventory_datasets": 310,
+  "archive_record_accounting": 517594,
+  "energy_model_accounting": 508,
+  "classification_unchanged": true,
+  "area_and_size_legends_consistent": true,
+  "weighting_independent_for_records_and_models": true,
+  "flexible_callouts_verified": 8,
+  "row_label_rotation_deg": 90,
+  "vector_only": true,
+  "embedded_fonts": [
+    "/CJIGXG+Helvetica",
+    "/CJIGXG+Helvetica-Bold",
+    "/EBPWGE+Helvetica",
+    "/HDZGLW+Helvetica-Bold",
+    "/HHPGMP+Helvetica-Bold",
+    "/YYLFGN+Helvetica"
+  ],
+  "publication_rendering_inspected": true,
+  "final_pdf_sha256": "7733dba24543304d123a0ecfd28c48711e8c59f7539c5ccd23c2da23901a08f4",
+  "standalone_pdf_sha256": "61d728cdf4e4d1761eb3d750cebcbf8ce37e232b7b9764cef5fbb844fd76ed17",
+  "final_png_sha256": "806183c3f34d8a0263742b7817533755ee3560ff2d0dd18ed4108b0dc0259efc",
+  "standalone_png_sha256": "2e442be6b7c210ce86e89bd2e39b5a0e18de18d64acf0adaff2b75f0f3769a97",
+  "text_bbox_overlaps": [],
+  "caption_latex_compiled": true
+}

@@ -1,0 +1,58 @@
+% Caption for database_in_numbers_3x2.pdf. Input inside the figure environment.
+\caption{
+\textbf{The CPOSS database in numbers.}
+Overview of 310 documented crystal structure prediction (CSP) searches
+covering 234 molecular systems in the repository snapshot accessed
+on 2026-10-27. The headline counts 517,594 \texttt{RES}
+coordinate files across 508 documented energy-model archives.
+Separate model representations and any archived experimental reference
+structures are retained; geometric deduplication across models and
+searches has not been performed.
+\textbf{(A)} Molar mass against total atom count on logarithmic axes
+for 232 systems with unambiguously parseable website formulas:
+191 single-component systems (purple) and 41 multicomponent
+formula units (yellow). Atom counts include hydrogen, and multicomponent
+formulas retain their complete written stoichiometry. The other
+2 systems have ambiguous website formulas and
+are excluded from this panel.
+\textbf{(B)} Archived structure-file counts per search, ranked from
+largest to smallest on a logarithmic vertical axis (median 498).
+\textbf{(C)} Search and refinement methods. Columns identify the initial
+search program (MOLPAK or CrystalPredictor), taken from energy model 1
+where available and traced through unambiguous same-page Study\_ID references.
+Rows identify the refinement engine (DMAREL or DMACRYS). Each cell contains
+two pies: Structures (left) weights archived structure--model records;
+Models (right) counts each distinct dataset/energy-model combination once.
+Circle areas represent cell totals on independent scales, given by their
+respective size keys. Purple and gold denote rigid and flexible molecular
+refinement; numeric callouts give flexible counts in each pie's unit.
+Flexible searching alone does not establish flexible refinement;
+CrystalOptimizer or DMAflex is treated as flexible refinement only when
+explicitly documented for the current workflow. Both views include
+457 of 508 energy models
+(90.0\%) and
+468,787 of 517,594 stored files
+(90.6\%).
+The 51 excluded archives (48,807 files) have
+other search origins or unresolved refinement histories; exclusions and
+reasons are retained in the model-level audit. Separate representations
+across energy models are retained: TrinitrobenzeneA's nine archives of
+203 files each contribute 1,827 records to Structures and nine models
+to Models, without implying geometrically identical populations.
+\textbf{(D)} Website search-level credits for the 20 most frequently
+named scientists, drawn from 45 named scientists overall.
+Every explicitly named contributor receives full credit for an associated
+search; 285 of the 310 searches have named credits.
+\textbf{(E)} Annual search counts (bars) and archived structure-file
+totals (line), with cumulative search counts below. The temporal plots
+include 236 searches containing 488,411 archived files with
+single unambiguous website study years. The other 74 searches,
+containing 29,183 files, have date ranges or non-specific
+dates and are excluded. These dates describe studies rather than
+database release or deposition.
+\textbf{(F)} Cumulative unique linked CSP papers by publication year,
+reaching 75 papers.
+References are deduplicated by DOI or canonical URL; experimental-context
+references are recorded separately.
+}
+\label{fig:database_in_numbers}

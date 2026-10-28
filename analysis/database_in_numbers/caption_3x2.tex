@@ -17,11 +17,28 @@ formulas retain their complete written stoichiometry. The other
 are excluded from this panel.
 \textbf{(B)} Archived structure-file counts per search, ranked from
 largest to smallest on a logarithmic vertical axis (median 498).
-\textbf{(C)} Reported CSP software, obtained from the curation
-workbook's energy-model records matched to the documented archives.
-Each search is counted once per program family, pooling program
-versions. Categories overlap; only explicit program mentions are
-counted, and bare Study\_ID cross-references are not expanded.
+\textbf{(C)} Search and refinement methods. Columns identify the initial
+search program (MOLPAK or CrystalPredictor), taken from energy model 1
+where available and traced through unambiguous same-page Study\_ID references.
+Rows identify the refinement engine (DMAREL or DMACRYS). Each cell contains
+two pies: Structures (left) weights archived structure--model records;
+Models (right) counts each distinct dataset/energy-model combination once.
+Circle areas represent cell totals on independent scales, given by their
+respective size keys. Purple and gold denote rigid and flexible molecular
+refinement; numeric callouts give flexible counts in each pie's unit.
+Flexible searching alone does not establish flexible refinement;
+CrystalOptimizer or DMAflex is treated as flexible refinement only when
+explicitly documented for the current workflow. Both views include
+457 of 508 energy models
+(90.0\%) and
+468,787 of 517,594 stored files
+(90.6\%).
+The 51 excluded archives (48,807 files) have
+other search origins or unresolved refinement histories; exclusions and
+reasons are retained in the model-level audit. Separate representations
+across energy models are retained: TrinitrobenzeneA's nine archives of
+203 files each contribute 1,827 records to Structures and nine models
+to Models, without implying geometrically identical populations.
 \textbf{(D)} Website search-level credits for the 20 most frequently
 named scientists, drawn from 45 named scientists overall.
 Every explicitly named contributor receives full credit for an associated

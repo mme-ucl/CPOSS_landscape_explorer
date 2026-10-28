@@ -1,4 +1,4 @@
-# CPOSS CSP Landscape Navigator
+# CDCCS Landscape Navigator
 
 A static Chemiscope viewer with dataset search, five collection filters, and contextual links/previews for the CPOSS molecule database. No build step or server application is required.
 
@@ -14,7 +14,7 @@ Open <http://127.0.0.1:8765/>. Use HTTP rather than opening the HTML as a local 
 
 Search by a molecule name, alias, molecular formula, REFCODE, or dataset code. Formula matching ignores whitespace, case and Unicode subscript formatting: `C9H8O4`, `C9 H8 O4` and `C₉H₈O₄` find the same datasets. It otherwise matches the complete source formula, retaining element order, explicit counts, charges, coefficients and hydrate/salt/component notation. It does not reorder elements or equate alternative chemical notations. All matching molecules/searches are returned within the selected collection. Formula metadata comes only from explicitly linked database case pages and is stored in the local catalogue; unmapped datasets retain name/code search. Select a result with a click or the arrow keys and Enter; Escape dismisses the list. Collection filters combine with the search. Filtering does not change the displayed landscape.
 
-Opening the navigator without `?load=...` starts with the small Aspirin — Search A example. Every dataset uses the same scientific preset, including datasets with missing properties. Shared `?load=...` URLs and embedded/local datasets retain their dataset selection. Initial embedded settings and `?settings=...` are superseded by the preset; deliberate settings imports after loading remain available.
+Opening the navigator without `?load=...` starts with Urea — Search A (using its complete model-1 Density/Lattice Energy pair). Every dataset uses the same scientific preset, including datasets with missing properties. Shared `?load=...` URLs and embedded/local datasets retain their dataset selection. Initial embedded settings and `?settings=...` are superseded by the preset; deliberate settings imports after loading remain available.
 
 “Open molecule database page” opens the source page separately. “Preview beside landscape” embeds it beside the viewer on wide screens and below the viewer on smaller screens. The external link is always available if embedding fails. The preview shows the original database page, whose fixed-width content may require horizontal scrolling.
 
@@ -22,7 +22,7 @@ The existing Chemiscope load/save modal, plot/structure settings, exports, and l
 
 ## Dataset figures and statistics
 
-Use **Analyses & statistics** in the Navigator header to open [the analyses page](analyses.html). It includes five analysis figures, expandable previews, original PDF/PNG and caption downloads, five linked CSV result tables, and dataset, chemistry and density statistics. The return links preserve a landscape selected through its `?load=...` URL. The analyses page uses local static assets and works without remote dataset downloads.
+Use **Analyses & statistics** in the Navigator header to open [the analyses page](analyses.html). It includes five analysis figures, expandable previews, original PDF/PNG and caption downloads, five linked CSV result tables, and dataset, chemistry and density statistics. The search/refinement figure and statistics panel use the current paired pie-chart matrix, with matching PNG, PDF, matrix counts and methods notes. The return links preserve a landscape selected through its `?load=...` URL. The analyses page uses local static assets and works without remote dataset downloads.
 
 Counting notes distinguish molecular systems, searches, model-specific archived files and density records. The chemistry summaries use the reconciled composition audit. OMC25/CSD density references remain explicitly approximate histogram recoveries. The available Navigator JSON catalogue and documented archive inventory have different scopes.
 
@@ -33,6 +33,8 @@ python3 scripts/build_analyses.py
 ```
 
 The builder reads the existing outputs under `analysis/database_in_numbers/`, `analysis/cposs_omc25_comparison/` and `analysis/molecular_sketchmap/`. It writes `analyses.html` and `data/analyses/`, including source checksums, a data guide and a ZIP containing the five retained figures, their captions and linked result tables. Earlier exports, diagnostics and unrelated table downloads are excluded from the page catalogue and ZIP; original analysis files and previous CSV exports remain on disk. Public table copies omit local filesystem provenance paths. Raw source workbooks and caches are excluded. It does not rerun or change scientific calculations. Source counts are checked against the frozen analysis snapshot; update those checks and the displayed scope together when preparing a new snapshot.
+
+The two pages share the same logo, title styling and bright purple/blue/cyan interface palette through `assets/site.css`, including matching outlined header buttons. Both pages use the supplied logo PNG as their favicon; browsers scale the original artwork to tab-icon size. Scientific figure colours and Chemiscope colour scales retain their data meanings.
 
 ## One global visualization
 
@@ -46,7 +48,8 @@ The builder reads the existing outputs under `analysis/database_in_numbers/`, `a
     y: { property: "Lattice Energy", scale: "linear" },
     z: { property: "" },
     color: { property: "Space Group Number", mode: "log", min: 0, max: 2.37, palette: "seismic" },
-    size: { property: "Experimental Info", mode: "flip-linear", factor: 55 }
+    size: { property: "Experimental Info", mode: "flip-linear", factor: 55 },
+    symbol: "Experimental Info"
   },
   structure: [{ supercell: [3, 3, 3], unitCell: true }]
 }
@@ -64,7 +67,7 @@ This bundled Chemiscope forces any constant colour property to the midpoint befo
 
 ### Experimental Info sizes
 
-Native **flip-linear** sizing and factor **55** apply everywhere. Numeric Experimental Info (including numeric strings) retains supplied values. Missing numeric sizes use Chemiscope's minimum size; a wholly missing/constant column uses its uniform reference size.
+Native **flip-linear** sizing and factor **55** apply everywhere. The native marker/symbol field also defaults to the original Experimental Info categories for every dataset that supplies nonblank categorical annotations. The original descriptions determine the native shape categories, including blank entries; the size score is not reused for shapes. Missing, wholly blank, numeric or more-than-50-category fields retain fixed marker shapes, since this native Chemiscope version only supports text-category symbols. This is recorded in Dataset notes and does not change source properties. Numeric Experimental Info (including numeric strings) retains supplied values. Missing numeric sizes use Chemiscope's minimum size; a wholly missing/constant column uses its uniform reference size.
 
 Text descriptions remain available in the original field. A separately labelled, display-only `Experimental Info (size)` column uses one deterministic annotation-presence score: **nonblank supplied annotation = 0; blank/missing = 1**. Native flip-linear makes annotated structures larger; it does not rank descriptions alphabetically or use dataset-local category indices. Missing markers include null, NaN, empty/whitespace strings, `nan`, `n/a`, `na`, `null`, `none`, `undefined`, `?` and standalone dashes. A nonblank description is treated only as a supplied annotation, not as proof of a particular experimental status or a numeric measurement. The reference dataset's 883 blank descriptions therefore produce uniform native point sizes; other datasets retain their experimental distinctions.
 

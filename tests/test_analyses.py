@@ -67,6 +67,8 @@ class AnalysesTest(unittest.TestCase):
                      'Database in numbers: portrait overview']:
             self.assertNotIn(text, self.html)
         self.assertIn('figure-molecular-map', self.page.ids)
+        self.assertNotIn('<details class="scope">', self.html)
+        self.assertNotIn('What is counted? Why does the Navigator', self.html)
         self.assertNotIn('map--optimization_runs.csv', self.html)
         self.assertNotIn('database--annual_counts.csv', self.html)
         self.assertNotIn('database--structure_count_ranking.csv', self.html)
@@ -84,7 +86,7 @@ class AnalysesTest(unittest.TestCase):
                 self.assertIn(unquote(url.fragment), self.page.ids, ref)
         navigator = (ROOT / 'index.html').read_text()
         self.assertIn('id="dataset-analyses-link" href="analyses.html"', navigator)
-        header = navigator.split('<nav class="cposs-toplinks"', 1)[1].split('</nav>', 1)[0]
+        header = navigator.split('<nav class="cposs-toplinks', 1)[1].split('</nav>', 1)[0]
         self.assertEqual(header.count('class="btn btn-sm btn-outline-light"'), 4)
 
     def test_retained_figure_tables_preserve_scientific_values(self):
@@ -93,7 +95,7 @@ class AnalysesTest(unittest.TestCase):
             'analysis/cposs_omc25_comparison/density/tables/density_statistics.csv',
             'analysis/molecular_sketchmap/tables/dataset_embedding.csv',
             'analysis/cposs_omc25_comparison/tables/cposs_multicomponent_formula_units.csv',
-            'analysis/database_in_numbers/workbook_crosscheck/proposed_panel_c_counts.csv',
+            'analysis/database_in_numbers/panel_c_methods/matrix_counts.csv',
         }
         self.assertEqual({item['source'] for item in self.summary['downloads']}, expected)
         self.assertEqual({item['path'] for item in self.summary['downloads']},
@@ -111,6 +113,22 @@ class AnalysesTest(unittest.TestCase):
                         self.assertIn('Local source location omitted', exported[key])
                     else:
                         self.assertEqual(value or '', exported[key], (item['id'], key))
+
+    def test_search_refinement_figure_uses_matching_counts_and_downloads(self):
+        figure = next(item for item in self.summary['figures'] if item['id'] == 'software')
+        self.assertEqual(figure['image'], 'analysis/database_in_numbers/figures/panel_c_search_refinement.png')
+        self.assertEqual(figure['pdf'], 'analysis/database_in_numbers/output/pdf/panel_c_search_refinement.pdf')
+        self.assertEqual(figure['data'], 'data/analyses/methods--matrix_counts.csv')
+        self.assertNotIn('panel_c_software_proposal', self.html)
+        self.assertNotIn('proposed_panel_c_counts', self.html)
+        self.assertNotIn('Reported CSP software', self.html)
+        with (ROOT / figure['data']).open() as stream:
+            rows = list(csv.DictReader(stream))
+        coverage = self.summary['search_refinement']
+        self.assertEqual(sum(int(row['total_records']) for row in rows), coverage['classified_archived_records'])
+        self.assertEqual(sum(int(row['energy_models']) for row in rows), coverage['classified_models'])
+        self.assertEqual(coverage['classified_models'] + coverage['unresolved_models'], self.summary['model_archives'])
+        self.assertEqual(coverage['classified_archived_records'] + coverage['unresolved_archived_records'], self.summary['archived_structure_files'])
 
     def test_bundle_has_figures_and_all_tables_without_private_sources(self):
         with zipfile.ZipFile(PUBLIC / 'cposs_figures_and_statistics.zip') as bundle:

@@ -46,6 +46,7 @@ test('one authoritative immutable global preset has the approved reference seman
     assert.equal(v.PRESET.map.x.property,'Density');assert.equal(v.PRESET.map.y.property,'Lattice Energy');
     assert.deepEqual(v.PRESET.map.color,{property:'Space Group Number',mode:'log',min:0,max:2.37,palette:'seismic'});
     assert.deepEqual(v.PRESET.map.size,{property:'Experimental Info',mode:'flip-linear',factor:55});
+    assert.equal(v.PRESET.map.symbol,'Experimental Info');
     assert.deepEqual(v.PRESET.structure,[{supercell:[3,3,3],unitCell:true}]);
     assert.ok(Object.isFrozen(v.PRESET.map.color));
 });
@@ -105,6 +106,7 @@ test('all missing markers remain unknown, missing axes omit rows without alignme
 test('missing properties retain the same scientific style with grey SG and unavailable axes',()=>{
     const input=dataset();input.properties={Filename:property(['a','b','c','d'])};const p=v.prepare(input);
     assert.equal(p.settings.map.color.mode,'log');assert.equal(p.settings.map.size.mode,'flip-linear');
+    assert.equal(p.settings.map.symbol,'');
     assert.equal(p.diagnostics.spaceGroups.unknown,4);assert.equal(p.diagnostics.axes.plotted,0);
     assert.match(v.describe(p).join(' '),/scientific plot is empty/);
 });
@@ -113,12 +115,42 @@ test('experimental descriptions retain labels and use deterministic presence sco
     const p=v.prepare(input);assert.deepEqual(p.dataset.properties['Experimental Info'].values,input.properties['Experimental Info'].values);
     assert.deepEqual(p.dataset.properties[p.settings.map.size.property].values,[0,1,0,1]);
     assert.equal(p.diagnostics.experimentalInfo.policy,'annotation-presence');assert.equal(p.settings.map.size.factor,55);
+    assert.equal(p.settings.map.symbol,'Experimental Info');
+    assert.equal(p.diagnostics.experimentalInfo.markerPolicy,'supplied-categories');
+    assert.equal(v.prepare(dataset()).settings.map.symbol,'');
     assert.equal(v.prepare(dataset()).dataset.properties['Experimental Info (size)'].values.every(x=>x===1),true);
 });
 test('numeric experimental values preserve measurements; missing sizes stay NaN',()=>{
     const input=dataset();input.properties['Experimental Info']=property(['0','2',null,'3']);const p=v.prepare(input);
     assert.equal(p.settings.map.size.property,'Experimental Info');assert.deepEqual(p.dataset.properties['Experimental Info'].values,[0,2,NaN,3]);
     assert.equal(p.diagnostics.experimentalInfo.policy,'numeric');
+    assert.equal(p.settings.map.symbol,'');
+    assert.match(v.describe(p).join(' '),/symbols require text categories/);
+});
+test('experimental marker categories apply across load paths and reset on dataset switching',async()=>{
+    for(const method of ['load','fetchAndLoad','loadStreaming']){
+        const input=dataset();input.properties['Experimental Info']=property(['Form I','','Form II','']);
+        const before=v.copy(input),app=fakeApp();v.install(app);
+        if(method==='load')await app.load({},input);else await app[method](input);
+        assert.equal(app.visualizer.saveSettings().map.symbol,'Experimental Info');
+        assert.deepEqual(app.visualizer.dataset().properties,before.properties);
+        app.visualizer.applySettings({map:{symbol:''}});await Promise.resolve();
+        assert.equal(app.visualizer.saveSettings().map.symbol,'');
+        const next=dataset();next.properties['Experimental Information']=next.properties['Experimental Info'];
+        delete next.properties['Experimental Info'];next.properties['Experimental Information'].values=['Known','','',''];
+        await app.load({},next);
+        assert.equal(app.visualizer.saveSettings().map.symbol,'Experimental Information');
+        await app.load({},dataset());assert.equal(app.visualizer.saveSettings().map.symbol,'');
+    }
+});
+test('too many experimental categories use fixed markers without changing source labels',()=>{
+    const input=dataset(Array(51).fill(1));
+    input.properties['Experimental Info']=property(Array.from({length:51},(_,i)=>`Form ${i}`));
+    const before=v.copy(input),prepared=v.prepare(input);
+    assert.equal(prepared.settings.map.symbol,'');
+    assert.equal(prepared.diagnostics.experimentalInfo.markerPolicy,'too-many-categories');
+    assert.match(v.describe(prepared).join(' '),/50 text categories/);
+    assert.deepEqual(input,before);
 });
 test('shared load paths enforce global style over embedded settings and preserve original exports',async()=>{
     for(const method of ['load','fetchAndLoad','loadStreaming']){

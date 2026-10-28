@@ -10,6 +10,8 @@ Density statistics use 114,284 archive-linked CPOSS visualization records from 1
 
 The molecular map contains 307 of 310 records. Its multicomponent representatives are the largest non-water components, not complete formula units.
 
+The search/refinement pie-chart matrix uses separate area scales for archived records and equally weighted energy models. It classifies 468,787 records and 457 models; the remaining 51 models are outside the matrix or unresolved. The linked matrix CSV and methods notes describe this figure, replacing the earlier program-frequency bar chart.
+
 Files: summary.json contains aggregate statistics and the five-figure catalogue; build-manifest.json records source checksums. The five CSVs are the complete result tables linked by the retained figures. The ZIP includes only these figures, captions and linked tables. Earlier overview exports, sketch-map diagnostics and separate molecular illustrations are excluded from the public downloads. Original analysis files and previously exported CSV copies remain on disk, but are not linked by this page or included in its download catalogue or ZIP. Source workbooks and large source caches are not included.
 
 Sources: https://louiseprice.github.io/CPOSS_Database/index.html ; https://huggingface.co/datasets/facebook/OMC25 ; https://doi.org/10.1038/s41597-026-06628-2 .

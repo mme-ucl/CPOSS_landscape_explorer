@@ -17,6 +17,7 @@ from matplotlib.colors import LogNorm, Normalize, to_hex
 from matplotlib.patches import Rectangle
 from matplotlib.text import Text
 from matplotlib.ticker import MaxNLocator
+from panel_c_methods.draw_panel import draw_panel, load_summary
 from make_figure import helvetica, tidy, count_colors, spectral_line, INK, MUTED, LIGHT, COOL, WARM, SPECTRAL
 
 
@@ -29,32 +30,15 @@ def table(name):
 
 
 def panel_c_inputs():
-    folder = BASE / "workbook_crosscheck"
-    counts_path = folder / "proposed_panel_c_counts.csv"
-    with counts_path.open() as stream:
-        counts = list(csv.DictReader(stream))
-    with (folder / "proposed_panel_c_evidence.csv").open() as stream:
-        evidence = list(csv.DictReader(stream))
-    datasets = {row["dataset_id"] for row in table("plot_datasets")}
-    pairs = {(row["program"], row["dataset_id"]) for row in evidence}
-    if len(pairs) != len(evidence) or any(dataset not in datasets for _, dataset in pairs):
-        raise ValueError("Software evidence must contain distinct, documented search/program pairs")
-    for row in counts:
-        if int(row["denominator"]) != len(datasets) or int(row["datasets"]) != len({
-                dataset for program, dataset in pairs if program == row["program"]}):
-            raise ValueError("Software frequencies do not agree with their search-level evidence")
-    audit = json.loads((folder / "audit_summary.json").read_text())
-    return {
-        "title": "Reported CSP software",
-        "counts": {row["program"]: int(row["datasets"]) for row in counts},
-        "denominator": len(datasets),
-        "counting_rule": "Explicit program mentions; one count per search and program family; versions pooled; categories overlap; bare Study_ID pointers not expanded",
-        "counts_csv": str(counts_path.relative_to(BASE)),
-        "counts_csv_sha256": hashlib.sha256(counts_path.read_bytes()).hexdigest(),
-        "workbook_path": audit["workbook_path"],
-        "workbook_sha256": audit["workbook_sha256"],
-        "matched_energy_models": audit["matched_archived_models"],
-    }
+    summary, counts = load_summary()
+    datasets = table("plot_datasets")
+    if summary["inventory_datasets"] != len(datasets) or summary["total_archived_records"] != sum(int(row["structure_count"]) for row in datasets):
+        raise ValueError("Panel C must use the current figure inventory and archive counts")
+    folder = BASE / "panel_c_methods"
+    return summary | {"audit_csv": "panel_c_methods/model_classification.csv",
+                      "audit_csv_sha256": hashlib.sha256((folder / "model_classification.csv").read_bytes()).hexdigest(),
+                      "counts_csv": "panel_c_methods/matrix_counts.csv",
+                      "counts_csv_sha256": hashlib.sha256((folder / "matrix_counts.csv").read_bytes()).hexdigest()}
 
 
 def write_caption():
@@ -66,6 +50,7 @@ def write_caption():
     annual = table("annual_counts")
     papers = table("cumulative_papers")
     n = len(datasets)
+    methods = panel_c_inputs()
     systems = len({row["source_url"] for row in datasets})
     single = sum(row["composition_basis"] == "reported molecular formula" for row in chemistry)
     multi = len(chemistry) - single
@@ -92,11 +77,28 @@ formulas retain their complete written stoichiometry. The other
 are excluded from this panel.
 \textbf{{(B)}} Archived structure-file counts per search, ranked from
 largest to smallest on a logarithmic vertical axis (median 498).
-\textbf{{(C)}} Reported CSP software, obtained from the curation
-workbook's energy-model records matched to the documented archives.
-Each search is counted once per program family, pooling program
-versions. Categories overlap; only explicit program mentions are
-counted, and bare Study\_ID cross-references are not expanded.
+\textbf{{(C)}} Search and refinement methods. Columns identify the initial
+search program (MOLPAK or CrystalPredictor), taken from energy model 1
+where available and traced through unambiguous same-page Study\_ID references.
+Rows identify the refinement engine (DMAREL or DMACRYS). Each cell contains
+two pies: Structures (left) weights archived structure--model records;
+Models (right) counts each distinct dataset/energy-model combination once.
+Circle areas represent cell totals on independent scales, given by their
+respective size keys. Purple and gold denote rigid and flexible molecular
+refinement; numeric callouts give flexible counts in each pie's unit.
+Flexible searching alone does not establish flexible refinement;
+CrystalOptimizer or DMAflex is treated as flexible refinement only when
+explicitly documented for the current workflow. Both views include
+{methods['classified_models']} of {methods['energy_models']} energy models
+({100*methods['classified_models']/methods['energy_models']:.1f}\%) and
+{methods['classified_archived_records']:,} of {methods['total_archived_records']:,} stored files
+({100*methods['classified_archived_records']/methods['total_archived_records']:.1f}\%).
+The {methods['unresolved_models']} excluded archives ({methods['unresolved_archived_records']:,} files) have
+other search origins or unresolved refinement histories; exclusions and
+reasons are retained in the model-level audit. Separate representations
+across energy models are retained: TrinitrobenzeneA's nine archives of
+203 files each contribute 1,827 records to Structures and nine models
+to Models, without implying geometrically identical populations.
 \textbf{{(D)}} Website search-level credits for the 20 most frequently
 named scientists, drawn from {len(contributors)} named scientists overall.
 Every explicitly named contributor receives full credit for an associated
@@ -128,7 +130,6 @@ def main():
     contributors = pd.read_csv(BASE / "tables/contributors.csv")
     annual = pd.read_csv(BASE / "tables/annual_counts.csv")
     papers = pd.read_csv(BASE / "tables/cumulative_papers.csv")
-    software = pd.read_csv(BASE / "workbook_crosscheck/proposed_panel_c_counts.csv")
     software_info = panel_c_inputs()
     total = int(datasets.structure_count.sum())
     year_norm = Normalize(min(annual.year.min(), papers.year.min()),
@@ -148,7 +149,7 @@ def main():
         fig.text(x, .887, label, fontsize=6, color=MUTED, ha="center", va="center")
     for x, y, letter, title in [(.018,.840,"A","Molecular size"),
                                (.357,.840,"B","Structures per dataset"),
-                               (.701,.840,"C","Reported CSP software"),
+                               (.701,.840,"C","Search and refinement methods"),
                                (.018,.447,"D","The scientists"),
                                (.357,.447,"E","Landscapes through time"),
                                (.701,.447,"F","The linked literature")]:
@@ -182,14 +183,9 @@ def main():
     axb.set_xlabel("Dataset rank (largest first)", labelpad=5)
     axb.set_ylabel("Structure files", labelpad=4)
     tidy(axb)
-    axc = fig.add_axes([.832,.548,.150,.263])
-    software = software.iloc[::-1]
-    axc.barh(software.program, software.datasets, color=count_colors(software.datasets), height=.61)
-    axc.set_xlim(0,225); axc.set_xticks([0,100,200]); axc.tick_params(axis="y",length=0,labelsize=7)
-    axc.set_xlabel("Datasets", labelpad=5)
-    for i, value in enumerate(software.datasets):
-        axc.text(value+3,i,str(value),va="center",fontsize=6.5)
-    tidy(axc,"x"); axc.spines["left"].set_visible(False)
+    geometry = draw_panel(fig, [.729,.561,.26,.239], [.706,.470,.284,.070],
+                          legend_anchor=(.845,.551))
+    software_info.update({key: geometry[key] for key in ["title", "layout", "colours", "row_label_rotation_deg", "bubble_area_pt2_per_unit", "bubble_radii", "size_key_radii", "size_key_counts", "flexible_callouts", "legend_scope"]})
     axd = fig.add_axes([.156,.070,.154,.344])
     top = contributors.head(20).iloc[::-1]
     axd.barh(top.scientist_name, top.dataset_count, height=.58, color=count_colors(top.dataset_count), linewidth=0)

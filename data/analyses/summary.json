@@ -29,6 +29,14 @@
   ],
   "dated_searches": 236,
   "undated_or_ambiguous_searches": 74,
+  "search_refinement": {
+    "classified_archived_records": 468787,
+    "total_archived_records": 517594,
+    "classified_models": 457,
+    "energy_models": 508,
+    "unresolved_models": 51,
+    "unresolved_archived_records": 48807
+  },
   "density": {
     "source_inputs_checksum_verified": true,
     "shared_window": [
@@ -108,14 +116,14 @@
     },
     {
       "id": "software",
-      "title": "Reported CSP software",
+      "title": "Search and refinement methods",
       "category": "overview",
-      "status": "Supporting figure",
-      "image": "analysis/database_in_numbers/figures/panel_c_software_proposal.png",
-      "pdf": "analysis/database_in_numbers/output/pdf/panel_c_software_proposal.pdf",
-      "caption": null,
-      "description": "Explicit program mentions across 310 searches: each search counts once per program family. Versions are pooled and program categories overlap.",
-      "data": "data/analyses/audit--proposed_panel_c_counts.csv",
+      "status": "Current",
+      "image": "analysis/database_in_numbers/figures/panel_c_search_refinement.png",
+      "pdf": "analysis/database_in_numbers/output/pdf/panel_c_search_refinement.pdf",
+      "caption": "analysis/database_in_numbers/panel_c_methods/README.md",
+      "description": "Paired pie charts compare MOLPAK/CrystalPredictor searches with DMAREL/DMACRYS refinement. Purple and gold show rigid and flexible refinement. Structures and models use independent area scales. Includes 457 of 508 models and 468,787 archived records.",
+      "data": "data/analyses/methods--matrix_counts.csv",
       "note": ""
     }
   ],
@@ -143,15 +151,15 @@
       "source": "analysis/cposs_omc25_comparison/density/tables/density_statistics.csv"
     },
     {
-      "id": "audit--proposed_panel_c_counts",
-      "title": "Reported CSP software counts",
-      "group": "Source audit",
-      "namespace": "audit",
-      "path": "data/analyses/audit--proposed_panel_c_counts.csv",
-      "rows": 6,
-      "bytes": 140,
-      "sha256": "259a03f5c3cecdb95aa37fac6b4325984f6faf3e0e2320d51a5c346e15935128",
-      "source": "analysis/database_in_numbers/workbook_crosscheck/proposed_panel_c_counts.csv"
+      "id": "methods--matrix_counts",
+      "title": "Search and refinement matrix counts",
+      "group": "Search and refinement methods",
+      "namespace": "methods",
+      "path": "data/analyses/methods--matrix_counts.csv",
+      "rows": 4,
+      "bytes": 322,
+      "sha256": "e21f365812b301851fde8bdd8e53551d4211949dd5bb478f3e95f5e6fb7ef128",
+      "source": "analysis/database_in_numbers/panel_c_methods/matrix_counts.csv"
     },
     {
       "id": "map--dataset_embedding",

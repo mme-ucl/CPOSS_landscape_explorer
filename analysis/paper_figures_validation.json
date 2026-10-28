@@ -38,5 +38,74 @@
   "final_pdfs_visually_inspected": true,
   "public_export_tests_passed": 6,
   "total_tests_passed": 45,
-  "catalogue_and_analysis_identifiers_match_exactly": true
+  "catalogue_and_analysis_identifiers_match_exactly": true,
+  "panel_c_revision": {
+    "date": "2026-10-28",
+    "inventory_datasets": 310,
+    "energy_models": 508,
+    "total_archived_records": 517594,
+    "classified_models": 457,
+    "classified_archived_records": 468787,
+    "unresolved_models": 51,
+    "unresolved_archived_records": 48807,
+    "classified_record_percentage": 90.57040846686786,
+    "additional_classification_tests_passed": 9,
+    "other_panels_pixel_identical": true,
+    "area_and_size_legend_consistent": true,
+    "caption_latex_compiled": true,
+    "final_pdfs_visually_inspected": true,
+    "figure_1_pdf_sha256": "7733dba24543304d123a0ecfd28c48711e8c59f7539c5ccd23c2da23901a08f4",
+    "paired_pies": true,
+    "flexible_callouts_verified": 8,
+    "row_label_rotation_deg": 90,
+    "weighting_independent_for_records_and_models": true,
+    "text_bbox_overlaps": [],
+    "classification_unchanged": true,
+    "cell_counts": [
+      {
+        "search_program": "MOLPAK",
+        "refinement_engine": "DMAREL",
+        "rigid_records": 24310,
+        "flexible_records": 110,
+        "total_records": 24420,
+        "rigid_models": 114,
+        "flexible_models": 7,
+        "energy_models": 121,
+        "datasets": 114
+      },
+      {
+        "search_program": "CrystalPredictor",
+        "refinement_engine": "DMAREL",
+        "rigid_records": 1376,
+        "flexible_records": 83,
+        "total_records": 1459,
+        "rigid_models": 2,
+        "flexible_models": 3,
+        "energy_models": 5,
+        "datasets": 4
+      },
+      {
+        "search_program": "MOLPAK",
+        "refinement_engine": "DMACRYS",
+        "rigid_records": 23460,
+        "flexible_records": 38,
+        "total_records": 23498,
+        "rigid_models": 41,
+        "flexible_models": 3,
+        "energy_models": 44,
+        "datasets": 40
+      },
+      {
+        "search_program": "CrystalPredictor",
+        "refinement_engine": "DMACRYS",
+        "rigid_records": 239005,
+        "flexible_records": 180405,
+        "total_records": 419410,
+        "rigid_models": 130,
+        "flexible_models": 157,
+        "energy_models": 287,
+        "datasets": 138
+      }
+    ]
+  }
 }

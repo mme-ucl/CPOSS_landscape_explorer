@@ -1,0 +1,5 @@
+search_program,refinement_engine,rigid_records,flexible_records,total_records,rigid_models,flexible_models,energy_models,datasets
+MOLPAK,DMAREL,24310,110,24420,114,7,121,114
+CrystalPredictor,DMAREL,1376,83,1459,2,3,5,4
+MOLPAK,DMACRYS,23460,38,23498,41,3,44,40
+CrystalPredictor,DMACRYS,239005,180405,419410,130,157,287,138
